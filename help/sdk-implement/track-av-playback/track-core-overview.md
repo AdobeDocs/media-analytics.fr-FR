@@ -1,0 +1,265 @@
+---
+seo-title: Aperçu du suivi
+title: Aperçu du suivi
+uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
+translation-type: tm+mt
+source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+
+---
+
+
+# Tracking Overview{#tracking-overview}
+
+>[!IMPORTANT]
+>
+>Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](../../sdk-implement/download-sdks.md)
+
+## Événements du lecteur
+
+Le suivi de la lecture principale inclut le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. Bien qu’il ne soit pas obligatoire, le suivi de la mise en mémoire tampon et de la recherche est également un composant principal du suivi de la lecture du contenu. Dans l’API de votre lecteur multimédia, identifiez les événements du lecteur qui correspondant aux appels de suivi du SDK Media, et codez vos gestionnaires d’événements pour appeler les API de suivi et renseigner les variables obligatoires et facultatives.
+
+### Lors du chargement de médias
+
+* Créez l’objet multimédia.
+* Renseignez les métadonnées.
+* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
+
+### Au démarrage du média
+
+* L’appel   `trackPlay`
+
+### Lors de la pause/reprise
+
+* L’appel   `trackPause`
+* Call `trackPlay`   _when playback resumes_
+
+### Sur le support multimédia
+
+* L’appel   `trackComplete`
+
+### Lors de l'abandon du média
+
+* L’appel   `trackSessionEnd`
+
+### Lorsque le défilement commence
+
+* L’appel   `trackEvent(SeekStart)`
+
+### Lorsque la lecture se termine
+
+* L’appel   `trackEvent(SeekComplete)`
+
+### Lorsque la mise en mémoire tampon commence
+
+* L’appel   `trackEvent(BufferStart);`
+
+### Lorsque la mise en mémoire tampon se termine
+
+* L’appel   `trackEvent(BufferComplete);`
+
+>[!TIP]
+>
+>La position du curseur de lecture est définie dans le code de configuration et de configuration. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](../../sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+
+## Mise en œuvre {#section_BB217BE6585D4EDEB34C198559575004}
+
+1. **Installation initiale du suivi :** Déterminez le moment où l’utilisateur déclenche l’intention de lecture (l’utilisateur clique sur lecture et/ou la lecture automatique est activée) et créez une instance `MediaObject` à l’aide des informations sur le média pour le nom du contenu, l’ID de contenu, la durée du contenu et le type de diffusion.
+
+   **`MediaObject`référence :**
+
+   | Nom de variable | Description | Obligatoire |
+   |---|---|---|
+   | `name` | Nom du contenu | Oui |
+   | `mediaid` | Identifiant unique du contenu | Oui |
+   | `length` | Durée du contenu | Oui |
+   | `streamType` | Type de diffusion | Oui |
+   | `mediaType` | Type de média (contenu audio ou vidéo) | Oui |
+
+   **`StreamType`constantes :**
+
+   | Nom de constante | Description |
+   |---|---|
+   | `VOD` | Type de diffusion pour la vidéo à la demande. |
+   | `LIVE` | Type de diffusion pour le contenu en direct. |
+   | `LINEAR` | Type de diffusion pour le contenu linéaire. |
+   | `AOD` | Type de diffusion pour l’audio à la demande. |
+   | `AUDIOBOOK` | Type de diffusion pour les livres audio. |
+   | `PODCAST` | Type de diffusion pour les podcasts. |
+
+   **`MediaType`constantes :**
+
+   | Nom de constante | Description |
+   |---|---|
+   | `Audio` | Type de média pour les diffusions audio. |
+   | `Video` | Type de média pour les diffusions vidéo. |
+
+   The general format for creating the `MediaObject` is `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
+
+1. **Joindre des métadonnées -** Vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi par le biais de variables de données contextuelles.
+
+   * **Métadonnées standard -**
+
+      >[!NOTE]
+      >
+      >L'ajout de l'objet de métadonnées standard à l'objet media est facultatif.
+
+      Instanciez un objet de métadonnées standard, renseignez les variables désirées et définissez l’objet de métadonnées sur l’objet Media Heartbeat.
+
+      See the comprehensive list of metadata here: [Audio and video parameters.](../../metrics-and-metadata/audio-video-parameters.md)
+
+   * **Métadonnées personnalisées -** Créez un objet de variable pour les variables personnalisées et renseignez les données de ce contenu.
+
+1. **Suivi de l’intention de démarrer la lecture -** Pour commencer le suivi d’une session, appelez `trackSessionStart` sur l’instance Media Heartbeat.
+
+   >[!IMPORTANT]
+   >
+   >`trackSessionStart` effectue le suivi de l’intention de lecture de l’utilisateur, et non du début de la lecture. Cette API est utilisée pour charger les données/métadonnées et estimer le temps jusqu’au démarrage de la mesure QoS (durée entre `trackSessionStart` et `trackPlay`).
+
+   >[!NOTE]
+   >
+   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`.
+
+1. **Suivi du début effectif de la lecture -** Identifiez l’événement du lecteur multimédia correspondant au début de la lecture (la première image du contenu s’affiche à l’écran) et appelez `trackPlay`.
+
+1. **Suivi de la fin de la lecture -** Identifiez l’événement du lecteur multimédia correspondant à la fin de la lecture, où l’utilisateur a visionné le contenu jusqu’à la fin, et appelez `trackComplete`.
+
+1. **Suivi de la fin de la session -** Identifiez l’événement du lecteur multimédia correspondant au déchargement/à la fermeture de la lecture (l’utilisateur ferme le contenu et/ou le contenu est terminé et déchargé) et appelez `trackSessionEnd`.
+
+   >[!IMPORTANT]
+   >
+   >`trackSessionEnd` marque la fin d'une session de suivi. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+
+1. **Suivi de tous les scénarios de mise en pause possibles -** Identifiez l’événement du lecteur multimédia qui provoque la pause et appelez `trackPause`.
+
+   **Scénarios de pause :** Identifiez tous les scénarios dans lesquels le lecteur sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()`:
+
+   * L’utilisateur appuie explicitement sur le bouton de pause dans l’application.
+   * Le lecteur se place dans l’état de pause.
+   * (*Applications mobiles*) - L’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application maintienne la session ouverte.
+   * (*Applications mobiles*) - Tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre le contenu à partir du point d’interruption.
+
+1. Identifiez l’événement du lecteur correspondant à la lecture et/ou à la reprise après une interruption et appelez `trackPlay`.
+
+   >[!TIP]
+   >
+   >Il peut s'agir de la même source d'événement utilisée à l'étape 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+
+1. Prêtez attention aux événements de recherche de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la recherche, effectuez-en le suivi à l’aide de l’événement `SeekStart`.
+1. Une fois que vous avez reçu la notification de fin de la recherche, effectuez-en le suivi à l’aide de l’événement `SeekComplete`.
+1. Prêtez attention aux événements de mise en mémoire tampon de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferStart`.
+1. Une fois que vous avez reçu la notification de fin de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferComplete`.
+
+Consultez des exemples de chaque étape dans les rubriques suivantes spécifiques aux plates-formes, et examinez les exemples de lecteurs inclus dans vos SDK.
+
+Voici un exemple simple de suivi de lecture à l’aide du SDK JavaScript 2.x dans un lecteur HTML5 :
+
+```js
+/* Call on media start */ 
+if (e.type == "play") { 
+ 
+    // Check for start of media 
+    if (!sessionStarted) { 
+        /* Set media info */     
+        /* MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
+                                            <MEDIA_ID>,  
+                                            <MEDIA_LENGTH>, 
+                                            <MEDIA_STREAMTYPE>,
+                                            <MEDIA_MEDIATYPE>);*/ 
+        var mediaInfo = MediaHeartbeat.createMediaObject( 
+          document.getElementsByTagName('video')[0].getAttribute("name"),  
+          document.getElementsByTagName('video')[0].getAttribute("id"),  
+          video.duration, 
+          MediaHeartbeat.StreamType.VOD); 
+ 
+        /* Set custom context data */ 
+        var customVideoMetadata = { 
+            isUserLoggedIn: "false", 
+            tvStation: "Sample TV station", 
+            programmer: "Sample programmer" 
+        }; 
+ 
+        /* Set standard video metadata */     
+        var standardVideoMetadata = {}; 
+        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.EPISODE] = "Sample Episode"; 
+        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.SHOW] = "Sample Show"; 
+        mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardVideoMetadata,  
+                           standardVideoMetadata);     
+ 
+        // Start Session 
+        this.mediaHeartbeat.trackSessionStart(mediaInfo, customVideoMetadata);    
+ 
+        // Track play 
+        this.mediaHeartbeat.trackPlay();  
+        sessionStarted = true;     
+ 
+    } else { 
+        // Track play for resuming playack    
+        this.mediaHeartbeat.trackPlay();  
+    } 
+}; 
+ 
+/* Call on video complete */ 
+if (e.type == "ended") { 
+    console.log("video ended"); 
+    this.mediaHeartbeat.trackComplete(); 
+    this.mediaHeartbeat.trackSessionEnd(); 
+    sessionStarted = false;     
+}; 
+ 
+/* Call on pause */ 
+if (e.type == "pause") { 
+    this.mediaHeartbeat.trackPause(); 
+}; 
+ 
+/* Call on scrub start */ 
+if (e.type == "seeking") { 
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
+}; 
+     
+/* Call on scrub stop */ 
+if (e.type == "seeked") { 
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
+}; 
+ 
+/* Call on buffer start */ 
+if (e.type == “buffering”) { 
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
+}; 
+ 
+/* Call on buffer complete */ 
+if (e.type == “buffered”) { 
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+};
+```
+
+## Validation {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+
+### Démarrage de contenu
+
+Au démarrage d’un lecteur multimédia, ces appels clés sont envoyés dans l’ordre suivant :
+
+1. Démarrage de Media Analytics
+1. Démarrage de Heartbeat
+1. Démarrage de l’analyse Heartbeat
+
+Les appels 1 et 2 contiennent des variables de métadonnées supplémentaires pour les formats personnalisés et standard.
+
+### Lecture du contenu
+
+Lors de la lecture du contenu principal standard, des appels Heartbeat sont envoyés au serveur Heartbeat toutes les 10 secondes.
+
+### Fin de contenu
+
+Au point 100 %, sur un contenu ou à une limite de programme sur une diffusion linéaire, un appel de fin Heartbeat est envoyé.
+
+### Pause du contenu
+
+Lorsque le lecteur est mis en pause, des appels d’événement de mise en pause du lecteur sont envoyés toutes les 10 secondes. Après la pause, les événements de lecture reprennent normalement.
+
+### Défilement/recherche de contenu
+
+Lors du défilement du curseur de lecture, aucun appel de suivi spécial n’est envoyé. Toutefois, lorsque la lecture reprend après le défilement, la valeur du curseur de lecture doit refléter la nouvelle position dans le contenu principal.
+
+### Mémoire tampon de contenu
+
+Lorsque le lecteur multimédia procède à la mise en mémoire tampon, des appels d’événement de mémoire tampon du lecteur sont envoyés toutes les 10 secondes. Après la mise en mémoire tampon, les événements de lecture reprennent normalement.
