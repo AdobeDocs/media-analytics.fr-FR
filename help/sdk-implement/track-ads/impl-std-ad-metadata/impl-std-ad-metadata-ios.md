@@ -1,0 +1,34 @@
+---
+description: valeur nulle
+seo-description: valeur nulle
+seo-title: Mise en œuvre de métadonnées de publicité standard sur iOS
+title: Mise en œuvre de métadonnées de publicité standard sur iOS
+uuid: f 15 fb 727-5 a 5 b -46 c 5-bf 12-93 b 376 c 10 fd 1
+translation-type: tm+mt
+source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+
+---
+
+
+# Mise en œuvre de métadonnées de publicité standard sur iOS{#implement-standard-ad-metadata-on-ios}
+
+## Constantes publicitaires
+
+| Nom de constante | Description   |
+|---|---|
+| `ADBMediaObjectKeyStandardAdMetadata` | Constant for attaching standard ad metadata on `AdInfo ADBMediaObject` |
+
+## Métadonnées publicitaires standard de mise en œuvre
+
+Pour les métadonnées publicitaires standard, créez un dictionnaire des paires clé-valeur des métadonnées publicitaires standard à l'aide des clés de votre plateforme :
+
+```
+// Sample implementation for using standard metadata keys for Ad 
+NSMutableDictionary *standardAdMetadata = [[NSMutableDictionary alloc] init]; 
+[standardAdMetadata setObject:@"Sample Advertiser" forKey:ADBAdMetadataKeyADVERTISER]; 
+[standardAdMetadata setObject:@"Sample Campaign" forKey:ADBAdMetadataKeyCAMPAIGN_ID]; 
+ 
+[adObject setValue:standardAdMetadata forKey:ADBMediaObjectKeyStandardAdMetadata];
+```
+
+[Clés de métadonnées iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
