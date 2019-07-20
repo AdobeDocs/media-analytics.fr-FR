@@ -1,0 +1,33 @@
+---
+seo-title: Mesures calculées
+title: Mesures calculées
+uuid: 9 dd 35155-58 aa -4 f 05-896 e-c 5 cbc 4 b 13 d 59
+translation-type: tm+mt
+source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
+
+---
+
+
+# Mesures calculées{#calculated-metrics}
+
+>[!NOTE]
+>
+>Ces mesures calculées ont été introduites le 13/9/18.
+
+| Mesure | Description | Formule |
+|---|---|---|
+| Nombre moyen de publicités par diffusion multimédia | Débuts de publicité par média commencés | `Ad Starts / Media Starts` |
+| Nombre moyen de chapitres par diffusion multimédia | Début de chapitre par début de média | `Chapter Start / Media Starts` |
+| Temps moyen passé sur le média | Durée totale de la visite par média (HH : MM : SS) | `Media Time Spent / Media Starts` |
+| Temps moyen passé sur le contenu | Temps passé sur le contenu par démarrage de contenu (HH:MM:SS) | `Content Time Spent / Content Start` |
+| Temps moyen passé sur la publicité | Temps passé sur la publicité par démarrage de publicité (HH:MM:SS) | `Ad Time Spent / Ad Start` |
+| Temps moyen passé sur le chapitre | Temps passé sur le chapitre par démarrage de chapitre (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| Taux d’achèvement du média | Taux d’achèvement du contenu par rapport aux démarrages de média (%) | `Content Completes/ Media Starts` |
+| Taux d’achèvement du contenu | Taux d’achèvement du contenu par rapport aux démarrages de contenu (%) | `Content Completes / Content Starts` |
+| Taux d’achèvement de la publicité | Taux d’achèvement de la publicité par rapport aux démarrages de publicité (%) | `Ad Completes / Ad Starts` |
+| Taux d’achèvement du chapitre | Taux d’achèvement du chapitre par rapport aux démarrages de chapitre (%) | `Chapter Completes / Chapter Starts` |
+| Taux d’abandon avant le démarrage | Taux de pertes avant le début par rapport aux démarrages de contenu multimédia (%) | `Drops before Starts / Media Starts` |
+| Taux de durée de mise en pause du contenu | Taux de durée totale de mise en pause par rapport au temps passé sur le contenu (%) | `Total Pause Duration / Content Time Spent` |
+| Taux de durée de mise en mémoire tampon du contenu | Taux de durée totale de mise en mémoire tampon par rapport au temps passé sur le contenu (%) | `Total Buffer Duration / Content Time Spent` |
+| Taux de temps jusqu’au début du contenu | Taux de temps jusqu’au début par rapport au temps passé sur le contenu (%) | `Time to Start / Content Time Spent` |
+| Taux de temps passé sur la publicité | Taux de temps passé sur la publicité par rapport au temps passé sur le contenu (%) | `Ad Time Spent / Content Time Spent` |
