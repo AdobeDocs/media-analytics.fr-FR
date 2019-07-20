@@ -1,0 +1,60 @@
+---
+seo-title: Clés de métadonnées iOS
+title: Clés de métadonnées iOS
+uuid: 8 eb 90111-c 9 dd -4 ca 7-9766-91530 a 8 ae 6 cf
+translation-type: tm+mt
+source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+
+---
+
+
+# Clés de métadonnées iOS{#ios-metadata-keys}
+
+[Référence de l’API iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
+
+De `ADBStandardMetadataKeys.h`:
+
+## Clés de métadonnées vidéo
+
+| Nom de constante | Description | Type |
+|---|---|---|
+| `ADBVideoMetadataKeySHOW` | Programme | Vidéo |
+| `ADBVideoMetadataKeySEASON` | Saison | Vidéo |
+| `ADBVideoMetadataKeyEPISODE` | Épisode | Vidéo |
+| `ADBVideoMetadataKeyASSET_ID` | Ressource | Vidéo |
+| `ADBVideoMetadataKeyGENRE` | Genre | Vidéo |
+| `ADBVideoMetadataKeyFIRST_AIR_DATE` | Date de première diffusion | Vidéo |
+| `ADBVideoMetadataKeyFIRST_DIGITAL_DAT` | Date de première distribution numérique | Vidéo |
+| `ADBVideoMetadataKeyRATING` | Évaluation | Vidéo |
+| `ADBVideoMetadataKeyORIGINATOR` | Créateur | Vidéo |
+| `ADBVideoMetadataKeyNETWORK` | Réseau | Vidéo |
+| `ADBVideoMetadataKeySHOW_TYPE` | Type de programme | Vidéo |
+| `ADBVideoMetadataKeyAD_LOAD` | Chargement de publicité | Vidéo |
+| `ADBVideoMetadataKeyMVPD` | mvpd | Vidéo |
+| `ADBVideoMetadataKeyAUTHORIZED` | Autorisation | Vidéo |
+| `ADBVideoMetadataKeyDAY_PART` | Partie de la journée | Vidéo |
+| `ADBVideoMetadataKeyFEED` | Flux | Vidéo |
+| `ADBVideoMetadataKeySTREAM_FORMAT` | Format de diffusion | Vidéo |
+
+## Clés de métadonnées audio
+
+| Nom de constante | Description | Type |
+|---|---|---|
+| `ADBAudioMetadataKeyALBUM` | Programme | Audio |
+| `ADBAudioMetadataKeyARTIST` | Saison | Audio |
+| `ADBAudioMetadataKeyAUTHOR` | Saison | Audio |
+| `ADBAudioMetadataKeyLABEL` | Épisode | Audio |
+| `ADBAudioMetadataKeyPUBLISHER` | Ressource | Audio |
+| `ADBAudioMetadataKeySTATION` | Genre | Audio |
+
+## Clés de métadonnées publicitaires
+
+| Nom de constante | Description | Type |
+|---|---|---|
+| `ADBAdMetadataKeyADVERTISER` | Annonceur | Publicité |
+| `ADBAdMetadataKeyCAMPAIGN_ID` | ID de campagne | Publicité |
+| `ADBAdMetadataKeyCREATIVE_ID` | ID d’élément créatif | Publicité |
+| `ADBAdMetadataKeyPLACEMENT_ID` | Identifiant de référencement | Publicité |
+| `ADBAdMetadataKeySITE_ID` | ID du site | Publicité |
+| `ADBAdMetadataKeyCREATIVE_URL` | URL de l’élément créatif | Publicité |
+
