@@ -1,0 +1,52 @@
+---
+seo-title: Suivi des actions de l’application
+title: Suivi des actions de l’application
+uuid: 9 cdc 048 a -419 a -4725-bd 61-6 ca 6 d 909 cf 10
+translation-type: tm+mt
+source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+
+---
+
+
+# Suivi des actions d’application{#track-app-actions}
+
+Les actions sont les événements qui se produisent dans votre application et que vous souhaitez mesurer.
+
+Chaque action est associée à une ou à plusieurs mesures qui sont incrémentées chaque fois que l’événement se produit. For example, you might send a `trackAction` call for each new subscription, or each time content is rated, or each time a level is completed.
+
+Le suivi des actions n’est pas automatique. Par conséquent, appelez `trackAction` lorsqu’un événement dont vous souhaitez effectuer le suivi se produit, puis mappez l’action avec un événement personnalisé.
+
+1. When an event that you want to track occurs, call `trackAction`.
+
+   * **Roku :**
+
+      ```js
+      ADBMobile().trackAction("myapp.ActionName", {})
+      ```
+
+   * **Chromecast :**
+
+      ```js
+      ADBMobile.analytics.trackAction("myapp.ActionName", {});
+      ```
+
+1. Mappez l’action avec un événement personnalisé.
+
+   * **Roku :**
+
+      ```js
+      dictionary = {} 
+      dictionary["myapp.social.SocialSource"] = "Twitter"  
+      ADBMobile().trackAction("myapp.SocialShare", dictionary)
+      ```
+
+   * **Chromecast :**
+
+      ```js
+      var dictionary = {}; 
+      dictionary["myapp.social.SocialSource"] = "Twitter"; 
+      ADBMobile.analytics.trackAction("myapp.SocialShare", dictionary);
+      ```
+
+Vous pouvez également envoyer des données contextuelles supplémentaires à chaque appel de suivi d’action.
+
