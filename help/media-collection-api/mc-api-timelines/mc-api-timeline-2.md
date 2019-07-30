@@ -3,7 +3,7 @@ seo-title: 'Chronologie 2 : L’utilisateur abandonne la session'
 title: 'Chronologie 2 : L’utilisateur abandonne la session'
 uuid: 74 b 89 e 8 f-ef 56-4 e 0 c-b 9 a 8-40739 e 15 b 4 cf
 translation-type: tm+mt
-source-git-commit: 69057b2abf7140d52b1897af3dc9d9fd01ca87ad
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ Les diagrammes suivants illustrent le chronologie du curseur de lecture et le jo
 
 **Détails de mise en œuvre**
 
-Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ». Les [paramètres de session obligatoires](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
+Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ». Les [paramètres de session obligatoires](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
 
 **Exemple de corps de requête**
 
