@@ -3,7 +3,7 @@ seo-title: Suivi dans SceneGraph (Roku)
 title: Suivi dans SceneGraph (Roku)
 uuid: fa 85 e 546-c 79 b -4 df 4-8 c 03-d 6593 fa 296 d 5
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -186,8 +186,8 @@ Type de retour: `SceneGraphConstants`
 | Contrôle de version | `version` | Constante permettant de récupérer les informations de version AdobeMobileLibrary |
 | Confidentialité/désinscription | `PRIVACY_STATUS_OPT_IN` | Constante pour l’état de confidentialité choisi |
 |  | `PRIVACY_STATUS_OPT_OUT` | Constante pour l’état de confidentialité abandonné |
-| Constantes MediaHeartbeat | Consultez les constantes de cette page : <br/><br/>[Méthodes Media Heartbeat.](../../sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilisation de ces constantes avec les API mediaheartbeat |
-| Métadonnées standard | Reportez-vous aux constantes de cette page : <br/><br/>[Paramètres de métadonnées standard.](../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Utilisez ces constantes pour joindre des métadonnées de type vidéo/publicitaire standard dans des API MediaHeartbeat |
+| Constantes MediaHeartbeat | Consultez les constantes de cette page : <br/><br/>[Méthodes Media Heartbeat.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilisation de ces constantes avec les API mediaheartbeat |
+| Métadonnées standard | Reportez-vous aux constantes de cette page : <br/><br/>[Paramètres de métadonnées standard.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Utilisez ces constantes pour joindre des métadonnées de type vidéo/publicitaire standard dans des API MediaHeartbeat |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. Pour plus d’informations sur ces méthodes, consultez le tableau ci-dessous :
 
