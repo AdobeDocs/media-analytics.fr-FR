@@ -3,7 +3,7 @@ seo-title: Lecture VOD avec mise en mémoire tampon
 title: Lecture VOD avec mise en mémoire tampon
 uuid: 958 f 7692-7193-40 fb-a 8 e 7-2 ff 4 fa 805330
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 Dans ce scénario, une mise en mémoire tampon a lieu lors de la lecture de contenu VOD.
 
-Sauf indication contraire, les appels réseau dans ce scénario sont identiques à ceux du scénario [Lecture VOD sans publicité](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
+Sauf indication contraire, les appels réseau dans ce scénario sont identiques à ceux du scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
 | Déclencheur   | Méthode Heartbeat   | Appels réseau   | Remarques   |
 |---|---|---|---|
