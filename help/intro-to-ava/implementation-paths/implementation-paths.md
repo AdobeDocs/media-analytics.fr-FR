@@ -3,7 +3,7 @@ seo-title: Chemins de mise en œuvre
 title: Chemins de mise en œuvre
 uuid: 8400 c 938-e 77 e -4 c 88-b 23 b -5 f 5977 a 5316 c
 translation-type: tm+mt
-source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ Pour chacun de ces chemins d'implémentation, les clients doivent contacter leur
 
 * **Côté client :** il s'agit uniquement d'intégrations Media Analytics. Vous pouvez choisir les intégrations du SDK Video Heartbeat et/ou de l’API Media Collection. Ce chemin peut être utilisé dans tout lecteur vidéo, y compris les lecteurs client et/ou OVP tels que Brightcove, Ooyala, thePlatform, etc.
 
-   If Media Analytics is your intended path, see the [Media SDK Implementation](../../sdk-implement/setup/setup-overview.md) and the [Media Collection API.](../../media-collection-api/mc-api-overview.md)
+   If Media Analytics is your intended path, see the [Media SDK Implementation](/help/sdk-implement/setup/setup-overview.md) and the [Media Collection API.](/help/media-collection-api/mc-api-overview.md)
 
    >[!IMPORTANT]
    >
@@ -34,6 +34,6 @@ Pour chacun de ces chemins d'implémentation, les clients doivent contacter leur
    * Le modèle d’insertion de publicités transparent de TVSDK permet d’analyser directement la lecture de la publicité, ce qui augmente la précision.
    * Ensemble d’événements et de métadonnées performant permettant de garantir la précision dans les problèmes de mise en mémoire tampon QoS ou d’interruption de connectivité mobile et les interactions d’utilisateur final (par exemple, recherche, mise en pause et mise en arrière-plan sur appareil mobile).
    * Prise en charge intégrée de Nielsen DTVR (linéaire) avec métadonnées ID3 et de DCR avec métadonnées CMS.
-   TVSDK est déjà intégré au SDK Media Analtyics (Heartbeats), ce qui facilite et accélère l'implémentation sur toutes les plates-formes prises en charge. Primetime prend également en charge le partenariat avec Nielsen. Pour exploiter Primetime, suivez les mêmes conseils et conditions requises.  [Côté client](../../intro-to-ava/implementation-paths/client-side-path.md) avec les documents suivants pour votre ou vos plates-formes : [Guide de l'utilisateur Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
+   TVSDK est déjà intégré au SDK Media Analtyics (Heartbeats), ce qui facilite et accélère l'implémentation sur toutes les plates-formes prises en charge. Primetime prend également en charge le partenariat avec Nielsen. Pour exploiter Primetime, suivez les mêmes conseils et conditions requises.  [Côté client](/help/intro-to-ava/implementation-paths/client-side-path.md) avec les documents suivants pour votre ou vos plates-formes : [Guide de l'utilisateur Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
 
    Vous devez également contacter votre représentant commercial/responsable de compte pour discuter des mesures à prendre pour acheter TVSDK.
