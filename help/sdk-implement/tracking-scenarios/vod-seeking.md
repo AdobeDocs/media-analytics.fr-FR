@@ -3,7 +3,7 @@ seo-title: Lecture VOD avec recherche dans le contenu principal
 title: Lecture VOD avec recherche dans le contenu principal
 uuid: 5 c 2392 f 6-9 b 9 c -42 f 5-833 f -77423 d 1 e 6222
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,16 +14,16 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 Ce scénario comprend une recherche dans le contenu principal au cours de la lecture.
 
-Il s’agit du même scénario que [Lecture VOD sans publicité](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md), mais une partie du contenu est parcourue manuellement et une recherche est effectuée d’un point à un autre du contenu principal.
+Il s’agit du même scénario que [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md), mais une partie du contenu est parcourue manuellement et une recherche est effectuée d’un point à un autre du contenu principal.
 
 | Déclencheur   | Méthode Heartbeat   | Appels réseau   | Remarques   |
 | --- | --- | --- | --- |
-| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Étant donné que la bibliothèque de mesures ignore la présence d’une publicité preroll, ces appels réseau sont identiques au scénario [Lecture VOD sans publicité](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Étant donné que la bibliothèque de mesures ignore la présence d’une publicité preroll, ces appels réseau sont identiques au scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La première image du contenu s’affiche. | `trackPlay` | Heartbeat Content Play | Lorsque le contenu du chapitre est lu avant le contenu principal, les pulsations démarrent dès que le chapitre démarre. |
-| Lecture du contenu |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Lecture du contenu |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | L’utilisateur entreprend une recherche parmi le contenu | `trackSeekStart` |  | No heartbeats go out till seek is complete, for example, `trackSeekComplete` |
 | Fin de la recherche | `trackSeekComplete` |  | La transmission des pulsations commence puisque la recherche est terminée.  Conseil : la valeur du curseur de lecture doit correspondre au nouveau curseur de lecture après la recherche. |
-| Contenu terminé | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Contenu terminé | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Fin de la session | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Exemple de code {#section_q2d_wcj_x2b}
