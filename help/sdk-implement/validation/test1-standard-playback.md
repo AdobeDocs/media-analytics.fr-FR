@@ -3,7 +3,7 @@ seo-title: Test 1 standard
 title: Test 1 standard
 uuid: c 4 b 3 fead -1 b 27-484 b-ab 6 a -39 f 1 ae 0 f 03 f 2
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -83,7 +83,7 @@ Vous devez effectuer et enregistrer les actions dans l’ordre suivant :
    1. Démarrage de Video Analytics
    1. Démarrage de Heartbeat
    1. Démarrage de l’analyse Heartbeat
-   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Afficher la coupure publicitaire si possible**
 
@@ -93,7 +93,7 @@ Vous devez effectuer et enregistrer les actions dans l’ordre suivant :
    1. Démarrage de l’analyse de la publicité vidéo
    1. Démarrage de la publicité Heartbeat
    1. Démarrage de l’analyse de la publicité Heartbeat
-   Les deux premiers appels contiennent des métadonnées et des variables supplémentaires. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+   Les deux premiers appels contiennent des métadonnées et des variables supplémentaires. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
 
    * **Lecture de la publicité**
 
@@ -122,7 +122,7 @@ Vous devez effectuer et enregistrer les actions dans l’ordre suivant :
    * La position du curseur de lecteur doit augmenter de 10 à chaque appel de lecture.
    * La valeur `l:event:duration` représente le nombre de millisecondes qui se sont écoulées depuis le dernier appel de suivi, et doit être plus ou moins constante pour chaque appel de 10 secondes.
 
-      For call parameters and metadata, see [Test call details](../../sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+      For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
 
 1. **Suspendre la lecture pendant au moins 30 secondes.** Lors de la pause du lecteur vidéo, les appels d’événement de pause sont envoyés toutes les 10 secondes. Une fois la pause terminée, les événements de lecture doivent reprendre.
 
