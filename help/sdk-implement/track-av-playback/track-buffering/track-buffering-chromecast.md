@@ -3,7 +3,7 @@ seo-title: Suivi de la mise en mémoire tampon sur Chromecast
 title: Suivi de la mise en mémoire tampon sur Chromecast
 uuid: f 6 fa 3 a 1 a-d 7 de -4293-bd 11-ebe 9 e 130 badd
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](../../../sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi de la mémoire tampon
 
@@ -36,4 +36,4 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
    ```
 
-Consultez le scénario de suivi [Lecture VOD avec mise en mémoire tampon](../../../sdk-implement/tracking-scenarios/vod-buffering.md) pour en savoir plus.
+Consultez le scénario de suivi [Lecture VOD avec mise en mémoire tampon](/help/sdk-implement/tracking-scenarios/vod-buffering.md) pour en savoir plus.
