@@ -3,7 +3,7 @@ seo-title: Aperçu
 title: Aperçu
 uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
 translation-type: tm+mt
-source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: b461da1823e45eef86302e14501eac0d4b055c7a
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide de SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](../../sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide de SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 Le suivi des chapitres et des segments est disponible pour les chapitres ou segments de médias définis personnalisés. Pour le suivi des chapitres, certaines utilisations courantes sont de définir des segments personnalisés basés sur le contenu multimédia (par exemple, les incréments du baseball) ou de définir des segments de contenu entre les coupures publicitaires. Chapter tracking is **not** required for core media tracking implementations.
 
