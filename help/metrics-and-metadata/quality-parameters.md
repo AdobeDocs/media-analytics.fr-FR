@@ -3,7 +3,7 @@ seo-title: Paramètres de qualité
 title: Paramètres de qualité
 uuid: 0 d 9 fa 764-edef -4178-8650-90 c 9 a 0852 a 57
 translation-type: tm+mt
-source-git-commit: 180eafdfc536039820ade0b52e5c55f874719d8e
+source-git-commit: aca428989370037efcb82ca9af342c904c3d9bce
 
 ---
 
@@ -224,7 +224,7 @@ Description des données de tableau :
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/> Fermeture du média </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> TRUE </li><li> **Description :**<br/>Nombre de flux dans lesquels des changements de débit se sont produits. Cette mesure est définie sur 1 uniquement si au moins un changement de débit s’est produit au cours de la session de lecture.  </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. qoe.<br/>error) </li> <li> **Heartbeat :**<br/> (s : event :<br/>type = error) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>event </li> <li> **Nom du rapport :**<br/>Diffusions touchées par les erreurs </li> <li> **Données contextuelles :**<br/> (a. media. qoe.<br/>error) </li> <li> **Flux de données :**<br/>videoqoeerror </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a. media. qoe.<br/>error) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/> Fermeture du média </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> TRUE </li><li> **Description :**<br/>Le nombre de flux dans lesquels un événement d'erreur s'est produit a `trackError` été appelé pendant la session de lecture et un `type=error` appel de pulsation a été généré. </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. qoe.<br/>error) </li> <li> **Heartbeat :**<br/> (s : event :<br/>type = error) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>event </li> <li> **Nom du rapport :**<br/>Diffusions touchées par les erreurs </li> <li> **Données contextuelles :**<br/> (a. media. qoe.<br/>error) </li> <li> **Flux de données :**<br/>videoqoeerror </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a. media. qoe.<br/>error) </li> </ul> |
 
 
 
