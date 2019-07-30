@@ -3,7 +3,7 @@ seo-title: Aperçu
 title: Aperçu
 uuid: 1607798 b-c 6 ef -4 d 60-8 e 40-e 958 c 345 b 09 c
 translation-type: tm+mt
-source-git-commit: 56e8716ea37049b95a59a82144bbad0e882c16b4
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,9 +12,9 @@ source-git-commit: 56e8716ea37049b95a59a82144bbad0e882c16b4
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](../../sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-La lecture de publicité inclut le suivi des coupures publicitaires, des démarrages de publicité, des fins de publicité et des publicités ignorées. Utilisez l'API du lecteur multimédia pour identifier les événements clés du lecteur et renseigner les variables publicitaires obligatoires et facultatives. See the comprehensive list of metadata here: [Ad parameters.](../../metrics-and-metadata/ad-parameters.md)
+La lecture de publicité inclut le suivi des coupures publicitaires, des démarrages de publicité, des fins de publicité et des publicités ignorées. Utilisez l'API du lecteur multimédia pour identifier les événements clés du lecteur et renseigner les variables publicitaires obligatoires et facultatives. See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
 
 ## Player events {#player-events}
 
