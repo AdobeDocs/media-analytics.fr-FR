@@ -3,7 +3,7 @@ seo-title: 'Chronologie 1 : Regarder jusqu’à la fin du contenu'
 title: 'Chronologie 1 : Regarder jusqu’à la fin du contenu'
 uuid: 0 ff 591 d 3-fa 99-4123-9 e 09-c 4 e 71 ea 1060 b
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -31,7 +31,7 @@ Les diagrammes suivants illustrent le chronologie du curseur de lecture et la ch
 
 **Détails de mise en œuvre**
 
-Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. <br/><br/>Elle renvoie un ID de session ( `{sid}`) au client utilisé pour identifier tous les appels de suivi ultérieurs au sein de la session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ». <br/><br/>[Les paramètres de session obligatoires](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête. <br/><br/>Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
+Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. <br/><br/>Elle renvoie un ID de session ( `{sid}`) au client utilisé pour identifier tous les appels de suivi ultérieurs au sein de la session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ». <br/><br/>[Les paramètres de session obligatoires](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête. <br/><br/>Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
 
 **Exemple de corps de requête**
 
