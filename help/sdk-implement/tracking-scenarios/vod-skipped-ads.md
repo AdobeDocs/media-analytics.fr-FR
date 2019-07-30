@@ -3,7 +3,7 @@ seo-title: Lecture VOD avec saut de publicité
 title: Lecture VOD avec saut de publicité
 uuid: f 3 ab 3524-abcb -4051-b 64 e-a 1 aad 6 e 3 dd 3 f
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,22 +16,22 @@ Ce scénario comprend la lecture d’un contenu VOD avec saut de publicité.
 
 ### Contenu VOD unique avec saut de publicité preroll
 
-Il s’agit du même scénario que [Lecture VOD avec publicités preroll](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md), à la différence que l’application permet à l’utilisateur de sauter la publicité, par exemple en cliquant sur un bouton Ignorer.
+Il s’agit du même scénario que [Lecture VOD avec publicités preroll](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), à la différence que l’application permet à l’utilisateur de sauter la publicité, par exemple en cliquant sur un bouton Ignorer.
 
 | Déclencheur   | Méthode Heartbeat  | Appels réseau   | Remarques   |
 | --- | --- | --- | --- |
-| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario  [Lecture VOD sans publicité.](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
+| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario  [Lecture VOD sans publicité.](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
 | La publicité démarre. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
 | La première image de la publicité s’affiche. | `trackPlay()` | Heartbeat Ad Play | Lorsque le contenu de la publicité est lu avant le contenu principal, les pulsations démarrent dès le début de la lecture de la publicité. |
 | La publicité est lue. |  | Ad Heartbeats |  |
 | La publicité est ignorée. | `trackEvent:trackAdSkip` |  | Il n’existe aucun appel réseau de fin de publicité. |
-| Le contenu est lu. |  | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| La lecture du contenu est terminée. | `trackComplete()` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Le contenu est lu. |  | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| La lecture du contenu est terminée. | `trackComplete()` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La session est terminée. | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## Paramètres {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
 
-The parameters are identical to the parameters in the [VOD playback with pre-roll ads](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
+The parameters are identical to the parameters in the [VOD playback with pre-roll ads](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) scenario, except there is no ad complete and no ad-break complete call.
 
 ## Exemple de code {#section_lxt_qz3_x2b}
 
