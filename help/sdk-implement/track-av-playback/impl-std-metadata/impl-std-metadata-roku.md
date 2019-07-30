@@ -5,7 +5,7 @@ seo-title: Mise en œuvre de métadonnées standard sur Roku
 title: Mise en œuvre de métadonnées standard sur Roku
 uuid: ae 14 d 809-343 f -452 c -832 a-f 94 bd 3 d 83 a 90
 translation-type: tm+mt
-source-git-commit: c6c7afee72d21c832be77c723750ae0551793613
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -36,5 +36,5 @@ standardMetadata[ADBMobile().MEDIA_AudioMetadataKeyLABEL] = "sample label"
 mediaInfo[ADBMobile().MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata 
 ```
 
-Consultez la liste complète des métadonnées vidéo dans la rubrique [Paramètres audio et vidéo](../../../metrics-and-metadata/audio-video-parameters.md).
+Consultez la liste complète des métadonnées vidéo dans la rubrique [Paramètres audio et vidéo](/help/metrics-and-metadata/audio-video-parameters.md).
 
