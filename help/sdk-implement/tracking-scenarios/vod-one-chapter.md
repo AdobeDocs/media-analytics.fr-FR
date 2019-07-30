@@ -3,7 +3,7 @@ seo-title: Lecture VOD avec un chapitre
 title: Lecture VOD avec un chapitre
 uuid: 1566 a 6 f 5-cf 22-42 e 7-8 e 1 a -6976 c 6 c 4 e 649
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -14,7 +14,7 @@ source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
 Dans ce scénario, une partie du contenu VOD est marquée comme un chapitre.
 
-Sauf indication contraire, les appels réseau dans ce scénario sont identiques à ceux du scénario [Lecture VOD sans publicité. ](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md) L’appel réseau se produit simultanément, mais la charge utile est différente.
+Sauf indication contraire, les appels réseau dans ce scénario sont identiques à ceux du scénario [Lecture VOD sans publicité. ](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) L’appel réseau se produit simultanément, mais la charge utile est différente.
 
 | Déclencheur   | Méthode Heartbeat   | Appels réseau   | Remarques   |
 |---|---|---|---|
@@ -23,8 +23,8 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 | La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Content Play | Lorsque le contenu du chapitre est lu avant le contenu principal, les pulsations démarrent dès que le chapitre démarre. |
 | Le chapitre est lu. |  | Chapter Heartbeats |  |
 | Le chapitre est terminé. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Cela se produit lorsque la fin du chapitre est atteinte. |
-| Le contenu est lu. |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Le contenu est lu. |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` signifie que la fin de la session de visionnage a été atteinte. Cette API doit être appelée même si l'utilisateur ne regarde pas le support à terminer. |
 
 ## Paramètres {#section_869319D99A474FEA8EA840415EA97FBD}
