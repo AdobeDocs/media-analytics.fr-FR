@@ -5,7 +5,7 @@ seo-title: Mise en œuvre de métadonnées standard sur iOS
 title: Mise en œuvre de métadonnées standard sur iOS
 uuid: 75 a 80 f 08-4 a 95-49 d 4-a 27 a -8 ce 531 d 64 d 31
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 ## Mise en œuvre
 
 1. Create a dictionary of standard metadata key value pairs using the `ADBStandardMetadataKeys`
-   [Clés de métadonnées IOS](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+   [Clés de métadonnées IOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
 1. Définissez le dictionnaire des métadonnées standard sur l’instance `MediaInfo``ADBMediaObject`   à l’aide de la constante de métadonnées standard pour les métadonnées.
 
