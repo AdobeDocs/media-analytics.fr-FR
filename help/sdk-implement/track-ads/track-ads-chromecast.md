@@ -3,7 +3,7 @@ seo-title: Suivi des publicités sur Chromecast
 title: Suivi des publicités sur Chromecast
 uuid: 7 b 1 f 584 a -3472-416 c -944 c -5 f 5 ea 0 ee 5529
 translation-type: tm+mt
-source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](../../sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi des publicités
 
@@ -74,4 +74,4 @@ source-git-commit: 2bf7cfd1e50309ce1ab8de0325d666ed209fbf5b
    ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete, getAdBreakInfo());
    ```
 
-Consultez le scénario de suivi [Lecture VOD avec publicités preroll](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) pour en savoir plus.
+Consultez le scénario de suivi [Lecture VOD avec publicités preroll](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) pour en savoir plus.
