@@ -3,7 +3,7 @@ seo-title: Aperçu du suivi
 title: Aperçu du suivi
 uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
 
 >[!IMPORTANT]
 >
->Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](../../sdk-implement/download-sdks.md)
+>Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Événements du lecteur
 
@@ -59,7 +59,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 >[!TIP]
 >
->La position du curseur de lecture est définie dans le code de configuration et de configuration. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](../../sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>La position du curseur de lecture est définie dans le code de configuration et de configuration. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Mise en œuvre {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -105,7 +105,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
       Instanciez un objet de métadonnées standard, renseignez les variables désirées et définissez l’objet de métadonnées sur l’objet Media Heartbeat.
 
-      See the comprehensive list of metadata here: [Audio and video parameters.](../../metrics-and-metadata/audio-video-parameters.md)
+      See the comprehensive list of metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
 
    * **Métadonnées personnalisées -** Créez un objet de variable pour les variables personnalisées et renseignez les données de ce contenu.
 
