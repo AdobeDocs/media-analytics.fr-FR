@@ -3,7 +3,7 @@ seo-title: Configuration de Roku
 title: Configuration de Roku
 uuid: 904 dfda 0-4782-41 da-b 4 ab -212 e 81156633
 translation-type: tm+mt
-source-git-commit: bb3a303edba724c8f444d612b3be9d7250eea363
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -26,7 +26,7 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesurer
 
 ## Implémentation du SDK
 
-1. Ajoutez la bibliothèque Roku que vous avez [téléchargée](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) à votre projet.
+1. Ajoutez la bibliothèque Roku que vous avez [téléchargée](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) à votre projet.
 
    1. The `AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components:
 
