@@ -3,7 +3,7 @@ seo-title: Suivi de la lecture principale sur iOS
 title: Suivi de la lecture principale sur iOS
 uuid: bdc 0 e 05 c -4 fe 5-430 e-aee 2-f 331 bc 59 ac 6 b
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Suivi de la lecture principale sur iOS{#track-core-playback-on-ios}
 
 >[!IMPORTANT]
->Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](../../../sdk-implement/download-sdks.md).
+>Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuration initiale du suivi**
 
@@ -62,11 +62,11 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Métadonnées vidéo standard**
 
-      * [Mise en œuvre de métadonnées standard sur iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+      * [Mise en œuvre de métadonnées standard sur iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **Clés de métadonnées vidéo**
-         [Clés de métadonnées iOS](../../../sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         [Clés de métadonnées iOS](/help/sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
-      * Consultez la liste complète des métadonnées vidéo dans la rubrique [Paramètres audio et vidéo](../../../metrics-and-metadata/audio-video-parameters.md).
+      * Consultez la liste complète des métadonnées vidéo dans la rubrique [Paramètres audio et vidéo](/help/metrics-and-metadata/audio-video-parameters.md).
       >[!NOTE]
       >
       >L'ajout de l'objet de métadonnées vidéo standard à l'objet media est facultatif.
@@ -172,6 +172,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Consultez les ressources suivantes pour en savoir plus sur le suivi de la lecture principale :
 
-* Scénarios de suivi : [Lecture VOD sans publicité](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Scénarios de suivi : [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Exemple de lecteur inclus dans le SDK iOS pour un exemple de suivi complet
 
