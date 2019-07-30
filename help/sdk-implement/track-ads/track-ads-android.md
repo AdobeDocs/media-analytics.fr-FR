@@ -3,7 +3,7 @@ seo-title: Suivi des publicités sur Android
 title: Suivi des publicités sur Android
 uuid: 4 a 4249 fb-dc 39-4947-a 14 d-a 51 d 972 f 32 d 4
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](../../sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi des publicités
 
@@ -78,7 +78,7 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
 1. Vous pouvez éventuellement joindre des métadonnées standard et/ou publicitaires à la session de suivi multimédia par le biais de variables de données contextuelles.
 
-   * [Mise en œuvre de métadonnées de publicité standard sur Android](../../sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+   * [Mise en œuvre de métadonnées de publicité standard sur Android](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
    * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la publicité actuelle :
 
       ```java
@@ -125,4 +125,4 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
    }
    ```
 
-Consultez le scénario de suivi [Lecture VOD avec publicités preroll](../../sdk-implement/tracking-scenarios/vod-preroll-ads.md) pour en savoir plus.
+Consultez le scénario de suivi [Lecture VOD avec publicités preroll](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) pour en savoir plus.
