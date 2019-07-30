@@ -3,7 +3,7 @@ seo-title: Suivi de la lecture principale sur Chromecast
 title: Suivi de la lecture principale sur Chromecast
 uuid: a 9 fc 59 d 8-a 2 f 4-4889-bdec -55 c 42 a 835 d 06
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 >[!IMPORTANT]
 >
->Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](../../../sdk-implement/download-sdks.md).
+>Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuration initiale du suivi**
 
@@ -40,7 +40,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Métadonnées vidéo standard**
 
-      [Mise en œuvre de métadonnées standard sur Chromecast](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      [Mise en œuvre de métadonnées standard sur Chromecast](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
       >[!NOTE]
       >
@@ -130,6 +130,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    >
    >Il peut s'agir de la même source d'événement utilisée à l'étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture vidéo.
 
-* Scénarios de suivi : [Lecture VOD sans publicité](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Scénarios de suivi : [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Exemple de lecteur inclus dans le SDK Chromecast pour un exemple de suivi complet
 
