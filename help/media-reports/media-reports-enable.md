@@ -3,7 +3,7 @@ seo-title: Activation des rapports multimédia
 title: Activation des rapports multimédia
 uuid: d 306068 d-a 308-4 b 6 e -8 a 72-742 dda 0 de 428
 translation-type: tm+mt
-source-git-commit: ae51df03ef9e57508a50f6928fee140f3b136b58
+source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 ---
 
@@ -65,4 +65,4 @@ Chaque suite de rapports qui collecte des mesures de médias doit être configur
 
 >[!IMPORTANT]
 >
->Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](../metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". Les classifications des médias sont définies lorsqu'une suite de rapports est activée pour le suivi multimédia. De temps à autres, Adobe ajoute de nouvelles propriétés. Dès lors, les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés du média. Lors du processus de mise à jour, Adobe détermine si les classifications sont activées en vérifiant les noms des variables. Si l'un d'eux est manquant, Adobe rajoute les autres.
+>Do not change the classification names for any variables listed in the Metrics and metadata tables (e.g., [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)) that are described there under Reporting/Reserved Variable as "classification". Les classifications des médias sont définies lorsqu'une suite de rapports est activée pour le suivi multimédia. De temps à autres, Adobe ajoute de nouvelles propriétés. Dès lors, les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés du média. Lors du processus de mise à jour, Adobe détermine si les classifications sont activées en vérifiant les noms des variables. Si l'un d'eux est manquant, Adobe rajoute les autres.
