@@ -3,7 +3,7 @@ seo-title: Configuration de JavaScript
 title: Configuration de JavaScript
 uuid: 0269 d 8 ad -0 af 8-4 bf 1-9 d 15-e 06 c 2952 a 005
 translation-type: tm+mt
-source-git-commit: 63fb6332694675cd03843995f8f86ae45973d399
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -22,7 +22,7 @@ multimédia** Pour plus d'informations sur la documentation du SDK mobile Adobe,
    * *Une API pour vous abonner aux événements de lecteur* : Le kit SDK Media vous oblige à appeler une série d’API simples lorsque des événements ont lieu dans votre lecteur.
    * *Une API fournissant des informations sur le lecteur* : Ces informations comprennent des détails tels que le nom du média et la position du curseur de lecture.
 
-1. Ajoutez la bibliothèque que vous avez [téléchargée](../../sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) à votre projet. Créez des références locales aux classes pour des raisons pratiques.
+1. Ajoutez la bibliothèque que vous avez [téléchargée](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) à votre projet. Créez des références locales aux classes pour des raisons pratiques.
 
    1. Expand the `MediaSDK-js-v2.*.zip` file that you downloaded.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
@@ -117,4 +117,4 @@ multimédia** Pour plus d'informations sur la documentation du SDK mobile Adobe,
 
 Dans la version 2.x, toutes les méthodes publiques sont consolidées dans la classe `ADB.va.MediaHeartbeat` pour faciliter le travail des développeurs. De plus, toutes les configurations sont désormais consolidées dans la classe `ADB.va.MediaHeartbeatConfig`. 
 
-Pour plus d’informations sur la migration de 1.x vers 2.x, voir [Migration de VHL 1.x vers 2.x.](../../sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
+Pour plus d’informations sur la migration de 1.x vers 2.x, voir [Migration de VHL 1.x vers 2.x.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
