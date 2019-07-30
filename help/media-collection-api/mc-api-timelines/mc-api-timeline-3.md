@@ -3,7 +3,7 @@ seo-title: 'Chronologie 3 : Chapitres'
 title: 'Chronologie 3 : Chapitres'
 uuid: 41 b 52072-e 1 cd -4 dda -9253-31 f 3408924 f 6
 translation-type: tm+mt
-source-git-commit: 6ada4d04824a3e501ecc58a9ca719cc9445aee12
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -33,7 +33,7 @@ Les diagrammes suivants illustrent le chronologie du curseur de lecture et le jo
 
 **Détails de mise en œuvre**
 
-This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ». Les [paramètres de session obligatoires](../../media-collection-api/mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
+This call signals _the intention of the user to play_ a video. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ». Les [paramètres de session obligatoires](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
 
 **Exemple de corps de requête**
 
