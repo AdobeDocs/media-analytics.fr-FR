@@ -3,7 +3,7 @@ seo-title: Suivi de la qualité de l’expérience sur Roku
 title: Suivi de la qualité de l’expérience sur Roku
 uuid: a 8 b 242 ab-da 3 c -4297-9 eef-f 0 b 9684 ef 56 a
 translation-type: tm+mt
-source-git-commit: 9d42a3a78d5f1812b41d83a5ae636d7a4bee2939
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 9d42a3a78d5f1812b41d83a5ae636d7a4bee2939
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](../../sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## QOS d'implémentation
 
@@ -76,7 +76,7 @@ source-git-commit: 9d42a3a78d5f1812b41d83a5ae636d7a4bee2939
     >Update the QoS object and call the bitrate change event on every bitrate change. This provides the most accurate QoS data.
     -->
 
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Voir [Aperçu](../../sdk-implement/track-errors/track-errors-overview.md).)
+1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Voir [Aperçu](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
