@@ -3,7 +3,7 @@ seo-title: Aperçu
 title: Aperçu
 uuid: c 14 bdbef -5846-4 d 31-8 a 14-8 e 9 e 0 e 9 c 9861
 translation-type: tm+mt
-source-git-commit: a7ddd2b281252bee2686a0fa53ce8da59553df4b
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -16,7 +16,7 @@ L’API Media Collection constitue l’alternative RESTful d’Adobe au kit SDK 
 
    Cette fonctionnalité permet de suivre les médias pendant qu'un utilisateur est hors ligne, grâce au stockage local de données d'événement jusqu'à ce que le périphérique de l'utilisateur renvoie en ligne. (Consultez la rubrique [Suivi du contenu téléchargé](track-downloaded-content.md) pour en savoir plus.)
 
-L’API Media Collection est essentiellement un adaptateur, agissant comme une version côté serveur du kit SDK Media. Cela signifie que certains aspects de la documentation du kit de développement multimédia sont également pertinents pour l'API de collecte de médias. For example, both solutions use the same [Audio and Video Parameters](../metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](../media-reports/media-reports-enable.md)
+L’API Media Collection est essentiellement un adaptateur, agissant comme une version côté serveur du kit SDK Media. Cela signifie que certains aspects de la documentation du kit de développement multimédia sont également pertinents pour l'API de collecte de médias. For example, both solutions use the same [Audio and Video Parameters](/help/metrics-and-metadata/audio-video-parameters.md), and the collected Audio and Video tracking data leads to the same [Reporting and Analysis.](/help/media-reports/media-reports-enable.md)
 
 ## Flux de données de suivi multimédia {#section_pwq_n34_qbb}
 
