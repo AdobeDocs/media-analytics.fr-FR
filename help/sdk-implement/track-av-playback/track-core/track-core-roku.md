@@ -3,7 +3,7 @@ seo-title: Suivi de la lecture principale sur Roku
 title: Suivi de la lecture principale sur Roku
 uuid: a 8 aa 7 b 3 c -2 d 39-44 d 7-8 ebc-b 101 d 130101 f
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 # Suivi de la lecture principale sur Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
->Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](../../../sdk-implement/download-sdks.md).
+>Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuration initiale du suivi**
 
@@ -97,7 +97,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Métadonnées standard**
 
-      [Mise en œuvre de métadonnées standard sur JavaScript](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [Mise en œuvre de métadonnées standard sur JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -105,7 +105,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
       * Référence à l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         See the comprehensive set of available metadata here: [Audio and video parameters](../../../metrics-and-metadata/audio-video-parameters.md)
+         See the comprehensive set of available metadata here: [Audio and video parameters](/help/metrics-and-metadata/audio-video-parameters.md)
    * **Métadonnées personnalisées**
 
       Créez un objet variable pour les variables personnalisées et renseignez les données de ce média. Par exemple :
@@ -182,7 +182,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
    * **Métadonnées vidéo standard**
 
-      [Mise en œuvre de métadonnées standard sur Roku](../../../sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      [Mise en œuvre de métadonnées standard sur Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >L'ajout de l'objet de métadonnées vidéo standard à l'objet media est facultatif.
@@ -267,6 +267,6 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
    >[!TIP]
    >Il peut s'agir de la même source d'événement utilisée à l'étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture vidéo.
 
-* Scénarios de suivi : [Lecture VOD sans publicité](../../../sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Scénarios de suivi : [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Exemple de lecteur inclus dans le SDK Roku pour un exemple de suivi complet
 
