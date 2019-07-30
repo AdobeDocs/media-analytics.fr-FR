@@ -3,7 +3,7 @@ seo-title: Interruption de la vidéo Test 2
 title: Interruption de la vidéo Test 2
 uuid: eeccd 534-63 fd -4 dd 3-b 096-0431 bc 9 a 11 ff
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ---
 
@@ -23,7 +23,7 @@ Vous devez effectuer et enregistrer ces tâches dans l’ordre suivant :
    1. Démarrage de Media Analytics
    1. Démarrage de Heartbeat
    1. Démarrage de l’analyse Heartbeat
-   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Lire la vidéo de contenu principal pendant au moins 5 minutes sans interruption**
 
@@ -31,9 +31,9 @@ Vous devez effectuer et enregistrer ces tâches dans l’ordre suivant :
 
    Lors de la lecture du contenu principal standard, des appels Heartbeat sont envoyés au serveur Heartbeat toutes les 10 secondes.
 
-   For call parameters and metadata, see [Test call details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
 
-   Also see your platform's [Track Ads](../../sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
+   Also see your platform's [Track Ads](/help/sdk-implement/track-ads/track-ads-overview.md) instructions for additonal information about these Ad calls.
 
 1. **Déplacer l’application ou le navigateur en arrière-plan**
 
@@ -45,7 +45,7 @@ Vous devez effectuer et enregistrer ces tâches dans l’ordre suivant :
 
 1. **Lire la vidéo de contenu principal pendant au moins 5 minutes sans interruption**
 
-   For call parameters and metadata, see [Test Call Details.](../../sdk-implement/validation/test-call-details.md)
+   For call parameters and metadata, see [Test Call Details.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Fermer le lecteur vidéo**
 
