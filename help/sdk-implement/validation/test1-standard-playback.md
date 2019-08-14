@@ -3,36 +3,38 @@ seo-title: Test 1 standard
 title: Test 1 standard
 uuid: c 4 b 3 fead -1 b 27-484 b-ab 6 a -39 f 1 ae 0 f 03 f 2
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
 # Test 1 : Lecture standard{#test-standard-playback}
 
-Ce cas de test valide la lecture et le séquencement général et est requis dans le formulaire de demande de certification. Pour télécharger le formulaire de demande de certification, cliquez sur[ Formulaire de demande de certification.](cert_req_form_nielsen.docx)
+Ce cas de test valide la lecture et le séquencement général. Il est obligatoire dans le Formulaire de demande de certification.
 
-Les mises en œuvre vidéo sont composées des types suivants d’appels de suivi :
-* Les appels de démarrage de la vidéo et de la publicité sont envoyés directement au serveur AppMeasurement.
-* Les appels de pulsation Media Analytics (MA) sont envoyés au démarrage et toutes les dix secondes sur le serveur de suivi Adobe VA.
+**Téléchargez le formulaire de demande de certification ici : = = &gt;**  [Formulaire de demande de certification.](cert_req_form.docx)
+
+Les implémentations de médias sont composées des types suivants d'appels de suivi :
+* Les appels Media et Ad Start sont envoyés directement au serveur appmeasurement (Adobe Analytics).
+* Les appels de pulsation Media Analytics sont envoyés au démarrage et toutes les dix secondes (pour le contenu) ou une seconde (pour les publicités) au serveur de suivi Media Analytics.
 
 >[!NOTE]
->Le suivi vidéo se comportera de le même manière sur toutes les plates-formes, de poste de travail comme mobiles.
+>Le suivi des médias se comporte de la même manière sur toutes les plates-formes.
 
-Vous devez effectuer et enregistrer les actions dans l’ordre suivant :
+Vous devez terminer et enregistrer ces actions dans l'ordre suivant :
 
 1. **Charger la page ou l’application**
 
    **Serveurs de suivi** (pour tous les sites Web et les applications mobiles) :
 
-   * **AppMeasurement (Adobe Analytics) :** Un serveur de suivi RDC ou CNAME se résolvant sur un serveur RDC est requis pour le service d’identifiant visiteur Experience Cloud. The analytics tracking server should end in `.sc.omtrdc.net` or be a CNAME.
+   * **Appmeasurement (Adobe Analytics) -** Un serveur de suivi de CRD ou un CNAME qui résout un serveur de suivi RDC est requis pour le service d'identification des visiteurs Experience Cloud. The Analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-   * **Media Analytics (Heartbeats) :** ce serveur contient toujours le format `[namespace].hb.omtrdc.net`, où `[namespace]` est défini par votre société de connexion et fourni par Adobe.
-   Vous devez valider certaines clés et variables universelles pour tous les appels de suivi:
+   * **Media Analytics (Heartbeats) :** ce serveur comporte toujours le format « `[namespace].hb.omtrdc.net`, où `[namespace]` spécifie le nom de votre entreprise. Ce nom est fourni par Adobe.
+   Vous devez valider certaines variables clés universelles dans tous les appels de suivi :
 
-   **Adobe Visitor ID (`mid`) :** La `mid` variable est utilisée pour capturer la valeur définie dans le cookie AMCV. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. Elle se trouve dans les appels appmeasurement et Media Analytics (MA).
+   **Adobe Visitor ID (`mid`) :** La `mid` variable est utilisée pour capturer la valeur définie dans le cookie AMCV. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. Elle est trouvée dans les appels appmeasurement et Media Analytics.
 
-   * **Appel de lecture de Heartbeat**
+   * **Appel de lecture Media Analytics**
 
       | Paramètre | Valeur (exemple) |
       |---|---|
@@ -69,31 +71,31 @@ Vous devez effectuer et enregistrer les actions dans l’ordre suivant :
 
       >[!NOTE]
       >
-      >On VA Start Calls ( `s:event:type=start`) the `mid` values may not be present. Ceci est normal. They may not appear until the VA Play Calls ( `s:event:type=play`).
+      >On VA Start Calls (`s:event:type=start`) the `mid` values may not be present. Ceci est normal. They may not appear until the VA Play Calls ( `s:event:type=play`).
 
       | Paramètre | Valeur (exemple) |
       |---|---|
       | `pev2` | ms_s |
 
 
-1. **Démarrer le lecteur vidéo**
+1. **Démarrage du lecteur multimédia**
 
-   Au démarrage du lecteur vidéo, les appels clés sont envoyés dans l’ordre suivant :
+   Lorsque le lecteur multimédia démarre, les appels clés sont envoyés dans l'ordre suivant :
 
-   1. Démarrage de Video Analytics
+   1. Démarrage de Media Analytics
    1. Démarrage de Heartbeat
    1. Démarrage de l’analyse Heartbeat
-   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md)
+   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d'appel et les métadonnées, voir [Test des détails de l'appel.](/help/sdk-implement/validation/test-call-details.md)
 
 1. **Afficher la coupure publicitaire si possible**
 
    * **Démarrage de publicité**
-   Au démarrage de la publicité vidéo, les appels clés ci-dessous sont envoyés dans l’ordre suivant :
+   Lorsque la publicité multimédia démarre, les appels clés suivants sont envoyés dans l'ordre suivant :
 
-   1. Démarrage de l’analyse de la publicité vidéo
+   1. Démarrage des analyses de publicité multimédia
    1. Démarrage de la publicité Heartbeat
    1. Démarrage de l’analyse de la publicité Heartbeat
-   Les deux premiers appels contiennent des métadonnées et des variables supplémentaires. For call parameters and metadata, see [Test call details.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
+   Les deux premiers appels contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d'appel et les métadonnées, voir [Test des détails de l'appel.](/help/sdk-implement/validation/test-call-details.md#section_wz3_yff_f2b)
 
    * **Lecture de la publicité**
 
@@ -101,7 +103,7 @@ Vous devez effectuer et enregistrer les actions dans l’ordre suivant :
 
    * **Fin de la publicité**
 
-      Au point 100 % sur une publicité vidéo, un appel de fin Heartbeat est envoyé.
+      Au point de 100 % sur une publicité multimédia, un appel Heartbeat Complete est envoyé.
 
 
 
@@ -113,24 +115,24 @@ Vous devez effectuer et enregistrer les actions dans l’ordre suivant :
    >
    >La valeur du curseur de lecture doit rester constante pendant la mise en pause.
 
-1. **Lire la vidéo de contenu principal pendant 10 minutes sans interruption.** **Lecture du contenu **
+1. **Lecture du contenu principal de contenu pendant 10 minutes sans interruption.**  **Lecture du contenu**
 
-   Lors de la lecture du contenu principal standard, des appels Heartbeat sont envoyés au serveur Heartbeat toutes les 10 secondes.
+   Pendant la lecture du contenu principal, les appels de pulsation sont envoyés au serveur Media Analytics toutes les dix secondes.
 
    Remarques :
 
    * La position du curseur de lecteur doit augmenter de 10 à chaque appel de lecture.
    * La valeur `l:event:duration` représente le nombre de millisecondes qui se sont écoulées depuis le dernier appel de suivi, et doit être plus ou moins constante pour chaque appel de 10 secondes.
 
-      For call parameters and metadata, see [Test call details](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b) in *Test Call Details*
+      Pour les paramètres d'appel et les métadonnées, voir [Test des détails de l'appel.](/help/sdk-implement/validation/test-call-details.md#section_u1l_1gf_f2b)
 
-1. **Suspendre la lecture pendant au moins 30 secondes.** Lors de la pause du lecteur vidéo, les appels d’événement de pause sont envoyés toutes les 10 secondes. Une fois la pause terminée, les événements de lecture doivent reprendre.
+1. **Suspendre la lecture pendant au moins 30 secondes.** Lors de la mise en pause du lecteur multimédia, les appels d'événement de pause sont envoyés toutes les 10 secondes. Une fois la pause terminée, les événements de lecture doivent reprendre.
 
-1. **Effectuer une recherche dans/parcourir la vidéo** Lors du défilement du curseur de lecture de vidéo, aucun appel de suivi spécial n’est envoyé. Toutefois, lorsque la lecture vidéo reprend après le défilement, la valeur du curseur de lecture doit refléter la nouvelle position dans le contenu principal.
+1. **Recherche/lecture multimédia.** Lors du défilement de la tête de lecture multimédia, aucun appel de suivi spécial n'est envoyé, toutefois, lorsque la lecture du média reprend après la lecture de la valeur du curseur de lecture, la valeur du curseur de lecture doit refléter la nouvelle position dans le contenu principal.
 
-1. **Effectuer une nouvelle lecture de la vidéo (VOD uniquement)** Lorsqu’une vidéo est lue de nouveau, un nouvel ensemble d’appels de démarrage de vidéo doit être envoyé, comme s’il s’agissait d’un nouvel affichage de vidéo.
+1. **Relecture du support (VOD uniquement).** Lorsque le média est relancé, un nouveau jeu d'appels de démarrage multimédia doit être envoyé, comme s'il s'agissait d'une vue de média Fresh.
 
-1. **Afficher la vidéo suivante dans la liste de lecture** Au démarrage de la vidéo suivante dans une liste de lecture, un nouvel ensemble d’appels de démarrage de vidéo doit être envoyé.
+1. **Affichez le support suivant dans la liste de lecture.** Lors du début du média suivant dans une liste de lecture, un nouveau jeu d'appels de démarrage multimédia doit être envoyé.
 
-1. **Changer de vidéo ou de diffusion** Lors du changement de diffusion en direct, un appel de fin Heartbeat pour la première diffusion ne doit pas être envoyé. Les appels de démarrage de la vidéo et de lecture de la vidéo doivent commencer par le nouveau nom d’affichage et de diffusion et avec les valeurs du curseur de lecture et de durée correctes pour le nouvel affichage.
+1. **Basculer le média ou le flux.** Lors du changement de diffusion en direct, un appel de fin Heartbeat pour la première diffusion ne doit pas être envoyé. Les appels de démarrage de média et les appels play play doivent commencer par le nouveau nom et le nouveau nom de flux et avec les valeurs de curseur de lecture et de durée correctes pour le nouveau programme.
 
