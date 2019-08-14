@@ -3,26 +3,26 @@ seo-title: Présentation de la configuration
 title: Présentation de la configuration
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 
 ---
 
 
-# Setup Overview{#setup-overview}
+# Présentation de la configuration{#setup-overview}
 
 >[!IMPORTANT]
 >
 >Les instructions suivantes s'appliquent aux SDK Media 2. x. Si vous mettez en œuvre une version 1.x du SDK Media, consultez la [Documentation du SDK Media 1.x.](/help/sdk-implement/download-sdks.md) Pour les intégrateurs Primetime, reportez-vous à _la page Primetime Media SDK Documentation_ ci-dessous.
 
 
-## Minimum Platform Version Support {#minimum-platform-version}
+## Prise en charge minimale de la version de plate-forme {#minimum-platform-version}
 
 Le tableau suivant décrit les versions minimales prises en charge pour chaque SDK, à compter du 19 février 2019.
 
 | Système d'exploitation/Navigateur | Version min requise |
 | --- | --- |
 | iOS | iOS 6+ |
-| Android    | Android 5.0 + - Lollipop |
+| Android | Android 5.0 + - Lollipop |
 | Chrome | v 22 + |
 | Mozilla | v 27 + |
 | Safari | v 7 + |
@@ -49,7 +49,7 @@ Suivez les étapes de mise en œuvre suivantes :
    | `ssl` | Indique si les appels doivent être effectués par HTTPS | Non | false |
    | `debugLogging` | Indique si la journalisation de débogage est activée | Non | false |
 
-1. Implement the `MediaHeartbeatDelegate`.
+1. Implémenter la `MediaHeartbeatDelegate`.
 
    |  Nom de méthode  |  Description  | Obligatoire |
    | --- | --- | :---: |
@@ -91,7 +91,7 @@ Suivez les étapes de mise en œuvre suivantes :
    
    //Media Heartbeat Config 
    var mediaConfig = new MediaHeartbeatConfig(); 
-   mediaConfig.trackingServer = "namespace.hb.omtrdc.net"; 
+   mediaConfig.trackingServer = "[your_namespace].hb.omtrdc.net"; 
    mediaConfig.playerName = "HTML5 Basic"; 
    mediaConfig.channel = "Video Channel"; 
    mediaConfig.debugLogging = true; 
@@ -137,14 +137,14 @@ Pour plus d'informations sur les options de serveur de suivi, voir [Renseigner c
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* **Pulsations (Media Analytics)**
-Le format « `[namespace].hb.omtrdc.net`, où »`[namespace]`est toujours défini par votre société de connexion et fourni par Adobe.
+* ** Media Analytics (Heartbeats)**
+Cette fonctionnalité comporte toujours le format « `[your_namespace].hb.omtrdc.net`. La valeur de « `[your_namespace]`specifies votre entreprise » est fournie par Adobe.
 
-## SDK 1.x Documentation {#section_acj_tkk_t2b}
+## Documentation SDK 1. x {#section_acj_tkk_t2b}
 
 | SDK vidéo 1. x vidéo  | Guides du développeur (PDF uniquement) |
 | --- | --- |
-| Android    | [Configuration pour Android ](vhl-dev-guide-v15_android.pdf) |
+| Android | [Configuration pour Android ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Configuration pour Apple TV ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Configuration pour Chromecast ](chromecast_1.x_sdk.pdf) |
 | iOS | [Configuration pour iOS ](vhl-dev-guide-v15_ios.pdf) |
