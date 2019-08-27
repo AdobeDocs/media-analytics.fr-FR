@@ -3,7 +3,7 @@ seo-title: Contenu principal en direct avec suivi séquentiel
 title: Contenu principal en direct avec suivi séquentiel
 uuid: b 03477 b 6-9 be 8-4 b 67-a 5 a 0-4 cef 3 cf 262 ab
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -53,7 +53,7 @@ Il semble presque identique à l’appel Heartbeat Content Start, mais la diffé
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-Lors de la lecture du média, un minuteur envoie une ou plusieurs pulsations toutes les 10 secondes. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
+Lors de la lecture du média, un minuteur envoie une ou plusieurs pulsations toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
 Dans les pulsations du contenu, recherchez certains éléments spécifiques :
 
@@ -75,7 +75,7 @@ Un appel Heartbeat Content Complete est envoyé à l’issue de la lecture d’u
 
 ![](assets/ios-live-noads-multiplesessions.png)
 
-### Android   
+### Android
 
 Voici la commande API prévue :
 
