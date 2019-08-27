@@ -3,7 +3,7 @@ seo-title: Présentation de la configuration
 title: Présentation de la configuration
 uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -121,15 +121,13 @@ Suivez les étapes de mise en œuvre suivantes :
 
 ## Validation {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-Les mises en œuvre multimédia sont composées de deux types d’appels de suivi :
+Les implémentations de suivi Media Analytics génèrent deux types d'appels de suivi :
 
-* Les appels de démarrage du média et de la publicité sont envoyés directement au serveur AppMeasurement.
-* Les appels Heartbeat sont envoyés au serveur de suivi Heartbeat dès le démarrage, toutes les dix secondes pour le contenu, et toutes les secondes pour les publicités.
+* Les appels Media et Ad Start sont envoyés directement au serveur Adobe Analytics (appmeasurement).
+* Les appels de pulsation sont envoyés au serveur de suivi Media Analytics (pulsations), traités et transmis au serveur Adobe Analytics.
 
-Le suivi multimédia fonctionne de la même manière sur toutes les plates-formes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plates-formes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :
-
-* **Appmeasurement (Analytics)**
-Pour plus d'informations sur les options de serveur de suivi, voir [Renseigner correctement les variables trackingserver et trackingserversecure.](https://marketing.adobe.com/resources/help/kb/en_US/analytics/kb/determining-data-center.html)
+* **Serveur
+Adobe Analytics (appmeasurement)** Pour plus d'informations sur les options de serveur, voir [Renseigner correctement les variables trackingserver et trackingserversecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
@@ -137,8 +135,10 @@ Pour plus d'informations sur les options de serveur de suivi, voir [Renseigner c
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Media Analytics (Heartbeats)**
-Cette fonctionnalité comporte toujours le format « `[your_namespace].hb.omtrdc.net`. La valeur de « `[your_namespace]`specifies votre entreprise » est fournie par Adobe.
+* ** Serveur Media Analytics (Heartbeats)**
+Ce format a toujours le format « `[your_namespace].hb.omtrdc.net`. La valeur de « `[your_namespace]`specifies votre entreprise » est fournie par Adobe.
+
+Le suivi multimédia fonctionne de la même manière sur toutes les plates-formes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plateformes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :
 
 ## Documentation SDK 1. x {#section_acj_tkk_t2b}
 
