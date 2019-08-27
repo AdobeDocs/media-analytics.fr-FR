@@ -3,7 +3,7 @@ seo-title: Aperçu
 title: Aperçu
 uuid: 4 d 73 c 47 f-d 0 a 4-4228-9040-d 6432311 c 9 eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -16,7 +16,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Vous pouvez utiliser l'API du lecteur multimédia pour identifier les variables liées à la qualité de service (qos) et le suivi des erreurs. Voici les éléments clés du suivi de la qualité de l’expérience :
 
-## Player events {#player-events}
+## Evénements du lecteur {#player-events}
 
 ### À chaque changement de mesure QoS :
 
@@ -71,12 +71,3 @@ if (e.type == "bitrate_change") {
 };
 ```
 
-## Validation {#section_F3174831408947A893F7E8C15659E5AA}
-
-### Changement de débit binaire
-
-À chaque changement de débit, un appel `bitrate_change` Heartbeat sera envoyé.
-
-### Erreur
-
-Lors d’une erreur du lecteur, un appel d’erreur Heartbeat est envoyé incluant la valeur d’erreur.
