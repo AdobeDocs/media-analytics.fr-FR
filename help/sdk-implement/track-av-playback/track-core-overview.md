@@ -3,12 +3,12 @@ seo-title: Aperçu du suivi
 title: Aperçu du suivi
 uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# Aperçu du suivi{#tracking-overview}
 
 >[!IMPORTANT]
 >
@@ -22,7 +22,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 * Créez l’objet multimédia.
 * Renseignez les métadonnées.
-* Call `trackSessionStart`; For example: `trackSessionStart(mediaObject, contextData)`
+* Appel `trackSessionStart`; Par exemple : `trackSessionStart(mediaObject, contextData)`
 
 ### Au démarrage du média
 
@@ -59,7 +59,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 >[!TIP]
 >
->La position du curseur de lecture est définie dans le code de configuration et de configuration. For more information about `getCurrentPlayheadTime`, see [Overview: General Implementation Guidelines.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>La position du curseur de lecture est définie dans le code de configuration et de configuration. Pour plus d'informations, `getCurrentPlayheadTime`voir [Présentation : Instructions générales sur l'implémentation.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Mise en œuvre {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -234,32 +234,5 @@ if (e.type == “buffered”) {
 
 ## Validation {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-### Démarrage de contenu
+Pour plus d'informations sur la validation de votre implémentation, voir [Validation.](/help/sdk-implement/validation/validation-overview.md)
 
-Au démarrage d’un lecteur multimédia, ces appels clés sont envoyés dans l’ordre suivant :
-
-1. Démarrage de Media Analytics
-1. Démarrage de Heartbeat
-1. Démarrage de l’analyse Heartbeat
-
-Les appels 1 et 2 contiennent des variables de métadonnées supplémentaires pour les formats personnalisés et standard.
-
-### Lecture du contenu
-
-Lors de la lecture du contenu principal standard, des appels Heartbeat sont envoyés au serveur Heartbeat toutes les 10 secondes.
-
-### Fin de contenu
-
-Au point 100 %, sur un contenu ou à une limite de programme sur une diffusion linéaire, un appel de fin Heartbeat est envoyé.
-
-### Pause du contenu
-
-Lorsque le lecteur est mis en pause, des appels d’événement de mise en pause du lecteur sont envoyés toutes les 10 secondes. Après la pause, les événements de lecture reprennent normalement.
-
-### Défilement/recherche de contenu
-
-Lors du défilement du curseur de lecture, aucun appel de suivi spécial n’est envoyé. Toutefois, lorsque la lecture reprend après le défilement, la valeur du curseur de lecture doit refléter la nouvelle position dans le contenu principal.
-
-### Mémoire tampon de contenu
-
-Lorsque le lecteur multimédia procède à la mise en mémoire tampon, des appels d’événement de mémoire tampon du lecteur sont envoyés toutes les 10 secondes. Après la mise en mémoire tampon, les événements de lecture reprennent normalement.
