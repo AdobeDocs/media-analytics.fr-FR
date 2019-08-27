@@ -3,7 +3,7 @@ seo-title: Aperçu
 title: Aperçu
 uuid: 1607798 b-c 6 ef -4 d 60-8 e 40-e 958 c 345 b 09 c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -14,9 +14,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-La lecture de publicité inclut le suivi des coupures publicitaires, des démarrages de publicité, des fins de publicité et des publicités ignorées. Utilisez l'API du lecteur multimédia pour identifier les événements clés du lecteur et renseigner les variables publicitaires obligatoires et facultatives. See the comprehensive list of metadata here: [Ad parameters.](/help/metrics-and-metadata/ad-parameters.md)
+La lecture de publicité inclut le suivi des coupures publicitaires, des démarrages de publicité, des fins de publicité et des publicités ignorées. Utilisez l'API du lecteur multimédia pour identifier les événements clés du lecteur et renseigner les variables publicitaires obligatoires et facultatives. Voir la liste exhaustive des métadonnées ici : [Paramètres de publicité.](/help/metrics-and-metadata/ad-parameters.md)
 
-## Player events {#player-events}
+## Evénements du lecteur {#player-events}
 
 
 ### Démarrage de la coupure publicitaire
@@ -46,7 +46,7 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
 
 * Appelez `trackEvent` pour la fin de la coupure publicitaire.
 
-## Implement ad tracking {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Mise en œuvre du suivi des publicités {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### Constantes de suivi des publicités
 
@@ -100,7 +100,7 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
 
 >[!IMPORTANT]
 >
->Make sure you do NOT increment the content player playhead (`l:event:playhead`) during ad playback (`s:asset:type=ad`). Si vous le faites, les mesures Durée de la visite du contenu seront compromises.
+>Veillez à n'INCRÉMENTER PAS la tête de lecture du lecteur de contenu (`l:event:playhead`) pendant la lecture de la publicité (`s:asset:type=ad`). Si vous le faites, les mesures Durée de la visite du contenu seront compromises.
 
 L'exemple de code suivant utilise le SDK JavaScript 2. x pour un lecteur de médias HTML 5.
 
@@ -139,32 +139,4 @@ if (e.type == "ad break complete") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.AdBreakComplete); 
 }; 
 ```
-
-## Validation {#section_5F1783F5FE2644F1B94B0101F73D57EB}
-
-### Démarrage de publicité
-
-Au démarrage d’une lecture de publicité spécifique, ces appels clés sont envoyés dans l’ordre suivant :
-
-1. Démarrage de l’analyse de la publicité vidéo
-1. Démarrage de la publicité Heartbeat
-1. Démarrage de l’analyse Heartbeat
-
-Les appels 1 et 2 contiennent des variables de métadonnées supplémentaires pour les formats personnalisés et standard.
-
-### Lecture de la publicité
-
-Lors de la lecture de la publicité, les appels de lecture de publicité Heartbeat sont envoyés au serveur Heartbeat toutes les secondes.
-
-### Publicité terminée
-
-Au point 100 % sur une publicité, un appel de fin de publicité Heartbeat est envoyé.
-
-### Ignorer la publicité
-
-Lorsqu’une publicité est ignorée, aucun événement n’est envoyé. Les appels de suivi n’incluent donc pas les informations de publicité.
-
->[!TIP]
->
->Aucun appel unique n'est envoyé au début de la coupure publicitaire et au saut de publicité terminé.
 
