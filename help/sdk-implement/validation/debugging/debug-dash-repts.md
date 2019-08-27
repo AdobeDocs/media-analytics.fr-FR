@@ -3,7 +3,7 @@ seo-title: Tableaux de bord et rapports de débogage
 title: Tableaux de bord et rapports de débogage
 uuid: 8 e 6 f 6245-d 8 bd -4329-89 e 1-4 c 5595 e 04 ec 5
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
@@ -14,7 +14,7 @@ Adobe Debug fournit des rapports en temps réel, ce qui vous permet de visualise
 
 Pour la certification, ces rapports peuvent être partagés en copiant simplement l’URL et en envoyant le lien, par exemple au sein d’un ticket ZenDesk.
 
->[!TIP]
+>[!NOTE]
 >
 >Une seule session peut être active à la fois. La session active peut être ouverte à partir du tableau de bord.
 
