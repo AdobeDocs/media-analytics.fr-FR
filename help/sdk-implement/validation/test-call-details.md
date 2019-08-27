@@ -3,37 +3,37 @@ seo-title: Détails des appels de test
 title: Détails des appels de test
 uuid: d 3 a 0 e 62 f -2 fc 3-413 d-ac 56-adbbc 9 b 3 e 983
 translation-type: tm+mt
-source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
+source-git-commit: d694ced982140c1f8020c0be304492aee0495cdc
 
 ---
 
 
 # Détails des appels de test{#test-call-details}
 
-## Démarrer le lecteur vidéo {#section_qts_xff_f2b}
+## Démarrage du lecteur multimédia {#start-the-media-player}
 
-### Appel de démarrage de Media Analytics
+### Appel Démarrer Adobe Analytics (appmeasurement) {#aa-start-call}
 
-| Paramètre | Valeur (exemple)   |
+| Paramètre |  Valeur (exemple)  |
 |---|---|
 | `pev2` | ms_s |
 | `a.media.friendlyName` | Episode Title |
-| `a.media.name` | 123456 |
-| `a.media.length` | 120 |
+| _**`a.media.name`**_ | _**123456**_ |
+| _**`a.media.length`**_ | _**120**_ |
 | `a.media.playerName` | HTML5 |
-| `a.media.view` | true |
+| _**`a.media.view`**_ | _**true**_ |
 | `a.contentType` | vod |
-| `custom.[value]` | Champs de métadonnées personnalisés |
-| `a.media.[value]` | Champs de métadonnées standard |
+| _**`custom.[value]`**_ | _**Champs de métadonnées personnalisés**_ |
+| _**`a.media.[value]`**_ | _**Champs de métadonnées standard**_ |
 
 **Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La durée des diffusions linéaires doit être définie sur la meilleure estimation pour le programme actuel.
 
-### Métadonnées standard dans l'appel start de Media Analytics
+### Métadonnées standard dans Adobe Analytics (appmeasurement) Appel start {#std-metadata-aa}
 
-| Paramètre | Valeur (exemple)   |
+| Paramètre |  Valeur (exemple)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -50,56 +50,36 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Appel de démarrage de Heartbeat
+### Métadonnées personnalisées dans Adobe Analytics (appmeasurement) Appel start {#custom-metadata-aa}
 
-| Paramètre | Valeur (exemple)   |
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| `custom.metadataA` | value |
+| `custom.metadataB` | value |
+
+### Media Analytics (pulsations) Appel Démarrer {#ma-start-call}
+
+| Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:event:type` | start |
-| `l:event:playhead` | 0 |
+| _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
-| `s:meta:custom.[value]` | Champs de métadonnées personnalisés |
-| `s:meta:a.media.[value]` | Champs de métadonnées standard |
-
-### Métadonnées de médias dans l'appel start de Media Analytics
-
-| Paramètre | Valeur (exemple)   |
-|---|---|
-| `custom.metadataA` | value |
-| `custom.metadataB` | value |
+| _**`s:meta:custom.[value]`**_ | _**Champs de métadonnées personnalisés**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Champs de métadonnées standard**_ |
 
 **Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La position du curseur de lecture pour les diffusions linéaires au démarrage de la vidéo doit être définie sur le nombre de secondes écoulées depuis le démarrage du programme actuel, et non sur 0.
 
-### Appel de démarrage de l’analyse Heartbeat
+### Métadonnées standard dans Media Analytics (pulsations) Appel Démarrer {#std-metadata-ma}
 
-| Paramètre | Valeur (exemple)   |
-|---|---|
-| `s:event:type` | aa_start |
-| `l:event:playhead` | 0 |
-| `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
-| `s:asset:video_id` | 123456 |
-| `l:asset:length` | 120 |
-| `s:stream:type` | vod |
-| `s:asset:type` | main |
-
-### Métadonnées de médias dans l'appel start Heartbeat
-
-| Paramètre | Valeur (exemple)   |
-|---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
-
-### Métadonnées standard dans l’appel de démarrage de Heartbeat
-
-| Paramètre | Valeur (exemple)   |
+| Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:meta:a.media.show` | Programme |
 | `s:meta:a.media.season` | 6 |
@@ -116,57 +96,59 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
+### Métadonnées personnalisées dans Media Analytics (pulsations) Appel Démarrer {#custom-metadata-ma}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | value |
+
+### Appel de démarrage d'Adobe Analytics (pulsations) {#ma-aa-start}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| _**`s:event:type`**_ | _**aa_start**_ |
+| `l:event:playhead` | 0 |
+| `l:event:duration` | 4 |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
+| `l:asset:length` | 120 |
+| `s:stream:type` | vod |
+| `s:asset:type` | main |
+
 **Remarques :**
 
-* Cet appel indique que la bibliothèque Heartbeat a demandé qu’un appel d’analyse pev2=ms_s soit envoyé au serveur d’analyse.
+* Cet appel indique que le SDK multimédia a demandé qu'un appel Adobe Analytics `pev2=ms_s` soit envoyé au serveur Adobe Analytics (appmeasurement).
 * Cet appel ne contient pas de métadonnées personnalisées.
 
-## Afficher la lecture de la publicité {#section_wz3_yff_f2b}
+## Afficher la lecture de la publicité {#view-ad-playback}
 
-### Appel de démarrage de publicité Media Analytics
+### Appel de démarrage de publicité Adobe Analytics (appmeasurement) {#aa-ad-start-call}
 
-| Paramètre | Valeur (exemple)   |
+| Paramètre |  Valeur (exemple)  |
 |---|---|
-| `pev2` | msa_s |
+| _**`pev2`**_ | _**msa_s**_ |
 | `a.media.name` | 123456 |
-| `a.media.ad.name` | 9378 |
+| _**`a.media.ad.name`**_ | _**9378**_ |
 | `a.media.ad.friendlyName` | Video_VPAID_DFA |
 | `a.media.ad.podFriendlyName` | preroll |
-| `a.media.ad.length` | 15 |
+| _**`a.media.ad.length`**_ | _**15**_ |
 | `a.media.ad.playerName` | HTML5 |
 | `a.media.ad.pod` | c27aaf3ff8224bb6b9ebfe1b2e79073d_1 |
 | `a.media.ad.podPosition` | 1 |
 | `a.media.ad.podSecond` | 0.0 |
-| `a.media.ad.view` | True |
-| `custom.[value]` | Champs de métadonnées |
-| `a.media.[value]` | Champs de métadonnées standard |
+| _**`a.media.ad.view`**_ | _**True**_ |
+| _**`custom.[value]`**_ | _**Champs de métadonnées**_ |
+| _**`a.media.[value]`**_ | _**Champs de métadonnées standard**_ |
 
-**Remarque :** D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
+**Remarques :**
 
-### Appel de démarrage de la publicité Heartbeat
+* D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
+* La durée de la publicité doit être définie sur -1 si elle n’est pas disponible au démarrage de la publicité.
 
-| Paramètre | Valeur (exemple)   |
-|---|---|
-| `s:event:type` | start |
-| `l:event:playhead` | 0 |
-| `l:event:duration` | 4 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:length` | 120 |
-| `s:stream:type` | vod |
-| `s:asset:type` | ad |
-| `s:meta:custom.[value]` | Champs de métadonnées personnalisés |
-| `s:meta:a.media.[value]` | Champs de métadonnées standard |
+### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
 
-### Métadonnées de médias dans l'appel de démarrage de publicité Media Analytics
-
-| Paramètre | Valeur (exemple)   |
-|---|---|
-| `custom.metadata` | value |
-| `custom.metadata` | value |
-
-### Métadonnées standard dans l'appel de démarrage de publicité Media Analytics
-
-| Paramètre | Valeur (exemple)   |
+| Paramètre |  Valeur (exemple)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
@@ -183,33 +165,35 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
+### Métadonnées personnalisées dans l'appel de démarrage de publicité d'Adobe Analytics (appmeasurement) {#custom-metadata-aa-ad-start}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| `custom.metadata` | value |
+| `custom.metadata` | value |
+
+### Appel de démarrage de publicité Media Analytics (pulsations) {#ma-ad-start-call}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| _**`s:event:type`**_ | _**start**_ |
+| `l:event:playhead` | 0 |
+| `l:event:duration` | 4 |
+| `s:asset:ad_id` | 9378 |
+| _**`l:asset:length`**_ | _**120**_ |
+| `s:stream:type` | vod |
+| _**`s:asset:type`**_ | _**ad**_ |
+| _**`s:meta:custom.[value]`**_ | _**Champs de métadonnées personnalisés**_ |
+| _**`s:meta:a.media.[value]`**_ | _**Champs de métadonnées standard**_ |
+
 **Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La durée de la publicité doit être définie sur -1 si elle n’est pas disponible au démarrage de la publicité.
 
-### Appel de démarrage de la publicité de l’analyse Heartbeat
+### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
 
-| Paramètre | Valeur (exemple)   |
-|---|---|
-| `s:event:type` | aa_ad_start |
-| `l:event:playhead` | 0 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| `s:asset:type` | ad |
-
-### Métadonnées de médias dans l'appel start Heartbeat ad start
-
-| Paramètre | Valeur (exemple)   |
-|---|---|
-| `s:meta:custom.metadata` | value |
-| `s:meta:custom.metadata` | value |
-
-### Métadonnées standard dans l’appel de démarrage de la publicité Heartbeat
-
-| Paramètre | Valeur (exemple)   |
+| Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:meta:a.media.show` | Programme |
 | `s:meta:a.media.season` | 6 |
@@ -226,43 +210,89 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
+### Métadonnées personnalisées dans l'appel de démarrage de publicité de Media Analytics (pulsations) {#custom-metadata-ma-ad-start}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| `s:meta:custom.metadata` | value |
+| `s:meta:custom.metadata` | value |
+
+### Appel de démarrage de publicité Adobe Analytics (pulsations) {#ma-aa-ad-start-call}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| _**`s:event:type`**_ | _**aa_ad_start**_ |
+| `l:event:playhead` | 0 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| `s:asset:type` | ad |
+
+### Appel Ad Play (pulsations) Media Analytics {#ma-ad-play-call}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| _**`s:event:type`**_ | _**play**_ |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| _**`s:asset:type`**_ | _**ad**_ |
+
+### Appel de mise en pause de Media Analytics (pulsations) {#ma-ad-pause-call}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| _**`s:event:type`**_ | _**pause**_ |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| _**`s:asset:type`**_ | _**ad**_ |
+
+### Appel d'Adobe Analytics Ad Complete à Media Analytics (pulsations) {#ma-aa-ad-complete-call}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| _**`s:event:type`**_ | _**complete**_ |
+| `l:event:playhead` | 15 |
+| `l:event:duration` | 0 |
+| `s:asset:ad_id` | 9378 |
+| `l:asset:ad_length` | 15 |
+| `s:stream:type` | vod |
+| _**`s:asset:type`**_ | _**ad**_ |
+
+## Lire le contenu principal {#play-main-content}
+
+### Appel de lecture Media Analytics (pulsations) {#ma-play-call}
+
+| Paramètre |  Valeur (exemple)  |
+|---|---|
+| `s:event:type` | play |
+| _**`l:event:playhead`**_ | _**29**_ |
+| _**`l:event:duration`**_ | _**10189**_ |
+| `s:asset:name` | Episode Title |
+| `s:asset:video_id` | 123456 |
+| `l:asset:length` | 120 |
+| `s:stream:type` | vod |
+| `s:asset:type` | main |
+
 **Remarques :**
 
-* D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
-* La durée de la publicité doit être définie sur -1 si elle n’est pas disponible au démarrage de la publicité.
+* La position du curseur de lecture doit être incrémentée de 10 secondes avec chaque appel play.
+* La valeur `l:event:duration` représente le nombre de millisecondes qui se sont écoulées depuis le dernier appel de suivi, et doit être plus ou moins constante pour chaque appel de 10 secondes.
 
-### Appel de fin de la publicité Heartbeat
+## Suspendre le contenu principal {#pause-main-content}
 
-| Paramètre | Valeur (exemple)   |
+### Media Analytics (pulsations) Appel Pause {#ma-pause-call}
+
+| Paramètre |  Valeur (exemple)  |
 |---|---|
-| `s:event:type` | complete (terminé) |
-| `l:event:playhead` | 15 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| `s:asset:type` | ad |
-
-### Appel de lecture de la publicité Heartbeat
-
-| Paramètre | Valeur (exemple)   |
-|---|---|
-| `s:event:type` | play |
-| `l:event:playhead` | 15 |
-| `l:event:duration` | 0 |
-| `s:asset:ad_id` | 9378 |
-| `l:asset:ad_length` | 15 |
-| `s:stream:type` | vod |
-| `s:asset:type` | ad |
-
-## Lire le contenu principal {#section_u1l_1gf_f2b}
-
-### Appel de lecture de Heartbeat
-
-| Paramètre | Valeur (exemple)   |
-|---|---|
-| `s:event:type` | play |
-| `l:event:playhead` | 29 |
+| _**`s:event:type`**_ | _**pause**_ |
+| _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
 | `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
@@ -270,8 +300,4 @@ source-git-commit: 1b785378750349c4f316748d228754cb64f70bca
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
 
-**Remarques :**
-
-* La position du curseur de lecteur doit augmenter de 10 à chaque appel de lecture.
-* La valeur `l:event:duration` représente le nombre de millisecondes qui se sont écoulées depuis le dernier appel de suivi, et doit être plus ou moins constante pour chaque appel de 10 secondes.
 
