@@ -3,7 +3,7 @@ seo-title: Contenu principal en direct
 title: Contenu principal en direct
 uuid: e 92 e 99 f 4-c 395-48 aa -8 a 30-cbdd 2 f 5 fc 07 c
 translation-type: tm+mt
-source-git-commit: 9dbd621e10ba198b9331e5a7579fcbd3b6173ecd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -40,7 +40,7 @@ Un grand nombre de ces valeurs que vous pouvez voir dans les appels Adobe Analyt
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-Lors de la lecture du média, un minuteur envoie une ou plusieurs pulsations toutes les 10 secondes. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
+Lors de la lecture du média, un minuteur envoie une ou plusieurs pulsations (ou plages) toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
 Dans les pulsations du contenu, recherchez certains éléments spécifiques :
 
@@ -59,19 +59,19 @@ Pour les flux en direct, vous devez définir la tête de lecture sur un décalag
 
 ### Au début
 
-For LIVE media, when a user starts playing the stream, you need to set `l:event:playhead` to the current offset, in seconds. Contrairement à VOD, vous pouvez définir la tête de lecture sur 0.
+Pour les médias en DIRECT, lorsqu'un utilisateur commence à lire le flux, vous devez définir `l:event:playhead` le décalage actuel, en secondes. Contrairement à VOD, vous pouvez définir la tête de lecture sur 0.
 
-For example, say a LIVE streaming event starts at midnight and runs for 24 hours (`a.media.length=86400`; `l:asset:length=86400`). Supposons ensuite qu'un utilisateur commence à lire ce flux en direct à 12 h 00. In this scenario, you should set `l:event:playhead` to 43200 (12 hours into the stream).
+Par exemple, supposons qu'un événement de diffusion en flux continu DIRECT commence à minuit et s'exécute pendant 24 heures (`a.media.length=86400`; `l:asset:length=86400`). Supposons ensuite qu'un utilisateur commence à lire ce flux en direct à 12 h 00. Dans ce scénario, vous devez définir `l:event:playhead` 43200 (12 heures dans le flux).
 
 ### En pause
 
-La même logique de « tête de lecture dynamique » appliquée au début de la lecture doit être appliquée lorsqu'un utilisateur interrompt la lecture. When the user returns to playing the LIVE stream, you must set the `l:event:playhead` value to the new offset playhead position, _not_ to the point where the user paused the LIVE stream.
+La même logique de « tête de lecture dynamique » appliquée au début de la lecture doit être appliquée lorsqu'un utilisateur interrompt la lecture. Lorsque l'utilisateur revient à la lecture du flux en direct, vous devez définir `l:event:playhead` la valeur sur la position de la nouvelle position du curseur de lecture, _et non_ sur le point où l'utilisateur a mis en pause le flux EN DIRECT.
 
 ## Exemple de code {#section_vct_j2j_x2b}
 
 ![](assets/live-content-playback.png)
 
-### Android   
+### Android
 
 Voici la commande API prévue :
 
