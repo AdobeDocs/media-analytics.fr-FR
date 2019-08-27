@@ -3,7 +3,7 @@ seo-title: Aperçu
 title: Aperçu
 uuid: 3 fe 32425-5 e 2 a -4886-8 fea-d 91 d 15671 bb 0
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
@@ -34,7 +34,7 @@ Le suivi des chapitres comprend les démarrages de chapitre, les fins de chapitr
 
 * L’appel   `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Implement chapter tracking {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## Mise en œuvre du suivi des chapitres {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
 
 1. Identifiez le moment où a lieu l’événement de début de chapitre et créez l’instance `ChapterObject` à l’aide des informations de chapitre.
 
@@ -85,18 +85,3 @@ if (e.type == "chapter skip") {
 }; 
 ```
 
-## Validation {#section_07EC2811BE3249249494596BFE9BF869}
-
-### Début du chapitre
-
-Au début d'une lecture de chapitre individuelle, un appel clé est envoyé :
-
-* Heartbeat chapter start (Cet appel contient des variables de métadonnées de chapitre supplémentaires.)
-
-### Chapitre terminé
-
-À la fin de la limite du chapitre, un appel de fin de chapitre Heartbeat est envoyé.
-
-### Ignorer le chapitre
-
-Lorsqu’un chapitre est ignoré, un appel de chapitre ignoré Heartbeat est envoyé.
