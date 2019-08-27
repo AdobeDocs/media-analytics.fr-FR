@@ -3,14 +3,14 @@ seo-title: Débogage du SDK
 title: Débogage du SDK
 uuid: a 5972 d 87-c 593-4 b 4 f-a 56 f-dca 6 e 25268 e 1
 translation-type: tm+mt
-source-git-commit: 6b6caa59ac9ea14a42337e2f133ecb31f30491c7
+source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 ---
 
 
 # Débogage du SDK{#sdk-debugging}
 
-Vous pouvez activer et désactiver la journalisation. Le kit de développement multimédia fournit un mécanisme de suivi/journalisation étendu mis en place dans toute la pile de suivi vidéo. You can enable or disable this logging by setting the `debugLogging` flag on the Config object.
+Vous pouvez activer et désactiver la journalisation. Le kit de développement multimédia fournit un mécanisme étendu de traçage/journalisation dans la pile de suivi multimédia. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## Exemple de code pour la journalisation du débogage
 
@@ -62,7 +62,7 @@ ADBMobile().setDebugLogging(true)
 ADBMobile.config.setDebugLogging(true)
 ```
 
-**Utilisation d’Adobe Bloodhound pour tester les applications Chromecast -**
+## Utilisation d’Adobe Bloodhound pour tester les applications Chromecast
 
 Pendant le développement des applications, Bloodhound permet d’afficher les appels de serveur localement et éventuellement de transférer les données vers les serveurs de collecte Adobe. Pour obtenir plus d’informations sur Bloodhound, consultez les guides suivants :
 
@@ -73,7 +73,7 @@ Pendant le développement des applications, Bloodhound permet d’afficher les a
 >
 >Depuis le 30 avril 2017, Adobe Bloodhound est un coucher de soleil. Depuis le 1er mai 2017, plus aucune amélioration n’y est apportée et aucune assistance d’ingénierie supplémentaire ou assistance Adobe Expert Care n’est fournie.
 
-### Messages du journal
+## Messages du journal
 
 Les messages du journal suivent ce format :
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag :** nom du sous-composant qui a émis le message du journal (généralement le nom de classe)
 * **message :** message de trace
 
-Vous pouvez utiliser le résultat des journaux de la bibliothèque Video Heartbeat pour vérifier la mise en œuvre. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
+Vous pouvez utiliser les journaux de la bibliothèque Media SDK pour vérifier l'implémentation. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
