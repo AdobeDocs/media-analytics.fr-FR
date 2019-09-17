@@ -1,29 +1,29 @@
 ---
 seo-title: Guide de mise en œuvre d’un lien personnalisé
 title: Guide de mise en œuvre d’un lien personnalisé
-uuid: 83315 e 73-20 ca -4 db 5-9 d 43-33 daade 45 a 13
+uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: fe245e766ab8ee48a8e8aaf247cfd552fed816e9
 
 ---
 
 
 # Guide de mise en œuvre d’un lien personnalisé{#custom-link-implementation-guide}
 
-Le suivi vidéo personnalisé utilise le [suivi manuel des liens à l’aide du code de lien personnalisé](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) dans le code `appMeasurement` d’Analytics. Le plus souvent, il est utilisé sur les plates-formes et les appareils nécessitant peu de mesures vidéo.
+Custom Video Tracking utilizes [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Le plus souvent, il est utilisé sur les plates-formes et les appareils nécessitant peu de mesures vidéo.
 
-* In JavaScript: `s.tl()` function
+* Dans JavaScript : la `s.tl()` fonction
 * Dans les applications mobiles : [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 
 * In Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
-**Conditions requises :**
+## Conditions
 
 * Accès aux événements et aux données de l’API du lecteur vidéo
 * Possibilité d’ajouter des scripts en cas d’utilisation du kit SDK Analytics
 * Possibilité d’ajouter des balises de suivi (scripts personnalisés ou code en dur) en cas d’utilisation de l’API Data Insertion
 
-**Métadonnées :**
+## Métadonnées
 
 * Des métadonnées peuvent être ajoutées aux données de lien de n’importe quel appel de suivi.
 * Remember to update the `linkTrackVars` and `linkTrackEvents`
@@ -44,7 +44,7 @@ if (e.type == "ended") {
 };
 ```
 
-**Pourquoi utiliser un lien personnalisé :**
+## Pourquoi utiliser le lien personnalisé
 
 * Peu de conditions requises
 * Fonctionne sur toutes les plates-formes, même NoScript
@@ -53,7 +53,7 @@ if (e.type == "ended") {
 * Contrôle total sur tous les aspects des données vidéo
 * Suppression du lien vers le lecteur échantillon
 
-**Exemple de lecteur JavaScript pour HTML5**
+## Exemple de lecteur JavaScript pour HTML5
 
 ```javascript
 <script type="text/javascript"> 
