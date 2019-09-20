@@ -1,9 +1,9 @@
 ---
 seo-title: Suivi de la qualité de l’expérience sur Roku
 title: Suivi de la qualité de l’expérience sur Roku
-uuid: a 8 b 242 ab-da 3 c -4297-9 eef-f 0 b 9684 ef 56 a
+uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 
 ---
 
@@ -14,15 +14,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-## QOS d'implémentation
+## Mise en oeuvre de QOS
 
-1. Identify when the bitrate changes during media playback, and use the `mediaUpdateQoS` API to update the QoS info on the Media SDK.
+1. Déterminez le moment où le débit change lors de la lecture du média et utilisez l’ `mediaUpdateQoS` API pour mettre à jour les informations de qualité de service sur le SDK multimédia.
 
    Variables QoSObject :
 
    >[!TIP]
    >
-   >Ces variables ne sont requises que si vous effectuez le suivi de qos.
+   >Ces variables ne sont requises que si vous effectuez le suivi de la qualité de service.
 
    | Variable | Description | Obligatoire |
    | --- | --- | :---: |
@@ -55,15 +55,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
     ```
     -->
 
-1. When playback switches bitrates, call `trackEvent(BitrateChange)` to notify the Media SDK that the Bitrate changed.
+1. Lorsque la lecture change de débit, appelez `trackEvent(BitrateChange)` pour informer le SDK multimédia que le débit a changé.
 
    ```
-   ADBMobile().trackMediaEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
+   ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
    ```
 
    >[!NOTE]
    >
-   >You need to call `updateQoSObject` with the updated bitrate value.
+   >Vous devez appeler `updateQoSObject` avec la valeur de débit mise à jour.
 
    <!--
     ```
@@ -80,5 +80,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Le suivi des erreurs du lecteur multimédia n'arrête pas la session de suivi des médias. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >Le suivi des erreurs du lecteur multimédia n’arrête pas la session de suivi multimédia. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
