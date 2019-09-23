@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: ef6e37791cd365b12d964b2a06831a563f605104
+source-git-commit: dd88b69bdbb33e48585f32de5a6a78fbbdc4bd2a
 
 ---
 
@@ -37,10 +37,13 @@ Le service Federated Analytics fournit un système pour le partage de données A
 
 * **Contrat de conseil Adobe :** Pour la configuration initiale des règles fédérées entre le récepteur et l’expéditeur, il est recommandé de travailler avec des services de conseil pour examiner les données et créer l’accord de partage de données.
 
+## Téléchargement du formulaire d’analyses fédérées
+
+**Download the current version of the form here:**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf)
+
 ## Processus {#section_byb_kb3_vbb}
 
 1. L’expéditeur et le récepteur collaborent ensemble pour remplir le formulaire d’accord des règles de fédération.
-1. Download the current version of the form here: [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf)
 1. Le formulaire d’accord sur les règles fédérées contient des champs spéciaux pour notre équipe d’ingénieurs et ne doit être modifié qu’avec Adobe Acrobat. [Téléchargez Acrobat gratuitement.](https://get.adobe.com/reader/)
 1. Les services de conseil fournissent au récepteur un fichier de données échantillon comportant les données des lecteurs de l’expéditeur afin de confirmer que des règles de partage de données correctes sont définies, à condition que des fichiers de données soient disponibles.
 1. L’expéditeur et le récepteur s’assurent que l’accord de partage de données répondra à toutes les exigences contractuelles entre les deux parties.
