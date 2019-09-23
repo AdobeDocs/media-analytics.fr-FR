@@ -1,29 +1,29 @@
 ---
 product: Media Analytics
 audience: utilisateur final
-user-guide-title: Adobe Analytics pour l'audio et la vidéo
+user-guide-title: Adobe Analytics for Audio and Video
 translation-type: tm+mt
-source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
+source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 
 ---
 
 
 # Adobe Analytics for Audio and Video {#using}
 
-+ [Mesure audio et vidéo dans Adobe Analytics](media-overview.md)
++ [Measuring Audio and Video in Adobe Analytics](media-overview.md)
 + Measurement Options {#measurement-options}
    + Media Module Milestone Tracking {#mm-milestone-tracking}
       + [Aperçu de Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
-      + [Migration de jalons vers les analyses de médias](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [Migrer l’jalon vers Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [Migration de Milestone vers les liens personnalisés](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Lien personnalisé dans Analytics {#cl-in-aa}
-      + [Guide d'implémentation des liens personnalisés](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + [Guide de mise en oeuvre des liens personnalisés](measurement-options/cl-in-aa/cl-impl-guide.md)
 + Présentation des analyses audio et vidéo {#intro-to-ava}
    + [Conditions préalables](intro-to-ava/prereqs.md)
    + Chemins de mise en œuvre {#implementation-paths}
       + [Aperçu](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Côté client](intro-to-ava/implementation-paths/client-side-path.md)
-      + [Lancement d'Adobe Experience Platform](intro-to-ava/implementation-paths/launch-path.md)
+      + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
       + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
    + [Activation d’Audience Manager](intro-to-ava/am-enablement.md)
 + SDK Media Analytics {#sdk-implement}
@@ -39,26 +39,26 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
       + [Aperçu](sdk-implement/track-av-playback/track-core-overview.md)
       + Track Core Audio and Video Playback {#track-core}
          + [Suivi de la lecture principale sur Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
-         + [Suivi de la lecture principale sur ios](sdk-implement/track-av-playback/track-core/track-core-ios.md)
+         + [Suivi de la lecture principale sur iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + [Suivi de la lecture principale sur JavaScript](sdk-implement/track-av-playback/track-core/track-core-js.md)
          + [Suivi de la lecture principale sur Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [Suivi de la lecture principale sur Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Track Buffering {#track-buffering}
-         + [Suivi de la mise en mémoire tampon sur Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
-         + [Suivi de la mise en mémoire tampon sur ios](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
-         + [Suivi de la mise en mémoire tampon sur JavaScript](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
-         + [Suivi de la mise en mémoire tampon sur la chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Suivi de la mise en mémoire tampon sur Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Mise en mémoire tampon du suivi sur Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
+         + [Mise en mémoire tampon du suivi sur iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
+         + [Mise en mémoire tampon du suivi sur JavaScript](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
+         + [Track Buffering on Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [Track Buffering on Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
-         + [Suivi de la recherche sur Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
-         + [Suivi de la recherche sur ios](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
-         + [Suivi de la recherche sur JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
-         + [Suivi des recherches sur chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Suivre la recherche sur Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
+         + [Track Seeking on Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Track Seeking on iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
+         + [Track Seeking on JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+         + [Track Seeking on Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [Recherche de pistes sur Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + Mise en œuvre de métadonnées standard {#impl-std-metadata}
          + [Mise en œuvre de métadonnées standard sur Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Mise en œuvre de métadonnées standard sur iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-         + [Clés de métadonnées ios](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + [Clés de métadonnées iOS](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
          + [Mise en œuvre de métadonnées standard sur JavaScript](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
          + [Mise en œuvre de métadonnées standard sur Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [Paramètres de métadonnées standard - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
@@ -67,9 +67,9 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
    + Suivi des publicités {#track-ads}
       + [Aperçu](sdk-implement/track-ads/track-ads-overview.md)
       + [Suivi des publicités sur Android](sdk-implement/track-ads/track-ads-android.md)
-      + [Suivi des publicités sur ios](sdk-implement/track-ads/track-ads-ios.md)
+      + [Suivi des publicités sur iOS](sdk-implement/track-ads/track-ads-ios.md)
       + [Suivi des publicités sur JavaScript](sdk-implement/track-ads/track-ads-js.md)
-      + [Suivi des publicités sur la chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
+      + [Suivi des publicités sur Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Suivi des publicités sur Roku](sdk-implement/track-ads/track-ads-roku.md)
       + Mise en œuvre de métadonnées de publicité standard {#impl-std-ad-metadata}
          + [Mise en œuvre de métadonnées de publicité standard sur Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
@@ -79,23 +79,23 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
    + Suivi des chapitres et des segments {#track-chapters}
       + [Aperçu](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Suivi des chapitres et des segments sur Android](sdk-implement/track-chapters/track-chapters-android.md)
-      + [Suivi des chapitres et des segments sur ios](sdk-implement/track-chapters/track-chapters-ios.md)
-      + [Suivi des chapitres et des segments sur JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
-      + [Suivi des chapitres et des segments sur la chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
+      + [Track Chapters and Segments on iOS](sdk-implement/track-chapters/track-chapters-ios.md)
+      + [Track Chapters and Segments on JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
+      + [Suivi des chapitres et des segments sur Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [Suivi des chapitres et des segments sur Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + Suivi de la qualité de l’expérience {#track-qos}
       + [Aperçu](sdk-implement/track-qos/track-qos-overview.md)
-      + [Assurer le suivi de la qualité de l'expérience sur Android](sdk-implement/track-qos/track-qos-android.md)
-      + [Suivre la qualité de l'expérience sur ios](sdk-implement/track-qos/track-qos-ios.md)
-      + [Suivre la qualité de l'expérience sur JavaScript](sdk-implement/track-qos/track-qos-js.md)
-      + [Suivre la qualité de l'expérience sur la chromie](sdk-implement/track-qos/track-qos-chromecast.md)
-      + [Suivre la qualité de l'expérience sur Roku](sdk-implement/track-qos/track-qos-roku.md)
+      + [Suivi de la qualité de l’expérience sur Android](sdk-implement/track-qos/track-qos-android.md)
+      + [Suivi de la qualité de l’expérience sur iOS](sdk-implement/track-qos/track-qos-ios.md)
+      + [Suivi de la qualité de l’expérience sur JavaScript](sdk-implement/track-qos/track-qos-js.md)
+      + [Qualité du suivi de l'expérience sur le chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
+      + [Suivi de la qualité de l’expérience sur Roku](sdk-implement/track-qos/track-qos-roku.md)
    + Track Errors {#track-errors}
       + [Aperçu](sdk-implement/track-errors/track-errors-overview.md)
       + [Suivi des erreurs sur Android](sdk-implement/track-errors/track-errors-android.md)
-      + [Suivi des erreurs sur ios](sdk-implement/track-errors/track-errors-ios.md)
+      + [Suivi des erreurs sur iOS](sdk-implement/track-errors/track-errors-ios.md)
       + [Suivi des erreurs sur JavaScript](sdk-implement/track-errors/track-errors-js.md)
-      + [Suivi des erreurs sur la chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
+      + [Suivi des erreurs sur Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
       + [Suivi des erreurs sur Roku](sdk-implement/track-errors/track-errors-roku.md)
    + [Exclusion et confidentialité](sdk-implement/opt-out-privacy.md)
    + Tracking Scenarios {#tracking-scenarios}
@@ -113,7 +113,7 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
    + Validation {#validation}
       + [Aperçu de la validation](sdk-implement/validation/validation-overview.md)
       + [Test 1 : Lecture standard](sdk-implement/validation/test1-standard-playback.md)
-      + [Test 2 : Interruption de média](sdk-implement/validation/test2-media-interrupt.md)
+      + [Test 2 : Interruption des médias](sdk-implement/validation/test2-media-interrupt.md)
       + [Détails de l'appel de test](sdk-implement/validation/test-call-details.md)
       + [Descriptions des paramètres Heartbeat](sdk-implement/validation/heartbeat-params.md)
       + Débogage {#debugging}
@@ -124,7 +124,7 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
    + Analytics in OTT Apps {#analytics-with-ott}
       + [Suivi des états de l’application](sdk-implement/analytics-with-ott/track-app-states.md)
       + [Suivi des actions de l’application](sdk-implement/analytics-with-ott/track-app-actions.md)
-      + [Définir l'utilisateur - Identifiants](sdk-implement/analytics-with-ott/set-user-ids.md)
+      + [Définition des ID utilisateur](sdk-implement/analytics-with-ott/set-user-ids.md)
       + [OTT et Audience Manager](sdk-implement/analytics-with-ott/ott-am.md)
       + [OTT et Experience Cloud](sdk-implement/analytics-with-ott/ott-experience-cloud.md)
    + Guide pas à pas {#cookbook}
@@ -132,12 +132,12 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
       + [Résolution des appels main:play apparaissant entre les publicités](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [Reprise des sessions inactives](sdk-implement/cookbook/resuming-inactive.md)
       + [Suivi dans SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
-      + [SDK et différences de lancement](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
+      + [Différences entre le SDK et le lancement](sdk-implement/cookbook/sdk-vs-launch-qoe.md)
    + Media Analytics 1.x to 2.x Migration {#va-1x-to-2x}
       + [Présentation de la migration](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [Comparaison de code  : 1.x vers 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [Conversion de l’API 1.x vers 2.x](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ API de collection multimédia (restful) {#media-collection-api}
++ Media Collection API (RESTful) {#media-collection-api}
    + [Aperçu](media-collection-api/mc-api-overview.md)
    + Référence d’API {#mc-api-ref}
       + [Requête Sessions](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -172,13 +172,13 @@ source-git-commit: fece711a1b58f90f834bfc12ecc35191b6c6755d
 + Reporting and Analysis {#media-reports}
    + [Activation des rapports sur les médias](media-reports/media-reports-enable.md)
    + Media Default Reports {#media-default-reports}
-      + [Présentation des rapports par défaut](media-reports/media-default-reports/default-reports-overview.md)
+      + [Default Reports Overview](media-reports/media-default-reports/default-reports-overview.md)
       + [Présentation du média](media-reports/media-default-reports/media-reports-overview.md)
       + [Détails du média](media-reports/media-default-reports/media-reports-detail.md)
       + [Tranche horaire du média](media-reports/media-default-reports/media-reports-daypart.md)
       + [Visionneuses simultanées de médias](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [Obtention des données du rapport JSON sur les visionneuses simultanées](media-reports/media-default-reports/get-concurrent-json.md)
-   + [Modèles de l'espace de travail multimédia](media-reports/media-workspace-templates.md)
-+ [Federated Analytics](federated-analytics.md)
+   + [Media Workspace Templates](media-reports/media-workspace-templates.md)
++ [Federated Analytics](data-sharing/federated-analytics.md)
 + Ressources supplémentaires {#additional-resources}
    + [Mises à jour de la documentation](additional-resources/doc-updates.md)
