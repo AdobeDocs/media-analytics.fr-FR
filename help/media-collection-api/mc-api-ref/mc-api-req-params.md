@@ -1,9 +1,9 @@
 ---
 seo-title: Paramètres de requête
 title: Paramètres de requête
-uuid: f 83 e 9 ef 1-803 d -4152-a 6 c 7-acaa 325036 b 9
+uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ---
 
@@ -12,25 +12,25 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Données d’analyse
 
-| Clé de requête  | Obligatoire | Définir sur... |  Description  |
+| Request Key  | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | O | `sessionStart` | URL de votre serveur Adobe Analytics |
 | `analytics.reportSuite` | O | `sessionStart` | ID identifiant vos données de rapport d’analyse |
 | `analytics.enableSSL` | N | `sessionStart` | True ou false pour activer SSL |
-| `analytics.visitorId` | N | `sessionStart` | L'ID de visiteur Adobe est un ID personnalisé que vous pouvez utiliser dans plusieurs applications Adobe. The Heartbeat `visitorId` equals the Analytics `VID.` |
+| `analytics.visitorId` | N | `sessionStart` | The Adobe Visitor ID is a custom ID you can use across multiple Adobe applications. La pulsation `visitorId` est égale à Analytics `VID.` |
 
 ## Données du visiteur
 
-| Clé de requête  | Obligatoire | Définir sur... |  Description  |
+| Request Key  | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | O | `sessionStart` | Identifiant d’entreprise Experience Cloud ; identifie votre organisation dans l’écosystème Adobe Experience Cloud |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | Il s'agit de l'utilisateur Experience Cloud - id (ECID). Dans la plupart des scénarios, il s'agit de l'identifiant que vous devez utiliser pour identifier un utilisateur. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. Bien que techniquement requis, ce paramètre est nécessaire pour accéder à la famille d'applications Experience Cloud. |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps. |
 | `visitor.aamLocationHint` | N | `sessionStart` | Fournit les données edge Adobe Audience Manager |
 | `appInstallationId` | N | `sessionStart` | L’ID appInstallationId identifie de manière unique l’application et l’appareil |
 
 ## Données du contenu
 
-| Clé de requête  | Obligatoire | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.id` | O | `sessionStart` | Identifiant unique du contenu |
 | `media.name` | N | `sessionStart` | Nom du contenu lisible par l’homme |
@@ -38,12 +38,12 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `media.contentType` | O | `sessionStart` | Format de la diffusion (peut correspondre à n’importe quelle chaîne ; quelques valeurs recommandées sont "live", "VOD" ou "Linear") |
 | `media.playerName` | O | `sessionStart` | Nom du lecteur responsable du rendu du contenu |
 | `media.channel` | O | `sessionStart` | Canal de distribution du contenu. Il peut s’agir d’un nom d’application mobile ou d’un nom de site Web, un nom de propriété. |
-| `media.resume` | N | `sessionStart` | Indique si un utilisateur reprend une session précédente (contrairement au démarrage d'une nouvelle session). |
+| `media.resume` | N | `sessionStart` | Indicates whether or not a user is resuming a previous session (as opposed to starting a new session) |
 | `media.sdkVersion` | N | `sessionStart` | Version SDK utilisée par le lecteur |
 
 ## Métadonnées standard du contenu
 
-| Clé de requête  | Obligatoire | Définir sur... |  Description  |
+| Request Key  | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | Nom du programme ou de la série |
 | `media.season` | N | `sessionStart` | Numéro de la saison à laquelle le programme ou la série appartient |
@@ -64,7 +64,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Données de publicité
 
-| Clé de requête  | Obligatoire | Définir sur... |  Description  |
+| Request Key  | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | Nom convivial de la coupure publicitaire |
 | `media.ad.podIndex` | O | `adBreakStart` | Index de la capsule publicitaire dans la vidéo |
@@ -77,7 +77,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Métadonnées standard de la publicité
 
-| Clé de requête  | Obligatoire | Définir sur... |  Description  |
+| Request Key  | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | Entreprise ou marque dont le produit apparaît dans la publicité |
 | `media.ad.campaignId` | N | `adStart` | ID de la campagne publicitaire |
@@ -88,7 +88,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Données du chapitre
 
-| Clé de requête  | Obligatoire | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.chapter.index` | O | `chapterStart` | Identifie la position du chapitre dans le contenu |
 | `media.chapter.offset` | O | `chapterStart` | Seconde dans la lecture à laquelle le chapitre commence |
@@ -97,7 +97,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Données de qualité
 
-| Clé de requête  | Obligatoire | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | Quelconque | Débit binaire de la diffusion |
 | `media.qoe.droppedFrames` | N | Quelconque | Nombre d’images perdues dans la diffusion |
@@ -112,13 +112,13 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->Media Analytics (MA) est intégré à la famille d'applications Experience Cloud (Adobe Analytics, Audience Manager, Target, etc.). Vous avez besoin d’un Experience Cloud ID pour accéder à ces applications. _L'ECID est ce que vous devez utiliser pour identifier les utilisateurs dans la plupart des scénarios._
+>Media Analytics (MA) est intégré à la famille d’applications Experience Cloud (Adobe Analytics, Audience Manager, Target, etc.). Vous avez besoin d’un Experience Cloud ID pour accéder à ces applications. _The ECID is what you should use to identify users in most scenarios._
 
 ### appInstallationId
 
-* **Si vous **ne transmettez pas`appInstallationId`de valeur -** le serveur principal MA ne génère plus de MCID, mais cela dépendra d'Adobe Analytics. La recommandation d’Adobe est d’envoyer un MCID s’il est disponible, ou une valeur `appInstallationId` (ainsi que la valeur `marketingCloudOrgId` encore obligatoire) pour que l’API Media Collection génère le MCID et l’envoie sur tous les appels.
+* **Si vous *ne transmettez pas*de`appInstallationId`valeur -** le serveur principal MA ne génère plus de MCID, mais compte sur Adobe Analytics pour ce faire. La recommandation d’Adobe est d’envoyer un MCID s’il est disponible, ou une valeur `appInstallationId` (ainsi que la valeur `marketingCloudOrgId` encore obligatoire) pour que l’API Media Collection génère le MCID et l’envoie sur tous les appels.
 
-* ***Si*vous transmettez`appInstallationId`la valeur -** le MCID *peut être* généré par l'arrière-plan MA, si vous transmettez des valeurs pour `appInstallationId` et les `marketingCloudOrgId` paramètres (requis). Si vous transmettez la valeur `appInstallationId` vous-même, vous devez conserver sa valeur côté client. Elle doit être propre à l’application sur un appareil et doit être permanente tant que l’application n’est pas réinstallée.
+* **Si vous *transmettez*`appInstallationId`la valeur -** Le MCID *peut être* généré par le serveur principal MA, si vous transmettez des valeurs pour `appInstallationId` et les paramètres (requis) . `marketingCloudOrgId` Si vous transmettez la valeur `appInstallationId` vous-même, vous devez conserver sa valeur côté client. Elle doit être propre à l’application sur un appareil et doit être permanente tant que l’application n’est pas réinstallée.
 
 >[!NOTE]
 >
@@ -131,16 +131,16 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 ### visitor.marketingCloudOrgId
 
-In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/federated-analytics.md))
+In addition to being necessary for MCID generation when that is not provided, this parameter is also used as the value for the publisher ID (based on which Media Analytics performs [federation rule matching.](/help/data-sharing/federated-analytics.md))
 
-### Utilisateur hérité Analytics - id (aid) et Utilisateur déclaré - Identifiants (customerids)
+### Identifiant utilisateur hérité (aid) d’Analytics et ID utilisateur déclaré (ID client)
 
-* **analytics. aid :**
+* **analytics.aid:**
 
-   La valeur de cette clé doit être une chaîne qui représente l'utilisateur hérité Analytics - id
-* **visitor. customerids :**
+   La valeur de cette clé doit être une chaîne représentant l’ID utilisateur hérité d’Analytics.
+* **visitor.customerIDs:**
 
-   La valeur de cette clé doit être un objet du format suivant :
+   La valeur de cette clé doit être un objet au format suivant :
 
    ```js
    "<<insert your ID name here>>": {  
@@ -153,7 +153,7 @@ Notez que la valeur `visitor.customerIDs` peut avoir un nombre quelconque d’ob
 
 ### visitor.aamLocationHint
 
-Ce paramètre indique qu'Adobe Audience Manager (AAM) Edge serait accès lorsqu'Adobe Analytics envoie les données client à Audience Manager. Si vous ne transmettez pas ce paramètre, Adobe le code en dur sur 1. Ceci est particulièrement important lorsque les utilisateurs finaux tendent à utiliser leurs appareils à des emplacements géographiquement distants (par exemple, l’Est ou l’Ouest des États-Unis, l’Europe, l’Asie). Dans le cas contraire, les données utilisateur seront diffusées sur plusieurs edges AAM.
+Ce paramètre indique le bord Adobe Audience Manager (AAM) qui sera atteint lorsque Adobe Analytics enverra les données client à Audience Manager. Si vous ne transmettez pas ce paramètre, Adobe le code en dur sur 1. Ceci est particulièrement important lorsque les utilisateurs finaux tendent à utiliser leurs appareils à des emplacements géographiquement distants (par exemple, l’Est ou l’Ouest des États-Unis, l’Europe, l’Asie). Dans le cas contraire, les données utilisateur seront diffusées sur plusieurs edges AAM.
 
 ### media.resume
 
