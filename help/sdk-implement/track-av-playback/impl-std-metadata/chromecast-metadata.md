@@ -1,7 +1,7 @@
 ---
 seo-title: Clés de métadonnées Chromecast
 title: Clés de métadonnées Chromecast
-uuid: c 446 ad 41-51 b 8-46 d 6-9 bc 1-abfae 866023 f
+uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -45,7 +45,7 @@ Les métadonnées de vidéo et de publicité standard peuvent être définies re
 | ID du site | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | URL de l’élément créatif | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Sample implementations for Chromecast {#section_wvy_bdn_w2b}
+## Exemples d’implémentation pour Chromecast {#section_wvy_bdn_w2b}
 
 ### Vidéo
 
