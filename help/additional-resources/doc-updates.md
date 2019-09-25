@@ -1,7 +1,7 @@
 ---
 seo-title: Mises à jour de la documentation
 title: Mises à jour de la documentation
-uuid: 1 f 3 e 48 df -83 b 6-418 c -8 cf 7-d 79466481 f 79
+uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
@@ -15,9 +15,8 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 ## Dernière mise à jour : 7 mars 2019 {#March-2019-update}
 
-* Cette mise à jour concernait principalement la version 2.2 du SDK Media sur les plateformes JavaScript et OTT.
-* La version 2.2 du SDK Media sur les plateformes JavaScript et OTT fournit la même prise en charge que
-celle décrite ci-dessous pour les plates-formes ios et Android (mise à jour du 1 er novembre 2018).
+* Cette mise à jour concernait principalement la version 2.2 du SDK média sur les plateformes JavaScript et OTT.
+* La version 2.2 du SDK multimédia sur les plateformes JavaScript et OTT fournit la même prise en charge que celle décrite ci-dessous pour les plates-formes iOS et Android (mise à jour du 1er novembre 2018).
 
 ## Dernière mise à jour : 1er novembre 2018 {#November-2018-update}
 
@@ -39,7 +38,7 @@ celle décrite ci-dessous pour les plates-formes ios et Android (mise à jour du
 ## Mise à jour : 10 octobre 2018 {#October-2018-update}
 
 * La structure du document a été repensée dans la section Mise en œuvre du SDK, en combinant les guides de mise en œuvre individuels des plates-formes (qui étaient presque identiques) en une seule section Mise en œuvre du SDK, avec des exemples de suivi propres aux plates-formes présentés dans des sous-sections au sein des rubriques communes relatives au suivi.
-* Les fichiers ont été renommés afin d’anticiper la migration vers un nouveau système de documents. Tous les préfixes DITA (c_, r_, t_) indiquant le concept, la référence et les types de rubrique de tâche respectivement) ont été supprimés. Tous les traits de soulignement ('_') ont été remplacés par des traits d’union ('-'). En outre, les noms de fichiers sont désormais plus proches des titres des rubriques.
+* Les fichiers ont été renommés afin d’anticiper la migration vers un nouveau système de documents. Tous les préfixes DITA ( c_, r_, t_ ) indiquant respectivement les types concept, référence et rubrique de tâche) ont été éliminés. Tous les traits de soulignement ('_') ont été remplacés par des traits d’union ('-'). En outre, les noms de fichiers sont désormais plus proches des titres des rubriques.
 * Mises à jour des rubriques générales Validation et Certification.
 * Nouveau contenu d’introduction, notamment une présentation des options de mesure et des mises à jour des prérequis, des chemins de mise en œuvre et de l’activation d’Audience Manager.
 * Mises à jour des sections Mesures et métadonnées et Rapports et analyses, reflétant l’ajout de fonctionnalités d’analyse audio.
