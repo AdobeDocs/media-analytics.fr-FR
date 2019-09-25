@@ -1,7 +1,7 @@
 ---
 seo-title: Clés de métadonnées iOS
 title: Clés de métadonnées iOS
-uuid: 8 eb 90111-c 9 dd -4 ca 7-9766-91530 a 8 ae 6 cf
+uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 translation-type: tm+mt
 source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
@@ -14,7 +14,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 De `ADBStandardMetadataKeys.h`:
 
-## Clés de métadonnées vidéo
+## Touches de métadonnées vidéo
 
 | Nom de constante | Description | Type |
 |---|---|---|
@@ -47,7 +47,7 @@ De `ADBStandardMetadataKeys.h`:
 | `ADBAudioMetadataKeyPUBLISHER` | Ressource | Audio |
 | `ADBAudioMetadataKeySTATION` | Genre | Audio |
 
-## Clés de métadonnées publicitaires
+## Touches de métadonnées publicitaires
 
 | Nom de constante | Description | Type |
 |---|---|---|
