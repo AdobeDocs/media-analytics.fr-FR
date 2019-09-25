@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi dans SceneGraph (Roku)
 title: Suivi dans SceneGraph (Roku)
-uuid: fa 85 e 546-c 79 b -4 df 4-8 c 03-d 6593 fa 296 d 5
+uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -68,7 +68,7 @@ Le pont de connecteur est conçu pour effectuer les opérations suivantes :
 |  | `getPrivacyStatus` | API SceneGraph permettant d’obtenir l’état de confidentialité du kit SDK ADBMobile. |
 |  | Pour plus d’informations, reportez-vous à la section État de désinscription/confidentialité du kit SDK hérité. |  |
 |  |  |  |
-|  **Analytics** |  |  |
+| **Analytics** |  |  |
 |  | `trackState` | API SceneGraph permettant de suivre l’état sur le kit SDK ADBMobile. |
 |  | `trackAction` | API SceneGraph permettant de suivre l’action sur le kit SDK ADBMobile. |
 |  | `trackingIdentifier` | API SceneGraph permettant d’obtenir un identifiant de suivi à partir du kit SDK ADBMobile. |
@@ -108,14 +108,14 @@ Le pont de connecteur est conçu pour effectuer les opérations suivantes :
 | Nom de constante | Description |
 |---|---|
 | `API_RESPONSE` | Used to retrieve the response object from `adbmobileTask` node's `adbmobileApiResponse` field |
-| `DEBUG_LOGGING` | Used as `apiName` for `getDebugLogging` |
-| `PRIVACY_STATUS` | Used as `apiName` for `getPrivacyStatus` |
-| `TRACKING_IDENTIFIER` | Used as `apiName` for `trackingIdentifier` |
-| `USER_IDENTIFIER` | Used as `apiName` for `userIdentifier` |
-| `VISITOR_MARKETING_CLOUD_ID` | Used as `apiName` for `visitorMarketingCloudID` |
-| `AUDIENCE_VISITOR_PROFILE` | Used as `apiName` for `audienceVisitorProfile` |
-| `AUDIENCE_DPID` | Used as `apiName` for `audienceDpid` |
-| `AUDIENCE_DPUUID` | Used as `apiName` for `audienceDpuuid` |
+| `DEBUG_LOGGING` | Utilisé comme `apiName` pour `getDebugLogging` |
+| `PRIVACY_STATUS` | Utilisé comme `apiName` pour `getPrivacyStatus` |
+| `TRACKING_IDENTIFIER` | Utilisé comme `apiName` pour `trackingIdentifier` |
+| `USER_IDENTIFIER` | Utilisé comme `apiName` pour `userIdentifier` |
+| `VISITOR_MARKETING_CLOUD_ID` | Utilisé comme `apiName` pour `visitorMarketingCloudID` |
+| `AUDIENCE_VISITOR_PROFILE` | Utilisé comme `apiName` pour `audienceVisitorProfile` |
+| `AUDIENCE_DPID` | Utilisé comme `apiName` pour `audienceDpid` |
+| `AUDIENCE_DPUUID` | Utilisé comme `apiName` pour `audienceDpuuid` |
 
 ### Nœud adbmobileTask
 
@@ -136,26 +136,22 @@ Le pont de connecteur est conçu pour effectuer les opérations suivantes :
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> Non valide </td>
-<td> En lecture seule Toutes les API exécutées sur adobemobilesdk renvoient des réponses sur ce champ. Enregistrez un rappel pour écouter les mises à jour de ce champ afin de recevoir les objets de réponse. Le format de l’objet de réponse est le suivant :  
+<td> Lecture seule Toutes les API exécutées sur AdobeMobileSDK renverront des réponses sur ce champ. Enregistrez un rappel pour écouter les mises à jour de ce champ afin de recevoir les objets de réponse. Le format de l’objet de réponse est le suivant :  
 <codeblock>
-response = {« apiname » : &lt; Scenegraphconstants.
- API_ NAME &gt; 
- « Returnvalue : &lt; API_ RESPONSE &gt;} 
+response = { "apiName" : &lt;SceneGraphConstants.
+               API_NAME&gt; "returnValue : &lt;API_RESPONSE&gt; } 
 </codeblock>
-Une instance de cet objet de réponse sera envoyée pour tout appel API sur AdobeMobileSDK qui doit renvoyer une valeur conformément au guide de référence d’API. Par exemple, un appel d'API pour visitormarketingcloudid () renvoie l'objet de réponse suivant : 
+Une instance de cet objet de réponse sera envoyée pour tout appel API sur AdobeMobileSDK qui doit renvoyer une valeur conformément au guide de référence d’API. Par exemple, un appel d’API pour visitorMarketingCloudID() renvoie l’objet de réponse suivant : 
 <codeblock>
-response = {« apiname » : m.
- adbmobileconstants.
- VISITOR_ MARKETING_ CLOUD_ ID 
- « Returnvalue : « 07050 x 25671 x 33760 x 72644 x 14 »} 
+response = { "apiName" : m.
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID "returnValue : "07050x25671x33760x72644x14" } 
 </codeblock>
 OU, les données de réponse peuvent également être non valides : 
 <codeblock>
-response = { 
- « Apiname » : m.
- adbmobileconstants.
- VISITOR_ MARKETING_ CLOUD_ ID 
- « Returnvalue : invalid} 
+response = { "apiName" : m.
+              adbmobileConstants.
+              VISITOR_MARKETING_CLOUD_ID "returnValue : Invalid } 
 </codeblock>
 </td>
 </tr>
@@ -167,13 +163,11 @@ response = {
 #### `getADBMobileConnectorInstance`
 
 Signature API: `ADBMobile().getADBMobileConnectorInstance()`\
-Input: `adbmobileTask`
-Return Type: `ADBMobileConnector`
+Input : Type de `adbmobileTask`retour : `ADBMobileConnector`
 
 #### `sgConstants`
 
-API Signature: `ADBMobile().sgConstants()`
-Input: None\
+Signature API : `ADBMobile().sgConstants()`Entrée : Aucun\
 Type de retour: `SceneGraphConstants`
 
 >[!NOTE]
@@ -186,7 +180,7 @@ Type de retour: `SceneGraphConstants`
 | Contrôle de version | `version` | Constante permettant de récupérer les informations de version AdobeMobileLibrary |
 | Confidentialité/désinscription | `PRIVACY_STATUS_OPT_IN` | Constante pour l’état de confidentialité choisi |
 |  | `PRIVACY_STATUS_OPT_OUT` | Constante pour l’état de confidentialité abandonné |
-| Constantes MediaHeartbeat | Consultez les constantes de cette page : <br/><br/>[Méthodes Media Heartbeat.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilisation de ces constantes avec les API mediaheartbeat |
+| Constantes MediaHeartbeat | Consultez les constantes de cette page : <br/><br/>[Méthodes Media Heartbeat.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilisation de ces constantes avec les API MediaHeartbeat |
 | Métadonnées standard | Reportez-vous aux constantes de cette page : <br/><br/>[Paramètres de métadonnées standard.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Utilisez ces constantes pour joindre des métadonnées de type vidéo/publicitaire standard dans des API MediaHeartbeat |
 
 Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary are accessible *as is* in the SceneGraph enviromnent because they do not use any Brightscript components that are unavailable in SceneGraph nodes. Pour plus d’informations sur ces méthodes, consultez le tableau ci-dessous :
@@ -203,7 +197,7 @@ Globally defined utility `MediaHeartbeat` APIs on the legacy AdobeMobileLibrary 
 
 ## Implémentation {#section_dbz_ydz_y2b}
 
-1. **Télécharger la bibliothèque Roku -** Téléchargez la [dernière bibliothèque Roku.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
+1. **Téléchargez la bibliothèque Roku -** Téléchargez la [dernière bibliothèque Roku.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.0)
 
 1. **Configuration de votre environnement de développement**
 
