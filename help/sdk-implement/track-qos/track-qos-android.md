@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi de la qualité de l’expérience sur Android
 title: Suivi de la qualité de l’expérience sur Android
-uuid: 81 ff 3939-48 a 6-45 c 1-8837-ddfa 33490559
+uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,7 +14,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 >
 >Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-## Qos d'implémentation
+## Mise en oeuvre de QoS
 
 1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Ces variables ne sont requises que si vous envisagez de suivre qos.
+   >Ces variables ne sont requises que si vous prévoyez d’effectuer le suivi de la qualité de service.
 
    | Variable | Description | Obligatoire |
    | --- | --- | :---: |
@@ -52,5 +52,5 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >Mettez à jour l'objet qos et appelez l'événement de changement de débit lors de chaque changement de débit. Ceci produit les données QoS les plus précises.
+   >Mettez à jour l’objet QoS et appelez l’événement de changement de débit à chaque changement de débit. Ceci produit les données QoS les plus précises.
 
