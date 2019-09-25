@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi de la mise en mémoire tampon sur Chromecast
 title: Suivi de la mise en mémoire tampon sur Chromecast
-uuid: f 6 fa 3 a 1 a-d 7 de -4293-bd 11-ebe 9 e 130 badd
+uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `BufferStart` | Constante permettant d’effectuer le suivi de l’événement Début de la mémoire tampon |
 | `BufferComplete` | Constante permettant d’effectuer le suivi de l’événement Fin de la mémoire tampon |
 
-## Mise en œuvre de la mise en mémoire tampon
+## Mise en oeuvre de la mise en mémoire tampon
 
 1. Prêtez attention aux événements de mise en mémoire tampon de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferStart`[ : trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
