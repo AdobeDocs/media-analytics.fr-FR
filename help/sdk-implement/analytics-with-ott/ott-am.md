@@ -1,7 +1,7 @@
 ---
 seo-title: OTT et Audience Manager
 title: OTT et Audience Manager
-uuid: d 228 db 63-59 c 2-4624-99 c 6-6 b 49 dc 17 f 48 e
+uuid: d228db63-59c2-4624-99c6-6b49dc17f48e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
