@@ -1,7 +1,7 @@
 ---
 seo-title: Configuration d’Android
 title: Configuration d’Android
-uuid: 3 ffe 3276-a 104-4182-9220-038729 e 9 f 3 d 5
+uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,10 +12,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Conditions préalables
 
-* **Obtention des paramètres de configuration valides pour le kit Media SDK**
-Ces paramètres peuvent être obtenus auprès d'un représentant Adobe après avoir configuré votre compte Analytics.
-* **Mise en œuvre d'adbmobile pour Android dans votre application**
-Pour plus d'informations sur la documentation du SDK mobile Adobe, voir [SDK Android 4. x pour solutions Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
+* **Obtention de paramètres de configuration valides pour le SDK** Media Ces paramètres peuvent être obtenus auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
+* **Mise en oeuvre d’ADBMobile pour Android dans votre application** Pour plus d’informations sur la documentation du SDK mobile Adobe, voir SDK [Android 4.x pour les solutions Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/android/)
 * **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
    * *Une API pour vous abonner aux événements de lecteur* : Le kit SDK Media vous oblige à appeler une série d’API simples lorsque des événements ont lieu dans votre lecteur.
    * *Une API fournissant des informations sur le lecteur* : Ces informations comprennent des détails tels que le nom du média et la position du curseur de lecture.
