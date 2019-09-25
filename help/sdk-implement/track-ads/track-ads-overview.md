@@ -1,7 +1,7 @@
 ---
 seo-title: Aperçu
 title: Aperçu
-uuid: 1607798 b-c 6 ef -4 d 60-8 e 40-e 958 c 345 b 09 c
+uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,17 +12,17 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour l’implémentation à l’aide des SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-La lecture de publicité inclut le suivi des coupures publicitaires, des démarrages de publicité, des fins de publicité et des publicités ignorées. Utilisez l'API du lecteur multimédia pour identifier les événements clés du lecteur et renseigner les variables publicitaires obligatoires et facultatives. Voir la liste exhaustive des métadonnées ici : [Paramètres de publicité.](/help/metrics-and-metadata/ad-parameters.md)
+La lecture de publicité inclut le suivi des coupures publicitaires, des démarrages de publicité, des fins de publicité et des publicités ignorées. Utilisez l’API du lecteur multimédia pour identifier les événements clés du lecteur et renseigner les variables publicitaires obligatoires et facultatives. Consultez la liste complète des métadonnées ici : Paramètres [de publicité.](/help/metrics-and-metadata/ad-parameters.md)
 
-## Evénements du lecteur {#player-events}
+## Événements du lecteur {#player-events}
 
 
-### Démarrage de la coupure publicitaire
+### Au démarrage de la coupure publicitaire
 
 >[!NOTE]
->Inclusion de preroll
+>Y compris les pré-roulements
 
 * Créez une instance d’objet `adBreak` pour la coupure publicitaire. Par exemple : `adBreakObject`.
 
@@ -46,7 +46,7 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
 
 * Appelez `trackEvent` pour la fin de la coupure publicitaire.
 
-## Mise en œuvre du suivi des publicités {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Mise en oeuvre du suivi des publicités {#section_83E0F9406A7743E3B57405D4CDA66F68}
 
 ### Constantes de suivi des publicités
 
@@ -58,7 +58,7 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
 | `AdComplete` | Constante permettant d’effectuer le suivi de l’événement Fin de la publicité |
 | `AdSkip` | Constante permettant d’effectuer le suivi de l’événement Saut de publicité |
 
-### Procédure de mise en œuvre
+### Etapes de mise en oeuvre
 
 1. Identifiez le moment où la limite de coupure publicitaire commence, y compris preroll, et créez un `AdBreakObject` à l’aide des informations de coupure publicitaire.
 
@@ -100,9 +100,9 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
 
 >[!IMPORTANT]
 >
->Veillez à n'INCRÉMENTER PAS la tête de lecture du lecteur de contenu (`l:event:playhead`) pendant la lecture de la publicité (`s:asset:type=ad`). Si vous le faites, les mesures Durée de la visite du contenu seront compromises.
+>Veillez à NE PAS incrémenter le curseur de lecture du lecteur de contenu (`l:event:playhead`) pendant la lecture de la publicité (`s:asset:type=ad`). Si vous le faites, les mesures Durée de la visite du contenu seront affectées.
 
-L'exemple de code suivant utilise le SDK JavaScript 2. x pour un lecteur de médias HTML 5.
+L’exemple de code suivant utilise le SDK JavaScript 2.x pour un lecteur de médias HTML5.
 
 ```js
 /* Call on ad break start */ 
