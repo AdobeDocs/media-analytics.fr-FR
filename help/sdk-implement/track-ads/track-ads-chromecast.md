@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi des publicités sur Chromecast
 title: Suivi des publicités sur Chromecast
-uuid: 7 b 1 f 584 a -3472-416 c -944 c -5 f 5 ea 0 ee 5529
+uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour l’implémentation à l’aide des SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi des publicités
 
@@ -24,7 +24,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `AdComplete` | Constante permettant d’effectuer le suivi de l’événement Fin de la publicité |
 | `AdSkip` | Constante permettant d’effectuer le suivi de l’événement Saut de publicité |
 
-## Procédure de mise en œuvre
+## Etapes de mise en oeuvre
 
 1. Identifiez le moment où la limite de coupure publicitaire commence, y compris preroll, et créez un `AdBreakObject` à l’aide des informations de coupure publicitaire.
 
@@ -48,7 +48,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    adInfo = ADBMobile.media.createAdObject("Sample ad", "001", 1, AD_LENGTH); 
    ```
 
-1. Vous pouvez éventuellement joindre des métadonnées standard et/ou publicitaires à la session de suivi multimédia par le biais de variables de données contextuelles.
+1. Vous pouvez associer des métadonnées standard et/ou publicitaires à la session de suivi des médias au moyen de variables de données contextuelles.
 
    * **Métadonnées de publicité standard -** Pour les métadonnées de publicité standard, créez un dictionnaire de paires clé-valeur de métadonnées de publicité standard à l’aide des clés pour votre plate-forme :
    * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la ressource de publicité actuelle :
