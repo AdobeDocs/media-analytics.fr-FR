@@ -1,7 +1,7 @@
 ---
 seo-title: Envoi de données QoE
 title: Envoi de données QoE
-uuid: 52 a 02 d 92-195 d -4 ce 8-8 ce 3-585 ed 68969 f 9
+uuid: 52a02d92-195d-4ce8-8ce3-585ed68969f9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
