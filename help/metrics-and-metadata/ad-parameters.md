@@ -1,7 +1,7 @@
 ---
 seo-title: Paramètres de publicité
 title: Paramètres de publicité
-uuid: 92 cd 7 f 97-bb 5 a -4 de 6-8946-453 d 30271 d 0 f
+uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
 source-git-commit: af8da9da6cbe36e56f13cd7819f3682522e169bf
 
@@ -18,7 +18,7 @@ Description des données de tableau :
    * *Clé* : Variable, définie manuellement dans votre application ou automatiquement par le kit Adobe Media SDK.
    * *Obligatoire* : Indique si le paramètre est requis pour le suivi de la vidéo de base.
    * *Type* : Spécifie le type de variable à définir, chaîne ou nombre.
-   * *Envoyé avec* - Indique quand les données sont envoyées : *Media Start* est l'appel Analytics envoyé au démarrage du média, Démarrage *de publicité* est l'appel Analytics envoyé au démarrage de la publicité, etc. *Les* appels Close sont les appels Analytics compilés envoyés directement depuis le serveur de pulsation vers le serveur d'analyse à la fin de la session multimédia, ou la fin de la publicité, du chapitre, etc. Les appels de fermeture ne sont pas disponibles dans les appels de paquets réseau.
+   * *Envoyé avec* : indique le moment où les données sont envoyées : *Media Start* est l’appel Analytics envoyé au démarrage du média, *Ad Start* est l’appel Analytics envoyé au démarrage de la publicité, etc. les appels de *fermeture* sont les appels d’analyse compilés envoyés directement du serveur de pulsation au serveur d’analyse à la fin de la session multimédia, ou à la fin de la publicité, du chapitre, etc. The close calls are not available in network packet calls.
    * *Min. Version SDK* : Indique la version SDK dont vous auriez besoin pour accéder au paramètre.
    * *Exemple de valeur* : Fournit un exemple d’utilisation de variable courante.
 * **Paramètres réseau :** Affiche les valeurs transmises aux serveurs Adobe Analytics ou Heartbeat. Cette colonne affiche les noms des paramètres visibles dans les appels réseau générés par les kits Adobe Media SDK.
@@ -32,86 +32,86 @@ Description des données de tableau :
 
 >[!IMPORTANT]
 >
->Ne modifiez pas les noms de classification pour les variables répertoriées ci-dessous.
->décrit sous Création de rapports/variable réservée sous la forme de « classification ».
->Les classifications des médias sont définies lorsqu'une suite de rapports est activée pour les médias
->Suivi. De temps à autres, Adobe ajoute de nouvelles propriétés et, lorsque cela se produit,
+>Ne modifiez pas les noms de classification des variables répertoriées ci-dessous qui sont
+>décrit sous Variable de création de rapports/Réservé comme étant une "classification".
+>Les classifications de médias sont définies lorsqu’une suite de rapports est activée pour les médias.
+>Suivi. De temps à autre, Adobe ajoute de nouvelles propriétés et, dans ce cas,
 >les clients doivent réactiver leurs suites de rapports pour accéder au nouveau média
->propriétés. Lors du processus de mise à jour, Adobe détermine si la variable
->sont activées en vérifiant les noms des variables. Si l'un des
->ils sont manquants, Adobe rajoute les autres.
+>propriétés. Au cours du processus de mise à jour, Adobe détermine si la variable
+>sont activées en vérifiant les noms des variables. Si l’un des
+>ils sont manquants, Adobe les ajoute à nouveau.
 
 ## Données de publicité vidéo {#section_hq3_nbv_51b}
 
 ### Identifiant de publicité
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/> [adId](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.id </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque  </li> <li> **Exemple de valeur :**<br/> « 2125 » </li><li> **Description :**<br/>ID de la publicité. (Nombre entier et/ou combinaison de lettres)  </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>name) </li> <li> **Heartbeat :**<br/> (s : ressource : ad_ id) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À la fin de la VISITE </li> <li> **Nom du rapport :**<br/>Publicité </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>name) </li> <li> **Flux de données :**<br/>videoad </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.name) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/> [adId](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.id </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque  </li> <li> ****<br/> Exemple de valeur : "2125" </li><li> **Description:**<br/>ID of the ad. (Nombre entier et/ou combinaison de lettres)  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>name) </li> <li> ****<br/> Heartbeat : (s:asset:ad_id) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À la fin de la VISITE </li> <li> **Nom du rapport :**<br/>Publicité </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>name) </li> <li> **Flux de données :**<br/>videoad </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.name) </li> </ul> |
 
 
 
 ### Position de la publicité dans la capsule
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.podPosition </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Nombre </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> 1 </li><li> **Description :**<br/>Position (index) de la publicité à l'intérieur de la coupure publicitaire parent. La première publicité comporte l’index 0, la deuxième publicité l’index 1, etc.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>Podposition) </li> <li> **Heartbeat :**<br/> (s : ressource : pod_ position) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Position de la publicité dans la capsule </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>Podposition) </li> <li> **Flux de données :**<br/>videoadinpod </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.podPosition) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/> [position](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.podPosition </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Nombre </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : 1 </li><li> **Description:**<br/>The position (index) of the ad inside the parent ad break. La première publicité comporte l’index 0, la deuxième publicité l’index 1, etc.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>podPosition) </li> <li> ****<br/> Heartbeat : (s:asset:pod_position) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Position de la publicité dans la capsule </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>podPosition) </li> <li> **Flux de données :**<br/>videoadinpod </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.podPosition) </li> </ul> |
 
 
 
 ### Longueur de la publicité
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>  [length](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.length </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Nombre </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.1 </li> <li> **Exemple de valeur :**<br/> « 15 »  </li><li> **Description :**<br/>Durée de la publicité vidéo en secondes.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>length) </li> <li> **Heartbeat :**<br/> (l : ressource : ad_ length) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar et classification </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Longueur de la publicité et Longueur de la publicité (variable) </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>length) </li> <li> **Flux de données :**<br/>videoadlength </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.length) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>  [length](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.length </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Nombre </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.1 </li> <li> ****<br/> Exemple de valeur : "15"  </li><li> **Description:**<br/>Length of video ad in seconds.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>length) </li> <li> **Heartbeat:**<br/> (l:asset:ad_length) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar et classification </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Longueur de la publicité et Longueur de la publicité (variable) </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>length) </li> <li> **Flux de données :**<br/>videoadlength </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.length) </li> </ul> |
 
 
 
 ### Nom du lecteur de publicités
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>  [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.playerName </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> « Roue libre » </li><li> **Description :**<br/>Nom du lecteur responsable du rendu de la publicité.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>playerName) </li> <li> **Heartbeat :**<br/> (s : sp : player_ name) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Nom du lecteur de publicités </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>playerName) </li> <li> **Flux de données :**<br/>videoadplayername </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.playerName) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>  [playerName](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.playerName </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : "Roue libre" </li><li> **Description :**<br/>nom du lecteur responsable du rendu de la publicité.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>playerName) </li> <li> ****<br/> Heartbeat : (s:sp:player_name) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Nom du lecteur de publicités </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>playerName) </li> <li> **Flux de données :**<br/>videoadplayername </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.playerName) </li> </ul> |
 
 
 
 ### Nom de la coupure publicitaire
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.podFriendlyName </li> <li> **Obligatoire :**<br/> SDK : Oui ; API : Non. </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> « preroll » </li><li> **Description :**<br/>Nom convivial de la coupure publicitaire.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>Podfriendlyname) </li> <li> **Heartbeat :**<br/> (s : ressource : pod_ name) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>Classification </li> <li> **Nom du rapport :**<br/>Nom de la capsule </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>Podfriendlyname) </li> <li> **Flux de données :**<br/>videoadpod </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.podFriendlyName </li> <li> ****<br/> Obligatoire : SDK : Oui; API : Non. </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Sample Value:**<br/> "pre-roll" </li><li> **Description:**<br/>Nom convivial de la coupure publicitaire.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>podFriendlyName) </li> <li> ****<br/> Heartbeat : (s:asset:pod_name) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>Classification </li> <li> **Nom du rapport :**<br/>Nom de la capsule </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>podFriendlyName) </li> <li> **Flux de données :**<br/>videoadpod </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.podFriendlyName) </li> </ul> |
 
 
 
 ### Index de la coupure publicitaire
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.podPosition </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Nombre </li> <li> **Envoyé avec :**<br/> </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> 1 </li><li> **Description :**<br/>Index de la coupure publicitaire à l'intérieur du contenu commençant à 1. Cette propriété est utilisée **uniquement** par le kit SDK Media pour générer l’identifiant de la capsule.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> </li> <li> **Heartbeat :**<br/> </li> </ul> | <ul> <li> **Disponible :**<br/>Non </li> <li> **Variable réservée :**<br/>S.O. </li> <li> **Nom du rapport :**<br/>S.O. </li> <li> **Données contextuelles :**<br/> </li> <li> **Flux de données :**<br/> </li> <li> **Audience Manager :**<br/> </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>  [position](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.podPosition </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Nombre </li> <li> **Envoyé avec :**<br/> </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : 1 </li><li> **Description:**<br/>Index de la coupure publicitaire dans le contenu commençant à 1. Cette propriété est utilisée **uniquement** par le kit SDK Media pour générer l’identifiant de la capsule.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> </li> <li> **Heartbeat :**<br/> </li> </ul> | <ul> <li> **Disponible :**<br/>Non </li> <li> **Variable réservée :**<br/>S.O. </li> <li> **Nom du rapport :**<br/>S.O. </li> <li> **Données contextuelles :**<br/> </li> <li> **Flux de données :**<br/> </li> <li> **Audience Manager :**<br/> </li> </ul> |
 
 
 
 ### Position de la coupure publicitaire
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.podSecond </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Nombre </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> 90 </li><li> **Description :**<br/>Décalage de la coupure publicitaire dans le contenu, en secondes.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>Podsecond) </li> <li> **Heartbeat :**<br/> (l : ressource : pod_ offset) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>Classification </li> <li> **Nom du rapport :**<br/>Position de la capsule </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>Podsecond) </li> <li> **Flux de données :**<br/> </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>  [startTime](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.podSecond </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Nombre </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : 90 </li><li> **Description:**<br/>The offset of the ad break inside the content, in seconds.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>podSecond) </li> <li> ****<br/> Heartbeat : (l:asset:pod_offset) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>Classification </li> <li> **Nom du rapport :**<br/>Position de la capsule </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>podSecond) </li> <li> **Flux de données :**<br/> </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.podSecond) </li> </ul> |
 
 
 
 ### ID de coupure de publicité
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> c 4 a 577424 c 84067899 b 807 c 76722 d 495_ 1  </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>pod) </li> <li> **Heartbeat :**<br/> (s : ressource : pod_ id) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Capsule publicitaire </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>pod) </li> <li> **Flux de données :**<br/>videoadpod </li> <li> **Audience Manager :**<br/> </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : c4a577424c84067899b807c76722d495_1  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>pod) </li> <li> ****<br/> Heartbeat : (s:asset:pod_id) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Capsule publicitaire </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>pod) </li> <li> **Flux de données :**<br/>videoadpod </li> <li> **Audience Manager :**<br/> </li> </ul> |
 
 
 
 ### Nom de la publicité
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.name </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.1 </li> <li> **Exemple de valeur :**<br/> « Ford F -150 » </li><li> **Description :**<br/>Nom convivial de la publicité. Dans la création de rapports, « Nom de la publicité » est la classification et « Nom de la publicité (variable) » la variable eVar.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>Friendlyname) </li> <li> **Heartbeat :**<br/> (s : ressource : ad_ name) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar et classification </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Nom de la publicité et Nom de la publicité (variable) </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>Friendlyname) </li> <li> **Flux de données :**<br/>S.O. </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.friendlyName) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>  [name](./ad-parameters.md#section_Related_APIs) </li> <li> **Clé API :**<br/>media.ad.name </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.1 </li> <li> ****<br/> Exemple de valeur : "Ford F-150" </li><li> **Description : nom**<br/>convivial de la publicité.  Dans la création de rapports, « Nom de la publicité » est la classification et « Nom de la publicité (variable) » la variable eVar.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>friendlyName) </li> <li> ****<br/> Heartbeat : (s:asset:ad_name) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar et classification </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Nom de la publicité et Nom de la publicité (variable) </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>friendlyName) </li> <li> **Flux de données :**<br/>S.O. </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.friendlyName) </li> </ul> |
 
 
 
@@ -119,49 +119,49 @@ Description des données de tableau :
 
 ### Annonceur
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Network Parameters | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>ADVERTISER </li> <li> **Clé API :**<br/>media.ad.advertiser </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description :**<br/>Société/Marque dont le produit est présenté dans la publicité.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>advertiser) </li> <li> **Heartbeat :**<br/> (s : meta :<br/>a.media.ad.ad vertiser) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i>Annonceur </i> </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>advertiser) </li> <li> **Flux de données :**<br/>videoadvertiser </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.advertiser) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>ADVERTISER </li> <li> **Clé API :**<br/>media.ad.advertiser </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description:**<br/>Company/Brand whose product is featured in the ad.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>publicitaire) </li> <li> ****<br/> Heartbeat : (s:meta:<br/>a.media.ad.advertiser) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i>Annonceur </i> </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>publicitaire) </li> <li> **Flux de données :**<br/>videoadvertiser </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.advertiser) </li> </ul> |
 
 
 
 ### ID de campagne
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>CAMPAIGN_ID </li> <li> **Clé API :**<br/>media.ad.campaignId </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> Entier ou nom (chaîne).  </li><li> **Description :**<br/>ID de la campagne publicitaire.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>campaign) </li> <li> **Heartbeat :**<br/> (s : meta :<br/>a.media.ad.ca mpaign) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i>ID de campagne </i> </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>campaign) </li> <li> **Flux de données :**<br/>videocampaign </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.campaign) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>CAMPAIGN_ID </li> <li> **Clé API :**<br/>media.ad.campaignId </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Sample Value:**<br/> Integer, or name (string).  </li><li> **Description:**<br/>ID de la campagne publicitaire.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>campaign) </li> <li> ****<br/> Heartbeat : (s:meta:<br/>a.media.ad.cacampaign) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i>ID de campagne </i> </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>campaign) </li> <li> **Flux de données :**<br/>videocampaign </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.campaign) </li> </ul> |
 
 
 
 ### ID d’élément créatif
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Network Parameters | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>CREATIVE_ID </li> <li> **Clé API :**<br/>media.ad.creativeId </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> Entier ou nom (chaîne).  </li><li> **Description :**<br/>ID de la publicité publicitaire.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>creative) </li> <li> **Heartbeat :**<br/> (s : meta :<br/>a.media.ad.cr eative) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i>ID d’élément créatif </i> </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>creative) </li> <li> **Flux de données :**<br/>adclassificationcreative </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.creative) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>CREATIVE_ID </li> <li> **Clé API :**<br/>media.ad.creativeId </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> ****<br/> Exemple de valeur : Entier ou nom (chaîne).  </li><li> **Description:**<br/>ID du créatif de la publicité.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>créatif) </li> <li> ****<br/> Heartbeat : (s:meta:<br/>a.media.ad.créative) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i>ID d’élément créatif </i> </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>créatif) </li> <li> **Flux de données :**<br/>adclassificationcreative </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.creative) </li> </ul> |
 
 
 
 ### ID du site
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>SITE_ID </li> <li> **Clé API :**<br/>media.ad.siteId </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description :**<br/>ID du site publicitaire.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>site) </li> <li> **Heartbeat :**<br/> (s : meta :<br/>a.media.ad.si te) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser une règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i> </i> </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>site) </li> <li> **Flux de données :**<br/>S.O. </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.site) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>SITE_ID </li> <li> **Clé API :**<br/>media.ad.siteId </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description:**<br/>ID du site publicitaire.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>site) </li> <li> ****<br/> Heartbeat : (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Use custom processing rule </i> </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i> </i> </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>site) </li> <li> **Flux de données :**<br/>S.O. </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> |
 
 
 
 ### URL de l’élément créatif
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Network Parameters | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>CREATIVE_URL </li> <li> **Clé API :**<br/>media.ad.creativeURL </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description :**<br/>URL du créatif publicitaire.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>Creativeurl) </li> <li> **Heartbeat :**<br/> (s : meta :<br/>a.media.ad.cr Eativeurl) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser une règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i> </i> </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>Creativeurl) </li> <li> **Flux de données :**<br/>S.O. </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>CREATIVE_URL </li> <li> **Clé API :**<br/>media.ad.creativeURL </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description:**<br/>URL de l’élément créatif de la publicité.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>creativeURL) </li> <li> ****<br/> Heartbeat : (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser une règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i> </i> </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>creativeURL) </li> <li> **Flux de données :**<br/>S.O. </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> |
 
 
 
 ### Identifiant de référencement
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>PLACEMENT_ID </li> <li> **Clé API :**<br/>media.ad.placementId </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description :**<br/>ID de placement de la publicité.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>placement) </li> <li> **Heartbeat :**<br/> (s : meta :<br/>a.media.ad.pl acement) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser une règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i> </i> </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>placement) </li> <li> **Flux de données :**<br/>S.O. </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.placement) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>PLACEMENT_ID </li> <li> **Clé API :**<br/>media.ad.placementId </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de publicité, Fermeture de publicité </li> <li> **Min. Version SDK min. :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description:**<br/>Identifiant de placement de la publicité.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>placement) </li> <li> ****<br/> Heartbeat : (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser une règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :** <br/> <i> </i> </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>placement) </li> <li> **Flux de données :**<br/>S.O. </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.placement) </li> </ul> |
 
 
 
@@ -170,43 +170,43 @@ Description des données de tableau :
 
 ### Démarrage de publicité
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de la publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> TRUE </li><li> **Description :**<br/>Nombre de démarrages de publicités vidéo.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>view) </li> <li> **Heartbeat :**<br/> (s : event : type = start)<br/> (s : ressource : type = ad) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>event </li> <li> **Nom du rapport :**<br/>Démarrages de publicité </li> <li> **Flux de données :**<br/>videoadstart </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>view) </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.view) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Démarrage de la publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Sample Value:**<br/> TRUE </li><li> **Description:**<br/>Number of video ad starts.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>view) </li> <li> **Heartbeat:**<br/>  (s:event:type=start)<br/> (s:asset:type=ad) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>event </li> <li> **Nom du rapport :**<br/>Démarrages de publicité </li> <li> **Flux de données :**<br/>videoadstart </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>view) </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.ad.view) </li> </ul> |
 
 
 
 ### Publicité terminée
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Network Parameters | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Fermeture de la publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> TRUE </li><li> **Description :**<br/>Nombre de publicités vidéo terminées.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>complete) </li> <li> **Heartbeat :**<br/> (s : event : type = complete)<br/> (s : ressource : type = ad)  </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>event </li> <li> **Nom du rapport :**<br/>Fins de publicité </li> <li> **Flux de données :**<br/>videoadcomplete </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>complete) </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.complete) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Fermeture de la publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : TRUE </li><li> **Description :**<br/>Nombre de vidéos terminées.   </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>complete) </li> <li> ****<br/> Heartbeat : (s:event:type=complete)<br/> (s:asset:type=ad)  </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>event </li> <li> **Nom du rapport :**<br/>Fins de publicité </li> <li> **Flux de données :**<br/>videoadcomplete </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>complete) </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.complete) </li> </ul> |
 
 
 
 ### passé sur la publicité
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Fermeture de la publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> 15 </li><li> **Description :**<br/>Durée totale, en secondes, passée à regarder la publicité (c.-à-d. le nombre de secondes lues). La valeur s’affichera au format horaire (HH:MM:SS) dans Analysis Workspace et Reports &amp; Analytics. Dans les API Flux de données, Data Warehouse et Création de rapports, les valeurs seront exprimées en secondes.  <br/>**Date de publication : 13/09/18**  </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a. media. ad.<br/>Timeplayed) </li> <li> **Heartbeat :**<br/> </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>event </li> <li> **Nom du rapport :**<br/>Temps passé sur la publicité </li> <li> **Flux de données :**<br/>videoadtime </li> <li> **Données contextuelles :**<br/> (a. media. ad.<br/>Timeplayed) </li> <li> **Audience Manager :**<br/> (c_ contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> **Envoyé avec :**<br/>Fermeture de la publicité </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : 15 </li><li> **Description:**<br/>Durée totale, en secondes, passée à regarder la publicité (c.-à-d. le nombre de secondes de lecture).  La valeur s’affichera au format horaire (HH:MM:SS) dans Analysis Workspace et Reports &amp; Analytics. Dans les API Flux de données, Data Warehouse et Création de rapports, les valeurs seront exprimées en secondes.  <br/>**Date de publication : 13/09/18**  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.ad.<br/>timePlayed) </li> <li> **Heartbeat :**<br/> </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>event </li> <li> **Nom du rapport :**<br/>Temps passé sur la publicité </li> <li> **Flux de données :**<br/>videoadtime </li> <li> ****<br/> Données contextuelles : (a.media.ad.<br/>timePlayed) </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.ad.timePlayed) </li> </ul> |
 
 
 
-## Related APIs {#section_Related_APIs}
+## API connexes {#section_Related_APIs}
 
-### API createadobject :
+### API createAdObject :
 
 * Android - [createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createAdObject-java.lang.String-java.lang.String-java.lang.Long-java.lang.Double-)
 * iOS - [createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createAdObjectWithName:adId:position:length:)
 * JavaScript - [createAdObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createAdObject)
 
-### API createadbreakobject :
+### API createAdBreakObject :
 
 * Android - [createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.html#createAdBreakObject-java.lang.String-java.lang.Long-java.lang.Double-)
 * iOS - [createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeat.html#//api/name/createAdBreakObjectWithName:position:startTime:)
 * JavaScript - [createAdBreakObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#-static-createAdBreakObject)
 
-### API mediaheartbeatconfig :
+### API MediaHeartbeatConfig :
 
 * Android - [MediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeatConfig.html)
 * iOS - [ADBMediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeatConfig.html)
