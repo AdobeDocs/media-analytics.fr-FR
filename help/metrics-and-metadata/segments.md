@@ -1,7 +1,7 @@
 ---
 seo-title: Segments
 title: Segments
-uuid: 61906 b 8 c -3362-4463-82 be-fe 0 e 741 a 5 eb 3
+uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
