@@ -1,7 +1,7 @@
 ---
 seo-title: Visionneuses simultanées de médias
 title: Visionneuses simultanées de médias
-uuid: e 61 c 50 e 5-8196-4538-b 67 c-ebc 01 c 6 e 6 ba 7
+uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
 source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
 
@@ -14,7 +14,7 @@ Le tableau de bord Visionneuses simultanées de médias présente les visionneus
 
 >[!TIP]
 >
->Aucune donnée ne s'affiche si l'intervalle sélectionné n'est pas un jour entier.
+>No data will be displayed if the selected interval is not an entire day.
 
 ![](assets/video-concurrent-viewers.png)
 
