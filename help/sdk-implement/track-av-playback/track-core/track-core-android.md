@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi de la lecture principale sur Android
 title: Suivi de la lecture principale sur Android
-uuid: ab 5 fab 95-76 ed -4 ae 6-aedb -2 e 66 eece 7607
+uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -11,7 +11,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 # Suivi de la lecture principale sur Android{#track-core-playback-on-android}
 
 >[!IMPORTANT]
->Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur 1.x pour Android dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
+>Cette documentation couvre le suivi dans la version 2.x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur 1.x pour Android dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuration initiale du suivi**
 
@@ -24,8 +24,8 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    | `name` | Nom du média | Oui |
    | `mediaId` | Identifiant unique du média | Oui |
    | `length` | Durée du média | Oui |
-   | `streamType` | Stream type (see _StreamType constants_ below) | Oui |
-   | `mediaType` | Media type (see _MediaType constants_ below) | Oui |
+   | `streamType` | Type de diffusion (voir les constantes _StreamType_ ci-dessous) | Oui |
+   | `mediaType` | Type de média (voir les constantes _MediaType_ ci-dessous) | Oui |
 
    **`StreamType`constantes :**
 
@@ -52,7 +52,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Ajout de métadonnées**
 
-   Vous pouvez éventuellement joindre des objets de métadonnées standard et/ou personnalisés à la session de suivi par le biais de variables de données contextuelles.
+   Vous pouvez associer des objets de métadonnées standard et/ou personnalisés à la session de suivi au moyen de variables de données contextuelles.
 
    * **Métadonnées standard**
 
@@ -60,7 +60,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
       >[!NOTE]
       >
-      >L'ajout de l'objet de métadonnées standard à l'objet media est facultatif.
+      >L’association de l’objet de métadonnées standard à l’objet multimédia est facultative.
 
       * Référence de l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * Consultez la liste complète des métadonnées vidéo disponibles dans la rubrique [Paramètres audio et vidéo](/help/metrics-and-metadata/audio-video-parameters.md).
@@ -77,9 +77,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
       ```
 
 
-1. **Suivre l'intention de commencer la lecture**
+1. **Suivi de l’intention de démarrer la lecture**
 
-   To begin tracking a media session, call `trackSessionStart` on the Media Heartbeat instance. Par exemple :
+   Pour commencer le suivi d’une session multimédia, appelez `trackSessionStart` l’instance Media Heartbeat. Par exemple :
 
    ```java
    public void onVideoLoad(Observable observable, Object data) {  
@@ -89,7 +89,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >La seconde valeur correspond au nom d'objet de métadonnées de média personnalisé créé à l'étape 2.
+   >La seconde valeur est le nom d’objet de métadonnées de média personnalisé que vous avez créé à l’étape 2.
 
    >[!IMPORTANT]
    >
@@ -134,11 +134,11 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marque la fin d'une session de suivi multimédia. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
+   >`trackSessionEnd` marque la fin d’une session de suivi des médias. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new media tracking session.
 
-1. **Suivre tous les scénarios de mise en pause possibles**
+1. **Suivi de tous les scénarios de mise en pause possibles**
 
-   Identify the event from the media player for media pause and call `trackPause`:
+   Identifiez l'événement du lecteur multimédia pour la mise en pause et l'appel multimédia `trackPause`:
 
    ```java
    public void onVideoPause(Observable observable, Object data) {  
@@ -146,7 +146,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    }
    ```
 
-   **Scénarios de pause**
+   **Suspendre les scénarios**
 
    Identify any scenario in which the Video Player will pause and make sure that `trackPause` is properly called. Les scénarios suivants exigent tous que votre application appelle `trackPause()`:
 
@@ -166,7 +166,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >Il peut s'agir de la même source d'événement utilisée à l'étape 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the media playback resumes.
+   >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the media playback resumes.
 
 Consultez les ressources suivantes pour en savoir plus sur le suivi de la lecture principale :
 
