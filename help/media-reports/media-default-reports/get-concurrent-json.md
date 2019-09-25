@@ -1,7 +1,7 @@
 ---
 seo-title: Obtention des données du rapport JSON sur les visionneuses simultanées
 title: Obtention des données du rapport JSON sur les visionneuses simultanées
-uuid: 9168 f 114-2459-4951-a 06 c -57 b 735 d 09 dc 0
+uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
 source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
@@ -10,17 +10,18 @@ source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 
 # Obtention des données du rapport JSON sur les visionneuses simultanées{#get-concurrent-viewers-json-report-data}
 
-You can obtain concurrent viewers report data using the _* 1.4 version *_ of the Analytics APIs:
+Vous pouvez obtenir des données de rapport des visionneuses simultanées à l’aide de la version _**_ 1.4 des API Analytics :
 * [API Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. Filtrez les données à l'aide de tout segment qui a été créé dans l'interface utilisateur. Pour filtrer un identifiant de contenu spécifique, créez un segment.
-1. Set the `elements` -&gt; `id` in the request body to `videoconcurrentviewers`.
-1. Demandez une quantité suffisante de données. Adobe recommande 3200 points de données pour s'assurer qu'il n'y a pas d'écart dans les données.
+1. Filtrez les données à l’aide de n’importe quel segment généré par l’interface utilisateur. Pour filtrer selon un ID de contenu spécifique, créez un segment.
+1. Définissez le `elements` -&gt; `id` dans le corps de la requête sur `videoconcurrentviewers`.
+1. Demandez une quantité suffisante de données. Adobe recommande 3 200 points de données pour s’assurer qu’il n’y a pas d’écart entre les données.
 
-   * The data range you specify in the report gathers all concurrent viewer data _at the time the video session ended._ Ainsi, vous devez tenir compte des sessions qui commencent un jour et se terminent après minuit (c'est-à-dire le lendemain).
+   * La plage de données que vous spécifiez dans le rapport rassemble toutes les données du lecteur simultanées _au moment de la fin de la session vidéo._
+Vous devez donc tenir compte des sessions qui commencent un jour et se terminent après minuit (c.-à-d. le lendemain).
 
-   * Request more than one day of data, but in your analysis _* use only the first day of the data.*_
+   * Demandez plusieurs jours de données, mais dans votre analyse, _* utilisez uniquement le premier jour des données.*_
 
 Voici un exemple de charge utile de requête pour ce scénario :
 
