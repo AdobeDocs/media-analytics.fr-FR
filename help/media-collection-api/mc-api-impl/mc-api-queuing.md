@@ -1,7 +1,7 @@
 ---
 seo-title: Événements de mise en file d’attente lorsque la réponse des sessions est lente
 title: Événements de mise en file d’attente lorsque la réponse des sessions est lente
-uuid: 39 ea 59 d 9-89 d 3-4087-a 806-48 a 43 ecf 0 c 98
+uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,7 +10,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # Événements de mise en file d’attente lorsque la réponse des sessions est lente{#queueing-events-when-sessions-response-is-slow}
 
-L’API Media Collection est une API RESTful, ce qui signifie que vous faites une requête HTTP et attendez la réponse. This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. Cela est important car l'ID de session est nécessaire pour tous les appels de suivi suivants.
+L’API Media Collection est une API RESTful, ce qui signifie que vous faites une requête HTTP et attendez la réponse. This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. Ceci est important car l’ID de session est requis pour tous les appels de suivi suivants.
 
 It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
 
