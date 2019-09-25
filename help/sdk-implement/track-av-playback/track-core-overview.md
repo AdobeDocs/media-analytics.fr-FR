@@ -1,51 +1,51 @@
 ---
-seo-title: Aperçu du suivi
-title: Aperçu du suivi
-uuid: 7 b 8 e 2 f 76-bc 4 e -4721-8933-3 e 4453 b 01788
+seo-title: Tracking Overview
+title: Tracking Overview
+uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 ---
 
 
-# Aperçu du suivi{#tracking-overview}
+# Tracking Overview{#tracking-overview}
 
 >[!IMPORTANT]
 >
->Cette documentation couvre le suivi dans la version 2. x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>This documentation covers tracking in version 2.x of the SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-## Événements du lecteur
+## Player Events
 
 Le suivi de la lecture principale inclut le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. Bien qu’il ne soit pas obligatoire, le suivi de la mise en mémoire tampon et de la recherche est également un composant principal du suivi de la lecture du contenu. Dans l’API de votre lecteur multimédia, identifiez les événements du lecteur qui correspondant aux appels de suivi du SDK Media, et codez vos gestionnaires d’événements pour appeler les API de suivi et renseigner les variables obligatoires et facultatives.
 
-### Lors du chargement de médias
+### On media load
 
 * Créez l’objet multimédia.
 * Renseignez les métadonnées.
-* Appel `trackSessionStart`; Par exemple : `trackSessionStart(mediaObject, contextData)`
+* Call ; For example: `trackSessionStart``trackSessionStart(mediaObject, contextData)`
 
-### Au démarrage du média
+### On media start
 
 * L’appel   `trackPlay`
 
-### Lors de la pause/reprise
+### En pause/reprise
 
 * L’appel   `trackPause`
 * Call `trackPlay`   _when playback resumes_
 
-### Sur le support multimédia
+### Sur le média terminé
 
 * L’appel   `trackComplete`
 
-### Lors de l'abandon du média
+### Abandon du média
 
 * L’appel   `trackSessionEnd`
 
-### Lorsque le défilement commence
+### Au démarrage du défilement
 
 * L’appel   `trackEvent(SeekStart)`
 
-### Lorsque la lecture se termine
+### A l’issue du défilement
 
 * L’appel   `trackEvent(SeekComplete)`
 
@@ -53,13 +53,13 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 * L’appel   `trackEvent(BufferStart);`
 
-### Lorsque la mise en mémoire tampon se termine
+### À la fin de la mise en mémoire tampon
 
 * L’appel   `trackEvent(BufferComplete);`
 
 >[!TIP]
 >
->La position du curseur de lecture est définie dans le code de configuration et de configuration. Pour plus d'informations, `getCurrentPlayheadTime`voir [Présentation : Instructions générales sur l'implémentation.](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>La position du curseur de lecture est définie dans le cadre du code de configuration et de configuration. For more information about , see Overview: General Implementation Guidelines.`getCurrentPlayheadTime`[](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
 
 ## Mise en œuvre {#section_BB217BE6585D4EDEB34C198559575004}
 
@@ -86,7 +86,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
    | `AUDIOBOOK` | Type de diffusion pour les livres audio. |
    | `PODCAST` | Type de diffusion pour les podcasts. |
 
-   **`MediaType`constantes :**
+   **`MediaType`constants:**
 
    | Nom de constante | Description |
    |---|---|
@@ -101,7 +101,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
       >[!NOTE]
       >
-      >L'ajout de l'objet de métadonnées standard à l'objet media est facultatif.
+      >L’association de l’objet de métadonnées standard à l’objet multimédia est facultative.
 
       Instanciez un objet de métadonnées standard, renseignez les variables désirées et définissez l’objet de métadonnées sur l’objet Media Heartbeat.
 
@@ -127,7 +127,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marque la fin d'une session de suivi. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marks the end of a tracking session. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **Suivi de tous les scénarios de mise en pause possibles -** Identifiez l’événement du lecteur multimédia qui provoque la pause et appelez `trackPause`.
 
@@ -142,7 +142,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
    >[!TIP]
    >
-   >Il peut s'agir de la même source d'événement utilisée à l'étape 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
 
 1. Prêtez attention aux événements de recherche de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la recherche, effectuez-en le suivi à l’aide de l’événement `SeekStart`.
 1. Une fois que vous avez reçu la notification de fin de la recherche, effectuez-en le suivi à l’aide de l’événement `SeekComplete`.
@@ -234,5 +234,5 @@ if (e.type == “buffered”) {
 
 ## Validation {#section_ABCFB92C587B4CAABDACF93452EFA78F}
 
-Pour plus d'informations sur la validation de votre implémentation, voir [Validation.](/help/sdk-implement/validation/validation-overview.md)
+For information on validating your implementation, see Validation.[](/help/sdk-implement/validation/validation-overview.md)
 
