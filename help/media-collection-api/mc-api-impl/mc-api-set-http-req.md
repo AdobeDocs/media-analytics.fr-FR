@@ -1,7 +1,7 @@
 ---
 seo-title: Définition du type de requête HTTP dans votre lecteur
 title: Définition du type de requête HTTP dans votre lecteur
-uuid: b 8 fa 7233-e 654-4 acf-a 9 d 7-14158 cded 13 e
+uuid: b8fa7233-e654-4acf-a9d7-14158cded13e
 translation-type: tm+mt
 source-git-commit: 7f0a6a8d6def094bd669e5924ea76107a4ab3cc1
 
