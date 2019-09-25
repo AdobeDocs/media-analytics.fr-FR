@@ -1,7 +1,7 @@
 ---
 seo-title: Présentation de la configuration
 title: Présentation de la configuration
-uuid: 06 fefedb-b 0 c 8-4 f 7 d -90 c 8-e 374 cdde 1695
+uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -12,21 +12,21 @@ source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
 >[!IMPORTANT]
 >
->Les instructions suivantes s'appliquent aux SDK Media 2. x. Si vous mettez en œuvre une version 1.x du SDK Media, consultez la [Documentation du SDK Media 1.x.](/help/sdk-implement/download-sdks.md) Pour les intégrateurs Primetime, reportez-vous à _la page Primetime Media SDK Documentation_ ci-dessous.
+>Les instructions suivantes s’appliquent aux SDK de média 2.x. Si vous mettez en œuvre une version 1.x du SDK Media, consultez la [Documentation du SDK Media 1.x.](/help/sdk-implement/download-sdks.md) Pour les intégrateurs Primetime, voir Documentation _du SDK multimédia_ Primetime ci-dessous.
 
 
-## Prise en charge minimale de la version de plate-forme {#minimum-platform-version}
+## Prise en charge de la version minimale de la plateforme {#minimum-platform-version}
 
-Le tableau suivant décrit les versions minimales prises en charge pour chaque SDK, à compter du 19 février 2019.
+Le tableau suivant décrit les versions minimales de plateformes prises en charge pour chaque SDK, à compter du 19 février 2019.
 
-| Système d'exploitation/Navigateur | Version min requise |
+| OS/Navigateur | Version min requise |
 | --- | --- |
 | iOS | iOS 6+ |
-| Android | Android 5.0 + - Lollipop |
-| Chrome | v 22 + |
-| Mozilla | v 27 + |
-| Safari | v 7 + |
-| IE | v 11 + |
+| Android | Android 5.0+ - Lollipop |
+| Chrome | v22+ |
+| Mozilla | v27+ |
+| Safari | v7+ |
+| IE | v11+ |
 
 ## Instructions générales de mise en œuvre {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
 
@@ -35,7 +35,7 @@ Trois composants principaux du SDK sont impliqués dans le suivi multimédia :
 * Media Heartbeat Delegate : Le délégué contrôle la durée de lecture et l’objet QoS.
 * Media Heartbeat : La bibliothèque principale contient les membres et les méthodes.
 
-Suivez les étapes de mise en œuvre suivantes :
+Suivez les étapes de mise en oeuvre suivantes :
 
 1. Create a `MediaHeartbeatConfig` instance and set your config parameter values.
 
@@ -49,7 +49,7 @@ Suivez les étapes de mise en œuvre suivantes :
    | `ssl` | Indique si les appels doivent être effectués par HTTPS | Non | false |
    | `debugLogging` | Indique si la journalisation de débogage est activée | Non | false |
 
-1. Implémenter la `MediaHeartbeatDelegate`.
+1. Mettez en oeuvre le `MediaHeartbeatDelegate`.
 
    |  Nom de méthode  |  Description  | Obligatoire |
    | --- | --- | :---: |
@@ -58,7 +58,7 @@ Suivez les étapes de mise en œuvre suivantes :
 
    >[!TIP]
    >
-   >L'objet Qualité de service (qos) est facultatif. Si les données QoS sont disponibles pour votre lecteur et que vous souhaitez en effectuer le suivi, les variables suivantes sont requises :
+   >L’objet QoS (Quality of Service) est facultatif. Si les données QoS sont disponibles pour votre lecteur et que vous souhaitez en effectuer le suivi, les variables suivantes sont requises :
 
    | Nom de variable | Description   | Obligatoire |
    | --- | --- | :---: |
@@ -77,7 +77,7 @@ Suivez les étapes de mise en œuvre suivantes :
 
    >[!TIP]
    >
-   >`MediaHeartbeat` requiert une instance pour `AppMeasurement` envoyer des appels à Adobe Analytics.
+   >`MediaHeartbeat` nécessite une instance de `AppMeasurement` pour envoyer des appels à Adobe Analytics.
 
 1. Combinez tous les éléments.
 
@@ -121,28 +121,26 @@ Suivez les étapes de mise en œuvre suivantes :
 
 ## Validation {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
 
-Les implémentations de suivi Media Analytics génèrent deux types d'appels de suivi :
+Les implémentations de suivi des analyses multimédia génèrent deux types d’appels de suivi :
 
-* Les appels Media et Ad Start sont envoyés directement au serveur Adobe Analytics (appmeasurement).
-* Les appels de pulsation sont envoyés au serveur de suivi Media Analytics (pulsations), traités et transmis au serveur Adobe Analytics.
+* Les appels Media et Ad Start sont envoyés directement au serveur Adobe Analytics (AppMeasurement).
+* Les appels de pulsation sont envoyés au serveur de suivi Media Analytics (pulsations), y sont traités et transmis au serveur Adobe Analytics.
 
-* **Serveur
-Adobe Analytics (appmeasurement)** Pour plus d'informations sur les options de serveur, voir [Renseigner correctement les variables trackingserver et trackingserversecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Serveur** Adobe Analytics (AppMeasurement) Pour plus d’informations sur les options du serveur de suivi, voir [Définition correcte des variables trackingServer et trackingServerSecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >Un serveur de suivi de CRD ou une résolution CNAME pour un serveur RDC est requis pour le service d'identification des visiteurs Experience Cloud.
+   >Une résolution CNAME ou un serveur de suivi RDC sur un serveur RDC est requise pour le service d’identification des visiteurs d’Experience Cloud.
 
    The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-* ** Serveur Media Analytics (Heartbeats)**
-Ce format a toujours le format « `[your_namespace].hb.omtrdc.net`. La valeur de « `[your_namespace]`specifies votre entreprise » est fournie par Adobe.
+* ** Serveur Media Analytics (Heartbeats)**Il a toujours le format "`[your_namespace].hb.omtrdc.net`". La valeur de "`[your_namespace]`" indique votre société et est fournie par Adobe.
 
 Le suivi multimédia fonctionne de la même manière sur toutes les plates-formes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plateformes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :
 
-## Documentation SDK 1. x {#section_acj_tkk_t2b}
+## Documentation SDK 1.x {#section_acj_tkk_t2b}
 
-| SDK vidéo 1. x vidéo  | Guides du développeur (PDF uniquement) |
+| SDK d’Analytics vidéo 1.x |  Guides du développeur (PDF uniquement) |
 | --- | --- |
 | Android | [Configuration pour Android ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Configuration pour Apple TV ](vhl-dev-guide-v1x_appletv.pdf) |
@@ -154,4 +152,4 @@ Le suivi multimédia fonctionne de la même manière sur toutes les plates-forme
 
 ## Documentation du SDK Media Primetime {#primetime-docs}
 
-* [Guides de l'utilisateur Primetime](https://helpx.adobe.com/primetime/user-guide.html)
+* [Guides de l’utilisateur Primetime](https://helpx.adobe.com/primetime/user-guide.html)
