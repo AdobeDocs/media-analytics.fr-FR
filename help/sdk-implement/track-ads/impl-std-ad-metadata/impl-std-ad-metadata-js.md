@@ -3,7 +3,7 @@ description: valeur nulle
 seo-description: valeur nulle
 seo-title: Mise en œuvre de métadonnées de publicité standard sur JavaScript
 title: Mise en œuvre de métadonnées de publicité standard sur JavaScript
-uuid: 4 ea 10 c 5 a-ae 2 b -45 d 0-aad 3-9 f 10028 ee 7 c 3
+uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 translation-type: tm+mt
 source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 
@@ -18,9 +18,9 @@ source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
 |---|---|
 | `StandardAdMetadata` | Constante permettant d’associer des métadonnées de publicité standard à un objet publicitaire |
 
-## Métadonnées publicitaires standard de mise en œuvre
+## Mise en oeuvre des métadonnées publicitaires standard
 
-Pour les métadonnées publicitaires standard, créez un dictionnaire des paires clé-valeur des métadonnées publicitaires standard à l'aide des clés de votre plateforme :
+Pour les métadonnées publicitaires standard, créez un dictionnaire de paires clé-valeur de métadonnées publicitaires standard à l’aide des clés de votre plateforme :
 
 ```js
 var adObject =  
