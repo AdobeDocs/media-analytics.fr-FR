@@ -1,7 +1,7 @@
 ---
 seo-title: Lecture VOD avec saut de chapitre
 title: Lecture VOD avec saut de chapitre
-uuid: 19 fb 020 c-eb 7 a -4942-9212-94 f 4 d 47195 b 9
+uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -18,7 +18,7 @@ Il s’agit du même scénario que [Lecture VOD avec un chapitre](/help/sdk-impl
 
 | Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario  [Lecture sans interruption dans](vod-no-intrs-details.md) le scénario ios. |
+| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario  [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | Le chapitre démarre. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Chapter Play | Lorsque le contenu du chapitre est lu avant le contenu principal, nous souhaitons démarrer les pulsations au début du chapitre. |
 | Le chapitre est lu. |  | Chapter Heartbeats |  |
@@ -27,7 +27,7 @@ Il s’agit du même scénario que [Lecture VOD avec un chapitre](/help/sdk-impl
 | L’application comprend que l’utilisateur a effectué une recherche en dehors de la limite normale du chapitre. | `trackEvent:trackChapterSkip` |  |  |
 | Le contenu est lu. |  | Content Heartbeats |  |
 | La lecture du contenu est terminée. | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l'utilisateur ne regarde pas le support à terminer. |
+| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur ne regarde pas le média jusqu’à sa fin. |
 
 ## Paramètres {#section_1874F6B7880B43C5856BD11FF85B382E}
 
@@ -37,7 +37,7 @@ Les paramètres utilisés pendant la lecture de ce chapitre sont identiques à c
 
 ![](assets/chapter-skip.png)
 
-### Android   
+### Android
 
 Pour afficher ce scénario dans Android, configurez le code suivant :
 
