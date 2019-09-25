@@ -1,7 +1,7 @@
 ---
 seo-title: Configuration d’identifiants utilisateur
 title: Configuration d’identifiants utilisateur
-uuid: fdd 54 fec -79 cd -4 bf 8-b 17 e -4 d 61 d 84 f 6310
+uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 translation-type: tm+mt
 source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
