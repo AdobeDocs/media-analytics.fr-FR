@@ -1,7 +1,7 @@
 ---
 seo-title: Débogage du SDK
 title: Débogage du SDK
-uuid: a 5972 d 87-c 593-4 b 4 f-a 56 f-dca 6 e 25268 e 1
+uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
@@ -10,7 +10,7 @@ source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
 # Débogage du SDK{#sdk-debugging}
 
-Vous pouvez activer et désactiver la journalisation. Le kit de développement multimédia fournit un mécanisme étendu de traçage/journalisation dans la pile de suivi multimédia. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
+Vous pouvez activer et désactiver la journalisation. Le SDK Media fournit un mécanisme de suivi/journalisation étendu dans toute la pile de suivi des médias. You can enable or disable logging by setting the `debugLogging` flag on the Config object.
 
 ## Exemple de code pour la journalisation du débogage
 
@@ -71,7 +71,7 @@ Pendant le développement des applications, Bloodhound permet d’afficher les a
 
 >[!IMPORTANT]
 >
->Depuis le 30 avril 2017, Adobe Bloodhound est un coucher de soleil. Depuis le 1er mai 2017, plus aucune amélioration n’y est apportée et aucune assistance d’ingénierie supplémentaire ou assistance Adobe Expert Care n’est fournie.
+>Depuis le 30 avril 2017, Adobe Bloodhound a pris fin. Depuis le 1er mai 2017, plus aucune amélioration n’y est apportée et aucune assistance d’ingénierie supplémentaire ou assistance Adobe Expert Care n’est fournie.
 
 ## Messages du journal
 
@@ -91,7 +91,7 @@ Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.s
 * **tag :** nom du sous-composant qui a émis le message du journal (généralement le nom de classe)
 * **message :** message de trace
 
-Vous pouvez utiliser les journaux de la bibliothèque Media SDK pour vérifier l'implémentation. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
+Vous pouvez utiliser les journaux générés par la bibliothèque du SDK multimédia pour vérifier l’implémentation. A good strategy is to search through the logs for the string `#track`. This will highlight all the `track*()` calls made by your application.
 
 For instance, this is what the logs filtered for `#track` could look like:
 
