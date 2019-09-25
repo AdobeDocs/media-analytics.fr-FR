@@ -37,7 +37,7 @@ Le service Federated Analytics fournit un système pour le partage de données A
 
 * **Contrat de conseil Adobe :** Pour la configuration initiale des règles fédérées entre le récepteur et l’expéditeur, il est recommandé de travailler avec des services de conseil pour examiner les données et créer l’accord de partage de données.
 
-## Téléchargement du formulaire d’analyses fédérées
+## Download the Federated Analytics Form
 
 **Téléchargez la version actuelle du formulaire ici:** Formulaire d'accord sur les règles de [fédération.](/assets/federated_analytics_form.pdf)
 
