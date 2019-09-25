@@ -1,7 +1,7 @@
 ---
 seo-title: Conditions préalables
 title: Conditions préalables
-uuid: 4 c 0 b 37 f 3-8615-4 cc 0-b 9 c 9-eeb 029067064
+uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -10,7 +10,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 # Conditions préalables{#prerequisites}
 
-## Decisions {#decision}
+## Décisions {#decision}
 
 Avant de commencer votre mise en œuvre du suivi, les premières décisions doivent être prises concernant la mise en œuvre correspondant le mieux à votre situation :
 
@@ -20,13 +20,13 @@ Avant de commencer votre mise en œuvre du suivi, les premières décisions doiv
 
 ## Tâches {#prereq-tasks}
 
-For a *Media Analytics* implementation, here are the tasks you must complete before you begin:
+Pour une mise en oeuvre *Media Analytics* , vous devez effectuer les tâches suivantes avant de commencer :
 
 1. **Activez Experience Cloud.**
 
-   Vous devez mettre en œuvre le service d'identité Adobe Experience Platform.
+   Vous devez mettre en oeuvre le service d’identité Adobe Experience Platform.
 
-   Le service d'identité active la structure d'identification commune pour les services principaux d'Experience Cloud, les solutions et les attributs et audiences du client dans le service principal People. Pour ce faire, il attribue un identifiant persistant et unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
+   Le service Identity Service permet la structure d’identification commune pour les services principaux Experience Cloud, les solutions, les attributs du client et les audiences dans le service principal People. Pour ce faire, il attribue un identifiant persistant et unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
 
    ![](assets/mc_id_service_graphic.png)
 
