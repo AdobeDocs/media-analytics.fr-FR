@@ -2,8 +2,8 @@
 seo-title: Lecture VOD avec publicités preroll
 title: Lecture VOD avec publicités preroll
 description: Dans ce scénario, des publicités preroll ont été insérées avant le contenu principal.
-seo-description: Dans ce scénario dans Adobe Media Analytics, les publicités preroll ont été insérées avant le contenu principal.
-uuid: 5 d 1022 a 8-88 cb -40 aa -919 c -60 dd 592 a 639 e
+seo-description: Dans ce scénario, dans Adobe Media Analytics, les publicités preroll ont été insérées avant le contenu principal.
+uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -24,8 +24,8 @@ Dans ce scénario, des publicités preroll ont été insérées avant le contenu
 | La première image de la publicité n° 2 s’affiche. | `trackEvent:AdStart` | Analytics Ad Start, Heartbeat Ad Start |  |
 | La publicité est lue. |  | Ad Heartbeats |  |
 | La lecture de la publicité n° 2 se termine. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | La fin de la publicité et de la capsule est atteinte. |
-| Le contenu est lu. |  | Content Heartbeats | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
-| Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | This network call is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Le contenu est lu. |  | Content Heartbeats | Cet appel réseau est identique au scénario Lecture [VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Cet appel réseau est identique au scénario Lecture [VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Paramètres {#section_33CDFB6CB230437480B67A3D149EC44E}
@@ -74,7 +74,7 @@ Dans ce scénario, le contenu VOD est constitué d’une publicité preroll, pui
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** Pour afficher ce scénario dans Android, définissez le code suivant :
+* **Android** Pour afficher ce scénario dans Android, configurez le code suivant :
 
    ```java
    // Set up  mediaObject 
@@ -178,7 +178,7 @@ Dans ce scénario, le contenu VOD est constitué d’une publicité preroll, pui
    ........ 
    ```
 
-* **Ios :** pour afficher ce scénario dans ios, configurez le code suivant :
+* **iOS -** Pour afficher ce scénario dans iOS, configurez le code suivant :
 
    ```
    //  Set up mediaObject 
@@ -384,7 +384,7 @@ Dans ce scénario, le contenu VOD est lu avec une publicité preroll, le contenu
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** Pour afficher ce scénario dans Android, définissez le code suivant :
+* **Android** Pour afficher ce scénario dans Android, configurez le code suivant :
 
    ```java
    // Set up mediaObject 
@@ -561,7 +561,7 @@ Dans ce scénario, le contenu VOD est lu avec une publicité preroll, le contenu
    ........ 
    ```
 
-* **Ios** Pour afficher ce scénario dans ios, configurez le code suivant :
+* **iOS** Pour afficher ce scénario dans iOS, configurez le code suivant :
 
    ```
    //  Set up mediaObject 
