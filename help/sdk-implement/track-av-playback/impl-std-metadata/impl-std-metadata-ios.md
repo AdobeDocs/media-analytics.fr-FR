@@ -3,7 +3,7 @@ description: valeur nulle
 seo-description: valeur nulle
 seo-title: Mise en œuvre de métadonnées standard sur iOS
 title: Mise en œuvre de métadonnées standard sur iOS
-uuid: 75 a 80 f 08-4 a 95-49 d 4-a 27 a -8 ce 531 d 64 d 31
+uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -27,7 +27,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. Provide this `MediaInfo` object while invoking the `trackSessionStart` API.
 
-### Exemple d'implémentation
+### Exemple de mise en oeuvre
 
 Instanciez un objet de métadonnées standard, renseignez les variables désirées et définissez l’objet de métadonnées sur l’objet Media Heartbeat. Par exemple :
 
