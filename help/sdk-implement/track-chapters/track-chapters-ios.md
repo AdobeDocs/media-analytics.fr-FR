@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi des chapitres et des segments sur iOS
 title: Suivi des chapitres et des segments sur iOS
-uuid: ffc 5 ce 9 f -04 ba -4059-92 d 4-4 cb 4180 ac 9 ed
+uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,15 +12,15 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide de SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour l’implémentation à l’aide des SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 1. Identifiez le moment où a lieu l’événement de début de chapitre et créez l’instance `ChapterObject` à l’aide des informations de chapitre.
 
-   `ChapterObject` référence du suivi des chapitres :
+   `ChapterObject` référence de suivi de chapitre :
 
    >[!NOTE]
    >
-   >Ces variables ne sont requises que si vous envisagez de suivre des chapitres.
+   >Ces variables ne sont requises que si vous prévoyez de suivre les chapitres.
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
