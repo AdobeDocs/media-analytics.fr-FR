@@ -1,7 +1,7 @@
 ---
 seo-title: Mesures calculées
 title: Mesures calculées
-uuid: 9 dd 35155-58 aa -4 f 05-896 e-c 5 cbc 4 b 13 d 59
+uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 translation-type: tm+mt
 source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
@@ -16,9 +16,9 @@ source-git-commit: 5582243074a712e53dd23071d319a9ad1f89e10e
 
 | Mesure | Description | Formule |
 |---|---|---|
-| Nombre moyen de publicités par diffusion multimédia | Débuts de publicité par média commencés | `Ad Starts / Media Starts` |
-| Nombre moyen de chapitres par diffusion multimédia | Début de chapitre par début de média | `Chapter Start / Media Starts` |
-| Temps moyen passé sur le média | Durée totale de la visite par média (HH : MM : SS) | `Media Time Spent / Media Starts` |
+| Nombre moyen de publicités par diffusion multimédia | Ad Starts per Media Starts | `Ad Starts / Media Starts` |
+| Nombre moyen de chapitres par diffusion multimédia | Chapter Starts per Media Starts | `Chapter Start / Media Starts` |
+| Temps moyen passé sur le média | Total Time Spent per Media Starts (HH:MM:SS) | `Media Time Spent / Media Starts` |
 | Temps moyen passé sur le contenu | Temps passé sur le contenu par démarrage de contenu (HH:MM:SS) | `Content Time Spent / Content Start` |
 | Temps moyen passé sur la publicité | Temps passé sur la publicité par démarrage de publicité (HH:MM:SS) | `Ad Time Spent / Ad Start` |
 | Temps moyen passé sur le chapitre | Temps passé sur le chapitre par démarrage de chapitre (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
