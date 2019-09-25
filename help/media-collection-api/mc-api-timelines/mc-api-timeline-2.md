@@ -1,7 +1,7 @@
 ---
 seo-title: 'Chronologie 2 : L’utilisateur abandonne la session'
 title: 'Chronologie 2 : L’utilisateur abandonne la session'
-uuid: 74 b 89 e 8 f-ef 56-4 e 0 c-b 9 a 8-40739 e 15 b 4 cf
+uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## VOD, publicité preroll, publicités mid-roll, utilisateur abandonne le contenu tôt
 
-Les diagrammes suivants illustrent le chronologie du curseur de lecture et le journal correspondant des actions d'un utilisateur. Les détails de chaque action et les requêtes associées sont présentés ci-dessous.
+Les diagrammes suivants illustrent la chronologie du curseur de lecture et la chronologie correspondante des actions d’un utilisateur. Les détails de chaque action et des demandes qui l'accompagnent sont présentés ci-dessous.
 
 
 ![](assets/va_api_content_2.png)
@@ -21,9 +21,9 @@ Les diagrammes suivants illustrent le chronologie du curseur de lecture et le jo
 ![](assets/va_api_actions_2.png)
 
 
-## Détails de l'action
+## Détails de l’action
 
-### Action 1 - Start session {#Action-1}
+### Action 1 - Démarrer la session {#Action-1}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -58,7 +58,7 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. It retu
 }
 ```
 
-### Action 2 - Ping timer start {#Action-2}
+### Action 2 - Démarrage du minuteur Ping {#Action-2}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -66,9 +66,9 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. It retu
 
 **Détails de mise en œuvre**
 
-Démarrez le minuteur ping de l'application. Le premier événement ping doit déclencher 1 seconde dans s'il y a des publicités preroll, 10 secondes dans le cas contraire.
+Démarrez le minuteur ping de votre application. Le premier événement ping doit alors se déclencher 1 seconde en cas de publicités preroll, 10 secondes dans le cas contraire.
 
-### Action 3 - Ad break start {#Action-3}
+### Action 3 - Début de la coupure publicitaire {#Action-3}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -94,7 +94,7 @@ Les publicités preroll doivent être suivies. Les publicités ne peuvent être 
 }
 ```
 
-### Action 4 - Ad start {#Action-4}
+### Action 4 - Démarrage de la publicité {#Action-4}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -104,7 +104,7 @@ Les publicités preroll doivent être suivies. Les publicités ne peuvent être 
 
 Une publicité de 12 secondes commence.
 
-**Exemple de corps de requête**
+**Sample request body**
 
 ```
 {
@@ -129,7 +129,7 @@ Une publicité de 12 secondes commence.
 }
 ```
 
-### Action 5 - Ad pings {#Action-5}
+### Action 5 - Pings publicitaires {#Action-5}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -137,7 +137,7 @@ Une publicité de 12 secondes commence.
 
 **Détails de mise en œuvre**
 
-Appuyez sur la touche Retour toutes les 1 secondes. (Les publicités suivantes ne s'affichent pas, par souci de concision).
+Ping the backend every 1 second. (Les pings publicitaires suivants ne s’affichent pas, dans un souci de concision.)
 
 **Exemple de corps de requête**
 
@@ -151,7 +151,7 @@ Appuyez sur la touche Retour toutes les 1 secondes. (Les publicités suivantes n
 }
 ```
 
-### Action 6 - Ad complete {#Action-6}
+### Action 6 - Fin de la publicité {#Action-6}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -195,7 +195,7 @@ La coupure publicitaire est terminée. Du début à la fin de la coupure publici
 }
 ```
 
-### Action 8 - Play content {#Action-8}
+### Action 8 - Lecture du contenu {#Action-8}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -315,7 +315,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 
 Envoyez un ping au serveur principal toutes les 10 secondes.
 
-**Exemple de corps de requête**
+**Sample request body**
 
 ```
 {
@@ -337,7 +337,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 
 Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
 
-**Exemple de corps de requête**
+**Sample request body**
 
 ```
 {
