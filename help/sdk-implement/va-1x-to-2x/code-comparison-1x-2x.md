@@ -1,7 +1,7 @@
 ---
-seo-title: Comparaison du code 1. x à 2. x
-title: Comparaison du code 1. x à 2. x
-uuid: 9 f 0 a 1660-2100-446 d-ab 75-afdf 966478 b 3
+seo-title: Comparaison de code 1.x à 2.x
+title: Comparaison de code 1.x à 2.x
+uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -14,22 +14,22 @@ Tous les paramètres de configuration et toutes les API de suivi sont désormais
 
 **Modifications de l’API de configuration :**
 
-* `AdobeHeartbeatPluginConfig.sdk` - Renommé `MediaConfig.appVersion`
-* `MediaHeartbeatConfig.playerName` - Maintenant défini au `MediaHeartbeatConfig` lieu de `VideoPlayerPluginDelegate`
+* `AdobeHeartbeatPluginConfig.sdk` - Renommé en `MediaConfig.appVersion`
+* `MediaHeartbeatConfig.playerName` - Désormais activé `MediaHeartbeatConfig` au lieu de `VideoPlayerPluginDelegate`
 * (Pour JavaScript uniquement) : Instance `AppMeasurement` - Désormais envoyée via le constructeur `MediaHeartbeat`.
 
 **Modifications des propriétés de configuration :**
 
-* `sdk` - Renommé `appVersion`
-* `publisher` - Supprimé ; L'ID d'entreprise Experience Cloud est utilisé à la place en tant qu'éditeur
+* `sdk` - Renommé en `appVersion`
+* `publisher` - Supprimé; L’ID d’entreprise Experience Cloud est utilisé à la place en tant qu’éditeur.
 * `quiteMode` - Supprimée
 
-**Liens vers des exemples de lecteurs 1. x et 2. x :**
+**Liens vers les exemples de lecteurs 1.x et 2.x :**
 
 * [Lecteur échantillon 1.x ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
 * [Lecteur échantillon 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
-Les sections suivantes fournissent des comparaisons de code entre 1. x et 2. x, couvrant l'initialisation, la lecture principale, la lecture de la publicité, la lecture de chapitres et certains événements supplémentaires.
+Les sections suivantes présentent des comparaisons de code entre 1.x et 2.x, qui couvrent l’initialisation, la lecture principale, la lecture de publicité, la lecture de chapitre et certains événements supplémentaires.
 
 ## Comparaison de code VHL : INITIALISATION
 
@@ -42,7 +42,7 @@ Les sections suivantes fournissent des comparaisons de code entre 1. x et 2. x, 
 | `AdobeAnalyticsPlugin()` |  |
 | `HeartbeatPlugin()` |  |
 
-#### Video player plugin initialization (1.x) {#plugin-init-1.x}
+#### Initialisation du module externe du lecteur vidéo (1.x) {#plugin-init-1.x}
 
 ```js
 this._playerPlugin = new VideoPlayerPlugin( new SampleVideoPlayerPluginDelegate(this._player));
@@ -71,7 +71,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-#### Media Heartbeat initialization (2.x) {#mh-init-2.x}
+#### Initialisation de Media Heartbeat (2.x) {#mh-init-2.x}
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
@@ -181,7 +181,7 @@ this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this.
 | `VideoPlayerPluginDelegate.trackVideoLoad()` | `MediaHeartbeat.createMediaObject()` |
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### Session Start (1.x) {#session-start-1.x}
+#### Démarrage de la session (1.x) {#session-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -198,7 +198,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Session Start (2.x) {#session-start-2.x}
+#### Démarrage de la session (2.x) {#session-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -216,7 +216,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### Standard Metadata (1.x) {#std-meta-1.x}
+#### Métadonnées standard (1.x) {#std-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -238,7 +238,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-#### Standard Metadata (2.x) {#std-meta-2.x}
+#### Métadonnées standard (2.x) {#std-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -271,7 +271,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | `VideoMetadataKeys()` | `MediaHeartbeat.createMediaObject()` |
 | `AdobeAnalyticsPlugin.setVideoMetadata()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### Custom Metadata (1.x) {#custom-meta-1.x}
+#### Métadonnées personnalisées (1.x) {#custom-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -285,7 +285,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 };
 ```
 
-#### Custom Metadata (2.x) {#custom-meta-2.x}
+#### Métadonnées personnalisées (2.x) {#custom-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
@@ -311,7 +311,7 @@ VideoAnalyticsProvider.prototype._onLoad = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackPlay()` | `MediaHeartbeat.trackPlay()` |
 
-#### Playback (1.x) {#playback-1.x}
+#### Lecture (1.x) {#playback-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -320,7 +320,7 @@ VideoAnalyticsProvider.prototype._onSeekStart = function() {
 };
 ```
 
-#### Playback (2.x) {#playback-2.x}
+#### Lecture (2.x) {#playback-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekStart = function() { 
@@ -359,7 +359,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackSeekComplete()` | `MediaHeartbeat.`<br/>  `trackEvent(MediaHeartbeat.Event.SeekComplete)` |
 
-#### Seeking (1.x) {#seek-1.x}
+#### Recherche (1.x) {#seek-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -368,7 +368,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 };
 ```
 
-#### Seeking (2.x) {#seek-2.x}
+#### Recherche (2.x) {#seek-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() { 
@@ -383,7 +383,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferStart()` | `MediaHeartbeat.trackEvent(`<br/>  `MediaHeartbeat.Event.BufferStart)` |
 
-#### Buffer Start (1.x) {#buffer-start-1.x}
+#### Début de la mémoire tampon (1.x) {#buffer-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -392,7 +392,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 };
 ```
 
-#### Buffer Start (2.x) {#buffer-start-2.x}
+#### Début de la mémoire tampon (2.x) {#buffer-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferStart = function() { 
@@ -407,7 +407,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BufferComplete)` |
 
-#### Buffer Complete (1.x) {#buffer-complete-1.x}
+#### Fin de la mémoire tampon (1.x) {#buffer-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -416,7 +416,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 };
 ```
 
-#### Buffer Complete (2.x) {#buffer-complete-2.x}
+#### Fin de la mémoire tampon (2.x) {#buffer-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() { 
@@ -431,7 +431,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackComplete()` | `MediaHeartbeat.trackComplete()` |
 
-#### Playback Complete (1.x) {#playback-complete-1.x}
+#### Lecture terminée (1.x) {#playback-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -442,7 +442,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 };
 ```
 
-#### Playback Complete (2.x) {#playback-complete-2.x}
+#### Lecture terminée (2.x) {#playback-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onComplete = function() { 
@@ -462,7 +462,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
 |  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
-#### Ad Start (1.x) {#ad-start-1.x}
+#### Démarrage de publicité (1.x) {#ad-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -477,7 +477,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Ad Start (2.x) {#ad-start-2.x}
+#### Démarrage de publicité (2.x) {#ad-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -503,7 +503,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdMetadataKeys()` | `MediaHeartbeat.createAdObject()` |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.trackAdStart()` |
 
-#### Standard Ad Metadata (1.x) {#ad-meta-1.x}
+#### Métadonnées d’annonce standard (1.x) {#ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -522,7 +522,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Standard Ad Metadata (2.x) {#ad-meta-2.x}
+#### Métadonnées d’annonce standard (2.x) {#ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -557,7 +557,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 |  | `MediaHeartbeat.trackAdStart()` |
 
-#### Custom Ad Metadata (1.x) {#custom-ad-meta-1.x}
+#### Métadonnées publicitaires personnalisées (1.x) {#custom-ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -576,7 +576,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Custom Ad Metadata (2.x) {#custom-ad-meta-2.x}
+#### Métadonnées publicitaires personnalisées (2.x) {#custom-ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() { 
@@ -608,7 +608,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 |  | `MediaHeartbeat.trackAdStart()` |
 
-#### Ad Skip (1.x) {#ad-skip-1.x}
+#### Ignorer la publicité (1.x) {#ad-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() { 
@@ -616,7 +616,7 @@ SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
 };
 ```
 
-#### Ad Skip (2.x) {#ad-skip-2.x}
+#### Ignorer la publicité (2.x) {#ad-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdSkip = function() { 
@@ -635,7 +635,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
 |  | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
 
-#### Ad Complete (1.x) {#ad-complete-1.x}
+#### Fin de publicité (1.x) {#ad-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -644,7 +644,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 };
 ```
 
-#### Ad Complete (2.x) {#ad-complete-2.x}
+#### Fin de publicité (2.x) {#ad-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() { 
@@ -663,7 +663,7 @@ VideoAnalyticsProvider.prototype._onAdComplete = function() {
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.createChapterObject` |
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### Chapter Start (1.x) {#chap-start-1.x}
+#### Début du chapitre (1.x) {#chap-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -678,7 +678,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 };
 ```
 
-#### Chapter Start (2.x) {#chap-start-2.x}
+#### Chapitre de début (2.x) {#chap-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -698,7 +698,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `VideoPlayerPluginDelegate.getChapterInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterSkip)` |
 
-#### Chapter Skip (1.x) {#chap-skip-1.x}
+#### Sauts de chapitre (1.x) {#chap-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() { 
@@ -709,7 +709,7 @@ SampleVideoPlayerPluginDelegate.prototype.getChapterInfo = function() {
 >[!NOTE]
 >In VHL 1.5.X APIs; `getChapterinfo()` must return null if the player is outside the Chapter boundaries.
 
-#### Chapter Skip (2.x) {#chap-skip-2.x}
+#### Sauts de chapitre (2.x) {#chap-skip-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterSkip = function() { 
@@ -724,7 +724,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.createChapterObject()` |
 | `AdobeAnalyticsPlugin.setChapterMetadata()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### Chapter Custom Metadata (1.x) {#chap-cust-meta-1.x}
+#### Chapitre Métadonnées personnalisées (1.x) {#chap-cust-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -736,7 +736,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-#### Chapter Custom Metadata (2.x) {#chap-cust-meta-2.x}
+#### Chapitre Métadonnées personnalisées (2.x) {#chap-cust-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() { 
@@ -758,7 +758,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `trackChapterComplete()` | `trackEvent(MediaHeartbeat.Event.ChapterComplete)` |
 
-#### Chapter Complete (1.x) {#chap-complete-1.x}
+#### Chapitre terminé (1.x) {#chap-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -767,7 +767,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-#### Chapter Complete (2.x) {#chap-complete-2.x}
+#### Chapitre terminé (2.x) {#chap-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() { 
@@ -784,7 +784,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBitrateChange()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BitrateChange)` |
 
-#### Bitrate Change (1.x) {#bitrate-chg-1.x}
+#### Changement de débit (1.x) {#bitrate-chg-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -795,7 +795,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 };
 ```
 
-#### Bitrate Change (2.x) {#bitrate-chg-2.x}
+#### Changement de débit (2.x) {#bitrate-chg-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() { 
@@ -814,7 +814,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 | `VideoPlayerPlugin.trackVideoLoad()` |  |
 
-#### Video Resume (1.x) {#video-resume-1.x}
+#### Reprise vidéo (1.x) {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
@@ -827,7 +827,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Video Resume (2.x) {#video-resume-2.x}
+#### Reprise vidéo (2.x) {#video-resume-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() { 
