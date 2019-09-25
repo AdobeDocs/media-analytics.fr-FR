@@ -1,7 +1,7 @@
 ---
 seo-title: Types et descriptions d’événement
 title: Types et descriptions d’événement
-uuid: bc 4 f 75 a 7-ea 22-47 eb-a 50 d -5 f 41274 c 6 d 41
+uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -25,29 +25,29 @@ Sent when the player changes state to "playing" from another state (i.e., the `o
 
 Les événements ping ne doivent *pas* inclure la carte `params` dans le corps de la requête.
 
-## Bitratechange
+## bitrateChange
 
-Envoyé lorsque le bitrage change.
+Sent when the bitrage changes.
 
 ## bufferStart
 
-Envoyé lorsque la mise en mémoire tampon commence. Il n’existe aucun type d’événement `bufferResume`. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
+Envoyé au démarrage de la mise en mémoire tampon. Il n’existe aucun type d’événement `bufferResume`. A `bufferResume` is inferred when you send a `play` event after `bufferStart`.
 
 ## pauseStart
 
-Envoyé lorsque l'utilisateur appuie sur Pause. Il n’existe aucun type d’événement `resume`. A `resume` is inferred when you send a `play` event after a `pauseStart`.
+Sent when the user presses Pause. Il n’existe aucun type d’événement `resume`. A `resume` is inferred when you send a `play` event after a `pauseStart`.
 
 ## adBreakStart
 
-Signale le début d'une coupure publicitaire
+Signals the start of an ad break
 
 ## adStart
 
-Signale le début d'une publicité
+Indique le début d’une publicité
 
 ## adComplete
 
-Signale la fin d'une coupure publicitaire
+Signale la fin d’une coupure publicitaire
 
 ## adSkip
 
@@ -55,11 +55,11 @@ Signale un saut de publicité
 
 ## adBreakComplete
 
-Signale la fin d'une coupure publicitaire
+Signale la fin d’une coupure publicitaire
 
 ## chapterStart
 
-Signale le début d'un segment de chapitre
+Signale le début d’un segment de chapitre
 
 ## chapterSkip
 
@@ -67,15 +67,15 @@ Signale un saut de chapitre
 
 ## chapterComplete
 
-Signale la fin d'un chapitre
+Signale la fin d’un chapitre
 
 ## error
 
-Signale une erreur.
+Signals an error occurred.
 
 ## sessionEnd
 
-Cela permet d'informer l'arrière-plan de Media Analytics de la fermeture immédiate de la session lorsque l'utilisateur a abandonné son affichage du contenu et qu'il est peu probable qu'il soit renvoyé.
+Elle permet d’avertir le serveur principal d’Analytics de la fermeture immédiate de la session lorsque l’utilisateur a abandonné l’affichage du contenu et qu’il est peu probable qu’il y retourne.
 
 If you don't send a `sessionEnd`, an abandoned session will time-out normally (after no events are received for 10 minutes, or when no playhead movement occurs for 30 minutes), and the session is deleted by the backend.
 
