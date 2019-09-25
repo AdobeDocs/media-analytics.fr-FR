@@ -14,7 +14,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. It does not include instructions around the legacy Milestone video implementation. Nous encourageons tous les clients à adopter l’une des dernières solutions de suivi multimédia ou les deux, afin de capitaliser sur les améliorations et la mesure développée. Vous pouvez afficher les [avantages de la transition vers les dernières solutions](media-overview.md#section_cnj_5st_p1b) ci-dessous. While we will continue to support the Milestone method of tracking videos, there will not be any planned updates, fixes, or feature improvements. Contactez votre responsable de compte Adobe si vous avez des questions supplémentaires.
+>The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. Elle n’inclut pas d’instructions relatives à l’implémentation vidéo Jalon héritée. Nous encourageons tous les clients à adopter l’une des dernières solutions de suivi multimédia ou les deux, afin de capitaliser sur les améliorations et la mesure développée. Vous pouvez afficher les [avantages de la transition vers les dernières solutions](media-overview.md#section_cnj_5st_p1b) ci-dessous. Bien que nous continuions à prendre en charge la méthode de suivi des vidéos de jalon, il n’y aura aucune mise à jour, correction ou amélioration de fonctionnalités planifiée. Contactez votre responsable de compte Adobe si vous avez des questions supplémentaires.
 
 ## Aperçu {#section_8BFE4F8DA64B4A5F826A4940B11AA466}
 
@@ -102,12 +102,12 @@ Le tableau ci-dessous fournit la liste des appareils actuellement pris en charge
 | **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
 | **(Autres/nouveaux appareils connectés)** |  | ![](assets/icon-blue-check.png) |
 
-For Media SDK, also see Minimum Platform Version Support[](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Pour le SDK multimédia, voir également Prise en charge [minimale des versions de plateforme](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
-## Transport Layer Security {#transport-layer-security}
+## Sécurité de la couche de transport {#transport-layer-security}
 
-**TLS Notice --** Adobe has security compliance standards that require the end-of-life of older security protocols. Pour continuer à répondre aux normes de protocole de sécurité en constante évolution, Adobe se dirige vers l’utilisation de TLS 1.2, afin d’avoir la version la plus récente et la plus sécurisée en usage. À partir du 20 février 2019, Adobe ne prendra en charge que TLS 1.1 ou version ultérieure. Avec cette modification, Adobe ne collectera plus de données provenant d’utilisateurs finaux disposant d’anciens périphériques ou navigateurs Web qui déploient TLS 1.0. La migration vers TLS 1.2 améliore la sécurité. Il est important que vous passiez en revue les détails et que vous planifiiez les changements pour une transition en douceur.
+**Avis TLS —** Adobe applique des normes de conformité de sécurité qui exigent la fin de vie des anciens protocoles de sécurité. Pour continuer à répondre aux normes de protocole de sécurité en constante évolution, Adobe se dirige vers l’utilisation de TLS 1.2, afin d’avoir la version la plus récente et la plus sécurisée en usage. À partir du 20 février 2019, Adobe ne prendra en charge que TLS 1.1 ou version ultérieure. Avec cette modification, Adobe ne collectera plus de données provenant d’utilisateurs finaux disposant d’anciens périphériques ou navigateurs Web qui déploient TLS 1.0. La migration vers TLS 1.2 améliore la sécurité. Il est important que vous passiez en revue les détails et que vous planifiiez les changements pour une transition en douceur.
 
 >[!NOTE]
 >
->TLS is currently the most-widely deployed security protocol used in web browsers and other applications that require data to be securely exchanged over a network.
+>TLS est actuellement le protocole de sécurité le plus largement déployé utilisé dans les navigateurs Web et les autres applications qui nécessitent un échange sécurisé de données sur un réseau.
