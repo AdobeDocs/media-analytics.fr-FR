@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi de la mise en mémoire tampon sur Roku
 title: Suivi de la mise en mémoire tampon sur Roku
-uuid: 6666 b 270-9 aa 3-42 ff -95 a 8-f 12502022 d 47
+uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `BufferStart` | Constante permettant d’effectuer le suivi de l’événement Début de la mémoire tampon |
 | `BufferComplete` | Constante permettant d’effectuer le suivi de l’événement Fin de la mémoire tampon |
 
-## Mise en œuvre de la mise en mémoire tampon
+## Mise en oeuvre de la mise en mémoire tampon
 
 1. Prêtez attention aux événements de mise en mémoire tampon de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferStart`.
 
