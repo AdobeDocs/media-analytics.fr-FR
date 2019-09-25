@@ -1,7 +1,7 @@
 ---
 seo-title: Configuration de Chromecast
 title: Configuration de Chromecast
-uuid: d 664 e 394-02 a 2-4985-bbad-be 1 bcc 44 fb 2 b
+uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 translation-type: tm+mt
 source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
@@ -14,14 +14,14 @@ source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
 
 _Dois-je utiliser le SDK JavaScript Chromecast ou puis-je utiliser le SDK JavaScript standard ?_
 
-La réponse correcte est « Chromecast » pour les raisons suivantes :
+La réponse correcte est "Chromecast", pour les raisons suivantes :
 * Les bibliothèques AppMeasurement et VisitorAPI dans le SDK JS standard ne sont pas certifiées pour fonctionner sur les plates-formes OTT. Dans le SDK JS Chromecast, la bibliothèque Video Heartbeats (VHL), Analytics et VisitorAPI sont tous intégrés au SDK unique, unifié et certifié pour Chromecast.
 * Le SDK Chromecast est bien plus léger que le SDK JS standard. Ce point est essentiel pour le matériel bas de gamme utilisé par les plates-formes OTT.
 
 ## Conditions préalables
 
-* **Obtention des paramètres de configuration valides pour les pulsations**
-Ces paramètres peuvent être obtenus auprès d'un représentant Adobe après avoir configuré votre compte Analytics.
+* **Obtain valid configuration parameters for Heartbeats**
+These parameters can be obtained from an Adobe representative after you set up your media analytics account.
 * **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
    * *Une API pour vous abonner aux événements de lecteur* : Le kit SDK Media vous oblige à appeler une série d’API simples lorsque des événements ont lieu dans votre lecteur.
    * *Une API fournissant des informations sur le lecteur* : Ces informations comprennent des détails tels que le nom du média et la position du curseur de lecture.
