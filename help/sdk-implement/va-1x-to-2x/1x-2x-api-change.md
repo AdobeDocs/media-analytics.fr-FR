@@ -1,25 +1,25 @@
 ---
 seo-title: Conversion de l’API 1.x vers 2.x
 title: Conversion de l’API 1.x vers 2.x
-uuid: 6 e 619288-c 082-4 cb 4-8685-e 90823 dadf 4 a
+uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
 source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
 ---
 
 
-# API 1.x to 2.x conversion {#one-x-to-two-x-conv}
+# Conversion d’API 1.x à 2.x {#one-x-to-two-x-conv}
 
-## Références API 2. x du kit Media SDK
+## Références de l’API Media SDK 2.x
 
 * [Référence de l’API Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/index.html)
 * [Référence de l’API iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/index.html)
 * [Référence de l’API JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/index.html)
 * [Référence à l’API Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/index.html)
 
-## API Track * obligatoires :
+## API Track* requises :
 
-| VHL 1. x  | VHL 2. x |
+|  VHL 1.x | VHL 2.x |
 |---|---|
 | `videoPlayerPlugin.trackVideoLoad()` | S.O. |
 | `videoPlayerPlugin.trackSessionStart()` | [mediaHeartbeat.trackSessionStart(mediaObject, mediaCustomMetadata)](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#trackSessionStart) |
