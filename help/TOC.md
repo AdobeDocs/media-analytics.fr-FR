@@ -1,7 +1,7 @@
 ---
 product: Media Analytics
 audience: utilisateur final
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: Adobe Analytics pour l’audio et la vidéo
 translation-type: tm+mt
 source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 
@@ -10,7 +10,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 
 # Adobe Analytics for Audio and Video {#using}
 
-+ [Measuring Audio and Video in Adobe Analytics](media-overview.md)
++ [Mesure de l’audio et de la vidéo dans Adobe Analytics](media-overview.md)
 + Measurement Options {#measurement-options}
    + Media Module Milestone Tracking {#mm-milestone-tracking}
       + [Aperçu de Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
@@ -47,13 +47,13 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
          + [Mise en mémoire tampon du suivi sur Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
          + [Mise en mémoire tampon du suivi sur iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
          + [Mise en mémoire tampon du suivi sur JavaScript](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
-         + [Track Buffering on Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Track Buffering on Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Mise en mémoire tampon des pistes sur Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [Mise en mémoire tampon du suivi sur Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
-         + [Track Seeking on Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
-         + [Track Seeking on iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
-         + [Track Seeking on JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
-         + [Track Seeking on Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [Suivi de la recherche sur Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Suivi de la recherche sur iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
+         + [Suivi de la recherche sur JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+         + [Recherche de pistes sur Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Recherche de pistes sur Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + Mise en œuvre de métadonnées standard {#impl-std-metadata}
          + [Mise en œuvre de métadonnées standard sur Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
@@ -79,8 +79,8 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
    + Suivi des chapitres et des segments {#track-chapters}
       + [Aperçu](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Suivi des chapitres et des segments sur Android](sdk-implement/track-chapters/track-chapters-android.md)
-      + [Track Chapters and Segments on iOS](sdk-implement/track-chapters/track-chapters-ios.md)
-      + [Track Chapters and Segments on JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
+      + [Suivi des chapitres et des segments sur iOS](sdk-implement/track-chapters/track-chapters-ios.md)
+      + [Suivi des chapitres et des segments sur JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
       + [Suivi des chapitres et des segments sur Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [Suivi des chapitres et des segments sur Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + Suivi de la qualité de l’expérience {#track-qos}
@@ -137,7 +137,7 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
       + [Présentation de la migration](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [Comparaison de code  : 1.x vers 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [Conversion de l’API 1.x vers 2.x](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ Media Collection API (RESTful) {#media-collection-api}
++ API de collection de médias (RESTful) {#media-collection-api}
    + [Aperçu](media-collection-api/mc-api-overview.md)
    + Référence d’API {#mc-api-ref}
       + [Requête Sessions](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -172,13 +172,13 @@ source-git-commit: 37a73c1e6610f2c5596167d65005b7681359ea22
 + Reporting and Analysis {#media-reports}
    + [Activation des rapports sur les médias](media-reports/media-reports-enable.md)
    + Media Default Reports {#media-default-reports}
-      + [Default Reports Overview](media-reports/media-default-reports/default-reports-overview.md)
+      + [Présentation des rapports par défaut](media-reports/media-default-reports/default-reports-overview.md)
       + [Présentation du média](media-reports/media-default-reports/media-reports-overview.md)
       + [Détails du média](media-reports/media-default-reports/media-reports-detail.md)
       + [Tranche horaire du média](media-reports/media-default-reports/media-reports-daypart.md)
       + [Visionneuses simultanées de médias](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [Obtention des données du rapport JSON sur les visionneuses simultanées](media-reports/media-default-reports/get-concurrent-json.md)
-   + [Media Workspace Templates](media-reports/media-workspace-templates.md)
+   + [Modèles Media Workspace](media-reports/media-workspace-templates.md)
 + [Federated Analytics](data-sharing/federated-analytics.md)
 + Ressources supplémentaires {#additional-resources}
    + [Mises à jour de la documentation](additional-resources/doc-updates.md)
