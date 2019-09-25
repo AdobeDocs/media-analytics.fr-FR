@@ -1,7 +1,7 @@
 ---
 seo-title: Un dispositif de suivi VOD pour plusieurs sessions
 title: Un dispositif de suivi VOD pour plusieurs sessions
-uuid: 355 c 83 f 4-52 bd -4 bdd -92 dc-ab 506 e 412 d 0 a
+uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -28,7 +28,7 @@ Ce scénario est le même que le scénario [lecture VOD sans publicité](/help/s
 
 ![](assets/multi-sessions-one-at-a-time.png)
 
-### Android   
+### Android
 
 To create two instances of `MediaHeartbeat` for two media players, set up the following code:
 
