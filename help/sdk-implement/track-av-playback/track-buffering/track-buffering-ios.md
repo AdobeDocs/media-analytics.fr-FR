@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi de la mise en mémoire tampon sur iOS
 title: Suivi de la mise en mémoire tampon sur iOS
-uuid: 4 f 4 db 23 a -489 b -4 b 41-bb 6 e -393 ec 64 d 52 a 2
+uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -22,7 +22,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `ADBMediaHeartbeatEventBufferStart` | Constante permettant d’effectuer le suivi de l’événement Début de la mémoire tampon |
 | `ADBMediaHeartbeatEventBufferComplete` | Constante permettant d’effectuer le suivi de l’événement Fin de la mémoire tampon |
 
-## Mise en œuvre de la mise en mémoire tampon
+## Mise en oeuvre de la mise en mémoire tampon
 
 1. Prêtez attention aux événements de mise en mémoire tampon de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferStart` :
 
