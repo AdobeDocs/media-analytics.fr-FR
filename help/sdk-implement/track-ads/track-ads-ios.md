@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi des publicités sur iOS
 title: Suivi des publicités sur iOS
-uuid: e 979 e 679-cde 5-4 c 30-8 f 34-867 feceac 13 a
+uuid: e979e679-cde5-4c30-8f34-867feceac13a
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide des SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour l’implémentation à l’aide des SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi des publicités
 
@@ -24,7 +24,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `ADBMediaHeartbeatEventAdComplete` | Constante permettant d’effectuer le suivi de l’événement Fin de la publicité |
 | `ADBMediaHeartbeatEventAdSkip` | Constante permettant d’effectuer le suivi de l’événement Saut de publicité |
 
-## Procédure de mise en œuvre
+## Etapes de mise en oeuvre
 
 1. Identifiez le moment où la limite de coupure publicitaire commence, y compris preroll, et créez un `AdBreakObject` à l’aide des informations de coupure publicitaire.
 
@@ -74,7 +74,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                                     length:[LENGTH]];
    ```
 
-1. Vous pouvez éventuellement joindre des métadonnées standard et/ou publicitaires à la session de suivi multimédia par le biais de variables de données contextuelles.
+1. Vous pouvez associer des métadonnées standard et/ou publicitaires à la session de suivi des médias au moyen de variables de données contextuelles.
 
    * [Mise en œuvre de métadonnées de publicité standard sur iOS](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la publicité actuelle :
