@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi des chapitres et des segments sur Roku
 title: Suivi des chapitres et des segments sur Roku
-uuid: 15 c 07131-77 d 7-4 a 97-92 c 6-0 a 190 c 6 b 08 d 3
+uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -12,17 +12,17 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l'aide de SDK 2. x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour l’implémentation à l’aide des SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-## Métadonnées publicitaires standard de mise en œuvre
+## Mise en oeuvre des métadonnées publicitaires standard
 
 1. Identifiez le moment où a lieu l’événement de début de chapitre et créez l’instance `ChapterObject` à l’aide des informations de chapitre.
 
-   `ChapterObject` référence du suivi des chapitres :
+   `ChapterObject` référence de suivi de chapitre :
 
    >[!NOTE]
    >
-   >Ces variables ne sont requises que si vous envisagez de suivre des chapitres.
+   >Ces variables ne sont requises que si vous prévoyez de suivre les chapitres.
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
