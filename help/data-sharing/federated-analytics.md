@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: b20cce8df3631690a7de6de502828e961d154665
+source-git-commit: 3ca6743e34d40e5826dbe50edcbec6aa77ef66f4
 
 ---
 
@@ -39,7 +39,7 @@ Le service Federated Analytics fournit un système pour le partage de données A
 
 ## Téléchargement du formulaire d’analyses fédérées
 
-**Download the current version of the form here:`===>`**   [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) `<===`
+**Download the current version of the form here:`===>`**  [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) **`<===`**
 
 ## Processus {#section_byb_kb3_vbb}
 
