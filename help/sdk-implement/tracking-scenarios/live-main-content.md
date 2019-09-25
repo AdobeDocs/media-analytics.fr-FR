@@ -1,7 +1,7 @@
 ---
 seo-title: Contenu principal en direct
 title: Contenu principal en direct
-uuid: e 92 e 99 f 4-c 395-48 aa -8 a 30-cbdd 2 f 5 fc 07 c
+uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
 source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
 
@@ -19,11 +19,11 @@ Dans ce scénario, une ressource en direct sans publicité est lue pendant les 4
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur **[!UICONTROL Lecture]ou d’un événement de lecture automatique.** |
 | La première image du média est lue. | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur. Des pulsations sont envoyées toutes les 10 secondes pendant la lecture. |
 | Le contenu est lu. |  | Content Heartbeats |  |
-| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l'utilisateur n'utilise pas le support à terminer. |
+| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur ne consomme pas le média jusqu’à la fin. |
 
 ## Paramètres {#section_D52B325B99DA42108EF560873907E02C}
 
-Un grand nombre de ces valeurs que vous pouvez voir dans les appels Adobe Analytics Content Start sont également présentes dans les appels Heartbeat Content Start. D'autres paramètres qu'Adobe utilise pour remplir les différents rapports Media dans Adobe Analytics s'affichent également. Nous ne les aborderons pas tous ici, mais seuls les plus importants.
+Un grand nombre de ces valeurs que vous pouvez voir dans les appels Adobe Analytics Content Start sont également présentes dans les appels Heartbeat Content Start. Vous verrez également de nombreux autres paramètres utilisés par Adobe pour renseigner les divers rapports sur les médias dans Adobe Analytics. Nous ne les aborderons pas tous ici, mais seuls les plus importants.
 
 ### Heartbeat Content Start
 
@@ -34,13 +34,13 @@ Un grand nombre de ces valeurs que vous pouvez voir dans les appels Adobe Analyt
 | `s:user:mid` | `s:user:mid` | Doit correspondre à la valeur intermédiaire de l’appel Adobe Analytics Content Start. |
 | `s:event:type` | "start" |  |
 | `s:asset:type` | "main" |  |
-| `s:asset:mediao_id` | &lt; Nom de votre média &gt; |  |
+| `s:asset:mediao_id` | &lt;Votre nom de média&gt; |  |
 | `s:stream:type` | live |  |
-| `s:meta:*` | facultatif | Métadonnées personnalisées définies sur le support |
+| `s:meta:*` | facultatif | Métadonnées personnalisées définies sur le média |
 
 ## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
 
-Lors de la lecture du média, un minuteur envoie une ou plusieurs pulsations (ou plages) toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
+Pendant la lecture du média, un minuteur envoie un ou plusieurs pulsations (ou pings) toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
 Dans les pulsations du contenu, recherchez certains éléments spécifiques :
 
@@ -51,21 +51,21 @@ Dans les pulsations du contenu, recherchez certains éléments spécifiques :
 
 ## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
 
-Il n'y aura pas d'appel complete dans ce scénario, car le flux en direct n'a jamais été terminé.
+Il n’y aura pas d’appel complet dans ce scénario, car le flux en direct n’a jamais été terminé.
 
-## Paramètres de valeur du curseur de lecture
+## Paramètres des valeurs du curseur de lecture
 
-Pour les flux en direct, vous devez définir la tête de lecture sur un décalage par rapport au moment où la programmation démarre, de sorte que dans les rapports, les analystes puissent déterminer à quel point les utilisateurs rejoignent et quittent le flux EN DIRECT dans une vue de 24 heures.
+Pour les flux LIVE, vous devez définir le curseur de lecture sur un décalage par rapport au début de la programmation, de sorte que les analystes puissent déterminer à quel moment les utilisateurs rejoignent le flux et le quitter dans une vue de 24 heures.
 
 ### Au début
 
-Pour les médias en DIRECT, lorsqu'un utilisateur commence à lire le flux, vous devez définir `l:event:playhead` le décalage actuel, en secondes. Contrairement à VOD, vous pouvez définir la tête de lecture sur 0.
+Pour le média LIVE, lorsqu’un utilisateur commence la lecture du flux, vous devez définir `l:event:playhead` le décalage actuel, en secondes. Par opposition à VOD, vous définissez le curseur de lecture sur "0".
 
-Par exemple, supposons qu'un événement de diffusion en flux continu DIRECT commence à minuit et s'exécute pendant 24 heures (`a.media.length=86400`; `l:asset:length=86400`). Supposons ensuite qu'un utilisateur commence à lire ce flux en direct à 12 h 00. Dans ce scénario, vous devez définir `l:event:playhead` 43200 (12 heures dans le flux).
+Par exemple, supposons qu’un événement de diffusion en continu en direct commence à minuit et dure 24 heures (`a.media.length=86400`; `l:asset:length=86400`). Supposons ensuite qu’un utilisateur commence à lire ce flux en direct à 12h00. Dans ce scénario, vous devez définir `l:event:playhead` sur 43200 (12 heures dans le flux).
 
 ### En pause
 
-La même logique de « tête de lecture dynamique » appliquée au début de la lecture doit être appliquée lorsqu'un utilisateur interrompt la lecture. Lorsque l'utilisateur revient à la lecture du flux en direct, vous devez définir `l:event:playhead` la valeur sur la position de la nouvelle position du curseur de lecture, _et non_ sur le point où l'utilisateur a mis en pause le flux EN DIRECT.
+La même logique de "curseur de lecture en direct" appliquée au début de la lecture doit être appliquée lorsqu’un utilisateur interrompt la lecture. Lorsque l’utilisateur revient à lire le flux en direct, vous devez définir la `l:event:playhead` valeur sur la nouvelle position du curseur de lecture décalée, _pas_ au point où l’utilisateur a interrompu le flux en direct.
 
 ## Exemple de code {#section_vct_j2j_x2b}
 
