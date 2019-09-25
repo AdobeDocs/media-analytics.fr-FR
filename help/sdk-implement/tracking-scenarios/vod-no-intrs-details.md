@@ -1,7 +1,7 @@
 ---
 seo-title: Lecture VOD sans publicité
 title: Lecture VOD sans publicité
-uuid: ee 2 a 1 b 79-2 c 2 f -42 e 1-8 e 81-b 62 bbdd 0 d 8 cb
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 translation-type: tm+mt
 source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
 
@@ -17,13 +17,13 @@ Ce scénario comprend une ressource VOD, sans publicité, qui est lue une fois d
 | Déclencheur | Méthode Heartbeat | Appels réseau | Remarques   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur Lecture ou d’un événement de lecture automatique. |
-| Première image du média | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur et, dès lors, des pulsations sont envoyées toutes les 10 secondes pendant toute la durée de la lecture. |
+| First frame of the media | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur et, dès lors, des pulsations sont envoyées toutes les 10 secondes pendant toute la durée de la lecture. |
 | Lecture du contenu |  | Content Heartbeats |  |
 | Contenu terminé | `trackComplete` | Heartbeat Content Complete | *Complete* signifie que le curseur de lecture a atteint la fin de sa course. |
 
 ## Paramètres {#section_45D7B10031524411B91E2C569F7818B0}
 
-Un grand nombre de ces valeurs que vous pouvez voir dans les appels Heartbeat est également présent dans les appels `Content Start`Content Start d’Adobe Analytics. Adobe utilise de nombreux paramètres pour remplir les différents rapports multimédia, mais seuls les paramètres les plus importants sont répertoriés dans le tableau suivant :
+Un grand nombre de ces valeurs que vous pouvez voir dans les appels Heartbeat est également présent dans les appels `Content Start`Content Start d’Adobe Analytics. Adobe utilise de nombreux paramètres pour renseigner les divers rapports sur les médias, mais seuls les paramètres les plus importants sont répertoriés dans le tableau suivant :
 
 ### Heartbeat Content Start
 
@@ -34,7 +34,7 @@ Un grand nombre de ces valeurs que vous pouvez voir dans les appels Heartbeat es
 | `s:user:mid` | à définir | Should match the mid value on the `Adobe Analytics Content Start` call. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt; Nom de votre média &gt; |  |
+| `s:asset:media_id` | &lt;Your Media Name&gt; |  |
 | `s:meta:*` | facultatif | Métadonnées personnalisées définies sur le support. |
 
 ## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
@@ -48,7 +48,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 
 ## Content Heartbeats {#section_3B5945336E464160A94518231CEE8F53}
 
-Lors de la lecture multimédia, un minuteur envoie au moins une pulsation toutes les 10 secondes. Ces pulsations contiennent des informations concernant la lecture, les publicités, la mise en mémoire tampon, etc. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
+Pendant la lecture du média, un minuteur envoie au moins une pulsation toutes les 10 secondes. Ces pulsations contiennent des informations concernant la lecture, les publicités, la mise en mémoire tampon, etc. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
 Dans les pulsations du contenu, recherchez les paramètres suivants :
 
