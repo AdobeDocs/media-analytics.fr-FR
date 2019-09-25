@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 4ffdc10559c7c25072bb7cd34165c9df9311a65e
+source-git-commit: b20cce8df3631690a7de6de502828e961d154665
 
 ---
 
@@ -37,9 +37,9 @@ Le service Federated Analytics fournit un système pour le partage de données A
 
 * **Contrat de conseil Adobe :** Pour la configuration initiale des règles fédérées entre le récepteur et l’expéditeur, il est recommandé de travailler avec des services de conseil pour examiner les données et créer l’accord de partage de données.
 
-## Download the Federated Analytics Form
+## Téléchargement du formulaire d’analyses fédérées
 
-**Téléchargez la version actuelle du formulaire ici:** Formulaire d'accord sur les règles de [fédération.](/assets/federated_analytics_form.pdf)
+**Download the current version of the form here:`===>`**   [Federation Rules Agreement Form.](/assets/federated_analytics_form.pdf) `<===`
 
 ## Processus {#section_byb_kb3_vbb}
 
