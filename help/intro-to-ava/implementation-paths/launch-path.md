@@ -1,7 +1,7 @@
 ---
-seo-title: Lancement d'Adobe Experience Platform
-title: Lancement d'Adobe Experience Platform
-uuid: d 6 f 9 daf 2-6 f 61-4475-9 a 77-94361 bdd 9 d 95
+seo-title: Adobe Experience Platform Launch
+title: Adobe Experience Platform Launch
+uuid: d6f9daf2-6f61-4475-9a77-94361bdd9d95
 translation-type: tm+mt
 source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
 
@@ -12,11 +12,11 @@ source-git-commit: ca7e63d9af1f84c7d5d620c72df5f62555f68c03
 
 Media Analytics (Heartbeats) est la solution de suivi multimédia normalisée d’Adobe. Elle a remplacé le modèle Milestone plus ancien d’Adobe.
 
-Adobe Experience Platform Launch, suite de produit de la gestion dynamique des balises, comporte une extension de lancement qui facilite la mise en œuvre du suivi dans vos lecteurs multimédias.
+Adobe Experience Platform Launch, le produit suivant de la gestion dynamique des balises, dispose d’une extension Launch qui facilite l’implémentation du suivi dans vos lecteurs de médias.
 
 You can learn more about the Launch extension here: [Adobe Media Analytics for Audio and Video Extension](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension)
 
 >[!NOTE]
 >
->Pour ce chemin d'implémentation, les clients doivent contacter leur représentant commercial/gestionnaire de compte pour signer un nouvel ordre de vente car Media Analytics a un SKU unique et des modifications d'un modèle de tarification basé sur les appels du serveur à un modèle basé sur les flux de médias.
+>Pour ce chemin d’implémentation, les clients doivent contacter leur représentant commercial/gestionnaire de compte pour signer une nouvelle commande client, car Media Analytics dispose d’un SKU unique et évolue d’un modèle de tarification basé sur les appels serveur vers un modèle basé sur les flux de médias.
 
