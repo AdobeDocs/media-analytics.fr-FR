@@ -1,7 +1,7 @@
 ---
 seo-title: Lecture VOD avec un chapitre
 title: Lecture VOD avec un chapitre
-uuid: 1566 a 6 f 5-cf 22-42 e 7-8 e 1 a -6976 c 6 c 4 e 649
+uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -25,7 +25,7 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 | Le chapitre est terminé. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Cela se produit lorsque la fin du chapitre est atteinte. |
 | Le contenu est lu. |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` signifie que la fin de la session de visionnage a été atteinte. Cette API doit être appelée même si l'utilisateur ne regarde pas le support à terminer. |
+| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` signifie que la fin de la session de visionnage a été atteinte. Cette API doit être appelée même si l’utilisateur ne regarde pas le média jusqu’à sa fin. |
 
 ## Paramètres {#section_869319D99A474FEA8EA840415EA97FBD}
 
@@ -48,7 +48,7 @@ Dans ce scénario, une partie du contenu VOD est un chapitre.
 
 ![](assets/chapter-regular-playback.png)
 
-### Android   
+### Android
 
 Pour afficher ce scénario dans Android, configurez le code suivant :
 
@@ -260,7 +260,7 @@ Dans ce scénario, le contenu VOD est lu avec un chapitre au début de la lectur
 
 ![](assets/pre-chapter-regular.png)
 
-### Android   
+### Android
 
 Pour afficher ce scénario dans Android, configurez le code suivant :
 
