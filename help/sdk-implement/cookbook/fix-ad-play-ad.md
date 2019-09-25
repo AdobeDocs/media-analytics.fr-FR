@@ -1,7 +1,7 @@
 ---
-seo-title: Résolution de la lecture principale apparaissant entre les publicités
-title: Résolution de la lecture principale apparaissant entre les publicités
-uuid: 228 b 4812-c 23 e -40 c 8-ae 2 b-e 15 ca 69 b 0 bc 2
+seo-title: Résolution du jeu principal apparaissant entre les publicités
+title: Résolution du jeu principal apparaissant entre les publicités
+uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 translation-type: tm+mt
 source-git-commit: 8c20af925a1043c90b84d7d13021848725e05500
 
@@ -18,18 +18,18 @@ Un écart entre les publicités tel que décrit ci-dessus est interprété par l
 
 ## IDENTIFICATION
 
-Lors de l'utilisation d'Adobe Debug ou d'un renifleur de paquets réseau tel que Charles, si vous voyez les appels Heartbeat suivants dans cet ordre lors d'un break publicitaire preroll :
+Lors de l’utilisation d’Adobe Debug ou d’un renifleur de paquets réseau tel que Charles, si vous voyez les appels de pulsation suivants dans cet ordre pendant une coupure publicitaire preroll :
 
 * Démarrage de la session: `s:event:type=start` &amp; `s:asset:type=main`
 * Démarrage de publicité: `s:event:type=start` &amp; `s:asset:type=ad`
 * Lecture de la publicité: `s:event:type=play` &amp; `s:asset:type=ad`
 * Fin de la publicité: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(unexpected)**
+* Lecture du contenu principal : `s:event:type=play` &amp; `s:asset:type=main`**(inattendu)**
 
 * Démarrage de publicité: `s:event:type=start` &amp; `s:asset:type=ad`
 * Lecture de la publicité: `s:event:type=play` &amp; `s:asset:type=ad`
 * Fin de la publicité: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Main Content Play: `s:event:type=play` &amp; `s:asset:type=main` **(expected)**
+* Lecture du contenu principal : `s:event:type=play` &amp; `s:asset:type=main`**(attendu)**
 
 ## RÉSOLUTION
 
@@ -49,7 +49,7 @@ Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour 
 
    >[!NOTE]
    >
-   >Appelez cette méthode uniquement si la publicité précédente n'était pas terminée. Pensez à une valeur booléenne pour conserver l’état "`isinAd`" de la publicité précédente.
+   >Appelez ceci uniquement si la publicité précédente n’était pas terminée. Pensez à une valeur booléenne pour conserver l’état "`isinAd`" de la publicité précédente.
 
 * Créez l’instance d’objet publicitaire pour la ressource publicitaire : par exemple, `adObject`.
 * Populate the ad metadata, `adCustomMetadata`.
@@ -58,7 +58,7 @@ Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour 
 
 **À chaque fin de ressource publicitaire :**
 
-* **Ne pas effectuer d'appel**
+* **Do not make a call**
 
    >[!NOTE]
    >
