@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi des actions de l’application
 title: Suivi des actions de l’application
-uuid: 9 cdc 048 a -419 a -4725-bd 61-6 ca 6 d 909 cf 10
+uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 translation-type: tm+mt
 source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
 
