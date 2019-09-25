@@ -1,7 +1,7 @@
 ---
 seo-title: Tableaux de bord et rapports de débogage
 title: Tableaux de bord et rapports de débogage
-uuid: 8 e 6 f 6245-d 8 bd -4329-89 e 1-4 c 5595 e 04 ec 5
+uuid: 8e6f6245-d8bd-4329-89e1-4c5595e04ec5
 translation-type: tm+mt
 source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
 
