@@ -1,7 +1,7 @@
 ---
 seo-title: Suivi de la qualité de l’expérience sur Chromecast
 title: Suivi de la qualité de l’expérience sur Chromecast
-uuid: d 0 cdc 8 cd -4 db 0-45 ef -9470-1 cba 3996305 b
+uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 translation-type: tm+mt
 source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
@@ -16,9 +16,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## Aperçu {#section_DDB8DFA47C5744AB9A04392AD5959BF7}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Vous pouvez utiliser l'API du lecteur multimédia pour identifier les variables liées à la qualité de service (qos) et le suivi des erreurs.
+Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Vous pouvez utiliser l’API du lecteur multimédia pour identifier les variables liées à la qualité de service et au suivi des erreurs.
 
-## Player events {#player-events}
+## Événements du lecteur {#player-events}
 
 ### Sur tous les événements de changement de débit
 
@@ -37,7 +37,7 @@ L’appel   `trackError(“media error id”);`
 
    >[!TIP]
    >
-   >Ces variables ne sont requises que si vous envisagez de suivre qos.
+   >Ces variables ne sont requises que si vous prévoyez d’effectuer le suivi de la qualité de service.
 
    | Variable | Description | Obligatoire |
    | --- | --- | :---: |
@@ -60,12 +60,12 @@ L’appel   `trackError(“media error id”);`
 
    >[!IMPORTANT]
    >
-   >Mettez à jour l'objet qos et appelez l'événement de changement de débit lors de chaque changement de débit. Ceci produit les données QoS les plus précises.
+   >Update the QoS object and call the bitrate change event on every bitrate change. Ceci produit les données QoS les plus précises.
 
 1. Assurez-vous que la méthode `getQoSObject()` renvoie les informations QoS les plus récentes.
 1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Voir [Aperçu](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >Le suivi des erreurs du lecteur multimédia n'arrête pas la session de suivi des médias. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >Tracking media player errors will not stop the media tracking session. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
 
