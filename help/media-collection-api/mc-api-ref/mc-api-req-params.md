@@ -12,19 +12,19 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## Données d’analyse
 
-| Request Key  | Obligatoire | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | O | `sessionStart` | URL de votre serveur Adobe Analytics |
 | `analytics.reportSuite` | O | `sessionStart` | ID identifiant vos données de rapport d’analyse |
 | `analytics.enableSSL` | N | `sessionStart` | True ou false pour activer SSL |
-| `analytics.visitorId` | N | `sessionStart` | The Adobe Visitor ID is a custom ID you can use across multiple Adobe applications. La pulsation `visitorId` est égale à Analytics `VID.` |
+| `analytics.visitorId` | N | `sessionStart` | L’ID de visiteur Adobe est un ID personnalisé que vous pouvez utiliser dans plusieurs applications Adobe. La pulsation `visitorId` est égale à Analytics `VID.` |
 
 ## Données du visiteur
 
-| Request Key  | Obligatoire | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | O | `sessionStart` | Identifiant d’entreprise Experience Cloud ; identifie votre organisation dans l’écosystème Adobe Experience Cloud |
-| `visitor.marketingCloudUserId` | N | `sessionStart` | This is the Experience Cloud User ID (ECID). In most scenarios this is the ID you should use to identify a user. The Heartbeat `marketingCloudUserId` equals the `MID` in Adobe Analytics. While not technically required, this parameter is necessary for accessing the Experience Cloud family of apps. |
+| `visitor.marketingCloudUserId` | N | `sessionStart` | Il s’agit de l’ID utilisateur Experience Cloud (ECID). Dans la plupart des cas, il s’agit de l’identifiant que vous devez utiliser pour identifier un utilisateur. La pulsation `marketingCloudUserId` est égale à la `MID` dans Adobe Analytics. Bien que cela ne soit pas techniquement nécessaire, ce paramètre est nécessaire pour accéder à la famille d’applications Experience Cloud. |
 | `visitor.aamLocationHint` | N | `sessionStart` | Fournit les données edge Adobe Audience Manager |
 | `appInstallationId` | N | `sessionStart` | L’ID appInstallationId identifie de manière unique l’application et l’appareil |
 
@@ -38,12 +38,12 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 | `media.contentType` | O | `sessionStart` | Format de la diffusion (peut correspondre à n’importe quelle chaîne ; quelques valeurs recommandées sont "live", "VOD" ou "Linear") |
 | `media.playerName` | O | `sessionStart` | Nom du lecteur responsable du rendu du contenu |
 | `media.channel` | O | `sessionStart` | Canal de distribution du contenu. Il peut s’agir d’un nom d’application mobile ou d’un nom de site Web, un nom de propriété. |
-| `media.resume` | N | `sessionStart` | Indicates whether or not a user is resuming a previous session (as opposed to starting a new session) |
+| `media.resume` | N | `sessionStart` | Indique si un utilisateur reprend une session précédente (au lieu de commencer une nouvelle session). |
 | `media.sdkVersion` | N | `sessionStart` | Version SDK utilisée par le lecteur |
 
 ## Métadonnées standard du contenu
 
-| Request Key  | Obligatoire | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.show` | N | `sessionStart` | Nom du programme ou de la série |
 | `media.season` | N | `sessionStart` | Numéro de la saison à laquelle le programme ou la série appartient |
@@ -64,7 +64,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## Données de publicité
 
-| Request Key  | Obligatoire | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | Nom convivial de la coupure publicitaire |
 | `media.ad.podIndex` | O | `adBreakStart` | Index de la capsule publicitaire dans la vidéo |
@@ -77,7 +77,7 @@ source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
 
 ## Métadonnées standard de la publicité
 
-| Request Key  | Obligatoire | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.ad.advertiser` | N | `adStart` | Entreprise ou marque dont le produit apparaît dans la publicité |
 | `media.ad.campaignId` | N | `adStart` | ID de la campagne publicitaire |
@@ -112,7 +112,7 @@ Pass the Experience Cloud User ID (also known as the `MID` or `MCID`) on the `se
 
 >[!NOTE]
 >
->Media Analytics (MA) est intégré à la famille d’applications Experience Cloud (Adobe Analytics, Audience Manager, Target, etc.). Vous avez besoin d’un Experience Cloud ID pour accéder à ces applications. _The ECID is what you should use to identify users in most scenarios._
+>Media Analytics (MA) est intégré à la famille d’applications Experience Cloud (Adobe Analytics, Audience Manager, Target, etc.). Vous avez besoin d’un Experience Cloud ID pour accéder à ces applications. _L’ECID est ce que vous devez utiliser pour identifier les utilisateurs dans la plupart des scénarios._
 
 ### appInstallationId
 
@@ -135,10 +135,10 @@ In addition to being necessary for MCID generation when that is not provided, th
 
 ### Identifiant utilisateur hérité (aid) d’Analytics et ID utilisateur déclaré (ID client)
 
-* **analytics.aid:**
+* **analytics.aid :**
 
    La valeur de cette clé doit être une chaîne représentant l’ID utilisateur hérité d’Analytics.
-* **visitor.customerIDs:**
+* **visitor.customerIDs :**
 
    La valeur de cette clé doit être un objet au format suivant :
 
