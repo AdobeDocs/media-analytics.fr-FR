@@ -3,16 +3,17 @@ seo-title: Guide de mise en œuvre d’un lien personnalisé
 title: Guide de mise en œuvre d’un lien personnalisé
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 translation-type: tm+mt
-source-git-commit: 8727044729eb98634eaab129cbfdc88f90892a51
+source-git-commit: 445a5037b1875db3f1f13a3733aa431c3b3031a0
 
 ---
 
 
 # Custom Link Implementation Guide{#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`. Le plus souvent, il est utilisé sur les plates-formes et les appareils nécessitant peu de mesures vidéo.
+Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
+Le plus souvent, il est utilisé sur les plates-formes et les appareils nécessitant peu de mesures vidéo.
 
-* Dans JavaScript : la `s.tl()` fonction
+* In JavaScript: the `s.tl()` function
 * Dans les applications mobiles : [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
@@ -50,7 +51,6 @@ if (e.type == "ended") {
 * Calculs (temps passé, quartiles, etc.) à faire dans un script personnalisé
 * Très simple, sans bibliothèque ni script masqué
 * Contrôle total sur tous les aspects des données vidéo
-* Suppression du lien vers le lecteur échantillon
 
 ## Exemple de lecteur JavaScript pour HTML5
 
@@ -126,4 +126,3 @@ if (e.type == "ended") {
   }; 
 </script>
 ```
-
