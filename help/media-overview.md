@@ -3,7 +3,7 @@ seo-title: Mesures audio et vidéo dans Adobe Analytics
 title: Mesures audio et vidéo dans Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 9b6e61e8d97ca44772f5dc2e31472a4f6c54e29c
+source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
 
 ---
 
@@ -25,10 +25,6 @@ Le suivi multimédia est activé via l’une des méthodes suivantes :
 * **SDK Media :** Peut être intégré à la plupart des lecteurs multimédia couramment utilisés.
 * **API Media Collection :** (API RESTful) Peut être intégrée aux lecteurs qui ne prennent pas en charge le SDK (ou aux lecteurs auxquels les clients ne souhaitent pas intégrer le SDK).
 
-   L’API Media Collection offre également une fonctionnalité supplémentaire qui n’est pas encore disponible dans le SDK :
-
-   * **Suivi du contenu téléchargé :** Permet la prise en charge du suivi du contenu multimédia (vidéo et audio) téléchargé et lu à partir d’un appareil, indépendamment de la connectivité. Cette fonctionnalité a été créée sur l’API Media Collection et suit la même spécification de suivi de lecture. (Le SDK n’est pour l’instant pas pris en charge.)
-
 Adobe Analytics for Media permet aux clients de suivre le parcours complet des clients sur leur site, ce qui inclut la consommation multimédia, et ces mesures sont aisément intégrées dans les rapports Analytics et d’autres produits Experience Cloud. La mesure multimédia vous permet de diviser et de regrouper vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées dont vous avez besoin pour effectuer une analyse détaillée complète et attribuer des critères de succès à des médias consommés entièrement, à la durée moyenne de consommation et aux publicités terminées.
 
 Les solutions multimédia n’incluent pas seulement les principales mesures de diffusion liées à la qualité de service (QoS), par exemple les images perdues, la durée de mise en mémoire tampon et le débit moyen. Elles peuvent également être combinées avec les données de votre site Web ou de votre application pour visualiser le parcours du client et ses intérêts, afin de formuler de meilleures recommandations et de personnaliser les expériences par le biais d’Adobe Experience Cloud.
@@ -39,7 +35,7 @@ Voici quelques-uns des nombreux avantages offerts par les solutions de mesure mu
 
 * **Analyses rapides** : Prenez des décisions en temps réel exploitables à l’aide de mesures de performance clés (par exemple, durée) sur plusieurs canaux. Les principaux événements de contenu sont mesurés en intervalles de **10 secondes** pour capturer toutes les activités au fur et à mesure. Les événements de suivi publicitaires se produisent à des intervalles de **1 seconde**.
 * **Stimuler l’engagement** : Stimulez l’engagement des utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent être lues dans le contenu pour offrir une expérience fluide et moins intrusive qui fait revenir les utilisateurs et apporte des visites renouvelées.
-* **Image holistique -** Combinez plusieurs points de données sur l’ensemble de vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de votre activité multimédia, et mesurez l’engagement et les affichages/écoutes sur tous les canaux possibles grâce à la fonctionnalité Analyses [](data-sharing/federated-analytics.md) fédérées.
+* **Holistic picture -** Combine multiple data points across all of your content distributors to get a full view of all your media activity, and measure engagement and views/listens across all possible channels through the [Federated Analytics](data-sharing/federated-analytics.md) feature.
 * **Meilleure granularité** : Évaluez le comportement de visionnage au niveau le plus granulaire, y compris l’heure des visiteurs individuels dans la journée, les observateurs/auditeurs simultanés par minute et la durée moyenne de consommation du contenu.
 * **Mesure précise** : Effectuez une mesure à travers les multiples appareils utilisés pour la consommation de médias, notamment les appareils OTT, les smartphones, les tablettes, les postes de travail et autres, pour surveiller les schémas et les habitudes d’engagement des utilisateurs.
 * **Segmentation** : Appliquez des classifications à vos lecteurs, appareils, genres, chapitres et programmes pour voir comment chacun a un impact sur vos vues/écoutes générales et l’implication du client dans le contenu, le son, les publicités et ces éléments combinés.
@@ -57,6 +53,7 @@ Voici quelques-uns des nombreux avantages de la méthode Heartbeats :
 * **Données partagées par le biais de Federated Analytics** : Capitalisez sur nos fonctionnalités de partage multimédia leaders du secteur, pour évaluer les données de manière holistique à travers tous vos partenaires de distribution multimédia (opérateurs, programmeurs et distributeurs).
 * **Partenariats avec des partenaires d’évaluation certifiés** : Adobe s’associe au partenaire d’évaluation de l’audience Nielsen pour fournir une mesure tierce de recensement neutre afin d’autoriser des évaluations certifiées de confiance.
 * **Solution normalisée sur toutes les plates-formes** : Autorisez des variables homogènes et normalisées sur tous vos médias et plates-formes afin de garantir une comparaison plus efficace entre les campagnes, les appareils et les fournisseurs.
+* **Suivi du contenu téléchargé : suit** le contenu multimédia (vidéo et audio) téléchargé et lu sur un périphérique quelle que soit sa connectivité.
 
 ### Graphique comparatif
 
