@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 445a5037b1875db3f1f13a3733aa431c3b3031a0
+source-git-commit: 99a8908499ab0e43964fd3d7e6e419b5a78ce66b
 
 ---
 
@@ -40,9 +40,9 @@ Avec Federated Analytics, les mesures audio et vidéo sont plus efficaces, plus 
 
 * **Contrat de conseil Adobe :** Pour la configuration initiale des règles fédérées entre le récepteur et l’expéditeur, il est recommandé de travailler avec des services de conseil pour examiner les données et créer l’accord de partage de données.
 
-## Download the Federated Analytics Form
+## Téléchargement du formulaire d’analyses fédérées
 
-**`===>`Téléchargez la version actuelle du formulaire ici : Formulaire d'accord sur les règles de**[](/assets/federated_analytics_form.pdf)fédération. **`<===`**
+Téléchargez la version actuelle du formulaire ici : Formulaire d'accord sur les règles de [fédération](/assets/federated_analytics_form.pdf)
 
 ## Processus {#section_byb_kb3_vbb}
 
