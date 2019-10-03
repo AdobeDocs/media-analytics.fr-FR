@@ -1,9 +1,9 @@
 ---
 product: Media Analytics
 audience: utilisateur final
-user-guide-title: Adobe Analytics pour l’audio et la vidéo
+user-guide-title: Adobe Analytics for Audio and Video
 translation-type: tm+mt
-source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
+source-git-commit: 1704ef6a637a476fe88d61e0d2edec687ec4b66e
 
 ---
 
@@ -47,27 +47,27 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
          + [Mise en mémoire tampon du suivi sur Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
          + [Mise en mémoire tampon du suivi sur iOS](sdk-implement/track-av-playback/track-buffering/track-buffering-ios.md)
          + [Track Buffering on JavaScript](sdk-implement/track-av-playback/track-buffering/track-buffering-js.md)
-         + [Mise en mémoire tampon des pistes sur Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Mise en mémoire tampon du suivi sur Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Track Buffering on Chromecast](sdk-implement/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [Track Buffering on Roku](sdk-implement/track-av-playback/track-buffering/track-buffering-roku.md)
       + Track Seeking {#track-seeking}
-         + [Suivi de la recherche sur Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Track Seeking on Android](sdk-implement/track-av-playback/track-seeking/track-seeking-android.md)
          + [Suivi de la recherche sur iOS](sdk-implement/track-av-playback/track-seeking/track-seeking-ios.md)
-         + [Suivi de la recherche sur JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
-         + [Recherche de pistes sur Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Recherche de pistes sur Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
+         + [Track Seeking on JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
+         + [Track Seeking on Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [Track Seeking on Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
       + Mise en œuvre de métadonnées standard {#impl-std-metadata}
          + [Mise en œuvre de métadonnées standard sur Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Mise en œuvre de métadonnées standard sur iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-         + [Clés de métadonnées iOS](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + [iOS Metadata Keys](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
          + [Mise en œuvre de métadonnées standard sur JavaScript](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
          + [Mise en œuvre de métadonnées standard sur Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [Paramètres de métadonnées standard - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+         + [Standard Metadata Parameters - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Mise en œuvre de métadonnées standard sur Roku](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [Paramètres de métadonnées standard - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
+         + [Standard Metadata Parameters - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + Suivi des publicités {#track-ads}
       + [Aperçu](sdk-implement/track-ads/track-ads-overview.md)
-      + [Suivi des publicités sur Android](sdk-implement/track-ads/track-ads-android.md)
-      + [Suivi des publicités sur iOS](sdk-implement/track-ads/track-ads-ios.md)
+      + [Track Ads on Android](sdk-implement/track-ads/track-ads-android.md)
+      + [Track Ads on iOS](sdk-implement/track-ads/track-ads-ios.md)
       + [Track Ads on JavaScript](sdk-implement/track-ads/track-ads-js.md)
       + [Track Ads on Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Track Ads on Roku](sdk-implement/track-ads/track-ads-roku.md)
@@ -81,11 +81,11 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
       + [Track Chapters and Segments on Android](sdk-implement/track-chapters/track-chapters-android.md)
       + [Track Chapters and Segments on iOS](sdk-implement/track-chapters/track-chapters-ios.md)
       + [Track Chapters and Segments on JavaScript](sdk-implement/track-chapters/track-chapters-js.md)
-      + [Track Chapters and Segments on Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
-      + [Track Chapters and Segments on Roku](sdk-implement/track-chapters/track-chapters-roku.md)
+      + [Suivi des chapitres et des segments sur Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
+      + [Suivi des chapitres et des segments sur Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + Suivi de la qualité de l’expérience {#track-qos}
       + [Aperçu](sdk-implement/track-qos/track-qos-overview.md)
-      + [Track Quality of Experience on Android](sdk-implement/track-qos/track-qos-android.md)
+      + [Suivi de la qualité de l’expérience sur Android](sdk-implement/track-qos/track-qos-android.md)
       + [Suivi de la qualité de l’expérience sur iOS](sdk-implement/track-qos/track-qos-ios.md)
       + [Suivi de la qualité de l’expérience sur JavaScript](sdk-implement/track-qos/track-qos-js.md)
       + [Qualité du suivi de l'expérience sur le chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
@@ -137,7 +137,7 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
       + [Présentation de la migration](sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
       + [Comparaison de code  : 1.x vers 2.x](sdk-implement/va-1x-to-2x/code-comparison-1x-2x.md)
       + [Conversion de l’API 1.x vers 2.x](sdk-implement/va-1x-to-2x/1x-2x-api-change.md)
-+ Media Collection API (RESTful) {#media-collection-api}
++ API de collection de médias (RESTful) {#media-collection-api}
    + [Aperçu](media-collection-api/mc-api-overview.md)
    + Référence d’API {#mc-api-ref}
       + [Requête Sessions](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
@@ -163,14 +163,14 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
       + [Chronologie 3 : Chapitres](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [Track Downloaded Content](media-collection-api/track-downloaded-content.md)
 + Mesures et métadonnées {#metrics-and-metadata}
-   + [Audio and Video Parameters](metrics-and-metadata/audio-video-parameters.md)
+   + [Paramètres audio et vidéo](metrics-and-metadata/audio-video-parameters.md)
    + [Paramètres de publicité](metrics-and-metadata/ad-parameters.md)
    + [Paramètres de chapitre](metrics-and-metadata/chapter-parameters.md)
    + [Paramètres de qualité](metrics-and-metadata/quality-parameters.md)
    + [Segments](metrics-and-metadata/segments.md)
    + [Mesures calculées](metrics-and-metadata/calculated-metrics.md)
 + Reporting and Analysis {#media-reports}
-   + [Media Reports Enablement](media-reports/media-reports-enable.md)
+   + [Activation des rapports sur les médias](media-reports/media-reports-enable.md)
    + Media Default Reports {#media-default-reports}
       + [Présentation des rapports par défaut](media-reports/media-default-reports/default-reports-overview.md)
       + [Présentation du média](media-reports/media-default-reports/media-reports-overview.md)
@@ -182,4 +182,3 @@ source-git-commit: ea727a8364198d64b3699c35234f2d93bd96e77a
 + [Federated Analytics](data-sharing/federated-analytics.md)
 + Ressources supplémentaires {#additional-resources}
    + [Mises à jour de la documentation](additional-resources/doc-updates.md)
-
