@@ -3,7 +3,7 @@ seo-title: Paramètres de requête
 title: Paramètres de requête
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
+source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 
 ---
 
@@ -103,6 +103,13 @@ source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 | `media.qoe.droppedFrames` | N | Quelconque | Nombre d’images perdues dans la diffusion |
 | `media.qoe.framesPerSecond` | N | Quelconque | Nombre d’images par seconde |
 | `media.qoe.timeToStart` | N | Quelconque | Durée (en millisecondes) écoulée entre le moment où l’utilisateur appuie sur Lecture et le moment où le contenu se charge et commence à être lu |
+
+## Paramètres de la Loi sur la protection des renseignements personnels des consommateurs (CCPA) de Californie {#ccpa-params}
+
+| Clé de requête | Obligatoire | Définir sur... |  Description  |
+| --- | :---: | :---: | --- |
+| `analytics.optOutServerSideForwarding` | N | `sessionStart` | Définissez cette variable sur true lorsque l’utilisateur final a choisi de ne pas partager ses données entre Adobe Analytics et d’autres solutions Experience Cloud (par exemple, Audience Manager). |
+| `analytics.optOutShare` | N | `sessionStart` | Définissez cette variable sur true lorsque l’utilisateur final a choisi de ne pas utiliser ses données pour la fédération (par exemple, pour d’autres clients Adobe Analytics). |
 
 ## Détails supplémentaires {#section_ryt_ccy_lcb}
 
