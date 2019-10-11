@@ -3,7 +3,7 @@ product: Media Analytics
 audience: utilisateur final
 user-guide-title: Adobe Analytics pour l’audio et la vidéo
 translation-type: tm+mt
-source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
+source-git-commit: d5673ea5bf96e7ea0a43d176c182423ccece6870
 
 ---
 
@@ -179,6 +179,6 @@ source-git-commit: 65a9ae618a7d96f0571cff47bdc47e5b77a3745e
       + [Visionneuses simultanées de médias](media-reports/media-default-reports/media-concurrent-viewers.md)
       + [Obtention des données du rapport JSON sur les visionneuses simultanées](media-reports/media-default-reports/get-concurrent-json.md)
    + [Modèles Media Workspace](media-reports/media-workspace-templates.md)
-+ [Federated Analytics](data-sharing/federated-analytics.md)
++ [Federated Analytics](federated-analytics.md)
 + Ressources supplémentaires {#additional-resources}
    + [Mises à jour de la documentation](additional-resources/doc-updates.md)
