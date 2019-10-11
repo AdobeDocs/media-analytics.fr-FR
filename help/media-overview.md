@@ -3,7 +3,7 @@ seo-title: Mesures audio et vidéo dans Adobe Analytics
 title: Mesures audio et vidéo dans Adobe Analytics
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: 4a14e2faae6401a3f885eb5e341c1344d7f1e94d
+source-git-commit: 5fc38098bcd497f3305f76ae2b23757b5f81ac69
 
 ---
 
@@ -35,7 +35,7 @@ Voici quelques-uns des nombreux avantages offerts par les solutions de mesure mu
 
 * **Analyses rapides** : Prenez des décisions en temps réel exploitables à l’aide de mesures de performance clés (par exemple, durée) sur plusieurs canaux. Les principaux événements de contenu sont mesurés en intervalles de **10 secondes** pour capturer toutes les activités au fur et à mesure. Les événements de suivi publicitaires se produisent à des intervalles de **1 seconde**.
 * **Stimuler l’engagement** : Stimulez l’engagement des utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent être lues dans le contenu pour offrir une expérience fluide et moins intrusive qui fait revenir les utilisateurs et apporte des visites renouvelées.
-* **Holistic picture -** Combine multiple data points across all of your content distributors to get a full view of all your media activity, and measure engagement and views/listens across all possible channels through the [Federated Analytics](data-sharing/federated-analytics.md) feature.
+* **Image holistique -** Combinez plusieurs points de données sur l’ensemble de vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de votre activité multimédia, et mesurez l’engagement et les affichages/écoutes sur tous les canaux possibles grâce à la fonctionnalité Analyses [](/help/federated-analytics.md) fédérées.
 * **Meilleure granularité** : Évaluez le comportement de visionnage au niveau le plus granulaire, y compris l’heure des visiteurs individuels dans la journée, les observateurs/auditeurs simultanés par minute et la durée moyenne de consommation du contenu.
 * **Mesure précise** : Effectuez une mesure à travers les multiples appareils utilisés pour la consommation de médias, notamment les appareils OTT, les smartphones, les tablettes, les postes de travail et autres, pour surveiller les schémas et les habitudes d’engagement des utilisateurs.
 * **Segmentation** : Appliquez des classifications à vos lecteurs, appareils, genres, chapitres et programmes pour voir comment chacun a un impact sur vos vues/écoutes générales et l’implication du client dans le contenu, le son, les publicités et ces éléments combinés.
