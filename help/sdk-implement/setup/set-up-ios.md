@@ -3,7 +3,7 @@ seo-title: Configuration d’iOS
 title: Configuration d’iOS
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: f745d64c9cf843ef7237ee3c3c96c63d7edbc1c2
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!IMPORTANT]
    >
-   >Beginning with iOS 9, Apple introduced a feature called App Transport Security (ATS). Cette fonction vise à améliorer la sécurité du réseau en s’assurant que vos applications utilisent uniquement des protocoles et des codes aux normes industrielles. Cette fonction est activée par défaut, mais des options de configuration vous permettent d’effectuer des choix quant à l’utilisation d’ATS. Pour plus d’informations sur ATS, voir Sécurité du transport [des applications.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >Depuis iOS 9, Apple a introduit une fonctionnalité appelée App Transport Security (ATS). Cette fonction vise à améliorer la sécurité du réseau en s’assurant que vos applications utilisent uniquement des protocoles et des codes aux normes industrielles. Cette fonction est activée par défaut, mais des options de configuration vous permettent d’effectuer des choix quant à l’utilisation d’ATS. Pour plus d’informations sur ATS, voir Sécurité du transport [des applications.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
 
 * **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
 
@@ -140,7 +140,7 @@ Pour en savoir plus sur la migration de la version 1.x vers 2.x, consultez la r
 
 ## Configuration d’une application native pour tvOS
 
-Avec la sortie de la nouvelle Apple TV, vous pouvez désormais créer des applications s’exécutant dans l’environnement natif de tvOS. Vous pouvez soit créer une application complètement native, à l’aide des différentes structures disponibles dans iOS, soit créer votre application à l’aide de modèles XML et de JavaScript. La version 2.0 du SDK Media prend désormais en charge tvOS. Pour en savoir plus sur tvOS, consultez le [site du développeur tvOS.](https://developer.apple.com/tvos/documentation/)
+Avec la sortie de la nouvelle Apple TV, vous pouvez désormais créer des applications s’exécutant dans l’environnement natif de tvOS. Vous pouvez soit créer une application complètement native, à l’aide des différentes structures disponibles dans iOS, soit créer votre application à l’aide de modèles XML et de JavaScript. La version 2.0 du SDK Media prend désormais en charge tvOS. Pour en savoir plus sur tvOS, consultez le [site du développeur tvOS.](https://developer.apple.com/tvos/)
 
 Procédez comme suit dans votre projet Xcode. Ce guide suppose que votre projet concerne une application Apple TV ciblant tvOS :
 
