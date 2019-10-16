@@ -3,7 +3,7 @@ seo-title: Activation des rapports multimédia
 title: Activation des rapports multimédia
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 translation-type: tm+mt
-source-git-commit: ab400b673e97f9b47c6088e09b7e7d9e7b1c9ee6
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -16,12 +16,12 @@ Chaque suite de rapports qui collecte des mesures de média doit être configur�
 >
 >Pour tirer parti des nouvelles fonctionnalités, les clients Media Analytics existants doivent réactiver le suivi des médias pour leurs RSID.
 
-1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click [!UICONTROL Admin] &gt; [!UICONTROL Report Suites].
-1. Select the report suite(s) where you are collecting media data and click [!UICONTROL Edit Settings] &gt; [!UICONTROL Media Management] &gt; [!UICONTROL Media Reporting].
+1. In [Reports &amp; Analytics](https://my.omniture.com/login/) click **[!UICONTROL Admin &gt; Report Suites].**
+1. Select the report suite(s) where you are collecting media data and click **[!UICONTROL Edit Settings &gt; Media Management &gt; Media Reporting].**
 
    ![](assets/media-reporting.png){width="400px"}
 
-1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core]**, and optionally enable **[!UICONTROL Media Ads]**, **[!UICONTROL Media Chapters]**, and **[!UICONTROL Media Quality]**.
+1. On the **[!UICONTROL Media Reporting]** page, enable **[!UICONTROL Media Core],** and optionally enable **[!UICONTROL Media Ads],** **[!UICONTROL Media Chapters],** and **[!UICONTROL Media Quality].**
 
    La mesure multimédia inclut les modules suivants :
 
@@ -52,16 +52,16 @@ Chaque suite de rapports qui collecte des mesures de média doit être configur�
 
    Si vous n’effectuez pas encore de suivi de publicités, de chapitres ou de qualité de lecture, vous pouvez activer des options supplémentaires à tout moment.
 
-1. Cliquez sur **[!UICONTROL Enregistrer]**.
+1. Cliquez sur **[!UICONTROL Enregistrer].**
 
-   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. Si la page [!UICONTROL Mesure Noyau multimédia] s’affiche, passez à l’étape suivante.
+   If this report suite is already configured to collect media data, after you click **[!UICONTROL Save]**, an additional configuration page is displayed. Si la page **[!UICONTROL Mesure Noyau multimédia]s’affiche, passez à l’étape suivante.**
 
-1. (Conditional) On the [!UICONTROL Media Core measurement] page, choose to continue using custom variables or choose to use solution variables.
+1. (Conditional) On the **[!UICONTROL Media Core measurement]** page, choose to continue using custom variables or choose to use solution variables.
 
    | Option | Remarques |
    | --- | --- |
-   | Continuer à utiliser les variables personnalisées | Avantages et inconvénients :<ul> <li> **Avantages** : La tendance Contenu fonctionne toujours après la migration. </li> <li> **** Cons : Vous oblige à conserver deux eVars personnalisées et trois événements personnalisés alloués au média. Vous retrouvez l’usage d’une eVar personnalisée et d’un événement personnalisé. </li> </ul> Continuer à utiliser les variables personnalisées : <ol> <li>Sélectionnez Utiliser des variables personnalisées, puis cliquez sur Enregistrer. </li> <li>Lorsque vous y êtes invité, mappez les eVars et événements personnalisés, puis cliquez sur Enregistrer : </li> </ol> |
-   | Migrez vers les variables de solution | Avantages et inconvénients :<ul> <li> **Avantages** : Vous retrouvez l’usage de trois eVar personnalisées et de quatre événements personnalisés. </li> <li> **Inconvénients** : Vous perdez **toutes** les tendances historiques et la comparaison des rapports multimédia. Cela signifie que vous ne pouvez pas suivre les affichages de contenu ou la durée de lecture du contenu pour les dates antérieures à votre migration vers Heartbeats. </li> </ul> **Restriction :** Ne migrez pas vers des variables de solution à moins d’être sûr que vous ne voulez pas conserver ces tendances. Tous les clients doivent utiliser les variables de solution et les règles de traitement pour affecter les données multimédia aux props et eVars existants uniquement s’ils souhaitent conserver une continuité historique. Pour migrer vers des variables de solution : Sélectionnez [!UICONTROL Utiliser les variables] de solution et cliquez sur [!UICONTROL Enregistrer]. <br><br> IMPORTANT : La migration vers des variables de solution entraîne la perte de **toutes les** tendances historiques et de la comparaison pour les rapports sur les médias. |
+   | Continuer à utiliser les variables personnalisées | Avantages et inconvénients :<ul> <li> **Avantages** : La tendance Contenu fonctionne toujours après la migration. </li> <li> **** Cons : Vous oblige à conserver deux eVars personnalisées et trois événements personnalisés alloués au média. Vous retrouvez l’usage d’une eVar personnalisée et d’un événement personnalisé. </li> </ul> Continuer à utiliser les variables personnalisées : <ol> <li>Select **[!UICONTROL Use Custom Variables,]** then click **[!UICONTROL Save.]** </li> <li>When prompted, map your current custom eVars and events and then click **[!UICONTROL Save:]** </li> </ol> |
+   | Migrez vers les variables de solution | Avantages et inconvénients :<ul> <li> **Avantages** : Vous retrouvez l’usage de trois eVar personnalisées et de quatre événements personnalisés. </li> <li> **Inconvénients** : Vous perdez **toutes** les tendances historiques et la comparaison des rapports multimédia. Cela signifie que vous ne pouvez pas suivre les affichages de contenu ou la durée de lecture du contenu pour les dates antérieures à votre migration vers Heartbeats. </li> </ul> **Restriction :** Ne migrez pas vers des variables de solution à moins d’être sûr que vous ne voulez pas conserver ces tendances. Tous les clients doivent utiliser les variables de solution et les règles de traitement pour affecter les données multimédia aux props et eVars existants uniquement s’ils souhaitent conserver une continuité historique. Pour migrer vers des variables de solution : Sélectionnez **[!UICONTROL Utiliser les variables]** de solution et cliquez sur **[!UICONTROL Enregistrer].** <br><br> IMPORTANT : La migration vers des variables de solution entraîne la perte de **toutes les** tendances historiques et de la comparaison pour les rapports sur les médias. |
 
 >[!IMPORTANT]
 >
