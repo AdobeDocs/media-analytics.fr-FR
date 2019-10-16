@@ -3,7 +3,7 @@ seo-title: Modèles d’espaces de travail multimédia
 title: Modèles d’espaces de travail multimédia
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: c8aa81660fe55dba673d3d53f780f3533a50cc93
 
 ---
 
@@ -18,7 +18,7 @@ Vous utilisez des modèles de l’onglet Workspace dans Adobe Analytics lorsque 
 
    ![](assets/all-templates-audio.png)
 
-   Par exemple, si vous choisissez le modèle Consommation audio, un projet avec le tableau de bord suivant axé sur le contenu audio s’affiche :
+   For example, if you choose the **[!UICONTROL Audio Consumption]** template, a project with the following audio-oriented dashboard is presented:
 
    ![](assets/aa-workspace.png)
 
