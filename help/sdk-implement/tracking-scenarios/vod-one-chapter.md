@@ -3,14 +3,14 @@ seo-title: Lecture VOD avec un chapitre
 title: Lecture VOD avec un chapitre
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Lecture VOD avec un chapitre{#vod-playback-with-one-chapter}
 
-## Scénario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Scénario {#scenario}
 
 Dans ce scénario, une partie du contenu VOD est marquée comme un chapitre.
 
@@ -27,7 +27,7 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 | Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` signifie que la fin de la session de visionnage a été atteinte. Cette API doit être appelée même si l’utilisateur ne regarde pas le média jusqu’à sa fin. |
 
-## Paramètres {#section_869319D99A474FEA8EA840415EA97FBD}
+## Paramètres {#parameters}
 
 When chapter playback begins, a `Heartbeat Chapter Start` call is sent. Si le début du chapitre ne correspond pas au minuteur de 10 secondes, l’appel `Heartbeat Chapter Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant.
 
@@ -42,7 +42,7 @@ Dans ce cas, un appel `Content Heartbeat` est envoyé au cours de ce même inter
 | `s:stream:chapter_*` |  | Informations de diffusion spécifiques aux données du chapitre. |
 | `s:meta:*` |  | Chapitre comportant des données contextuelles spécifiques. |
 
-## Exemple de code, chapitre au milieu {#section_icd_5bj_x2b}
+## Exemple de code, chapitre au milieu {#sample-code-chapter-in-the-middle}
 
 Dans ce scénario, une partie du contenu VOD est un chapitre.
 
@@ -254,7 +254,7 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ```
 
-## Exemple de code, chapitre au début {#section_flj_5bj_x2b}
+## Exemple de code, chapitre au début {#sample-code-chapter-at-the-beginning}
 
 Dans ce scénario, le contenu VOD est lu avec un chapitre au début de la lecture.
 
