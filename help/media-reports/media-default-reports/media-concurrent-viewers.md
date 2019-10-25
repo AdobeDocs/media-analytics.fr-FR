@@ -3,7 +3,7 @@ seo-title: Visionneuses simultanées de médias
 title: Visionneuses simultanées de médias
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,11 +14,11 @@ Le tableau de bord Visionneuses simultanées de médias présente les visionneus
 
 >[!TIP]
 >
->No data will be displayed if the selected interval is not an entire day.
+>Aucune donnée ne s’affiche si l’intervalle sélectionné n’est pas un jour entier.
 
 ![](assets/video-concurrent-viewers.png)
 
-## Fonctionnalités du rapport {#section_11F8BCB98042490DAD0EA0B7EDA80569}
+## Fonctionnalités du rapport {#report-features}
 
 Voici quelques fonctionnalités de ce rapport :
 
@@ -30,7 +30,7 @@ Voici quelques fonctionnalités de ce rapport :
 * Le rapport ne fonctionne que sur une journée.
 * Le client peut examiner les rapports de visionneuses simultanées historiques (limités à un seul jour).
 
-## Limites {#section_F159BC0213134FE4A997E52EECC7BB9D}
+## Limites {#limitations}
 
 Voici quelques limites de ce rapport :
 
