@@ -3,14 +3,14 @@ seo-title: Contenu principal en direct
 title: Contenu principal en direct
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Contenu principal en direct{#live-main-content}
 
-## Scénario {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## Scénario {#scenario}
 
 Dans ce scénario, une ressource en direct sans publicité est lue pendant les 40 secondes suivant l’accès à la diffusion en direct.
 
@@ -21,7 +21,7 @@ Dans ce scénario, une ressource en direct sans publicité est lue pendant les 4
 | Le contenu est lu. |  | Content Heartbeats |  |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur ne consomme pas le média jusqu’à la fin. |
 
-## Paramètres {#section_D52B325B99DA42108EF560873907E02C}
+## Paramètres {#parameters}
 
 Un grand nombre de ces valeurs que vous pouvez voir dans les appels Adobe Analytics Content Start sont également présentes dans les appels Heartbeat Content Start. Vous verrez également de nombreux autres paramètres utilisés par Adobe pour renseigner les divers rapports sur les médias dans Adobe Analytics. Nous ne les aborderons pas tous ici, mais seuls les plus importants.
 
@@ -38,7 +38,7 @@ Un grand nombre de ces valeurs que vous pouvez voir dans les appels Adobe Analyt
 | `s:stream:type` | live |  |
 | `s:meta:*` | facultatif | Métadonnées personnalisées définies sur le média |
 
-## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
+## Content Heartbeats {#content-heartbeats}
 
 Pendant la lecture du média, un minuteur envoie un ou plusieurs pulsations (ou pings) toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
@@ -49,7 +49,7 @@ Dans les pulsations du contenu, recherchez certains éléments spécifiques :
 | `s:event:type` | "play" |  |
 | `l:event:playhead` | &lt;position du curseur de lecture&gt; par exemple, 50, 60, 70 | Cela doit indiquer la position actuelle du curseur de lecture. |
 
-## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 Il n’y aura pas d’appel complet dans ce scénario, car le flux en direct n’a jamais été terminé.
 
@@ -67,7 +67,7 @@ Par exemple, supposons qu’un événement de diffusion en continu en direct com
 
 La même logique de "curseur de lecture en direct" appliquée au début de la lecture doit être appliquée lorsqu’un utilisateur interrompt la lecture. Lorsque l’utilisateur revient à lire le flux en direct, vous devez définir la `l:event:playhead` valeur sur la nouvelle position du curseur de lecture décalée, _pas_ au point où l’utilisateur a interrompu le flux en direct.
 
-## Exemple de code {#section_vct_j2j_x2b}
+## Exemple de code {#sample-code}
 
 ![](assets/live-content-playback.png)
 
