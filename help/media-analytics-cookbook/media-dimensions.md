@@ -1,17 +1,19 @@
 ---
-title: Dimensions du média en dehors du suivi des médias
-seo-title: Dimensions du média en dehors du suivi des médias
+title: Attribution du flux média
+seo-title: Attribution du flux média
 translation-type: tm+mt
-source-git-commit: 5d20df537cd244a10f6c2e66cea622e98aa17a16
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
 
-# Dimensions du média en dehors du suivi des médias
+# Attribution du flux média
 
 Cette fonctionnalité vous permet de lier les actions de l’application aux données de suivi des médias sans avoir besoin de règles de traitement supplémentaires ni de variables personnalisées.
 
-Les clients peuvent désormais ajouter n’importe quelle dimension multimédia à tous les autres appels d’analyse, tels que les pages vues et les liens personnalisés. Pendant l’implémentation, vous devez ajouter les paramètres de données contextuelles du média aux appels de suivi Analytics. La liste complète des paramètres de données contextuelles utilisés pour les médias est disponible ici : Paramètres [audio et vidéo.](/help/metrics-and-metadata/audio-video-parameters.md)
+## Dimensions du média en dehors du suivi des médias
+
+Grâce à l’attribution du flux média, les clients peuvent désormais ajouter n’importe quelle dimension multimédia à tous les autres appels d’analyse, tels que les pages vues et les liens personnalisés. Pendant l’implémentation, vous devez ajouter les paramètres de données contextuelles du média aux appels de suivi Analytics. La liste complète des paramètres de données contextuelles utilisés pour les médias est disponible ici : Paramètres [audio et vidéo.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 Vous devez également réactiver la configuration du suivi des médias à partir de la console d’administration pour chaque rapport pour lequel vous souhaitez activer cette fonctionnalité.
 
