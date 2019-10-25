@@ -3,14 +3,14 @@ seo-title: Lecture VOD avec recherche dans le contenu principal
 title: Lecture VOD avec recherche dans le contenu principal
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Lecture VOD avec recherche dans le contenu principal{#vod-playback-with-seeking-in-the-main-content}
 
-## Scénario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Scénario {#scenario}
 
 Ce scénario comprend une recherche dans le contenu principal au cours de la lecture.
 
@@ -26,7 +26,7 @@ Il s’agit du même scénario que [Lecture VOD sans publicité](/help/sdk-imple
 | Contenu terminé | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Fin de la session | `trackSessionEnd` |  | `SessionEnd` |
 
-## Exemple de code {#section_q2d_wcj_x2b}
+## Exemple de code {#sample-code}
 
 Dans ce scénario, l’utilisateur effectue une recherche lors de la lecture du contenu principal.
 
