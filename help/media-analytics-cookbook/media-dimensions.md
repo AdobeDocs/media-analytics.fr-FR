@@ -2,7 +2,7 @@
 title: Attribution du flux média
 seo-title: Attribution du flux média
 translation-type: tm+mt
-source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
+source-git-commit: cc067b31066aa5d7e254167e32429c6c56e40c77
 
 ---
 
@@ -43,3 +43,4 @@ Dans les rapports Analytics, vous pouvez utiliser l’ `Show` eVar pour ventiler
 ![](/assets/show-engagement.png)
 
 ![](/assets/vid-stream-attr-subs.png)
+
