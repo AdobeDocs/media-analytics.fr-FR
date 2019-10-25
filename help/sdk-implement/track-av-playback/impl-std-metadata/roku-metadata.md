@@ -3,7 +3,7 @@ seo-title: Clés de métadonnées Roku
 title: Clés de métadonnées Roku
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Les métadonnées vidéo, audio et publicitaires standard peuvent être définies sur les objets d’informations sur les médias et les publicités, respectivement. À l’aide des clés constantes des métadonnées vidéo/de publicité, définissez le dictionnaire contenant les métadonnées standard sur l’objet info avant d’appeler les API de suivi. Consultez les tableaux ci-dessous pour obtenir la liste complète des constantes de métadonnées standard, suivies d’un exemple.
 
-## Constantes de métadonnées vidéo {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## Constantes de métadonnées vidéo {#video-metadata-constants}
 
 | Nom de métadonnées | Clé de données contextuelles | Nom de constante |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ Les métadonnées vidéo, audio et publicitaires standard peuvent être définie
 | Station | `a.media.station` | `MEDIA_AudioMetadataKeySTATION` |
 | Éditeur | `a.media.publisher` | `MEDIA_AudioMetadataKeyPUBLISHER` |
 
-## Constantes de métadonnées de publicité {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## Constantes de métadonnées de publicité {#ad-metadata-constants}
 
 | Nom de métadonnées | Clé de données contextuelles | Nom de constante |
 | --- | --- | --- |
@@ -56,7 +56,7 @@ Les métadonnées vidéo, audio et publicitaires standard peuvent être définie
 | ID du site | `a.media.ad.site` | `MEDIA_AdMetadataKeyPLACEMENT_ID` |
 | URL de l’élément créatif | `a.media.ad.creativeURL` | `MEDIA_AdMetadataKeyCREATIVE_URL` |
 
-## Constantes {#section_F55145DBE77F45B988849C42C044C7DA}
+## Constantes {#constants}
 
 Vous pouvez utiliser les constantes suivantes pour suivre les événements de média :
 
