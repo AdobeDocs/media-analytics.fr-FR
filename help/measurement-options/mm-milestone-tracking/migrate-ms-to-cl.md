@@ -3,20 +3,20 @@ seo-title: Migration de Milestone vers les liens personnalisés
 title: Migration de Milestone vers les liens personnalisés
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Migration de Milestone vers les liens personnalisés{#migrating-from-milestone-to-custom-link}
 
-## Aperçu {#section_xlc_fc2_dfb}
+## Aperçu {#overview}
 
 Les concepts principaux de la mesure vidéo sont les mêmes pour Milestone et le suivi des liens personnalisés, qui prend les événements du lecteur vidéo et les associe aux méthodes d’analyse, tout en récupérant les métadonnées et les valeurs du lecteur et en les associant aux variables d’analyse. L’approche des liens personnalisés doit être considérée comme une simplification de la mise en œuvre et des données collectées. Avec la solution des liens personnalisés, aucune variable ni méthode n’est prédéfinie pour la mesure vidéo. Une configuration personnalisée complète est requise. Il devrait être possible de mettre à jour le code des événements du lecteur afin qu’il pointe vers les appels de suivi des liens personnalisés pour les événements de lecteur de base tels que start et complete. Consultez le [Guide de mise en œuvre d’un lien personnalisé](/help/measurement-options/cl-in-aa/cl-impl-guide.md) et la rubrique [Suivi d’un lien manuel à l’aide d’un code de lien personnalisé](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) pour en savoir plus.
 
 Les tableaux suivants fournissent des correspondances entre la solution Milestone et la solution des liens personnalisés.
 
-## Guide de migration {#section_btt_fc2_dfb}
+## Guide de migration {#migration-guide}
 
 ### Référence de variables vidéo
 
@@ -233,16 +233,8 @@ linkTrackVars
 </td>
 <td>
 <pre>
-s.linkTrackVars
-  = 'events,
-     prop10,
-     eVar10,
-     eVar12,
-     eVar13,
-     eVar15,
-     contextData.
-       video.name,
-     contextData.
+s.linkTrackVars = 'events, prop10, eVar10, eVar12, eVar13, eVar15, contextData.
+       video.name, contextData.
        video.view';
 </pre>
 </td>
