@@ -3,7 +3,7 @@ seo-title: Federated Analytics
 title: Federated Analytics
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -15,7 +15,7 @@ Les données de mesure normalisées créées par Media Analytics sont la marque 
 Via les règles et la logique régissant Federated Analytics, les données sont facilement contrôlées et individualisées pour répondre aux besoins de chaque partenariat.
 Avec Federated Analytics, les mesures audio et vidéo sont plus efficaces, plus simples et plus exploitables.
 
-## Avantages {#section_804FFE8671594A6FB769CBE79EF9D627}
+## Avantages {#benefits}
 
 * **Transparent :**&#x200B;Éliminez la boîte noire de la création de données en utilisant la même logique dans toutes les entreprises.
 * **Large :** Soyez conscient de la portée et de l’impact entiers de la consommation audio et vidéo à travers les partenariats, les plates-formes et les appareils.
@@ -27,12 +27,12 @@ Avec Federated Analytics, les mesures audio et vidéo sont plus efficaces, plus 
 * **Rapide :** Envoyez et recevez des données quasiment en temps réel.
 * **Facile :** Balisez les lecteurs une fois avec les kits SDK Adobe, partagez des données avec de nombreux partenaires.
 
-## Définitions {#section_ypl_mb3_vbb}
+## Définitions {#definitions}
 
 * **Expéditeur :** Client générant des données d’analyse audio et vidéo sur des lecteurs possédés.
 * **Récepteur :** Client recevant des données d’analyse audio et vidéo de la part de l’expéditeur.
 
-## Conditions {#section_4758843A8941441B9A4D0D7A61077A6E}
+## Conditions {#requirements}
 
 * **Contrat de diffusion multimédia :** Le récepteur et l’expéditeur doivent disposer d’un contrat Adobe Analytics pour les diffusions multimédia avant d’accéder aux données audio et vidéo dans Adobe Analytics. Pour plus de détails, contactez l’équipe de votre compte.
 * **Addendum fédéré :** Chaque expéditeur et récepteur doit avoir signé un addendum avec Adobe avant d’envoyer ou de recevoir des données. Un addendum par client est requis, et non un addendum par partenariat. Pour plus de détails, contactez l’équipe de votre compte.
@@ -44,7 +44,7 @@ Avec Federated Analytics, les mesures audio et vidéo sont plus efficaces, plus 
 
 Téléchargez la version actuelle de ce formulaire ici : Accord sur les règles de [fédération](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
-## Processus {#section_byb_kb3_vbb}
+## Processus {#process}
 
 1. L’expéditeur et le récepteur collaborent ensemble pour remplir le formulaire d’accord des règles de fédération. Le formulaire d’accord sur les règles fédérées contient des champs spéciaux pour notre équipe d’ingénieurs et ne doit être modifié qu’avec Adobe Acrobat. [Téléchargez Acrobat gratuitement.](https://get.adobe.com/reader/)
 1. Les services de conseil fournissent au récepteur un fichier de données échantillon comportant les données des lecteurs de l’expéditeur afin de confirmer que des règles de partage de données correctes sont définies, à condition que des fichiers de données soient disponibles.
