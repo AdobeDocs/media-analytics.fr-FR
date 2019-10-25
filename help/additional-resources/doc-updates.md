@@ -6,19 +6,31 @@ index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
+source-git-commit: b0816d87f66f95f347cf391176b5c46457c9a790
 
 ---
 
 
-# Mises à jour de la documentation{#documentation-updates}
+# Ressources{#resources}
 
-## Dernière mise à jour : 7 mars 2019 {#March-2019-update}
+## Notes de mise à jour{#release-notes}
+
+* [Notes de mise à jour](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
+
+## Mises à jour de la documentation{#documentation-updates}
+
+### Last updated: October, 2019 {#October-2019-update}
+
+Nombreuses corrections de modification et de formatage.
+Les rubriques des livres de cuisine sont étendues au-delà du SDK multimédia, y compris une nouvelle rubrique générale du manuel de cuisine sur "Media Dimensionsoutside Media Tracking".
+
+
+### Dernière mise à jour : 7 mars 2019 {#March-2019-update}
 
 * Cette mise à jour concernait principalement la version 2.2 du SDK média sur les plateformes JavaScript et OTT.
 * La version 2.2 du SDK multimédia sur les plateformes JavaScript et OTT fournit la même prise en charge que celle décrite ci-dessous pour les plates-formes iOS et Android (mise à jour du 1er novembre 2018).
 
-## Dernière mise à jour : 1er novembre 2018 {#November-2018-update}
+### Dernière mise à jour : 1er novembre 2018 {#November-2018-update}
 
 * Cette mise à jour est principalement destinée au SDK Media 2.2 sur les plates-formes Android et iOS.
 * Le SDK Media 2.2 sur Android et iOS offre une assistance pour le suivi du contenu audio sur ces plates-formes, ainsi que des améliorations internes.
@@ -35,11 +47,10 @@ source-git-commit: 654aaef5d816e75429975d04c4e81ad4d4b6f706
 
 * Le formulaire Federated Analytics a été mis à jour vers la version 3.2 afin de refléter les nouveaux paramètres associés au suivi audio.
 
-## Mise à jour : 10 octobre 2018 {#October-2018-update}
+### Mise à jour : 10 octobre 2018 {#October-2018-update}
 
 * La structure du document a été repensée dans la section Mise en œuvre du SDK, en combinant les guides de mise en œuvre individuels des plates-formes (qui étaient presque identiques) en une seule section Mise en œuvre du SDK, avec des exemples de suivi propres aux plates-formes présentés dans des sous-sections au sein des rubriques communes relatives au suivi.
 * Les fichiers ont été renommés afin d’anticiper la migration vers un nouveau système de documents. Tous les préfixes DITA ( c_, r_, t_ ) indiquant respectivement les types concept, référence et rubrique de tâche) ont été éliminés. Tous les traits de soulignement ('_') ont été remplacés par des traits d’union ('-'). En outre, les noms de fichiers sont désormais plus proches des titres des rubriques.
 * Mises à jour des rubriques générales Validation et Certification.
 * Nouveau contenu d’introduction, notamment une présentation des options de mesure et des mises à jour des prérequis, des chemins de mise en œuvre et de l’activation d’Audience Manager.
 * Mises à jour des sections Mesures et métadonnées et Rapports et analyses, reflétant l’ajout de fonctionnalités d’analyse audio.
-
