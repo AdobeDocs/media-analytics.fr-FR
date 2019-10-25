@@ -3,7 +3,7 @@ seo-title: Présentation de la configuration
 title: Présentation de la configuration
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ Le tableau suivant décrit les versions minimales de plateformes prises en charg
 | Safari | v7+ |
 | IE | v11+ |
 
-## Instructions générales de mise en œuvre {#section_965A3B699A8248DDB9B2B3EA3CC20E41}
+## Instructions générales de mise en œuvre {#general-implementation-guidelines}
 
 Trois composants principaux du SDK sont impliqués dans le suivi multimédia :
 * Media Heartbeat Config : La configuration contient les paramètres de base des rapports.
@@ -49,7 +49,7 @@ Suivez les étapes de mise en oeuvre suivantes :
    | `ssl` | Indique si les appels doivent être effectués par HTTPS | Non | false |
    | `debugLogging` | Indique si la journalisation de débogage est activée | Non | false |
 
-1. Mettez en oeuvre le `MediaHeartbeatDelegate`.
+1. Implement the `MediaHeartbeatDelegate`.
 
    |  Nom de méthode  |  Description  | Obligatoire |
    | --- | --- | :---: |
@@ -119,7 +119,7 @@ Suivez les étapes de mise en oeuvre suivantes :
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Validation {#section_D4D46F537A4E442B8AB0BB979DDAA4CC}
+## Validation {#validate}
 
 Les implémentations de suivi des analyses multimédia génèrent deux types d’appels de suivi :
 
@@ -138,7 +138,7 @@ Les implémentations de suivi des analyses multimédia génèrent deux types d�
 
 Le suivi multimédia fonctionne de la même manière sur toutes les plates-formes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plateformes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :
 
-## Documentation SDK 1.x {#section_acj_tkk_t2b}
+## Documentation SDK 1.x {#sdk-1x-documentation}
 
 | SDK d’Analytics vidéo 1.x |  Guides du développeur (PDF uniquement) |
 | --- | --- |
