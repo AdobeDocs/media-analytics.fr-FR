@@ -3,14 +3,14 @@ seo-title: Lecture VOD avec saut de chapitre
 title: Lecture VOD avec saut de chapitre
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Lecture VOD avec saut de chapitre{#vod-playback-with-a-skipped-chapter}
 
-## Scénario {#section_34DCAFE0E64949C4A6DF2D98F8A12B41}
+## Scénario {#scenario}
 
 Dans ce scénario, l’utilisateur saute un chapitre du contenu principal.
 
@@ -29,11 +29,11 @@ Il s’agit du même scénario que [Lecture VOD avec un chapitre](/help/sdk-impl
 | La lecture du contenu est terminée. | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur ne regarde pas le média jusqu’à sa fin. |
 
-## Paramètres {#section_1874F6B7880B43C5856BD11FF85B382E}
+## Paramètres {#parameters}
 
 Les paramètres utilisés pendant la lecture de ce chapitre sont identiques à ceux du scénario  [Lecture VOD avec un chapitre](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), mais il n’est pas question d’appel réseau de fin du chapitre.
 
-## Exemple de code {#section_fyl_ncj_x2b}
+## Exemple de code {#sample-code}
 
 ![](assets/chapter-skip.png)
 
