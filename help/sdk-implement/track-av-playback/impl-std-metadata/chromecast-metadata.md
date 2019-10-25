@@ -3,7 +3,7 @@ seo-title: Clés de métadonnées Chromecast
 title: Clés de métadonnées Chromecast
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
 
 Les métadonnées de vidéo et de publicité standard peuvent être définies respectivement sur les objets info de multimédia et de publicité. À l’aide des clés constantes des métadonnées vidéo/de publicité, définissez le dictionnaire contenant les métadonnées standard sur l’objet info avant d’appeler les API de suivi. Consultez les tableaux ci-dessous pour obtenir la liste complète des constantes de métadonnées standard, suivies d’un exemple.
 
-## Constantes de métadonnées {#section_D26B0478688D4DC5AEFD82E9AC0F0C0D}
+## Constantes de métadonnées {#video-metadata-constants}
 
 | Nom de métadonnées | Clé de données contextuelles | Nom de constante |
 | --- | --- | --- |
@@ -34,7 +34,7 @@ Les métadonnées de vidéo et de publicité standard peuvent être définies re
 | Flux | `a.media.feed` | `ADBMobile.media.VideoMetadataKeys.FEED` |
 | Format de diffusion | `a.media.format` | `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` |
 
-## Constantes de métadonnées de publicité {#section_5290E1BA54A24D30875F4F55C6CF9458}
+## Constantes de métadonnées de publicité {#ad-metadata-constants}
 
 | Nom de métadonnées | Clé de données contextuelles | Nom de constante |
 | --- | --- | --- |
@@ -45,7 +45,7 @@ Les métadonnées de vidéo et de publicité standard peuvent être définies re
 | ID du site | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | URL de l’élément créatif | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Exemples d’implémentation pour Chromecast {#section_wvy_bdn_w2b}
+## Exemples d’implémentation pour Chromecast {#sample-implementations-for-chromecast}
 
 ### Vidéo
 
