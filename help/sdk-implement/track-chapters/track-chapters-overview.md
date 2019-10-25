@@ -3,7 +3,7 @@ seo-title: Aperçu
 title: Aperçu
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -26,7 +26,7 @@ Le suivi des chapitres comprend les démarrages de chapitre, les fins de chapitr
 * Populate the chapter metadata, `chapterCustomMetadata`
 * L’appel   `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);`
 
-### On chapter complete
+### Au chapitre terminé
 
 * L’appel   `trackEvent(MediaHeartbeat.Event.ChapterComplete);`
 
@@ -34,7 +34,7 @@ Le suivi des chapitres comprend les démarrages de chapitre, les fins de chapitr
 
 * L’appel   `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Mise en oeuvre du suivi des chapitres {#section_52221B3A9BFD46B3A22DA6BCE97CCD75}
+## Mise en oeuvre du suivi des chapitres {#implement-chapter-tracking}
 
 1. Identifiez le moment où a lieu l’événement de début de chapitre et créez l’instance `ChapterObject` à l’aide des informations de chapitre.
 
