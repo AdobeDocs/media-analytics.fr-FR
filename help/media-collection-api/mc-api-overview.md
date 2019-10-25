@@ -3,22 +3,22 @@ seo-title: Aperçu
 title: Aperçu
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Aperçu{#overview}
 
-L’API Media Collection constitue l’alternative RESTful d’Adobe au kit SDK Media côté client. Grâce à l’API Media Collection, votre lecteur peut effectuer le suivi des événements audio et vidéo à l’aide d’appels HTTP RESTful. The Media Collection API offers the same realtime tracking of the Media SDK, plus one additional feature:
+L’API Media Collection constitue l’alternative RESTful d’Adobe au kit SDK Media côté client. Grâce à l’API Media Collection, votre lecteur peut effectuer le suivi des événements audio et vidéo à l’aide d’appels HTTP RESTful. L’API Media Collection offre le même suivi en temps réel du SDK Media, ainsi qu’une fonctionnalité supplémentaire :
 
 * **Suivi du contenu téléchargé**
 
    Cette fonctionnalité vous permet d’effectuer le suivi des médias lorsqu’un utilisateur est hors ligne, en stockant localement les données d’événement jusqu’à ce que le périphérique de l’utilisateur revienne en ligne. (Consultez la rubrique [Suivi du contenu téléchargé](track-downloaded-content.md) pour en savoir plus.)
 
-L’API Media Collection est essentiellement un adaptateur, agissant comme une version côté serveur du kit SDK Media. This means that some aspects of the Media SDK documentation are also relevant to the Media Collection API. For example, both solutions use the same Audio and Video Parameters, and the collected Audio and Video tracking data leads to the same Reporting and Analysis.[](/help/metrics-and-metadata/audio-video-parameters.md)[](/help/media-reports/media-reports-enable.md)
+L’API Media Collection est essentiellement un adaptateur, agissant comme une version côté serveur du kit SDK Media. Cela signifie que certains aspects de la documentation du SDK multimédia sont également pertinents pour l’API Media Collection. Par exemple, les deux solutions utilisent les mêmes paramètres [](/help/metrics-and-metadata/audio-video-parameters.md)audio et vidéo, et les données de suivi audio et vidéo collectées conduisent aux mêmes [rapports et analyses.](/help/media-reports/media-reports-enable.md)
 
-## Flux de données de suivi multimédia {#section_pwq_n34_qbb}
+## Flux de données de suivi multimédia {#media-tracking-data-flows}
 
 Un lecteur multimédia mettant en oeuvre l’API Media Collection émet des appels de suivi de l’API RESTful directement vers le serveur principal de suivi des médias, tandis qu’un lecteur mettant en oeuvre le SDK Media effectue des appels de suivi vers les API du SDK dans l’application du lecteur. L’un des effets des appels sur le Web est que le lecteur mettant en œuvre l’API Media Collection doit gérer une partie du traitement que le kit SDK Media gère automatiquement. (Détails dans la mise en oeuvre de [la collection de médias.](mc-api-impl/mc-api-quick-start.md))
 
@@ -26,7 +26,7 @@ Les données de suivi capturées avec l’API de collecte de médias sont envoy�
 
 ![](assets/col_api_overview_simple.png)
 
-## Présentation de l’API {#section_y4n_mcl_kcb}
+## Présentation de l’API {#api-overview}
 
 **URI :** Procurez-vous cette information auprès de votre représentant Adobe.
 
