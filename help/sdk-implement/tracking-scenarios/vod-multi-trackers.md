@@ -3,14 +3,14 @@ seo-title: Plusieurs dispositifs de suivi VOD en parallèle
 title: Plusieurs dispositifs de suivi VOD en parallèle
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Plusieurs dispositifs de suivi VOD en parallèle{#vod-multiple-trackers-in-parallel}
 
-## Scénario {#section_1AFCA33B322B46818BA4F1BDD3B40B4E}
+## Scénario {#scenario}
 
 In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
 
@@ -18,7 +18,7 @@ This scenario is identical to the [VOD playback with no ads](/help/sdk-implement
 
 Sauf indication, les appels réseau sont identiques à ceux du scénario de [lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
-## Paramètres {#section_45D7B10031524411B91E2C569F7818B0}
+## Paramètres {#parameters}
 
 ### Session de pulsation
 
@@ -26,7 +26,7 @@ Sauf indication, les appels réseau sont identiques à ceux du scénario de [lec
 |---|---|---|
 | `s:event:sid` | ID de session unique | Identifiant de session unique présent dans tous les appels réseau de pulsation jusqu’à ce que la méthode `trackSessionEnd` soit appelée. |
 
-## Exemple de code {#section_qpy_4dj_x2b}
+## Exemple de code {#sample-code}
 
 ![](assets/multi-sessions-in-parallel.png)
 
