@@ -3,7 +3,7 @@ seo-title: Primetime
 title: Primetime
 uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: d339ae295af89a1c2ba2e8c938e1650d82507e2b
 
 ---
 
@@ -20,11 +20,12 @@ Primetime élimine la complexité liée à l’atteinte, la monétisation et l�
 * Prise en charge de la mesure des coupures publicitaires avec (ou sans) insertion de publicités dynamiques.
 * Le modèle d’insertion de publicités transparent de TVSDK permet d’analyser directement la lecture de la publicité, ce qui augmente la précision.
 * Ensemble d’événements et de métadonnées performant permettant de garantir la précision dans les problèmes de mise en mémoire tampon QoS ou d’interruption de connectivité mobile et les interactions d’utilisateur final (par exemple, recherche, mise en pause et mise en arrière-plan sur appareil mobile).
-* Prise en charge intégrée de Nielsen DTVR (linéaire) avec métadonnées ID3 et de DCR avec métadonnées CMS.
+<!--
+* Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
+-->
 
-TVSDK est déjà intégré au kit SDK Media, ce qui rend la mise en œuvre beaucoup plus facile et rapide sur chaque plate-forme prise en charge. Primetime prend également en charge le partenariat avec Nielsen. Pour exploiter Primetime, suivez les mêmes conseils et conditions requises.  [Côté client](/help/intro-to-ava/implementation-paths/client-side-path.md) avec les documents suivants pour votre ou vos plates-formes : Guide de l’utilisateur de [Primetime](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK est déjà intégré au kit SDK Media, ce qui rend la mise en œuvre beaucoup plus facile et rapide sur chaque plate-forme prise en charge. <!--Primetime also supports the partnership with Nielsen.--> Pour tirer parti de Primetime, suivez les mêmes directives et conditions préalables que celles du côté [](/help/intro-to-ava/implementation-paths/client-side-path.md) client, ainsi que les documents suivants pour vos plateformes : Guide de l’utilisateur [Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
 
 >[!NOTE]
 >
->Pour ce chemin d’implémentation, les clients doivent contacter leur représentant commercial/gestionnaire de compte pour signer une nouvelle commande client, car Media Analytics dispose d’un SKU unique et évolue d’un modèle de tarification basé sur les appels serveur vers un modèle basé sur les flux média. Vous devez également contacter votre représentant commercial/responsable de compte pour discuter de l’achat de TVSDK.
-
+>Pour ce chemin d’implémentation, les clients doivent contacter leur représentant commercial/gestionnaire de compte pour signer une nouvelle commande client, car Media Analytics dispose d’un SKU unique et passe d’un modèle de tarification basé sur les appels serveur à un modèle basé sur les flux de médias. Vous devez également contacter votre représentant commercial/responsable de compte pour discuter de l’achat de TVSDK.
