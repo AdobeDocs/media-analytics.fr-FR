@@ -3,14 +3,14 @@ seo-title: Lecture VOD avec saut de publicité
 title: Lecture VOD avec saut de publicité
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Lecture VOD avec saut de publicité{#vod-playback-with-skipped-ads}
 
-## Scénario {#section_DAC4BCE25F4A4C4991AD0AE495D15B00}
+## Scénario {#scenario}
 
 Ce scénario comprend la lecture d’un contenu VOD avec saut de publicité.
 
@@ -29,11 +29,11 @@ Il s’agit du même scénario que [Lecture VOD avec publicités preroll](/help/
 | La lecture du contenu est terminée. | `trackComplete()` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La session est terminée. | `trackSessionEnd()` |  | `SessionEnd` |
 
-## Paramètres {#section_4A0F92BF3DDD4623A1EE61C76582A4A6}
+## Paramètres {#parameters}
 
 Les paramètres sont identiques à ceux du scénario Lecture [VOD avec publicités](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) preroll, sauf qu’il n’existe aucun appel ad complete et aucun appel ad-break complete.
 
-## Exemple de code {#section_lxt_qz3_x2b}
+## Exemple de code {#sample-code}
 
 ![](assets/ad-skip.png)
 
