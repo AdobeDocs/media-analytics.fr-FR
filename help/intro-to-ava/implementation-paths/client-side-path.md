@@ -3,7 +3,7 @@ seo-title: Côté client
 title: Côté client
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -18,9 +18,8 @@ If Media Analytics is your intended path, see [Media SDK Implementation](/help/s
 
 >[!IMPORTANT]
 >
->To use Media Analytics, customers must also use Adobe Analytics.
+>Pour utiliser Media Analytics, les clients doivent également utiliser Adobe Analytics.
 
 >[!NOTE]
 >
->Les clients doivent contacter leur représentant commercial/responsable de compte pour signer une nouvelle commande de ventes, car Media Analytics comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions multimédia.
-
+>Les clients doivent contacter leur représentant commercial/gestionnaire de compte pour signer une nouvelle commande client, car Media Analytics dispose d’un SKU unique et évolue d’un modèle de tarification basé sur les appels serveur vers un modèle basé sur les flux média.
