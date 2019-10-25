@@ -3,7 +3,7 @@ seo-title: Activation d’Audience Manager
 title: Activation d’Audience Manager
 uuid: 8a7f9343-ebc3-4087-9d7e-5972640d2455
 translation-type: tm+mt
-source-git-commit: 8ae15f1e14731a97d212ab66816a777b4dcc897e
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -22,7 +22,7 @@ Avec AAM, vous n’êtes pas lié à une plate-forme de vendeur de données, d�
 
 Federated Data prend entièrement en charge le partage de données vers AAM. Demandez à votre équipe Adobe de vous confirmer les paramètres Federated Data.
 
-## Méthodes OTT/AAM {#section_yqq_5br_v2b}
+## Méthodes OTT/AAM {#ott-aam-methods}
 
 Vous pouvez utiliser ces méthodes pour envoyer des signaux et récupérer des segments de visiteurs auprès d’Audience Manager :
 
