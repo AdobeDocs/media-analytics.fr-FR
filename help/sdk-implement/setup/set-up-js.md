@@ -3,7 +3,7 @@ seo-title: Configuration de JavaScript
 title: Configuration de JavaScript
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: a3a81609046ab5e3c84fe4bf99c92c3dabc58247
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
    * *Une API pour vous abonner aux événements de lecteur* : Le kit SDK Media vous oblige à appeler une série d’API simples lorsque des événements ont lieu dans votre lecteur.
    * *Une API fournissant des informations sur le lecteur* : Ces informations comprennent des détails tels que le nom du média et la position du curseur de lecture.
 
-1. Ajoutez la bibliothèque que vous avez [téléchargée](/help/sdk-implement/download-sdks.md#section_551A10AD7880426BB29AE52482BB4211) à votre projet. Créez des références locales aux classes pour des raisons pratiques.
+1. Ajoutez la bibliothèque que vous avez [téléchargée](/help/sdk-implement/download-sdks.md#download-2x-sdks) à votre projet. Créez des références locales aux classes pour des raisons pratiques.
 
    1. Développez le `MediaSDK-js-v2.*.zip` fichier que vous avez téléchargé.
    1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
