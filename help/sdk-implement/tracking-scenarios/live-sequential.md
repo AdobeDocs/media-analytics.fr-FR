@@ -3,14 +3,14 @@ seo-title: Contenu principal en direct avec suivi séquentiel
 title: Contenu principal en direct avec suivi séquentiel
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 translation-type: tm+mt
-source-git-commit: 3dd053c81090172ab53b8b7a367ca0cccad382c3
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Contenu principal en direct avec suivi séquentiel{#live-main-content-with-sequential-tracking}
 
-## Scénario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Scénario {#scenario}
 
 Dans ce scénario, une ressource en direct sans publicité est lue pendant les 40 secondes suivant l’accès à la diffusion en direct.
 
@@ -27,7 +27,7 @@ Il s’agit du même scénario que [Lecture VOD sans publicité](/help/sdk-imple
 | Lecture du contenu |  | Content Heartbeats |  |
 | Fin de la session (fin de l’épisode 2) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete signifie que la session 2 du 2e épisode a été terminée et visionnée jusqu’au bout. Cette session doit être terminée avant de démarrer celle de l’épisode suivant. |
 
-## Paramètres {#section_D52B325B99DA42108EF560873907E02C}
+## Paramètres {#parameters}
 
 ### Heartbeat Content Start
 
@@ -42,7 +42,7 @@ Il s’agit du même scénario que [Lecture VOD sans publicité](/help/sdk-imple
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *facultatif* | Métadonnées personnalisées définies sur le média |
 
-## Heartbeat Content Play {#section_B6AD9225747943F881DCA8E6A1D5710E}
+## Heartbeat Content Play {#heartbeat-content-play}
 
 Il semble presque identique à l’appel Heartbeat Content Start, mais la différence majeure réside dans le paramètre s:event:type. Tous les paramètres doivent rester en place ici.
 
@@ -51,7 +51,7 @@ Il semble presque identique à l’appel Heartbeat Content Start, mais la diffé
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Content Heartbeats {#section_7B387303851A43E5993F937AE2B146FE}
+## Content Heartbeats {#content-heartbeats}
 
 Lors de la lecture du média, un minuteur envoie un ou plusieurs pulsations toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
@@ -62,7 +62,7 @@ Dans les pulsations du contenu, recherchez certains éléments spécifiques :
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;position du curseur de lecture&gt; par exemple, 50, 60, 70 | Cela doit indiquer la position actuelle du curseur de lecture. |
 
-## Heartbeat Content Complete {#section_2CA970213AF2457195901A93FC9D4D0D}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 Un appel Heartbeat Content Complete est envoyé à l’issue de la lecture d’un épisode donné (le curseur de lecture franchit la limite de l’épisode). Celui-ci ressemble aux autres appels Heartbeat, mais se différencie par certains éléments spécifiques :
 
@@ -71,7 +71,7 @@ Un appel Heartbeat Content Complete est envoyé à l’issue de la lecture d’u
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Exemple de code {#section_mpx_q2j_x2b}
+## Exemple de code {#sample-code}
 
 ![](assets/ios-live-noads-multiplesessions.png)
 
