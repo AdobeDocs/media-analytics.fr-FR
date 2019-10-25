@@ -3,7 +3,7 @@ seo-title: Gestion des interruptions de l’application lors de la lecture
 title: Gestion des interruptions de l’application lors de la lecture
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -19,7 +19,7 @@ La lecture dans une application multimédia peut être interrompue de différent
 >
 >The Media Analytics team has seen instances where customers called `trackSessionStart` when their app returned from the background. La lecture s’effectue ainsi jusqu’à ce moment-là sans compter le temps total de lecture, ainsi que la perte des marqueurs de progression, des segments, etc. précédents. Instead, call `trackPlay` when the app returns and/or the media resumes playing.
 
-## FAQ about handling application interrupts: {#section_osf_xqs_h2b}
+## FAQ about handling application interrupts: {#faq-about-handling-application-interrupts}
 
 * _Pendant combien de temps une application doit-elle être placée en arrière-plan avant que la session ne se ferme ?_
 
