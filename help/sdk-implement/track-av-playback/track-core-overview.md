@@ -1,30 +1,30 @@
 ---
-seo-title: Tracking Overview
-title: Tracking Overview
+seo-title: Présentation du suivi
+title: Présentation du suivi
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
 
-# Tracking Overview{#tracking-overview}
+# Présentation du suivi{#tracking-overview}
 
 >[!IMPORTANT]
 >
->This documentation covers tracking in version 2.x of the SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Cette documentation couvre le suivi dans la version 2.x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-## Player Events
+## Événements du lecteur
 
 Le suivi de la lecture principale inclut le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. Bien qu’il ne soit pas obligatoire, le suivi de la mise en mémoire tampon et de la recherche est également un composant principal du suivi de la lecture du contenu. Dans l’API de votre lecteur multimédia, identifiez les événements du lecteur qui correspondant aux appels de suivi du SDK Media, et codez vos gestionnaires d’événements pour appeler les API de suivi et renseigner les variables obligatoires et facultatives.
 
-### On media load
+### Au chargement du média
 
 * Créez l’objet multimédia.
 * Renseignez les métadonnées.
-* Call ; For example: `trackSessionStart``trackSessionStart(mediaObject, contextData)`
+* Appel `trackSessionStart`;Par exemple : `trackSessionStart(mediaObject, contextData)`
 
-### On media start
+### Au démarrage du média
 
 * L’appel   `trackPlay`
 
@@ -59,9 +59,9 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 >[!TIP]
 >
->La position du curseur de lecture est définie dans le cadre du code de configuration et de configuration. For more information about , see Overview: General Implementation Guidelines.`getCurrentPlayheadTime`[](/help/sdk-implement/setup/setup-overview.md#section_965A3B699A8248DDB9B2B3EA3CC20E41)
+>La position du curseur de lecture est définie dans le cadre du code de configuration et de configuration. Pour plus d’informations sur `getCurrentPlayheadTime`la section [Présentation : Instructions générales de mise en oeuvre.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
-## Mise en œuvre {#section_BB217BE6585D4EDEB34C198559575004}
+## Mise en œuvre {#implement}
 
 1. **Installation initiale du suivi :** Déterminez le moment où l’utilisateur déclenche l’intention de lecture (l’utilisateur clique sur lecture et/ou la lecture automatique est activée) et créez une instance `MediaObject` à l’aide des informations sur le média pour le nom du contenu, l’ID de contenu, la durée du contenu et le type de diffusion.
 
@@ -86,7 +86,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
    | `AUDIOBOOK` | Type de diffusion pour les livres audio. |
    | `PODCAST` | Type de diffusion pour les podcasts. |
 
-   **`MediaType`constants:**
+   **`MediaType`constantes :**
 
    | Nom de constante | Description |
    |---|---|
@@ -127,7 +127,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marks the end of a tracking session. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marque la fin d’une session de suivi. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
 
 1. **Suivi de tous les scénarios de mise en pause possibles -** Identifiez l’événement du lecteur multimédia qui provoque la pause et appelez `trackPause`.
 
@@ -232,7 +232,7 @@ if (e.type == “buffered”) {
 };
 ```
 
-## Validation {#section_ABCFB92C587B4CAABDACF93452EFA78F}
+## Validation {#validate}
 
-For information on validating your implementation, see Validation.[](/help/sdk-implement/validation/validation-overview.md)
+Pour plus d’informations sur la validation de votre implémentation, voir [Validation.](/help/sdk-implement/validation/validation-overview.md)
 
