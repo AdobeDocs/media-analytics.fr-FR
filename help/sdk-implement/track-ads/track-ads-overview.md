@@ -3,7 +3,7 @@ seo-title: Aperçu
 title: Aperçu
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 translation-type: tm+mt
-source-git-commit: 46710c621f00374aeb55a88e51d4b720dcb941a6
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -46,7 +46,7 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
 
 * Appelez `trackEvent` pour la fin de la coupure publicitaire.
 
-## Mise en oeuvre du suivi des publicités {#section_83E0F9406A7743E3B57405D4CDA66F68}
+## Mise en oeuvre du suivi des publicités {#implement-ad-tracking}
 
 ### Constantes de suivi des publicités
 
