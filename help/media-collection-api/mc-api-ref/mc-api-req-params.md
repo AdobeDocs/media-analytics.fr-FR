@@ -3,7 +3,7 @@ seo-title: Paramètres de requête
 title: Paramètres de requête
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -111,7 +111,7 @@ source-git-commit: 8eb9ccc9229a0b430f3628054b960441660a8683
 | `analytics.optOutServerSideForwarding` | N | `sessionStart` | Définissez cette variable sur true lorsque l’utilisateur final a choisi de ne pas partager ses données entre Adobe Analytics et d’autres solutions Experience Cloud (par exemple, Audience Manager). |
 | `analytics.optOutShare` | N | `sessionStart` | Définissez cette variable sur true lorsque l’utilisateur final a choisi de ne pas utiliser ses données pour la fédération (par exemple, pour d’autres clients Adobe Analytics). |
 
-## Détails supplémentaires {#section_ryt_ccy_lcb}
+## Détails supplémentaires {#additional-details}
 
 ### visitor.marketingCloudUserId
 
