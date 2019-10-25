@@ -3,14 +3,14 @@ seo-title: Téléchargement des SDK
 title: Téléchargement des SDK
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Téléchargement des SDK{#download-sdks}
 
-## Téléchargement des kits SDK Media 2.x {#section_551A10AD7880426BB29AE52482BB4211}
+## Téléchargement des kits SDK Media 2.x {#download-2x-sdks}
 
 | 2.x SDK de média | Téléchargements du dernier SDK multimédia |  API   |  Documentation  |
 | --- | --- | --- | --- |
@@ -20,13 +20,13 @@ source-git-commit: 498546566d1dcb8c4ad84482332d46142eecd1ca
 | Roku | [SDK Media pour Roku v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [Configurer Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [SDK Media pour Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Référence à l’API Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configuration de Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
-## Extension de Media Analytics Launch {#section_o54_gsd_12b}
+## Extension de Media Analytics Launch {#media-analytics-launch-extension}
 
 | Composant de MA Launch   | Téléchargements | Documentation |
 |---|---|---|
 | **Extension de MA Launch** | [Exemple d’extension de lecteur HTML5](https://github.com/adobe/reactor-adobe-va-sample-player) | [Extension Adobe Media Analytics for Audio and Video](https://docs.adobelaunch.com/extension-reference/web/adobe-media-analytics-for-audio-and-video-extension) |
 
-## Téléchargement des kits SDK Media 1.x {#section_B91B3A02E68B4B42917E392AAE666522}
+## Téléchargement des kits SDK Media 1.x {#download-the-1.x-media-sDKs}
 
 | SDK 1.x |  Téléchargements du SDK multimédia |  Guides de prise en main |
 | --- | --- | --- |
