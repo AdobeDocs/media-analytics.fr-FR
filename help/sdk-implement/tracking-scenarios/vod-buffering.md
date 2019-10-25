@@ -3,14 +3,14 @@ seo-title: Lecture VOD avec mise en mémoire tampon
 title: Lecture VOD avec mise en mémoire tampon
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Lecture VOD avec mise en mémoire tampon{#vod-playback-with-buffering}
 
-## Scénario {#section_13BD203CBF7546D2A6AD0129B1EEB735}
+## Scénario {#scenario}
 
 Dans ce scénario, une mise en mémoire tampon a lieu lors de la lecture de contenu VOD.
 
@@ -28,7 +28,7 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 | La lecture du contenu est terminée. | `trackComplete` | Heartbeat Content Complete | Le curseur de lecture a atteint la fin de sa course. |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur ne regarde pas la vidéo jusqu’à la fin. |
 
-## Paramètres {#section_A52A57C9FB1C41CEA6C0E2D53E01048E}
+## Paramètres {#parameters}
 
 ### Heartbeat Buffer
 
@@ -36,7 +36,7 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 |---|---|---|
 | `s:event:type` | `"buffer"` |  |
 
-## Exemple de code {#section_hxn_fdj_x2b}
+## Exemple de code {#sample-code}
 
 Dans ce scénario, la mise en mémoire tampon survient lors de la lecture de contenu VOD.
 
