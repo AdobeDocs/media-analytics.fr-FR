@@ -1,27 +1,27 @@
 ---
 seo-title: Lecture VOD sans publicité
 title: Lecture VOD sans publicité
-uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
+uuid: ee2a1b79-2c2f-42e1-8e81-b62bdd0d8cb
 translation-type: tm+mt
-source-git-commit: b2d2f7078d655c6e50b3f2925002f93d5a0af533
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Lecture VOD sans publicité{#vod-playback-with-no-ads}
 
-## Scénario {#section_E4B558253AD84ED59256EDB60CED02AE}
+## Scénario {#scenario}
 
 Ce scénario comprend une ressource VOD, sans publicité, qui est lue une fois du début jusqu’à la fin.
 
 | Déclencheur | Méthode Heartbeat | Appels réseau | Remarques   |
 |---|---|---|---|
 | User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur Lecture ou d’un événement de lecture automatique. |
-| First frame of the media | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur et, dès lors, des pulsations sont envoyées toutes les 10 secondes pendant toute la durée de la lecture. |
+| Première image du média | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur et, dès lors, des pulsations sont envoyées toutes les 10 secondes pendant toute la durée de la lecture. |
 | Lecture du contenu |  | Content Heartbeats |  |
 | Contenu terminé | `trackComplete` | Heartbeat Content Complete | *Complete* signifie que le curseur de lecture a atteint la fin de sa course. |
 
-## Paramètres {#section_45D7B10031524411B91E2C569F7818B0}
+## Paramètres {#parameters}
 
 Un grand nombre de ces valeurs que vous pouvez voir dans les appels Heartbeat est également présent dans les appels `Content Start`Content Start d’Adobe Analytics. Adobe utilise de nombreux paramètres pour renseigner les divers rapports sur les médias, mais seuls les paramètres les plus importants sont répertoriés dans le tableau suivant :
 
@@ -34,10 +34,10 @@ Un grand nombre de ces valeurs que vous pouvez voir dans les appels Heartbeat es
 | `s:user:mid` | à définir | Should match the mid value on the `Adobe Analytics Content Start` call. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Your Media Name&gt; |  |
+| `s:asset:media_id` | &lt;Votre nom de média&gt; |  |
 | `s:meta:*` | facultatif | Métadonnées personnalisées définies sur le support. |
 
-## Heartbeat Content Play {#section_2ABBD51D3A6D45ABA92CC516E414417A}
+## Heartbeat Content Play {#heartbeat-content-play}
 
 These parameters should look nearly identical to the `Heartbeat Content Start` call, but the key difference is the `s:event:type` parameter. Tous les autres paramètres doivent toujours exister.
 
@@ -46,7 +46,7 @@ These parameters should look nearly identical to the `Heartbeat Content Start` c
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Content Heartbeats {#section_3B5945336E464160A94518231CEE8F53}
+## Content Heartbeats {#content-heartbeats}
 
 Pendant la lecture du média, un minuteur envoie au moins une pulsation toutes les 10 secondes. Ces pulsations contiennent des informations concernant la lecture, les publicités, la mise en mémoire tampon, etc. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
@@ -57,7 +57,7 @@ Dans les pulsations du contenu, recherchez les paramètres suivants :
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;position du curseur de lecture&gt; par exemple, 50,60,70 | Ce paramètre indique la position actuelle du curseur de lecture. |
 
-## Heartbeat Content Complete {#section_33BCC4C3181940C39446A57C25D82179}
+## Heartbeat Content Complete {#heartbeat-content-complete}
 
 Une fois la lecture terminée, c’est-à-dire lorsque le curseur de lecture a atteint la fin de sa course, un appel `Heartbeat Content Complete` est envoyé. Celui-ci ressemble aux autres appels Heartbeat, mais se différencie par certains paramètres spécifiques :
 
@@ -66,7 +66,7 @@ Une fois la lecture terminée, c’est-à-dire lorsque le curseur de lecture a a
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |
 
-## Exemple de code {#section_glq_vw3_x2b}
+## Exemple de code {#sample-code}
 
 Dans ce scénario, le contenu dure 40 secondes. Il est lu jusqu’à la fin sans aucune interruption.
 
