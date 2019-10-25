@@ -5,7 +5,7 @@ description: Dans ce scénario, des publicités preroll ont été insérées ava
 seo-description: Dans ce scénario, dans Adobe Media Analytics, les publicités preroll ont été insérées avant le contenu principal.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
@@ -28,7 +28,7 @@ Dans ce scénario, des publicités preroll ont été insérées avant le contenu
 | Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Cet appel réseau est identique au scénario Lecture [VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` |
 
-## Paramètres {#section_33CDFB6CB230437480B67A3D149EC44E}
+## Paramètres {#parameters}
 
 When ad playback begins, a `Heartbeat Ad Start` call is sent. Si le début de la publicité ne correspond pas au minuteur de 10 secondes, l’appel `Heartbeat Ad Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant. Dans ce cas, un appel `Content Heartbeat` est envoyé dans le même intervalle et vous pouvez distinguer les deux appels en observant le type d’événement et de ressource :
 
@@ -68,7 +68,7 @@ Similar to `Heartbeat Content Complete` calls, when ad playback has completed, a
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |
 
-## Exemple de code pour une coupure publicitaire preroll {#section_nwf_xy3_x2b}
+## Exemple de code pour une coupure publicitaire preroll {#sample-code-for-a-pre-roll-ad-break}
 
 Dans ce scénario, le contenu VOD est constitué d’une publicité preroll, puis d’une seconde. Le contenu est ensuite lu.
 
@@ -378,7 +378,7 @@ Dans ce scénario, le contenu VOD est constitué d’une publicité preroll, pui
    .......
    ```
 
-## Exemple de code pour plusieurs coupures publicitaires {#section_ojy_zy3_x2b}
+## Exemple de code pour plusieurs coupures publicitaires {#sample-code-for-multiple-ad-breaks}
 
 Dans ce scénario, le contenu VOD est lu avec une publicité preroll, le contenu, une publicité mid-roll, le contenu et une publicité post-roll.
 
