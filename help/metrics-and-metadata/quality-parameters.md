@@ -3,7 +3,7 @@ seo-title: Paramètres de qualité
 title: Paramètres de qualité
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
@@ -39,13 +39,11 @@ Description des données de tableau :
 | <ul> <li> **Clé SDK :**<br/>  [bitrate](./quality-parameters.md#related_apis_section) </li> <li> **Clé API :**<br/>media.qoe.bitrate </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Nombre </li> <li> **Envoyé avec :**<br/>Fermer </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : 800-899 </li><li> **Description:**<br/>Le débit moyen (en Kbit/s). La valeur est prédéfinie par intervalles de 100 Kbits/s. Ce débit moyen correspond à la valeur moyenne pondérée de toutes les valeurs de débit liées à la durée des lectures au cours d’une session de lecture.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.qoe.<br/>bitrateAverageBucket) </li> <li> ****<br/> Heartbeat : (l:stream:bitrate) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Débit moyen </li> <li> ****<br/> Données contextuelles : (a.media.qoe.<br/>bitrateAverageBucket) </li> <li> **Flux de données :**<br/>videoqoebitrateaverageevar </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.qoe.<br/>bitrateAverageBucket) </li> </ul> |
 
 
-
 ### Temps jusqu’au début
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
 | <ul> <li> **Clé SDK :**<br/> </li> <li> **Clé API :**<br/>media.qoe.timeToStart </li> <li> **Obligatoire :**<br/>Non </li> <li> **Type :**<br/>Nombre </li> <li> ****<br/> Envoyé avec : Media Start, Media Close </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : 30 000 </li><li> **Description :**<br/>cette valeur est définie par défaut sur zéro si vous ne la définissez pas via l’objet QoSObject. Cette valeur est exprimée en millisecondes. La valeur s’affichera au format horaire (HH:MM:SS) dans Analysis Workspace et Reports &amp; Analytics. Dans les API Flux de données, Data Warehouse et Création de rapports, les valeurs seront exprimées en secondes.  </li> </ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.qoe.<br/>timeToStart) </li> <li> ****<br/> Heartbeat : (l:stream:startup_time) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Temps jusqu’au début </li> <li> ****<br/> Données contextuelles : (a.media.qoe.<br/>timeToStart) </li> <li> **Flux de données :**<br/>videoqoetimetostartevar </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
-
 
 
 ### FPS
