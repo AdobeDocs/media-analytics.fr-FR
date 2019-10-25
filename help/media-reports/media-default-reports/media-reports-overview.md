@@ -3,7 +3,7 @@ seo-title: Présentation multimédia
 title: Présentation multimédia
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 translation-type: tm+mt
-source-git-commit: 6e13e9a6250949a3a7f059445da772b4db1fdb71
+source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
 
 ---
 
@@ -14,13 +14,13 @@ Le tableau de bord Présentation multimédia est conçu pour vous permettre de c
 
 ![](assets/media_overview.png){width="672px"}
 
-## Filtres rapides {#section_8DF3E4A6734145B082657C6BECFA0BBE}
+## Filtres rapides {#quick-filters}
 
 Affiche rapidement les mesures multimédia par appareil ou pays géographique :
 
 ![](assets/video-overview-report-filters.png){width="400px"}
 
-## Performances multimédia {#section_288FB476EDA44761BB8A86551F0A110C}
+## Performances multimédia {#media-performance}
 
 Effectuez un cliquer-glisser pour zoomer, puis survolez des médias spécifiques pour afficher des mesures granulaires. Cliquez sur  ![](assets/video-overview-report-revert.png)
 
