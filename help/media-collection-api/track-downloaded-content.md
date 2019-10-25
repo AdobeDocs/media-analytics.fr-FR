@@ -3,14 +3,14 @@ seo-title: Suivi du contenu téléchargé
 title: Suivi du contenu téléchargé
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 translation-type: tm+mt
-source-git-commit: b9298de98eeb85c0e2ea0a456c98eac479f43b51
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Suivi du contenu téléchargé{#track-downloaded-content}
 
-## Aperçu {#section_hcy_3pk_cfb}
+## Aperçu {#overview}
 
 La fonction Contenu téléchargé permet de suivre la consommation des médias lorsqu’un utilisateur est hors ligne. Par exemple : un utilisateur télécharge et installe une application sur un appareil mobile. L’utilisateur télécharge ensuite du contenu à l’aide de l’application et le stocke localement sur l’appareil. Pour suivre ces données téléchargées, Adobe a développé la fonctionnalité Contenu téléchargé. Avec cette fonctionnalité, lorsque l’utilisateur lit le contenu à partir du stockage d’un périphérique, les données de suivi sont stockées sur le périphérique, quelle que soit la connectivité du périphérique. Lorsque l’utilisateur termine la session de lecture et que le périphérique revient en ligne, les informations de suivi stockées sont envoyées au serveur principal de l’API de collecte de médias dans une charge utile unique. A partir de là, le traitement et la création de rapports se déroulent normalement dans l’API de collecte de médias.
 
@@ -28,7 +28,7 @@ Chaque approche présente ses avantages et ses inconvénients :
 * Le scénario en ligne est suivi en temps réel; cela nécessite une vérification de la connectivité avant chaque appel réseau.
 * Le scénario hors ligne (fonctionnalité Contenu téléchargé) ne nécessite qu’une vérification de la connectivité réseau, mais nécessite également une plus grande empreinte mémoire sur le périphérique.
 
-## Implémentation {#section_jhp_jpk_cfb}
+## Implémentation {#implementation}
 
 ### Schémas d’événements
 
@@ -47,11 +47,11 @@ La fonctionnalité Contenu téléchargé est simplement la version hors ligne de
 * 201 - Created: Successful Request ; les données sont valides et la session a été créée et sera traitée.
 * 400 - Bad Request ; échec de la validation des schémas, toutes les données sont ignorées, aucune donnée de session ne sera traitée.
 
-## Intégration avec Adobe Analytics {#section_cty_kpk_cfb}
+## Intégration avec Adobe Analytics {#integration-with-adobe-analtyics}
 
 Lors du calcul des appels de début/fin Analytics pour le scénario de contenu téléchargé, le serveur principal définit un champ Analytics supplémentaire appelé `ts.` Horodatages pour les premier et dernier événements reçus (début et fin). Ce mécanisme permet de placer une session multimédia terminée au bon moment (c.-à-d., même si l’utilisateur ne revient pas en ligne pendant plusieurs jours, la session multimédia est signalée comme ayant eu lieu au moment où le contenu a été réellement visionné). Vous devez activer ce mécanisme du côté Adobe Analytics en créant une _suite de rapports facultative horodatée._ Pour activer une suite de rapports facultative horodatée, consultez [Horodatages facultatifs.](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/timestamp-optional.html)
 
-## Comparaison d’exemples de sessions {#section_qnk_lpk_cfb}
+## Comparaison d’exemples de sessions {#sample-session-comparison}
 
 ```
 [url]/api/v1/sessions
