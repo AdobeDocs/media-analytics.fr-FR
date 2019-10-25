@@ -3,20 +3,20 @@ seo-title: Migration de Milestone vers Media Analytics
 title: Migration de Milestone vers Media Analytics
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 ---
 
 
 # Migration de Milestone vers Media Analytics {#migrating-from-milestone-to-media-analytics}
 
-## Aperçu {#section_ihl_nbz_cfb}
+## Aperçu {#overview}
 
 Les concepts principaux de la mesure vidéo sont les mêmes pour Milestone et Media Analytics, qui prend les événements du lecteur vidéo et les associe aux méthodes d’analyse, tout en récupérant les métadonnées et les valeurs du lecteur et en les associant aux variables d’analyse. La solution Media Analytics est basée sur Milestone, donc de nombreuses méthodes et mesures sont identiques. Toutefois, l’approche et le code de configuration ont beaucoup changé. Il devrait être possible de mettre à jour le code des événements du lecteur afin qu’il pointe vers les nouvelles méthodes Media Analytics. Voir Présentation [du](/help/sdk-implement/setup/setup-overview.md) SDK et Présentation [du](/help/sdk-implement/track-av-playback/track-core-overview.md) suivi pour en savoir plus sur l’implémentation de Media Analytics.
 
 Les tableaux suivants fournissent des correspondances entre la solution Milestone et la solution Media Analytics.
 
-## Guide de migration {#section_iyb_pbz_cfb}
+## Guide de migration {#migration-guide}
 
 ### Référence de variable
 
