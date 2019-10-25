@@ -3,7 +3,7 @@ product: Media Analytics
 audience: utilisateur final
 user-guide-title: Adobe Analytics pour l’audio et la vidéo
 translation-type: tm+mt
-source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
+source-git-commit: 44b12731c4a701f0f2536c1c83a9ad4a8b27b49b
 
 ---
 
@@ -164,8 +164,8 @@ source-git-commit: 1f9fe870b906246c3959eead2d23301f9a64f99c
       + [Chronologie 3 : Chapitres](media-collection-api/mc-api-timelines/mc-api-timeline-3.md)
    + [Suivi du contenu téléchargé](media-collection-api/track-downloaded-content.md)
 + Guide pas à pas {#media-analytics-cookbook}
-   + [Présentation du livre de cuisine](media-analytics-cookbook/cookbook-overview.md)
-   + [Dimensions du média en dehors du suivi des médias](media-analytics-cookbook/media-dimensions.md)
+   + [Guide pas à pas](media-analytics-cookbook/cookbook-overview.md)
+   + [Attribution du flux média](media-analytics-cookbook/media-dimensions.md)
 + Mesures et métadonnées {#metrics-and-metadata}
    + [Paramètres audio et vidéo](metrics-and-metadata/audio-video-parameters.md)
    + [Paramètres de publicité](metrics-and-metadata/ad-parameters.md)
