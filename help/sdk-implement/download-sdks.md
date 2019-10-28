@@ -3,7 +3,7 @@ seo-title: Téléchargement des SDK
 title: Téléchargement des SDK
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 3e115cbbae77413743764ed0757af9ac99965d6e
 
 ---
 
@@ -14,10 +14,10 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | 2.x SDK de média | Téléchargements du dernier SDK multimédia |  API   |  Documentation  |
 | --- | --- | --- | --- |
-| Android/FireTV | [SDK Media pour Android v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.0) | [Référence de l’API Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Configuration d’Android](/help/sdk-implement/setup/set-up-android.md) |
-| iOS/Apple TV | [SDK multimédia pour iOS v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.0) (Contactez le [service à la clientèle ](https://helpx.adobe.com/marketing-cloud/contact-support.html) pour obtenir le SDK hérité 2.0) | [Référence de l’API iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Configuration d’iOS](/help/sdk-implement/setup/set-up-ios.md) |
-| JavaScript | [SDK Media pour JS v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.0) | [Référence de l’API JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [Configuration de JavaScript](/help/sdk-implement/setup/set-up-js.md) |
-| Roku | [SDK Media pour Roku v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.1) |  | [Configurer Roku](/help/sdk-implement/setup/set-up-roku.md) |
+| Android/FireTV | [SDK Media pour Android v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Référence de l’API Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Configuration d’Android](/help/sdk-implement/setup/set-up-android.md) |
+| iOS/Apple TV | [SDK multimédia pour iOS v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.2.6) (Contactez le [service à la clientèle ](https://helpx.adobe.com/marketing-cloud/contact-support.html) pour obtenir le SDK hérité 2.0) | [Référence de l’API iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Configuration d’iOS](/help/sdk-implement/setup/set-up-ios.md) |
+| JavaScript | [SDK Media pour JS v2.2.1](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.1) | [Référence de l’API JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [Configuration de JavaScript](/help/sdk-implement/setup/set-up-js.md) |
+| Roku | [SDK Media pour Roku v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2) |  | [Configurer Roku](/help/sdk-implement/setup/set-up-roku.md) |
 | Chromecast | [SDK Media pour Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Référence à l’API Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configuration de Chromecast](/help/sdk-implement/setup/set-up-chromecast.md) |
 
 ## Extension de Media Analytics Launch {#media-analytics-launch-extension}
