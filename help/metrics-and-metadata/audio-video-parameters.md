@@ -3,7 +3,7 @@ seo-title: Paramètres audio et vidéo
 title: Paramètres audio et vidéo
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 35224b77881802c742b15ecd6e9f6b0e12b316e3
 
 ---
 
@@ -138,7 +138,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports   |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>  [channel](./audio-video-parameters.md#config-media-object) </li> <li> **Clé API :**<br/>media.channel </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> ****<br/> Envoyé avec : Media Start, Media Close </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/>"Sports" </li> <li> ****<br/> Description : Station de distribution/Canaux ou où le contenu est lu. N’importe quelle valeur de chaîne est acceptée ici.  </li></ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.channel) </li> <li> ****<br/> Heartbeats : (s:sp:channel) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Canal de contenu </li> <li> ****<br/> Données contextuelles : (a.media.channel) </li> <li> **Flux de données :**<br/>videochannel </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.channel) </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>  [marketing](./audio-video-parameters.md#config-media-object) </li> <li> **Clé API :**<br/>media.channel </li> <li> **Obligatoire :**<br/>Oui </li> <li> **Type :**<br/>Chaîne </li> <li> ****<br/> Envoyé avec : Media Start, Media Close </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/>"Sports" </li> <li> ****<br/> Description : Station de distribution/Canaux ou où le contenu est lu. N’importe quelle valeur de chaîne est acceptée ici.  </li></ul> | <ul> <li> ****<br/> Adobe Analytics : (a.media.channel) </li> <li> ****<br/> Heartbeats : (s:sp:channel) </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>eVar </li> <li> **Expiration :**<br/>À l’ACCÈS </li> <li> **Nom du rapport :**<br/>Canal de contenu </li> <li> ****<br/> Données contextuelles : (a.media.channel) </li> <li> **Flux de données :**<br/>videochannel </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.channel) </li> </ul> |
 
 ### Segment de contenu
 
@@ -434,17 +434,19 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **Clé SDK :**<br/>Définie automatiquement </li> <li> **Clé API :**<br/>S.O. </li> <li> **Type :**<br/>Chaîne </li> <li> ****<br/> Envoyé avec : Fermeture du média </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/>TRUE </li> <li> ****<br/> Description : Nombre d’affichages du contenu principal. Un affichage de segments du contenu est comptabilisé lorsqu’au moins une image est visionnée.  <br/> **Important :** Cette valeur ne peut être égale à true que si elle est définie. Si elle n’est pas définie, aucune valeur n’est renvoyée. </li></ul> | <ul> <li> **Adobe Analytics :**<br/>S.O. </li> <li> **Heartbeats :**<br/>S.O. </li> </ul> | <ul> <li> **Disponible :**<br/>Oui </li> <li> **Variable réservée :**<br/>event </li> <li> **Nom du rapport :**<br/>Affichages de segments du contenu </li> <li> ****<br/> Données contextuelles : (a.media.segmentView) </li> <li> **Flux de données :**<br/>S.O. </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.segmentView) </li> </ul> |
 
-### Nombre de publicités
+<!--
+### Ad Count 
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> Clé SDK :S/O </li> <li> **Clé API :**<br/>S.O. </li> <li> **Type :**<br/>Nombre </li> <li> ****<br/> Envoyé avec : Fermeture du média </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : 2 </li> <li> ****<br/> Description : Nombre de publicités démarrées au cours de la session multimédia.   <br/> </li></ul> | <ul> <li> **Adobe Analytics :**<br/>S.O. </li> <li> **Heartbeats :**<br/>S.O. </li> </ul> | <ul> <li> **Disponible :**<br/>Utiliser la règle de traitement personnalisée </li> <li> **Variable réservée :**<br/>S.O. </li> <li> **Nom du rapport :**<br/>Personnalisé </li> <li> ****<br/> Données contextuelles : (a.media.adCount) </li> <li> **Flux de données :**<br/>S.O. </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.adCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of ads started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.adCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.adCount) </li> </ul> |
 
-### Nombre de chapitres
+### Chapter Count 
 
-|   Mise en œuvre   | Paramètres réseau | Création de rapports   |
+| &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
-| <ul> <li> ****<br/> Clé SDK :S/O </li> <li> **Clé API :**<br/>S.O. </li> <li> **Type :**<br/>Nombre </li> <li> ****<br/> Envoyé avec : Fermeture du média </li> <li> **Min. Version SDK min. :** Quelconque </li> <li> ****<br/> Exemple de valeur : 2 </li> <li> ****<br/> Description : Nombre de chapitres démarrés au cours de la session média.   <br/> </li></ul> | <ul> <li> **Adobe Analytics :**<br/>S.O. </li> <li> **Heartbeats :**<br/>S.O. </li> </ul> | <ul> <li> **Disponible :**<br/>Utiliser la règle de traitement personnalisée </li> <li> **Variable réservée :**<br/>S.O. </li> <li> **Nom du rapport :**<br/>Personnalisé </li> <li> ****<br/> Données contextuelles : (a.media.chapterCount) </li> <li> **Flux de données :**<br/>S.O. </li> <li> ****<br/> Audience Manager : (c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+| <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of chapters started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.chapterCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.chapterCount) </li> </ul> |
+-->
 
 ## Paramètres de la Loi sur la protection des renseignements personnels des consommateurs (CCPA) de Californie {#ccpa-params}
 
