@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi de la mise en mémoire tampon sur Roku
 title: Suivi de la mise en mémoire tampon sur Roku
+description: Décrit le suivi des événements de mise en mémoire tampon sur Roku.
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
