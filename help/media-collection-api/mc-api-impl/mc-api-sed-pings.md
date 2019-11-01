@@ -1,18 +1,18 @@
 ---
-seo-title: Envoi d’événements ping
 title: Envoi d’événements ping
+description: null
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 translation-type: tm+mt
-source-git-commit: 6468ace2e30db1a427a3d7f1b080ab42c578351a
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
 # Envoi d’événements ping{#sending-ping-events}
 
-**Pour le contenu principal, vous devez déclencher des événements ping toutes les 10 secondes, en commençant après 10 secondes de lecture, indépendamment des autres événements d’API que vous avez envoyés. For Ad tracking, you must fire ping events every 1 second.**
+**Pour le contenu principal, vous devez déclencher des événements ping toutes les 10 secondes, en commençant après 10 secondes de lecture, indépendamment des autres événements d’API que vous avez envoyés. Pour le suivi des publicités, vous devez déclencher des événements ping toutes les 1 secondes.**
 
-The ping events are literally the "heartbeat" of Media Analytics. Les seuls paramètres requis pour un appel ping sont `eventType: ping` avec l’objet `playerTime` (position du curseur de lecture et horodatage).
+Les événements ping sont littéralement la "pulsation" de Media Analytics. Les seuls paramètres requis pour un appel ping sont `eventType: ping` avec l’objet `playerTime` (position du curseur de lecture et horodatage).
 
 L’extrait de code suivant illustre une méthode de mise en œuvre d’un mécanisme ping chronométré pour le contenu principal (intervalle de 10 secondes) :
 
