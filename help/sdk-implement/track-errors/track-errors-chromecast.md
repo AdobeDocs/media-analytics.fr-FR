@@ -1,9 +1,9 @@
 ---
-seo-title: Erreurs de suivi sur Chromecast
 title: Erreurs de suivi sur Chromecast
+description: Cette rubrique décrit l’implémentation du suivi des erreurs à l’aide du SDK Media sur Chromecast.
 uuid: efa9de8d-c626-4cb6-b46d-108495dd013a
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
