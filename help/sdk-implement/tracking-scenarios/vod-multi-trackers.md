@@ -1,9 +1,9 @@
 ---
-seo-title: Plusieurs dispositifs de suivi VOD en parallèle
 title: Plusieurs dispositifs de suivi VOD en parallèle
+description: Exemple de suivi VOD à l’aide de plusieurs suivis en parallèle.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
