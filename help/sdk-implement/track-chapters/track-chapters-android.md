@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi des chapitres et des segments sur Android
 title: Suivi des chapitres et des segments sur Android
+description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK multimédia sur Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
