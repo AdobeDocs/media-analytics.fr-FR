@@ -2,7 +2,7 @@
 title: Présentation du guide SDK
 description: 'Rubriques spécifiques au kit SDK '
 translation-type: tm+mt
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: b807835875594a2acfc79ec9cbffce4aadbaac84
 
 ---
 
@@ -17,4 +17,3 @@ Les rubriques du livre de cuisine répertoriées ci-dessous sont spécifiques à
 * [Résolution des appels main:play apparaissant entre les publicités](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [Reprise des sessions inactives](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [Suivi dans SceneGraph (Roku)](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
-* [Différences entre le SDK et le lancement](/help/sdk-implement/cookbook/sdk-vs-launch-qoe.md)
