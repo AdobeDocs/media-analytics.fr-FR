@@ -1,11 +1,9 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Mise en œuvre de métadonnées de publicité standard sur Android
 title: Mise en œuvre de métadonnées de publicité standard sur Android
+description: Utilisation des métadonnées publicitaires standard dans le suivi des publicités sur Android.
 uuid: 19b98bc1-c659-4182-a4ff-b3340fe2453c
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
