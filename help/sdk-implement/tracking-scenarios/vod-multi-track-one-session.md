@@ -1,9 +1,9 @@
 ---
-seo-title: Un dispositif de suivi VOD pour plusieurs sessions
 title: Un dispositif de suivi VOD pour plusieurs sessions
+description: Exemple d’utilisation d’un outil de suivi pour effectuer le suivi de plusieurs sessions à l’aide du SDK multimédia.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 translation-type: tm+mt
-source-git-commit: e24dbf0ab08b9e148f887ef19903ad2d157822ad
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
