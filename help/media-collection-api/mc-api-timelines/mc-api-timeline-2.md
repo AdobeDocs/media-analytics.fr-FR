@@ -1,9 +1,9 @@
 ---
-seo-title: 'Chronologie 2 : L’utilisateur abandonne la session'
 title: 'Chronologie 2 : L’utilisateur abandonne la session'
+description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -104,7 +104,7 @@ Les publicités preroll doivent être suivies. Les publicités ne peuvent être 
 
 Une publicité de 12 secondes commence.
 
-**Sample request body**
+**Exemple de corps de requête**
 
 ```
 {
@@ -137,7 +137,7 @@ Une publicité de 12 secondes commence.
 
 **Détails de mise en œuvre**
 
-Ping the backend every 1 second. (Les pings publicitaires suivants ne s’affichent pas, dans un souci de concision.)
+Appuyez sur le serveur principal toutes les 1 secondes. (Les pings publicitaires suivants ne s’affichent pas, dans un souci de concision.)
 
 **Exemple de corps de requête**
 
@@ -173,7 +173,7 @@ La première publicité preroll est terminée.
 }
 ```
 
-### Action 7 - Ad break complete {#Action-7}
+### Action 7 - Saut de publicité terminé {#Action-7}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -262,7 +262,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 }
 ```
 
-### Action 11 - Error {#Action-11}
+### Action 11 - Erreur {#Action-11}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -283,7 +283,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 }
 ```
 
-### Action 12 - Play content {#Action-12}
+### Action 12 - Lire le contenu {#Action-12}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -315,7 +315,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 
 Envoyez un ping au serveur principal toutes les 10 secondes.
 
-**Sample request body**
+**Exemple de corps de requête**
 
 ```
 {
@@ -327,7 +327,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 }
 ```
 
-### Action 14 - Ad break start {#Action-14}
+### Action 14 - Début de la coupure publicitaire {#Action-14}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -337,7 +337,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 
 Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
 
-**Sample request body**
+**Exemple de corps de requête**
 
 ```
 {
@@ -353,7 +353,7 @@ Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
 }
 ```
 
-### Action 15 - Ad start {#Action-15}
+### Action 15 - Démarrage de la publicité {#Action-15}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -386,7 +386,7 @@ Suivez la publicité mid-roll.
 }
 ```
 
-### Action 16 - Close app {#Action-16}
+### Action 16 - Fermer l’application {#Action-16}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
