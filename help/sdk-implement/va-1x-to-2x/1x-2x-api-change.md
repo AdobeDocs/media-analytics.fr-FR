@@ -1,9 +1,9 @@
 ---
-seo-title: Conversion de l’API 1.x vers 2.x
 title: Conversion de l’API 1.x vers 2.x
+description: Cette rubrique comprend des liens vers des références API et répertorie les API de suivi requises et facultatives pour les versions 1.x et 2.x du SDK Media.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
