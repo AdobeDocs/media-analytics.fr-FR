@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi de la lecture principale sur Chromecast
 title: Suivi de la lecture principale sur Chromecast
+description: Cette rubrique décrit la mise en oeuvre du suivi de base à l’aide du SDK Media sur Chromecast.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -12,9 +12,9 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 >[!IMPORTANT]
 >
->This documentation covers tracking in version 2.x of the SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
+>Cette documentation couvre le suivi dans la version 2.x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
 
-1. **Initial tracking setup**
+1. **Configuration initiale du suivi**
 
    Identify when the user triggers the intention of playback (the user clicks play and/or autoplay is on) and create a `MediaObject` instance.
 
@@ -36,7 +36,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 1. **Ajout de métadonnées vidéo**
 
-   Optionally attach standard and/or custom video metadata objects to the video tracking session through context data variables.
+   Vous pouvez associer des objets de métadonnées vidéo standard et/ou personnalisés à la session de suivi vidéo au moyen de variables de données contextuelles.
 
    * **Métadonnées vidéo standard**
 
@@ -128,7 +128,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!TIP]
    >
-   >This may be the same event source that was used in Step 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture vidéo.
+   >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture vidéo.
 
 * Scénarios de suivi : [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Exemple de lecteur inclus dans le SDK Chromecast pour un exemple de suivi complet
