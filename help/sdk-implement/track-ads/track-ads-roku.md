@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi des publicités sur Roku
 title: Suivi des publicités sur Roku
+description: Mettez en oeuvre le suivi des publicités dans les applications Roku à l’aide du SDK Media.
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -61,7 +61,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
                            ad.duration) 
    ```
 
-1. Optionally attach standard and/or ad metadata to the media tracking session through context data variables.
+1. Vous pouvez associer des métadonnées standard et/ou publicitaires à la session de suivi des médias au moyen de variables de données contextuelles.
 
    * [Mise en œuvre de métadonnées de publicité standard sur Roku](/help/sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la ressource de publicité actuelle :
