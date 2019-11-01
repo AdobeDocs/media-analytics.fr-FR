@@ -1,35 +1,35 @@
 ---
-seo-title: Test 1 Lecture standard
 title: Test 1 Lecture standard
+description: Cette rubrique décrit le test de lecture standard utilisé dans la validation.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
 # Test 1 : Lecture standard{#test-standard-playback}
 
-This test case validates general playback and sequencing. It is a required element of your certification request.
+Ce cas de test valide la lecture et le séquencement généraux. Il s’agit d’un élément obligatoire de votre demande de certification.
 
 ## Formulaire de demande de certification
 
 **Téléchargez le formulaire de demande de certification ici : ==&gt;** Formulaire de demande de [certification.](cert_req_form.docx)
 
-## Certification Test 1 overview
+## Présentation du test de certification 1
 
-Media Analytics implementations include two types of tracking calls:
-* Calls made directly to your Adobe Analytics (AppMeasurement) server - These calls occur on "Media Start" and "Ad Start" events.
+Les mises en oeuvre d’Analytics multimédia incluent deux types d’appels de suivi :
+* Appels effectués directement sur votre serveur Adobe Analytics (AppMeasurement) : ces appels surviennent sur les événements "Media Start" et "Ad Start".
 * Appels effectués sur le serveur Media Analytics (pulsations) - Ces appels comprennent les appels in-band et out-of-band :
-   * In-band - The SDK sends timed play calls or "pings" at 10-second intervals during content playback, and at one-second intervals during ads.
-   * Out-of-band - These calls can happen at any point, and include Pause, Buffering, errors, content complete, ad complete, etc.
+   * In-band : le kit SDK envoie des appels de lecture chronométrés ou des "pings" à des intervalles de 10 secondes pendant la lecture du contenu et à des intervalles d’une seconde pendant les publicités.
+   * Hors bande : ces appels peuvent se produire à tout moment, notamment en cas de pause, de mise en mémoire tampon, d’erreurs, de contenu terminé, de publicité terminée, etc.
 
 >[!NOTE]
->Media tracking behaves the same across all platforms.
+>Le suivi des médias se comporte de la même manière sur toutes les plates-formes.
 
-## Test procedure
+## Procédure d'essai
 
-Complete and record the following actions (in order):
+Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 
 1. **Charger la page ou l’application**
 
@@ -37,8 +37,8 @@ Complete and record the following actions (in order):
 
    * **Serveur Adobe Analytics (AppMeasurement) :** un serveur de suivi de CRD ou un CNAME qui se résout en serveur de suivi de CRD est requis pour le service d’identification des visiteurs d’Experience Cloud. The Adobe Analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
 
-   * **Media Analytics (Heartbeats) server - This server always has the format "", where  specifies your company name.**`[namespace].hb.omtrdc.net``[namespace]` This name is provided by Adobe.
-   You need to validate certain key variables that are universal across all tracking calls:
+   * **Serveur Media Analytics (Heartbeats) -** Ce serveur a toujours le format "`[namespace].hb.omtrdc.net`", où `[namespace]` spécifie le nom de votre société. Ce nom est fourni par Adobe.
+   Vous devez valider certaines variables clés universelles pour tous les appels de suivi :
 
    **`mid`Identifiant visiteur Adobe (**) : La `mid` variable permet de capturer la valeur définie dans le cookie AMCV. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. Elle se trouve dans les appels Adobe Analytics (AppMeasurement) et Media Analytics (pulsations).
 
@@ -119,7 +119,7 @@ Complete and record the following actions (in order):
 
    >[!NOTE]
    >
-   >The playhead value should remain constant during the pause.
+   >La valeur du curseur de lecture doit rester constante pendant la mise en pause.
 
    Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
@@ -127,7 +127,7 @@ Complete and record the following actions (in order):
 
    Lors de la lecture du contenu principal, le SDK multimédia envoie des pulsations (appels de lecture) au serveur Media Analytics toutes les 10 secondes.
 
-   Remarques :
+   Remarques:
 
    * La position du curseur de lecture doit être incrémentée de 10 avec chaque appel Play.
    * La valeur `l:event:duration` représente le nombre de millisecondes qui se sont écoulées depuis le dernier appel de suivi, et doit être plus ou moins constante pour chaque appel de 10 secondes.
