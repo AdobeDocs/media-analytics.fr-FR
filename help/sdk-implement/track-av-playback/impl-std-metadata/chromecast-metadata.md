@@ -1,9 +1,9 @@
 ---
-seo-title: Clés de métadonnées Chromecast
 title: Clés de métadonnées Chromecast
+description: Décrit la définition des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi sur Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
