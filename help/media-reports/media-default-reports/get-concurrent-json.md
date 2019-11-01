@@ -1,9 +1,9 @@
 ---
-seo-title: Obtention des données du rapport JSON sur les visionneuses simultanées
 title: Obtention des données du rapport JSON sur les visionneuses simultanées
+description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
-source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -11,7 +11,7 @@ source-git-commit: 82317dfd0e6eaef20890d03c32fe088a7574ead2
 # Obtention des données du rapport JSON sur les visionneuses simultanées{#get-concurrent-viewers-json-report-data}
 
 Vous pouvez obtenir des données de rapport des visionneuses simultanées à l’aide de la version _**_ 1.4 des API Analytics :
-* [API Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
+* [Interfaces API Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
 1. Filtrez les données à l’aide de n’importe quel segment généré par l’interface utilisateur. Pour filtrer selon un ID de contenu spécifique, créez un segment.
