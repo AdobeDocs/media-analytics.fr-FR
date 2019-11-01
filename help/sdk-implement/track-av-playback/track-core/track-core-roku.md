@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi de la lecture principale sur Roku
 title: Suivi de la lecture principale sur Roku
+description: Cette rubrique décrit la mise en oeuvre du suivi de base à l’aide du SDK Media sur Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
