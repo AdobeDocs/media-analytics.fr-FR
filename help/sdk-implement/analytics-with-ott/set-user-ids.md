@@ -1,9 +1,9 @@
 ---
-seo-title: Configuration d’identifiants utilisateur
 title: Configuration d’identifiants utilisateur
+description: API permettant de définir les ID utilisateur, le serveur en tant qu’identifiant client unique.
 uuid: fdd54fec-79cd-4bf8-b17e-4d61d84f6310
 translation-type: tm+mt
-source-git-commit: ee6eebac803410c1c4da1ccb80083025a9c817df
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,7 +14,7 @@ L’identifiant utilisateur est un identifiant visiteur personnalisé unique dé
 
 Définissez et obtenez l’identifiant utilisateur unique sur le kit SDK ADBMobile comme suit :
 
-* **Définir :**
+* **Définissez la variable:**
 
    * **Roku :**
 
