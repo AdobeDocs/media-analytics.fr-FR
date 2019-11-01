@@ -1,9 +1,9 @@
 ---
-seo-title: Descriptions des paramètres Heartbeat
 title: Descriptions des paramètres Heartbeat
+description: Liste des paramètres de pulsation qu’Adobe collecte et traite sur le serveur Media Analytics (pulsations).
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 translation-type: tm+mt
-source-git-commit: 10a5d921953339bef1cde2f802eb9ce0cb1bbe4b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
