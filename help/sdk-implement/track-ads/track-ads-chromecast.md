@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi des publicités sur Chromecast
 title: Suivi des publicités sur Chromecast
+description: Mettez en oeuvre le suivi des publicités dans les applications Chromecast à l’aide du SDK Media.
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
