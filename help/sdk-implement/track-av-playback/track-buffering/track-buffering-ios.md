@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi de la mise en mémoire tampon sur iOS
 title: Suivi de la mise en mémoire tampon sur iOS
+description: Décrit le suivi des événements de mise en mémoire tampon sur iOS.
 uuid: 4f4db23a-489b-4b41-bb6e-393ec64d52a2
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
