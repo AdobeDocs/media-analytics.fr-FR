@@ -1,9 +1,9 @@
 ---
-seo-title: Présentation de la configuration
 title: Présentation de la configuration
+description: Présentation de la configuration du SDK multimédia pour le suivi des médias dans vos applications mobiles, OTT et de navigateur (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
