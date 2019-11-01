@@ -1,9 +1,9 @@
 ---
-seo-title: Présentation du suivi
 title: Présentation du suivi
+description: 'Cette rubrique décrit le suivi de la lecture principale, y compris le suivi de la charge des médias, le démarrage des médias, la mise en pause des médias et la fin des médias. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 translation-type: tm+mt
-source-git-commit: 8938e324d570b7e3e2c3c3e971c00ade7e6be8b6
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
