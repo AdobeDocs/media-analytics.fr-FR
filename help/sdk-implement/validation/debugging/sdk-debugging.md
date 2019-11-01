@@ -1,9 +1,9 @@
 ---
-seo-title: Débogage du SDK
 title: Débogage du SDK
+description: Cette rubrique décrit le suivi et la journalisation disponibles dans le SDK Media.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -71,7 +71,7 @@ Pendant le développement des applications, Bloodhound permet d’afficher les a
 
 >[!IMPORTANT]
 >
->Depuis le 30 avril 2017, Adobe Bloodhound a pris fin. Depuis le 1er mai 2017, plus aucune amélioration n’y est apportée et aucune assistance d’ingénierie supplémentaire ou assistance Adobe Expert Care n’est fournie.
+>Depuis le 30 avril 2017, Adobe Bloodhound fait l’objet d’une élimination progressive. Depuis le 1er mai 2017, plus aucune amélioration n’y est apportée et aucune assistance d’ingénierie supplémentaire ou assistance Adobe Expert Care n’est fournie.
 
 ## Messages du journal
 
