@@ -1,9 +1,9 @@
 ---
-seo-title: Federated Analytics
 title: Federated Analytics
+description: 'Le service Analyses fédérées fournit un système pour le partage de données Adobe Media Analytics (audio et vidéo) entre deux partenaires. '
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
