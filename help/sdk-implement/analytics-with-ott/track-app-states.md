@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi des états de l’application
 title: Suivi des états de l’application
+description: 'Les états d’application sont les différents écrans ou affichages de votre application, qui, lorsqu’ils sont affichés, doivent déclencher un appel trackState. '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 translation-type: tm+mt
-source-git-commit: 9cdf69e30fa727aeb974213769a7ab61fb05b756
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -28,11 +28,11 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. In other Analytics interfaces, "View State" is reported as "Page Name"; "State Views" is reported as "Page Views".
+The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. Dans d’autres interfaces Analytics, l’état d’affichage est signalé comme "Nom de page" ; "Vues d’état" est signalé comme "Pages vues".
 
 ## Envoyer des données contextuelles
 
-In addition to "State Name", you can send additional context data with each track state call.
+Outre "Nom d’état", vous pouvez envoyer des données contextuelles supplémentaires avec chaque appel d’état de suivi.
 
 ### Roku
 
