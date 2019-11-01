@@ -1,11 +1,9 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Mise en œuvre de métadonnées de publicité standard sur iOS
 title: Mise en œuvre de métadonnées de publicité standard sur iOS
+description: Utilisation des métadonnées publicitaires standard dans le suivi des publicités sur iOS.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
