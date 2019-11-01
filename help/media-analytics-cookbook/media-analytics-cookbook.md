@@ -1,10 +1,8 @@
 ---
 title: Manuel d’analyse des médias
-seo-title: Manuel d’analyse des médias
 description: Page du manuel de niveau supérieur, avec des liens généraux vers des livres de cuisine MA et des liens spécifiques au SDK.
-seo-description: Page du manuel de niveau supérieur, avec des liens généraux vers des livres de cuisine MA et des liens spécifiques au SDK.
 translation-type: tm+mt
-source-git-commit: fa72eba07a06adbd7c278282bd69d0b336529ac8
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
