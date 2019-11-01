@@ -1,9 +1,9 @@
 ---
-seo-title: Types et descriptions d’événement
 title: Types et descriptions d’événement
+description: null
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -12,7 +12,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
 ## sessionStart
 
-Sent with the `sessions` call. Lorsque la réponse est renvoyée, vous extrayez l’ID de session de l’en-tête Emplacement et l’utilisez pour les appels d’événement suivants vers le serveur Collection.
+Envoyé avec l' `sessions` appel. Lorsque la réponse est renvoyée, vous extrayez l’ID de session de l’en-tête Emplacement et l’utilisez pour les appels d’événement suivants vers le serveur Collection.
 
 ## play
 
@@ -27,7 +27,7 @@ Les événements ping ne doivent *pas* inclure la carte `params` dans le corps d
 
 ## bitrateChange
 
-Sent when the bitrage changes.
+Envoyé lorsque le biage change.
 
 ## bufferStart
 
@@ -35,11 +35,11 @@ Envoyé au démarrage de la mise en mémoire tampon. Il n’existe aucun type d�
 
 ## pauseStart
 
-Sent when the user presses Pause. Il n’existe aucun type d’événement `resume`. A `resume` is inferred when you send a `play` event after a `pauseStart`.
+Envoyé lorsque l’utilisateur appuie sur Pause. Il n’existe aucun type d’événement `resume`. A `resume` is inferred when you send a `play` event after a `pauseStart`.
 
 ## adBreakStart
 
-Signals the start of an ad break
+Signale le début d’une coupure publicitaire
 
 ## adStart
 
@@ -71,7 +71,7 @@ Signale la fin d’un chapitre
 
 ## error
 
-Signals an error occurred.
+Signale une erreur.
 
 ## sessionEnd
 
