@@ -1,12 +1,12 @@
 ---
-seo-title: Mises à jour de la documentation
 title: Mises à jour de la documentation
+description: null
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
 translation-type: tm+mt
-source-git-commit: b0816d87f66f95f347cf391176b5c46457c9a790
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
