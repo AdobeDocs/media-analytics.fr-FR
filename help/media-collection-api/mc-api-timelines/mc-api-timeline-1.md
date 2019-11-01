@@ -1,9 +1,9 @@
 ---
-seo-title: 'Chronologie 1 : Regarder jusqu’à la fin du contenu'
 title: 'Chronologie 1 : Regarder jusqu’à la fin du contenu'
+description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -143,7 +143,7 @@ Démarrez le suivi de la première publicité preroll, qui dure 15 secondes. In
 
 **Détails de l’implémentation**
 
-Appuyez sur le serveur principal toutes les 1 secondes pendant qu'il est dans une publicité.
+Effectuez une pression sur le serveur principal toutes les 1 secondes pendant qu’il est dans une publicité.
 
 **Exemple de corps de requête**
 
@@ -165,7 +165,7 @@ Appuyez sur le serveur principal toutes les 1 secondes pendant qu'il est dans un
 
 **Détails de l’implémentation**
 
-Appuyez sur le serveur principal toutes les 1 secondes pendant qu'il est dans une publicité.
+Effectuez une pression sur le serveur principal toutes les 1 secondes pendant qu’il est dans une publicité.
 
 **Exemple de corps de requête**
 
