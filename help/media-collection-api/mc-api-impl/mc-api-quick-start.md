@@ -1,9 +1,9 @@
 ---
-seo-title: Démarrage rapide
 title: Démarrage rapide
+description: null
 uuid: ca20bad4-2c8f-406b-833e-b4883a9aa534
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -17,7 +17,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 1. Rassemblez les données Adobe Analytics et de visiteur standard que vous devez fournir pour exécuter l’une des applications Experience Cloud :
 
    * Identifiant d’entreprise Experience Cloud du visiteur
-   * Visitor Experience Cloud User ID
+   * Identifiant utilisateur de Visitor Experience Cloud
    * Identifiant de suite de rapports Analytics
    * URL du serveur de suivi Analytics
 
@@ -49,7 +49,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >You must use the correct data types in the JSON request body. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. Vous pouvez comparer les types de paramètre obligatoires aux conditions facultatives en vérifiant les [schémas de validation JSON.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+   >Vous devez utiliser les types de données appropriés dans le corps de la requête JSON. E.g., `analytics.enableSSL` requires a boolean, `media.length` is numeric, etc. Vous pouvez comparer les types de paramètre obligatoires aux conditions facultatives en vérifiant les [schémas de validation JSON.](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 1. Envoyez des demandes de sessions au point de fin de l’API de collecte MA. Si la charge utile de votre requête n’est pas valide, identifiez le problème et réessayez jusqu’à obtention d’une réponse `201 Created`. In this `curl` example, the JSON request body is in a file named `sample_data_session`:
 
