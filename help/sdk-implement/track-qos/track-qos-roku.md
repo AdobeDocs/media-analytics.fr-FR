@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi de la qualité de l’expérience sur Roku
 title: Suivi de la qualité de l’expérience sur Roku
+description: Cette rubrique décrit l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur Roku.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 translation-type: tm+mt
-source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -14,15 +14,15 @@ source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 >
 >Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-## Implemement QOS
+## Mise en oeuvre de QOS
 
-1. Identify when the bitrate changes during media playback, and use the  API to update the QoS info on the Media SDK.`mediaUpdateQoS`
+1. Déterminez le moment où le débit change lors de la lecture du média et utilisez l’ `mediaUpdateQoS` API pour mettre à jour les informations de qualité de service sur le SDK multimédia.
 
    Variables QoSObject :
 
    >[!TIP]
    >
-   >These variables are only required if you are tracking QoS.
+   >Ces variables ne sont requises que si vous effectuez le suivi de la qualité de service.
 
    | Variable | Description | Obligatoire |
    | --- | --- | :---: |
@@ -55,7 +55,7 @@ source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
     ```
     -->
 
-1. When playback switches bitrates, call  to notify the Media SDK that the Bitrate changed.`trackEvent(BitrateChange)`
+1. Lorsque la lecture change de débit, appelez `trackEvent(BitrateChange)` pour informer le SDK multimédia que le débit a changé.
 
    ```
    ADBMobile().mediaTrackEvent(ADBMobile().MEDIA_BITRATE_CHANGE)
@@ -63,7 +63,7 @@ source-git-commit: a8e8ac5a808ff785a348b456dd7d183540c1d594
 
    >[!NOTE]
    >
-   >You need to call `updateQoSObject` with the updated bitrate value.
+   >Vous devez appeler `updateQoSObject` avec la valeur de débit mise à jour.
 
    <!--
     ```
