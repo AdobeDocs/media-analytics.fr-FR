@@ -1,9 +1,9 @@
 ---
-seo-title: Téléchargement des SDK
 title: Téléchargement des SDK
+description: Liens vers les téléchargements de SDK pour les plateformes disponibles, notamment Android, iOS, JavaScript, Chromecast et Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 translation-type: tm+mt
-source-git-commit: 3e115cbbae77413743764ed0757af9ac99965d6e
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
