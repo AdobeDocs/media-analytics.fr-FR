@@ -1,11 +1,9 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Mise en œuvre de métadonnées de publicité standard sur JavaScript
 title: Mise en œuvre de métadonnées de publicité standard sur JavaScript
+description: Utilisation des métadonnées publicitaires standard dans le suivi des publicités dans les applications de navigateur (JS).
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 translation-type: tm+mt
-source-git-commit: ed200520b9bed990460a444dabdcf956980362ca
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
