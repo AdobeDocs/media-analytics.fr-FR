@@ -1,9 +1,9 @@
 ---
-seo-title: Événements de mise en file d’attente lorsque la réponse des sessions est lente
 title: Événements de mise en file d’attente lorsque la réponse des sessions est lente
+description: null
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
