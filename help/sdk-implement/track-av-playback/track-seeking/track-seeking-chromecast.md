@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi de la recherche sur Chromecast
 title: Suivi de la recherche sur Chromecast
-uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
+description: Cette rubrique décrit l’implémentation du suivi des recherches à l’aide du SDK Media sur Chromecast.
+uuid: 8018e6c4-feed9-4de7-9eae-c720da55ad8c
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -21,7 +21,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 | `SeekStart` | Constante permettant d’effectuer le suivi de l’événement Début de la recherche. |
 | `SeekComplete` | Constante permettant d’effectuer le suivi de l’événement Fin de la recherche. |
 
-## Implement seeking
+## Mise en oeuvre de la recherche
 
 1. Prêtez attention aux événements de recherche se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la recherche, effectuez-en le suivi à l’aide de l’événement `SeekStart` : [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
