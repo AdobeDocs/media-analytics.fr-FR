@@ -1,9 +1,9 @@
 ---
-seo-title: Lecture VOD sans publicité
 title: Lecture VOD sans publicité
+description: Exemple de suivi de la lecture VOD qui ne contient aucune publicité.
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bdd0d8cb
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
