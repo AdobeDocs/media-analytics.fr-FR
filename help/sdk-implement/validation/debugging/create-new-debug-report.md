@@ -1,9 +1,9 @@
 ---
-seo-title: Création d’un nouveau rapport de débogage
 title: Création d’un nouveau rapport de débogage
+description: Cette rubrique explique comment créer un nouveau rapport de débogage.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 translation-type: tm+mt
-source-git-commit: f2b08663a928e27625a9ff63f783c510f41e7a8c
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -29,10 +29,10 @@ Pour créer un nouveau rapport de débogage :
          * [!UICONTROL Analytics &gt; Administration &gt; Gestion des utilisateurs &gt; Utilisateurs &gt; Paramètres d’utilisateur individuels] Pour créer des informations d’identification d’API de services Web pour un nouvel utilisateur, dans [!UICONTROL Gestion des utilisateurs], ajoutez l’utilisateur au groupe d’utilisateurs **Accès au service Web**.
       * [!UICONTROL Point de terminaison] par défaut : les données de ce champ sont fournies par Adobe et ne peuvent pas être modifiées.
       * [!UICONTROL Point de terminaison] supplémentaire - Ajoutez `CNAMES`, si vous les utilisez, un serveur de suivi comme `metrics.companyname.com`
-   * **Video Heartbeats (Media Analytics)**
+   * **Pulsations vidéo (Media Analytics)**
 
-      * [!UICONTROL Default Endpoint] - The data in this field is provided by Adobe and cannot be changed.
-      * [!UICONTROL Extra Endpoint - Add , if you use them, for your tracking server, e.g., .]`CNAMES``metrics.companyname.com`
+      * [!UICONTROL Point de terminaison] par défaut : les données de ce champ sont fournies par Adobe et ne peuvent pas être modifiées.
+      * [!UICONTROL Point de terminaison] supplémentaire : ajoutez `CNAMES`, si vous les utilisez, pour votre serveur de suivi, par exemple `metrics.companyname.com`.
 
 
 
