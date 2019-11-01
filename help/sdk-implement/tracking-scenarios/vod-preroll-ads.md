@@ -1,11 +1,9 @@
 ---
-seo-title: Lecture VOD avec publicités preroll
 title: Lecture VOD avec publicités preroll
-description: Dans ce scénario, des publicités preroll ont été insérées avant le contenu principal.
-seo-description: Dans ce scénario, dans Adobe Media Analytics, les publicités preroll ont été insérées avant le contenu principal.
+description: Exemple de suivi du contenu VOD contenant des publicités preroll à l’aide du SDK multimédia.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
