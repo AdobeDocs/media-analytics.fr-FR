@@ -1,11 +1,9 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Mise en œuvre de métadonnées standard sur Android
 title: Mise en œuvre de métadonnées standard sur Android
+description: Décrit la définition des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi sur Android.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 translation-type: tm+mt
-source-git-commit: 46797deb402fed1c4d4781507c279407f8c13f2e
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
