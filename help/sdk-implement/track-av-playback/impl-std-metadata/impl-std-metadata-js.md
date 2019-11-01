@@ -1,11 +1,9 @@
 ---
-description: valeur nulle
-seo-description: valeur nulle
-seo-title: Mise en œuvre de métadonnées standard sur JavaScript
 title: Mise en œuvre de métadonnées standard sur JavaScript
+description: Décrit la définition des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi dans les applications de navigateur (JS).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 translation-type: tm+mt
-source-git-commit: 959ff714d3546a06123293cac8a17b94fae1c1ff
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
