@@ -1,9 +1,9 @@
 ---
-seo-title: Suivi des chapitres et des segments sur JavaScript
 title: Suivi des chapitres et des segments sur JavaScript
+description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK multimédia dans les applications de navigateur (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
 translation-type: tm+mt
-source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
@@ -20,7 +20,7 @@ source-git-commit: e89620ce60a37aa4ba0207e8f5a4f43c76026dcd
 
    >[!NOTE]
    >
-   >These variables are only required if you are planning to track chapters.
+   >Ces variables ne sont requises que si vous prévoyez de suivre les chapitres.
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
