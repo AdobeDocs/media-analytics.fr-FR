@@ -1,9 +1,9 @@
 ---
-seo-title: Test 2 Interruption du média
 title: Test 2 Interruption du média
+description: Cette rubrique décrit le test d’interruption de média utilisé dans la validation.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 translation-type: tm+mt
-source-git-commit: 5822e634c51cb53a60400623d115c6d862dad44f
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
