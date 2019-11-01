@@ -1,9 +1,9 @@
 ---
-seo-title: Paramètres de requête
 title: Paramètres de requête
+description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
@@ -14,8 +14,8 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
-| `analytics.trackingServer` | O | `sessionStart` | URL de votre serveur Adobe Analytics |
-| `analytics.reportSuite` | O | `sessionStart` | ID identifiant vos données de rapport d’analyse |
+| `analytics.trackingServer` | Y | `sessionStart` | URL de votre serveur Adobe Analytics |
+| `analytics.reportSuite` | Y | `sessionStart` | ID identifiant vos données de rapport d’analyse |
 | `analytics.enableSSL` | N | `sessionStart` | True ou false pour activer SSL |
 | `analytics.visitorId` | N | `sessionStart` | L’ID de visiteur Adobe est un ID personnalisé que vous pouvez utiliser dans plusieurs applications Adobe. La pulsation `visitorId` est égale à Analytics `VID.` |
 
@@ -23,7 +23,7 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | O | `sessionStart` | Identifiant d’entreprise Experience Cloud ; identifie votre organisation dans l’écosystème Adobe Experience Cloud |
+| `visitor.marketingCloudOrgId` | Y | `sessionStart` | Identifiant d’entreprise Experience Cloud ; identifie votre organisation dans l’écosystème Adobe Experience Cloud |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Il s’agit de l’ID utilisateur Experience Cloud (ECID). Dans la plupart des cas, il s’agit de l’identifiant que vous devez utiliser pour identifier un utilisateur. La pulsation `marketingCloudUserId` est égale à la `MID` dans Adobe Analytics. Bien que cela ne soit pas techniquement nécessaire, ce paramètre est nécessaire pour accéder à la famille d’applications Experience Cloud. |
 | `visitor.aamLocationHint` | N | `sessionStart` | Fournit les données edge Adobe Audience Manager |
 | `appInstallationId` | N | `sessionStart` | L’ID appInstallationId identifie de manière unique l’application et l’appareil |
@@ -32,12 +32,12 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
-| `media.id` | O | `sessionStart` | Identifiant unique du contenu |
+| `media.id` | Y | `sessionStart` | Identifiant unique du contenu |
 | `media.name` | N | `sessionStart` | Nom du contenu lisible par l’homme |
-| `media.length` | O | `sessionStart` | Durée du contenu (secondes) |
-| `media.contentType` | O | `sessionStart` | Format de la diffusion (peut correspondre à n’importe quelle chaîne ; quelques valeurs recommandées sont "live", "VOD" ou "Linear") |
-| `media.playerName` | O | `sessionStart` | Nom du lecteur responsable du rendu du contenu |
-| `media.channel` | O | `sessionStart` | Canal de distribution du contenu. Il peut s’agir d’un nom d’application mobile ou d’un nom de site Web, un nom de propriété. |
+| `media.length` | Y | `sessionStart` | Durée du contenu (secondes) |
+| `media.contentType` | Y | `sessionStart` | Format de la diffusion (peut correspondre à n’importe quelle chaîne ; quelques valeurs recommandées sont "live", "VOD" ou "Linear") |
+| `media.playerName` | Y | `sessionStart` | Nom du lecteur responsable du rendu du contenu |
+| `media.channel` | Y | `sessionStart` | Canal de distribution du contenu. Il peut s’agir d’un nom d’application mobile ou d’un nom de site Web, un nom de propriété. |
 | `media.resume` | N | `sessionStart` | Indique si un utilisateur reprend une session précédente (au lieu de commencer une nouvelle session). |
 | `media.sdkVersion` | N | `sessionStart` | Version SDK utilisée par le lecteur |
 
@@ -67,13 +67,13 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 | Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | `adBreakStart` | Nom convivial de la coupure publicitaire |
-| `media.ad.podIndex` | O | `adBreakStart` | Index de la capsule publicitaire dans la vidéo |
-| `media.ad.podSecond` | O | `adBreakStart` | Seconde à laquelle la capsule a commencé |
-| `media.ad.podPosition` | O | `adStart` | Index de la publicité dans la coupure publicitaire commençant à 1 |
+| `media.ad.podIndex` | Y | `adBreakStart` | Index de la capsule publicitaire dans la vidéo |
+| `media.ad.podSecond` | Y | `adBreakStart` | Seconde à laquelle la capsule a commencé |
+| `media.ad.podPosition` | Y | `adStart` | Index de la publicité dans la coupure publicitaire commençant à 1 |
 | `media.ad.name` | N | `adStart` | Nom convivial de la publicité |
-| `media.ad.id` | O | `adStart` | Nom de la publicité |
-| `media.ad.length` | O | `adStart` | Durée de la publicité vidéo en secondes |
-| `media.ad.playerName` | O | `adStart` | Nom du lecteur responsable du rendu de la publicité |
+| `media.ad.id` | Y | `adStart` | Nom de la publicité |
+| `media.ad.length` | Y | `adStart` | Durée de la publicité vidéo en secondes |
+| `media.ad.playerName` | Y | `adStart` | Nom du lecteur responsable du rendu de la publicité |
 
 ## Métadonnées standard de la publicité
 
@@ -90,9 +90,9 @@ source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
 
 | Clé de requête | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
-| `media.chapter.index` | O | `chapterStart` | Identifie la position du chapitre dans le contenu |
-| `media.chapter.offset` | O | `chapterStart` | Seconde dans la lecture à laquelle le chapitre commence |
-| `media.chapter.length` | O | `chapterStart` | Durée du chapitre en secondes |
+| `media.chapter.index` | Y | `chapterStart` | Identifie la position du chapitre dans le contenu |
+| `media.chapter.offset` | Y | `chapterStart` | Seconde dans la lecture à laquelle le chapitre commence |
+| `media.chapter.length` | Y | `chapterStart` | Durée du chapitre en secondes |
 | `media.chapter.friendlyName` | N | `chapterStart` | Nom convivial du chapitre |
 
 ## Données de qualité
