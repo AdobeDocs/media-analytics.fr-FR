@@ -1,9 +1,9 @@
 ---
-seo-title: Gestion des interruptions de l’application lors de la lecture
 title: Gestion des interruptions de l’application lors de la lecture
+description: Comment gérer les interruptions du suivi pendant la lecture du média.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 translation-type: tm+mt
-source-git-commit: ffb97a0162e0bb609ea427afab81e4d8b532f20b
+source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
