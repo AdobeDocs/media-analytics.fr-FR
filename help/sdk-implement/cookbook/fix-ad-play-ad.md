@@ -1,35 +1,35 @@
 ---
-title: Résolution du jeu principal apparaissant entre les publicités
-description: Comment gérer les appels main:play inattendus entre publicités.
+title: Résolution des appels main:play apparaissant entre les publicités
+description: Comment gérer les appels main:play inattendus entre les publicités.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Résolution des appels main:play apparaissant entre les publicités{#resolving-main-play-appearing-between-ads}
+# Résolution des appels main:play apparaissant entre les publicités {#resolving-main-play-appearing-between-ads}
 
 ## Problème
 
-Dans certains scénarios de suivi des publicités, vous pouvez rencontrer des appels `main:play` qui se produisent inopinément entre la fin d’une publicité et le début de la publicité suivante. If the delay between the ad complete call and the next ad start call is greater than 250 milliseconds, the Media SDK will fall back to sending `main:play` calls. Si ce retour à `main:play` survient au cours d’une coupure publicitaire preroll, la mesure de début du contenu peut être définie de façon précoce.
+Dans certains scénarios de suivi des publicités, vous pouvez rencontrer des appels `main:play` qui se produisent inopinément entre la fin d’une publicité et le début de la publicité suivante. Si le délai entre l’appel de fin de publicité et l’appel de démarrage de la publicité suivante est supérieur à 250 millisecondes, le SDK Media retourne à l’envoi d’appels `main:play`. Si ce retour à `main:play` survient au cours d’une coupure publicitaire preroll, la mesure de début du contenu peut être définie de façon précoce.
 
 Un écart entre les publicités tel que décrit ci-dessus est interprété par le kit SDK Media comme du contenu principal, car il n’y a à ce niveau aucun chevauchement avec un contenu publicitaire. Le SDK Media ne contient aucune information de publicité définie, et le lecteur est à l’état de lecture. S’il n’y a aucune information de publicité et que le lecteur est à l’état de lecture, le kit SDK Media crédite la durée de l’écart en faveur du contenu principal par défaut. Il ne peut pas créditer la durée de l’écart en faveur d’informations de publicité nulles.
 
 ## IDENTIFICATION
 
-Lors de l’utilisation d’Adobe Debug ou d’un renifleur de paquets réseau tel que Charles, si vous voyez les appels de pulsation suivants dans cet ordre pendant une coupure publicitaire preroll :
+Pendant que vous utilisez Adobe Debug ou un renifleur de paquets réseau tel que Charles, si les appels Heartbeat suivants apparaissent dans cet ordre pendant une coupure publicitaire preroll :
 
-* Démarrage de la session: `s:event:type=start` &amp; `s:asset:type=main`
-* Démarrage de publicité: `s:event:type=start` &amp; `s:asset:type=ad`
-* Lecture de la publicité: `s:event:type=play` &amp; `s:asset:type=ad`
-* Fin de la publicité: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Lecture du contenu principal : `s:event:type=play` &amp; `s:asset:type=main`**(inattendu)**
+* Démarrage de la session : `s:event:type=start` &amp; `s:asset:type=main`
+* Démarrage de publicité : `s:event:type=start` &amp; `s:asset:type=ad`
+* Lecture de la publicité : `s:event:type=play` &amp; `s:asset:type=ad`
+* Fin de la publicité : `s:event:type=complete` &amp; `s:asset:type=ad`
+* Lecture du contenu principal : `s:event:type=play` &amp; `s:asset:type=main`**(inattendu)**
 
-* Démarrage de publicité: `s:event:type=start` &amp; `s:asset:type=ad`
-* Lecture de la publicité: `s:event:type=play` &amp; `s:asset:type=ad`
-* Fin de la publicité: `s:event:type=complete` &amp; `s:asset:type=ad`
-* Lecture du contenu principal : `s:event:type=play` &amp; `s:asset:type=main`**(attendu)**
+* Démarrage de publicité : `s:event:type=start` &amp; `s:asset:type=ad`
+* Lecture de la publicité : `s:event:type=play` &amp; `s:asset:type=ad`
+* Fin de la publicité : `s:event:type=complete` &amp; `s:asset:type=ad`
+* Lecture du contenu principal : `s:event:type=play` &amp; `s:asset:type=main` **(attendu)**
 
 ## RÉSOLUTION
 
@@ -49,20 +49,20 @@ Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour 
 
    >[!NOTE]
    >
-   >Appelez ceci uniquement si la publicité précédente n’était pas terminée. Pensez à une valeur booléenne pour conserver l’état "`isinAd`" de la publicité précédente.
+   >Appelez cette méthode uniquement si la publicité précédente n’était pas complète. Pensez à une valeur booléenne pour conserver l’état "`isinAd`" de la publicité précédente.
 
 * Créez l’instance d’objet publicitaire pour la ressource publicitaire : par exemple, `adObject`.
-* Populate the ad metadata, `adCustomMetadata`.
+* Renseignez les métadonnées de publicité, `adCustomMetadata`.
 * L’appel `trackEvent(MediaHeartbeat.Event.AdStart, adObject, adCustomMetadata);`.
-* Call `trackPlay()` if this is the first ad in a pre-roll ad break.
+* Appelez `trackPlay()` s’il s’agit de la première publicité dans une coupure publicitaire preroll.
 
 **À chaque fin de ressource publicitaire :**
 
-* **Ne pas passer d’appel**
+* **Ne pas effectuer d’appel**
 
    >[!NOTE]
    >
-   >If the application knows it is the last ad in the ad break, call `trackEvent:AdComplete` here and skip setting `trackEvent:AdComplete` in the `trackEvent:AdBreakComplete`
+   >Si l’application sait qu’il s’agit de la dernière publicité dans la coupure publicitaire, appelez `trackEvent:AdComplete` ici et ne définissez pas `trackEvent:AdComplete` dans `trackEvent:AdBreakComplete`.
 
 **Lorsque la publicité est ignorée :**
 
@@ -74,7 +74,7 @@ Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour 
 
    >[!NOTE]
    >
-   >If this step is already performed above as part of the last `trackEvent:AdComplete` call then this can be skipped.
+   >Si cette étape est déjà effectuée ci-dessus dans le cadre du dernier appel `trackEvent:AdComplete`, elle peut être ignorée.
 
 * L’appel `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
 
