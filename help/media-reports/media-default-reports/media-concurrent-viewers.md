@@ -2,13 +2,13 @@
 title: Visionneuses simultanées de médias
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Visionneuses simultanées de médias{#media-concurrent-viewers}
+# Visionneuses simultanées de médias {#media-concurrent-viewers}
 
 Le tableau de bord Visionneuses simultanées de médias présente les visionneuses simultanées d’une journée. Les données peuvent être filtrées par contenu, type de périphérique ou pays.
 
