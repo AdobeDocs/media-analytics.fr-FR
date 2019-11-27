@@ -2,28 +2,28 @@
 title: Obtention des données du rapport JSON sur les visionneuses simultanées
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Obtention des données du rapport JSON sur les visionneuses simultanées{#get-concurrent-viewers-json-report-data}
+# Obtention des données du rapport JSON sur les visionneuses simultanées {#get-concurrent-viewers-json-report-data}
 
-Vous pouvez obtenir des données de rapport des visionneuses simultanées à l’aide de la version _**_ 1.4 des API Analytics :
+Vous pouvez obtenir des données de rapport des visionneuses simultanées à l’aide de la _* version 1.4 *_ des API Analytics :
 * [Interfaces API Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)
 * [Swagger](https://adobedocs.github.io/analytics-1.4-apis/swagger-docs.html#/Report/Report.Get)
 
-1. Filtrez les données à l’aide de n’importe quel segment généré par l’interface utilisateur. Pour filtrer selon un ID de contenu spécifique, créez un segment.
-1. Définissez le `elements` -&gt; `id` dans le corps de la requête sur `videoconcurrentviewers`.
-1. Demandez une quantité suffisante de données. Adobe recommande 3 200 points de données pour s’assurer qu’il n’y a pas d’écart entre les données.
+1. Filtrez les données à l’aide de n’importe quel segment généré par l’interface utilisateur. Pour filtrer selon un identifiant de contenu spécifique, créez un segment.
+1. Définissez le `elements` -&gt; `id` dans le corps de requête sur `videoconcurrentviewers`.
+1. Demandez une quantité suffisante de données. Adobe recommande 3 200 points de données pour s’assurer qu’il n’y a pas d’écart entre les données.
 
-   * La plage de données que vous spécifiez dans le rapport rassemble toutes les données du lecteur simultanées _au moment de la fin de la session vidéo._
+   * La plage de données que vous spécifiez dans le rapport rassemble toutes les données de visionneuse simultanées _au moment de la fin de la session vidéo._
 Vous devez donc tenir compte des sessions qui commencent un jour et se terminent après minuit (c.-à-d. le lendemain).
 
    * Demandez plusieurs jours de données, mais dans votre analyse, _* utilisez uniquement le premier jour des données.*_
 
-Voici un exemple de charge utile de requête pour ce scénario :
+Voici un exemple de charge utile de requête pour ce scénario :
 
 ```
 {
