@@ -1,14 +1,14 @@
 ---
 title: Lecture VOD avec saut de chapitre
-description: Exemple de suivi du contenu VOD dans lequel l’utilisateur a ignoré un chapitre à l’aide du SDK multimédia.
+description: Exemple de suivi du contenu VOD dans lequel l’utilisateur a ignoré un chapitre à l’aide du SDK Media.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Lecture VOD avec saut de chapitre{#vod-playback-with-a-skipped-chapter}
+# Lecture VOD avec saut de chapitre {#vod-playback-with-a-skipped-chapter}
 
 ## Scénario {#scenario}
 
@@ -18,7 +18,7 @@ Il s’agit du même scénario que [Lecture VOD avec un chapitre](/help/sdk-impl
 
 | Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario  [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
+| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario [Lecture sans interruptions dans un scénario iOS](vod-no-intrs-details.md). |
 | Le chapitre démarre. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Chapter Play | Lorsque le contenu du chapitre est lu avant le contenu principal, nous souhaitons démarrer les pulsations au début du chapitre. |
 | Le chapitre est lu. |  | Chapter Heartbeats |  |
@@ -26,12 +26,12 @@ Il s’agit du même scénario que [Lecture VOD avec un chapitre](/help/sdk-impl
 | La recherche est terminée. | `trackEvent:trackSeekComplete` |  | Après ce déclencheur, les pulsations reprennent. |
 | L’application comprend que l’utilisateur a effectué une recherche en dehors de la limite normale du chapitre. | `trackEvent:trackChapterSkip` |  |  |
 | Le contenu est lu. |  | Content Heartbeats |  |
-| La lecture du contenu est terminée. | `trackComplete` | Heartbeat Content Complete | This network call is exactly the same as the [Playback with no interruptions in iOS](vod-no-intrs-details.md) scenario. |
-| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur ne regarde pas le média jusqu’à sa fin. |
+| La lecture du contenu est terminée. | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture interruption sur iOS](vod-no-intrs-details.md). |
+| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur n’utilise pas le média jusqu’à la fin. |
 
 ## Paramètres {#parameters}
 
-Les paramètres utilisés pendant la lecture de ce chapitre sont identiques à ceux du scénario  [Lecture VOD avec un chapitre](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), mais il n’est pas question d’appel réseau de fin du chapitre.
+Les paramètres utilisés pendant la lecture de ce chapitre sont identiques à ceux du scénario [Lecture VOD avec un chapitre](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), mais il n’est pas question d’appel réseau de fin du chapitre.
 
 ## Exemple de code {#sample-code}
 
