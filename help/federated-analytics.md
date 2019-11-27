@@ -1,17 +1,16 @@
 ---
 title: Federated Analytics
-description: 'Le service Analyses fédérées fournit un système pour le partage de données Adobe Media Analytics (audio et vidéo) entre deux partenaires. '
+description: 'Le service Federated Analytics fournit un système pour le partage de données Adobe Media Analytics (audio et vidéo) entre deux partenaires. '
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Analyses fédérées{#federated-analytics}
+# Federated Analytics {#federated-analytics}
 
-Le service Analyses fédérées fournit un système pour le partage de données Adobe Media Analytics (audio et vidéo) entre deux partenaires.
-Les données de mesure normalisées créées par Media Analytics sont la marque distinctive de Federated Analytics, ce qui permet aux mêmes données d’intégrer un rapport unique à partir de sources multiples.
+Le service Federated Analytics fournit un système pour le partage de données Adobe Media Analytics (audio et vidéo) entre deux partenaires. Les données de mesure normalisées créées par Media Analytics sont la marque distinctive de Federated Analytics, ce qui permet aux mêmes données d’intégrer un rapport unique à partir de sources multiples.
 Via les règles et la logique régissant Federated Analytics, les données sont facilement contrôlées et individualisées pour répondre aux besoins de chaque partenariat.
 Avec Federated Analytics, les mesures audio et vidéo sont plus efficaces, plus simples et plus exploitables.
 
@@ -36,17 +35,17 @@ Avec Federated Analytics, les mesures audio et vidéo sont plus efficaces, plus 
 
 * **Contrat de diffusion multimédia :** Le récepteur et l’expéditeur doivent disposer d’un contrat Adobe Analytics pour les diffusions multimédia avant d’accéder aux données audio et vidéo dans Adobe Analytics. Pour plus de détails, contactez l’équipe de votre compte.
 * **Addendum fédéré :** Chaque expéditeur et récepteur doit avoir signé un addendum avec Adobe avant d’envoyer ou de recevoir des données. Un addendum par client est requis, et non un addendum par partenariat. Pour plus de détails, contactez l’équipe de votre compte.
-* **Mise en œuvre de Media Analytics :** L’expéditeur doit disposer de Media Analytics mis en œuvre sur tous les lecteurs allant faire partie du jeu de données fédérées. Seules les données de Media Analytics sont disponibles pour la fédération. See documentation: [Measuring audio and video in Adobe Analytics](/help/media-overview.md)
+* **Mise en œuvre de Media Analytics :** L’expéditeur doit disposer de Media Analytics mis en œuvre sur tous les lecteurs allant faire partie du jeu de données fédérées. Seules les données de Media Analytics sont disponibles pour la fédération. Voir documentation : [Mesures audio et vidéo dans Adobe Analytics](/help/media-overview.md)
 
 * **Contrat de conseil Adobe :** Pour la configuration initiale des règles fédérées entre le récepteur et l’expéditeur, il est recommandé de travailler avec des services de conseil pour examiner les données et créer l’accord de partage de données.
 
-## Téléchargement du formulaire d’analyses fédérées
+## Télécharger le formulaire Federated Analytics
 
-Téléchargez la version actuelle de ce formulaire ici : Accord sur les règles de [fédération](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
+Téléchargez la version actuelle de ce formulaire ici : [Accord sur les règles de fédération](https://github.com/AdobeDocs/media-analytics.en/blob/master/help/federated-analytics-form.pdf)
 
 ## Processus {#process}
 
-1. L’expéditeur et le récepteur collaborent ensemble pour remplir le formulaire d’accord des règles de fédération. Le formulaire d’accord sur les règles fédérées contient des champs spéciaux pour notre équipe d’ingénieurs et ne doit être modifié qu’avec Adobe Acrobat. [Téléchargez Acrobat gratuitement.](https://get.adobe.com/reader/)
+1. L’expéditeur et le récepteur collaborent ensemble pour remplir le formulaire d’accord des règles de fédération. Ce formulaire contient des champs spéciaux pour notre équipe d’ingénieurs et doit UNIQUEMENT être modifié avec Adobe Acrobat. [Téléchargez Acrobat gratuitement.](https://get.adobe.com/fr/reader/)
 1. Les services de conseil fournissent au récepteur un fichier de données échantillon comportant les données des lecteurs de l’expéditeur afin de confirmer que des règles de partage de données correctes sont définies, à condition que des fichiers de données soient disponibles.
 1. L’expéditeur et le récepteur s’assurent que l’accord de partage de données répondra à toutes les exigences contractuelles entre les deux parties.
 1. Les services de conseil envoient le formulaire complété au service Adobe Engineering pour configurer les règles de partage de données.
