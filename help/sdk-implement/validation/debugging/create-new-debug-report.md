@@ -2,17 +2,17 @@
 title: Création d’un nouveau rapport de débogage
 description: Cette rubrique explique comment créer un nouveau rapport de débogage.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Création d’un nouveau rapport de débogage{#create-a-new-debug-report}
+# Création d’un nouveau rapport de débogage {#create-a-new-debug-report}
 
 Pour créer un nouveau rapport de débogage :
 
-1. In [!UICONTROL Create New Debug Report] select the following:
+1. Dans [!UICONTROL Création d’un nouveau rapport de débogage] sélectionnez les options suivantes :
 
    ![](assets/create-new-debug-report.png)
 
@@ -27,12 +27,12 @@ Pour créer un nouveau rapport de débogage :
 
          * [!UICONTROL Analytics &gt; Admin &gt; Paramètres de la société &gt; Services Web]
          * [!UICONTROL Analytics &gt; Administration &gt; Gestion des utilisateurs &gt; Utilisateurs &gt; Paramètres d’utilisateur individuels] Pour créer des informations d’identification d’API de services Web pour un nouvel utilisateur, dans [!UICONTROL Gestion des utilisateurs], ajoutez l’utilisateur au groupe d’utilisateurs **Accès au service Web**.
-      * [!UICONTROL Point de terminaison] par défaut : les données de ce champ sont fournies par Adobe et ne peuvent pas être modifiées.
-      * [!UICONTROL Point de terminaison] supplémentaire - Ajoutez `CNAMES`, si vous les utilisez, un serveur de suivi comme `metrics.companyname.com`
-   * **Pulsations vidéo (Media Analytics)**
+      * [!UICONTROL Point de terminaison par défaut] - Les données de ce champ sont fournies par Adobe et ne peuvent pas être modifiées.
+      * [!UICONTROL Point de terminaison supplémentaire] - Ajoutez `CNAMES`, si vous les utilisez, pour le suivi de serveur comme `metrics.companyname.com`
+   * **Vidéo Heartbeat (Media Analytics)**
 
-      * [!UICONTROL Point de terminaison] par défaut : les données de ce champ sont fournies par Adobe et ne peuvent pas être modifiées.
-      * [!UICONTROL Point de terminaison] supplémentaire : ajoutez `CNAMES`, si vous les utilisez, pour votre serveur de suivi, par exemple `metrics.companyname.com`.
+      * [!UICONTROL Point de terminaison par défaut] - Les données de ce champ sont fournies par Adobe et ne peuvent pas être modifiées.
+      * [!UICONTROL Point de terminaison supplémentaire] - Ajoutez `CNAMES`, si vous les utilisez, pour le suivi de serveur comme, par exemple, `metrics.companyname.com`.
 
 
 
