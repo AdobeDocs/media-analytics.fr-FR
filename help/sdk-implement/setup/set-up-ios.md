@@ -1,23 +1,23 @@
 ---
 title: Configuration d’iOS
-description: Configuration de l’application SDK multimédia pour l’implémentation sur iOS.
+description: Configuration de l’application du SDK Media pour l’implémentation sur iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Configuration d’iOS{#set-up-ios}
+# Configuration d’iOS {#set-up-ios}
 
 ## Conditions préalables
 
-* **Obtention de paramètres de configuration valides pour le SDK** Media Ces paramètres peuvent être obtenus auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
-* **Mise en oeuvre d’ADBMobile pour iOS dans votre application** Pour plus d’informations sur la documentation du SDK mobile Adobe, voir SDK [iOS 4.x pour les solutions Experience Cloud.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/)
+* **Obtention de paramètres de configuration valides pour le SDK Media** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
+* **Mise en œuvre d’ADBMobile pour iOS dans votre application** Pour plus d’informations sur la documentation du kit SDK Adobe Mobile, reportezvous à la rubrique [Kit SDK iOS 4.x pour les solutions Experience Cloud.](https://marketing.adobe.com/resources/help/fr_FR/mobile/ios/)
 
    >[!IMPORTANT]
    >
-   >Depuis iOS 9, Apple a introduit une fonctionnalité appelée App Transport Security (ATS). Cette fonction vise à améliorer la sécurité du réseau en s’assurant que vos applications utilisent uniquement des protocoles et des codes aux normes industrielles. Cette fonction est activée par défaut, mais des options de configuration vous permettent d’effectuer des choix quant à l’utilisation d’ATS. Pour plus d’informations sur ATS, voir Sécurité du transport [des applications.](https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html)
+   >À partir d’iOS 9, Apple a introduit une fonction appelée ATS (App Transport Security). Cette fonction vise à améliorer la sécurité du réseau en s’assurant que vos applications utilisent uniquement des protocoles et des codes aux normes industrielles. Cette fonction est activée par défaut, mais des options de configuration vous permettent d’effectuer des choix quant à l’utilisation d’ATS. Pour plus d’informations sur ATS, voir [Sécurité du transport des applications.](https://marketing.adobe.com/resources/help/fr_FR/mobile/ios/app_transport_security.html)
 
 * **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
 
@@ -44,12 +44,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. Lancez Xcode IDE et ouvrez votre application.
       1. Dans **[!UICONTROL Project Navigator]** (Navigateur de projets), faites glisser le répertoire `libs` sous votre projet.
 
-      1. Assurez-vous que la case **[!UICONTROL Copy Items if Needed]** (Copier les éléments si nécessaire) est cochée, que **[!UICONTROL Create Groups](Créer des groupes) est sélectionné et qu’aucune des cases dans** Add to Target] (Ajouter à la cible) n’est cochée.**[!UICONTROL **
+      1. Assurez-vous que la case **[!UICONTROL Copy Items if Needed]** (Copier les éléments si nécessaire) est cochée, que **[!UICONTROL Create Groups]** (Créer des groupes) est sélectionné et qu’aucune des cases dans **[!UICONTROL Add to Target]** (Ajouter à la cible) n’est cochée.
 
          ![](assets/choose-options_ios.png)
 
       1. Cliquez sur **[!UICONTROL Terminer]**.
-      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. Dans **[!UICONTROL Navigateur de projets]**, sélectionnez votre application et vos cibles.
       1. Liez les structures et bibliothèques requises dans la section **[!UICONTROL Structures liées]** et **[!UICONTROL Bibliothèques]** dans l’onglet **[!UICONTROL Général]**.
 
          **Cibles d’une application iOS :**
@@ -75,7 +75,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    #import "ADBMediaHeartbeatConfig.h" 
    ```
 
-1. Create a `ADBMediaHeartbeatConfig` instance.
+1. Créez une instance `ADBMediaHeartbeatConfig`.
 
    Cette section vous aide à comprendre les paramètres de configuration `MediaHeartbeat` et à définir les bonnes valeurs de configuration sur votre instance `MediaHeartbeat` pour un suivi précis.
 
@@ -93,7 +93,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    config.debugLogging   = <YES/NO>; 
    ```
 
-1. Implement the `ADBMediaHeartbeatDelegate` protocol.
+1. Mettez en œuvre le protocole `ADBMediaHeartbeatDelegate`.
 
    ```
    @interface VideoAnalyticsProvider : NSObject <ADBMediaHeartbeatDelegate> 
@@ -120,7 +120,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    @end
    ```
 
-1. Use the `ADBMediaHeartBeatConfig` and `ADBMediaHeartBeatDelegate` to create the `ADBMediaHeartbeat` instance.
+1. Utilisez les instances `ADBMediaHeartBeatConfig` et `ADBMediaHeartBeatDelegate` pour créer l’instance `ADBMediaHeartbeat`.
 
    ```
    //Replace <ADBMediaHeartBeatDelegate> with your delegate instance 
@@ -130,7 +130,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `ADBMediaHeartbeat` instance is accessible and *does not get deallocated until the end of the session*. Cette instance sera utilisée pour tous les événements de suivi suivants.
+   >Assurez-vous que votre instance `ADBMediaHeartbeat` est accessible et *reste attribuée jusqu’à la fin de la session*. Cette instance sera utilisée pour tous les événements de suivi suivants.
 
 ## Migration de la version 1.x vers 2.x sur iOS {#migrate-to-two-x}
 
@@ -144,7 +144,7 @@ Avec la sortie de la nouvelle Apple TV, vous pouvez désormais créer des appli
 
 Procédez comme suit dans votre projet Xcode. Ce guide suppose que votre projet concerne une application Apple TV ciblant tvOS :
 
-1. Drag the `VideoHeartbeat_TV.a` library file into your project’s `lib` folder.
+1. Faites glisser le fichier de bibliothèque `VideoHeartbeat_TV.a` dans le dossier `lib` de votre projet.
 
 1. Dans l’onglet **[!UICONTROL Créer des phases]** de la cible de votre application tvOS, développez la section **[!UICONTROL Lier le fichier binaire avec les bibliothèques]** et ajoutez les bibliothèques suivantes :
 
