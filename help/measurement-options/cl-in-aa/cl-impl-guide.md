@@ -2,20 +2,19 @@
 title: Guide de mise en œuvre d’un lien personnalisé
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Custom Link Implementation Guide{#custom-link-implementation-guide}
+# Guide de mise en œuvre d’un lien personnalisé {#custom-link-implementation-guide}
 
-Custom Video Tracking uses [manual link tracking using custom link code](https://marketing.adobe.com/resources/help/en_US/sc/implement/link_manual.html) within Analytics `appMeasurement`.
-Le plus souvent, il est utilisé sur les plates-formes et les appareils nécessitant peu de mesures vidéo.
+Le suivi vidéo personnalisé utilise le [suivi manuel des liens à l’aide du code de lien personnalisé](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/link_manual.html) dans le code `appMeasurement` d’Analytics. Le plus souvent, il est utilisé sur les plates-formes et les appareils nécessitant peu de mesures vidéo.
 
-* Dans JavaScript : la `s.tl()` fonction
-* Dans les applications mobiles : [trackAction() Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
-* In the Data Insertion API: [linktype tag](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
+* Dans JavaScript : la fonction `s.tl()`
+* Dans les applications mobiles : [trackAction() Android](https://marketing.adobe.com/resources/help/fr_FR/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/fr_FR/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* Dans l’API Data Insertion : [balise linktype](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Conditions
 
@@ -26,7 +25,7 @@ Le plus souvent, il est utilisé sur les plates-formes et les appareils nécessi
 ## Métadonnées
 
 * Des métadonnées peuvent être ajoutées aux données de lien de n’importe quel appel de suivi.
-* Remember to update the `linkTrackVars` and `linkTrackEvents`
+* N’oubliez pas de mettre à jour `linkTrackVars` et `linkTrackEvents`.
 
 ```javascript
 /* Call on video complete */ 
@@ -44,7 +43,7 @@ if (e.type == "ended") {
 };
 ```
 
-## Pourquoi utiliser le lien personnalisé
+## Pourquoi utiliser un lien personnalisé
 
 * Peu de conditions requises
 * Fonctionne sur toutes les plates-formes, même NoScript
