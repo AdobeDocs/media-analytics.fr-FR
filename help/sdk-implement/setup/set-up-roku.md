@@ -1,25 +1,25 @@
 ---
 title: Configuration de Roku
-description: Configuration de l’application SDK multimédia pour l’implémentation sur Roku.
+description: Configuration de l’application du SDK Media pour l’implémentation sur Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Configuration de Roku{#set-up-roku}
+# Configuration de Roku {#set-up-roku}
 
 ## Conditions préalables
 
-* **Obtention de paramètres de configuration valides pour les pulsations** Ces paramètres peuvent être obtenus auprès d’un représentant Adobe après avoir configuré votre compte d’analyse des médias.
+* **Obtention de paramètres de configuration valides pour Heartbeats** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Media Analytics.
 * **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
    * _Une API pour vous abonner aux événements de lecteur_ : Le kit SDK Media vous oblige à appeler une série d’API simples lorsque des événements ont lieu dans votre lecteur.
    * _Une API fournissant des informations sur le lecteur_ : Ces informations comprennent des détails tels que le nom du média et la position du curseur de lecture.
 
 Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing pour les applications mobiles issues d’Adobe Experience Cloud. Au début, le service Mobile offrait une intégration transparente des fonctionnalités d’analyse et de ciblage d’applications issues des solutions Adobe Analytics et Adobe Target.
 
-Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://marketing.adobe.com/resources/help/en_US/mobile/)
+Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://marketing.adobe.com/resources/help/fr_FR/mobile/)
 
 Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesurer les applications Roku écrites en BrightScript, d’exploiter et de collecter les données d’audience par le biais de la gestion de l’audience et de mesurer l’engagement vidéo grâce aux pulsations vidéo.
 
@@ -27,18 +27,18 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesurer
 
 1. Ajoutez la bibliothèque Roku que vous avez [téléchargée](/help/sdk-implement/download-sdks.md#download-2x-sdks) à votre projet.
 
-   1. The `AdobeMobileLibrary-2.*-Roku.zip` download file consists of the following software components:
+   1. Le fichier de téléchargement `AdobeMobileLibrary-2.*-Roku.zip` est constitué des composants logiciels suivants :
 
-      * `adbmobile.brs`: Ce fichier de bibliothèque sera inclus dans le dossier source de votre application Roku.
+      * `adbmobile.brs` : Ce fichier de bibliothèque sera inclus dans le dossier source de votre application Roku.
 
-      * `ADBMobileConfig.json`: Ce fichier de configuration SDK est personnalisé pour votre application.
+      * `ADBMobileConfig.json` : Ce fichier de configuration SDK est personnalisé pour votre application.
    1. Ajoutez le fichier de bibliothèque et le fichier de configuration JSON à la source de votre projet.
 
       Le fichier JSON utilisé pour configurer Adobe Mobile comporte une clé exclusive pour les pulsations multimédia appelée `mediaHeartbeat`. C’est à cet endroit que se trouvent les paramètres de configuration des pulsations multimédia.
 
       >[!TIP]
       >
-      >A sample `ADBMobileConfig` JSON file is provided with the package. Contactez vos représentants Adobe pour obtenir les paramètres.
+      >Un exemple de fichier JSON `ADBMobileConfig` est fourni avec le module. Contactez vos représentants Adobe pour obtenir les paramètres.
 
       Par exemple :
 
@@ -95,14 +95,14 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesurer
 
       >[!IMPORTANT]
       >
-      >If `mediaHeartbeat` is incorrectly configured, the media module (VHL) enters an error state and will stop sending tracking calls.
+      >Si `mediaHeartbeat` n’est pas correctement configuré, le module multimédia (VHL) entre dans un état d’erreur et arrête l’envoi des appels de suivi.
 
 
 1. Configurez l’identifiant visiteur Experience Cloud.
 
    Le service d’identifiant visiteur Experience Cloud fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Le service d’identifiant visiteur est requis par Video Heartbeat et d’autres intégrations de Experience Cloud.
 
-   Verify that your `ADBMobileConfig` config contains your `marketingCloud` organization ID.
+   Vérifiez que votre configuration `ADBMobileConfig` contient votre ID d’organisation `marketingCloud`.
 
    ```
    "marketingCloud": {
@@ -110,25 +110,25 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesurer
    }
    ```
 
-   Experience Cloud organization IDs uniquely identify each client company in the Adobe Marketing Cloud and appear similar to the following value: `016D5C175213CCA80A490D05@AdobeOrg`.
+   Les identifiants d’organisation d’Experience Cloud identifient de manière unique chaque entreprise cliente dans Adobe Experience Cloud et ressemblent à ceci : `016D5C175213CCA80A490D05@AdobeOrg`.
 
    >[!IMPORTANT]
    >
-   >Ensure that you include `@AdobeOrg`.
+   >Veillez à inclure `@AdobeOrg`.
 
-   Une fois la configuration terminée, un identifiant visiteur Experience Cloud est généré et inclus sur tous les accès. Other Visitor IDs, such as `custom` and `automatically-generated`, continue to be sent with each hit.
+   Une fois la configuration terminée, un identifiant visiteur Experience Cloud est généré et inclus sur tous les accès. D’autres identifiants visiteur, tels que `custom` et `automatically-generated`, continuent à être envoyés avec chaque accès.
 
    **Méthodes du service d’identifiant visiteur Experience Cloud**
 
    >[!TIP]
    >
-   >Experience Cloud Visitor ID methods are prefixed with `visitor`.
+   >Les méthodes d’identification des visiteurs Experience Cloud sont précédées du préfixe `visitor`.
 
    |  Méthode   | Description |
    | --- | --- |
    | `visitorMarketingCloudID` | Récupère l’identifiant visiteur Experience Cloud auprès du service d’identifiant visiteur.  <br/><br/>`ADBMobile().visitorMarketingCloudID()` |
-   | `visitorSyncIdentifiers` | Avec l’identifiant visiteur Experience Cloud, vous pouvez définir des identifiants de client supplémentaires pouvant être associés à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour le même visiteur, ainsi qu’un identifiant de type Client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond à `setCustomerIDs`. For example: <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
-   | `setAdvertisingIdentifier` | Utilisé pour définir l’ID de Roku pour la publicité (RIDA) sur le SDK. Par exemple : <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` Obtenez l’ID Roku pour la publicité (RIDA) à l’aide de l’API <br/><br/><br/>getRIDA() [](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) du SDK Roku. |
+   | `visitorSyncIdentifiers` | Avec l’identifiant visiteur Experience Cloud, vous pouvez définir des identifiants de client supplémentaires pouvant être associés à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour le même visiteur, ainsi qu’un identifiant de type Client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond à `setCustomerIDs`. Par exemple : <br/><br/>`identifiers={}` <br/>`identifiers["idType"]="idValue"` <br/>`ADBMobile().visitorSyncIdentifiers(identifiers)` |
+   | `setAdvertisingIdentifier` | Utilisé pour définir l’ID de Roku pour la publicité (RIDA) sur le SDK. Par exemple : <br/><br/> `ADBMobile().setAdvertisingIdentifier(`<br/>  `"<sample_roku_identifier_for_advertising>")` <br/><br/><br/>Obtenez l’ID Roku pour la publicité (RIDA) à l’aide de l’API [getRIDA()](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic) du SDK Roku. |
 
    <!--
     Roku Api Reference: 
