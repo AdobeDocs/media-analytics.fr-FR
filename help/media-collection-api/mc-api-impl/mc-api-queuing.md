@@ -2,17 +2,17 @@
 title: Événements de mise en file d’attente lorsque la réponse des sessions est lente
 description: null
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Événements de mise en file d’attente lorsque la réponse des sessions est lente{#queueing-events-when-sessions-response-is-slow}
+# Événements de mise en file d’attente lorsque la réponse des sessions est lente {#queueing-events-when-sessions-response-is-slow}
 
-L’API Media Collection est une API RESTful, ce qui signifie que vous faites une requête HTTP et attendez la réponse. This is an important point only for when you make a [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) to obtain a Session ID at the beginning of video playback. Ceci est important car l’ID de session est requis pour tous les appels de suivi suivants.
+L’API Media Collection est une API RESTful, ce qui signifie que vous faites une requête HTTP et attendez la réponse. Ceci est uniquement important lorsque vous effectuez une [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour obtenir un ID de session au début de la lecture vidéo. Ceci est important car l’ID de session est requis pour tous les appels de suivi suivants.
 
-It is possible that your player may fire events _before the Sessions response returns_ (with the Session ID parameter) from the backend. If this occurs, your app must queue any tracking events that arrive between the [Sessions request](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) and its response. When the Sessions response arrives, you should first process any queued [events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md), then you can start processing _live_ events with the [Events](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) calls.
+Il se peut que votre lecteur déclenche des événements _avant que la réponse sessions ne soit renvoyée_ (avec le paramètre d’ID de session) par le serveur principal. Dans ce cas, votre application doit mettre en file d’attente tout événement de suivi ayant lieu entre la [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) et sa réponse. Lorsque la réponse sessions arrive, vous devez d’abord traiter les [événements](/help/media-collection-api/mc-api-ref/mc-api-events-req.md) mis en file d’attente, puis commencer à traiter les événements _en direct_ avec les appels [events.](/help/media-collection-api/mc-api-ref/mc-api-events-req.md)
 
 >[!NOTE]
 >
