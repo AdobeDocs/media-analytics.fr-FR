@@ -2,7 +2,7 @@
 title: Définition du type de requête HTTP dans votre lecteur
 description: null
 uuid: b8fa7233-e654-4acf-a9d7-14158cded13e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
