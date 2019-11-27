@@ -1,18 +1,18 @@
 ---
-title: Manuel d’analyse des médias
-description: Page du manuel de niveau supérieur, avec des liens généraux vers des livres de cuisine MA et des liens spécifiques au SDK.
-translation-type: tm+mt
+title: Guide pas à pas Media Analytics
+description: Page du guide pas à pas supérieur, avec des liens généraux vers des guides pas à pas MA et des liens spécifiques au SDK.
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Manuel d’analyse des médias
+# Guide pas à pas Media Analytics
 
-## Rubriques du manuel de cuisine Analytics des médias généraux
+## Rubriques générales du guide pas à pas Media Analytics
 
-[Attribution du flux média](/help/media-analytics-cookbook/media-dimensions.md)
+[Attribution des diffusions multimédia](/help/media-analytics-cookbook/media-dimensions.md)
 
-## Rubriques du guide du SDK multimédia
+## Rubriques du guide pas à pas du SDK Media
 
-[Manuel du SDK multimédia](/help/sdk-implement/cookbook/sdk-cookbook-overview.md)
+[Manuel du SDK Media](/help/sdk-implement/cookbook/sdk-cookbook-overview.md)
