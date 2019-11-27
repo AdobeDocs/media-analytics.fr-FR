@@ -2,13 +2,13 @@
 title: Suivi de la mise en mémoire tampon sur Chromecast
 description: Décrit le suivi des événements de mise en mémoire tampon sur Chromecast.
 uuid: f6fa3a1a-d7de-4293-bd11-ebe9e130badd
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Suivi de la mise en mémoire tampon sur Chromecast{#track-buffering-on-chromecast}
+# Suivi de la mise en mémoire tampon sur Chromecast {#track-buffering-on-chromecast}
 
 >[!IMPORTANT]
 >
@@ -22,9 +22,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `BufferStart` | Constante permettant d’effectuer le suivi de l’événement Début de la mémoire tampon |
 | `BufferComplete` | Constante permettant d’effectuer le suivi de l’événement Fin de la mémoire tampon |
 
-## Mise en oeuvre de la mise en mémoire tampon
+## Mettez en œuvre la mise en mémoire tampon
 
-1. Prêtez attention aux événements de mise en mémoire tampon de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferStart`[ : trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
+1. Prêtez attention aux événements de mise en mémoire tampon de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferStart` : [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```js
    ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
