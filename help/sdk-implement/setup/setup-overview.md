@@ -1,23 +1,23 @@
 ---
 title: Présentation de la configuration
-description: Présentation de la configuration du SDK multimédia pour le suivi des médias dans vos applications mobiles, OTT et de navigateur (JS).
+description: Présentation de la configuration du SDK Media pour le suivi des médias dans vos applications mobiles, OTT et de navigateur (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Présentation de la configuration{#setup-overview}
+# Présentation de la configuration {#setup-overview}
 
 >[!IMPORTANT]
 >
->Les instructions suivantes s’appliquent aux SDK de média 2.x. Si vous mettez en œuvre une version 1.x du SDK Media, consultez la [Documentation du SDK Media 1.x.](/help/sdk-implement/download-sdks.md) Pour les intégrateurs Primetime, voir Documentation _du SDK multimédia_ Primetime ci-dessous.
+>Les instructions suivantes s’appliquent aux SDK Media 2.x. Si vous mettez en œuvre une version 1.x du SDK Media, consultez la [Documentation du SDK Media 1.x.](/help/sdk-implement/download-sdks.md) Pour les intégrateurs Primetime, consultez la _Documentation du SDK Media Primetime_ ci-dessous.
 
 
-## Prise en charge de la version minimale de la plateforme {#minimum-platform-version}
+## Prise en charge de version minimum de plateforme {#minimum-platform-version}
 
-Le tableau suivant décrit les versions minimales de plateformes prises en charge pour chaque SDK, à compter du 19 février 2019.
+Le tableau suivant décrit les versions minimum de plateforme prises en charge pour chaque SDK, à compter du 19 février 2019.
 
 | OS/Navigateur | Version min requise |
 | --- | --- |
@@ -35,9 +35,9 @@ Trois composants principaux du SDK sont impliqués dans le suivi multimédia :
 * Media Heartbeat Delegate : Le délégué contrôle la durée de lecture et l’objet QoS.
 * Media Heartbeat : La bibliothèque principale contient les membres et les méthodes.
 
-Suivez les étapes de mise en oeuvre suivantes :
+Suivez les étapes de mise en œuvre suivantes :
 
-1. Create a `MediaHeartbeatConfig` instance and set your config parameter values.
+1. Créez une instance `MediaHeartbeatConfig` et définissez vos valeurs de paramètre de configuration.
 
    |  Nom de variable  | Description  | Obligatoire |  Valeur par défaut  |
    |---|---|:---:|---|
@@ -49,7 +49,7 @@ Suivez les étapes de mise en oeuvre suivantes :
    | `ssl` | Indique si les appels doivent être effectués par HTTPS | Non | false |
    | `debugLogging` | Indique si la journalisation de débogage est activée | Non | false |
 
-1. Implement the `MediaHeartbeatDelegate`.
+1. Mettez en œuvre le `MediaHeartbeatDelegate`.
 
    |  Nom de méthode  |  Description  | Obligatoire |
    | --- | --- | :---: |
@@ -58,7 +58,7 @@ Suivez les étapes de mise en oeuvre suivantes :
 
    >[!TIP]
    >
-   >L’objet QoS (Quality of Service) est facultatif. Si les données QoS sont disponibles pour votre lecteur et que vous souhaitez en effectuer le suivi, les variables suivantes sont requises :
+   >L’objet Qualité de service (QoS) est facultatif. Si les données QoS sont disponibles pour votre lecteur et que vous souhaitez en effectuer le suivi, les variables suivantes sont requises :
 
    | Nom de variable | Description   | Obligatoire |
    | --- | --- | :---: |
@@ -67,17 +67,17 @@ Suivez les étapes de mise en oeuvre suivantes :
    | `fps` | Images affichées par seconde. | Oui |
    | `droppedFrames` | Nombre de pertes d’images jusqu’ici. | Oui |
 
-1. Create the `MediaHeartbeat` instance.
+1. Créez l’instance `MediaHeartbeat`.
 
-   Use the `MediaHertbeatConfig` and `MediaHertbeatDelegate` to create the `MediaHeartbeat` instance.
+   Utilisez les instances `MediaHertbeatConfig` et `MediaHertbeatDelegate` pour créer l’instance `MediaHeartbeat`.
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the session. Cette instance sera utilisée pour tous les événements de suivi multimédia suivants.
+   >Assurez-vous que votre instance `MediaHeartbeat` est accessible et reste attribuée jusqu’à la fin de la session. Cette instance sera utilisée pour tous les événements de suivi multimédia suivants.
 
    >[!TIP]
    >
-   >`MediaHeartbeat` nécessite une instance de `AppMeasurement` pour envoyer des appels à Adobe Analytics.
+   >`MediaHeartbeat` requiert une instance de `AppMeasurement` pour envoyer des appels à Adobe Analytics.
 
 1. Combinez tous les éléments.
 
@@ -121,35 +121,36 @@ Suivez les étapes de mise en oeuvre suivantes :
 
 ## Validation {#validate}
 
-Les implémentations de suivi des analyses multimédia génèrent deux types d’appels de suivi :
+Les mises en œuvre de suivi Media Analytics génèrent deux types d’appels de suivi :
 
-* Les appels Media et Ad Start sont envoyés directement au serveur Adobe Analytics (AppMeasurement).
-* Les appels de pulsation sont envoyés au serveur de suivi Media Analytics (pulsations), y sont traités et transmis au serveur Adobe Analytics.
+* Les appels de démarrage du média et de la publicité sont envoyés directement au serveur Adobe Analytics (AppMeasurement).
+* Les appels Heartbeat sont envoyés au serveur de suivi Media Analytics (Heartbeats), y sont traités et transmis au serveur Adobe Analytics.
 
-* **Serveur** Adobe Analytics (AppMeasurement) Pour plus d’informations sur les options du serveur de suivi, voir [Définition correcte des variables trackingServer et trackingServerSecure.](https://helpx.adobe.com/analytics/kb/determining-data-center.html)
+* **Serveur Adobe Analytics (AppMeasurement)** Pour plus d’informations sur les options du serveur de suivi, voir [Remplissage correct des variables trackingServer et trackingServerSecure.](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html)
 
    >[!IMPORTANT]
    >
-   >Une résolution CNAME ou un serveur de suivi RDC sur un serveur RDC est requise pour le service d’identification des visiteurs d’Experience Cloud.
+   >Un serveur de suivi RDC ou CNAME se résolvant sur un serveur RDC est requis pour le service d’identifiant visiteur Experience Cloud.
 
-   The analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
+   Le serveur de suivi des analyses doit se terminer par « `.sc.omtrdc.net` » ou être un serveur CNAME.
 
-* ** Serveur Media Analytics (Heartbeats)**Il a toujours le format "`[your_namespace].hb.omtrdc.net`". La valeur de "`[your_namespace]`" indique votre société et est fournie par Adobe.
+* ** Serveur Media Analytics (Heartbeats)**
+Ceci a toujours le format « `[your_namespace].hb.omtrdc.net` ». La valeur de « `[your_namespace]` » indique votre société et est fournie par Adobe.
 
-Le suivi multimédia fonctionne de la même manière sur toutes les plates-formes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plateformes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :
+Le suivi multimédia fonctionne de la même manière sur toutes les plates-formes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plates-formes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :
 
 ## Documentation SDK 1.x {#sdk-1x-documentation}
 
-| SDK d’Analytics vidéo 1.x |  Guides du développeur (PDF uniquement) |
+| Kits SDK Video Analytics 1.x  |  Guides du développeur (PDF uniquement) |
 | --- | --- |
 | Android | [Configuration pour Android ](vhl-dev-guide-v15_android.pdf) |
 | Apple TV | [Configuration pour Apple TV ](vhl-dev-guide-v1x_appletv.pdf) |
 | Chromecast | [Configuration pour Chromecast ](chromecast_1.x_sdk.pdf) |
 | iOS | [Configuration pour iOS ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [Configuration pour JavaScript ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS:   [Configure Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android :   [Configuration de Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS :   [Configuration de Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS :   [Configuration de Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [Configuration pour TVML ](vhl_tvml.pdf) |
 
 ## Documentation du SDK Media Primetime {#primetime-docs}
 
-* [Guides de l’utilisateur Primetime](https://helpx.adobe.com/primetime/user-guide.html)
+* [Guides de l’utilisateur Primetime](https://helpx.adobe.com/fr/support/primetime.html)
