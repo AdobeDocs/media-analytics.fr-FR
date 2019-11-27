@@ -2,19 +2,19 @@
 title: Aperçu
 description: Présentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Aperçu{#overview}
+# Aperçu {#overview}
 
 >[!IMPORTANT]
 >
 >Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Vous pouvez utiliser l’API du lecteur multimédia pour identifier les variables liées à la qualité de service et au suivi des erreurs. Voici les éléments clés du suivi de la qualité de l’expérience :
+La qualité du suivi de l’expérience inclut la qualité du service (QoS) et le suivi des erreurs, ces deux éléments étant facultatifs et n’étant **pas** obligatoires pour les mises en œuvre de suivi multimédia principal. Vous pouvez utiliser l’API du lecteur multimédia pour identifier les variables liées à QoS et au suivi des erreurs. Voici les éléments clés du suivi de la qualité de l’expérience :
 
 ## Événements du lecteur {#player-events}
 
@@ -22,19 +22,19 @@ Quality of experience tracking includes quality of service (QoS) and error track
 
 Créez ou mettez à jour l’instance d’objet QoS pour la lecture. [Référence de l’API QoS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html#.createQoSObject)
 
-### Sur tous les événements de changement de débit
+### À chaque événement de changement de débit binaire
 
-L’appel   `trackEvent(Media.Heartbeat.Event.BitrateChange);`
+L’appel`trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
-## Mise en oeuvre de QOS
+## Mise en œuvre de QoS
 
-1. Identify when any of QOS metrics change during media playback, create the `MediaObject` using the QoS information, and update the new QoS information.
+1. Identifiez le moment où une mesure QoS change lors de la lecture multimédia, créez `MediaObject` à l’aide des informations QoS et mettez à jour les nouvelles informations QoS.
 
    Variables QoSObject :
 
    >[!TIP]
    >
-   >Ces variables ne sont requises que si vous prévoyez d’effectuer le suivi de la qualité de service.
+   >Ces variables ne sont nécessaires que si vous envisagez de suivre QoS.
 
    | Variable | Description | Obligatoire |
    | --- | --- | :---: |
@@ -48,9 +48,9 @@ L’appel   `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
    >[!IMPORTANT]
    >
-   >Mettez à jour l’objet QoS et appelez l’événement de changement de débit à chaque changement de débit. Ceci produit les données QoS les plus précises.
+   >Mettez à jour l’objet QoS et appelez l’événement de changement de débit binaire à chaque changement de débit binaire. Ceci produit les données QoS les plus précises.
 
-L’exemple de code suivant utilise le SDK JavaScript 2.x pour un lecteur de médias HTML5. Utilisez ce code avec le code de lecture du média principal.
+L’exemple de code suivant utilise le kit SDK JavaScript 2.x pour un lecteur multimédia HTML5. Utilisez ce code avec le code de lecture multimédia principal.
 
 ```js
 var mediaDelegate = new MediaHeartbeatDelegate(); 
