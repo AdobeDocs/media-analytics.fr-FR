@@ -2,13 +2,13 @@
 title: Requête sessions
 description: null
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Requête sessions{#sessions-request}
+# Requête sessions {#sessions-request}
 
 ```
 POST 
@@ -21,7 +21,7 @@ Aucun
 
 ## Corps de requête
 
-L’organisme de requête doit être JSON et avoir la même structure que cet organisme de requête d’exemple :
+Le corps de requête doit être JSON et doit avoir la même structure que le corps de cet exemple de corps de requête :
 
 ```
 { 
@@ -62,7 +62,7 @@ L’organisme de requête doit être JSON et avoir la même structure que cet or
    * `ts` : Horodatage ; doit être spécifié en millisecondes.
 * `eventType` (Obligatoire)
 
-   **Valeur valide:**`sessionStart`
+   **Valeur valide :**`sessionStart`
 * `params` (Obligatoire)
 * `customMetadata` (Facultatif)
 * `qoeData` (Facultatif)
@@ -84,7 +84,7 @@ Age: 0
 Via: 1.1 wsg.sanjose08
 ```
 
-`Location:` header - La `/api/v1/` partie fournit la version de l'API. La partie qui suit `[…]sessions/` correspond à l’ID de session.
+`Location:` header - La partie `/api/v1/` fournit la version de l’API. La partie qui suit `[…]sessions/` correspond à l’ID de session.
 
 ## Codes de réponse
 
