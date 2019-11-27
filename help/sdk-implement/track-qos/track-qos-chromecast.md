@@ -2,13 +2,13 @@
 title: Suivi de la qualité de l’expérience sur Chromecast
 description: Cette rubrique décrit l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur Chromecast.
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Suivi de la qualité de l’expérience sur Chromecast{#track-quality-of-experience-on-chromecast}
+# Suivi de la qualité de l’expérience sur Chromecast {#track-quality-of-experience-on-chromecast}
 
 >[!IMPORTANT]
 >
@@ -16,28 +16,28 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Aperçu {#overview}
 
-Quality of experience tracking includes quality of service (QoS) and error tracking, both are optional elements and are **not** required for core media tracking implementations. Vous pouvez utiliser l’API du lecteur multimédia pour identifier les variables liées à la qualité de service et au suivi des erreurs.
+La qualité du suivi de l’expérience inclut la qualité du service (QoS) et le suivi des erreurs, ces deux éléments étant facultatifs et n’étant **pas** obligatoires pour les mises en œuvre de suivi multimédia principal. Vous pouvez utiliser l’API du lecteur multimédia pour identifier les variables liées à QoS et au suivi des erreurs.
 
 ## Événements du lecteur {#player-events}
 
-### Sur tous les événements de changement de débit
+### À chaque événement de changement de débit binaire
 
 * Créez/mettez à jour l’instance d’objet QoS pour la lecture, `qosObject`
-* L’appel   `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);`
+* L’appel `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);`
 
-### Erreurs du lecteur
+### Lors des erreurs du lecteur
 
-L’appel   `trackError(“media error id”);`
+L’appel `trackError(“media error id”);`
 
 ## Mise en œuvre {#implement}
 
-1. Identify when the bitrate changes during media playback and create the `MediaObject` instance using the QoS information.
+1. Identifiez le moment où le débit binaire change pendant la lecture multimédia et créez l’instance `MediaObject` à l’aide des informations QoS.
 
    **Variables QoSObject :**
 
    >[!TIP]
    >
-   >Ces variables ne sont requises que si vous prévoyez d’effectuer le suivi de la qualité de service.
+   >Ces variables ne sont nécessaires que si vous envisagez de suivre QoS.
 
    | Variable | Description | Obligatoire |
    | --- | --- | :---: |
@@ -60,12 +60,12 @@ L’appel   `trackError(“media error id”);`
 
    >[!IMPORTANT]
    >
-   >Mettez à jour l’objet QoS et appelez l’événement de changement de débit à chaque changement de débit. Ceci produit les données QoS les plus précises.
+   >Mettez à jour l’objet QoS et appelez l’événement de changement de débit binaire à chaque changement de débit binaire. Ceci produit les données QoS les plus précises.
 
 1. Assurez-vous que la méthode `getQoSObject()` renvoie les informations QoS les plus récentes.
-1. When the media player encounters an error, and the error event is available to the player API, use `trackError()` to capture the error information. (Voir [Aperçu](/help/sdk-implement/track-errors/track-errors-overview.md).)
+1. Lorsque le lecteur multimédia rencontre une erreur et que l’événement d’erreur est disponible pour l’API du lecteur, utilisez l’événement `trackError()` pour capturer les informations d’erreur. (Voir [Aperçu](/help/sdk-implement/track-errors/track-errors-overview.md).)
 
    >[!TIP]
    >
-   >Le suivi des erreurs du lecteur multimédia n’arrête pas la session de suivi multimédia. If the media player error prevents the playback from continuing, make sure that the media tracking session is closed by calling `trackSessionEnd()` after calling `trackError()`.
+   >Le suivi des erreurs du lecteur multimédia n’arrête pas la session de suivi multimédia. Si l’erreur du lecteur multimédia empêche la lecture de se poursuivre, veillez à ce que la session de suivi multimédia soit fermée en appelant `trackSessionEnd()` après avoir appelé `trackError()`.
 
