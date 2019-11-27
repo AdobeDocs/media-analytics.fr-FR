@@ -1,20 +1,20 @@
 ---
 title: Aperçu
-description: Comment mettre en oeuvre le suivi des chapitres et des segments avec le SDK multimédia.
+description: Comment mettre en œuvre le suivi des chapitres et des segments avec le SDK Media.
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Aperçu{#overview}
+# Aperçu {#overview}
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour l’implémentation à l’aide des SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
-Le suivi des chapitres et des segments est disponible pour les chapitres ou segments de médias personnalisés. Le suivi des chapitres sert généralement à définir des segments personnalisés en fonction du contenu multimédia (par exemple, des manches de base-ball) ou à définir des segments de contenu entre des pauses publicitaires. Chapter tracking is **not** required for core media tracking implementations.
+Le suivi des chapitres et des segments est disponible pour les chapitres ou les segments médias personnalisés. Certaines utilisations courantes du suivi des chapitres consistent à définir des segments personnalisés basés sur le contenu média, tels que les manches au baseball, ou à définir des segments de contenu entre les coupures publicitaires. Le suivi des chapitres n’est **pas** requis pour les mises en œuvre de suivi multimédia principal.
 
 Le suivi des chapitres comprend les démarrages de chapitre, les fins de chapitre, et les chapitres ignorés. Vous pouvez utiliser l’API du lecteur multimédia avec une logique de segmentation personnalisée pour identifier les événements de chapitre et renseigner les variables de chapitre obligatoires et facultatives.
 
@@ -23,18 +23,18 @@ Le suivi des chapitres comprend les démarrages de chapitre, les fins de chapitr
 ### Au début du chapitre
 
 * Créez l’instance d’objet de chapitre du chapitre, `chapterObject`
-* Populate the chapter metadata, `chapterCustomMetadata`
-* L’appel   `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);`
+* Renseignez les métadonnées du chapitre, `chapterCustomMetadata`
+* L’appel `trackEvent(MediaHeartbeat.Event.ChapterStart, chapterObject, chapterCustomMetadata);`
 
-### Au chapitre terminé
+### À la fin du chapitre
 
-* L’appel   `trackEvent(MediaHeartbeat.Event.ChapterComplete);`
+* L’appel `trackEvent(MediaHeartbeat.Event.ChapterComplete);`
 
-### Lors du saut de chapitre
+### Lorsque le chapitre est ignoré
 
-* L’appel   `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
+* L’appel `trackEvent(MediaHeartbeat.Event.ChapterSkip);`
 
-## Mise en oeuvre du suivi des chapitres {#implement-chapter-tracking}
+## Mise en œuvre du suivi des chapitres {#implement-chapter-tracking}
 
 1. Identifiez le moment où a lieu l’événement de début de chapitre et créez l’instance `ChapterObject` à l’aide des informations de chapitre.
 
@@ -42,7 +42,7 @@ Le suivi des chapitres comprend les démarrages de chapitre, les fins de chapitr
 
    >[!NOTE]
    >
-   >Ces variables ne sont requises que si vous prévoyez de suivre les chapitres.
+   >Ces variables ne sont nécessaires que si vous envisagez d’effectuer le suivi des chapitres.
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
@@ -57,7 +57,7 @@ Le suivi des chapitres comprend les démarrages de chapitre, les fins de chapitr
 1. Si la lecture du chapitre ne s’est pas terminée car l’utilisateur a choisi d’ignorer le chapitre (par exemple, si l’utilisateur effectue une recherche en dehors de la limite du chapitre), appelez l’événement `ChapterSkip` dans l’instance MediaHeartbeat.
 1. S’il existe d’autres chapitres, répétez les étapes 1 à 5.
 
-L’exemple de code suivant utilise le SDK JavaScript 2.x pour un lecteur de médias HTML5. Utilisez ce code avec le code de lecture du média principal.
+L’exemple de code suivant utilise le kit SDK JavaScript 2.x pour un lecteur multimédia HTML5. Utilisez ce code avec le code de lecture multimédia principal.
 
 ```js
 /* Call on chapter start */ 
