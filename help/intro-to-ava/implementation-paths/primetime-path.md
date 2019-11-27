@@ -2,13 +2,13 @@
 title: Primetime
 description: null
 uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Primetime{#primetime}
+# Primetime {#primetime}
 
 Media Analytics (Heartbeats) est la solution de suivi multimédia normalisée d’Adobe. Elle a remplacé le modèle Milestone plus ancien d’Adobe.
 
@@ -24,8 +24,8 @@ Primetime élimine la complexité liée à l’atteinte, la monétisation et l�
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK est déjà intégré au kit SDK Media, ce qui rend la mise en œuvre beaucoup plus facile et rapide sur chaque plate-forme prise en charge. <!--Primetime also supports the partnership with Nielsen.--> Pour tirer parti de Primetime, suivez les mêmes directives et conditions préalables que celles du côté [](/help/intro-to-ava/implementation-paths/client-side-path.md) client, ainsi que les documents suivants pour vos plateformes : Guide de l’utilisateur [Primetime.](https://helpx.adobe.com/primetime/user-guide.html)
+TVSDK est déjà intégré au kit SDK Media, ce qui rend la mise en œuvre beaucoup plus facile et rapide sur chaque plate-forme prise en charge. <!--Primetime also supports the partnership with Nielsen.--> Pour tirer parti de Primetime, suivez les mêmes directives et conditions préalables que celles qui figurent dans [Côté client](/help/intro-to-ava/implementation-paths/client-side-path.md), ainsi que les documents suivants pour vos plateformes : [Guide de l’utilisateur Primetime.](https://helpx.adobe.com/fr/support/primetime.html)
 
 >[!NOTE]
 >
->Pour ce chemin d’implémentation, les clients doivent contacter leur représentant commercial/gestionnaire de compte pour signer une nouvelle commande client, car Media Analytics dispose d’un SKU unique et passe d’un modèle de tarification basé sur les appels serveur à un modèle basé sur les flux de médias. Vous devez également contacter votre représentant commercial/responsable de compte pour discuter de l’achat de TVSDK.
+>Pour ce chemin de mise en œuvre, les clients doivent contacter leur représentant commercial/responsable de compte pour signer une nouvelle commande de ventes, car Media Analytics comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions multimédia: Vous devez également contacter votre représentant commercial/responsable de compte pour discuter de l’achat de TVSDK.
