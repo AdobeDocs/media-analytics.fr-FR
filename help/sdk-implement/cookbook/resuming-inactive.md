@@ -2,28 +2,28 @@
 title: Reprise des sessions inactives
 description: Comment gérer la reprise d’une session inactive.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Reprise des sessions inactives{#resuming-inactive-sessions}
+# Reprise des sessions inactives {#resuming-inactive-sessions}
 
 ## Longues pauses
 
-Le SDK multimédia effectue automatiquement le suivi de la durée de lecture du média dans l’un des états inactifs suivants :
+Le SDK Media surveille automatiquement la durée de la lecture multimédia dans l’un des états inactifs suivants :
 
 * En pause
 * Recherche
 * Bloqué
 * Mise en mémoire tampon
 
-Si une session de suivi des médias reste inactive pendant plus de 30 minutes, la session est automatiquement fermée. Si l’utilisateur reprend une session de suivi vidéo précédemment inactive (`trackPlay`), Media Heartbeat crée automatiquement une nouvelle session vidéo à l’aide des informations et des métadonnées précédentes et envoie une reprise d’événement de pulsation. Pour plus d’informations, voir Paramètres [audio et vidéo.](/help/metrics-and-metadata/audio-video-parameters.md)
+Si une session de suivi multimédia inactive pendant plus de 30 minutes, celle-ci se fermera automatiquement. Si l’utilisateur reprend une session de suivi vidéo précédemment inactive (`trackPlay`), Media Heartbeat crée automatiquement une nouvelle session vidéo à l’aide des informations et des métadonnées précédentes et envoie une reprise d’événement de pulsation. Pour plus d’informations, voir [Paramètres audio et vidéo.](/help/metrics-and-metadata/audio-video-parameters.md)
 
 ## Reprise manuelle d’une session précédemment fermée
 
-Le SDK multimédia ne reprend automatiquement les sessions que si l’application n’a pas été fermée. Si l’application stocke des données utilisateur et peut reprendre un média précédemment fermé, il est possible de déclencher manuellement un événement de reprise. Lorsque vous démarrez la session de suivi vidéo, configurez la propriété facultative Video Resumed.
+Le SDK Media procédera uniquement à la reprise automatique des sessions si l’application n’a pas été fermée. Si l’application stocke des données utilisateur et permet de procéder à la reprise d’un média précédemment fermé, il est possible de déclencher manuellement un événement de reprise. Lorsque vous démarrez la session de suivi vidéo, configurez la propriété facultative Video Resumed.
 
 ### Android
 
