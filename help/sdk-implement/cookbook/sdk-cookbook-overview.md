@@ -1,17 +1,17 @@
 ---
-title: Présentation du guide SDK
-description: 'Rubriques spécifiques au kit SDK '
-translation-type: tm+mt
+title: Présentation du guide pas à pas SDK
+description: 'Rubriques spécifiques au guide pas à pas SDK '
+translation-type: ht
 source-git-commit: b807835875594a2acfc79ec9cbffce4aadbaac84
 
 ---
 
 
-# Présentation du guide SDK
+# Présentation du guide pas à pas SDK
 
-Vous trouverez ici les rubriques générales du manuel de cuisine Media Analytics qui s’appliquent à la fois au SDK multimédia et à l’API Media Collection : Manuel d’analyse des [médias.](/help/media-analytics-cookbook/media-analytics-cookbook.md)
+Vous trouverez ici les rubriques générales du guide pas à pas Media Analytics qui s’appliquent à la fois au SDK Media et à l’API Media Collection : [Guide pas à pas Media Analytics.](/help/media-analytics-cookbook/media-analytics-cookbook.md)
 
-Les rubriques du livre de cuisine répertoriées ci-dessous sont spécifiques à la version Media SDK de Media Analytics :
+Les rubriques du livre de cuisine répertoriées ci-dessous sont spécifiques à la version Media SDK de Media Analytics :
 
 * [Gestion des interruptions de l’application lors de la lecture](/help/sdk-implement/cookbook/app-interrupts.md)
 * [Résolution des appels main:play apparaissant entre les publicités](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
