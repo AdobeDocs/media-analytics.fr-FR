@@ -2,19 +2,19 @@
 title: Plusieurs dispositifs de suivi VOD en parallèle
 description: Exemple de suivi VOD à l’aide de plusieurs suivis en parallèle.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Plusieurs dispositifs de suivi VOD en parallèle{#vod-multiple-trackers-in-parallel}
+# Plusieurs dispositifs de suivi VOD en parallèle {#vod-multiple-trackers-in-parallel}
 
 ## Scénario {#scenario}
 
-In this scenario, there are two sessions running in parallel for two separate medias and using two separate instances of `MediaHeartbeat`.
+Dans ce scénario, deux sessions sont exécutées en parallèle pour deux médias séparés à l’aide de deux instances distinctes de `MediaHeartbeat`.
 
-This scenario is identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario, except there are two sessions that are running in parallel for two separate medias. Chacune de ces sessions utilise une instance séparée de `MediaHeartbeat`.
+Ce scénario est identique au scénario de [lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md), à l’exception des deux sessions exécutées en parallèle pour deux médias séparés. Chacune de ces sessions utilise une instance séparée de `MediaHeartbeat`.
 
 Sauf indication, les appels réseau sont identiques à ceux du scénario de [lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
