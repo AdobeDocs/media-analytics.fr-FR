@@ -1,55 +1,55 @@
 ---
-title: Test 1 Lecture standard
+title: Test 1 - Lecture standard
 description: Cette rubrique décrit le test de lecture standard utilisé dans la validation.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Test 1 : Lecture standard{#test-standard-playback}
+# Test 1 : Lecture standard {#test-standard-playback}
 
 Ce cas de test valide la lecture et le séquencement généraux. Il s’agit d’un élément obligatoire de votre demande de certification.
 
 ## Formulaire de demande de certification
 
-**Téléchargez le formulaire de demande de certification ici : ==&gt;** Formulaire de demande de [certification.](cert_req_form.docx)
+**Pour télécharger le formulaire de demande de certification, cliquez sur ==&gt;** [Formulaire de demande de certification.](cert_req_form.docx)
 
 ## Présentation du test de certification 1
 
-Les mises en oeuvre d’Analytics multimédia incluent deux types d’appels de suivi :
-* Appels effectués directement sur votre serveur Adobe Analytics (AppMeasurement) : ces appels surviennent sur les événements "Media Start" et "Ad Start".
-* Appels effectués sur le serveur Media Analytics (pulsations) - Ces appels comprennent les appels in-band et out-of-band :
-   * In-band : le kit SDK envoie des appels de lecture chronométrés ou des "pings" à des intervalles de 10 secondes pendant la lecture du contenu et à des intervalles d’une seconde pendant les publicités.
-   * Hors bande : ces appels peuvent se produire à tout moment, notamment en cas de pause, de mise en mémoire tampon, d’erreurs, de contenu terminé, de publicité terminée, etc.
+Les mises en œuvre de Media Analytics incluent deux types d’appels de suivi :
+* Appels effectués directement sur votre serveur Adobe Analytics (AppMeasurement) - Ces appels surviennent sur les événements « Démarrage du média » et « Démarrage de la publicité ».
+* Appels effectués sur le serveur Media Analytics (pulsations) - Ceux-ci comprennent les appels en bande et hors-bande :
+   * En bande - Le SDK envoie des appels de lecture chronométrés ou « pings » à des intervalles de 10 secondes pendant la lecture du contenu et à des intervalles d’une seconde pendant les publicités.
+   * Hors-bande - Ces appels peuvent se produire à tout moment, notamment en cas de pauses, de mises en mémoire tampon, d’erreurs, de contenu terminé, de publicité terminée, etc.
 
 >[!NOTE]
->Le suivi des médias se comporte de la même manière sur toutes les plates-formes.
+>Le suivi multimédia se comporte de la même manière sur toutes les plates-formes.
 
-## Procédure d'essai
+## Procédure de test
 
-Exécutez et enregistrez les actions suivantes (dans l’ordre) :
+Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 
 1. **Charger la page ou l’application**
 
    **Serveurs de suivi** (pour tous les sites Web et les applications mobiles) :
 
-   * **Serveur Adobe Analytics (AppMeasurement) :** un serveur de suivi de CRD ou un CNAME qui se résout en serveur de suivi de CRD est requis pour le service d’identification des visiteurs d’Experience Cloud. The Adobe Analytics tracking server should end in "`.sc.omtrdc.net`" or be a CNAME.
+   * **Serveur Adobe Analytics (AppMeasurement) -** Un serveur de suivi RDC ou CNAME se résolvant sur un serveur de suivi RDC est requis pour le service d’identifiant visiteur Experience Cloud. Le serveur de suivi Adobe Analytics doit se terminer par « `.sc.omtrdc.net` » ou être un serveur CNAME.
 
-   * **Serveur Media Analytics (Heartbeats) -** Ce serveur a toujours le format "`[namespace].hb.omtrdc.net`", où `[namespace]` spécifie le nom de votre société. Ce nom est fourni par Adobe.
-   Vous devez valider certaines variables clés universelles pour tous les appels de suivi :
+   * **Serveur Media Analytics (Heartbeats) -** Ce serveur a toujours le format « `[namespace].hb.omtrdc.net` », où `[namespace]` spécifie le nom de votre société. Ce nom est fourni par Adobe.
+   Vous devez valider certaines variables clés universelles pour tous les appels de suivi :
 
-   **`mid`Identifiant visiteur Adobe (**) : La `mid` variable permet de capturer la valeur définie dans le cookie AMCV. The `mid` variable is the primary identification value for both websites and mobile apps, and also indicates that the Experience Cloud Visitor ID service is set up properly. Elle se trouve dans les appels Adobe Analytics (AppMeasurement) et Media Analytics (pulsations).
+   **Identifiant visiteur Adobe (`mid`) :** La variable `mid` est utilisée pour capturer la valeur définie dans le cookie AMCV. La variable `mid` est la principale valeur d’identification pour les sites Web et les applications mobiles, et elle indique également que le service d’identification des visiteurs Experience Cloud est configuré correctement. Elle se trouve dans les appels Adobe Analytics (AppMeasurement) et Media Analytics (pulsations).
 
-   * **Appel Adobe Analytics Start**
+   * **Appel de démarrage d’Adobe Analytics**
 
       | Paramètre | Valeur (exemple) |
       |---|---|
       | `pev2` | ms_s |
       | `mid` | 30250035503789876473484580554595324209 |
 
-   * **Appel Page du site Web**
+   * **Appel de page de site Web**
 
       | Paramètre | Valeur (exemple) |
       |---|---|
@@ -62,7 +62,7 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
       | `pev2` | ADBINTERNAL:Lifecycle |
       | `mid` | 30250035503789876473484580554595324209 |
 
-   * **Appel Media Analytics Start**
+   * **Appel de démarrage de Media Analytics**
 
       | Paramètre | Valeur (exemple) |
       |---|---|
@@ -70,9 +70,9 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 
       >[!NOTE]
       >
-      >Sur les appels Media Analytics Start (`s:event:type=start`), les `mid` valeurs peuvent ne pas être présentes. Ceci est normal. Il se peut qu’ils n’apparaissent pas avant les appels Media Analytics Play ( `s:event:type=play`).
+      >Sur les appels de démarrage Media Analytics (`s:event:type=start`), les valeurs `mid` peuvent ne pas être présentes. Ceci est normal. Il se peut qu’elles n’apparaissent pas avant les appels de lecture de Media Analytics (`s:event:type=play`).
 
-   * **Appel Media Analytics Play**
+   * **Appel de lecture de Media Analytics**
 
       | Paramètre | Valeur (exemple) |
       |---|---|
@@ -82,67 +82,67 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 
 1. **Démarrage du lecteur multimédia**
 
-   Lorsque le lecteur multimédia démarre, le SDK Media envoie les appels de clés aux deux serveurs dans l’ordre suivant :
+   Lorsque le lecteur multimédia démarre, le SDK Media envoie les appels clés aux deux serveurs dans l’ordre suivant :
 
    1. Serveur Adobe Analytics - Appel de démarrage
    1. Serveur Media Analytics - Appel de démarrage
-   1. Serveur Media Analytics - "Appel Adobe Analytics Start demandé"
-   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
+   1. Serveur Media Analytics - « Appel de démarrage d’Adobe Analytics demandé »
+   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d’appel et les métadonnées, voir [Détails des appels de test.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
-   Le troisième appel ci-dessus indique au serveur Media Analytics que le SDK Media a demandé que l’appel Adobe Analytics Start (`pev2=ms_s`) soit envoyé au serveur Adobe Analytics.
+   Le troisième appel ci-dessus indique au serveur Media Analytics que le SDK Media a demandé que l’appel de démarrage d’Adobe Analytics (`pev2=ms_s`) soit envoyé au serveur Adobe Analytics.
 
 1. **Afficher la coupure publicitaire si possible**
 
    * **Démarrage de publicité**
-   Lorsque la publicité démarre, les appels clés suivants sont envoyés dans l’ordre suivant :
+   Au démarrage de la publicité, les appels clés ci-dessous sont envoyés dans l’ordre suivant :
 
-   1. Serveur Adobe Analytics - Appel Ad Start
-   1. Serveur Media Analytics - Appel Ad Start
-   1. Serveur Media Analytics - "Appel Adobe Analytics Ad Start demandé"
+   1. Serveur Adobe Analytics - Appel de démarrage de la publicité
+   1. Serveur Media Analytics - Appel de démarrage de la publicité
+   1. Serveur Media Analytics - « Appel de démarrage de la publicité d’Adobe Analytics demandé »
    Les deux premiers appels contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)
 
-   Le troisième appel indique au serveur Media Analytics que le SDK multimédia a demandé que l’appel Adobe Analytics Ad Start (`pev2=msa_s`) soit envoyé au serveur Adobe Analytics.
+   Le troisième appel indique au serveur Media Analytics que le SDK Media a demandé que l’appel de démarrage de la publicité d’Adobe Analytics (`pev2=msa_s`) soit envoyé au serveur Adobe Analytics.
 
    * **Lecture de la publicité**
 
-      Pendant la lecture de la publicité, le SDK Media Analytics envoie des événements play de type "publicité" au serveur Media Analytics toutes les secondes.
+      Pendant la lecture de la publicité, le SDK Media Analytics envoie des événements de lecture de type « publicité » au serveur Media Analytics toutes les secondes.
 
    * **Fin de la publicité**
 
-      Au point 100 % d’une publicité, un appel de fin d’analyse des médias doit être envoyé.
+      Au point 100 % sur une publicité, un appel de fin de Media Analytics doit être envoyé.
 
 
 
 1. **Suspendre la lecture de la publicité pendant 30 secondes si possible.**  **Pause de la publicité**
 
-   Pendant la Pause de la publicité, les appels de pulsation ou de ping d’Analytics des médias sont envoyés par le SDK au serveur Media Analytics toutes les secondes.
+   Pendant la pause de la publicité, les appels de pulsation ou « pings » de Media Analytics sont envoyés par le SDK au serveur Media Analytics toutes les secondes.
 
    >[!NOTE]
    >
-   >La valeur du curseur de lecture doit rester constante pendant la mise en pause.
+   >La valeur du curseur de lecture doit rester constante pendant la pause.
 
    Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **Lire le contenu principal pendant 10 minutes sans interruption.**  **Lecture du contenu**
+1. **Lire le contenu principal pendant 10 minutes sans interruption.**  **Lecture du contenu**
 
-   Lors de la lecture du contenu principal, le SDK multimédia envoie des pulsations (appels de lecture) au serveur Media Analytics toutes les 10 secondes.
+   Lors de la lecture du contenu principal, le SDK Media envoie des pulsations (appels de lecture) au serveur Media Analytics toutes les 10 secondes.
 
-   Remarques:
+   Remarques :
 
-   * La position du curseur de lecture doit être incrémentée de 10 avec chaque appel Play.
+   * La position du curseur de lecteur doit augmenter de 10 à chaque appel de lecture.
    * La valeur `l:event:duration` représente le nombre de millisecondes qui se sont écoulées depuis le dernier appel de suivi, et doit être plus ou moins constante pour chaque appel de 10 secondes.
 
       Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/sdk-implement/validation/test-call-details.md#play-main-content)
 
-1. **Suspendre la lecture pendant au moins 30 secondes.** Lors de la mise en pause du lecteur multimédia, les appels d’événement pause sont envoyés par le SDK au serveur Media Analytics toutes les 10 secondes. Après la pause, les événements de lecture reprennent normalement.
+1. **Suspendre la lecture pendant au moins 30 secondes.** Lors de la mise en pause du lecteur multimédia, les appels d’événement de pause sont envoyés par le SDK au serveur Media Analytics toutes les 10 secondes. Après la pause, les événements de lecture reprennent normalement.
 
    Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/sdk-implement/validation/test-call-details.md#pause-main-content)
 
-1. **Recherchez/nettoyez le média.** Lors du défilement du curseur de lecture multimédia, aucun appel de suivi spécial n’est envoyé, cependant, lorsque la lecture du média reprend après le défilement, la valeur du curseur de lecture doit refléter la nouvelle position dans le contenu principal.
+1. **Rechercher/faire défiler le média.** Lors du défilement du curseur de lecture multimédia, aucun appel de suivi spécial n’est envoyé. Toutefois, lorsque la lecture multimédia reprend après le défilement, la valeur du curseur de lecture doit refléter la nouvelle position dans le contenu principal.
 
-1. **Lecture du média (VOD uniquement).** Lorsque le média est relu, un nouvel ensemble d’appels Media Start doit être envoyé (comme s’il s’agissait d’un nouveau départ).
+1. **Lecture du média (VOD uniquement).** Lorsque le média est relu, un nouvel ensemble d’appels de démarrage du contenu multimédia doit être envoyé (comme s’il s’agissait d’un nouveau départ).
 
-1. **Afficher le média suivant dans la liste de lecture.** Au début du média suivant dans une liste de lecture, un nouvel ensemble d’appels Media Start doit être envoyé.
+1. **Afficher le média suivant dans la liste de lecture** Au démarrage du média suivant dans une liste de lecture, un nouvel ensemble d’appels de démarrage du contenu multimédia doit être envoyé.
 
-1. **Changer de média ou de flux.** Lorsque vous changez de flux en direct, un appel complete Media Analytics pour le premier flux ne doit pas être envoyé. Les appels Media Start et Play doivent commencer par le nouveau nom du programme et du flux, ainsi que par les valeurs de curseur de lecture et de durée correctes pour le nouveau programme.
+1. **Changement de média ou de flux.** Lors du changement de diffusion en direct, un appel de fin Media Analytics pour la première diffusion ne doit pas être envoyé. Les appels de démarrage et de lecture du contenu multimédia doivent commencer par le nouveau nom d’affichage et de diffusion et avec les valeurs du curseur de lecture et de durée correctes pour le nouvel affichage.
 
