@@ -1,18 +1,18 @@
 ---
 title: Présentation du suivi
-description: 'Cette rubrique décrit le suivi de la lecture principale, y compris le suivi de la charge des médias, le démarrage des médias, la mise en pause des médias et la fin des médias. '
+description: 'Cette rubrique décrit le suivi de la lecture principale, dont le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Présentation du suivi{#tracking-overview}
+# Présentation du suivi {#tracking-overview}
 
 >[!IMPORTANT]
 >
->Cette documentation couvre le suivi dans la version 2.x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Cette documentation aborde le suivi dans la version 2.x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Événements du lecteur
 
@@ -22,50 +22,50 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 * Créez l’objet multimédia.
 * Renseignez les métadonnées.
-* Appel `trackSessionStart`;Par exemple : `trackSessionStart(mediaObject, contextData)`
+* Appelez `trackSessionStart` ; Par exemple : `trackSessionStart(mediaObject, contextData)`
 
 ### Au démarrage du média
 
-* L’appel   `trackPlay`
+* Appelez `trackPlay`
 
-### En pause/reprise
+### À la mise en pause/reprise
 
-* L’appel   `trackPause`
-* Call `trackPlay`   _when playback resumes_
+* Appelez `trackPause`
+* Appelez `trackPlay`   _lorsque la lecture reprend_
 
-### Sur le média terminé
+### À la fin du média
 
-* L’appel   `trackComplete`
+* Appelez `trackComplete`
 
-### Abandon du média
+### À l’abandon du média
 
-* L’appel   `trackSessionEnd`
+* Appelez `trackSessionEnd`
 
-### Au démarrage du défilement
+### Au début du défilement
 
-* L’appel   `trackEvent(SeekStart)`
+* Appelez `trackEvent(SeekStart)`
 
-### A l’issue du défilement
+### À la fin du défilement
 
-* L’appel   `trackEvent(SeekComplete)`
+* Appelez `trackEvent(SeekComplete)`
 
-### Lorsque la mise en mémoire tampon commence
+### Au début de la mise en mémoire tampon
 
-* L’appel   `trackEvent(BufferStart);`
+* Appelez `trackEvent(BufferStart);`
 
 ### À la fin de la mise en mémoire tampon
 
-* L’appel   `trackEvent(BufferComplete);`
+* Appelez `trackEvent(BufferComplete);`
 
 >[!TIP]
 >
->La position du curseur de lecture est définie dans le cadre du code de configuration et de configuration. Pour plus d’informations sur `getCurrentPlayheadTime`la section [Présentation : Instructions générales de mise en oeuvre.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
+>La position du curseur de lecture est définie dans le cadre du code d’installation et de configuration. Pour plus d’informations sur `getCurrentPlayheadTime`, voir [Présentation : Instructions générales de mise en œuvre.](/help/sdk-implement/setup/setup-overview.md#general-implementation-guidelines)
 
 ## Mise en œuvre {#implement}
 
 1. **Installation initiale du suivi :** Déterminez le moment où l’utilisateur déclenche l’intention de lecture (l’utilisateur clique sur lecture et/ou la lecture automatique est activée) et créez une instance `MediaObject` à l’aide des informations sur le média pour le nom du contenu, l’ID de contenu, la durée du contenu et le type de diffusion.
 
-   **`MediaObject`référence :**
+   Référence **`MediaObject` :**
 
    | Nom de variable | Description | Obligatoire |
    |---|---|---|
@@ -75,7 +75,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
    | `streamType` | Type de diffusion | Oui |
    | `mediaType` | Type de média (contenu audio ou vidéo) | Oui |
 
-   **`StreamType`constantes :**
+   **Constantes`StreamType` :**
 
    | Nom de constante | Description |
    |---|---|
@@ -86,14 +86,14 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
    | `AUDIOBOOK` | Type de diffusion pour les livres audio. |
    | `PODCAST` | Type de diffusion pour les podcasts. |
 
-   **`MediaType`constantes :**
+   **Constantes`MediaType` :**
 
    | Nom de constante | Description |
    |---|---|
    | `Audio` | Type de média pour les diffusions audio. |
    | `Video` | Type de média pour les diffusions vidéo. |
 
-   The general format for creating the `MediaObject` is `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
+   Le format général pour la création de `MediaObject` est `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
 
 1. **Joindre des métadonnées -** Vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi par le biais de variables de données contextuelles.
 
@@ -101,11 +101,11 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
       >[!NOTE]
       >
-      >L’association de l’objet de métadonnées standard à l’objet multimédia est facultative.
+      >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
 
       Instanciez un objet de métadonnées standard, renseignez les variables désirées et définissez l’objet de métadonnées sur l’objet Media Heartbeat.
 
-      See the comprehensive list of metadata here: [Audio and video parameters.](/help/metrics-and-metadata/audio-video-parameters.md)
+      Consultez la liste complète des métadonnées dans la rubrique [Paramètres audio et vidéo](/help/metrics-and-metadata/audio-video-parameters.md).
 
    * **Métadonnées personnalisées -** Créez un objet de variable pour les variables personnalisées et renseignez les données de ce contenu.
 
@@ -117,7 +117,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
    >[!NOTE]
    >
-   >If you are not using custom metadata, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >Si vous n’utilisez pas de métadonnées personnalisées, envoyez simplement un objet vide pour l’argument `data` dans `trackSessionStart`.
 
 1. **Suivi du début effectif de la lecture -** Identifiez l’événement du lecteur multimédia correspondant au début de la lecture (la première image du contenu s’affiche à l’écran) et appelez `trackPlay`.
 
@@ -127,11 +127,11 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
    >[!IMPORTANT]
    >
-   >`trackSessionEnd` marque la fin d’une session de suivi. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Any other `track*` API call is ignored after `trackSessionEnd`, except for `trackSessionStart` for a new tracking session.
+   >`trackSessionEnd` marque la fin d’une session de suivi. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Tout autre appel à l’API `track*` est ignoré après `trackSessionEnd`, sauf `trackSessionStart` dans le cadre d’une nouvelle session de suivi.
 
 1. **Suivi de tous les scénarios de mise en pause possibles -** Identifiez l’événement du lecteur multimédia qui provoque la pause et appelez `trackPause`.
 
-   **Scénarios de pause :** Identifiez tous les scénarios dans lesquels le lecteur sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()`:
+   **Scénarios de pause :** Identifiez tous les scénarios dans lesquels le lecteur sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()` :
 
    * L’utilisateur appuie explicitement sur le bouton de pause dans l’application.
    * Le lecteur se place dans l’état de pause.
@@ -142,7 +142,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
    >[!TIP]
    >
-   >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Ensure that each `trackPause()` API call is paired with a following `trackPlay()` API call when the playback resumes.
+   >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture.
 
 1. Prêtez attention aux événements de recherche de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la recherche, effectuez-en le suivi à l’aide de l’événement `SeekStart`.
 1. Une fois que vous avez reçu la notification de fin de la recherche, effectuez-en le suivi à l’aide de l’événement `SeekComplete`.
@@ -234,5 +234,5 @@ if (e.type == “buffered”) {
 
 ## Validation {#validate}
 
-Pour plus d’informations sur la validation de votre implémentation, voir [Validation.](/help/sdk-implement/validation/validation-overview.md)
+Pour plus d’informations sur la validation de votre mise en œuvre, voir [Validation.](/help/sdk-implement/validation/validation-overview.md)
 
