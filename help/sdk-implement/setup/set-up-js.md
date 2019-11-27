@@ -1,19 +1,19 @@
 ---
 title: Configuration de JavaScript
-description: Configuration de l’application Media SDK pour l’implémentation sur JavaScript.
+description: Configuration de l’application du SDK Media pour implémentation sur JavaScript.
 uuid: 0269d8ad-0af8-4bf1-9d15-e06c2952a005
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Configuration de JavaScript{#set-up-javascript}
+# Configuration de JavaScript {#set-up-javascript}
 
 ## Conditions préalables
 
-* **Obtention de paramètres** de configuration valides Ces paramètres peuvent être obtenus auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
-* **Mise en oeuvre`AppMeasurement`de JavaScript dans votre application** multimédia Pour plus d’informations sur la documentation du SDK mobile Adobe, voir [Mise en oeuvre d’Analytics à l’aide de JavaScript.](https://marketing.adobe.com/resources/help/en_US/sc/implement/js_implementation.html)
+* **Obtention de paramètres de configuration valides** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
+* **Mise en œuvre`AppMeasurement`pour JavaScript dans votre application multimédia** Pour plus d’informations sur la documentation du kit SDK Adobe Mobile, reportezvous à la rubrique [Mise en œuvre d’Analytics à l’aide de JavaScript.](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/js_implementation.html)
 
 * **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
 
@@ -22,16 +22,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 1. Ajoutez la bibliothèque que vous avez [téléchargée](/help/sdk-implement/download-sdks.md#download-2x-sdks) à votre projet. Créez des références locales aux classes pour des raisons pratiques.
 
-   1. Développez le `MediaSDK-js-v2.*.zip` fichier que vous avez téléchargé.
-   1. Verify that the `MediaSDK.min.js` file exists in the `libs` directory:
+   1. Développez le fichier `MediaSDK-js-v2.*.zip` que vous avez téléchargé.
+   1. Vérifiez que le répertoire `MediaSDK.min.js` contient le fichier `libs` :
 
-   1. Host the `MediaSDK.min.js` file.
+   1. Hébergez le fichier `MediaSDK.min.js`.
 
       Ce fichier JavaScript principal doit être hébergé sur un serveur Web accessible par toutes les pages de votre site. Vous aurez besoin du chemin d’accès à ces fichiers à l’étape suivante.
 
    1. Référencez `MediaSDK.min.js` sur toutes les pages du site.
 
-      Include `MediaSDK` for JavaScript by adding the following line of code in the `<head>` or `<body>` tag on each page. Par exemple :
+      Insérez `MediaSDK` pour JavaScript en ajoutant la ligne de code suivante dans la balise `<head>` ou `<body>` de chaque page. Par exemple :
 
       ```
       <script type="text/javascript" 
@@ -42,9 +42,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       >[!NOTE]
       >
-      >From Version 2.1.0, the JavaScript SDK is compliant with the AMD and CommonJS module specifications, and `VideoHeartbeat.min.js` can also be used with compatible module loaders.
+      >À partir de la version 2.1.0, le kit SDK JavaScript est conforme aux spécifications du module AMD et CommonJS, et `VideoHeartbeat.min.js` peut également être utilisé avec les chargeurs de module compatibles.
 
-1. Pour faciliter l’accès aux API, créez des références locales aux classes `MediaHeartbeat`. 
+1. Pour faciliter l’accès aux API, créez des références locales aux classes `MediaHeartbeat`.
 
    ```js
    var MediaHeartbeat = ADB.va.MediaHeartbeat; 
@@ -52,7 +52,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var MediaHeartbeatDelegate = ADB.va.MediaHeartbeatDelegate; 
    ```
 
-1. Create a `MediaHeartbeatConfig` instance.
+1. Créez une instance `MediaHeartbeatConfig`.
 
    Cette section vous aide à comprendre les paramètres de configuration `MediaHeartbeat` et à comprendre comment définir les bonnes valeurs de configuration sur votre instance `MediaHeartbeat` pour un suivi précis.
 
@@ -70,7 +70,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaConfig.ovp = Configuration.HEARTBEAT.OVP; 
    ```
 
-1. Implement the `MediaHeartbeatDelegate` protocol.
+1. Mettez en œuvre le protocole `MediaHeartbeatDelegate`.
 
    ```js
    var mediaDelegate = new MediaHeartbeatDelegate(); 
@@ -86,9 +86,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    };
    ```
 
-1. Create the `MediaHeartbeat` instance.
+1. Créez l’instance `MediaHeartbeat`.
 
-   Use the `MediaHeartbeatConfig` and `MediaHeartbeatDelegate` to create the `MediaHeartbeat` instance.
+   Utilisez les instances `MediaHeartbeatConfig` et `MediaHeartbeatDelegate` pour créer l’instance `MediaHeartbeat`.
 
    ```js
    this.mediaHeartbeat = new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurement);
@@ -96,11 +96,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >Make sure that your `MediaHeartbeat` instance is accessible and does not get deallocated until the end of the media session. Cette instance sera utilisée pour tous les événements de suivi suivants.
+   >Assurez-vous que votre instance `MediaHeartbeat` est accessible et reste attribuée jusqu’à la fin de la session multimédia. Cette instance sera utilisée pour tous les événements de suivi suivants.
 
    >[!TIP]
    >
-   >`MediaHeartbeat` nécessite une instance de `AppMeasurement` pour envoyer des appels à Adobe Analytics. Voici un exemple d’une instance `AppMeasurement` :
+   >`MediaHeartbeat` requiert une instance de `AppMeasurement` pour envoyer des appels à Adobe Analytics. Voici un exemple d’une instance `AppMeasurement` :
 
    ```js
    var appMeasurement = new AppMeasurement(); 
@@ -113,6 +113,6 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Migration de la version 1.x vers 2.x dans JavaScript
 
-Dans la version 2.x, toutes les méthodes publiques sont consolidées dans la classe `ADB.va.MediaHeartbeat` pour faciliter le travail des développeurs. De plus, toutes les configurations sont désormais consolidées dans la classe `ADB.va.MediaHeartbeatConfig`. 
+Dans la version 2.x, toutes les méthodes publiques sont consolidées dans la classe `ADB.va.MediaHeartbeat` pour faciliter le travail des développeurs. De plus, toutes les configurations sont désormais consolidées dans la classe `ADB.va.MediaHeartbeatConfig`.
 
 Pour plus d’informations sur la migration de 1.x vers 2.x, voir [Migration de VHL 1.x vers 2.x.](/help/sdk-implement/va-1x-to-2x/mig-1x-2x-overview.md)
