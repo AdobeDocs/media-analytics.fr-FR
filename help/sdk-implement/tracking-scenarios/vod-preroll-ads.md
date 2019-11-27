@@ -1,20 +1,20 @@
 ---
 title: Lecture VOD avec publicités preroll
-description: Exemple de suivi du contenu VOD contenant des publicités preroll à l’aide du SDK multimédia.
+description: Exemple de suivi du contenu VOD contenant des publicités preroll à l’aide du SDK Media.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Lecture VOD avec publicités preroll{#vod-playback-with-pre-roll-ads}
+# Lecture VOD avec publicités preroll {#vod-playback-with-pre-roll-ads}
 
 Dans ce scénario, des publicités preroll ont été insérées avant le contenu principal. Sauf indication contraire, les appels réseau sont identiques à ceux du scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). Les appels réseau se produisent simultanément, mais la charge utile est différente.
 
 | Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques   |
 | --- | --- | --- | --- |
-| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | The measurement library does not know that there is a pre-roll ad, so these network calls are still identical to the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Étant donné que la bibliothèque de mesures ignore la présence d’une publicité preroll, ces appels réseau sont toujours identiques au scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La publicité démarre. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
 | L’image de la publicité n° 1 s’affiche. | `trackPlay` | Heartbeat Ad Play | Le contenu de la publicité est lu avant le contenu principal, et les pulsations démarrent dès que la publicité démarre. |
 | La publicité est lue. |  | Ad Heartbeats |  |
@@ -22,13 +22,13 @@ Dans ce scénario, des publicités preroll ont été insérées avant le contenu
 | La première image de la publicité n° 2 s’affiche. | `trackEvent:AdStart` | Analytics Ad Start, Heartbeat Ad Start |  |
 | La publicité est lue. |  | Ad Heartbeats |  |
 | La lecture de la publicité n° 2 se termine. | <ul> <li> `trackEvent:trackAdComplete` </li> <li> `trackEvent:AdBreakComplete` </li> </ul> | Heartbeat Ad Complete | La fin de la publicité et de la capsule est atteinte. |
-| Le contenu est lu. |  | Content Heartbeats | Cet appel réseau est identique au scénario Lecture [VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
-| Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Cet appel réseau est identique au scénario Lecture [VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) . |
+| Le contenu est lu. |  | Content Heartbeats | Cet appel réseau est identique au scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
+| Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Cet appel réseau est identique au scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` |
 
 ## Paramètres {#parameters}
 
-When ad playback begins, a `Heartbeat Ad Start` call is sent. Si le début de la publicité ne correspond pas au minuteur de 10 secondes, l’appel `Heartbeat Ad Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant. Dans ce cas, un appel `Content Heartbeat` est envoyé dans le même intervalle et vous pouvez distinguer les deux appels en observant le type d’événement et de ressource :
+Lorsque la lecture de la publicité démarre, un appel `Heartbeat Ad Start` est envoyé. Si le début de la publicité ne correspond pas au minuteur de 10 secondes, l’appel `Heartbeat Ad Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant. Dans ce cas, un appel `Content Heartbeat` est envoyé dans le même intervalle et vous pouvez distinguer les deux appels en observant le type d’événement et de ressource :
 
 ### Heartbeat Ad Start
 
@@ -37,7 +37,7 @@ When ad playback begins, a `Heartbeat Ad Start` call is sent. Si le début de la
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
 
-Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call is similar to the `Content Play` call.
+Les publicités suivent le même modèle de base que `Content Heartbeats`. Par conséquent, l’appel `Ad Play` est similaire à l’appel `Content Play`.
 
 ### Heartbeat Ad Play Call
 
@@ -46,7 +46,7 @@ Ads follow the same basic model as `Content Heartbeats`, so the `Ad Play` call i
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
 
-These parameters are similar to the `Content Heartbeats` call, but the `Ad Heartbeats` call contains a few extra parameters:
+Ces paramètres sont identiques à l’appel `Content Heartbeats`, mais l’appel `Ad Heartbeats` comporte un certain nombre de paramètres supplémentaires :
 
 ### Ad Heartbeats
 
@@ -57,7 +57,7 @@ These parameters are similar to the `Content Heartbeats` call, but the `Ad Heart
 | `s:asset:ad_id` | &lt;Identifiant de publicité&gt; |  |
 | `s:asset:pod_id` | &lt;Identifiant de capsule publicitaire&gt; |  |
 
-Similar to `Heartbeat Content Complete` calls, when ad playback has completed, and the end of the playhead is reached, a `Heartbeat Ad Complete` call is sent. Cet appel ressemble aux autres appels `Heartbeat Ad`, mais il contient certains éléments spécifiques : 
+Tout comme pour les appels `Heartbeat Content Complete`, un appel `Heartbeat Ad Complete` est envoyé lorsque la lecture de la publicité est terminée et que le curseur de lecture a atteint la fin de sa course. Cet appel ressemble aux autres appels `Heartbeat Ad`, mais il contient certains éléments spécifiques :
 
 ### Heartbeat Ad Complete Call
 
@@ -72,7 +72,7 @@ Dans ce scénario, le contenu VOD est constitué d’une publicité preroll, pui
 
 ![](assets/preroll-regular-playback.png)
 
-* **Android** Pour afficher ce scénario dans Android, configurez le code suivant :
+* **Android** Pour afficher ce scénario dans Android, configurez le code suivant :
 
    ```java
    // Set up  mediaObject 
@@ -176,7 +176,7 @@ Dans ce scénario, le contenu VOD est constitué d’une publicité preroll, pui
    ........ 
    ```
 
-* **iOS -** Pour afficher ce scénario dans iOS, configurez le code suivant :
+* **iOS** Pour afficher ce scénario dans iOS, configurez le code suivant :
 
    ```
    //  Set up mediaObject 
@@ -280,7 +280,7 @@ Dans ce scénario, le contenu VOD est constitué d’une publicité preroll, pui
    ....... 
    ```
 
-* **JavaScript** Pour afficher ce scénario dans JavaScript, saisissez le texte suivant :
+* **JavaScript** Pour afficher ce scénario dans JavaScript, saisissez le texte suivant :
 
    ```js
    // Set up mediaObject 
@@ -382,7 +382,7 @@ Dans ce scénario, le contenu VOD est lu avec une publicité preroll, le contenu
 
 ![](assets/ad-content-regular-playback.png)
 
-* **Android** Pour afficher ce scénario dans Android, configurez le code suivant :
+* **Android** Pour afficher ce scénario dans Android, configurez le code suivant :
 
    ```java
    // Set up mediaObject 
@@ -559,7 +559,7 @@ Dans ce scénario, le contenu VOD est lu avec une publicité preroll, le contenu
    ........ 
    ```
 
-* **iOS** Pour afficher ce scénario dans iOS, configurez le code suivant :
+* **iOS** Pour afficher ce scénario dans iOS, configurez le code suivant :
 
    ```
    //  Set up mediaObject 
@@ -746,7 +746,7 @@ Dans ce scénario, le contenu VOD est lu avec une publicité preroll, le contenu
    ....... 
    ```
 
-* **JavaScript** Pour afficher ce scénario dans JavaScript, saisissez le texte suivant :
+* **JavaScript** Pour afficher ce scénario dans JavaScript, saisissez le texte suivant :
 
    ```js
    // Set up mediaObject 
