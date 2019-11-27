@@ -2,25 +2,25 @@
 title: Suivi des chapitres et des segments sur Chromecast
 description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media sur Chromecast.
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Suivi des chapitres et des segments sur Chromecast{#track-chapters-and-segments-on-chromecast}
+# Suivi des chapitres et des segments sur Chromecast {#track-chapters-and-segments-on-chromecast}
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour l’implémentation à l’aide des SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 1. Identifiez le moment où a lieu l’événement de début de chapitre et créez l’instance `ChapterObject` à l’aide des informations de chapitre.
 
-   `ChapterObject` référence de suivi de chapitre :
+   `ChapterObject` référence de suivi de chapitre :
 
    >[!NOTE]
    >
-   >Ces variables ne sont requises que si vous prévoyez de suivre les chapitres.
+   >Ces variables ne sont nécessaires que si vous envisagez d’effectuer le suivi des chapitres.
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
