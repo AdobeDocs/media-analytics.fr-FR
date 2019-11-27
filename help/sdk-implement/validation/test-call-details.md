@@ -1,14 +1,14 @@
 ---
 title: Détails des appels de test
-description: Cette rubrique détaille les appels que vous devez effectuer pour valider votre mise en oeuvre.
+description: Cette rubrique détaille les appels que vous devez effectuer pour valider votre mise en œuvre.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Détails des appels de test{#test-call-details}
+# Détails des appels de test {#test-call-details}
 
 ## Démarrage du lecteur multimédia {#start-the-media-player}
 
@@ -26,7 +26,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`custom.[value]`**_ | _**Champs de métadonnées personnalisés**_ |
 | _**`a.media.[value]`**_ | _**Champs de métadonnées standard**_ |
 
-**Remarques:**
+**Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La durée des diffusions linéaires doit être définie sur la meilleure estimation pour le programme actuel.
@@ -57,7 +57,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### Media Analytics (pulsations) Appel de début {#ma-start-call}
+### Appel de démarrage de Media Analytics (pulsations) {#ma-start-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -72,12 +72,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:meta:custom.[value]`**_ | _**Champs de métadonnées personnalisés**_ |
 | _**`s:meta:a.media.[value]`**_ | _**Champs de métadonnées standard**_ |
 
-**Remarques:**
+**Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La position du curseur de lecture pour les diffusions linéaires au démarrage de la vidéo doit être définie sur le nombre de secondes écoulées depuis le démarrage du programme actuel, et non sur 0.
 
-### Métadonnées standard dans Media Analytics (pulsations) Appel de début {#std-metadata-ma}
+### Métadonnées standard dans l’appel de démarrage de Media Analytics (pulsations) {#std-metadata-ma}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -96,14 +96,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Métadonnées personnalisées dans Media Analytics (pulsations) Appel de démarrage {#custom-metadata-ma}
+### Métadonnées personnalisées dans l’appel de démarrage de Media Analytics (pulsations) {#custom-metadata-ma}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics (pulsations) Appel Adobe Analytics Start {#ma-aa-start}
+### Appel de démarrage Adobe Analytics de Media Analytics (pulsations) {#ma-aa-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -116,14 +116,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
 
-**Remarques:**
+**Remarques :**
 
-* Cet appel indique que le SDK multimédia a demandé qu’un `pev2=ms_s` appel Adobe Analytics soit envoyé au serveur Adobe Analytics (AppMeasurement).
+* Cet appel indique que le SDK Media a demandé qu’un `pev2=ms_s` appel Adobe Analytics soit envoyé au serveur Adobe Analytics (AppMeasurement).
 * Cet appel ne contient pas de métadonnées personnalisées.
 
 ## Afficher la lecture de la publicité {#view-ad-playback}
 
-### Appel Ad Start d’Adobe Analytics (AppMeasurement) {#aa-ad-start-call}
+### Appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement) {#aa-ad-start-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -141,12 +141,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`custom.[value]`**_ | _**Champs de métadonnées**_ |
 | _**`a.media.[value]`**_ | _**Champs de métadonnées standard**_ |
 
-**Remarques:**
+**Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La durée de la publicité doit être définie sur -1 si elle n’est pas disponible au démarrage de la publicité.
 
-### Standard metadata in Adobe Analytics (AppMeasurement) Ad Start call {#std-metadata-aa-ad-start}
+### Métadonnées standard dans l’appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement) {#std-metadata-aa-ad-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -165,14 +165,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Métadonnées personnalisées dans l’appel Ad Start d’Adobe Analytics (AppMeasurement) {#custom-metadata-aa-ad-start}
+### Métadonnées personnalisées dans l’appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement) {#custom-metadata-aa-ad-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Media Analytics (pulsations) Appel Ad Start {#ma-ad-start-call}
+### Appel de démarrage de la publicité de Media Analytics (pulsations) {#ma-ad-start-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -186,12 +186,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | _**`s:meta:custom.[value]`**_ | _**Champs de métadonnées personnalisés**_ |
 | _**`s:meta:a.media.[value]`**_ | _**Champs de métadonnées standard**_ |
 
-**Remarques:**
+**Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La durée de la publicité doit être définie sur -1 si elle n’est pas disponible au démarrage de la publicité.
 
-### Standard metadata in Media Analytics (heartbeats) Ad Start call {#std-metadata-ma-ad-start}
+### Métadonnées standard dans l’appel de démarrage de la publicité de Media Analytics (pulsations) {#std-metadata-ma-ad-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -210,14 +210,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Métadonnées personnalisées dans Media Analytics (pulsations) Appel Ad Start {#custom-metadata-ma-ad-start}
+### Métadonnées personnalisées dans l’appel de démarrage de la publicité de Media Analytics (pulsations) {#custom-metadata-ma-ad-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Media Analytics (pulsations) Adobe Analytics Ad Start appel {#ma-aa-ad-start-call}
+### Appel de démarrage de la publicité d’Adobe Analytics de Media Analytics (pulsations) {#ma-aa-ad-start-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -229,7 +229,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Media Analytics (pulsations) Ad Play call {#ma-ad-play-call}
+### Appel de démarrage de la publicité de Media Analytics (pulsations) {#ma-ad-play-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -241,7 +241,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Media Analytics (pulsations) Appel Ad Pause {#ma-ad-pause-call}
+### Appel de pause de la publicité de Media Analytics (pulsations) {#ma-ad-pause-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -253,7 +253,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Appel Adobe Analytics Ad Complete (pulsations) pour Media Analytics {#ma-aa-ad-complete-call}
+### Appel de fin de la publicité d’Adobe Analytics (pulsations) de Media Analytics {#ma-aa-ad-complete-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -267,7 +267,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Lire le contenu principal {#play-main-content}
 
-### Media Analytics (pulsations) Lecture de l’appel {#ma-play-call}
+### Appel de lecture de Media Analytics (pulsations) {#ma-play-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -280,14 +280,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
 
-**Remarques:**
+**Remarques :**
 
-* La position du curseur de lecture doit être incrémentée de 10 secondes à chaque appel de lecture.
+* La position du curseur de lecteur doit augmenter de 10 secondes à chaque appel de lecture.
 * La valeur `l:event:duration` représente le nombre de millisecondes qui se sont écoulées depuis le dernier appel de suivi, et doit être plus ou moins constante pour chaque appel de 10 secondes.
 
-## Suspendre le contenu principal {#pause-main-content}
+## Pause du contenu principal {#pause-main-content}
 
-### Media Analytics (pulsations) Appel Pause {#ma-pause-call}
+### Appel de pause de Media Analytics (pulsations) {#ma-pause-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
