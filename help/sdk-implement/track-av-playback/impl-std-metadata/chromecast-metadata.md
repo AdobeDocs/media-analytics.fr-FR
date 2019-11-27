@@ -2,13 +2,13 @@
 title: Clés de métadonnées Chromecast
 description: Décrit la définition des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi sur Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Clés de métadonnées Chromecast{#chromecast-metadata-keys}
+# Clés de métadonnées Chromecast {#chromecast-metadata-keys}
 
 Les métadonnées de vidéo et de publicité standard peuvent être définies respectivement sur les objets info de multimédia et de publicité. À l’aide des clés constantes des métadonnées vidéo/de publicité, définissez le dictionnaire contenant les métadonnées standard sur l’objet info avant d’appeler les API de suivi. Consultez les tableaux ci-dessous pour obtenir la liste complète des constantes de métadonnées standard, suivies d’un exemple.
 
@@ -45,7 +45,7 @@ Les métadonnées de vidéo et de publicité standard peuvent être définies re
 | ID du site | `a.media.ad.site` | `ADBMobile.media.AdMetadataKeys.SITE_ID` |
 | URL de l’élément créatif | `a.media.ad.creativeURL` | `ADBMobile.media.AdMetadataKeys.CREATIVE_URL` |
 
-## Exemples d’implémentation pour Chromecast {#sample-implementations-for-chromecast}
+## Exemples de mise en œuvre pour Chromecast {#sample-implementations-for-chromecast}
 
 ### Vidéo
 
