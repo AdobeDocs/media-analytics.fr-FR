@@ -1,14 +1,14 @@
 ---
 title: Lecture VOD avec saut de publicité
-description: Exemple de suivi du contenu VOD dans lequel l’utilisateur a ignoré les publicités à l’aide du SDK multimédia.
+description: Exemple de suivi du contenu VOD dans lequel l’utilisateur a ignoré les publicités à l’aide du SDK Media.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Lecture VOD avec saut de publicité{#vod-playback-with-skipped-ads}
+# Lecture VOD avec saut de publicité {#vod-playback-with-skipped-ads}
 
 ## Scénario {#scenario}
 
@@ -20,18 +20,18 @@ Il s’agit du même scénario que [Lecture VOD avec publicités preroll](/help/
 
 | Déclencheur   | Méthode Heartbeat  | Appels réseau   | Remarques   |
 | --- | --- | --- | --- |
-| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario  [Lecture VOD sans publicité.](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
+| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario [Lecture VOD sans publicité.](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) |
 | La publicité démarre. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
 | La première image de la publicité s’affiche. | `trackPlay()` | Heartbeat Ad Play | Lorsque le contenu de la publicité est lu avant le contenu principal, les pulsations démarrent dès le début de la lecture de la publicité. |
 | La publicité est lue. |  | Ad Heartbeats |  |
 | La publicité est ignorée. | `trackEvent:trackAdSkip` |  | Il n’existe aucun appel réseau de fin de publicité. |
-| Le contenu est lu. |  | Content Heartbeats | These network calls are exactly the same as the [VOD playback with no ads](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) scenario. |
+| Le contenu est lu. |  | Content Heartbeats | Il s’agit des mêmes appels réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La lecture du contenu est terminée. | `trackComplete()` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La session est terminée. | `trackSessionEnd()` |  | `SessionEnd` |
 
 ## Paramètres {#parameters}
 
-Les paramètres sont identiques à ceux du scénario Lecture [VOD avec publicités](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md) preroll, sauf qu’il n’existe aucun appel ad complete et aucun appel ad-break complete.
+Les paramètres sont identiques à ceux du scénario [Lecture VOD avec publicités preroll](/help/sdk-implement/tracking-scenarios/vod-preroll-ads.md), sauf qu’il n’existe aucun appel de fin de la publicité et aucun appel de fin de la coupure publicitaire.
 
 ## Exemple de code {#sample-code}
 
