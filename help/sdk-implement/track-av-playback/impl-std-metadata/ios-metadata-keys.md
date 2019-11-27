@@ -2,19 +2,19 @@
 title: Clés de métadonnées iOS
 description: Cette rubrique décrit les clés de métadonnées iOS disponibles.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Clés de métadonnées iOS{#ios-metadata-keys}
+# Clés de métadonnées iOS {#ios-metadata-keys}
 
 [Référence de l’API iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
-De `ADBStandardMetadataKeys.h`:
+De `ADBStandardMetadataKeys.h` :
 
-## Touches de métadonnées vidéo
+## Clés de métadonnées vidéo
 
 | Nom de constante | Description | Type |
 |---|---|---|
@@ -47,7 +47,7 @@ De `ADBStandardMetadataKeys.h`:
 | `ADBAudioMetadataKeyPUBLISHER` | Ressource | Audio |
 | `ADBAudioMetadataKeySTATION` | Genre | Audio |
 
-## Touches de métadonnées publicitaires
+## Clés de métadonnées publicitaires
 
 | Nom de constante | Description | Type |
 |---|---|---|
