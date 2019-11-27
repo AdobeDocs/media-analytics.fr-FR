@@ -2,26 +2,26 @@
 title: Requête events
 description: null
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Requête events{#events-request}
+# Requête events {#events-request}
 
 ```
 POST 
 https://{uri}/api/v1/sessions/{sid}/events 
 ```
 
-## Paramètre URI
+## Paramètre URI
 
-`sid`: ID de session renvoyé à partir d’une demande de [session.](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+`sid` : ID de session renvoyé à partir d’une [requête sessions.](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
 
 ## Corps de requête
 
-L’organisme de requête doit être JSON et avoir la même structure que cet organisme de requête d’exemple :
+Le corps de requête doit être JSON et doit avoir la même structure que le corps de cet exemple de corps de requête :
 
 ```
 { 
@@ -41,14 +41,14 @@ L’organisme de requête doit être JSON et avoir la même structure que cet or
    * `ts` : Horodatage ; doit être spécifié en millisecondes.
 * `eventType` (Obligatoire)
 * `params` (Facultatif)
-* `customMetadata` (Facultatif) envoyer uniquement avec les types `adStart` et `chapterStart` d’événements)
+* `customMetadata` (Facultatif ; envoyer uniquement avec les types d’événements `adStart` et `chapterStart`)
 * `qoeData` (Facultatif)
 
 Pour obtenir la liste des types d’événement valides pour cette version, reportez-vous à la rubrique [Types et descriptions d’événement.](/help/media-collection-api/mc-api-ref/mc-api-event-types.md)
 
 >[!IMPORTANT]
 >
->***Suivi des publicités -**Vous pouvez uniquement effectuer le suivi des publicités à l’intérieur d’une`adBreak`*.
+>***Suivi des publicités -**Vous pouvez uniquement suivre les publicités dans un`adBreak`*.
 >
 >En l’absence des « serre-livres » `adBreakStart` et `adBreakComplete` autour des publicités, les événements `adStart` et `adComplete` sont simplement ignorés, et la durée de publicité correspondante est suivie en tant que durée de contenu principal. Cela pourrait avoir un impact significatif sur les données agrégées qui seront disponibles dans Adobe Analytics.
 
@@ -71,7 +71,7 @@ Access-Control-Expose-Headers Location
 |---|---|---|
 | **204** | **Aucun contenu.** <br/><br/>L’appel Heartbeat a réussi. | S.O. |
 | **400** | **Demande incorrecte.** <br/><br/>Le format de la requête est incorrect. | Cherchez le type de requête dans les [schémas de validation JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md). |
-| **404** | **Introuvable.** <br/><br/>L'ID de session pour la session multimédia est introuvable dans le service principal. | L’application du client doit utiliser l’API de la [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et générer des rapports de suivi sur celle-ci. |
-| **410** | **Supprimé.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus lui signaler l’activité. | L’application du client doit utiliser l’API de la [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et générer des rapports de suivi sur celle-ci. |
+| **404** | **Introuvable.** <br/><br/>L’ID de session pour la session multimédia n’a pas été trouvé dans le service principal. | L’application du client doit utiliser l’API de la [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et générer des rapports de suivi sur celle-ci. |
+| **410** | **Supprimé.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus générer de rapports d’activité sur celle-ci. | L’application du client doit utiliser l’API de la [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et générer des rapports de suivi sur celle-ci. |
 | **500** | **Erreur interne du serveur** | S.O. |
 
