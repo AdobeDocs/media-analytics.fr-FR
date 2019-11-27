@@ -1,14 +1,14 @@
 ---
 title: Lecture VOD avec mise en mémoire tampon
-description: Exemple de suivi du contenu VOD à l’aide du SDK multimédia.
+description: Exemple de suivi du contenu VOD à l’aide du SDK Media.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Lecture VOD avec mise en mémoire tampon{#vod-playback-with-buffering}
+# Lecture VOD avec mise en mémoire tampon {#vod-playback-with-buffering}
 
 ## Scénario {#scenario}
 
@@ -18,7 +18,7 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 
 | Déclencheur   | Méthode Heartbeat   | Appels réseau   | Remarques   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur **[!UICONTROL Lecture]ou d’un événement de lecture automatique.** |
+| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur **[!UICONTROL Lecture]** ou d’un événement de lecture automatique. |
 | La première image de la vidéo s’affiche. | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur. Des pulsations sont envoyées toutes les 10 secondes pendant la lecture. |
 | Le contenu est lu. |  | Content Heartbeats |  |
 | La mise en mémoire tampon commence. | `trackEvent:BufferStart` | Heartbeat Buffer |  |
