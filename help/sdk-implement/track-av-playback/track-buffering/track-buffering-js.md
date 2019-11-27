@@ -2,13 +2,13 @@
 title: Suivi de la mise en mémoire tampon sur JavaScript
 description: Décrit le suivi des événements de mise en mémoire tampon dans les applications de navigateur (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Suivi de la mise en mémoire tampon sur JavaScript{#track-buffering-on-javascript}
+# Suivi de la mise en mémoire tampon sur JavaScript {#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -21,7 +21,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `BufferStart` | Constante permettant d’effectuer le suivi de l’événement Début de la mémoire tampon |
 | `BufferComplete` | Constante permettant d’effectuer le suivi de l’événement Fin de la mémoire tampon |
 
-## Mise en oeuvre de la mise en mémoire tampon
+## Mettez en œuvre la mise en mémoire tampon
 
 1. Prêtez attention aux événements de mise en mémoire tampon de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferStart`.
 
