@@ -9,7 +9,7 @@ tutorials-title: Tutoriels
 tutorials-url: https://helpx.adobe.com/fr/analytics/kt/index/analytics-videos.html
 git-repo: https://github.com/AdobeDocs/media-analytics.en
 index: true
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e074a77406f907ad66ac8e8ed1b44300596c065a
 
 ---
@@ -19,7 +19,7 @@ source-git-commit: e074a77406f907ad66ac8e8ed1b44300596c065a
 
 Le fichier metadata.md comprend des métadonnées de niveau référentiel qui sont transmises aux fichiers TOC.md du guide de l’utilisateur dans le référentiel. Si vous souhaitez modifier le contenu du fichier métadata.md pour un guide de l’utilisateur, faites-le dans le fichier TOC.md.
 
-| metadonnées | utilisation |
+| métadonnées | utilisation |
 |--- |--- |
 | solution-title | Utilisé comme lien dans l’en-tête d’article.. Soyez concis. |
 | solution-hub-url | Ouvre la page hub helpx. |
