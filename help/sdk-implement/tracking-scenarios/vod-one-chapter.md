@@ -2,34 +2,34 @@
 title: Lecture VOD avec un chapitre
 description: Exemple de suivi de la lecture VOD contenant un chapitre.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Lecture VOD avec un chapitre{#vod-playback-with-one-chapter}
+# Lecture VOD avec un chapitre {#vod-playback-with-one-chapter}
 
 ## Scénario {#scenario}
 
 Dans ce scénario, une partie du contenu VOD est marquée comme un chapitre.
 
-Sauf indication contraire, les appels réseau dans ce scénario sont identiques à ceux du scénario [Lecture VOD sans publicité. ](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md) L’appel réseau se produit simultanément, mais la charge utile est différente.
+Sauf indication contraire, les appels réseau dans ce scénario sont identiques à ceux du scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). L’appel réseau se produit simultanément, mais la charge utile est différente.
 
 | Déclencheur   | Méthode Heartbeat   | Appels réseau   | Remarques   |
 |---|---|---|---|
-| User clicks **[!UICONTROL Play]** | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Nous n’avons pas encore indiqué la présence d’une publicité preroll à la bibliothèque de mesures. Par conséquent, les appels réseau sont exactement identiques au contenu vidéo unique. |
+| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Nous n’avons pas encore indiqué la présence d’une publicité preroll à la bibliothèque de mesures. Par conséquent, les appels réseau sont exactement identiques au contenu vidéo unique. |
 | Le chapitre démarre. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Content Play | Lorsque le contenu du chapitre est lu avant le contenu principal, les pulsations démarrent dès que le chapitre démarre. |
 | Le chapitre est lu. |  | Chapter Heartbeats |  |
 | Le chapitre est terminé. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Cela se produit lorsque la fin du chapitre est atteinte. |
 | Le contenu est lu. |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` signifie que la fin de la session de visionnage a été atteinte. Cette API doit être appelée même si l’utilisateur ne regarde pas le média jusqu’à sa fin. |
+| La session est terminée. | `trackSessionEnd` |  | `SessionEnd` signifie que la fin de la session de visionnage a été atteinte. Cette API doit être appelée même si l’utilisateur n’utilise pas le média jusqu’à la fin. |
 
 ## Paramètres {#parameters}
 
-When chapter playback begins, a `Heartbeat Chapter Start` call is sent. Si le début du chapitre ne correspond pas au minuteur de 10 secondes, l’appel `Heartbeat Chapter Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant.
+Lorsque la lecture du chapitre démarre, un appel `Heartbeat Chapter Start` est envoyé. Si le début du chapitre ne correspond pas au minuteur de 10 secondes, l’appel `Heartbeat Chapter Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant.
 
 Dans ce cas, un appel `Content Heartbeat` est envoyé au cours de ce même intervalle. Vous pouvez différencier les deux en examinant le type d’événement et de ressource :
 
