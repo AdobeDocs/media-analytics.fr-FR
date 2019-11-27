@@ -2,17 +2,17 @@
 title: Validation des requêtes d’événement
 description: null
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
 
 
-# Validation des requêtes d’événement{#validating-event-requests}
+# Validation des requêtes d’événement {#validating-event-requests}
 
 Le corps de la requête JSON pour chaque type d’événement est validé sur le serveur principal avec les schémas JSON. Le corps de la réponse HTTP est renseigné avec un message d’erreur lorsque la validation échoue pour un appel API.
 
-JSON validation schemas for each event type are publicly accessible here: `{uri}/api/v1/schemas/{eventType}` (e.g., `{uri}/api/v1/schemas/sessionEnd`). Ces schémas de validation JSON sont l’autorité absolue pour déterminer les paramètres corrects du corps de requête pour chaque type d’événement.
+Les schémas de validation JSON pour chaque type d’événement sont publiquement accessibles ici : `{uri}/api/v1/schemas/{eventType}` (par ex., `{uri}/api/v1/schemas/sessionEnd`). Ces schémas de validation JSON sont l’autorité absolue pour déterminer les paramètres de corps de requête corrects pour chaque type d’événement.
 
 Par exemple, la réponse à une requête pour le schéma de validation `sessionStart` a une apparence similaire à cet exemple (ici légèrement formaté pour être lisible) :
 
@@ -125,5 +125,5 @@ Connection: keep-alive
 
 >[!NOTE]
 >
->La validation au niveau de la session n’est pas possible, car le contexte de la session n’est pas disponible dans la couche Collection.
+>La validation du niveau de session n’est pas possible, car le contexte de session n’est pas disponible dans la couche de collection.
 
