@@ -2,13 +2,13 @@
 title: Mise en œuvre de métadonnées de publicité standard sur JavaScript
 description: Utilisation des métadonnées publicitaires standard dans le suivi des publicités dans les applications de navigateur (JS).
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Mise en œuvre de métadonnées de publicité standard sur JavaScript{#implement-standard-ad-metadata-on-javascript}
+# Mise en œuvre de métadonnées de publicité standard sur JavaScript {#implement-standard-ad-metadata-on-javascript}
 
 ## Constantes publicitaires
 
@@ -16,9 +16,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 |---|---|
 | `StandardAdMetadata` | Constante permettant d’associer des métadonnées de publicité standard à un objet publicitaire |
 
-## Mise en oeuvre des métadonnées publicitaires standard
+## Mise en œuvre de métadonnées de publicité standard
 
-Pour les métadonnées publicitaires standard, créez un dictionnaire de paires clé-valeur de métadonnées publicitaires standard à l’aide des clés de votre plateforme :
+Pour les métadonnées de publicité standard, créez un dictionnaire de paires clé-valeur de métadonnées de publicité standard à l’aide des clés pour votre plateforme :
 
 ```js
 var adObject =  
