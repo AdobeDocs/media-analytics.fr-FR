@@ -1,20 +1,20 @@
 ---
 title: Mesures audio et vidéo dans Adobe Analytics
-description: 'Adobe Analytics pour les médias (également appelé Media Analytics) fournit aux clients des mesures de médias fiables pour le contenu, l’audio et les publicités. '
+description: 'Adobe Analytics for Media (également appelé Media Analytics) fournit aux clients une mesure multimédia performante pour le contenu, le son et les publicités. '
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Mesures audio et vidéo dans Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Mesures audio et vidéo dans Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
 
 ![Bannière](./assets/media_analytics_banner.png)
 
 >[!IMPORTANT]
 >
->The documentation provided here is specific to clients utilizing version 1.5 or higher of Adobe's *Media SDK* for heartbeat measurement, or Adobe's newer *Media Collection API* for heartbeat measurement. Elle n’inclut pas d’instructions relatives à l’implémentation vidéo Jalon héritée. Nous encourageons tous les clients à adopter l’une des dernières solutions de suivi multimédia ou les deux, afin de capitaliser sur les améliorations et la mesure développée. Vous pouvez afficher les [avantages de la transition vers les dernières solutions](media-overview.md#heartbeat-versus-milestone-benefits) ci-dessous. Bien que nous continuions à prendre en charge la méthode de suivi des vidéos de jalon, il n’y aura aucune mise à jour, correction ou amélioration de fonctionnalités planifiée. Contactez votre responsable de compte Adobe si vous avez des questions supplémentaires.
+>La documentation fournie ici est spécifique aux clients utilisant la version 1.5 ou ultérieure de *SDK Media* d’Adobe pour la mesure des pulsations, ou la nouvelle *API Media Collection* d’Adobe pour la mesure des pulsations. Elle n’inclut pas d’instructions concernant la mise en œuvre de la vidéo Milestone héritée. Nous encourageons tous les clients à adopter l’une des dernières solutions de suivi multimédia ou les deux, afin de capitaliser sur les améliorations et la mesure développée. Vous pouvez afficher les [avantages de la transition vers les dernières solutions](media-overview.md#heartbeat-versus-milestone-benefits) ci-dessous. Bien que nous continuerons à prendre en charge la méthode Milestone de suivi des vidéos, nous ne prévoyons pas de mises à jour, de correctifs ou d’améliorations de fonctionnalités. Contactez votre responsable de compte Adobe si vous avez des questions supplémentaires.
 
 ## Aperçu {#overview}
 
@@ -35,14 +35,14 @@ Voici quelques-uns des nombreux avantages offerts par les solutions de mesure mu
 
 * **Analyses rapides** : Prenez des décisions en temps réel exploitables à l’aide de mesures de performance clés (par exemple, durée) sur plusieurs canaux. Les principaux événements de contenu sont mesurés en intervalles de **10 secondes** pour capturer toutes les activités au fur et à mesure. Les événements de suivi publicitaires se produisent à des intervalles de **1 seconde**.
 * **Stimuler l’engagement** : Stimulez l’engagement des utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent être lues dans le contenu pour offrir une expérience fluide et moins intrusive qui fait revenir les utilisateurs et apporte des visites renouvelées.
-* **Image holistique -** Combinez plusieurs points de données sur l’ensemble de vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de votre activité multimédia, et mesurez l’engagement et les affichages/écoutes sur tous les canaux possibles grâce à la fonctionnalité Analyses [](/help/federated-analytics.md) fédérées.
+* **Image holistique :** Combinez plusieurs points de données sur tous vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de vos activités multimédia et mesurez l’engagement et les vues/écoutes sur tous les canaux possibles via la fonctionnalité [Federated Analytics](/help/federated-analytics.md).
 * **Meilleure granularité** : Évaluez le comportement de visionnage au niveau le plus granulaire, y compris l’heure des visiteurs individuels dans la journée, les observateurs/auditeurs simultanés par minute et la durée moyenne de consommation du contenu.
 * **Mesure précise** : Effectuez une mesure à travers les multiples appareils utilisés pour la consommation de médias, notamment les appareils OTT, les smartphones, les tablettes, les postes de travail et autres, pour surveiller les schémas et les habitudes d’engagement des utilisateurs.
 * **Segmentation** : Appliquez des classifications à vos lecteurs, appareils, genres, chapitres et programmes pour voir comment chacun a un impact sur vos vues/écoutes générales et l’implication du client dans le contenu, le son, les publicités et ces éléments combinés.
 
 ## Avantages Heartbeat et avantages Milestone {#heartbeat-versus-milestone-benefits}
 
-Adobe Analytics pour les médias peut être mesuré de deux manières : l’ancienne méthode Milestone (vidéo uniquement) et la méthode Heartbeats actuelle (audio et vidéo, qui figurent à la fois dans le SDK Media et dans l’API Media Collection). La méthode Heartbeats est la méthode privilégiée de mesure et nous encourageons tous les clients à passer à cette version si ce n’est pas déjà fait, pour tirer parti des avantages décrits ci-dessous.
+Adobe Analytics for Media peut être mesuré par deux moyens : la méthode Milestone héritée (vidéo uniquement) et la méthode Heartbeats actuelle (audio et vidéo, dans le SDK Media et l’API Media Collection). La méthode Heartbeats est la méthode privilégiée de mesure et nous encourageons tous les clients à passer à cette version si ce n’est pas déjà fait, pour tirer parti des avantages décrits ci-dessous.
 
 La méthode Milestone héritée est basée sur des appels de serveur individuels au serveur Analytics, pour les démarrages de vidéo, les quartiles, la durée et les fins de vidéo. La méthode Heartbeats offre une solution de suivi multimédia plus performante qui mesure le contenu principal par intervalles de 10 secondes pour fournir des mesures avancées et normalisées. En outre, Adobe a retiré un enseignement de notre méthode Milestone pour offrir un processus de mise en œuvre plus fluide et simplifié via le kit SDK Media ou l’API Media Collection utilisés par Heartbeats.
 
@@ -51,8 +51,8 @@ Voici quelques-uns des nombreux avantages de la méthode Heartbeats :
 * **Processus de mise en œuvre simplifié** : Mappez plus facilement les variables via l’API de votre lecteur et validez les mises en œuvre via l’outil Adobe Debug pour vous assurer du suivi précis de toutes les variables nécessaires.
 * **Intégration automatique d’Adobe Experience Cloud** : Tirez parti de l’intégration automatique avec Adobe Experience Cloud via l’Experience Cloud ID, segmentez les audiences de votre média, ciblez-les et faites des recommandations multimédia en fonction des préférences des utilisateurs.
 * **Données partagées par le biais de Federated Analytics** : Capitalisez sur nos fonctionnalités de partage multimédia leaders du secteur, pour évaluer les données de manière holistique à travers tous vos partenaires de distribution multimédia (opérateurs, programmeurs et distributeurs).
-* **Solution normalisée sur toutes les plates-formes** : Autorisez des variables homogènes et normalisées sur tous vos médias et plates-formes afin de garantir une comparaison plus efficace entre les campagnes, les appareils et les fournisseurs.
-* **Suivi du contenu téléchargé : suit** le contenu multimédia (vidéo et audio) téléchargé et lu sur un périphérique quelle que soit sa connectivité.
+* **Solution normalisée sur toutes les plates-formes :** Autorisez des variables homogènes et normalisées sur tous vos médias et plates-formes afin de garantir une comparaison plus efficace entre les campagnes, les appareils et les fournisseurs.
+* **Suivi du contenu téléchargé :** Suivez le contenu multimédia (vidéo et audio) téléchargé et lu à partir sur un appareil, indépendamment de sa connectivité.
 
 ### Graphique comparatif
 
@@ -98,12 +98,12 @@ Le tableau ci-dessous fournit la liste des appareils actuellement pris en charge
 | **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
 | **(Autres/nouveaux appareils connectés)** |  | ![](assets/icon-blue-check.png) |
 
-Pour le SDK multimédia, voir également Prise en charge [minimale des versions de plateforme](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Pour le SDK Media, voir également [Prise en charge de version minimum de plateforme](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
 
-## Sécurité de la couche de transport {#transport-layer-security}
+## Sécurité du calque de transport {#transport-layer-security}
 
-**Avis TLS —** Adobe applique des normes de conformité de sécurité qui exigent la fin de vie des anciens protocoles de sécurité. Pour continuer à répondre aux normes de protocole de sécurité en constante évolution, Adobe se dirige vers l’utilisation de TLS 1.2, afin d’avoir la version la plus récente et la plus sécurisée en usage. À partir du 20 février 2019, Adobe ne prendra en charge que TLS 1.1 ou version ultérieure. Avec cette modification, Adobe ne collectera plus de données provenant d’utilisateurs finaux disposant d’anciens périphériques ou navigateurs Web qui déploient TLS 1.0. La migration vers TLS 1.2 améliore la sécurité. Il est important que vous passiez en revue les détails et que vous planifiiez les changements pour une transition en douceur.
+**Remarque TLS -** Adobe applique des normes de conformité de sécurité qui exigent la fin de vie des anciens protocoles de sécurité. Pour continuer à répondre aux normes de protocole de sécurité en constante évolution, Adobe se dirige vers l’utilisation de TLS 1.2, afin d’avoir la version la plus récente et la plus sécurisée en usage. A partir du 20 février 2019, Adobe ne prendra en charge que TLS 1.1 ou version ultérieure. Avec cette modification, Adobe ne collectera plus de données provenant d’utilisateurs finaux disposant d’anciens appareils ou navigateurs Web qui déploient TLS 1.0. La migration vers TLS 1.2 améliore la sécurité. Il est important que vous passiez en revue les détails et que vous planifiiez les changements pour une transition en douceur.
 
 >[!NOTE]
 >
->TLS est actuellement le protocole de sécurité le plus largement déployé utilisé dans les navigateurs Web et les autres applications qui nécessitent un échange sécurisé de données sur un réseau.
+>TLS est actuellement le protocole de sécurité le plus répandu, utilisé pour les navigateurs web et autres applications exigeant que les données soient échangées en toute sécurité sur un réseau.
