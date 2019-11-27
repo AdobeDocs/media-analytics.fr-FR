@@ -2,15 +2,15 @@
 title: Suivi des états de l’application
 description: 'Les états d’application sont les différents écrans ou affichages de votre application, qui, lorsqu’ils sont affichés, doivent déclencher un appel trackState. '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Suivi des états d’application{#track-app-states}
+# Suivi des états d’application {#track-app-states}
 
-Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état est affiché dans votre application, vous devez envoyer un `trackState` appel. Par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers l’écran des détails de la vidéo, envoyez un `trackState` appel. Les états sont généralement consultés au moyen d’un rapport de cheminement afin de découvrir comment les utilisateurs naviguent dans votre application et les états les plus vus.
+Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état est affiché dans votre application, vous devez envoyer un appel `trackState`. Par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers l’écran des détails de la vidéo, envoyez un appel `trackState`. Les états sont généralement consultés au moyen d’un rapport de cheminement afin de découvrir comment les utilisateurs naviguent dans votre application et les états les plus vus.
 
 ## Appels trackState
 
@@ -28,11 +28,11 @@ ADBMobile().trackState("State Name", {})
 ADBMobile.analytics.trackState("State Name",{});
 ```
 
-The state name is reported in the "View State" variable in Adobe Mobile services, and a view is recorded for each `trackState` call. Dans d’autres interfaces Analytics, l’état d’affichage est signalé comme "Nom de page" ; "Vues d’état" est signalé comme "Pages vues".
+Le nom de l’état est signalé dans la variable « View State » dans Adobe Mobile Services, et un affichage est enregistré pour chaque appel `trackState`. Dans d’autres interfaces Analytics, la variable « View State » est signalée en tant que « Page Name » et « State Views » est signalée en tant que « Page Views ».
 
-## Envoyer des données contextuelles
+## Envoi de données contextuelles
 
-Outre "Nom d’état", vous pouvez envoyer des données contextuelles supplémentaires avec chaque appel d’état de suivi.
+Outre « State Name », vous pouvez envoyer des données contextuelles supplémentaires avec chaque appel d’action de suivi.
 
 ### Roku
 
@@ -52,5 +52,5 @@ ADBMobile.analytics.trackState("Home Screen", dictionary);
 
 >[!NOTE]
 >
->Les valeurs de données contextuelles doivent être mises en correspondance avec des variables personnalisées dans Adobe Mobile Services.
+>Les valeurs des données contextuelles doivent être mises en correspondance avec des variables personnalisées dans Adobe Mobile Services.
 
