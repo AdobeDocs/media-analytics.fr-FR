@@ -2,7 +2,7 @@
 title: 'Chronologie 2 : L’utilisateur abandonne la session'
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ---
@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## VOD, publicité preroll, publicités mid-roll, utilisateur abandonne le contenu tôt
 
-Les diagrammes suivants illustrent la chronologie du curseur de lecture et la chronologie correspondante des actions d’un utilisateur. Les détails de chaque action et des demandes qui l'accompagnent sont présentés ci-dessous.
+Les diagrammes suivants illustrent la chronologie du curseur de lecture et la chronologie correspondante des actions d’un utilisateur. Les détails de chaque action et des demandes qui l’accompagnent sont présentés ci-dessous.
 
 
 ![](assets/va_api_content_2.png)
@@ -23,7 +23,7 @@ Les diagrammes suivants illustrent la chronologie du curseur de lecture et la ch
 
 ## Détails de l’action
 
-### Action 1 - Démarrer la session {#Action-1}
+### Action 1 - Démarrage de la session {#Action-1}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -31,7 +31,7 @@ Les diagrammes suivants illustrent la chronologie du curseur de lecture et la ch
 
 **Détails de mise en œuvre**
 
-Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. It returns a Session ID ( `{sid}` ) to the client that is used to identify all subsequent tracking calls within the session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ». Les [paramètres de session obligatoires](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
+Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renvoie un ID de session (`{sid}`) au client, utilisé pour identifier tous les appels de suivi suivants dans la session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ». Les [paramètres de session obligatoires](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
 
 **Exemple de corps de requête**
 
@@ -58,7 +58,7 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. It retu
 }
 ```
 
-### Action 2 - Démarrage du minuteur Ping {#Action-2}
+### Action 2 - Démarrage du minuteur de ping {#Action-2}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -66,7 +66,7 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. It retu
 
 **Détails de mise en œuvre**
 
-Démarrez le minuteur ping de votre application. Le premier événement ping doit alors se déclencher 1 seconde en cas de publicités preroll, 10 secondes dans le cas contraire.
+Démarrez le minuteur de ping de votre application. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
 
 ### Action 3 - Début de la coupure publicitaire {#Action-3}
 
@@ -129,7 +129,7 @@ Une publicité de 12 secondes commence.
 }
 ```
 
-### Action 5 - Pings publicitaires {#Action-5}
+### Action 5 - Pings de publicité {#Action-5}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -137,7 +137,7 @@ Une publicité de 12 secondes commence.
 
 **Détails de mise en œuvre**
 
-Appuyez sur le serveur principal toutes les 1 secondes. (Les pings publicitaires suivants ne s’affichent pas, dans un souci de concision.)
+Envoyez un ping au serveur principal toutes les secondes. (Les pings de publicité suivants ne se pas montrés, dans un souci de concision.)
 
 **Exemple de corps de requête**
 
@@ -173,7 +173,7 @@ La première publicité preroll est terminée.
 }
 ```
 
-### Action 7 - Saut de publicité terminé {#Action-7}
+### Action 7 - Fin de la coupure publicitaire {#Action-7}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -218,7 +218,7 @@ Déplacez le lecteur vers l’état « lecture » ; commencez le suivi du dé
 }
 ```
 
-### Action 9 - Ping {#Action-9}
+### Action 9 - Ping {#Action-9}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -240,7 +240,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 }
 ```
 
-### Action 10 - Ping {#Action-10}
+### Action 10 - Ping {#Action-10}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -262,7 +262,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 }
 ```
 
-### Action 11 - Erreur {#Action-11}
+### Action 11 - Erreur {#Action-11}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -283,7 +283,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 }
 ```
 
-### Action 12 - Lire le contenu {#Action-12}
+### Action 12 - Lecture du contenu {#Action-12}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -305,7 +305,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 }
 ```
 
-### Action 13 - Ping {#Action-13}
+### Action 13 - Ping {#Action-13}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
@@ -386,7 +386,7 @@ Suivez la publicité mid-roll.
 }
 ```
 
-### Action 16 - Fermer l’application {#Action-16}
+### Action 16 - Fermeture de l’application {#Action-16}
 
 | Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
 | --- | :---: | :---: | --- |
