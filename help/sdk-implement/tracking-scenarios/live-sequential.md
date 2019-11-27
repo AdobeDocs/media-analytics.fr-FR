@@ -1,14 +1,14 @@
 ---
 title: Contenu principal en direct avec suivi séquentiel
-description: Exemple de suivi du contenu en direct avec suivi séquentiel à l’aide du SDK multimédia.
+description: Exemple de suivi du contenu en direct avec suivi séquentiel à l’aide du SDK Media.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Contenu principal en direct avec suivi séquentiel{#live-main-content-with-sequential-tracking}
+# Contenu principal en direct avec suivi séquentiel {#live-main-content-with-sequential-tracking}
 
 ## Scénario {#scenario}
 
@@ -16,12 +16,12 @@ Dans ce scénario, une ressource en direct sans publicité est lue pendant les 4
 
 Il s’agit du même scénario que [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md), mais une partie du contenu est parcourue manuellement et une recherche est effectuée d’un point à un autre du contenu principal.
 
-| Déclencheur | Méthode Heartbeat |  Appels réseau |  Remarques   |
+| Déclencheur | Méthode Heartbeat |  Appels réseau  |  Remarques   |
 | --- | --- | --- | --- |
 | L’utilisateur clique sur [!UICONTROL Lecture]. | trackSessionStart | Analytics Content Start, Heartbeat Content Start | Étant donné que la bibliothèque de mesures ignore la présence d’une publicité preroll, ces appels réseau sont identiques au scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La première image du contenu s’affiche. | trackPlay | Heartbeat Content Play | Lorsque le contenu du chapitre est lu avant le contenu principal, les pulsations démarrent dès que le chapitre démarre. |
 | Lecture du contenu |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
-| Fin de la session 1 (fin de l’épisode 1) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete signifie que la session 1 du 1er épisode a été terminée et visionnée jusqu’au bout. Cette session doit être terminée avant de démarrer celle de l’épisode suivant. |
+| Fin de la session (fin de l’épisode 1) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete signifie que la session 1 du 1er épisode a été terminée et visionnée jusqu’au bout. Cette session doit être terminée avant de démarrer celle de l’épisode suivant. |
 | Démarrage de l’épisode 2 (démarrage de la session 2) | trackSessionStart | Analytics Content Start Heartbeat Content Start | Cela se produit lorsqu’un utilisateur a visionné un premier épisode suivi d’un autre épisode. |
 | 1re image du média | trackPlay | Heartbeat Content Play | Cette méthode déclenche le minuteur et, dès lors, des pulsations sont envoyées toutes les 10 secondes pendant toute la durée de la lecture. |
 | Lecture du contenu |  | Content Heartbeats |  |
@@ -38,7 +38,7 @@ Il s’agit du même scénario que [Lecture VOD sans publicité](/help/sdk-imple
 | `s:user:mid` | `s:user:mid` | Doit correspondre à la valeur intermédiaire de l’appel Adobe Analytics Content Start. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Votre nom de média&gt; |  |
+| `s:asset:media_id` | &lt;Nom de votre média&gt; |  |
 | `s:stream:type` | `live` |  |
 | `s:meta:*` | *facultatif* | Métadonnées personnalisées définies sur le média |
 
@@ -53,7 +53,7 @@ Il semble presque identique à l’appel Heartbeat Content Start, mais la diffé
 
 ## Content Heartbeats {#content-heartbeats}
 
-Lors de la lecture du média, un minuteur envoie un ou plusieurs pulsations toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
+Pendant la lecture du média, un minuteur envoie une ou plusieurs pulsations toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
 Dans les pulsations du contenu, recherchez certains éléments spécifiques :
 
