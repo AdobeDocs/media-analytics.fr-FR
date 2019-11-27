@@ -2,29 +2,29 @@
 title: Exclusion et confidentialité
 description: Comment gérer l’inclusion, l’exclusion et la confidentialité.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ---
 
 
-# Exclusion et confidentialité{#opt-out-and-privacy}
+# Exclusion et confidentialité {#opt-out-and-privacy}
 
 ## Exclusion/Inclusion {#opt-out-opt-in}
 
 Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil spécifique :
 
-* **Applications mobiles -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de la bibliothèque `AdobeMobile`. Pour exclure le suivi, vous devez utiliser la bibliothèque `AdobeMobile`. Pour en savoir plus sur les paramètres d’exclusion et de confidentialité de la bibliothèque `AdobeMobile`, consultez la rubrique [Paramètres d’exclusion et de confidentialité](https://docs.adobe.com/content/help/en/mobile-services/android/gdpr-privacy-android/privacy.html).
-* **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. For further information on opt­out and privacy, see [Adobe Experience Platform Identity Service.](https://marketing.adobe.com/resources/help/en_US/mcvid/).
-* **Applications OTT (Chromecast, Roku) -** Les SDK OTT fournissent des API prêtes à l’emploi pour la réglementation générale de protection des données (GDPR) qui vous permettent de définir des indicateurs `opt` d’état pour la collecte et la transmission des données et de récupérer les identités stockées localement.
+* **Applications mobiles -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de la bibliothèque `AdobeMobile`. Pour exclure le suivi, vous devez utiliser la bibliothèque `AdobeMobile`. Pour en savoir plus sur les paramètres d’exclusion et de confidentialité de la bibliothèque `AdobeMobile`, consultez la rubrique [Paramètres d’exclusion et de confidentialité](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/gdpr-privacy-android/privacy.html).
+* **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. Pour plus d’informations sur l’exclusion et la confidentialité, consultez la rubrique [Service identité Adobe Experience Platform.](https://marketing.adobe.com/resources/help/fr_FR/mcvid/).
+* **Applications OTT (Chromecast, Roku) -** Les SDK OTT fournissent des API conformes au Réglement général sur la protection des données (RGPD) qui vous permettent de définir des indicateurs d’état `opt` pour la collecte et la transmission de données, ainsi que de récupérer des identités stockées localement.
 
    >[!NOTE]
    >
-   >Les appels de suivi de pulsation multimédia sont également désactivés si l’état de confidentialité est défini sur l’exclusion.
+   >Les appels de suivi de la pulsation multimédia sont également désactivés si l’état de confidentialité est défini sur exclusion.
 
    Vous pouvez déterminer si les données Analytics sont envoyées ou non sur un appareil spécifique à l’aide des paramètres suivants :
 
-   * The `privacyDefault` setting in the `ADBMobile.json` config file. Cela contrôle le paramètre initial qui persiste jusqu’à ce qu’il soit modifié dans le code.
+   * Paramètre `privacyDefault` du fichier de configuration `ADBMobile.json`. Cela contrôle le paramètre initial qui persiste jusqu’à ce qu’il soit modifié dans le code.
 
    * La méthode `ADBMobile().setPrivacyStatus()`.
 
@@ -43,7 +43,7 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
             ```
          >[!IMPORTANT]
          >
-         >Lorsqu’un utilisateur se désabonne du suivi, toutes les données et tous les ID de périphérique conservés sont purgés jusqu’à ce que l’utilisateur se reconnecte.
+         >Lorsqu’un utilisateur exclut le suivi, tous les identifiants et données d’appareil conservés sont purgés jusqu’à ce que l’utilisateur procède à nouveau à l’inclusion.
 
       * **Inclusion :**
 
@@ -79,7 +79,7 @@ Ces informations vous aident à récupérer les identités d’utilisateurs stoc
 
 >[!IMPORTANT]
 >
->La méthode de récupération de tous les identifiants permet de connaître et de conserver toutes les identités utilisateur par le SDK. Vous devez l’invoquer **avant** que l’utilisateur ne se désinscrive.
+>La méthode de récupération de tous les identifiants permet d’obtenir toutes les identités d’utilisateurs connues et conservées par le kit SDK. Vous devez l’invoquer **avant** que l’utilisateur ne se désinscrive.
 
 Les identités stockées localement sont renvoyées dans une chaîne JSON, qui peut contenir :
 
