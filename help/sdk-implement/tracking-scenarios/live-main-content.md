@@ -47,7 +47,7 @@ Dans les pulsations du contenu, recherchez certains éléments spécifiques :
 | Paramètre | Valeur | Remarques |
 |---|---|---|
 | `s:event:type` | "play" |  |
-| `l:event:playhead` | &lt;position du curseur de lecture&gt; par exemple, 50, 60, 70 | Cela doit indiquer la position actuelle du curseur de lecture. |
+| `l:event:playhead` | &lt;position du curseur de lecture&gt; par exemple, 50, 60, 70 | Ceci doit indiquer la position actuelle du curseur de lecture. |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
