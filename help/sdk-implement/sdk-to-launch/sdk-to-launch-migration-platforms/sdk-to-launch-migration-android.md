@@ -1,19 +1,20 @@
 ---
-title: Migration du SDK multimédia autonome vers Adobe Launch - Android
-description: Instructions et exemples de code pour faciliter la migration du SDK multimédia vers le lancement pour Android.
-translation-type: tm+mt
+title: 'Migration du SDK Media autonome vers Adobe Launch : Android'
+description: Instructions et exemples de code pour faciliter la migration du SDK Media vers Launch pour Android.
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# Migration du SDK multimédia autonome vers Adobe Launch - Android
+# Migration du SDK Media autonome vers Adobe Launch : Android
 
 ## Configuration
 
-### SDK de média autonome
+### SDK Media autonome
 
-Dans le SDK multimédia autonome, vous configurez le suivi dans l’application et le transmettez au SDK lorsque vous créez le suivi.
+Dans le SDK Media autonome, vous configurez le suivi dans l’application avant de le transmettre
+au SDK lorsque vous créez le dispositif de suivi.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -28,10 +29,12 @@ config.debugLogging = true;
 MediaHeartbeat tracker = new MediaHeartbeat(... , config);
 ```
 
-### Extension de lancement
+### Extension de Launch
 
-1. Dans le lancement de la plateforme d’expérience, cliquez sur l’onglet [!UICONTROL Extensions] pour votre propriété mobile.
-1. Dans l’onglet [!UICONTROL Catalogue] , recherchez l’extension Adobe Media Analytics pour l’audience et la vidéo, puis cliquez sur [!UICONTROL Installer].
+1. Dans Experience Platform Launch, cliquez sur l’onglet [!UICONTROL Extensions] pour votre 
+propriété mobile.
+1. Dans l’onglet [!UICONTROL Catalogue], recherchez l’extension Adobe Media Analytics for Audio
+and Video, puis cliquez sur [!UICONTROL Installer].
 1. Dans la page des paramètres d’extension, configurez les paramètres de suivi.
 L’extension Media utilisera les paramètres configurés pour le suivi.
 
@@ -39,11 +42,14 @@ L’extension Media utilisera les paramètres configurés pour le suivi.
 
 [Utilisation des extensions mobiles](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
-## Création du suivi
+## Création du dispositif de suivi
 
-### SDK de média autonome
+### SDK Media autonome
 
-Dans le SDK multimédia autonome, vous créez manuellement l’ `MediaHeartbeatConfig` objet et configurez les paramètres de suivi. Mettez en oeuvre l’interface déléguée exposant`getQoSObject()` et `getCurrentPlaybackTime()functions.`créez une `MediaHeartbeat` instance pour le suivi.
+Dans le SDK Media autonome, vous créez manuellement l’objet `MediaHeartbeatConfig`
+et vous configurez les paramètres de suivi. Implémentez l’interface déléguée exposant
+`getQoSObject()` et `getCurrentPlaybackTime()functions.`
+Créez une instance `MediaHeartbeat` pour le suivi.
 
 ```java
 MediaHeartbeatConfig config = new MediaHeartbeatConfig();
@@ -75,11 +81,12 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 }
 ```
 
-### Extension de lancement
+### Extension de Launch
 
-[Référence à l’API Media - Création d’un outil de suivi des médias](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Référence de l’API Media : création d’un outil de suivi des médias](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-Avant de créer l'outil de suivi, vous devez enregistrer l'extension multimédia et les extensions dépendantes avec le noyau mobile.
+Avant de créer le dispositif de suivi, vous devez enregistrer l’extension média et
+les extensions dépendantes avec le noyau mobile.
 
 ```java
 // Register the extension once during app launch
@@ -103,8 +110,8 @@ try {
 }
 ```
 
-Une fois que vous avez enregistré l’extension multimédia, créez le suivi à l’aide de l’API suivante.
-Le suivi sélectionne automatiquement la configuration à partir de la propriété de lancement configurée.
+Une fois que vous avez enregistré l’extension média, créez le dispositif de suivi à l’aide de l’API suivante.
+Le dispositif sélectionne automatiquement la configuration à partir de la propriété configurée dans Launch.
 
 ```java
 Media.createTracker(new AdobeCallback<MediaTracker>() {
@@ -115,27 +122,33 @@ Media.createTracker(new AdobeCallback<MediaTracker>() {
 });
 ```
 
-## Mise à jour des valeurs Playhead et Quality of Experience.
+## Mise à jour des valeurs Playhead (curseur de lecture) et Quality of Experience (qualité de l’expérience).
 
-### SDK de média autonome
+### SDK Media autonome
 
-Dans le SDK multimédia autonome, vous transmettez un objet délégué qui implémente l’interface lors`MediaHeartbeartDelegate` de la création de l’outil de suivi.  L’implémentation doit renvoyer la dernière qualité de qualité de l’expérience et le curseur de lecture chaque fois que l’outil de suivi appelle les`getQoSObject()` méthodes d’interface et les `getCurrentPlaybackTime()` méthodes d’interface.
+Dans le SDK Media autonome, vous transmettez un objet délégué qui implémente 
+l’interface `MediaHeartbeartDelegate` lors de la création du dispositif de suivi.  L’implémentation
+doit renvoyer la dernière qualité de l’expérience et le dernier curseur de lecture chaque fois que le dispositif appelle les
+méthodes d’interface `getQoSObject()` et `getCurrentPlaybackTime()`.
 
-### Extension de lancement
+### Extension de Launch
 
-L’implémentation doit mettre à jour le curseur de lecture actuel du lecteur en appelant la méthode exposée par`updateCurrentPlayhead` l’outil de suivi. Pour un suivi précis, vous devez appeler cette méthode au moins une fois par seconde.
+L’implémentation doit mettre à jour le curseur de lecture actuel du lecteur en appelant la
+méthode `updateCurrentPlayhead` exposée par le dispositif de suivi. Pour un suivi précis,
+vous devez appeler cette méthode au moins une fois par seconde.
 
-[Référence de l’API Media - Mettre à jour le lecteur actuel](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Référence de l’API Media : mise à jour du lecteur actuel](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-L’implémentation doit mettre à jour les informations de QoE en appelant la `updateQoEObject`méthode exposée par l’outil de suivi. Nous nous attendons à ce que cette méthode soit appelée chaque fois qu’il y a un changement dans les mesures de qualité.
+L’implémentation doit mettre à jour les informations relatives à la qualité de l’expérience en appelant la
+méthode `updateQoEObject` exposée par le dispositif de suivi. Cette méthode est censée être appelée chaque à fois qu’il y a un changement dans les mesures de qualité.
 
-[Référence de l’API Media - Mettre à jour l’objet QoE](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Référence de l’API Media : mise à jour de l’objet QoE (qualité de l’expérience)](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-## Transmission de métadonnées publicitaires/médias standard
+## Transmission de métadonnées publicitaires / médias standard
 
-### SDK de média autonome
+### SDK Media autonome
 
-* Métadonnées Media standard :
+* Métadonnées médias standard :
 
    ```java
    MediaObject mediaInfo = 
@@ -164,7 +177,7 @@ L’implémentation doit mettre à jour les informations de QoE en appelant la `
    tracker.trackSessionStart(mediaInfo, mediaMetadata);
    ```
 
-* Métadonnées de publicité standard:
+* Métadonnées de publicité standard :
 
    ```java
    MediaObject adInfo = 
@@ -193,9 +206,9 @@ L’implémentation doit mettre à jour les informations de QoE en appelant la `
                       adMetadata);
    ```
 
-### Extension de lancement
+### Extension de Launch
 
-* Métadonnées Media standard :
+* Métadonnées médias standard :
 
    ```java
    HashMap<String, Object> mediaObject = 
@@ -221,7 +234,7 @@ L’implémentation doit mettre à jour les informations de QoE en appelant la `
    tracker.trackSessionStart(mediaInfo, mediaMetadata);
    ```
 
-* Métadonnées de publicité standard:
+* Métadonnées de publicité standard :
 
    ```java
    HashMap<String, Object> adObject = 
