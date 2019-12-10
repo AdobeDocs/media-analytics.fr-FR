@@ -18,10 +18,10 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 |---|---|---|
 | Nombre moyen de publicités par diffusion multimédia | Démarrages de publicité par démarrages de média | `Ad Starts / Media Starts` |
 | Nombre moyen de chapitres par diffusion multimédia | Démarrages de chapitre par démarrages de média | `Chapter Start / Media Starts` |
-| Temps moyen passé sur le média | Temps total passé par démarrages de média (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| Temps moyen passé sur le contenu | Temps passé sur le contenu par démarrage de contenu (HH:MM:SS) | `Content Time Spent / Content Start` |
-| Temps moyen passé sur la publicité | Temps passé sur la publicité par démarrage de publicité (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| Temps moyen passé sur le chapitre | Temps passé sur le chapitre par démarrage de chapitre (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| Temps moyen Temps passé sur le média | Temps total passé par démarrages de média (HH:MM:SS) | `Media Time Spent / Media Starts` |
+| Temps moyen Temps passé sur le contenu | Temps passé sur le contenu par démarrage de contenu (HH:MM:SS) | `Content Time Spent / Content Start` |
+| Temps moyen Temps passé sur la publicité | Temps passé sur la publicité par démarrage de publicité (HH:MM:SS) | `Ad Time Spent / Ad Start` |
+| Temps moyen Temps passé par chapitre | Temps passé sur le chapitre par démarrage de chapitre (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
 | Taux d’achèvement du média | Taux d’achèvement du contenu par rapport aux démarrages de média (%) | `Content Completes/ Media Starts` |
 | Taux d’achèvement du contenu | Taux d’achèvement du contenu par rapport aux démarrages de contenu (%) | `Content Completes / Content Starts` |
 | Taux d’achèvement de la publicité | Taux d’achèvement de la publicité par rapport aux démarrages de publicité (%) | `Ad Completes / Ad Starts` |
