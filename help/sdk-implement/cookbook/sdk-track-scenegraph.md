@@ -38,7 +38,7 @@ Le pont de connecteur est conçu pour effectuer les opérations suivantes :
 * Utilise les `AdobeMobileLibrary`API via les API de pont de connecteur SceneGraph.
 * Enregistre les rappels de réponse sur `adbmobileTask` pour les variables de données de sortie attendues.
 
-**AdobeMobileLibrary:**
+**AdobeMobileLibrary :**
 
 * Expose un ensemble d’API publiques (existantes), y compris l’API de pont de connecteur.
 * Renvoie une instance de connecteur SceneGraph qui englobe toutes les API publiques existantes.
