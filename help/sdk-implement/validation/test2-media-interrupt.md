@@ -27,7 +27,7 @@ Vous devez effectuer et enregistrer ces tâches dans l’ordre suivant :
    1. Démarrage d’Adobe Analytics (AppMeasurement)
    1. Démarrage de Media Analytics (pulsations)
    1. Appel de démarrage d’Adobe Analytics de Media Analytics (pulsations) demandé
-   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
+   Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d’appel et les métadonnées, voir [Détails des appels de test.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
    Le troisième appel ci-dessus indique au serveur Media Analytics que le SDK Media a demandé que l’appel de démarrage d’Adobe Analytics (`pev2=ms_s`) soit envoyé au serveur Adobe Analytics.
 
