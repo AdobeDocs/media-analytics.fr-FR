@@ -52,7 +52,7 @@ Télécharger et configurer Debug Proxy :
 
 La première fois que vous exécutez Adobe Debug, un certificat SSL unique est généré. Si vous prenez en charge le trafic HTTPS sur les ordinateurs de bureau et/ou les applications, vous devez télécharger et installer notre certificat SSL.
 
-Téléchargez et installez le certificat SSL:
+Téléchargez et installez le certificat SSL :
 
 1. Après avoir installé et démarré Adobe Debug, accédez à [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) et téléchargez la certification.
 1. Importez le certificat
