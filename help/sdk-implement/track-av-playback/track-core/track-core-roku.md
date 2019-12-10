@@ -17,7 +17,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Déterminez le moment où l’utilisateur déclenche l’intention de lecture (l’utilisateur clique sur le bouton de lecture et/ou la lecture automatique est activée) et créez une instance `MediaObject`.
 
-   Référence **`MediaObject` :**
+   **`MediaObject` Référence :**
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
