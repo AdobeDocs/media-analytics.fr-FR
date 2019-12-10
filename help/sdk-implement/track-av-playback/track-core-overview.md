@@ -65,7 +65,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 1. **Installation initiale du suivi :** Déterminez le moment où l’utilisateur déclenche l’intention de lecture (l’utilisateur clique sur lecture et/ou la lecture automatique est activée) et créez une instance `MediaObject` à l’aide des informations sur le média pour le nom du contenu, l’ID de contenu, la durée du contenu et le type de diffusion.
 
-   Référence **`MediaObject` :**
+   **`MediaObject` Référence :**
 
    | Nom de variable | Description | Obligatoire |
    |---|---|---|
@@ -75,7 +75,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
    | `streamType` | Type de diffusion | Oui |
    | `mediaType` | Type de média (contenu audio ou vidéo) | Oui |
 
-   **Constantes`StreamType` :**
+   **Constantes `StreamType` :**
 
    | Nom de constante | Description |
    |---|---|
@@ -86,7 +86,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
    | `AUDIOBOOK` | Type de diffusion pour les livres audio. |
    | `PODCAST` | Type de diffusion pour les podcasts. |
 
-   **Constantes`MediaType` :**
+   **Constantes `MediaType` :**
 
    | Nom de constante | Description |
    |---|---|
@@ -131,7 +131,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 1. **Suivi de tous les scénarios de mise en pause possibles -** Identifiez l’événement du lecteur multimédia qui provoque la pause et appelez `trackPause`.
 
-   **Scénarios de pause :** Identifiez tous les scénarios dans lesquels le lecteur sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()` :
+   **Scénarios de pause  -** Identifiez tous les scénarios dans lesquels le lecteur sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()` :
 
    * L’utilisateur appuie explicitement sur le bouton de pause dans l’application.
    * Le lecteur se place dans l’état de pause.
