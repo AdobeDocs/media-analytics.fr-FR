@@ -30,7 +30,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 </thead>
 <tbody>
 <tr>
-<td>Types de</td>
+<td>Contenu</td>
 <td>
 <p>eVar</p>
 <p>Délai d’expiration par défaut : Visite</p>
@@ -81,7 +81,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 </th>
 <th>Syntaxe Milestone
 </th>
-<th>Lien personnalisé
+<th>Syntaxe
 </th>
 <th>Syntaxe du lien personnalisé
 </th>
@@ -216,7 +216,7 @@ s.linkTrackEvents
 </th>
 <th>Syntaxe Milestone
 </th>
-<th>Lien personnalisé
+<th>Syntaxe
 </th>
 <th>Syntaxe du lien personnalisé
 </th>
@@ -345,7 +345,7 @@ s.linkTrackEvents
 </th>
 <th>Syntaxe Milestone
 </th>
-<th>Lien personnalisé
+<th>Syntaxe
 </th>
 <th>Syntaxe du lien personnalisé
 </th>
@@ -513,7 +513,7 @@ s.Media.
 </th>
 <th>Syntaxe Milestone
 </th>
-<th>Lien personnalisé
+<th>Syntaxe
 </th>
 <th>Syntaxe du lien personnalisé
 </th>
@@ -608,7 +608,7 @@ s.Media.
 </th>
 <th>Syntaxe Milestone
 </th>
-<th>Lien personnalisé
+<th>Syntaxe
 </th>
 <th>Syntaxe du lien personnalisé
 </th>
