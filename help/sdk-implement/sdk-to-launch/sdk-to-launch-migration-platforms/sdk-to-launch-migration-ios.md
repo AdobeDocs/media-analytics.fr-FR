@@ -1,19 +1,20 @@
 ---
-title: Migration du SDK multimédia autonome vers Adobe Launch - iOS
-description: Instructions et exemples de code pour faciliter la migration du SDK multimédia vers le lancement pour iOS.
-translation-type: tm+mt
+title: 'Migration du SDK Media autonome vers Adobe Launch : iOS'
+description: Instructions et exemples de code pour faciliter la migration du SDK Media vers Launch pour iOS.
+translation-type: ht
 source-git-commit: bc896cc403923e2f31be7313ab2ca22c05893c45
 
 ---
 
 
-# Migration du SDK multimédia autonome vers Adobe Launch - iOS
+# Migration du SDK Media autonome vers Adobe Launch : iOS
 
 ## Configuration
 
-### SDK de média autonome
+### SDK Media autonome
 
-Dans le SDK Media autonome, vous configurez la configuration du suivi dans l’application et le transmettez au SDK lorsque vous créez l’outil de suivi.
+Dans le SDK Media autonome, vous configurez le suivi dans l’application avant de le transmettre
+au SDK lorsque vous créez le dispositif de suivi.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config = 
@@ -31,24 +32,25 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:self config:config]; 
 ```
 
-### Extension de lancement
+### Extension de Launch
 
-1. Dans le lancement de la plate-forme d’expérience, cliquez sur l’onglet [!UICONTROL Extensions] pour votre propriété mobile.
-1. Dans l’onglet [!UICONTROL Catalogue] , recherchez l’extension Adobe Media Analytics pour l’audio et la vidéo, puis cliquez sur [!UICONTROL Installer].
-1. Dans la page des paramètres d’extension, configurez les paramètres de suivi.
-L’extension Media utilisera les paramètres configurés pour le suivi.
+1. Dans Experience Platform Launch, cliquez sur l’onglet [!UICONTROL Extensions] pour votre propriété mobile
+1. Dans l’onglet [!UICONTROL Catalogue], recherchez l’extension Adobe Media Analytics for Audio and Video, puis cliquez sur [!UICONTROL Installer].
+1. Dans la page des paramètres d’extension, configurez les paramètres de suivi. L’extension Media utilisera les paramètres configurés pour le suivi.
 
    ![](assets/launch_config_mobile.png)
 
 [Configuration de l’extension Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
-## Création du suivi
+## Création du dispositif de suivi
 
-### SDK de média autonome
+### SDK Media autonome
 
-Dans le SDK multimédia autonome, vous créez manuellement l’ `ADBMediaHeartbeatConfig` objet et configurez les paramètres de suivi. Mettez en oeuvre l’interface des délégués exposant les`getQoSObject()``getCurrentPlaybackTime()functions.`
+Dans le SDK Media autonome, vous créez manuellement l’objet `ADBMediaHeartbeatConfig`
+et vous configurez les paramètres de suivi. Implémentez l’interface déléguée exposant
+`getQoSObject()` et `getCurrentPlaybackTime()functions.`
 
-Créez une instance MediaHeartbeat pour le suivi :
+Créez une instance MediaHeartbeat pour le suivi :
 
 ```objective-c
 @interface PlayerDelegate : NSObject<ADBMediaHeartbeatDelegate>
@@ -83,11 +85,11 @@ ADBMediaHeartbeat* tracker =
   [[ADBMediaHeartbeat alloc] initWithDelegate:delegate config:config];
 ```
 
-### Extension de lancement
+### Extension de Launch
 
-[Référence de l’API Media - Création du suivi des médias](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Référence de l’API Media : création d’un outil de suivi des médias](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
 
-Avant de créer l'outil de suivi, enregistrez l'extension multimédia et les extensions dépendantes avec le noyau mobile.
+Avant de créer le dispositif de suivi, enregistrez l’extension média et les extensions dépendantes avec le noyau mobile.
 
 ```objective-c
 // Register the extension once during app launch
@@ -107,8 +109,8 @@ Avant de créer l'outil de suivi, enregistrez l'extension multimédia et les ext
 }
 ```
 
-Une fois l’extension multimédia enregistrée, le suivi peut être créé à l’aide de l’API suivante.
-Le suivi sélectionne automatiquement la configuration à partir de la propriété de lancement configurée.
+Une fois l’extension média enregistrée, le dispositif peut être créé à l’aide de l’API suivante.
+Le dispositif sélectionne automatiquement la configuration à partir de la propriété configurée dans Launch.
 
 ```objective-c
 [ACPMedia createTracker:^(ACPMediaTracker * _Nullable mediaTracker) {
@@ -116,28 +118,33 @@ Le suivi sélectionne automatiquement la configuration à partir de la propriét
 }];
 ```
 
-## Mise à jour des valeurs Playhead et Quality of Experience.
+## Mise à jour des valeurs Playhead (curseur de lecture) et Quality of Experience (qualité de l’expérience).
 
-### SDK de média autonome
+### SDK Media autonome
 
-Dans le SDK Media autonome, un objet délégué qui implémente le protocole est transmis lors de la création de l’outil de suivi.`ADBMediaHeartbeartDelegate` 
-L’implémentation doit renvoyer la dernière QoE et le curseur de lecture chaque fois que l’outil de suivi appelle les `getQoSObject()` méthodes et les `getCurrentPlaybackTime()` méthodes d’interface.
+Dans le SDK Media autonome, un objet délégué qui implémente le protocole
+`ADBMediaHeartbeartDelegate` est transmis lors de la création du dispositif de suivi.
+L’implémentation doit renvoyer la dernière qualité de l’expérience et le dernier curseur de lecture chaque fois que le dispositif appelle les méthodes d’interface `getQoSObject()` et `getCurrentPlaybackTime()`.
 
-### Extension de lancement
+### Extension de Launch
 
-L’implémentation doit mettre à jour le curseur de lecture du lecteur actuel en appelant la méthode exposée par`updateCurrentPlayhead` l’outil de suivi. Pour un suivi précis, vous devez appeler cette méthode au moins une fois par seconde.
+L’implémentation doit mettre à jour le curseur de lecture actuel du lecteur en appelant la
+méthode `updateCurrentPlayhead` exposée par le dispositif de suivi. Pour un suivi précis,
+vous devez appeler cette méthode au moins une fois par seconde.
 
-[Référence de l’API Media - Mettre à jour la tête de lecture actuelle](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Référence de l’API Media : mise à jour du curseur de lecture actuel](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
 
-L’implémentation doit mettre à jour les informations de QoE en appelant la méthode exposée par`updateQoEObject` l’outil de suivi. Vous devez appeler cette méthode chaque fois qu’il y a un changement dans les mesures de qualité.
+L’implémentation doit mettre à jour les informations relatives à la qualité de l’expérience en appelant la
+méthode `updateQoEObject` exposée par le dispositif de suivi. Vous devez appeler cette méthode
+chaque fois qu’il y a un changement dans les mesures de qualité.
 
-[Référence de l’API Media - Mettre à jour l’objet QoE](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Référence de l’API Media : mise à jour de l’objet QoE (qualité de l’expérience)](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
 
-## Transmission de métadonnées publicitaires/médias standard
+## Transmission de métadonnées publicitaires / médias standard
 
-### SDK de média autonome
+### SDK Media autonome
 
-* Métadonnées Media standard :
+* Métadonnées médias standard :
 
    ```objective-c
    ADBMediaObject *mediaObject = 
@@ -161,7 +168,7 @@ L’implémentation doit mettre à jour les informations de QoE en appelant la m
    [tracker trackSessionStart:mediaObject data:mediaMetadata];
    ```
 
-* Métadonnées de publicité standard:
+* Métadonnées de publicité standard :
 
    ```objective-c
    ADBMediaObject* adObject = 
@@ -189,9 +196,9 @@ L’implémentation doit mettre à jour les informations de QoE en appelant la m
             data:adDictionary];
    ```
 
-### Extension de lancement
+### Extension de Launch
 
-* Métadonnées Media standard :
+* Métadonnées médias standard :
 
    ```objective-c
    NSDictionary *mediaObject = 
@@ -214,7 +221,7 @@ L’implémentation doit mettre à jour les informations de QoE en appelant la m
    [_tracker trackSessionStart:mediaObject data:mediaMetadata];
    ```
 
-* Métadonnées de publicité standard:
+* Métadonnées de publicité standard :
 
    ```objective-c
    NSDictionary* adObject = 
