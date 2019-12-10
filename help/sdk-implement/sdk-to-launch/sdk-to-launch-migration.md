@@ -1,25 +1,29 @@
 ---
-seo-title: Migration du SDK multimédia autonome vers Adobe Launch
-title: Migration du SDK multimédia autonome vers Adobe Launch
-seo-description: Instructions et exemples de code pour faciliter la migration du SDK multimédia vers le lancement.
-description: Instructions et exemples de code pour faciliter la migration du SDK multimédia vers le lancement.
-translation-type: tm+mt
+seo-title: Migration du SDK Media autonome vers Adobe Launch
+title: Migration du SDK Media autonome vers Adobe Launch
+seo-description: Instructions et exemples de code pour faciliter la migration du SDK Media vers Launch.
+description: Instructions et exemples de code pour faciliter la migration du SDK Media vers Launch.
+translation-type: ht
 source-git-commit: ccc23ad0fc7073159431c50b8a8235b692803236
 
 ---
 
 
-# Migration du SDK multimédia autonome vers Adobe Launch
+# Migration du SDK Media autonome vers Adobe Launch
 
-Cette documentation se concentre principalement sur les différences d’implémentation de Media Analytics entre le SDK Media autonome et l’extension Media Analytics Launch.
+Cette documentation se concentre principalement sur les différences d’implémentation
+entre le SDK Media autonome et l’extension Media Analytics pour Launch.
 
-Le lancement offre aux clients un moyen simple de déployer et de gérer toutes les solutions d’analyse, de marketing et de publicité nécessaires pour générer des expériences de clients pertinentes sur le Web et les mobiles. Launch permet à quiconque de créer et de gérer ses propres intégrations avec Launch. Ces intégrations sont appelées extensions.
-Les extensions permettent aux clients de lancer une expérience de boutique d’applications, afin qu’ils puissent rapidement installer, configurer et déployer leurs solutions.
+Launch offre aux clients un moyen simple de déployer et gérer toutes les solutions d’analyse,
+de marketing et de publicité nécessaires pour proposer des expériences client
+pertinentes sur le Web ou sur mobile. Launch permet à tous les utilisateurs de créer et gérer leurs propres intégrations avec Launch. Ces intégrations sont appelées extensions.
+Les extensions sont disponibles pour les clients Launch sous la forme d’une expérience de boutique d’applications qui leur
+permet d’installer, configurer et déployer rapidement leurs solutions.
 
-Adobe Media Analytics pour l’audio et la vidéo est disponible en tant qu’extension de lancement pour le Web et les mobiles :
+Adobe Media Analytics for Audio and Video est disponible en tant qu’extension de Launch pour le Web et sur mobile :
 
-* [Documentation du lancement Web](https://docs.adobe.com/content/help/en/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
-* [Documentation sur le lancement mobile](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+* [Documentation de la version Web de Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Documentation de la version mobile de Launch](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
 ## Plateformes
 
