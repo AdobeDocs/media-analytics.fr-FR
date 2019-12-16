@@ -2,8 +2,8 @@
 title: 'Chronologie 3 : Chapitres'
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 22f7c21feb55f54c0c92db17eadc509966715cf3
 
 ---
 
@@ -432,7 +432,7 @@ Le premier chapitre se termine, juste avant la seconde coupure publicitaire.
         playhead: 20,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 
@@ -715,7 +715,7 @@ Suivez la fin du second chapitre et du dernier chapitre.
         playhead: 0,
         ts: <timestamp>
     },
-    eventType:chapterEnd
+    eventType:chapterComplete
 }
 ```
 
