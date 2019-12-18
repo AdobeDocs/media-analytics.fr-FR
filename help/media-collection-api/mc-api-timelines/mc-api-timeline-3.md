@@ -3,7 +3,7 @@ title: 'Chronologie 3 : Chapitres'
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 translation-type: tm+mt
-source-git-commit: 22f7c21feb55f54c0c92db17eadc509966715cf3
+source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
 
 ---
 
@@ -287,7 +287,7 @@ La coupure publicitaire est terminée. Du début à la fin de la coupure publici
 
 **Détails de mise en œuvre**
 
-Après l’événement `adBreakComplete`, placez le lecteur dans l’état « lecture » à l’aide de l’événement `play`.
+After the `adBreakComplete` event, put the player in the "playing" state using the `play` event.
 
 **Exemple de corps de requête**
 
