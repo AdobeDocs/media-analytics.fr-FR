@@ -5,8 +5,8 @@ uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 
 ---
 
@@ -15,42 +15,49 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Notes de mise à jour {#release-notes}
 
-* [Notes de mise à jour](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html)
+* [Notes de mise à jour](https://docs.adobe.com/content/help/en/release-notes/experience-cloud/current.html)
 
-## Mises à jour de la documentation {#documentation-updates}
+<!--
+## Documentation Updates{#documentation-updates}
 
-### Dernière mise à jour : octobre 2019 {#October-2019-update}
+### Last updated: October, 2019 {#October-2019-update}
 
-Nombreuses corrections de modification et de formatage.
-Les rubriques des guides pas à pas ont été étendues au-delà du SDK Media, y compris une nouvelle rubrique générale du guide sur « Les dimensions du média en dehors du suivi multimédia ».
+Numerous editing and formatting corrections. 
+Cookbook topics expanded beyond Media SDK, including a new general cookbook topic on "Media Dimensions
+outside Media Tracking."
 
 
-### Dernière mise à jour : 7 mars 2019 {#March-2019-update}
+### Last updated: March 7, 2019 {#March-2019-update}
 
-* Cette mise à jour est principalement destinée au SDK Media 2.2 sur les plates-formes JavaScript et OTT.
-* La version 2.2 du SDK Media sur les plateformes JavaScript et OTT fournit la même prise en charge que celle décrite ci-dessous pour les plates-formes iOS et Android (mise à jour du 1er novembre 2018).
+* This update was primarily for the 2.2 Media SDK release on the JavaScript and OTT platforms. 
+* The 2.2 Media SDK release on JavaScript and OTT platforms provides the same support as 
+  described below for the iOS and Android platforms (November 1, 2018 update).
 
-### Dernière mise à jour : 1er novembre 2018 {#November-2018-update}
+### Last updated: November 1, 2018 {#November-2018-update}
 
-* Cette mise à jour est principalement destinée au SDK Media 2.2 sur les plates-formes Android et iOS.
-* Le SDK Media 2.2 sur Android et iOS offre une assistance pour le suivi du contenu audio sur ces plates-formes, ainsi que des améliorations internes.
-* En plus du suivi du contenu audio et des fonctionnalités de suivi audio et vidéo désormais disponibles dans le SDK Media et l’API Media Collection, une mise à jour assez générale des termes utilisés est nécessaire :
+* This update was primarily for the 2.2 Media SDK release on the Android and iOS platforms. 
+* The 2.2 Media SDK release on Android and iOS provides support for tracking audio on those 
+  platforms, along with internal improvements.
+* With the addition of audio tracking, and with both audio and video tracking capabilities 
+  now available in both the Media SDK and the Media Collection API, a relatively wholesale 
+  naming update is called for:
 
-   * La solution globale est appelée Adobe Analytics for Audio and Video.
-   * L’abréviation précédemment utilisée dans les documents, « Video Analytics », a été remplacée par « Media Analytics ».
-   * Dans le SDK, les références à la « bibliothèque Video Heartbeat » ont été remplacées par « SDK Media ».
-   * Les noms de fichiers et les URL (par exemple les liens vers les références d’API) qui utilisaient auparavant « vidéo » ou « VHL » emploient désormais le terme « média ».
-   * Dans le code, les noms des clés de métadonnées incluent désormais « MEDIA » plutôt que « VIDEO »,
-   * etc.
+    * The overall solution is titled Adobe Analytics for Audio and Video
+    * The shorthand formerly used throughout the docs, "Video Analytics", is now "Media Analytics"
+    * In the SDK, references to "Video Heartbeat Library (VHL)" are now "Media SDK"
+    * Filenames and URLs (e.g., links to API references) that formerly referenced "video" or "vhl" now use "media" in their place
+    * In the code, the names of metadata keys now include "MEDIA" instead of "VIDEO"
+    * and so on...
 
-* En plus des éléments susmentionnés, une restructuration supplémentaire a été effectuée dans la section du SDK Media, notamment en ce qui concerne la mise en œuvre de métadonnées standard et les références renvoyant vers leurs propres rubriques (elles ont été intégrées aux rubriques *Suivi de la lecture principale* dans la précédente mise à jour des documents). Ces rubriques, ainsi que *Suivi de la lecture principale*, *Suivi de la recherche* et *Suivi de la mise en mémoire tampon*, sont désormais regroupées sous la rubrique *Suivi de la lecture audio et vidéo*.
+* Along with the above, some additional restructuring has occurred in the Media SDK section, including Standard Metadata implementation and reference returning to their own topics (they had been absorbed into the *Track Core* topics in the previous doc update). These topics, along with the *Track core*, and *Track seeking*, and *Track buffering* topics are now grouped together under *Track audio and video playback*.
 
-* Le formulaire Federated Analytics a été mis à jour vers la version 3.2 afin de refléter les nouveaux paramètres associés au suivi audio.
+* The Federated Analytics form was updated to Version 3.2, to reflect new parameters involved with tracking audio.
 
-### Mise à jour : 10 octobre 2018 {#October-2018-update}
+### Update: October 10, 2018 {#October-2018-update}
 
-* La structure du document a été repensée dans la section Mise en œuvre du SDK, en combinant les guides de mise en œuvre individuels des plates-formes (qui étaient presque identiques) en une seule section Mise en œuvre du SDK, avec des exemples de suivi propres aux plates-formes présentés dans des sous-sections au sein des rubriques communes relatives au suivi.
-* Les fichiers ont été renommés afin d’anticiper la migration vers un nouveau système de documents. Tous les préfixes DITA (c_, r_, t_ indiquant respectivement concept, référence et types de rubriques de tâches) ont été supprimés. Tous les traits de soulignement ('_') ont été remplacés par des traits d’union ('-'). En outre, les noms de fichiers sont désormais plus proches des titres des rubriques.
-* Mises à jour des rubriques générales Validation et Certification.
-* Nouveau contenu d’introduction, notamment une présentation des options de mesure et des mises à jour des prérequis, des chemins de mise en œuvre et de l’activation d’Audience Manager.
-* Mises à jour des sections Mesures et métadonnées et Rapports et analyses, reflétant l’ajout de fonctionnalités d’analyse audio.
+* Document structure was "refactored" in the SDK Implementation area, by combining the individual (but mostly identical) platform implementation guides into one SDK implementation section, with platform-specific tracking examples presented in sub-sections beneath common tracking topics. 
+* Files were renamed throughout in anticipation of a migration to a new doc system. All DITA prefixes ( c_, r_, t_ ) indicating concept, reference, and task topic types respectively) were eliminated. All underscores ('_') were replaced with hyphens ('-'). Also, file names now more closely resemble the titles of the topics.
+* Updates to general Validation and Certification topics.
+* New introductory material including a presentation of measurement options, along with updates to prerequisites, implementation paths, and Audience Manager enablement.
+* Updates to Metrics and Metadata and Reporting and Analysis sections, reflecting the addition of Audio Analytics capabilities.
+-->
