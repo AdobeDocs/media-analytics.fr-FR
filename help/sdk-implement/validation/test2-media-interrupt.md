@@ -2,19 +2,15 @@
 title: Test 2 Interruption du média
 description: Cette rubrique décrit le test d’interruption du média utilisé dans la validation.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Test 2 - Interruption du média {#test-media-interruption}
 
-Ce cas de test valide le comportement d’interruption mobile. Il s’agit d’un élément obligatoire de votre demande de certification.
-
-## Formulaire de demande de certification
-
-**Pour télécharger le formulaire de demande de certification, cliquez sur ==&gt;** [Formulaire de demande de certification.](cert_req_form.docx)
+Ce cas de test valide le comportement d’interruption mobile.
 
 ## Procédure de test
 
@@ -56,4 +52,3 @@ Vous devez effectuer et enregistrer ces tâches dans l’ordre suivant :
 1. **Fermeture du lecteur multimédia**
 
    Aucun autre appel de suivi ne doit être déclenché après la fermeture du lecteur multimédia.
-
