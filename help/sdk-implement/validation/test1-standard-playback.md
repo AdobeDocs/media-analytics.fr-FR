@@ -2,21 +2,15 @@
 title: Test 1 - Lecture standard
 description: Cette rubrique décrit le test de lecture standard utilisé dans la validation.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Test 1 : Lecture standard {#test-standard-playback}
 
-Ce cas de test valide la lecture et le séquencement généraux. Il s’agit d’un élément obligatoire de votre demande de certification.
-
-## Formulaire de demande de certification
-
-**Pour télécharger le formulaire de demande de certification, cliquez sur ==&gt;** [Formulaire de demande de certification.](cert_req_form.docx)
-
-## Présentation du test de certification 1
+Ce cas de test valide la lecture et le séquencement généraux.
 
 Les mises en œuvre de Media Analytics incluent deux types d’appels de suivi :
 * Appels effectués directement sur votre serveur Adobe Analytics (AppMeasurement) - Ces appels surviennent sur les événements « Démarrage du média » et « Démarrage de la publicité ».
@@ -145,4 +139,3 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 1. **Afficher le média suivant dans la liste de lecture** Au démarrage du média suivant dans une liste de lecture, un nouvel ensemble d’appels de démarrage du contenu multimédia doit être envoyé.
 
 1. **Changement de média ou de flux.** Lors du changement de diffusion en direct, un appel de fin Media Analytics pour la première diffusion ne doit pas être envoyé. Les appels de démarrage et de lecture du contenu multimédia doivent commencer par le nouveau nom d’affichage et de diffusion et avec les valeurs du curseur de lecture et de durée correctes pour le nouvel affichage.
-
