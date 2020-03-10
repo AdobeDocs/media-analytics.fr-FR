@@ -1,20 +1,17 @@
 ---
+seo-title: Aperçu
 title: Aperçu
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
 # Aperçu {#overview}
 
-L’API Media Collection constitue l’alternative RESTful d’Adobe au kit SDK Media côté client. Grâce à l’API Media Collection, votre lecteur peut effectuer le suivi des événements audio et vidéo à l’aide d’appels HTTP RESTful. L’API Media Collection offre le même suivi en temps réel que le SDK Media, ainsi qu’une fonctionnalité supplémentaire :
-
-* **Suivi du contenu téléchargé**
-
-   Cette fonctionnalité vous permet d’effectuer le suivi du média lorsqu’un utilisateur est hors ligne, par le biais du stockage local de données d’événement jusqu’à ce que l’appareil de l’utilisateur soit à nouveau en ligne. (Consultez la rubrique [Suivi du contenu téléchargé](track-downloaded-content.md) pour en savoir plus.)
+L’API Media Collection constitue l’alternative RESTful d’Adobe au kit SDK Media côté client. Grâce à l’API Media Collection, votre lecteur peut effectuer le suivi des événements audio et vidéo à l’aide d’appels HTTP RESTful.
 
 L’API Media Collection est essentiellement un adaptateur, agissant comme une version côté serveur du kit SDK Media. Cela signifie que certains aspects de la documentation du SDK Media sont également pertinents pour l’API Media Collection. Par exemple, les deux solutions utilisent les mêmes [paramètres audio et vidéo](/help/metrics-and-metadata/audio-video-parameters.md), et les données de suivi audio et vidéo collectées conduisent aux mêmes [rapports et analyses.](/help/media-reports/media-reports-enable.md)
 
@@ -34,13 +31,13 @@ Les données de suivi capturées avec l’API Media Collection sont envoyées et
 
 ### Appels API {#mc-api-calls}
 
-* **`sessions`-** Établit une session avec le serveur et renvoie un ID de session utilisé dans les appels `events` suivants. Votre application appelle ceci une fois au début d’une session de suivi.
+* **`sessions`-**Établit une session avec le serveur et renvoie un ID de session utilisé dans les appels`events`suivants. Votre application appelle ceci une fois au début d’une session de suivi.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-** Envoie des données de suivi multimédia.
+* **`events`-**Envoie des données de suivi multimédia.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
@@ -49,28 +46,28 @@ Les données de suivi capturées avec l’API Media Collection sont envoyées et
 ### Corps de requête {#mc-api-request-body}
 
 ```
-{ 
-    "playerTime": { 
-        "playhead": {playhead position in seconds}, 
-        "ts": {timestamp in milliseconds} 
-    }, 
-    "eventType": {event-type}, 
-    "params": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "qoeData" : { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    }, 
-    "customMetadata": { 
-        {parameter-name}: {parameter-value}, 
-        ... 
-        {parameter-name}: {parameter-value} 
-    } 
-} 
+{
+    "playerTime": {
+        "playhead": {playhead position in seconds},
+        "ts": {timestamp in milliseconds}
+    },
+    "eventType": {event-type},
+    "params": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "qoeData" : {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    },
+    "customMetadata": {
+        {parameter-name}: {parameter-value},
+        ...
+        {parameter-name}: {parameter-value}
+    }
+}
 ```
 
 * `playerTime` : Obligatoire pour toutes les requêtes.
@@ -99,4 +96,3 @@ Pour chaque `eventType`, il existe un [schéma de validation JSON](mc-api-ref/mc
 * `chapterComplete`
 * `sessionEnd`
 * `sessionComplete`
-
