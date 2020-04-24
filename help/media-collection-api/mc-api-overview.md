@@ -3,7 +3,7 @@ seo-title: Aperçu
 title: Aperçu
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
@@ -11,9 +11,9 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 # Aperçu {#overview}
 
-L’API Media Collection constitue l’alternative RESTful d’Adobe au kit SDK Media côté client. Grâce à l’API Media Collection, votre lecteur peut effectuer le suivi des événements audio et vidéo à l’aide d’appels HTTP RESTful.
+L’API Media Collection constitue l’alternative RESTful d’Adobe au SDK Media côté client. Grâce à l’API Media Collection, votre lecteur peut suivre les événements vidéo et audio à l’aide d’appels HTTP RESTful.
 
-L’API Media Collection est essentiellement un adaptateur, agissant comme une version côté serveur du kit SDK Media. Cela signifie que certains aspects de la documentation du SDK Media sont également pertinents pour l’API Media Collection. Par exemple, les deux solutions utilisent les mêmes [paramètres audio et vidéo](/help/metrics-and-metadata/audio-video-parameters.md), et les données de suivi audio et vidéo collectées conduisent aux mêmes [rapports et analyses.](/help/media-reports/media-reports-enable.md)
+L’API Media Collection est essentiellement un adaptateur, agissant comme une version côté serveur du SDK Media. Cela signifie que certains aspects de la documentation du SDK Media sont également pertinents pour l’API Media Collection. Par exemple, les deux solutions utilisent les mêmes [paramètres audio et vidéo](/help/metrics-and-metadata/audio-video-parameters.md), et les données de suivi audio et vidéo collectées conduisent aux mêmes [rapports et analyses.](/help/media-reports/media-reports-enable.md)
 
 ## Flux de données de suivi multimédia {#media-tracking-data-flows}
 
@@ -25,19 +25,19 @@ Les données de suivi capturées avec l’API Media Collection sont envoyées et
 
 ## Présentation de l’API {#api-overview}
 
-**URI :** Procurez-vous cette information auprès de votre représentant Adobe.
+**URI :** procurez-vous cette information auprès de votre représentant Adobe.
 
 **Méthode HTTP :** POST, avec corps de requête JSON.
 
 ### Appels API {#mc-api-calls}
 
-* **`sessions`-**Établit une session avec le serveur et renvoie un ID de session utilisé dans les appels`events`suivants. Votre application appelle ceci une fois au début d’une session de suivi.
+* **`sessions`**- Établit une session avec le serveur et renvoie un ID de session utilisé dans les appels`events`suivants. Votre application appelle ceci une fois au début d’une session de suivi.
 
    ```
    {uri}/api/v1/sessions
    ```
 
-* **`events`-**Envoie des données de suivi multimédia.
+* **`events`**- Envoie des données de suivi multimédia.
 
    ```
    {uri}/api/v1/sessions/{session-id}/events
