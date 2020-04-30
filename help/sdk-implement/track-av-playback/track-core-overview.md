@@ -16,12 +16,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Événements du lecteur
 
-Le suivi de la lecture principale inclut le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. Bien qu’il ne soit pas obligatoire, le suivi de la mise en mémoire tampon et de la recherche est également un composant principal du suivi de la lecture du contenu. Dans l’API de votre lecteur multimédia, identifiez les événements du lecteur qui correspondant aux appels de suivi du SDK Media, et codez vos gestionnaires d’événements pour appeler les API de suivi et renseigner les variables obligatoires et facultatives.
+Le suivi de la lecture principale comprend le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. Bien que non obligatoire, la mise en mémoire tampon du suivi et la recherche sont également des composants essentiels du suivi de la lecture du contenu. Dans l’API de votre lecteur multimédia, identifiez les événements du lecteur correspondant aux appels de suivi du SDK Media, et codez vos gestionnaires d’événements pour appeler les API de suivi et renseigner les variables obligatoires et facultatives.
 
 ### Au chargement du média
 
-* Créez l’objet multimédia.
-* Renseignez les métadonnées.
+* Créez l’objet multimédia
+* Renseignez les métadonnées
 * Appelez `trackSessionStart` ; Par exemple : `trackSessionStart(mediaObject, contextData)`
 
 ### Au démarrage du média
@@ -65,7 +65,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 1. **Installation initiale du suivi :** Déterminez le moment où l’utilisateur déclenche l’intention de lecture (l’utilisateur clique sur lecture et/ou la lecture automatique est activée) et créez une instance `MediaObject` à l’aide des informations sur le média pour le nom du contenu, l’ID de contenu, la durée du contenu et le type de diffusion.
 
-   **`MediaObject` Référence :**
+   **`MediaObject`Référence :**
 
    | Nom de variable | Description | Obligatoire |
    |---|---|---|
@@ -75,7 +75,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
    | `streamType` | Type de diffusion | Oui |
    | `mediaType` | Type de média (contenu audio ou vidéo) | Oui |
 
-   **Constantes `StreamType` :**
+   **`StreamType`Constantes :**
 
    | Nom de constante | Description |
    |---|---|
@@ -86,7 +86,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
    | `AUDIOBOOK` | Type de diffusion pour les livres audio. |
    | `PODCAST` | Type de diffusion pour les podcasts. |
 
-   **Constantes `MediaType` :**
+   **`MediaType`Constantes :**
 
    | Nom de constante | Description |
    |---|---|
@@ -95,7 +95,7 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
    Le format général pour la création de `MediaObject` est `MediaHeartbeat.createMediaObject(<MEDIA_NAME>, <MEDIA_ID>, <MEDIA_LENGTH>, <STREAM_TYPE>, <MEDIA_TYPE>);`
 
-1. **Joindre des métadonnées -** Vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi par le biais de variables de données contextuelles.
+1. **Joindre des métadonnées -** vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi par le biais de variables de données contextuelles.
 
    * **Métadonnées standard -**
 
@@ -131,12 +131,12 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 
 1. **Suivi de tous les scénarios de mise en pause possibles -** Identifiez l’événement du lecteur multimédia qui provoque la pause et appelez `trackPause`.
 
-   **Scénarios de pause  -** Identifiez tous les scénarios dans lesquels le lecteur sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()` :
+   **Scénarios de pause -** Identifiez tous les scénarios dans lesquels le lecteur sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()` :
 
-   * L’utilisateur appuie explicitement sur le bouton de pause dans l’application.
-   * Le lecteur se place dans l’état de pause.
-   * (*Applications mobiles*) - L’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application maintienne la session ouverte.
-   * (*Applications mobiles*) - Tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre le contenu à partir du point d’interruption.
+   * L’utilisateur appuie délibérément sur pause dans l’application.
+   * Le lecteur se met en pause.
+   * (*Applications mobiles*) : l’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application conserve la session ouverte.
+   * (*Applications mobiles*) : tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle provenant d’une autre application s’ouvre, mais vous souhaitez que l’application conserve la session ouverte pour donner à l’utilisateur la possibilité de reprendre le contenu à partir du point d’interruption.
 
 1. Identifiez l’événement du lecteur correspondant à la lecture et/ou à la reprise après une interruption et appelez `trackPlay`.
 
@@ -149,9 +149,9 @@ Le suivi de la lecture principale inclut le suivi du chargement du média, du d�
 1. Prêtez attention aux événements de mise en mémoire tampon de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferStart`.
 1. Une fois que vous avez reçu la notification de fin de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferComplete`.
 
-Consultez des exemples de chaque étape dans les rubriques suivantes spécifiques aux plates-formes, et examinez les exemples de lecteurs inclus dans vos SDK.
+Consultez des exemples de chaque étape dans les rubriques suivantes spécifiques aux plateformes, et examinez les exemples de lecteurs inclus dans vos SDK.
 
-Voici un exemple simple de suivi de lecture à l’aide du SDK JavaScript 2.x dans un lecteur HTML5 :
+Voici un exemple simple de suivi de lecture à l’aide du SDK JavaScript 2.x dans un lecteur HTML5 :
 
 ```js
 /* Call on media start */ 
