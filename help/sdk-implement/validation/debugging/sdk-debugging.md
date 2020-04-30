@@ -64,10 +64,10 @@ ADBMobile.config.setDebugLogging(true)
 
 ## Utilisation d’Adobe Bloodhound pour tester les applications Chromecast
 
-Pendant le développement des applications, Bloodhound permet d’afficher les appels de serveur localement et éventuellement de transférer les données vers les serveurs de collecte Adobe. Pour obtenir plus d’informations sur Bloodhound, consultez les guides suivants :
+Pendant le développement des applications, Bloodhound permet d’afficher les appels de serveur localement et éventuellement de transférer les données vers les serveurs de collecte Adobe. Pour plus d’informations sur l’utilisation de Bloodhound, consultez les guides suivants :
 
-* [Bloodhound 3.x pour Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
-* [Bloodhound 2.2 pour Windows](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
+* [Bloodhound 3.x pour Mac](https://marketing.adobe.com/resources/help/en_US/mobile/bloodhound/)
+* [Bloodhound 2.2 pour Windows](https://www.google.com/url?sa=t&amp;rct=j&amp;q=&amp;esrc=s&amp;source=web&amp;cd=3&amp;cad=rja&amp;uact=8&amp;ved=0ahUKEwjil9aM87jRAhUExlQKHTYZCjoQFggoMAI&amp;url=https%3A%2F%2Fmarketing.adobe.com%2Fresources%2Fhelp%2Fen_US%2Fmobile%2Fbloodhound_win_2x%2F&amp;usg=AFQjCNEW-gZp1IdbifWFDgDNEaQcGlBobg&amp;sig2=K0waTKxdMj_2kfNXdMI2yg)
 
 >[!IMPORTANT]
 >
@@ -82,14 +82,14 @@ Format: [<timestamp>] [<level>] [<tag>] [<message>]
 Example: [16:10:29 GMT­0700 (PDT).245] [DEBUG] [plugin::player] Resolving qos.startupTime: 0
 ```
 
-* **timestamp :** (horodatage) heure actuelle du processeur (fuseau horaire GMT)
-* **level :** (niveau) il existe 4 niveaux de message définis :
-   * INFO – (information) Généralement, données saisies dans l’application (nom du lecteur de validation, identifiant vidéo, etc.)
-   * DEBUG – (débogage) Journaux de débogage utilisés par les développeurs pour déboguer des problèmes plus complexes
-   * WARN – (avertissement) Erreurs potentielles d’intégration/de configuration ou bogues SDK de pulsation
-   * ERROR – (erreur) Erreurs d’intégration ou bogues SDK de pulsation importants
-* **tag :** nom du sous-composant qui a émis le message du journal (généralement le nom de classe)
-* **message :** message de trace
+* **date et heure :** il s’agit de l’heure actuelle du processeur (fuseau horaire GMT)
+* **niveau :** il existe quatre niveaux de message définis :
+   * INFO - généralement les données d’entrée de l’application (nom du lecteur de validation, ID de vidéo, etc.)
+   * DEBUG - journaux de débogage utilisés par les développeurs pour déboguer des problèmes plus complexes
+   * WARN - indique des erreurs potentielles d’intégration/de configuration ou des bogues du SDK Heartbeats
+   * ERROR - indique d’importantes erreurs d’intégration ou des bogues du SDK Heartbeats
+* **balise :** nom du sous-composant qui a émis le message du journal (généralement le nom de classe)
+* **message :** le message de trace réel
 
 Vous pouvez utiliser le résultat des journaux de la bibliothèque SDK Media pour vérifier la mise en œuvre. Rechercher la chaîne `#track` parmi les journaux est une bonne stratégie. Cela permet de mettre en évidence touts les appels `track*()` effectués par votre application.
 
