@@ -10,7 +10,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Adobe Experience Platform Launch {#adobe-launch}
 
-Media Analytics (Heartbeats) est la solution de suivi multimédia normalisée d’Adobe. Elle a remplacé le modèle Milestone plus ancien d’Adobe.
+Media Analytics (Heartbeats) est la solution de suivi de média normalisée d’Adobe. Elle a remplacé le modèle Milestone plus ancien d’Adobe.
 
 Adobe Experience Platform Launch, le produit associé à la Dynamic Tag Management, comprend une extension Launch qui facilite la mise en œuvre du suivi dans vos lecteurs multimédia.
 
