@@ -2,8 +2,8 @@
 title: Exclusion et confidentialité
 description: Comment gérer l’inclusion, l’exclusion et la confidentialité.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -15,7 +15,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil spécifique :
 
 * **Applications mobiles -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de la bibliothèque `AdobeMobile`. Pour exclure le suivi, vous devez utiliser la bibliothèque `AdobeMobile`. Pour en savoir plus sur les paramètres d’exclusion et de confidentialité de la bibliothèque `AdobeMobile`, consultez la rubrique [Paramètres d’exclusion et de confidentialité](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/gdpr-privacy-android/privacy.html).
-* **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. Pour plus d’informations sur l’exclusion et la confidentialité, consultez la rubrique [Service identité Adobe Experience Platform.](https://marketing.adobe.com/resources/help/fr_FR/mcvid/).
+* **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. Pour plus d’informations sur l’exclusion et la confidentialité, consultez la rubrique [Service identité Adobe Experience Platform.](https://docs.adobe.com/content/help/fr-FR/id-service/using/home.html).
 * **Applications OTT (Chromecast, Roku) -** Les SDK OTT fournissent des API conformes au Règlement général sur la protection des données (RGPD) qui vous permettent de définir des indicateurs d’état `opt` pour la collecte et la transmission de données, ainsi que de récupérer des identités stockées localement.
 
    >[!NOTE]
