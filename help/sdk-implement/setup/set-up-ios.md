@@ -2,8 +2,8 @@
 title: Configuration d’iOS
 description: Configuration de l’application du SDK Media pour l’implémentation sur iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -13,11 +13,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## Conditions préalables
 
 * **Obtention de paramètres de configuration valides pour le SDK Media** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
-* **Mise en œuvre d’ADBMobile pour iOS dans votre application** Pour plus d’informations sur la documentation du kit SDK Adobe Mobile, reportezvous à la rubrique [Kit SDK iOS 4.x pour les solutions Experience Cloud.](https://marketing.adobe.com/resources/help/fr_FR/mobile/ios/)
+* **Mise en œuvre d’ADBMobile pour iOS dans votre application** Pour plus d’informations sur la documentation du kit SDK Adobe Mobile, reportezvous à la rubrique [Kit SDK iOS 4.x pour les solutions Experience Cloud.](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/overview.html)
 
    >[!IMPORTANT]
    >
-   >À partir d’iOS 9, Apple a introduit une fonction appelée ATS (App Transport Security). Cette fonctionnalité vise à améliorer la sécurité du réseau en veillant à ce que vos applications utilisent uniquement des protocoles et des algorithmes de chiffrement standard. Cette fonctionnalité est activée par défaut, mais vous disposez d’options de configuration vous permettant d’effectuer des choix quant à l’utilisation d’ATS. Pour plus d’informations sur ATS, voir [Sécurité du transport des applications.](https://marketing.adobe.com/resources/help/fr_FR/mobile/ios/app_transport_security.html)
+   >À partir d’iOS 9, Apple a introduit une fonction appelée ATS (App Transport Security). Cette fonctionnalité vise à améliorer la sécurité du réseau en veillant à ce que vos applications utilisent uniquement des protocoles et des algorithmes de chiffrement standard. Cette fonctionnalité est activée par défaut, mais vous disposez d’options de configuration vous permettant d’effectuer des choix quant à l’utilisation d’ATS. Pour plus d’informations sur ATS, voir [Sécurité du transport des applications.](https://docs.adobe.com/content/help/en/mobile-services/ios/config-ios/app-transport-security.html)
 
 * **Fournissez les informations suivantes à votre lecteur multimédia :**
 
@@ -42,15 +42,15 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    1. Ajoutez la bibliothèque à votre projet :
 
       1. Lancez Xcode IDE et ouvrez votre application.
-      1. Dans **[!UICONTROL Navigateur de projets]**, faites glisser le répertoire `libs` sous votre projet.
+      1. In **[!UICONTROL Project Navigator]**, drag the `libs` directory and drop it under your project.
 
-      1. Assurez-vous que la case **[!UICONTROL Copier les éléments si nécessaire]** est cochée, que **[!UICONTROL Créer des groupes]** est sélectionné et qu’aucune des cases dans **[!UICONTROL Ajouter à la cible]** n’est cochée.
+      1. Ensure that the **[!UICONTROL Copy Items if Needed]** checkbox is selected, the **[!UICONTROL Create Groups]** is selected, and none of the checkboxes in **[!UICONTROL Add to Target]** are selected.
 
          ![](assets/choose-options_ios.png)
 
-      1. Cliquez sur **[!UICONTROL Terminer]**.
-      1. Dans **[!UICONTROL Navigateur de projets]**, sélectionnez votre application et vos cibles.
-      1. Liez les structures et bibliothèques requises dans la section **[!UICONTROL Structures liées]** et **[!UICONTROL Bibliothèques]** dans l’onglet **[!UICONTROL Général]**.
+      1. Cliquez sur **[!UICONTROL Finish]**.
+      1. In **[!UICONTROL Project Navigator]**, select your app and select your targets.
+      1. Link the required frameworks and libraries in the **[!UICONTROL Linked Frameworks]** and **[!UICONTROL Libraries]** section on the **[!UICONTROL General]** tab.
 
          **Cibles d’une application iOS :**
 
@@ -146,7 +146,7 @@ Effectuez les étapes suivantes dans votre projet Xcode. Ce guide est rédigé e
 
 1. Faites glisser le fichier de bibliothèque `VideoHeartbeat_TV.a` dans le dossier `lib` de votre projet.
 
-1. Dans l’onglet **[!UICONTROL Créer des phases]** de la cible de votre application tvOS, développez la section **[!UICONTROL Lier le fichier binaire avec les bibliothèques]** et ajoutez les bibliothèques suivantes :
+1. In the **[!UICONTROL Build Phases]** tab of your tvOS app’s target, expand the **[!UICONTROL Link Binary with Libraries]** section and add the following libraries:
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`
