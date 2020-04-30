@@ -13,12 +13,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 ## Conditions préalables
 
 * **Obtention de paramètres de configuration valides** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
-* **Mise en œuvre`AppMeasurement`pour JavaScript dans votre application multimédia** Pour plus d’informations sur la documentation du kit SDK Adobe Mobile, reportezvous à la rubrique [Mise en œuvre d’Analytics à l’aide de JavaScript.](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/js_implementation.html)
+* **Mise en œuvre`AppMeasurement`pour JavaScript dans votre application multimédia** Pour plus d’informations sur la documentation du SDK Adobe Mobile, reportez-vous à la rubrique [Mise en œuvre d’Analytics à l’aide de JavaScript.](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/js_implementation.html)
 
-* **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
+* **Fournissez les informations suivantes à votre lecteur multimédia :**
 
-   * *Une API pour vous abonner aux événements de lecteur* : Le kit SDK Media vous oblige à appeler une série d’API simples lorsque des événements ont lieu dans votre lecteur.
-   * *Une API fournissant des informations sur le lecteur* : Ces informations comprennent des détails tels que le nom du média et la position du curseur de lecture.
+   * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
+   * *Une API qui fournit des informations au lecteur* - Ces informations incluent des éléments tels que le nom du média et la position de la tête de lecture.
 
 1. Ajoutez la bibliothèque que vous avez [téléchargée](/help/sdk-implement/download-sdks.md#download-2x-sdks) à votre projet. Créez des références locales aux classes pour des raisons pratiques.
 
@@ -27,7 +27,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    1. Hébergez le fichier `MediaSDK.min.js`.
 
-      Ce fichier JavaScript principal doit être hébergé sur un serveur Web accessible par toutes les pages de votre site. Vous aurez besoin du chemin d’accès à ces fichiers à l’étape suivante.
+      Ce fichier JavaScript principal doit être hébergé sur un serveur web accessible par toutes les pages de votre site. Vous avez besoin du chemin d’accès à ces fichiers pour l’étape suivante.
 
    1. Référencez `MediaSDK.min.js` sur toutes les pages du site.
 
