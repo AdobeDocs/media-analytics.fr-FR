@@ -23,11 +23,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | --- | --- | :---: |
    | `name` | Nom du média | Oui |
    | `mediaid` | Identifiant unique du média | Oui |
-   | `length` | Durée du média | Oui |
+   | `length` | Longueur du média | Oui |
    | `streamType` | Type de diffusion (voir les constantes _StreamType_ ci-dessous) | Oui |
    | `mediaType` | Type de média (voir les constantes _MediaType_ ci-dessous) | Oui |
 
-   **Constantes `StreamType` :**
+   **`StreamType`Constantes :**
 
    | Nom de constante | Description   |
    |---|---|
@@ -38,7 +38,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `AUDIOBOOK` | Type de diffusion pour les livres audio. |
    | `PODCAST` | Type de diffusion pour les podcasts. |
 
-   **Constantes `MediaType` :**
+   **`MediaType`Constantes :**
 
    | Nom de constante | Description |
    |---|---|
@@ -143,10 +143,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifiez tous les scénarios dans lesquels le lecteur multimédia sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()` :
 
-   * L’utilisateur appuie explicitement sur le bouton de pause dans l’application.
-   * Le lecteur se place dans l’état de pause.
-   * (*Applications mobiles*) - L’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application maintienne la session ouverte.
-   * (*Applications mobiles*) - Tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre le média à partir du point d’interruption.
+   * L’utilisateur appuie délibérément sur pause dans l’application.
+   * Le lecteur se met en pause.
+   * (*Applications mobiles*) : l’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application conserve la session ouverte.
+   * (*Applications mobiles*) : tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle provenant d’une autre application apparaît, mais vous souhaitez que l’application conserve la session ouverte pour donner à l’utilisateur la possibilité de reprendre le média à partir du point d’interruption.
 
 1. Identifiez l’événement du lecteur correspondant à la lecture et/ou à la reprise après une interruption et appelez `trackPlay` :
 
@@ -158,6 +158,6 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture.
 
-* Scénarios de suivi : [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
-* Exemple de lecteur inclus dans le SDK JavaScript pour un exemple de suivi complet
+* Scénarios de suivi : [lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Exemple de lecteur inclus avec le SDK JavaScript pour un exemple de suivi complet.
 
