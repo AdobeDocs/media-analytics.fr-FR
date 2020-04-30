@@ -16,7 +16,7 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
 
 * **Applications mobiles -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de la bibliothèque `AdobeMobile`. Pour exclure le suivi, vous devez utiliser la bibliothèque `AdobeMobile`. Pour en savoir plus sur les paramètres d’exclusion et de confidentialité de la bibliothèque `AdobeMobile`, consultez la rubrique [Paramètres d’exclusion et de confidentialité](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/gdpr-privacy-android/privacy.html).
 * **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. Pour plus d’informations sur l’exclusion et la confidentialité, consultez la rubrique [Service identité Adobe Experience Platform.](https://marketing.adobe.com/resources/help/fr_FR/mcvid/).
-* **Applications OTT (Chromecast, Roku) -** Les SDK OTT fournissent des API conformes au Réglement général sur la protection des données (RGPD) qui vous permettent de définir des indicateurs d’état `opt` pour la collecte et la transmission de données, ainsi que de récupérer des identités stockées localement.
+* **Applications OTT (Chromecast, Roku) -** Les SDK OTT fournissent des API conformes au Règlement général sur la protection des données (RGPD) qui vous permettent de définir des indicateurs d’état `opt` pour la collecte et la transmission de données, ainsi que de récupérer des identités stockées localement.
 
    >[!NOTE]
    >
@@ -58,7 +58,7 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
-      * **Renvoi du paramètre actuel :**
+      * **Renvoyer le paramètre actuel :**
 
          * **Chromecast :**
 
@@ -83,12 +83,12 @@ Ces informations vous aident à récupérer les identités d’utilisateurs stoc
 
 Les identités stockées localement sont renvoyées dans une chaîne JSON, qui peut contenir :
 
-* Contexte de la société – ID d’organisation IMS
+* Contexte de l’entreprise - ID d’organisation IMS
 * Identifiants d’utilisateurs
-* Experience Cloud ID (MCID)
-* ID de sources de données (DPID, DPUUID)
-* Analytics ID (AVID, AID, VID et RSID associés)
-* Audience Manager ID (UUID)
+* Experience Cloud ID (MCID)
+* ID de source de données (DPID, DPUUID)
+* Analytics ID (AVID, AID, VID et RSID associés)
+* Audience Manager ID (UUID)
 
 Par exemple :
 
