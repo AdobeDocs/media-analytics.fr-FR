@@ -10,9 +10,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Côté client {#client-side}
 
-Media Analytics (Heartbeats) est la solution de suivi multimédia normalisée d’Adobe. Elle a remplacé le modèle Milestone plus ancien d’Adobe.
+Media Analytics (Heartbeats) est la solution de suivi de média normalisée d’Adobe. Elle a remplacé le modèle Milestone plus ancien d’Adobe.
 
-Les intégrations côté client sont mises en œuvre avec Media Analytics uniquement. Vous pouvez choisir de mettre en œuvre le kit SDK Media ou l’API Media Collection (ou les deux). Le chemin côté client peut être utilisé dans tout lecteur, y compris les lecteurs client et/ou OVP tels que Brightcove, Ooyala, thePlatform, etc.
+Les intégrations côté client sont mises en œuvre avec Media Analytics uniquement. Vous pouvez choisir de mettre en œuvre le SDK Media ou l’API Media Collection (ou les deux). Le chemin côté client peut être utilisé dans n’importe quel lecteur, y compris les lecteurs client et/ou OVP tels que Brightcove, Ooyala, thePlatform, etc.
 
 Si Media Analytics est le chemin que vous choisissez, consultez [Mise en œuvre du SDK Media](/help/sdk-implement/setup/setup-overview.md) et [API Media Collection](/help/media-collection-api/mc-api-overview.md)
 
