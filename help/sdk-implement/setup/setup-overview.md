@@ -31,9 +31,9 @@ Le tableau suivant décrit les versions minimum de plateforme prises en charge p
 ## Instructions générales de mise en œuvre {#general-implementation-guidelines}
 
 Trois composants principaux du SDK sont impliqués dans le suivi multimédia :
-* Media Heartbeat Config : La configuration contient les paramètres de base des rapports.
-* Media Heartbeat Delegate : Le délégué contrôle la durée de lecture et l’objet QoS.
-* Media Heartbeat : La bibliothèque principale contient les membres et les méthodes.
+* Media Heartbeat Config : la configuration contient les paramètres de base des rapports.
+* Media Heartbeat Delegate : le délégué contrôle la durée de lecture et l’objet QoS.
+* Media Heartbeat : la bibliothèque principale contient les membres et les méthodes.
 
 Suivez les étapes de mise en œuvre suivantes :
 
@@ -43,7 +43,7 @@ Suivez les étapes de mise en œuvre suivantes :
    |---|---|:---:|---|
    | `trackingServer` | Serveur de suivi pour Media Analytics. Différent de votre serveur de suivi Analytics. | Oui | Chaîne vide |
    | `channel` | Nom du canal | Non | Chaîne vide |
-   | `ovp` | Nom de la plate-forme multimédia en ligne sur laquelle le contenu est distribué | Non | Chaîne vide |
+   | `ovp` | Nom de la plateforme multimédia en ligne sur laquelle le contenu est distribué | Non | Chaîne vide |
    | `appVersion` | Version de l’application/du kit SDK du lecteur multimédia | Non | Chaîne vide |
    | `playerName` | Nom du lecteur multimédia en cours d’utilisation ; par exemple, « AVPlayer », « Lecteur HTML5 », « Mon lecteur personnalisé ». | Non | Chaîne vide |
    | `ssl` | Indique si les appels doivent être effectués par HTTPS | Non | false |
@@ -81,7 +81,7 @@ Suivez les étapes de mise en œuvre suivantes :
 
 1. Combinez tous les éléments.
 
-   L’exemple de code suivant utilise notre SDK JavaScript 2.x pour un lecteur vidéo HTML5 :
+   L’exemple de code suivant utilise notre SDK JavaScript 2.x pour un lecteur vidéo HTML5 :
 
    ```javascript
    // Create local references to the heartbeat classes 
@@ -137,7 +137,7 @@ Les mises en œuvre de suivi Media Analytics génèrent deux types d’appels de
 * ** Serveur Media Analytics (Heartbeats)**
 Ceci a toujours le format « `[your_namespace].hb.omtrdc.net` ». La valeur de « `[your_namespace]` » indique votre société et est fournie par Adobe.
 
-Le suivi multimédia fonctionne de la même manière sur toutes les plates-formes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plates-formes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :
+Le suivi multimédia fonctionne de la même manière sur toutes les plateformes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plateformes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :
 
 ## Documentation SDK 1.x {#sdk-1x-documentation}
 
@@ -148,7 +148,7 @@ Le suivi multimédia fonctionne de la même manière sur toutes les plates-forme
 | Chromecast | [Configuration pour Chromecast ](chromecast_1.x_sdk.pdf) |
 | iOS | [Configuration pour iOS ](vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [Configuration pour JavaScript ](vhl-dev-guide-v15_js.pdf) |
-| Primetime | <ul> <li> Android :   [Configuration de Media Analytics](https://help.adobe.com/en_US/primetime/psdk/android/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS :   [Configuration de Media Analytics](https://help.adobe.com/en_US/primetime/psdk/dhls/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS :   [Configuration de Media Analytics](https://help.adobe.com/en_US/primetime/psdk/ios/1.4/index.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
+| Primetime | <ul> <li> Android : [Configuration de Media Analytics](https://helpx.adobe.com/fr/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> DHLS : [Configuration de Media Analytics](https://helpx.adobe.com/fr/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> <li> iOS : [Configuration de Media Analytics](https://helpx.adobe.com/fr/support/primetime.html#PSDKs-task-Initialize_and_configure_video_analytics_) </li> </ul> |
 | TVML | [Configuration pour TVML ](vhl_tvml.pdf) |
 
 ## Documentation du SDK Media Primetime {#primetime-docs}
