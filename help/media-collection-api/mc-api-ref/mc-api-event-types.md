@@ -20,8 +20,8 @@ Envoyé lorsque le lecteur passe à l’état « lecture » à partir d’un a
 
 ## ping
 
-* **Contenu principal** : Doit être envoyé toutes les 10 secondes pendant la lecture du contenu principal, indépendamment des autres événements API ayant été envoyés. Le premier événement ping doit se déclencher 10 secondes après le démarrage de la lecture du contenu principal.
-* **Contenu de la publicité** : Doit être envoyé toutes les secondes pendant le suivi publicitaire.
+* **Contenu principal -** doit être envoyé toutes les 10 secondes pendant la lecture du contenu principal, indépendamment des autres événements API ayant été envoyés. Le premier événement ping doit se déclencher 10 secondes après le démarrage de la lecture du contenu principal.
+* **Contenu de la publicité -** doit être envoyé toutes les secondes pendant le suivi publicitaire.
 
 Les événements ping ne doivent *pas* inclure la carte `params` dans le corps de la requête.
 
