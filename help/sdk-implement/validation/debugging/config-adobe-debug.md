@@ -29,7 +29,7 @@ Pour accéder à Adobe Debug :
    * Google Chrome
    * Mozilla Firefox
    * Apple Safari
-   * Microsoft Internet Explorer versions 9 à 11
+   * Microsoft Internet Explorer versions 9 à 11
 
 Les navigateurs recommandés sont les dernières versions de Chrome et Firefox.
 
@@ -40,11 +40,11 @@ Télécharger et configurer Debug Proxy :
 1. Téléchargez l’application Debug Proxy sur la page de [téléchargement des applications.](https://debug.adobe.com/#/downloads)
 
    Les systèmes d’exploitation pris en charge sont les suivants :
-   * OS X 10.7 64 bits ou version supérieure
-   * Windows 7.1 64 bits ou version supérieure
+   * OS X 10.7 64 bits ou version ultérieure
+   * Windows 7.1 64 bits ou version ultérieure
    ![](assets/debug-proxy-app.png)
 
-1. Le serveur Debug Proxy s’exécute sur votre ordinateur local sur le port 33284 et est défini comme proxy système.
+1. Le serveur Debug Proxy s’exécute sur votre ordinateur local sur le port 33284 et est défini comme proxy système.
 
    Vous devrez peut-être régler le paramètre de votre navigateur en fonction du système d’exploitation et du navigateur.
 
@@ -57,16 +57,16 @@ Téléchargez et installez le certificat SSL :
 1. Après avoir installé et démarré Adobe Debug, accédez à [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl) et téléchargez la certification.
 1. Importez le certificat
 
-   **Mac OS**
-   1. Cliquez deux fois sur le certificat d’autorité de certification racine pour l’ouvrir dans Keychain Access.
+   **Mac OS**
+   1. Double-cliquez sur le certificat d’autorité de certification racine pour l’ouvrir dans Keychain Access.
    1. Le certificat d’autorité de certification racine apparaît à la connexion.
    1. Déplacez (faites glisser) le certificat d’autorité de certification racine vers Système.
-   1. Vous devez copier le certificat vers Système pour vous assurer qu’il est approuvé par tous les utilisateurs et les processus système locaux.
+   1. Vous devez copier le certificat dans le système pour vous assurer qu’il est approuvé par tous les utilisateurs et par les processus système locaux.
    1. Ouvrez le certificat d’autorité de certification racine, développez Approbation, sélectionnez Toujours approuver et enregistrez vos modifications.
    **Windows**
    1. Procédez de l’une des manières suivantes :
 
-      * [Ajout de certificats au magasin d’autorités de certification racine approuvées pour un ordinateur local](https://technet.microsoft.com/fr-fr/library/cc754841.aspx#BKMK_addlocal)
+      * [Ajout de certificats au magasin des autorités de certification racine approuvées pour un ordinateur local](https://technet.microsoft.com/fr-fr/library/cc754841.aspx#BKMK_addlocal)
 <!--        * [How To Import a Trusted Root Certification Authority In Windows 7/Vista/XP](https://www.sqlservermart.com/HowTo/Windows_Import_Certificate.aspx) You might need to quit and reopen your browser to see the change.
 -->
 
@@ -75,7 +75,7 @@ Téléchargez et installez le certificat SSL :
     Vous devrez peut-être quitter et rouvrir Firefox pour voir le changement.
     
     **Appareils iOS**
-    1. Configurez votre appareil iOS pour qu’il utilise Adobe Debug comme proxy HTTP en cliquant sur **[!UICONTROL Paramètres d’application] ** **&gt;** ** [!UICONTROL Paramètres Wi-Fi]**.
+    1. Configurez votre appareil iOS pour qu’il utilise Adobe Debug comme proxy HTTP en cliquant sur **[!UICONTROL Paramètres d’application] ** **>** ** [!UICONTROL Paramètres Wi-Fi]**.
     
     1. Dans Safari, accédez à [Débogage.](https://proxy.debug.adobe.com/ssl)
     
@@ -93,7 +93,7 @@ Pour installer le certificat SSL sur un appareil iOS :
 1. Effectuez les étapes suivantes sur votre appareil iOS :
    1. Mettez votre appareil en mode avion.
    1. Sélectionnez le signal Wi-Fi utilisé par votre ordinateur portable.
-   1. Sur votre ordinateur portable, définissez manuellement l’adresse IP et le port affichés dans l’application Debug Proxy.
+   1. Sur votre ordinateur portable, définissez manuellement l’adresse IP et le port affichés sur l’application Debug Proxy.
    1. Ouvrez une fenêtre de navigateur Apple Safari.
    1. Accédez à [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. Téléchargez et installez le certificat SSL.
@@ -109,8 +109,8 @@ Pour installer le certificat SSL sur un appareil Android :
 1. Effectuez les étapes suivantes sur votre appareil Android :
    1. Mettez votre appareil en mode avion.
    1. Sélectionnez le signal Wi-Fi utilisé par votre ordinateur portable.
-   1. Sur votre ordinateur portable, définissez manuellement l’adresse IP et le port affichés dans l’application Debug Proxy.
-   1. Ouvrez une fenêtre de navigateur.
+   1. Sur votre ordinateur portable, définissez manuellement l’adresse IP et le port affichés sur l’application Debug Proxy.
+   1. Ouvrez une fenêtre du navigateur.
    1. Accédez à [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
    1. Téléchargez et installez le certificat SSL.
 
