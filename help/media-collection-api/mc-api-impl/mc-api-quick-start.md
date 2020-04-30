@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 >[!TIP]
 >
->Rassemblez les données de demande nécessaires pour terminer une [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) sur le serveur principal de l’API Collection de Media Analytics (MA). Vous pouvez vérifier rapidement vos données de requête en envoyant les requêtes manuellement (avec `curl`, Postman, etc.). Vous obtenez ainsi un feedback immédiat indiquant l’existence ou non de problèmes de types de données incorrects ou d’informations incorrectes dans votre requête. Utilisez les [schémas de validation JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) pour vérifier que vous fournissez des données de requête correctes.
+>Rassemblez les données de demande nécessaires pour terminer une [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) sur le serveur principal de l’API Collection de Media Analytics (MA). Vous pouvez vérifier rapidement vos données de requête en envoyant les requêtes manuellement (avec `curl`, Postman, etc.). Vous obtenez ainsi un feedback immédiat indiquant l’existence ou non de problèmes de types de données incorrects ou d’informations incorrectes dans votre requête. Utilisez les [schémas de validation JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) pour vérifier que vous fournissez des données de requêtes correctes.
 
 1. Rassemblez les données Adobe Analytics et de visiteur standard que vous devez fournir pour exécuter l’une des applications Experience Cloud :
 
