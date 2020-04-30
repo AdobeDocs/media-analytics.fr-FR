@@ -113,8 +113,8 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
       + [Contenu principal en direct avec suivi séquentiel](sdk-implement/tracking-scenarios/live-sequential.md)
    + Validation {#validation}
       + [Aperçu de la validation](sdk-implement/validation/validation-overview.md)
-      + [Test 1 : Lecture standard](sdk-implement/validation/test1-standard-playback.md)
-      + [Test 2 : Interruption des médias](sdk-implement/validation/test2-media-interrupt.md)
+      + [Test 1 - Lecture standard](sdk-implement/validation/test1-standard-playback.md)
+      + [Test 2 - Interruption des médias](sdk-implement/validation/test2-media-interrupt.md)
       + [Détails des appels de test](sdk-implement/validation/test-call-details.md)
       + [Descriptions des paramètres Heartbeat](sdk-implement/validation/heartbeat-params.md)
       + Débogage {#debugging}
