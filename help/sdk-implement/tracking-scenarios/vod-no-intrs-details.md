@@ -12,13 +12,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Scénario {#scenario}
 
-Ce scénario comprend une ressource VOD, sans publicité, qui est lue une fois du début jusqu’à la fin.
+Ce scénario comporte une ressource VOD, sans publicité, qui est lue une fois du début à la fin.
 
 | Déclencheur | Méthode Heartbeat | Appels réseau | Remarques   |
 |---|---|---|---|
 | L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur Lecture ou d’un événement de lecture automatique. |
-| Première image du média | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur et, dès lors, des pulsations sont envoyées toutes les 10 secondes pendant toute la durée de la lecture. |
-| Lecture du contenu |  | Content Heartbeats |  |
+| Première image du média | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur. À partir de ce moment, des pulsations sont envoyées toutes les 10 secondes pendant la durée de la lecture. |
+| Le contenu est lu |  | Content Heartbeats |  |
 | Contenu terminé | `trackComplete` | Heartbeat Content Complete | *Complete* signifie que le curseur de lecture a atteint la fin de sa course. |
 
 ## Paramètres {#parameters}
@@ -29,17 +29,17 @@ Un grand nombre de ces valeurs que vous pouvez voir dans les appels Heartbeat es
 
 | Paramètre | Valeur | Remarques   |
 |---|---|---|
-| `s:sc:rsid` | &lt;Identifiant de votre suite de rapports Adobe&gt; |  |
-| `s:sc:tracking_server` | &lt;URL de votre serveur de suivi Analytics&gt; |  |
+| `s:sc:rsid` | &lt;Identifiant de votre suite de rapports Adobe> |  |
+| `s:sc:tracking_server` | &lt;URL de votre serveur de suivi Analytics> |  |
 | `s:user:mid` | à définir | Doit correspondre à la valeur intermédiaire de l’appel `Adobe Analytics Content Start`. |
 | `s:event:type` | `"start"` |  |
 | `s:asset:type` | `"main"` |  |
-| `s:asset:media_id` | &lt;Nom de votre média&gt; |  |
+| `s:asset:media_id` | &lt;Nom de votre média> |  |
 | `s:meta:*` | facultatif | Métadonnées personnalisées définies sur le média. |
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-Ces paramètres semblent en tout point identiques à l’appel `Heartbeat Content Start`, mais la différence majeure réside dans le paramètre `s:event:type`. Tous les autres paramètres doivent toujours exister.
+Ces paramètres semblent en tout point identiques à l’appel `Heartbeat Content Start`, mais la différence majeure réside dans le paramètre `s:event:type`. Tous les paramètres doivent rester en place.
 
 | Paramètre | Valeur | Remarques   |
 |---|---|---|
@@ -48,18 +48,18 @@ Ces paramètres semblent en tout point identiques à l’appel `Heartbeat Conten
 
 ## Content Heartbeats {#content-heartbeats}
 
-Lors de la lecture du média, un minuteur envoie au moins une pulsation toutes les 10 secondes. Ces pulsations contiennent des informations concernant la lecture, les publicités, la mise en mémoire tampon, etc. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
+Lors de la lecture du média, un minuteur envoie au moins une pulsation toutes les 10 secondes. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
 Dans les pulsations du contenu, recherchez les paramètres suivants :
 
 | Paramètres | Valeur | Remarques   |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
-| `l:event:playhead` | &lt;position du curseur de lecture&gt; par exemple, 50,60,70 | Ce paramètre indique la position actuelle du curseur de lecture. |
+| `l:event:playhead` | &lt;position du curseur de lecture> par exemple, 50,60,70 | Ce paramètre indique la position actuelle du curseur de lecture. |
 
 ## Heartbeat Content Complete {#heartbeat-content-complete}
 
-Une fois la lecture terminée, c’est-à-dire lorsque le curseur de lecture a atteint la fin de sa course, un appel `Heartbeat Content Complete` est envoyé. Celui-ci ressemble aux autres appels Heartbeat, mais se différencie par certains paramètres spécifiques :
+Une fois la lecture terminée, c’est-à-dire lorsque le curseur de lecture a atteint la fin de sa course, un appel `Heartbeat Content Complete` est envoyé. Cet appel ressemble à d’autres appels Heartbeat, mais se différencie par certains éléments spécifiques :
 
 | Paramètres | Valeur | Remarques   |
 |---|---|---|
@@ -68,7 +68,7 @@ Une fois la lecture terminée, c’est-à-dire lorsque le curseur de lecture a a
 
 ## Exemple de code {#sample-code}
 
-Dans ce scénario, le contenu dure 40 secondes. Il est lu jusqu’à la fin sans aucune interruption.
+Dans ce scénario, le contenu dure 40 secondes. Il est lu jusqu’à la fin sans interruption.
 
 ![](assets/main-content-regular-playback.png)
 
