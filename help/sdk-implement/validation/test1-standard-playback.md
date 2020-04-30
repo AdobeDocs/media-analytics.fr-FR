@@ -2,13 +2,13 @@
 title: Test 1 - Lecture standard
 description: Cette rubrique décrit le test de lecture standard utilisé dans la validation.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 ---
 
 
-# Test 1 : Lecture standard {#test-standard-playback}
+# Test 1 - Lecture standard{#test-standard-playback}
 
 Ce cas de test valide la lecture et le séquencement généraux.
 
@@ -19,7 +19,7 @@ Les mises en œuvre de Media Analytics incluent deux types d’appels de suivi 
    * Hors-bande - Ces appels peuvent se produire à tout moment, notamment en cas de pauses, de mises en mémoire tampon, d’erreurs, de contenu terminé, de publicité terminée, etc.
 
 >[!NOTE]
->Le suivi multimédia se comporte de la même manière sur toutes les plates-formes.
+>Le suivi multimédia se comporte de la même manière sur toutes les plateformes.
 
 ## Procédure de test
 
@@ -107,7 +107,7 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 
 
 
-1. **Suspendre la lecture de la publicité pendant 30 secondes si possible.**  **Pause de la publicité**
+1. **Suspendre la lecture de la publicité pendant 30 secondes si possible.** **Pause de la publicité**
 
    Pendant la pause de la publicité, les appels de pulsation ou « pings » de Media Analytics sont envoyés par le SDK au serveur Media Analytics toutes les secondes.
 
@@ -117,7 +117,7 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 
    Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/sdk-implement/validation/test-call-details.md#ma-ad-pause-call)
 
-1. **Lire le contenu principal pendant 10 minutes sans interruption.**  **Lecture du contenu**
+1. **Lire le contenu principal pendant 10 minutes sans interruption.** **Lecture du contenu**
 
    Lors de la lecture du contenu principal, le SDK Media envoie des pulsations (appels de lecture) au serveur Media Analytics toutes les 10 secondes.
 
