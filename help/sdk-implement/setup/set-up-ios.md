@@ -17,12 +17,12 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    >[!IMPORTANT]
    >
-   >À partir d’iOS 9, Apple a introduit une fonction appelée ATS (App Transport Security). Cette fonction vise à améliorer la sécurité du réseau en s’assurant que vos applications utilisent uniquement des protocoles et des codes aux normes industrielles. Cette fonction est activée par défaut, mais des options de configuration vous permettent d’effectuer des choix quant à l’utilisation d’ATS. Pour plus d’informations sur ATS, voir [Sécurité du transport des applications.](https://marketing.adobe.com/resources/help/fr_FR/mobile/ios/app_transport_security.html)
+   >À partir d’iOS 9, Apple a introduit une fonction appelée ATS (App Transport Security). Cette fonctionnalité vise à améliorer la sécurité du réseau en veillant à ce que vos applications utilisent uniquement des protocoles et des algorithmes de chiffrement standard. Cette fonctionnalité est activée par défaut, mais vous disposez d’options de configuration vous permettant d’effectuer des choix quant à l’utilisation d’ATS. Pour plus d’informations sur ATS, voir [Sécurité du transport des applications.](https://marketing.adobe.com/resources/help/fr_FR/mobile/ios/app_transport_security.html)
 
-* **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
+* **Fournissez les informations suivantes à votre lecteur multimédia :**
 
-   * _Une API pour vous abonner aux événements de lecteur_ : Le kit SDK Media vous oblige à appeler une série d’API simples lorsque des événements ont lieu dans votre lecteur.
-   * _Une API fournissant des informations sur le lecteur_ : Ces informations comprennent des détails tels que le nom du média et la position du curseur de lecture.
+   * _Une API pour vous abonner aux événements du lecteur_ - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
+   * _Une API qui fournit des informations au lecteur_ - Ces informations incluent des éléments tels que le nom du média et la position de la tête de lecture.
 
 ## Implémentation du SDK
 
@@ -38,13 +38,13 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
       * `MediaSDK_TV.a` : binaire gras en bytecode contenant les versions de bibliothèque pour les nouveaux appareils (arm64) et le nouveau simulateur (x86_64) Apple TV.
 
-         Ce binaire doit être lié lorsque la cible est destinée à une application Apple TV (tvOS).
+         Ce binaire doit être lié lorsque la cible est destinée à une application Apple TV (tvOS).
    1. Ajoutez la bibliothèque à votre projet :
 
       1. Lancez Xcode IDE et ouvrez votre application.
-      1. Dans **[!UICONTROL Project Navigator]** (Navigateur de projets), faites glisser le répertoire `libs` sous votre projet.
+      1. Dans **[!UICONTROL Navigateur de projets]**, faites glisser le répertoire `libs` sous votre projet.
 
-      1. Assurez-vous que la case **[!UICONTROL Copy Items if Needed]** (Copier les éléments si nécessaire) est cochée, que **[!UICONTROL Create Groups]** (Créer des groupes) est sélectionné et qu’aucune des cases dans **[!UICONTROL Add to Target]** (Ajouter à la cible) n’est cochée.
+      1. Assurez-vous que la case **[!UICONTROL Copier les éléments si nécessaire]** est cochée, que **[!UICONTROL Créer des groupes]** est sélectionné et qu’aucune des cases dans **[!UICONTROL Ajouter à la cible]** n’est cochée.
 
          ![](assets/choose-options_ios.png)
 
@@ -140,9 +140,9 @@ Pour en savoir plus sur la migration de la version 1.x vers 2.x, consultez la r
 
 ## Configuration d’une application native pour tvOS
 
-Avec la sortie de la nouvelle Apple TV, vous pouvez désormais créer des applications s’exécutant dans l’environnement natif de tvOS. Vous pouvez soit créer une application complètement native, à l’aide des différentes structures disponibles dans iOS, soit créer votre application à l’aide de modèles XML et de JavaScript. La version 2.0 du SDK Media prend désormais en charge tvOS. Pour en savoir plus sur tvOS, consultez le [site du développeur tvOS.](https://developer.apple.com/tvos/)
+Avec la sortie de la nouvelle Apple TV, vous pouvez désormais créer des applications s’exécutant dans l’environnement natif de tvOS. Vous pouvez soit créer une application complètement native, à l’aide des différentes structures disponibles dans iOS, soit créer votre application à l’aide de modèles XML et de JavaScript. La version 2.0 du SDK Media prend désormais en charge tvOS. Pour en savoir plus sur tvOS, consultez le [site du développeur tvOS.](https://developer.apple.com/tvos/)
 
-Procédez comme suit dans votre projet Xcode. Ce guide suppose que votre projet concerne une application Apple TV ciblant tvOS :
+Effectuez les étapes suivantes dans votre projet Xcode. Ce guide est rédigé en supposant que votre projet dispose d’une cible qui est une application Apple TV ciblant tvOS :
 
 1. Faites glisser le fichier de bibliothèque `VideoHeartbeat_TV.a` dans le dossier `lib` de votre projet.
 
