@@ -14,15 +14,15 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 >
 >Ces segments de création de rapports associés au type de diffusion multimédia ont été introduits le 13/09/18 avec le paramètre `streamType`.
 
-| Segment | Description | Règle |
+| Segment | Description | Composants de |
 |---|---|---|
-| Type de diffusion multimédia : Tous | Segmente toutes les données de diffusion *multimédia* | « Contenu (ID) présent » |
-| Type de diffusion multimédia : Audio | Segmente toutes les données de diffusion *audio* | " Contenu (ID) présent " ET " Type de diffusion multimédia = `audio` " |
-| Type de diffusion multimédia : Vidéo | Segmente toutes les données de diffusion *vidéo* | « Contenu (ID) présent » ET « Type de diffusion multimédia= `audio` » |
-| Type de contenu multimédia : VoD | Segmente tout le contenu VoD | "Type de contenu = `vod`" |
-| Type de contenu multimédia : En direct | Segmente tout le contenu en direct | "Type de contenu = `live`" |
-| Type de contenu multimédia : Linéaire | Segmente tout le contenu linéaire | "Type de contenu = `linear`" |
-| Type de contenu multimédia : Podcast | Segmente tous les podcasts | "Type de contenu = `podcast`" |
-| Type de contenu multimédia : Livre audio | Segmente tous les livres audio | "Type de contenu = `audiobook`" |
-| Type de contenu multimédia : AoD | Segmente tout le contenu AoD | "Type de contenu = `aod`" |
+| Type de flux du média : tous | Segmenter toutes les données de diffusion de *média* | &quot;Le contenu (ID) existe&quot; |
+| Type de flux de média : audio | Segmenter toutes les données de diffusion *audio* | &quot;Contenu (ID) présent&quot; ET &quot;Type de diffusion multimédia = `audio`&quot; |
+| Type de flux de média : vidéo | Segmenter toutes les données de diffusion *vidéo* | &quot;Contenu (ID) présent&quot; ET &quot;Type de diffusion multimédia != `audio`&quot; |
+| Type de contenu du média : VoD | Segmenter tout le contenu VoD | &quot;Type de contenu = `vod`&quot; |
+| Type de contenu du média : actif | Segmenter tout le contenu en direct | &quot;Type de contenu = `live`&quot; |
+| Type de contenu du média : linéaire | Segmenter tout le contenu linéaire | &quot;Type de contenu = `linear`&quot; |
+| Type de contenu du média : podcast | Segmenter tout le contenu d’un podcast | &quot;Type de contenu = `podcast`&quot; |
+| Type de contenu du média : livre audio | Segmenter tout le contenu d’un livre audio | &quot;Type de contenu = `audiobook`&quot; |
+| Type de contenu du média : AoD | Segmenter tout le contenu AoD | &quot;Type de contenu = `aod`&quot; |
 
