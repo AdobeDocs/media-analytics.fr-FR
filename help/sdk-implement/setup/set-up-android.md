@@ -14,9 +14,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * **Obtention de paramètres de configuration valides pour le SDK Media** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
 * **Mise en œuvre d’ADBMobile pour Android dans votre application** Pour plus d’informations sur la documentation du kit SDK Adobe Mobile, reportezvous à la rubrique [Kit SDK Android 4.x pour les solutions Experience Cloud.](https://marketing.adobe.com/resources/help/fr_FR/mobile/android/)
-* **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
-   * *Une API pour vous abonner aux événements de lecteur* : Le kit SDK Media vous oblige à appeler une série d’API simples lorsque des événements ont lieu dans votre lecteur.
-   * *Une API fournissant des informations sur le lecteur* : Ces informations comprennent des détails tels que le nom du média et la position du curseur de lecture.
+* **Fournissez les informations suivantes à votre lecteur multimédia :**
+   * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
+   * *Une API qui fournit des informations au lecteur* - Ces informations incluent des éléments tels que le nom du média et la position de la tête de lecture.
 
 ## Implémentation du SDK
 
@@ -33,7 +33,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       1. Sélectionnez **[!UICONTROL Ouvrir les paramètres du module]**.
       1. Sous **[!UICONTROL Paramètres du projet]**, sélectionnez **[!UICONTROL Bibliothèques]**.
 
-      1. Cliquez sur **[!UICONTROL +]** pour ajouter une nouvelle bibliothèque.
+      1. Cliquez sur ]**+**[!UICONTROL  pour ajouter une nouvelle bibliothèque.
       1. Sélectionnez **[!UICONTROL Java]** et accédez au fichier `MediaSDK.jar`.
 
       1. Sélectionnez les modules dans lesquels vous prévoyez d’utiliser la bibliothèque mobile.
@@ -41,10 +41,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       **Eclipse :**
 
       1. Dans Eclipse IDE, cliquez avec le bouton droit sur le nom du projet.
-      1. Cliquez sur **[!UICONTROL Créer chemin]** &gt; **[!UICONTROL Ajouter archives externes]** .
-      1. Select `MediaSDK.jar`.
+      1. Cliquez sur **[!UICONTROL Créer un chemin]** > **[!UICONTROL Ajouter des archives externes]**.
+      1. Sélectionnez `MediaSDK.jar`.
       1. Cliquez sur **[!UICONTROL Ouvrir]**.
-      1. Cliquez de nouveau avec le bouton droit sur le projet, puis sélectionnez **[!UICONTROL Créer chemin]** &gt; **[!UICONTROL Configurer création chemin]**.
+      1. Cliquez de nouveau avec le bouton droit sur le projet, puis sélectionnez **[!UICONTROL Créer un chemin]** > **[!UICONTROL Configurer la création d’un chemin]**.
       1. Cliquez sur les onglets **[!UICONTROL Commande]** et **[!UICONTROL Exporter]**.
 
       1. Assurez-vous que le fichier `MediaSDK.jar` est bien sélectionné.
@@ -112,9 +112,9 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >Assurez-vous que votre instance `MediaHeartbeat` est accessible et *reste attribuée jusqu’à la fin de la session*. Cette instance sera utilisée pour tous les événements de suivi suivants.
 
-**Ajout des autorisations d’application**
+**Ajout des autorisations des applications**
 
-Votre application utilisant le SDK Media requiert les autorisations suivantes pour envoyer des données dans des appels de suivi :
+Votre application utilisant le SDK Media nécessite les autorisations suivantes pour envoyer des données dans les appels de suivi :
 
 * `INTERNET`
 * `ACCESS_NETWORK_STATE`
