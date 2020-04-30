@@ -35,9 +35,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | `media.id` | Y | `sessionStart` | Identifiant unique du contenu |
 | `media.name` | N | `sessionStart` | Nom du contenu lisible par l’homme |
 | `media.length` | Y | `sessionStart` | Durée du contenu (secondes) |
-| `media.contentType` | Y | `sessionStart` | Format de la diffusion (peut correspondre à n’importe quelle chaîne ; quelques valeurs recommandées sont "live", "VOD" ou "Linear") |
+| `media.contentType` | Y | `sessionStart` | Format de la diffusion (peut correspondre à n’importe quelle chaîne ; quelques valeurs recommandées sont &quot;live&quot;, &quot;VOD&quot; ou &quot;Linear&quot;) |
 | `media.playerName` | Y | `sessionStart` | Nom du lecteur responsable du rendu du contenu |
-| `media.channel` | Y | `sessionStart` | Canal de distribution du contenu. Il peut s’agir d’un nom d’application mobile ou d’un nom de site Web, un nom de propriété. |
+| `media.channel` | Y | `sessionStart` | Chaîne de distribution du contenu. Il peut s’agir du nom d’une application, d’un site web, d’un nom de propriété, etc. |
 | `media.resume` | N | `sessionStart` | Indique si un utilisateur reprend ou non une session précédente (au lieu de commencer une nouvelle session). |
 | `media.sdkVersion` | N | `sessionStart` | Version SDK utilisée par le lecteur |
 
@@ -48,19 +48,19 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 | `media.show` | N | `sessionStart` | Nom du programme ou de la série |
 | `media.season` | N | `sessionStart` | Numéro de la saison à laquelle le programme ou la série appartient |
 | `media.episode` | N | `sessionStart` | Numéro de l’épisode |
-| `media.assetId` | N | `sessionStart` | Identifiant unique du contenu de la ressource vidéo, tel que l’identifiant d’épisode de la série télévisée, l’identifiant de la ressource de film ou l’identifiant d’événement en direct. Ces ID sont généralement dérivés des autorités de métadonnées telles que EIDR, TMS/Gracenote ou Rovi. Ces identifiants peuvent également provenir d’autres systèmes propriétaires ou internes. |
+| `media.assetId` | N | `sessionStart` | L’identifiant unique du contenu de la ressource vidéo, tel que l’identifiant d’épisode de la série télévisée, l’identifiant de la ressource de film ou l’identifiant d’événement en direct. En règle générale, ces identifiants sont issus des autorités de métadonnées telles que EIDR, TMS/Gracenote ou Rovi. Ces identifiants peuvent également provenir d’autres systèmes propriétaires ou internes. |
 | `media.genre` | N | `sessionStart` | Type de contenu tel que défini par le producteur de contenu |
 | `media.firstAirDate` | N | `sessionStart` | Date à laquelle le contenu a été diffusé à la télévision pour la première fois |
-| `media.firstDigitalDate` | N | `sessionStart` | Date à laquelle le contenu a été diffusé pour la première fois sur une chaîne ou une plate-forme numérique |
+| `media.firstDigitalDate` | N | `sessionStart` | Date à laquelle le contenu a été diffusé pour la première fois sur une chaîne ou une plateforme numérique |
 | `media.rating` | N | `sessionStart` | Évaluation telle que définie par les directives parentales de la télévision |
 | `media.originator` | N | `sessionStart` | Créateur du contenu |
 | `media.network` | N | `sessionStart` | Nom du réseau/canal |
-| `media.showType` | N | `sessionStart` | Type de contenu, exprimé sous la forme d’un nombre entier compris entre 0 et 3 : <ul> <li>0 - Épisode entier </li> <li>1 - Aperçu </li> <li>2 - Clip </li> <li>3 - Autre </li> </ul> |
+| `media.showType` | N | `sessionStart` | Type de contenu, exprimé sous la forme d’un nombre entier compris entre 0 et 3 : <ul> <li>0 - épisode entier </li> <li>1 - aperçu </li> <li>2 - clip </li> <li>3 - autre </li> </ul> |
 | `media.adLoad` | N | `sessionStart` | Type de publicité chargée |
 | `media.pass.mvpd` | N | `sessionStart` | MVPD fourni par l’authentification Adobe |
 | `media.pass.auth` | N | `sessionStart` | Indique que l’utilisateur a été autorisé par l’authentification Adobe (peut uniquement avoir la valeur true si défini) |
 | `media.dayPart` | N | `sessionStart` | Heure de la journée à laquelle le contenu a été diffusé |
-| `media.feed` | N | `sessionStart` | Type de flux, tel que "West-HD" |
+| `media.feed` | N | `sessionStart` | Type de flux, tel que &quot;West-HD&quot; |
 
 ## Données de publicité
 
@@ -99,10 +99,10 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | Clé de requête  | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | Quelconque | Débit binaire de la diffusion |
-| `media.qoe.droppedFrames` | N | Quelconque | Nombre d’images perdues dans la diffusion |
-| `media.qoe.framesPerSecond` | N | Quelconque | Nombre d’images par seconde |
-| `media.qoe.timeToStart` | N | Quelconque | Durée (en millisecondes) écoulée entre le moment où l’utilisateur appuie sur Lecture et le moment où le contenu se charge et commence à être lu |
+| `media.qoe.bitrate` | N | N’importe quel(le) | Débit binaire de la diffusion |
+| `media.qoe.droppedFrames` | N | N’importe quel(le) | Nombre d’images perdues dans la diffusion |
+| `media.qoe.framesPerSecond` | N | N’importe quel(le) | Nombre d’images par seconde |
+| `media.qoe.timeToStart` | N | N’importe quel(le) | Durée (en millisecondes) écoulée entre le moment où l’utilisateur lance la lecture et le contenu se charge et commence à être lu |
 
 ## Paramètres de la Loi sur la protection du consommateur (CCPA) de Californie {#ccpa-params}
 
@@ -160,7 +160,7 @@ Notez que la valeur `visitor.customerIDs` peut avoir un nombre quelconque d’ob
 
 ### visitor.aamLocationHint
 
-Ce paramètre indique quel edge Adobe Audience Manager (AAM) serait affecté lorsqu’Adobe Analytics envoie les données client à Audience Manager. Si vous ne transmettez pas ce paramètre, Adobe le code en dur sur 1. Ceci est particulièrement important lorsque les utilisateurs finaux tendent à utiliser leurs appareils à des emplacements géographiquement distants (par exemple, l’Est ou l’Ouest des États-Unis, l’Europe, l’Asie). Dans le cas contraire, les données utilisateur seront diffusées sur plusieurs edges AAM.
+Ce paramètre indique quel edge Adobe Audience Manager (AAM) serait affecté lorsqu’Adobe Analytics envoie les données client à Audience Manager. Si vous ne transmettez pas ce paramètre, Adobe le code en dur sur 1. Cela est particulièrement important lorsque les utilisateurs finaux tendent à utiliser leurs appareils à des emplacements géographiquement distants (par exemple, l’Est ou l’Ouest des États-Unis, l’Europe, l’Asie). Dans le cas contraire, les données utilisateur seront diffusées sur plusieurs edges AAM.
 
 ### media.resume
 
