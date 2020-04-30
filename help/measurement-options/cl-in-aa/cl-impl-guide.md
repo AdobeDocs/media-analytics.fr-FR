@@ -10,7 +10,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Guide de mise en œuvre d’un lien personnalisé {#custom-link-implementation-guide}
 
-Le suivi vidéo personnalisé utilise le [suivi manuel des liens à l’aide du code de lien personnalisé](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/link_manual.html) dans le code `appMeasurement` d’Analytics. Le plus souvent, il est utilisé sur les plates-formes et les appareils nécessitant peu de mesures vidéo.
+Le suivi vidéo personnalisé utilise le [suivi manuel des liens à l’aide du code de lien personnalisé](https://marketing.adobe.com/resources/help/fr_FR/sc/implement/link_manual.html) dans le code `appMeasurement` d’Analytics. Le plus souvent, il est utilisé sur les plateformes et les appareils nécessitant peu de mesures vidéo.
 
 * Dans JavaScript : la fonction `s.tl()`
 * Dans les applications mobiles : [trackAction() Android](https://marketing.adobe.com/resources/help/fr_FR/mobile/android/actions.html), [trackAction() iOS](https://marketing.adobe.com/resources/help/fr_FR/mobile/ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
@@ -19,8 +19,8 @@ Le suivi vidéo personnalisé utilise le [suivi manuel des liens à l’aide du 
 ## Conditions
 
 * Accès aux événements et aux données de l’API du lecteur vidéo
-* Possibilité d’ajouter des scripts en cas d’utilisation du kit SDK Analytics
-* Possibilité d’ajouter des balises de suivi (scripts personnalisés ou code en dur) en cas d’utilisation de l’API Data Insertion
+* Possibilité d’ajouter des scripts en cas d’utilisation du SDK Analytics
+* Possibilité d’ajouter des balises de suivi (script personnalisé ou code en dur) en cas d’utilisation de l’API Data Insertion
 
 ## Métadonnées
 
@@ -46,9 +46,9 @@ if (e.type == "ended") {
 ## Pourquoi utiliser un lien personnalisé
 
 * Peu de conditions requises
-* Fonctionne sur toutes les plates-formes, même NoScript
-* Calculs (temps passé, quartiles, etc.) à faire dans un script personnalisé
-* Très simple, sans bibliothèque ni script masqué
+* Fonctionne sur n’importe quelle plateforme, y compris NoScript
+* Tout calcul, tel que le temps passé ou les quartiles, doit être effectué dans un script personnalisé.
+* Très simple sans bibliothèque ni script masqué
 * Contrôle total sur tous les aspects des données vidéo
 
 ## Exemple de lecteur JavaScript pour HTML5
