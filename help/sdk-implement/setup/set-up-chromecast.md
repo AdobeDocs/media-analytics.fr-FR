@@ -15,17 +15,17 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 _Dois-je utiliser le SDK JavaScript Chromecast ou puis-je utiliser le SDK JavaScript standard ?_
 
 La bonne réponse est « Chromecast », pour les raisons suivantes :
-* Les bibliothèques AppMeasurement et VisitorAPI dans le SDK JS standard ne sont pas certifiées pour fonctionner sur les plates-formes OTT. Dans le SDK JS Chromecast, la bibliothèque Video Heartbeats (VHL), Analytics et VisitorAPI sont tous intégrés au SDK unique, unifié et certifié pour Chromecast.
-* Le SDK Chromecast est bien plus léger que le SDK JS standard. Ce point est essentiel pour le matériel bas de gamme utilisé par les plates-formes OTT.
+* Les bibliothèques AppMeasurement et VisitorAPI du SDK JS standard ne sont pas certifiées pour fonctionner sur les plateformes OTT. Dans le SDK JS Chromecast, la bibliothèque Video Heartbeats (VHL), Analytics et VisitorAPI sont tous intégrés au SDK unique, unifié et certifié pour Chromecast.
+* Le SDK Chromecast est beaucoup plus léger que le SDK JS standard. Ce point est essentiel pour le matériel bas de gamme utilisé par les plateformes OTT.
 
 ## Conditions préalables
 
 * **Obtention de paramètres de configuration valides pour Heartbeats** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Media Analytics.
-* **Fournissez les fonctionnalités suivantes dans votre lecteur multimédia :**
-   * *Une API pour vous abonner aux événements de lecteur* : Le kit SDK Media vous oblige à appeler une série d’API simples lorsque des événements ont lieu dans votre lecteur.
-   * *Une API fournissant des informations sur le lecteur* : Ces informations comprennent des détails tels que le nom du média et la position du curseur de lecture.
+* **Fournissez les informations suivantes à votre lecteur multimédia :**
+   * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
+   * *Une API qui fournit des informations au lecteur* - Ces informations incluent des éléments tels que le nom du média et la position de la tête de lecture.
 
-Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing pour les applications mobiles issues d’Adobe Experience Cloud. Au début, le service Mobile offrait une intégration transparente des fonctionnalités d’analyse et de ciblage d’applications issues des solutions Adobe Analytics et Adobe Target. Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://marketing.adobe.com/resources/help/fr_FR/mobile/)
+Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Au départ, le service Mobile intègre de manière transparente les fonctionnalités d’analyse et de ciblage des applications pour les solutions Adobe Analytics et Adobe Target. Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://marketing.adobe.com/resources/help/fr_FR/mobile/)
 
 Le kit SDK Chromecast 2.x pour les solutions Experience Cloud vous permet de mesurer les applications Chromecast écrites dans JavaScript, d’exploiter et de collecter les données des utilisateurs grâce à la gestion de l’audience, et de mesurer l’engagement vidéo au moyen de pulsations vidéo.
 
@@ -103,7 +103,7 @@ Le kit SDK Chromecast 2.x pour les solutions Experience Cloud vous permet de m
 
 1. Configurez l’identifiant visiteur Experience Cloud.
 
-   Le service d’identifiant visiteur Experience Cloud fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Le service d’identifiant visiteur est requis par Video Heartbeat et d’autres intégrations de Experience Cloud.
+   Le service d’identification des visiteurs Experience Cloud fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Le service d’identification des visiteurs est requis par Video Heartbeat et d’autres intégrations Experience Cloud.
 
    Vérifiez que votre configuration `ADBMobileConfig` contient votre ID d’organisation `marketingCloud`.
 
@@ -129,8 +129,8 @@ Le kit SDK Chromecast 2.x pour les solutions Experience Cloud vous permet de m
 
    | Méthode | Description |
    | --- | --- |
-   | `getMarketingCloudID()` | Récupère l’identifiant visiteur Experience Cloud auprès du service d’identifiant visiteur.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
-   | `syncIdentifiers()` | Avec l’identifiant visiteur Experience Cloud, vous pouvez définir des identifiants de client supplémentaires pouvant être associés à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour le même visiteur, ainsi qu’un identifiant de type Client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs()` dans la bibliothèque JavaScript.  Par exemple : <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
+   | `getMarketingCloudID()` | Récupère l’identifiant visiteur Experience Cloud auprès du service d’identification des visiteurs.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
+   | `syncIdentifiers()` | Avec l’identifiant visiteur d’Experience Cloud, vous pouvez définir d’autres identifiants de client qui peuvent être associés à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour un même visiteur, ainsi qu’un identifiant de type client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs()` dans la bibliothèque JavaScript.  Par exemple : <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
 <!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
