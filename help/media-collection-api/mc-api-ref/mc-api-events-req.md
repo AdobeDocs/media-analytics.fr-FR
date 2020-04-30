@@ -48,7 +48,7 @@ Pour obtenir la liste des types d’événement valides pour cette version, repo
 
 >[!IMPORTANT]
 >
->***Suivi des publicités -**Vous pouvez uniquement suivre les publicités dans un`adBreak`*.
+>***Suivi des publicités -** Vous pouvez uniquement suivre les publicités dans un`adBreak`*.
 >
 >En l’absence des « serre-livres » `adBreakStart` et `adBreakComplete` autour des publicités, les événements `adStart` et `adComplete` sont simplement ignorés, et la durée de publicité correspondante est suivie en tant que durée de contenu principal. Cela pourrait avoir un impact significatif sur les données agrégées qui seront disponibles dans Adobe Analytics.
 
@@ -67,11 +67,11 @@ Access-Control-Expose-Headers Location
 
 ## Codes de réponse HTTP
 
-| Code de réponse HTTP | Description | Éléments d’action du client |
+| Code de réponse HTTP | Description | Éléments d’action client |
 |---|---|---|
 | **204** | **Aucun contenu.** <br/><br/>L’appel Heartbeat a réussi. | S.O. |
-| **400** | **Demande incorrecte.** <br/><br/>Le format de la requête est incorrect. | Cherchez le type de requête dans les [schémas de validation JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md). |
-| **404** | **Introuvable.** <br/><br/>L’ID de session pour la session multimédia n’a pas été trouvé dans le service principal. | L’application du client doit utiliser l’API de la [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et générer des rapports de suivi sur celle-ci. |
-| **410** | **Supprimé.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus générer de rapports d’activité sur celle-ci. | L’application du client doit utiliser l’API de la [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et générer des rapports de suivi sur celle-ci. |
-| **500** | **Erreur interne du serveur** | S.O. |
+| **400** | **Requête incorrecte.** <br/><br/>Le format de la requête est incorrect. | Recherchez les [schémas de validation JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) pour le type de requête. |
+| **404** | **Non trouvé.** <br/><br/>L’ID de session pour la session multimédia n’a pas été trouvé dans le service principal. | L’application client doit utiliser l’API de [demande Sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et en effectuer le suivi dans les rapports. |
+| **410** | **Parti.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus générer de rapports d’activité sur celle-ci. | L’application client doit utiliser l’API de [demande Sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et en effectuer le suivi dans les rapports. |
+| **500** | **Erreur du serveur** | S.O. |
 
