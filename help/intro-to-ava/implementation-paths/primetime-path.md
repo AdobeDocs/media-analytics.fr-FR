@@ -10,11 +10,11 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 # Primetime {#primetime}
 
-Media Analytics (Heartbeats) est la solution de suivi multimédia normalisée d’Adobe. Elle a remplacé le modèle Milestone plus ancien d’Adobe.
+Media Analytics (Heartbeats) est la solution de suivi de média normalisée d’Adobe. Elle a remplacé le modèle Milestone plus ancien d’Adobe.
 
 Adobe Primetime est une solution Adobe Experience Cloud qui aide les programmeurs et les distributeurs de contenu à monétiser le média sur chaque écran connecté.
 
-Primetime élimine la complexité liée à l’atteinte, la monétisation et l’activation d’audiences mondiales à travers les appareils en fournissant une plate-forme modulaire pour la publication, la publicité, la personnalisation et l’analyse multimédia. En outre, Primetime offre des solutions et une valeur au niveau des aspects suivants :
+Primetime élimine la complexité liée à l’atteinte, la monétisation et l’activation d’audiences mondiales pour tous les appareils en fournissant une plateforme modulaire pour la publication, la publicité, la personnalisation et l’analyse médias. En outre, Primetime propose des solutions et offre une réelle valeur ajoutée au niveau des aspects suivants :
 
 * Prise en charge de la mesure précise des types de contenu LINEAR et VOD.
 * Prise en charge de la mesure des coupures publicitaires avec (ou sans) insertion de publicités dynamiques.
@@ -24,7 +24,7 @@ Primetime élimine la complexité liée à l’atteinte, la monétisation et l�
 * Integrated support for Nielsen DTVR (linear) with ID3 metadata and DCR with CMS metadata.
 -->
 
-TVSDK est déjà intégré au kit SDK Media, ce qui rend la mise en œuvre beaucoup plus facile et rapide sur chaque plate-forme prise en charge. <!--Primetime also supports the partnership with Nielsen.--> Pour tirer parti de Primetime, suivez les mêmes directives et conditions préalables que celles qui figurent dans [Côté client](/help/intro-to-ava/implementation-paths/client-side-path.md), ainsi que les documents suivants pour vos plateformes : [Guide de l’utilisateur Primetime.](https://helpx.adobe.com/fr/support/primetime.html)
+TVSDK est déjà intégré au kit SDK Media, ce qui rend la mise en œuvre beaucoup plus facile et rapide sur chaque plateforme prise en charge. <!--Primetime also supports the partnership with Nielsen.--> Pour tirer parti de Primetime, suivez les mêmes directives et conditions préalables que celles qui figurent dans [Côté client](/help/intro-to-ava/implementation-paths/client-side-path.md), ainsi que les documents suivants pour vos plateformes : [Guide de l’utilisateur Primetime.](https://helpx.adobe.com/fr/support/primetime.html)
 
 >[!NOTE]
 >
