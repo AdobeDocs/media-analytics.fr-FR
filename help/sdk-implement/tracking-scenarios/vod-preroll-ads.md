@@ -10,7 +10,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 # Lecture VOD avec publicités preroll {#vod-playback-with-pre-roll-ads}
 
-Dans ce scénario, des publicités preroll ont été insérées avant le contenu principal. Sauf indication contraire, les appels réseau sont identiques à ceux du scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). Les appels réseau se produisent simultanément, mais la charge utile est différente.
+Dans ce scénario, des publicités preroll ont été insérées avant le contenu principal. Sauf indication contraire, les appels réseau sont identiques à ceux du scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). L’appel réseau se produit simultanément, mais la charge utile est différente.
 
 | Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques   |
 | --- | --- | --- | --- |
@@ -54,8 +54,8 @@ Ces paramètres sont identiques à l’appel `Content Heartbeats`, mais l’appe
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
-| `s:asset:ad_id` | &lt;Identifiant de publicité&gt; |  |
-| `s:asset:pod_id` | &lt;Identifiant de capsule publicitaire&gt; |  |
+| `s:asset:ad_id` | &lt;Identifiant de publicité> |  |
+| `s:asset:pod_id` | &lt;Identifiant de capsule publicitaire> |  |
 
 Tout comme pour les appels `Heartbeat Content Complete`, un appel `Heartbeat Ad Complete` est envoyé lorsque la lecture de la publicité est terminée et que le curseur de lecture a atteint la fin de sa course. Cet appel ressemble aux autres appels `Heartbeat Ad`, mais il contient certains éléments spécifiques :
 
