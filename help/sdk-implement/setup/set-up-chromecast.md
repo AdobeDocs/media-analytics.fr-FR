@@ -2,8 +2,8 @@
 title: Configuration de Chromecast
 description: Configuration de l’application du SDK Media pour implémentation sur Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ---
 
@@ -25,7 +25,7 @@ La bonne réponse est « Chromecast », pour les raisons suivantes :
    * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
    * *Une API qui fournit des informations au lecteur* - Ces informations incluent des éléments tels que le nom du média et la position de la tête de lecture.
 
-Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Au départ, le service Mobile intègre de manière transparente les fonctionnalités d’analyse et de ciblage des applications pour les solutions Adobe Analytics et Adobe Target. Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://marketing.adobe.com/resources/help/fr_FR/mobile/)
+Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Au départ, le service Mobile intègre de manière transparente les fonctionnalités d’analyse et de ciblage des applications pour les solutions Adobe Analytics et Adobe Target. Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://docs.adobe.com/content/help/fr-FR/mobile-services/using/home.html)
 
 Le kit SDK Chromecast 2.x pour les solutions Experience Cloud vous permet de mesurer les applications Chromecast écrites dans JavaScript, d’exploiter et de collecter les données des utilisateurs grâce à la gestion de l’audience, et de mesurer l’engagement vidéo au moyen de pulsations vidéo.
 
@@ -133,5 +133,5 @@ Le kit SDK Chromecast 2.x pour les solutions Experience Cloud vous permet de m
    | `syncIdentifiers()` | Avec l’identifiant visiteur d’Experience Cloud, vous pouvez définir d’autres identifiants de client qui peuvent être associés à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour un même visiteur, ainsi qu’un identifiant de type client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs()` dans la bibliothèque JavaScript.  Par exemple : <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
 
-<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://marketing.adobe.com/resources/help/en_US/mobile/signals_.html) -->
+<!--   **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
 
