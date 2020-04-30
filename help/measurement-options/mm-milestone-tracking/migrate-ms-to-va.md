@@ -12,7 +12,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Aperçu {#overview}
 
-Les concepts principaux de la mesure vidéo sont les mêmes pour Milestone et Media Analytics, qui prend les événements du lecteur vidéo et les associe aux méthodes d’analyse, tout en récupérant les métadonnées et les valeurs du lecteur et en les associant aux variables d’analyse. La solution Media Analytics est basée sur Milestone, donc de nombreuses méthodes et mesures sont identiques. Toutefois, l’approche et le code de configuration ont beaucoup changé. Il devrait être possible de mettre à jour le code des événements du lecteur afin qu’il pointe vers les nouvelles méthodes Media Analytics. Voir [Présentation du SDK](/help/sdk-implement/setup/setup-overview.md) et [Présentation du suivi](/help/sdk-implement/track-av-playback/track-core-overview.md) pour en savoir plus sur l’implémentation de Media Analytics.
+Les concepts de base de la mesure vidéo sont les mêmes pour Milestone et Media Analytics, qui prend les événements du lecteur vidéo et les mappe aux méthodes d’analyse, tout en récupérant les métadonnées et les valeurs du lecteur et en les associant aux variables d’analyse. La solution Media Analytics est basée sur Milestone, donc de nombreuses méthodes et mesures sont identiques. Toutefois, l’approche et le code de configuration ont beaucoup changé. Il devrait être possible de mettre à jour le code des événements du lecteur afin qu’il pointe vers les nouvelles méthodes Media Analytics. Voir [Présentation du SDK](/help/sdk-implement/setup/setup-overview.md) et [Présentation du suivi](/help/sdk-implement/track-av-playback/track-core-overview.md) pour en savoir plus sur l’implémentation de Media Analytics.
 
 Les tableaux suivants fournissent des correspondances entre la solution Milestone et la solution Media Analytics.
 
@@ -22,11 +22,11 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 | Mesure Milestone | Type de variable | Mesure Media Analytics |
 | --- | --- | --- |
-| Contenu | eVar<br/><br/>Délai d’expiration par défaut : Visite | Contenu |
-| Type de contenu | eVar<br/><br/> Délai d’expiration par défaut : page vue | Type de contenu |
-| Temps passé sur le contenu | Type<br/><br/>d’événement : Compteur | Temps passé sur le contenu |
-| Démarrages de vidéo | Type<br/><br/>d’événement : Compteur | Démarrages de vidéo |
-| La vidéo se termine | Type<br/><br/>d’événement : Compteur | Fin de contenu |
+| Contenu | eVar <br/><br/>Délai d’expiration par défaut : Visite | Contenu |
+| Type de contenu | eVar <br/><br/>Délai d’expiration par défaut : page vue | Type de contenu |
+| Temps passé sur le contenu | Type <br/><br/>d’événement : Compteur | Temps passé sur le contenu |
+| Démarrages de vidéo | Type <br/><br/>d’événement : Compteur | Démarrages de vidéo |
+| La vidéo se termine | Type <br/><br/>d’événement : Compteur | Fin de contenu |
 
 ### Variables du module média
 
@@ -35,7 +35,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 <tr>
 <th>Milestone
 </th>
-<th>Syntaxe Milestone
+<th>Syntaxe de Milestone
 </th>
 <th>Media Analytics
 </th>
@@ -50,7 +50,8 @@ Media.trackUsingContextData
 </td>
 <td>
 <pre>
-s.Media.trackUsingContextData = true;
+s.Media.trackUsingContextData
+  = true;
 </pre>
 </td>
 <td>S.O.
@@ -135,7 +136,7 @@ s.Media.trackEvents =
 <tr>
 <th>Milestone
 </th>
-<th>Syntaxe Milestone
+<th>Syntaxe de Milestone
 </th>
 <th>Media Analytics
 </th>
@@ -150,7 +151,8 @@ Media.autoTrack
 </td>
 <td>
 <pre>
-s.Media.autoTrack = true;
+s.Media.autoTrack
+  = true;
 </pre>
 </td>
 <td>S.O.
@@ -187,7 +189,7 @@ s.Media.
 </td>
 <td>S.O.
 </td>
-<td>Fin de contenu ne prend en charge qu’un marqueur de progression de 100 %.
+<td>La fin du contenu ne prend en charge qu’un marqueur de progression de 100 %.
 </td>
 </tr>
 <tr>
@@ -203,7 +205,7 @@ s.Media.
 </td>
 <td>S.O.
 </td>
-<td>Fin de contenu ne prend en charge qu’un marqueur de progression de 100 %.
+<td>La fin du contenu ne prend en charge qu’un marqueur de progression de 100 %.
 </td>
 </tr>
 <tr>
@@ -212,7 +214,8 @@ Media.playerName
 </td>
 <td>
 <pre>
-s.Media.playerName = "Nom du lecteur personnalisé"
+s.Media.playerName
+  = "Nom du lecteur personnalisé"
 </pre>
 </td>
 <td>
@@ -281,12 +284,13 @@ Media.segmentByMilestones
 </td>
 <td>
 <pre>
-s.Media.segmentByMilestones = true;
+s.Media.segmentByMilestones
+  = true;
 </pre>
 </td>
 <td>S.O.
 </td>
-<td>Le suivi automatique n’est plus disponible.
+<td>Le suivi automatique n’est plus disponible
 </td>
 </tr>
 <tr>
@@ -302,7 +306,7 @@ s.Media.
 </td>
 <td>S.O.
 </td>
-<td>Le suivi automatique n’est plus disponible.
+<td>Le suivi automatique n’est plus disponible
 </td>
 </tr>
 </tbody>
@@ -315,7 +319,7 @@ s.Media.
 <tr>
 <th>Milestone
 </th>
-<th>Syntaxe Milestone
+<th>Syntaxe de Milestone
 </th>
 <th>Media Analytics
 </th>
@@ -385,7 +389,7 @@ s.Media.
 </td>
 <td>S.O.
 </td>
-<td>Le suivi automatique n’est plus disponible.
+<td>Le suivi automatique n’est plus disponible
 </td>
 </tr>
 <tr>
@@ -401,7 +405,7 @@ s.Media.
 </td>
 <td>S.O.
 </td>
-<td>Le suivi automatique n’est plus disponible.
+<td>Le suivi automatique n’est plus disponible
 </td>
 </tr>
 </tbody>
@@ -414,7 +418,7 @@ s.Media.
 <tr>
 <th>Milestone
 </th>
-<th>Syntaxe Milestone
+<th>Syntaxe de Milestone
 </th>
 <th>Media Analytics
 </th>
@@ -429,7 +433,10 @@ Media.open
 </td>
 <td>
 <pre>
-s.Media.open(mediaName,mediaLength,mediaPlayerName)
+s.Media.open(
+  mediaName,
+  mediaLength,
+  mediaPlayerName)
 </pre>
 </td>
 <td>
@@ -520,7 +527,14 @@ Media.openAd
 </td>
 <td>
 <pre>
-s.Media.openAd(name,length,playerName,parentName,parentPod,parentPodPosition,CPM)
+s.Media.openAd(
+  name,
+  length,
+  playerName,
+  parentName,
+  parentPod,
+  parentPodPosition,
+  CPM)
 </pre>
 </td>
 <td>
@@ -695,7 +709,9 @@ Media.click
 </td>
 <td>
 <pre>
-s.Media.click(name,offset)
+s.Media.click(
+  name,
+  offset)
 </pre>
 </td>
 <td>S.O.
@@ -709,7 +725,8 @@ Media.close
 </td>
 <td>
 <pre>
-s.Media.close(mediaName)
+s.Media.close(
+  mediaName)
 </pre>
 </td>
 <td>
@@ -729,7 +746,9 @@ Media.complete
 </td>
 <td>
 <pre>
-s.Media.complete(name,offset)
+s.Media.complete(
+  name,
+  offset)
 </pre>
 </td>
 <td>
@@ -751,7 +770,12 @@ Media.play
 </td>
 <td>
 <pre>
-s.Media.play(name,offset,segmentNum,segment,segmentLength)
+s.Media.play(
+  name,
+  offset,
+  segmentNum,
+  segment,
+  segmentLength)
 </pre>
 </td>
 <td>
@@ -773,7 +797,9 @@ Media.stop
 </td>
 <td>
 <pre>
-s.Media.stop(mediaName,mediaOffset)
+s.Media.stop(
+  mediaName,
+  mediaOffset)
 </pre>
 </td>
 <td>
@@ -856,12 +882,13 @@ Media.track
 </td>
 <td>
 <pre>
-s.Media.track(mediaName)
+s.Media.track(
+  mediaName)
 </pre>
 </td>
 <td>S.O.
 </td>
-<td>Le suivi de la fréquence des appels est défini automatiquement.
+<td>La fréquence des appels de suivi est définie automatiquement.
 </td>
 </tr>
 </tbody>
