@@ -1,9 +1,9 @@
 ---
 title: Mesures audio et vidéo dans Adobe Analytics
-description: 'Adobe Analytics for Media (également appelé Media Analytics) fournit aux clients une mesure multimédia performante pour le contenu, le son et les publicités. '
+description: Adobe Analytics for Media (également appelé Media Analytics) fournit aux clients une mesure multimédia performante pour le contenu, le son et les publicités.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: ht
-source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
+translation-type: tm+mt
+source-git-commit: bddcbcd844145788518c60399bee9e4744e42d3a
 
 ---
 
@@ -12,99 +12,51 @@ source-git-commit: 689b7d4ce632d3ddba6704bb8040eec52bfc326f
 
 ![Bannière](./assets/media_analytics_banner.png)
 
->[!IMPORTANT]
->
->La documentation fournie ici est spécifique aux clients utilisant la version 1.5 ou ultérieure de *SDK Media* d’Adobe pour la mesure des pulsations, ou la nouvelle *API Media Collection* d’Adobe pour la mesure des pulsations. Elle n’inclut pas d’instructions concernant la mise en œuvre de la vidéo Milestone héritée. Nous encourageons tous les clients à adopter l’une des dernières solutions de suivi vidéo ou les deux, afin de capitaliser sur les améliorations et la mesure développée. Vous pouvez afficher les [avantages de la transition vers les dernières solutions](media-overview.md#heartbeat-versus-milestone-benefits) ci-dessous. Bien que nous continuerons à prendre en charge la méthode Milestone de suivi des vidéos, nous ne prévoyons pas de mises à jour, de correctifs ou d’améliorations de fonctionnalités. Contactez votre responsable de compte Adobe si vous avez des questions supplémentaires.
+## A propos d’Adobe Analytics pour l’audio et la vidéo
 
-## Aperçu {#overview}
+Adobe Analytics pour l’audio et la vidéo est un module complémentaire d’Adobe Analytics qui fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Adobe Analytics fait partie de la plate-forme Adobe Experience Platform.
 
-Adobe Analytics for Media (également appelé Media Analytics) est un module complémentaire à l’offre Analytics de base qui fournit aux clients une mesure multimédia performante pour le contenu, le son et les annonces publicitaires. Media Analytics offre de nombreux avantages aux clients, qui bénéficient d’un suivi en temps réel, d’analyses détaillées, d’informations exploitables et d’opportunités de monétisation.
+Adobe Analytics pour les fichiers audio et vidéo vous permet de suivre l’ensemble du parcours des clients sur votre site. Les mesures s’intègrent facilement aux rapports Adobe Analytics et aux autres produits Adobe Experience Cloud. La mesure des médias vous permet de catégoriser vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées nécessaires à une analyse complète et détaillée. Vous pouvez ensuite analyser les données et attribuer des critères de réussite au média entièrement consommé, à la durée moyenne de consultation et aux publicités terminées.
 
-Le suivi des médias est activé via l’une des méthodes suivantes :
+Vous pouvez mesurer des mesures de diffusion vitales liées à la qualité de service (perte d’images, durée de mise en mémoire tampon et débit moyen, par exemple). De plus, les mesures peuvent être combinées avec les données de votre site Web ou de votre application pour visualiser le chemin et les intérêts des clients, afin de fournir des recommandations optimisées et de personnaliser les expériences client à l’aide d’Adobe Experience Cloud.
 
-* L’intégration du **SDK Media** avec les lecteurs vidéo les plus utilisés
-* L’intégration de l’**API Media Collection** (API RESTful) dans les lecteurs pour lesquels il n’existe aucun support SDK (ou pour lesquels vous ne souhaitez pas utiliser le SDK)
+## Fonctionnalités {#features}
 
-Adobe Analytics for Media permet aux clients de suivre le parcours complet des clients sur leur site, ce qui inclut la consommation vidéo, et ces mesures sont aisément intégrées dans les rapports Analytics et d’autres produits Experience Cloud. La mesure multimédia vous permet de découper et de regrouper vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées dont vous avez besoin pour effectuer une analyse détaillée complète et attribuer des critères de réussite à des vidéos regardées entièrement, à la durée moyenne de consultation et aux publicités terminées.
+Les avantages d’Adobe Analytics pour l’audio et la vidéo incluent la surveillance en temps réel, une analyse détaillée, des informations exploitables et des opportunités de monétisation.
+* **analyse** en temps réel : prenez des décisions en temps réel et exploitables en utilisant des mesures de performances clés telles que la durée, ex2 et ex3, sur plusieurs canaux. Les principaux événements vidéo de contenu sont mesurés en intervalles de 10 secondes pour capturer toutes les activités au fur et à mesure. Les événements de suivi publicitaires se produisent à des intervalles de 1 seconde.
+* **Favoriser l&#39;engagement**: permet aux utilisateurs d&#39;interagir pleinement avec moins de événements de mise en mémoire tampon et de comprendre où et quand les publicités doivent être lues dans le contenu afin de fournir une expérience fluide et moins intrusive permettant d&#39;effectuer des visites répétées.
+* **Image** holistique : combinez plusieurs points de données sur l&#39;ensemble de vos distributeurs de contenu pour obtenir une vue complète de toute votre activité multimédia. Mesurez l’engagement et les vues/écoutes dans tous les canaux possibles grâce à la fonction Analyses fédérées.
+* **Granularité** accrue : évaluez le comportement d&#39;affichage au niveau le plus granulaire, y compris l&#39;heure du visiteur individuel, les visiteurs/auditeurs simultanés par minute et la durée moyenne de consommation du contenu.
+* **Mesure** précise : mesurez les différents périphériques utilisés pour la consommation de médias, notamment OTT, smartphone, tablette, bureau, etc., afin de surveiller les schémas et habitudes d&#39;engagement des utilisateurs.
+* **Segmentation**: appliquez des classifications à vos lecteurs, périphériques, genres, chapitres et montre comment chacun a un impact sur vos vues/écoutes globales et l&#39;engagement des clients avec le contenu, l&#39;audio, les publicités et la combinaison.
 
-Les solutions vidéo mesurent les mesures de diffusion vidéo essentielles liées à la qualité de service, telles que les images perdues, le temps consacré à la mise en mémoire tampon et le débit moyen. Elles peuvent également être combinées à votre site web ou à des données d’application pour visualiser le flux du client et ses centres d’intérêt afin de mieux formuler des recommandations et de personnaliser l’expérience du client dans Adobe Experience Cloud.
+## Mesure Pulsation {#heartbeat}
 
-## Avantages {#benefits}
+Adobe Analytics utilise des &quot;pulsations&quot; pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Adobe Analytics pour l’audio et la vidéo mesurent les pulsations à l’aide d’Adobe Launch avec l’extension Media Analytics, le SDK Media et l’API Media Collection. Les `AppMeasurement` et `VisitorID` composants sont utilisés pour recevoir des données vidéo.
 
-Voici quelques-uns des avantages offerts par les solutions de mesure multimédia Adobe :
+L’utilisation des pulsations Adobe Analytics pour l’audio et la vidéo présente les avantages suivants :
 
-* **Analyses rapides** : prenez des décisions en temps réel exploitables à l’aide de mesures de performance vidéo clés (par exemple, durée) sur plusieurs canaux. Les principaux événements vidéo de contenu sont mesurés en intervalles de **10 secondes** pour capturer toutes les activités au fur et à mesure. Les événements de suivi publicitaires se produisent à des intervalles de **1 seconde**.
-* **Stimuler l’engagement** : stimulez l’engagement des utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent s’afficher dans le contenu vidéo pour offrir une expérience de visionnage fluide et moins intrusive qui fait revenir les utilisateurs et apporte des visites renouvelées.
-* **Image holistique :** Combinez plusieurs points de données sur tous vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de vos activités multimédia et mesurez l’engagement et les vues/écoutes sur tous les canaux possibles via la fonctionnalité [Federated Analytics](/help/federated-analytics.md).
-* **Meilleure granularité** : évaluez le comportement de visionnage au niveau le plus granulaire, y compris l’heure des visiteurs individuels dans la journée, les observateurs simultanés par minute et la durée moyenne d’affichage du contenu.
-* **Mesure précise** : effectuez une mesure pour les différents appareils utilisés pour la consommation de vidéos, notamment les appareils OTT, les smartphones, les tablettes, les postes de travail et autres, pour surveiller les schémas et les habitudes d’engagement des utilisateurs.
-* **Segmentation** : appliquez des classifications à vos lecteurs, appareils, genres, chapitres et programmes pour voir comment chacun a un impact sur vos vues générales et l’implication du client dans le contenu, le son, les publicités et ces éléments combinés.
+| Fonctionnalité | Description |
+|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Événements de médias | Des Événements détaillés et personnalisés sont envoyés toutes les 10 secondes pour le contenu principal et toutes les 1 seconde pour les publicités. |
+| Mesures et dimensions | Effacer les mesures, les dimensions et les repères standardisés entre<br>les fournisseursGrâce à une solution standardisée sur toutes les plates-formes, vous pouvez utiliser des variables uniformes et standardisées sur l&#39;ensemble de vos supports et plates-formes pour permettre une comparaison plus efficace entre les campagnes, les périphériques et les fournisseurs. |
+| Intégrations | Experience Cloud ID est lié à Adobe Experience Cloud pour une<br>analyse croisée plus facileAvec l’intégration automatique d’Adobe Experience Cloud, vous pouvez segmenter vos audiences multimédia, les cible et faire des recommandations multimédia en fonction des préférences de l’utilisateur. |
+| Tarifs | Suivi transparent par diffusion média (unique) |
+| Mise en œuvre et support | Configuration rationalisée avec mises à jour et<br>améliorations en coursGrâce à un processus d’implémentation simplifié, vous pouvez rapidement mapper des variables à l’aide de votre API de lecteur et valider les implémentations à l’aide de l’outil de débogage Adobe pour vous assurer que toutes les variables nécessaires sont suivies avec précision. |
+| Partage de partenaires | Federated Analytics and Certified Metrics<br>With shared data through Federated Analytics, you can capitalize on our industry-first media sharing capabilities, to evaluate data holistically across all of your media distribution partners—operators, programmers, and distributors. |
+| Suivi avancé | Suivi du contenu téléchargé, suivi de la récupération des erreurs et<br>visionneuses simultanéesVous pouvez effectuer le suivi du contenu audio et vidéo téléchargé et lu sur un périphérique, quelle que soit sa connectivité. |
 
-## Avantages Heartbeat et avantages Milestone {#heartbeat-versus-milestone-benefits}
 
-Adobe Analytics for Media peut être mesuré par deux moyens : la méthode Milestone héritée (vidéo uniquement) et la méthode Heartbeats actuelle (audio et vidéo, dans le SDK Media et l’API Media Collection). La méthode Heartbeats est la méthode privilégiée de mesure et nous encourageons tous les clients à passer à cette version si ce n’est pas déjà fait, pour tirer parti des avantages décrits ci-dessous.
 
-La méthode Milestone héritée est basée sur des appels de serveur individuels au serveur Analytics, pour les démarrages de vidéo, les quartiles, la durée et les fins de vidéo. La méthode Heartbeats offre une solution de suivi vidéo plus robuste qui mesure la vidéo de contenu principal en intervalles de 10 secondes pour fournir des mesures vidéo avancées et normalisées. En outre, Adobe a retiré un enseignement de notre méthode Milestone pour offrir un processus de mise en œuvre plus fluide et simplifié via le SDK VA ou l’API Media Collection utilisé par les pulsations.
+## Sécurité {#security}
 
-Voici quelques-uns des nombreux avantages de la méthode Heartbeats :
+Chez Adobe, nous prenons la sécurité de vos ressources numériques au sérieux. De l&#39;intégration rigoureuse de la sécurité dans notre processus et nos outils de développement logiciel interne à nos équipes interfonctionnelles d&#39;intervention en cas d&#39;incident, nous nous efforçons d&#39;être proactifs et flexibles. De plus, notre collaboration avec des partenaires, des chercheurs et d&#39;autres organisations du secteur nous aide à comprendre les dernières menaces et les meilleures pratiques en matière de sécurité, et à renforcer continuellement la sécurité dans les produits et les services que nous offres.
 
-* **Processus de mise en œuvre simplifié** : mappez plus facilement les variables via l’API de votre lecteur et validez les mises en œuvre via l’outil Adobe Debug Tool pour vous assurer du suivi précis de toutes les variables nécessaires.
-* **Intégration automatique d’Adobe Experience Cloud** : tirez parti de l’intégration automatique avec Adobe Experience Cloud via Experience Cloud ID, segmentez les audiences de votre vidéo, ciblez-les et faites des recommandations vidéo en fonction des préférences des utilisateurs.
-* **Données vidéo partagées par le biais de Federated Analytics** : capitalisez sur nos fonctionnalités de partage vidéo leaders du secteur, pour évaluer les données de manière holistique pour l’ensemble de vos partenaires de distribution vidéo (opérateurs, programmeurs et distributeurs).
-* **Solution normalisée sur toutes les plateformes :** autorisez des variables homogènes et normalisées sur tous vos médias et plateformes afin de garantir une comparaison plus efficace entre les campagnes, les appareils et les fournisseurs.
-* **Suivi du contenu téléchargé :** Suivez le contenu multimédia (vidéo et audio) téléchargé et lu à partir sur un appareil, indépendamment de sa connectivité.
 
-### Graphique comparatif
-
-|  | Video Analytics - Milestone | Media Analytics - Heartbeats |
-|---|---|---|
-| **Événements de médias** | Événements standard de haut niveau | Événements détaillés et personnalisés toutes les 10 s pour le contenu principal, toutes les 1 s pour les publicités |
-| **Mesures et dimensions** | Variations entre les fournisseurs, les mesures non normalisées et les dimensions | Mesures, dimensions et évaluations claires et normalisées pour tous les fournisseurs |
-| **Intégrations aux produits Adobe** | Sessions individuelles avec quelques mappages et intégrations | Experience Cloud ID assemblé lié à l’instance Adobe Experience Cloud complète pour une analyse croisée plus facile |
-| **Tarifs** | Suivi et facturation par rapport à chaque appel serveur | Suivi transparent par diffusion média (unique) |
-| **Mise en œuvre et support** | Intégrations plus longues avec prise en charge limitée des versions existantes et pas de mises à niveau | Configuration simplifiée avec mises à jour et améliorations continues |
-| **Partage de partenaires** | S.O. | Federated Analytics et mesures certifiées |
-| **Suivi avancé** | S.O. | Suivi de la reprise après erreur et observateurs simultanés |
-
-## Appareils pris en charge {#devices-supported}
-
-Adobe Analytics for Media a évolué avec le secteur pour fournir des outils de collecte de données performants afin de garantir que chaque diffusion vidéo est collectée et signalée sur tous les appareils appropriés. Notre SDK Media est développé pour tous les appareils les plus utilisés, notamment :
-
-* Smartphones et tablettes iOS et Android
-* Appareils OTT pour ROKU, Apple TV, FireTV et Android TV
-* Navigateur JavaScript pour ordinateur de bureau et ordinateur portable
-
-Les kits SDK sont régulièrement mis à jour lorsque de nouvelles versions d’appareil sont commercialisées. Vous pouvez utiliser ces kits SDK pour intégrer la plupart des lecteurs vidéo les plus courants, y compris Brightcove et Ooyala.
-
-Pour les appareils ou les plateformes qui ne prennent actuellement pas en charge le SDK (ou même s’ils le font), vous pouvez mettre en œuvre l’API Media Collection, par le biais de laquelle vous effectuez des appels d’API RESTful directement de l’appareil/la plateforme au serveur principal Media Analytics.
-
-Le tableau ci-dessous fournit la liste des appareils actuellement pris en charge via la mise en œuvre de notre SDK Media et de notre API Media Collection. Pour télécharger la dernière version du SDK, consultez [Téléchargement des SDK.](sdk-implement/download-sdks.md) Si un appareil par rapport auquel vous cherchez une mesure n’est pas répertorié dans la liste, contactez l’assistance clientèle ou votre consultant de solution pour connaître l’état de cet appareil.
-
-|      | SDK Media | API Media Collection |
-|---|:---:|:---:|
-| **Navigateur JavaScript** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Appareils iOS** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Appareils Android** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Unified Windows Platform (UWP)** |  | ![](assets/icon-blue-check.png) |
-| **BlackBerry** |  | ![](assets/icon-blue-check.png) |
-| **Apple TV (nouveau/existant)** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **ROKU (JS)** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **ROKU (application native)** |  | ![](assets/icon-blue-check.png) |
-| **OSX** |  | ![](assets/icon-blue-check.png) |
-| **FireTV** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Android TV** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Chromecast** | ![](assets/icon-blue-check.png) | ![](assets/icon-blue-check.png) |
-| **Xbox One/360** |  | ![](assets/icon-blue-check.png) |
-| **Sony PS3/PS4** |  | ![](assets/icon-blue-check.png) |
-| **(Autres/nouveaux appareils connectés)** |  | ![](assets/icon-blue-check.png) |
-
-Pour le SDK Media, voir également [Prise en charge de version minimum de plateforme](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
-
-## Sécurité du calque de transport {#transport-layer-security}
+### Sécurité du calque de transport {#transport-layer-security}
 
 **Remarque TLS -** Adobe applique des normes de conformité de sécurité qui exigent la fin de vie des anciens protocoles de sécurité. Pour continuer à répondre aux normes de protocole de sécurité en constante évolution, Adobe se dirige vers l’utilisation de TLS 1.2, afin d’avoir la version la plus récente et la plus sécurisée en usage. A partir du 20 février 2019, Adobe ne prendra en charge que TLS 1.1 ou version ultérieure. Avec cette modification, Adobe ne collectera plus de données provenant d’utilisateurs finaux disposant d’anciens appareils ou navigateurs web qui déploient TLS 1.0. La migration vers TLS 1.2 améliore la sécurité. Il est important que vous passiez en revue les détails et que vous planifiiez les changements pour une transition en douceur.
 
 >[!NOTE]
 >
 >TLS est actuellement le protocole de sécurité le plus répandu, utilisé pour les navigateurs web et autres applications exigeant que les données soient échangées en toute sécurité sur un réseau.
-
