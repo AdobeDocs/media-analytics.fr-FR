@@ -3,7 +3,7 @@ title: Périphériques pris en charge
 description: null
 uuid: null
 translation-type: tm+mt
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 3a237ee31412784f708e772cc3a58047630e2184
 
 ---
 
@@ -46,4 +46,4 @@ Le tableau ci-dessous liste les périphériques actuellement pris en charge. Pou
 |  | Nouveaux périphériques connectés |  |  | X |
 
 
-Pour le SDK Media, voir également [Prise en charge de version minimum de plateforme](./sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Pour le SDK Media, voir également [Prise en charge de version minimum de plateforme](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version)
