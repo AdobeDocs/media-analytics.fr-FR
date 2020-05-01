@@ -3,8 +3,8 @@ audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: media analytics
-translation-type: ht
-source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
+translation-type: tm+mt
+source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
 
 ---
 
@@ -12,20 +12,31 @@ source-git-commit: d9f6c99b26153ef81d4623c30361fc5b34385bf6
 # Adobe Analytics for Audio and Video {#using}
 
 + [Mesures audio et vidéo dans Adobe Analytics](media-overview.md)
-+ Options de mesure {#measurement-options}
++ [Options de mesure](measurement-options/measurement-options.md)
    + Suivi des jalons du module média {#mm-milestone-tracking}
       + [Aperçu de Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
       + [Migrer le jalon vers Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
       + [Migration de Milestone vers les liens personnalisés](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Lien personnalisé dans Analytics {#cl-in-aa}
-      + [Guide de mise en œuvre d’un lien personnalisé](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + [Guide de mise en œuvre d’un lien personnalisé](measurement-options/cl-in-aa/cl-impl-guide.md) -->
++ [Périphériques pris en charge](measurement-options/supported-devices.md)
 + Présentation des analyses audio et vidéo {#intro-to-ava}
    + [Conditions préalables](intro-to-ava/prereqs.md)
    + Chemins de mise en œuvre {#implementation-paths}
       + [Aperçu](intro-to-ava/implementation-paths/implementation-paths.md)
-      + [Côté client](intro-to-ava/implementation-paths/client-side-path.md)
       + [Adobe Experience Platform Launch](intro-to-ava/implementation-paths/launch-path.md)
-      + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
+      + [Côté client](intro-to-ava/implementation-paths/client-side-path.md)
+      + [Autres chemins d’implémentation](PATH)
+      + Suivi des jalons du module média {#mm-milestone-tracking}
+         + [Aperçu de Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
+         + [Suivi des médias](measurement-options/tracking-media-overview.md)
+         + [Périphériques pris en charge](measurement-options/supported-devices.md)
+         + [Migrer le jalon vers Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+         + [Migration de Milestone vers les liens personnalisés](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
+      + Lien personnalisé dans Analytics {#cl-in-aa}
+         + [Guide de mise en œuvre d’un lien personnalisé](measurement-options/cl-in-aa/cl-impl-guide.md)
+      + Primetime {#primetime}
+         + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
    + [Activation d’Audience Manager](intro-to-ava/am-enablement.md)
 + SDK Media Analytics {#sdk-implement}
    + [Téléchargement des SDK](sdk-implement/download-sdks.md)
