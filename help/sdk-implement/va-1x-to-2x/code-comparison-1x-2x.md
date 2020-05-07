@@ -2,8 +2,11 @@
 title: Comparaison de code 1.x vers 2.x
 description: Ctte rubrique compare le code des versions 1.x et 2.x du SDK Media
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
+workflow-type: tm+mt
+source-wordcount: '567'
+ht-degree: 97%
 
 ---
 
@@ -27,7 +30,7 @@ Tous les paramètres de configuration et toutes les API de suivi sont désormais
 **Liens vers les exemples de lecteurs 1.x et 2.x :**
 
 * [Lecteur échantillon 1.x ](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L58)
-* [Lecteur échantillon 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
+* [Lecteur échantillon 2.x ](https://github.com/Adobe-Marketing-Cloud/media-sdks/blob/master/sdks/js/2.x/samples/BasicPlayerSample/script/app/analytics/video.analytics.provider.js#L47)
 
 Les sections suivantes fournissent des comparaisons de code entre les versions 1.x et 2.x, couvrant l’initialisation, la lecture principale, la lecture de publicité, la lecture de chapitre et certains événements supplémentaires.
 
