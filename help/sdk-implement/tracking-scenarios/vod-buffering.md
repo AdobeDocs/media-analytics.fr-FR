@@ -12,20 +12,20 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Scénario {#scenario}
 
-Dans ce scénario, une mise en mémoire tampon a lieu lors de la lecture de contenu VOD.
+Dans ce scénario, une certaine mise en mémoire tampon survient lors de la lecture de contenu VOD.
 
 Sauf indication contraire, les appels réseau dans ce scénario sont identiques à ceux du scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md).
 
 | Déclencheur   | Méthode Heartbeat   | Appels réseau   | Remarques   |
 |---|---|---|---|
 | L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur **[!UICONTROL Lecture]** ou d’un événement de lecture automatique. |
-| La première image de la vidéo s’affiche. | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur. Des pulsations sont envoyées toutes les 10 secondes pendant la lecture. |
+| La première image de la vidéo s’affiche. | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur. Les pulsations sont envoyées toutes les 10 secondes tant que la lecture se poursuit. |
 | Le contenu est lu. |  | Content Heartbeats |  |
 | La mise en mémoire tampon commence. | `trackEvent:BufferStart` | Heartbeat Buffer |  |
 | Le contenu est mis en mémoire tampon. |  | Content Heartbeats |  |
 | La mise en mémoire tampon est terminée. | `trackEvent:BufferComplete` | Heartbeat Buffer, Heartbeat Play |  |
 | Le contenu est lu. |  | Content Heartbeats |  |
-| La lecture du contenu est terminée. | `trackComplete` | Heartbeat Content Complete | Le curseur de lecture a atteint la fin de sa course. |
+| La lecture du contenu est terminée. | `trackComplete` | Heartbeat Content Complete | La fin du curseur de lecture a été atteinte. |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur ne regarde pas la vidéo jusqu’à la fin. |
 
 ## Paramètres {#parameters}
