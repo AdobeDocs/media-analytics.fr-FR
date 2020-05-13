@@ -12,22 +12,22 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Introduction {#introduction}
 
-Roku a introduit une nouvelle structure de programmation pour le développement d’applications : la structure de programmation SceneGraph XML. Cette nouvelle structure propose deux nouveaux concepts clés :
+Roku a introduit une nouvelle structure de programmation pour le développement d’applications : la structure de programmation XML SceneGraph. Cette nouvelle structure comprend deux nouveaux concepts clés :
 
-* Rendu SceneGraph des écrans d’application
+* Rendu SceneGraph des écrans de l’application
 * Configuration XML des écrans SceneGraph
 
-Le kit Adobe Mobile SDK for Roku est écrit en BrightScript. Le kit SDK utilise de nombreux composants qui ne sont pas disponibles pour une application s’exécutant sur SceneGraph (par exemple, les threads). Par conséquent, un développeur d’applications Roku souhaitant utiliser la structure SceneGraph ne peut pas appeler les API du kit SDK Adobe Mobile (ces dernières sont identiques à celles disponibles dans les applications BrightScript existantes).
+Le SDK Adobe Mobile pour Roku est écrit dans BrightScript. Le SDK utilise de nombreux composants qui ne sont pas disponibles pour une application s’exécutant sur SceneGraph (par exemple, les threads). Par conséquent, un développeur d’applications Roku ayant l’intention d’utiliser la structure SceneGraph ne peut pas appeler les API SDK Adobe Mobile (ces dernières sont similaires à celles disponibles dans les applications BrightScript héritées).
 
 ## Architecture {#architecture}
 
 Pour ajouter la prise en charge de SceneGraph au kit SDK AdobeMobile, Adobe a ajouté une nouvelle API qui crée un pont de connecteur entre le kit SDK AdobeMobile et `adbmobileTask`. Le second est un nœud SceneGraph utilisé pour l’exécution de l’API du kit SDK. (L’utilisation d’`adbmobileTask` est expliquée en détail dans tout le reste de ce document.)
 
-Le pont de connecteur est conçu pour effectuer les opérations suivantes :
+Le pont de connecteur est conçu pour fonctionner comme suit :
 
-* Le pont renvoie une instance compatible avec SceneGraph du kit SDK AdobeMobile. Le SDK compatible avec SceneGraph comporte toutes les API prises en charge par le kit SDK existant.
-* Vous utilisez les API du kit SDK AdobeMobile dans SceneGraph presque comme vous utilisiez les API existantes.
-* Le pont expose également un mécanisme pour écouter les rappels des API qui renvoient certaines données.
+* Le pont renvoie une instance compatible SceneGraph du SDK AdobeMobile. Le SDK compatible avec SceneGraph possède toutes les API exposées par le SDK hérité.
+* Vous utilisez les API SDK AdobeMobile dans SceneGraph de manière très similaire à la manière dont vous utilisiez les API héritées.
+* Le pont expose également un mécanisme d’écoute des rappels pour les API qui renvoient certaines données.
 
 ![](assets/SceneGraph_arch.png)
 
@@ -40,8 +40,8 @@ Le pont de connecteur est conçu pour effectuer les opérations suivantes :
 
 **AdobeMobileLibrary :**
 
-* Expose un ensemble d’API publiques (existantes), y compris l’API de pont de connecteur.
-* Renvoie une instance de connecteur SceneGraph qui englobe toutes les API publiques existantes.
+* Expose un ensemble d’API publiques (héritées), y compris l’API du pont de connecteur.
+* Renvoie une instance de connecteur SceneGraph qui encapsule toutes les API publiques héritées.
 * Communique avec un nœud SceneGraph `adbmobileTask` pour l’exécution des API.
 
 **Nœud adbmobileTask :**
@@ -53,7 +53,7 @@ Le pont de connecteur est conçu pour effectuer les opérations suivantes :
 
 ### ADBMobileConnector
 
-| Catégorie | Nom de méthode | Description |
+| Catégorie | Nom de la méthode | Description |
 |---|---|---|
 | **Constantes** |  |  |
 |  | `sceneGraphConstants` | Renvoie un objet contenant `SceneGraphConstants`. Reportez-vous au tableau ci-dessus pour plus de détails. |
@@ -91,14 +91,14 @@ Le pont de connecteur est conçu pour effectuer les opérations suivantes :
 |  | Pour plus d’informations, reportez-vous à la section Audience Manager du kit SDK hérité. |  |
 |  |  |  |
 | **MediaHeartbeat** |  |  |
-|  | `mediaTrackLoad` | API SceneGraph permettant de charger du contenu vidéo pour le suivi MediaHeartbeat. |
-|  | mediaTrackStart | API SceneGraph permettant de démarrer la session de suivi vidéo à l’aide de MediaHeartbeat. |
+|  | `mediaTrackLoad` | API SceneGraph permettant de charger le contenu vidéo pour le suivi MediaHeartbeat. |
+|  | mediaTrackStart | API SceneGraph pour commencer la session de suivi vidéo à l’aide de MediaHeartbeat. |
 |  | `mediaTrackUnload` | API SceneGraph permettant de décharger le contenu vidéo depuis le suivi MediaHeartbeat. |
-|  | `mediaTrackPlay` | API SceneGraph permettant de suivre la lecture du contenu vidéo. |
-|  | mediaTrackPause | API SceneGraph permettant de suivre le contenu vidéo en pause. |
+|  | `mediaTrackPlay` | API SceneGraph permettant de suivre la lecture de contenu vidéo. |
+|  | mediaTrackPause | API SceneGraph permettant de suivre la mise en pause de contenu vidéo. |
 |  | `mediaTrackComplete` | API SceneGraph permettant de suivre la fin du contenu vidéo. |
 |  | `mediaTrackError` | API SceneGraph permettant de suivre les erreurs de lecture. |
-|  | mediaTrackEvent | API SceneGraph permettant de suivre les événements de lecture au cours du suivi. Par exemple : Publicités, chapitres. |
+|  | mediaTrackEvent | API SceneGraph permettant de suivre les événements de lecture pendant le suivi. Par exemple : Publicités, Chapitres. |
 |  | `mediaUpdatePlayhead` | API SceneGraph permettant d’envoyer des mises à jour playhead à MediaHeartbeat pendant le suivi vidéo. |
 |  | `mediaUpdateQoS` | API SceneGraph permettant d’envoyer des mises à jour QoS à MediaHeartbeat pendant le suivi vidéo. |
 |  | Pour plus d’informations, reportez-vous à la section MediaHeartbeat du kit SDK hérité. |  |
@@ -136,7 +136,7 @@ Le pont de connecteur est conçu pour effectuer les opérations suivantes :
 <td> adbmobileApiResponse </td>
 <td> assocarray </td>
 <td> Non valide </td>
-<td> Lecture seule de toutes les API exécutéees sur AdobeMobileSDK renvoie la réponse sur ce champ. Enregistrez un rappel pour écouter les mises à jour de ce champ afin de recevoir les objets de réponse. Le format de l’objet de réponse est le suivant :  
+<td> Lecture seule de toutes les API exécutéees sur AdobeMobileSDK renvoie la réponse sur ce champ. Inscrivez-vous à un rappel pour écouter les mises à jour de ce champ afin de recevoir les objets de réponse. Voici le format de l’objet de réponse :  
 <codeblock>
 response = {
   "apiName" : &lt;SceneGraphConstants.
@@ -188,10 +188,10 @@ Type de retour : `SceneGraphConstants`
 
 |  Fonctionnalité  | Nom de constante | Description   |
 |---|---|---|
-| Contrôle de version | `version` | Constante permettant de récupérer les informations de version AdobeMobileLibrary |
+| Contrôle de version | `version` | Constante permettant de récupérer les informations de version d’AdobeMobileLibrary |
 | Confidentialité/désinscription | `PRIVACY_STATUS_OPT_IN` | Constante pour l’état de confidentialité choisi |
-|  | `PRIVACY_STATUS_OPT_OUT` | Constante pour l’état de confidentialité abandonné |
-| Constantes MediaHeartbeat | Consultez les constantes de cette page : <br/><br/>[Méthodes Media Heartbeat.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilisation de ces constantes avec les API MediaHeartbeat |
+|  | `PRIVACY_STATUS_OPT_OUT` | Constante pour l’état de confidentialité refusé |
+| Accéder aux constantes MediaHeartbeat | Consultez les constantes de cette page : <br/><br/>[Méthodes Media Heartbeat.](/help/sdk-implement/track-av-playback/track-core/track-core-roku.md) | Utilisation de ces constantes avec les API MediaHeartbeat |
 | Métadonnées standard | Reportez-vous aux constantes de cette page : <br/><br/>[Paramètres de métadonnées standard.](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Utilisez ces constantes pour joindre des métadonnées de type vidéo/publicitaire standard dans des API MediaHeartbeat |
 
 Les API `MediaHeartbeat` d’utilitaire globalement définies sur le composant AdobeMobileLibrary hérité sont accessibles *telles quelles* dans l’environnement SceneGraph car elles n’utilisent aucun composant Brightscript non disponible dans les nœuds SceneGraph. Pour plus d’informations sur ces méthodes, consultez le tableau ci-dessous :
