@@ -108,7 +108,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-Les deux instances de `MediaAnalyticsProvider` et `MediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session. Vous pouvez identifier les deux sessions dans l’outil de débogage Charles ou les journaux de débogage à l’aide de la valeur de l’ID de session. Pour afficher ce scénario dans Android, configurez le code suivant :
+Les deux instances de `MediaAnalyticsProvider` et `MediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session. Les deux sessions de l’outil de débogage Charles ou des journaux de débogage peuvent être identifiées à l’aide de la valeur ID de session. Pour afficher ce scénario dans Android, configurez le code suivant :
 
 ```java
 // Set up mediaObject 
@@ -272,7 +272,7 @@ _mediaHeartbeat.trackSessionEnd();
 } 
 ```
 
-Les deux instances de `MediaAnalyticsProvider` et `ADBMediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session. Vous pouvez identifier les deux sessions dans l’outil de débogage Charles ou les journaux de débogage à l’aide de la valeur de l’ID de session.
+Les deux instances de `MediaAnalyticsProvider` et `ADBMediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session. Les deux sessions de l’outil de débogage Charles ou des journaux de débogage peuvent être identifiées à l’aide de la valeur ID de session.
 
 Pour afficher ce scénario dans iOS, configurez le code suivant :
 
