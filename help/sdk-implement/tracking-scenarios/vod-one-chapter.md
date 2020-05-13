@@ -18,11 +18,11 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 
 | Déclencheur   | Méthode Heartbeat   | Appels réseau   | Remarques   |
 |---|---|---|---|
-| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Nous n’avons pas encore indiqué la présence d’une publicité preroll à la bibliothèque de mesures. Par conséquent, les appels réseau sont exactement identiques au contenu vidéo unique. |
+| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Nous n’avons pas encore indiqué à la bibliothèque de mesures qu’il existe une publicité preroll. Ces appels réseau sont donc exactement identiques à ceux du scénario VoD unique. |
 | Le chapitre démarre. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
-| La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Content Play | Lorsque le contenu du chapitre est lu avant le contenu principal, les pulsations démarrent dès que le chapitre démarre. |
+| La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Content Play | Lorsque le contenu du chapitre est lu avant le contenu principal, le Heartbeats commence lorsque le chapitre commence. |
 | Le chapitre est lu. |  | Chapter Heartbeats |  |
-| Le chapitre est terminé. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | Cela se produit lorsque la fin du chapitre est atteinte. |
+| Le chapitre est terminé. | `trackEvent:trackChapterComplete` | Heartbeat Chapter Complete | La fin du chapitre est atteinte. |
 | Le contenu est lu. |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Le contenu est terminé. | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` signifie que la fin de la session de visionnage a été atteinte. Cette API doit être appelée même si l’utilisateur n’utilise pas le média jusqu’à la fin. |
