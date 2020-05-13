@@ -12,19 +12,19 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 ## Scénario {#scenario}
 
-Dans ce scénario, l’utilisateur saute un chapitre du contenu principal.
+Dans ce scénario, l’utilisateur saute un chapitre dans le contenu principal.
 
-Il s’agit du même scénario que [Lecture VOD avec un chapitre](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), à l’exception près que dans ce cas, l’utilisateur essaie d’effectuer une recherche en passant le contenu pour accéder directement au contenu principal.
+Il s’agit du même scénario que la lecture [VOD avec un chapitre](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), sauf que l’utilisateur dans ce cas a l’intention de rechercher un élément du chapitre, le sautant ainsi pour accéder au contenu principal.
 
 | Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques |
 |---|---|---|---|
 | L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario [Lecture sans interruptions dans un scénario iOS](vod-no-intrs-details.md). |
 | Le chapitre démarre. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
-| La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Chapter Play | Lorsque le contenu du chapitre est lu avant le contenu principal, nous souhaitons démarrer les pulsations au début du chapitre. |
+| La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Chapter Play | Lorsque le contenu d’un chapitre est lu avant le contenu principal, nous voulons commencer les pulsations lorsque le chapitre commence. |
 | Le chapitre est lu. |  | Chapter Heartbeats |  |
-| Début de la recherche pour sauter le premier chapitre. | `trackEvent:trackSeekStart` |  | Aucune pulsation pendant la recherche |
-| La recherche est terminée. | `trackEvent:trackSeekComplete` |  | Après ce déclencheur, les pulsations reprennent. |
-| L’application comprend que l’utilisateur a effectué une recherche en dehors de la limite normale du chapitre. | `trackEvent:trackChapterSkip` |  |  |
+| La recherche commence à ignorer le premier chapitre. | `trackEvent:trackSeekStart` |  | Aucune pulsation pendant la recherche |
+| La recherche est terminée. | `trackEvent:trackSeekComplete` |  | Les pulsations reprendraient après cela. |
+| L’application réalise que l’utilisateur a effectué une recherche en dehors de la limite normale du chapitre. | `trackEvent:trackChapterSkip` |  |  |
 | Le contenu est lu. |  | Content Heartbeats |  |
 | La lecture du contenu est terminée. | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture interruption sur iOS](vod-no-intrs-details.md). |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur n’utilise pas le média jusqu’à la fin. |
