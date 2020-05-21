@@ -2,8 +2,11 @@
 title: 'Chronologie 3 : Chapitres'
 description: null
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
-translation-type: ht
-source-git-commit: 5107de22c2388e8ac5b15b8d28fa974e97363fdf
+translation-type: tm+mt
+source-git-commit: 197041df4c985cdc572564652a976bd733448787
+workflow-type: tm+mt
+source-wordcount: '1219'
+ht-degree: 100%
 
 ---
 
@@ -745,4 +748,3 @@ Envoyez `sessionComplete` au serveur principal pour indiquer que l’utilisateur
 >[!NOTE]
 >
 >**Aucun événement de recherche ? -** Il n’y a pas de prise en charge explicite des événements `seekStart` ou `seekComplete` dans l’API Media Collection. C’est parce que certains lecteurs génèrent un très grand nombre de ces événements lorsque l’utilisateur final est en train de balayer, et que plusieurs centaines d’utilisateurs pourraient facilement étrangler la bande passante réseau d’un service principal. Adobe évite un support explicite aux événements de recherche en calculant la durée des pulsations en fonction de l’horodatage de l’appareil, plutôt que de la position de la tête de lecture.
-
