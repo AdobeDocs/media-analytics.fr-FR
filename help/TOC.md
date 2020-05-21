@@ -4,10 +4,10 @@ user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: 841e02e5f4fdd6eebd6eac0c1d42997db49b071e
+source-git-commit: 48de18b022d004bf301a55ec71b6a889f7b9ebb3
 workflow-type: tm+mt
 source-wordcount: '677'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 98%
       + [Côté client](intro-to-ava/implementation-paths/client-side-path.md)
       + Autres chemins d’implémentation {#other-paths}
          + Suivi des jalons du module média {#mm-milestone-tracking}
-            + [Aperçu de Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
+            + [Présentation des jalons](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Migrer le jalon vers Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migration de Milestone vers les liens personnalisés](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Lien personnalisé dans Analytics {#cl-in-aa}
@@ -41,7 +41,7 @@ ht-degree: 98%
       + [Configuration de JavaScript](sdk-implement/setup/set-up-js.md)
       + [Configuration de Chromecast ](sdk-implement/setup/set-up-chromecast.md)
       + [Configuration de Roku ](sdk-implement/setup/set-up-roku.md)
-   + Suivi de la lecture audio et vidéo {#track-av-playback}
+   + Track Audio and Video Playback {#track-av-playback}
       + [Aperçu](sdk-implement/track-av-playback/track-core-overview.md)
       + Suivi de la lecture audio et vidéo principale {#track-core}
          + [Suivi de la lecture principale sur Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -61,7 +61,7 @@ ht-degree: 98%
          + [Suivi de la recherche sur JavaScript](sdk-implement/track-av-playback/track-seeking/track-seeking-js.md)
          + [Suivi de la recherche sur Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Suivi de la recherche sur Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Mise en œuvre de métadonnées standard {#impl-std-metadata}
+      + Implement Standard Metadata {#impl-std-metadata}
          + [Mise en œuvre de métadonnées standard sur Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Mise en œuvre de métadonnées standard sur iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [Clés de métadonnées iOS](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -77,7 +77,7 @@ ht-degree: 98%
       + [Suivi des publicités sur JavaScript](sdk-implement/track-ads/track-ads-js.md)
       + [Suivi des publicités sur Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Suivi des publicités sur Roku](sdk-implement/track-ads/track-ads-roku.md)
-      + Mise en œuvre de métadonnées de publicité standard {#impl-std-ad-metadata}
+      + Implement Standard ad Metadata {#impl-std-ad-metadata}
          + [Mise en œuvre de métadonnées de publicité standard sur Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [Mise en œuvre de métadonnées de publicité standard sur iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + [Mise en œuvre de métadonnées de publicité standard sur JavaScript](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-js.md)
