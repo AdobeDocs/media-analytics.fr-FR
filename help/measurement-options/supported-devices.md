@@ -1,16 +1,20 @@
 ---
-title: Périphériques pris en charge
-description: null
-uuid: null
+title: Périphériques et plates-formes pris en charge
+description: Adobe Analytics pour l’audio et la vidéo garantit que chaque flux média est collecté et rapporté sur tous les périphériques.
 translation-type: tm+mt
-source-git-commit: 3a237ee31412784f708e772cc3a58047630e2184
+source-git-commit: a8fec1747e688473af7a5eabbc4f9968772b5db3
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 15%
 
 ---
 
 
-# Périphériques pris en charge {#devices-supported}
+# Périphériques et plates-formes pris en charge {#devices-supported}
 
-Adobe Analytics pour l’audio et la vidéo garantit que chaque flux média est collecté et rapporté sur tous les périphériques.
+>[!IMPORTANT]
+>
+>Avec la fin de la prise en charge des SDK mobiles de la version 4 le 31 août 2021, Adobe cessera également de prendre en charge le SDK Media Analytics pour iOS et Android.  Pour plus d’informations, voir FAQ [sur la fin de prise en charge du SDK](/help/sdk-implement/end-of-support-faqs.md)Media Analytics.
 
 Adobe Analytics pour l’audio et la vidéo prend en charge tous les principaux périphériques, notamment :
 
@@ -18,32 +22,32 @@ Adobe Analytics pour l’audio et la vidéo prend en charge tous les principaux 
 * Appareils OTT pour ROKU, Apple TV, FireTV et Android TV
 * Navigateur JavaScript pour ordinateur de bureau et ordinateur portable
 
-Le SDK Media est régulièrement mis à jour lorsque de nouvelles versions de périphériques sont publiées et vous pouvez utiliser le SDK pour l’intégrer aux plus grands lecteurs de médias actuels, y compris Brightcove et Ooyala.
+Les SDK Media sont régulièrement mis à jour lorsque de nouvelles versions des périphériques sont publiées et vous pouvez utiliser le SDK pour l&#39;intégrer aux plus grands lecteurs de médias actuels, y compris Brightcove et Ooyala.
 
 Pour les périphériques ou plates-formes qui ne prennent pas actuellement en charge le SDK ou dans les cas où vous ne souhaitez pas utiliser de SDK, vous pouvez mettre en oeuvre l’API de collecte de médias. L’API de collecte de médias vous permet d’effectuer des appels d’API RESTful directement depuis un périphérique ou une plate-forme vers l’arrière-plan Media Analytics.
 
-Le tableau ci-dessous liste les périphériques actuellement pris en charge. Pour télécharger la dernière version du SDK, consultez [Téléchargement des SDK](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). Si un périphérique n’est pas répertorié, contactez le service à la clientèle ou le consultant en solution pour connaître son état.
+Le tableau ci-dessous liste actuellement les périphériques et plates-formes pris en charge. Pour télécharger la dernière version du SDK, consultez [Téléchargement des SDK](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/download-sdks.html). Si un périphérique n’est pas répertorié, contactez le service à la clientèle ou le consultant en solution pour connaître son état.
 
-
-| Plateforme/périphérique de diffusion en continu |  | Extension Media Launch avec SDK AEP | SDK Media | API Media Collection |
-|---------------------------|-----------------------------------------------|:----------------------------:|:-------------------:|:--------------------:|
+| Plateformes et périphériques de diffusion en continu |  | Extension Media Launch avec SDK AEP | SDK Media | API Media Collection |
+|:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web |  |  |  |  |
-|  | Navigateurs JavaScript | X | X | X |
+|  | Navigateurs JavaScript | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
 | Application mobile |  |  |  |  |
-|  | Appareils iOS | X | X | X |
-|  | Appareils Android | X | X | X |
-|  | Périphériques Windows |  |  | X |
+|  | Appareils iOS | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Appareils Android | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Périphériques Windows |  |  | ![](/help/assets/icon-blue-check.png) |
 | OTT |  |  |  |  |
-|  | Apple TV (hérité, TVOS) |  | X | X |
-|  | ROKU |  | X<br>(BrightScript) | X<br>(natif) |
-|  | Téléviseur Fire (SE Fire) |  | X | X |
-|  | Android TV |  | X | X |
-|  | Chromecast |  | X | X |
-|  | Consoles de jeux (ex. Xbox ONE, Sony PS3/PS4) |  |  | X |
-|  | Définir les cadres supérieurs (ex. xfinity X1) |  |  | X |
-|  | Smartphone (par exemple Samsung, LG, Sony, Vizio) |  | X<br>(Web) | X |
+|  | Apple TV (tvOS) | Prévue 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | ROKU |  | ![](/help/assets/icon-blue-check.png)   <br>(BrightScript)    | ![](/help/assets/icon-blue-check.png)<br>(natif) |
+|  | Téléviseur Fire (SE Fire) | Prévue 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Android TV | Prévue 2020 | ![](/help/assets/icon-blue-check.png) <sup>1</sup> | ![](/help/assets/icon-blue-check.png) |
+|  | Chromecast |  | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
+|  | Consoles de jeux (ex. Xbox ONE, Sony PS3/PS4) |  |  | ![](/help/assets/icon-blue-check.png) |
+|  | Définir les cadres supérieurs (ex. xfinity X1) |  |  | ![](/help/assets/icon-blue-check.png) |
+|  | Smartphone (par exemple Samsung, LG, Sony, Vizio) |  | ![](/help/assets/icon-blue-check.png)   <br>(Web)    | ![](/help/assets/icon-blue-check.png) |
 | Autre |  |  |  |  |
-|  | Nouveaux périphériques connectés |  |  | X |
+|  | Nouveaux périphériques connectés |  |  | ![](/help/assets/icon-blue-check.png) |
 
+1. La prise en charge de ces SDK se termine le 31 août 2021. Pour plus d’informations, voir FAQ [sur la fin de prise en charge du SDK](/help/sdk-implement/end-of-support-faqs.md)Media Analytics.
 
-Pour le SDK Media, voir également [Prise en charge de version minimum de plateforme](/help/sdk-implement/setup/setup-overview.md#minimum-platform-version)
+Pour plus d’informations sur les versions minimales de plate-forme prises en charge pour chaque SDK, voir Prise en charge [minimale des versions de plate-forme](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html)
