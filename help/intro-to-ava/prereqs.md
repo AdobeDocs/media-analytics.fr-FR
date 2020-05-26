@@ -2,11 +2,11 @@
 title: Conditions préalables
 description: null
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Pour une mise en œuvre *Media Analytics*, vous devez effectuer les tâches suiv
 
    >[!IMPORTANT]
    >
-   >En l’absence d’information sur l’identifiant utilisateur présente dans les appels spécifiques au média, les [méthodes d’ID de secours](https://docs-author.corp.adobe.com/content/help/en/analytics/implementation/javascript-implementation/unique-visitors/visid-fallback.html) par défaut s’appliquent.
+   >En l’absence d’information sur l’identifiant utilisateur présente dans les appels spécifiques au média, les [méthodes d’ID de secours](https://docs.adobe.com/content/help/fr-FR/analytics/technotes/visitor-identification.translate.html) par défaut s’appliquent.
 
    Pour en savoir plus sur Experience Cloud ID, consultez [Aperçu du service Experience Cloud ID](https://docs.adobe.com/content/help/fr-FR/id-service/using/intro/overview.html) et [Service d’identité d’Adobe Experience Platform.](https://docs.adobe.com/content/help/fr-FR/id-service/using/home.html)
 
