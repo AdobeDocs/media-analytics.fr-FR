@@ -2,8 +2,11 @@
 title: Aperçu de Milestone
 description: null
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '3344'
+ht-degree: 100%
 
 ---
 
@@ -28,7 +31,7 @@ Vous pouvez également effectuer le suivi d’autres mesures supplémentaires po
 
 ### Configuration des rapports Milestone
 
-Pour configurer un rapports vidéo pour une mise en oeuvre de jalon, accédez à **[!UICONTROL Admin > Report Suite Manager].**Sélectionnez la suite de rapports, puis choisissez**[!UICONTROL Video Management > Video Reporting]:**
+Pour configurer les rapports vidéo pour une mise en œuvre Milestone, accédez à **[!UICONTROL Administration > Gestionnaire de suites de rapports].**Sélectionnez la suite de rapports, puis choisissez**[!UICONTROL Gestion des vidéos > Création de rapports vidéo] :**
 
 <!--
 ![](assets/0clip_image002_1537416456.png){width="248"}
@@ -36,11 +39,11 @@ Pour configurer un rapports vidéo pour une mise en oeuvre de jalon, accédez à
 
 ![](assets/rs1.png)
 
-Sur le premier écran, seule la mesure Cœur de la vidéo fonctionnera avec les données Milestone. Sélectionnez **[!UICONTROL Video Core]** puis cliquez sur **[!UICONTROL Save].**
+Sur le premier écran, seule la mesure Cœur de la vidéo fonctionnera avec les données Milestone. Sélectionnez **[!UICONTROL Cœur de la vidéo]**, puis cliquez sur **[!UICONTROL Enregistrer].**
 
 ![](assets/video-core-check.png)
 
-Dans l’écran suivant, sélectionnez **[!UICONTROL Use Custom Variables].**
+Sur l’écran suivant, sélectionnez **[!UICONTROL Utiliser les variables personnalisées].**
 
 <!--
 ![](assets/0clip_image006_-1561510960.png){width="470"}
@@ -122,7 +125,7 @@ Si vous utilisez `Media.autoTrack` sans effectuer le suivi d’autres mesures, i
 | `Media.play` | **Syntaxe :** <br/><br/> `s.Media.play(name, offset, segmentNum, segment, segmentLength)` <br/><br/>Appelez cette méthode à chaque démarrage de lecture d’une vidéo. Lorsque vous utilisez des mesures vidéo manuelles, vous pouvez fournir les données du segment actuel lors de l’envoi des données des mesures vidéo.  <br/><br/>Si votre lecteur passe d’un segment à un autre pour une raison quelconque, vous devez appeler `Media.stop``Media.play`. <br/><br/> Cette méthode utilise les paramètres suivants : <br/><br/> **mediaName** : nom de la vidéo. Celui-ci doit correspondre au nom utilisé dans Media.open.  <br/><br/> **mediaOffset :** moment de la vidéo (en secondes) auquel la lecture démarre. Précisez le décalage par rapport au démarrage de la vidéo à zéro seconde. Si votre lecteur multimédia effectue un suivi à partir de millisecondes, veillez à convertir cette valeur en secondes avant d’appeler Media.play.  <br/><br/> **segmentNum** : (facultatif) numéro du segment actuel, utilisé par les rapports marketing pour classer l’affichage des segments dans les rapports. Le paramètre segmentNum doit être supérieur à zéro.  <br/><br/> **segment** : (facultatif) nom du segment actuel.  <br/><br/> **segmentLength** : (facultatif) <br/><br/>durée du segment actuel, en secondes.  <br/><br/>Par exemple : <br/><br/> `s.Media.play("My Video", 1800, 2,"Second Quarter", 1800)` <br/><br/> `s.Media.play("My Video", 0, 1,"Preroll", 30)` |
 | `Media.stop` | **Syntaxe :** <br/><br/> `s.Media.stop(mediaName, mediaOffset)` <br/><br/>Effectue le suivi d’un événement stop (stop, pause, etc.) pour la vidéo spécifiée. Cette méthode utilise les paramètres suivants : <ul> <li> **mediaName** : nom de la vidéo. Celui-ci doit correspondre au nom utilisé dans `Media.open`.  </li> <li> **mediaOffset** : moment de la vidéo (en secondes) auquel l’événement stop ou pause se produit. Précisez le décalage par rapport au démarrage de la vidéo à zéro seconde.  </li> </ul> |
 | `Media.monitor` | **Syntaxe :** <br/><br/> `s.Media.monitor(s, media)` <br/><br/> **Syntaxe de Silverlight :**<br/><br/> `s.Media.monitor =` <br/>   `new AppMeasurement_Media_Monitor(myMediaMonitor);` <br/><br/>Le moniteur multimédia de l’application Silverlight met en œuvre le schéma de conception du délégué Objective-C. La `myMediaMonitor`méthode de classe utilise les paramètres `s` et `media`. <br/><br/>Utilisez cette méthode pour envoyer des mesures vidéo supplémentaires. Vous pouvez configurer des variables complémentaires (Props, eVars, Events) et les envoyer à l’aide de `Media.track` en fonction de l’état de lecture actuel de la vidéo. <br/><br/>Voir [Mesures vidéo supplémentaires à l’aide de Media.monitor.](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/media-overview.html) <br/><br/>Cette méthode utilise les paramètres suivants : <br/><br/>  **s** : `AppMeasurement`instance (ou objet `s` JavaScript). <br/><br/> **Media** : objet dont les membres transmettent l’état de la vidéo. Ces membres comprennent les éléments suivants :  <ul><li> `media.name:` Nom de la vidéo. Celui-ci doit correspondre au nom utilisé dans `Media.open` ; </li><li> `media.length:` Durée de la vidéo, en secondes, fournie dans l’appel à `Media.open` ; </li><li> `media.playerName:` Nom du lecteur multimédia fourni dans l’appel à `Media.open` ; </li><li> `media.openTime:` Objet NSDate comportant des données concernant le moment où `Media.open` a été appelé ; </li><li> `media.offset:` Décalage actuel dans la vidéo, en secondes (point actuel dans la vidéo). Le décalage commence à zéro (la première seconde de la vidéo correspond à la seconde 0) ; </li><li> `media.percent:` Pourcentage actuel lu de la vidéo, en fonction de la durée de la vidéo et du décalage actuel. ;  </li><li> `media.timePlayed:` Nombre total de secondes lues jusqu’ici ;  </li><li> `media.eventFirstTime:` Indique s’il s’agit de la première fois que cet événement multimédia est appelé pour cette vidéo ; </li><li> `media.mediaEvent:` Chaîne contenant le nom de l’événement qui a provoqué l’appel monitor. </li></ul> |
-|  | `media.mediaEvent` events: <ul><li> `OPEN:` Lorsque la lecture est d’abord observée par le biais de `Media.autoTrack` ou lors d’un appel à `Media.play` ; </li><li> `CLOSE:` Lorsque la lecture se termine à la fin de la vidéo par le biais de `Media.autoTrack` ou lors d’un appel à `Media.close` ;</li><li> `PLAY:` Lorsque la lecture reprend après avoir été mise en pause ou après un parcours de `Media.autoTrack`, ou lors d’un second appel à `Media.play` ;</li><li> `STOP:` Lorsque la lecture s’arrête en raison d’une mise en pause au début d’un défilement à l’aide de `Media.autoTrack`, ou lors d’un appel à `Media.stop` ;</li><li> `MONITOR:` Lorsque notre surveillance automatique vérifie l’état de la vidéo en cours de lecture (seconde par seconde) ;</li><li> `SECONDS:` À l’intervalle de secondes défini par la variable `Media.trackSeconds` ;</li><li> `MILESTONE:` Au jalon défini par la variable `Media.trackMilestones` ; </li></ul> |
+|  | `media.mediaEvent` events : <ul><li> `OPEN:` Lorsque la lecture est d’abord observée par le biais de `Media.autoTrack` ou lors d’un appel à `Media.play` ; </li><li> `CLOSE:` Lorsque la lecture se termine à la fin de la vidéo par le biais de `Media.autoTrack` ou lors d’un appel à `Media.close` ;</li><li> `PLAY:` Lorsque la lecture reprend après avoir été mise en pause ou après un parcours de `Media.autoTrack`, ou lors d’un second appel à `Media.play` ;</li><li> `STOP:` Lorsque la lecture s’arrête en raison d’une mise en pause au début d’un défilement à l’aide de `Media.autoTrack`, ou lors d’un appel à `Media.stop` ;</li><li> `MONITOR:` Lorsque notre surveillance automatique vérifie l’état de la vidéo en cours de lecture (seconde par seconde) ;</li><li> `SECONDS:` À l’intervalle de secondes défini par la variable `Media.trackSeconds` ;</li><li> `MILESTONE:` Au jalon défini par la variable `Media.trackMilestones` ; </li></ul> |
 | `Media.track` | **Syntaxe :** <br/><br/> `s.Media.track(mediaName)` <br/><br/>Transmet immédiatement l’état actuel de la vidéo ainsi que les variables `Media.trackVars` et Media.trackEvents que vous avez définies. Cette méthode est utilisée avec `Media.monitor`. <br/><br/>Voir [Mesures vidéo supplémentaires à l’aide de Media.monitor.](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/media-overview.html) <br/><br/>Appelez `Media.open` et `Media.play` sur la vidéo avant d’appeler cette méthode. Cette méthode utilise le paramètre suivant : <ul> <li> **mediaName** : nom de la vidéo. Celui-ci doit correspondre au nom utilisé dans `Media.open`.</li> </ul> Cette méthode constitue le seul moyen d’envoyer des variables supplémentaires pendant la lecture de la vidéo. Elle réinitialise les compteurs d’intervalles, en secondes, et de jalons, en pourcentage, pour éviter la double comptabilisation d’accès de suivi. |
 
 
