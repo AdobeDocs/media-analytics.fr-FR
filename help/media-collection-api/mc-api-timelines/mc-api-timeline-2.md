@@ -2,8 +2,11 @@
 title: 'Chronologie 2 : L’utilisateur abandonne la session'
 description: null
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+workflow-type: ht
+source-wordcount: '634'
+ht-degree: 100%
 
 ---
 
@@ -25,9 +28,9 @@ Les diagrammes suivants illustrent la chronologie du curseur de lecture et la ch
 
 ### Action 1 - Démarrage de la session {#Action-1}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| Bouton Lecture automatique ou Lecture enfoncé | 0 | 0 | `/api/v1/sessions` |
+| Bouton Lecture automatique ou bouton Lecture enfoncé | 0 | 0 | `/api/v1/sessions` |
 
 **Détails de mise en œuvre**
 
@@ -60,9 +63,9 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renv
 
 ### Action 2 - Démarrage du minuteur de ping {#Action-2}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’application commence à envoyer un ping au minuteur d’événement | 0 | 0 |  |
+| L’application démarre le minuteur d’événement de ping | 0 | 0 |  |
 
 **Détails de mise en œuvre**
 
@@ -70,9 +73,9 @@ Démarrez le minuteur de ping de votre application. Le premier événement ping 
 
 ### Action 3 - Début de la coupure publicitaire {#Action-3}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| Suivez le démarrage de la coupure publicitaire preroll | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| Suivi du début de la coupure publicitaire preroll | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
@@ -96,9 +99,9 @@ Les publicités preroll doivent être suivies. Les publicités ne peuvent être 
 
 ### Action 4 - Démarrage de la publicité {#Action-4}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| Suivez le démarrage de la publicité preroll #1 | 0 | 0 | `/api/v1/sessions/{sid}/events` |
+| Le suivi de la publicité preroll N°1 commence | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
@@ -131,7 +134,7 @@ Une publicité de 12 secondes commence.
 
 ### Action 5 - Pings de publicité {#Action-5}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
 | L’application envoie un événement ping | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
@@ -153,9 +156,9 @@ Envoyez un ping au serveur principal toutes les secondes. (Les pings de publici
 
 ### Action 6 - Fin de la publicité {#Action-6}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| Suivez la fin de la publicité preroll #1 | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Le suivi de la publicité preroll N°1 est terminé | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
@@ -175,13 +178,13 @@ La première publicité preroll est terminée.
 
 ### Action 7 - Fin de la coupure publicitaire {#Action-7}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| Suivez la fin de la coupure publicitaire preroll | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Le suivi de la coupure publicitaire preroll est terminé | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
-La coupure publicitaire est terminée. Du début à la fin de la coupure publicitaire, le lecteur est resté à l’état « lecture ».
+La coupure publicitaire est terminée. Tout au long de la coupure publicitaire, le lecteur est resté à l’état « lecture ».
 
 **Exemple de corps de requête**
 
@@ -197,9 +200,9 @@ La coupure publicitaire est terminée. Du début à la fin de la coupure publici
 
 ### Action 8 - Lecture du contenu {#Action-8}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| Suivez l’événement de lecture | 12 | 0 | `/api/v1/sessions/{sid}/events` |
+| Suivi de l’événement de lecture | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
@@ -220,7 +223,7 @@ Déplacez le lecteur vers l’état « lecture » ; commencez le suivi du dé
 
 ### Action 9 - Ping {#Action-9}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
 | L’application envoie un événement ping | 20 | 8 | `/api/v1/sessions/{sid}/events` |
 
@@ -242,7 +245,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 
 ### Action 10 - Ping {#Action-10}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
 | L’application envoie un événement ping | 30 | 18 | `/api/v1/sessions/{sid}/events` |
 
@@ -264,9 +267,9 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 
 ### Action 11 - Erreur {#Action-11}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| Une erreur survient, l’application envoie des informations sur l’erreur. | 32 | 20 | `/api/v1/sessions/{sid}/events` |
+| Une erreur se produit, l’application envoie des informations d’erreur. | 32 | 20 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
@@ -285,9 +288,9 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 
 ### Action 12 - Lecture du contenu {#Action-12}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’application récupère d’une erreur, l’utilisateur appuie sur Lecture. | 37 | 20 | `/api/v1/sessions/{sid}/events` |
+| L’application récupère après l’erreur, l’utilisateur appuie sur Lecture. | 37 | 20 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
@@ -307,7 +310,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 
 ### Action 13 - Ping {#Action-13}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
 | L’application envoie un événement ping | 40 | 28 | `/api/v1/sessions/{sid}/events` |
 
@@ -329,9 +332,9 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 
 ### Action 14 - Début de la coupure publicitaire {#Action-14}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| Suivez le démarrage de la coupure publicitaire mid-roll | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| Le suivi de la coupure publicitaire mid-roll commence | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
@@ -355,9 +358,9 @@ Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
 
 ### Action 15 - Démarrage de la publicité {#Action-15}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| Suivez le démarrage de la publicité mid-roll #1 | 45 | 33 | `/api/v1/sessions/{sid}/events` |
+| Le suivi de la publicité mid-roll N°1 commence | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
@@ -388,9 +391,9 @@ Suivez la publicité mid-roll.
 
 ### Action 16 - Fermeture de l’application {#Action-16}
 
-| Action | Chronologie d’actions (secondes) | Position du curseur de lecture (secondes) | Requête client |
+| Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’utilisateur ferme l’application. L’application détermine que l’utilisateur a abandonné le visionnage et ne revient pas à cette session. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
+| L’utilisateur ferme l’application. L’application détermine que l’utilisateur a abandonné l’affichage et ne revient pas sur cette session. | 48 | 33 | `/api/v1/sessions/{sid}/events` |
 
 **Détails de mise en œuvre**
 
