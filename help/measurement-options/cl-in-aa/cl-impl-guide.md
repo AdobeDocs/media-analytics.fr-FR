@@ -2,21 +2,22 @@
 title: Guide de mise en œuvre d’un lien personnalisé
 description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '203'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 
 # Guide de mise en œuvre d’un lien personnalisé {#custom-link-implementation-guide}
 
-Le suivi vidéo personnalisé utilise le [suivi manuel des liens à l’aide du code de lien personnalisé](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) dans le code `appMeasurement` d’Analytics. Le plus souvent, il est utilisé sur les plateformes et les appareils nécessitant peu de mesures vidéo.
+Le suivi vidéo personnalisé utilise le [suivi manuel des liens à l’aide du code de lien personnalisé](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) dans le code `appMeasurement` d’Analytics.
+Le plus souvent, il est utilisé sur les plateformes et les appareils nécessitant peu de mesures vidéo.
 
 * Dans JavaScript : la fonction `s.tl()`
-* Dans les applications mobiles : [trackAction() Android](https://docs.adobe.com/content/help/en/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/en/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* Dans les applications mobiles : [trackAction() Android](https://docs.adobe.com/content/help/fr-FR/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://docs.adobe.com/content/help/fr-FR/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * Dans l’API Data Insertion : [balise linktype](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Conditions
