@@ -2,8 +2,11 @@
 title: Configuration de Roku
 description: Configuration de l’application du SDK Media pour l’implémentation sur Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: ht
+source-wordcount: '577'
+ht-degree: 100%
 
 ---
 
