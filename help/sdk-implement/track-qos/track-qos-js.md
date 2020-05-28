@@ -1,14 +1,17 @@
 ---
-title: Suivi de la qualité de l’expérience sur JavaScript
-description: Cette rubrique décrit l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media dans les applications de navigateur (JS).
+title: Suivi de la qualité de l’expérience à l’aide de JavaScript 2.x
+description: Cette rubrique décrit la mise en oeuvre du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media dans les applications de navigateur utilisant JavaScript 2.x.
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b165c9d133637fd0f1c529a98a936f8f31b72465
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 84%
 
 ---
 
 
-# Suivi de la qualité de l’expérience sur JavaScript {#track-quality-of-experience-on-javascript}
+# Suivi de la qualité de l’expérience à l’aide de JavaScript 2.x{#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -39,14 +42,14 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var qosObject = MediaHeartbeat.createQoSObject(<bitrate>,  
                                                   <startuptime>,  
                                                   <fps>,  
-                                                  <droppedFrames>); 
+                                                  <droppedFrames>);
    ```
 
 1. Lorsque la lecture change de débit binaire, appelez l’événement `BitrateChange` dans l’instance Media Heartbeat :
 
    ```js
-   _onBitrateChange = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
+   _onBitrateChange = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject);
    };
    ```
 
@@ -60,4 +63,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >Le suivi des erreurs du lecteur multimédia n’arrête pas la session de suivi multimédia. Si l’erreur du lecteur multimédia empêche la lecture de se poursuivre, veillez à ce que la session de suivi multimédia soit fermée en appelant `trackSessionEnd()` après avoir appelé `trackError()`.
-
