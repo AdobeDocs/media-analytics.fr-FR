@@ -2,9 +2,9 @@
 title: A propos des états standard et personnalisés
 description: Cette rubrique décrit la fonction de suivi de l’état du lecteur, y compris les exigences et les directives relatives à la mise en oeuvre et au rapports des états standard et personnalisés du lecteur.
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: f7a45dfbabe71fa9e1de7a4f4b2a7e64849e4ef4
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '280'
 ht-degree: 1%
 
 ---
@@ -30,14 +30,15 @@ Les données sont calculées de la même manière pour les états standard et pe
 
 ## Instructions
 
-* Une session vidéo est limitée à 10 états de lecteur personnalisé uniques.
-* Si plusieurs états de lecteur réussissent, seuls les 10 premiers sont conservés et transférés en aval vers le composant de traitement VA(?video analytics).
+* Une session vidéo est limitée à 10 états de lecteur.
+* Toute combinaison d’états est autorisée.
+* Si plusieurs états de lecteur réussissent, seuls les 10 premiers sont conservés et transférés en aval vers le composant de traitement de l’AV.
 * Un maximum de 10 Etats est appliqué à tous les Etats, qu&#39;ils soient fermés ou non.
-* Le même état peut être démarré et terminé un nombre indéfini de fois et est comptabilisé comme un état unique.
-* Chaque état qui dépasse le nombre maximal autorisé de personnalisations ? les états (10) sont ignorés.
+* Un état peut se début et se terminer plusieurs fois et il est compté comme un état unique. Par exemple, `closedCapationing` peut être démarré et arrêté cinq fois, mais il sera compté comme un état unique.
+* Chaque état qui dépasse le maximum de 10 états autorisés est ignoré.
 
 ## Etats personnalisés
 
 Avec la possibilité de créer des états personnalisés, vous pouvez capturer des actions personnalisées et mettre à jour des métadonnées personnalisées au cours d’une session de lecture.
 
-BESOIN de plus d’informations sur les états personnalisés
+Pour plus d’informations sur la création d’états personnalisés, voir le guide de référence de l’API [Media : `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
