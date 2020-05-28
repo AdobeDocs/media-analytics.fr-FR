@@ -1,14 +1,17 @@
 ---
-title: Suivi des chapitres et des segments sur JavaScript
+title: Suivi des chapitres et des segments à l’aide de JavaScript 2.x
 description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media dans les applications de navigateur (JS).
 uuid: ef99edf7-7a77-46c4-8429-bc9a856b98d6
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: b14b56aea4a1821a2a160b9cd301cd181f1ba8dd
+workflow-type: tm+mt
+source-wordcount: '197'
+ht-degree: 92%
 
 ---
 
 
-# Suivi des chapitres et des segments sur JavaScript {#track-chapters-and-segments-on-javascript}
+# Suivi des chapitres et des segments à l’aide de JavaScript 2.x{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -42,38 +45,37 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Si vous incluez des métadonnées personnalisées pour le chapitre, créez les variables de données contextuelles pour les métadonnées :
 
    ```js
-   var chapterCustomMetadata = { 
+   var chapterCustomMetadata = {
        segmentType: "Sample segment type",  
        segmentName: "Sample segment name",  
-       segmentInfo: "Sample segment info" 
+       segmentInfo: "Sample segment info"
    };
    ```
 
 1. Pour lancer le suivi de la lecture du chapitre, appelez l’événement `ChapterStart` dans l’instance `MediaHeartbeat` :
 
    ```js
-   _onChapterStart = function() { 
+   _onChapterStart = function() {
        this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterStart,  
                                        chapterObject,  
-                                       chapterCustomMetadata); 
+                                       chapterCustomMetadata);
    };
    ```
 
 1. Lorsque la lecture atteint la limite de fin du chapitre, comme défini par votre code personnalisé, appelez l’événement `ChapterComplete` dans l’instance `MediaHeartbeat` :
 
    ```js
-   _onChapterComplete = function() { 
-      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete); 
+   _onChapterComplete = function() {
+      this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterComplete);
    };
    ```
 
 1. Si la lecture du chapitre ne s’est pas terminée car l’utilisateur a choisi d’ignorer le chapitre (par exemple, si l’utilisateur effectue une recherche en dehors de la limite du chapitre), appelez l’événement `ChapterSkip` dans l’instance MediaHeartbeat :
 
    ```js
-   _onChapterSkip = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip); 
+   _onChapterSkip = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.ChapterSkip);
    };
    ```
 
 1. S’il existe d’autres chapitres, répétez les étapes 1 à 5.
-
