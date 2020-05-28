@@ -2,19 +2,19 @@
 title: A propos du suivi de l'état du lecteur
 description: Cette rubrique décrit la fonction de suivi de l’état du lecteur, y compris les exigences et les directives relatives à la mise en oeuvre et à l’rapports des états du lecteur.
 translation-type: tm+mt
-source-git-commit: 1cf11a6b8971f5be490998bbd855a27bfe366e48
+source-git-commit: d317188ef664c836c7125e8bbe195baa924c0d80
 workflow-type: tm+mt
-source-wordcount: '375'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 1%
 
 ---
 
 
 # A propos du suivi de l&#39;état du lecteur
 
-Pour optimiser l’expérience de vos produits et optimiser la valeur de votre entreprise, il est important de comprendre le comportement des clients lors de l’affichage des vidéos. Cela inclut le temps passé dans différents états du lecteur.  Et pour optimiser votre compréhension, vous avez besoin de la flexibilité nécessaire pour créer et mesurer de nouveaux états et événements de lecteur selon vos besoins.
+Pour optimiser l’expérience de vos produits et optimiser la valeur de votre entreprise, il est important de comprendre le comportement des clients lors de l’affichage des vidéos. Cela inclut le temps passé dans différents états du lecteur.  Il est également important d&#39;avoir la flexibilité nécessaire pour créer et mesurer de nouveaux états et événements de joueurs, si nécessaire.
 
-Le suivi de l’état du lecteur permet de capturer l’interaction de la visionneuse au cours de la lecture à l’aide d’un ensemble standard de variables de solution pour le plein écran, le sous-titrage, le silence, l’image dans l’image et la mise au point.  Le suivi de l’état du lecteur offre également la possibilité de créer des états de lecteur personnalisés.  Les variables de suivi d’état du lecteur sont également disponibles pour le rapports dans Analyse Workspace.
+Le suivi de l’état du lecteur permet de capturer l’interaction de la visionneuse au cours de la lecture à l’aide d’un ensemble standard de variables de solution pour le plein écran, le sous-titrage, le silence, l’image dans l’image et la mise au point.  Le suivi de l’état du lecteur offre également la possibilité de créer des états de lecteur personnalisés. Vous pouvez utiliser les variables de suivi d’état du lecteur pour le rapports dans Analyse Workspace.
 
 Pour capturer les modifications apportées à l’état du lecteur, le suivi de l’état du lecteur met à jour les métadonnées des mesures vidéo. Par exemple, pour déterminer l’engagement vidéo &quot;réel&quot;, le suivi de l’état du lecteur mesure le temps passé avec le son activé par rapport aux vues vidéo passives ou non fiancées lorsque le son est désactivé ou le temps passé en mode normal par rapport au mode plein écran.
 
@@ -29,13 +29,12 @@ Le suivi de l’état du lecteur offre les avantages suivants :
 
 ## Conditions
 
-Le suivi de l’état du lecteur nécessite les éléments suivants pour Media Analytics Extension pour une utilisation avec Adobe Experience Platform (AEP SDK) :
-* Web : Adobe Media Analytics (SDK 3.x) pour l’audio et la vidéo v1.0+
-* Mobile : Adobe Media Analytics pour l’audio et la vidéo v2.0+
-
-Si vous décidez de ne pas utiliser le SDK AEP, vous pouvez utiliser les éléments suivants avec le suivi de l’état du lecteur :
+Le suivi de l’état du lecteur requiert l’un des éléments suivants pour la collecte de données :
 * SDK Media JS 3.0+
-* Version de l’API de collecte de médias ?
+* Media Analytics Extension (à utiliser avec le SDK Adobe Experience Platform (AEP))
+   * Web : Adobe Media Analytics (SDK 3.x) pour Audio et vidéo v1.0+
+   * Mobile : Adobe Media Analytics pour Audio et Vidéo v2.0+
+* API Media Collection
 
 ## Instructions
 
