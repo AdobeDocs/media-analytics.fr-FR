@@ -1,14 +1,17 @@
 ---
-title: Mise en œuvre de métadonnées de publicité standard sur JavaScript
-description: Utilisation des métadonnées publicitaires standard dans le suivi des publicités dans les applications de navigateur (JS).
+title: Mise en oeuvre des métadonnées publicitaires standard à l’aide de JavaScript 2.x
+description: Utilisation des métadonnées publicitaires standard dans le suivi des publicités dans un navigateur à l’aide d’applications JavaScript 2.x.
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 55%
 
 ---
 
 
-# Mise en œuvre de métadonnées de publicité standard sur JavaScript {#implement-standard-ad-metadata-on-javascript}
+# Mise en oeuvre des métadonnées publicitaires standard à l’aide de JavaScript 2.x{#implement-standard-ad-metadata-on-javascript}
 
 ## Constantes publicitaires
 
@@ -25,12 +28,11 @@ var adObject =
 MediaHeartbeat.createAdObject(<AD_NAME>,  
                               <AD_ID>,  
                               <POSITION>,  
-                              <LENGTH>); 
-   
-// Set standard Ad Metadata 
-var standardAdMetadata = {}; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser"; 
-standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign"; 
+                              <LENGTH>);
+
+// Set standard Ad Metadata
+var standardAdMetadata = {};
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.ADVERTISER] = "Sample Advertiser";
+standardAdMetadata[MediaHeartbeat.AdMetadataKeys.CAMPAIGN_ID] = "Sample Campaign";
 adObject.setValue(MediaObjectKey.StandardAdMetadata, standardAdMetadata);
 ```
-
