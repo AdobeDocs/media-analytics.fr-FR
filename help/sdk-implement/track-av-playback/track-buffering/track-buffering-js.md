@@ -1,14 +1,17 @@
 ---
-title: Suivi de la mise en mémoire tampon sur JavaScript
+title: Suivi de la mise en mémoire tampon à l’aide de JavaScript 2.x
 description: Décrit le suivi des événements de mise en mémoire tampon dans les applications de navigateur (JS).
 uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 8235fee973623c168dbf83f43aa85f13b4e06cff
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 91%
 
 ---
 
 
-# Suivi de la mise en mémoire tampon sur JavaScript {#track-buffering-on-javascript}
+# Suivi de la mise en mémoire tampon à l’aide de JavaScript 2.x{#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
@@ -26,16 +29,16 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 1. Prêtez attention aux événements de mise en mémoire tampon de la lecture se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferStart`.
 
    ```js
-   _onBufferStart = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
+   _onBufferStart = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart);
    };
    ```
 
 1. Une fois que vous avez reçu la notification de fin de la mise en mémoire tampon, effectuez-en le suivi à l’aide de l’événement `BufferComplete`.
 
    ```js
-   _onBufferComplete = function() { 
-       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+   _onBufferComplete = function() {
+       this._mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete);
    };
    ```
 
