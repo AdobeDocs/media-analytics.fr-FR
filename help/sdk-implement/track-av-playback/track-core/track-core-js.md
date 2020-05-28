@@ -1,14 +1,17 @@
 ---
-title: Suivi de la lecture principale sur JavaScript
-description: Cette rubrique décrit la mise en œuvre du suivi principal à l’aide du SDK Media dans les applications de navigateur (JS).
+title: Suivi de la lecture principale à l’aide de JavaScript 2.x
+description: Cette rubrique explique comment mettre en oeuvre le suivi de base à l’aide du SDK Media dans un navigateur utilisant des applications JavaScript 2.x.
 uuid: 3d6e0ab1-899a-43c3-b632-8276e84345ab
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 30ed54924c75a9c33e6122b2d7ddbb84c06b8c0c
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 95%
 
 ---
 
 
-# Suivi de la lecture principale sur JavaScript {#track-core-playback-on-javascript}
+# Suivi de la lecture principale à l’aide de JavaScript 2.x{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
 >Cette documentation aborde le suivi dans la version 2.x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
@@ -49,7 +52,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    var mediaObject =  
      MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                      <MEDIA_ID,  
-                                     <MEDIA_LENGTH>, 
+                                     <MEDIA_LENGTH>,
                                      MediaHeartbeat.StreamType.VOD,
                                      <MEDIA_TYPE>);
    ```
@@ -74,11 +77,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       Créez un objet de variable pour les variables personnalisées et renseignez les données de ce média. Par exemple :
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -160,4 +163,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 * Scénarios de suivi : [lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Exemple de lecteur inclus avec le SDK JavaScript pour un exemple de suivi complet.
-
