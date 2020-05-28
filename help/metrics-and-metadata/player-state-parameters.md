@@ -3,17 +3,17 @@ title: Paramètres d’état du lecteur
 description: Cette rubrique décrit les paramètres de suivi de l’état du lecteur.
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 translation-type: tm+mt
-source-git-commit: 3c24b69265287084393be830193da14ae85cc5ba
+source-git-commit: c23a8787a8f59746665702eb5e2e74dde2c213e8
 workflow-type: tm+mt
-source-wordcount: '2103'
-ht-degree: 28%
+source-wordcount: '2167'
+ht-degree: 29%
 
 ---
 
 
 # Paramètres d’état du lecteur{#player-state-parameters}
 
-Cette rubrique présente une liste de données d’état du lecteur qu’Adobe collecte au moyen de variables de solution.
+Cette rubrique présente une liste de données d’état du lecteur que Adobe collecte au moyen de variables de solution.
 
 Description des données de tableau :
 
@@ -38,98 +38,75 @@ Description des données de tableau :
 >Ne modifiez pas les noms de classification des variables répertoriées ci-dessous, qui sont décrites sous Variable de création de rapports/réservée comme « classification ».\
 >Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour le suivi multimédia. De temps à autre, Adobe ajoute de nouvelles propriétés. Dans ce cas, les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés du média. Au cours du processus de mise à jour, Adobe détermine si les classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque, Adobe l’ajoute à nouveau.
 
-
-
 ## Propriétés d’état du lecteur {#player-state-properties}
 
-Les tableaux des propriétés de suivi de l&#39;état du lecteur sont organisés en cinq sections :
-
-* Plein écran
-   * Flux touchés par le plein écran
-   * Comptabilisation en plein écran
-   * Durée totale du plein écran
-* Fermer la légende
-   * Flux touchés par le sous-titrage
-   * Comptabilisation des sous-titres fermés
-   * Sous-titrage total Durée
-* Muet
-   * Flux touchés par la coupure
-   * Comptabilisation en minute
-   * Durée totale de la coupure
-* Image dans l&#39;image
-   * Flux affecté par l’image dans l’image
-   * Nombre d&#39;images
-   * Durée totale de l&#39;image dans l&#39;image
-* Mise au point
-   * Flux touchés par In Focus
-   * Dans les comptes de mise au point
-   * Durée totale de mise au point
+Les fonctionnalités de suivi de l’état du lecteur peuvent être associées à un flux audio ou vidéo. Les mesures de suivi normalisées de l’état du lecteur sont stockées en tant que variables de solution. Les normes sont les suivantes : fullScreen, mute, closeCaption, pictureInPicture et inFocus.
 
 ### Propriétés du mode Plein écran
 
-#### Flux touchés par le plein écran
+#### Diffusions touchées par le plein écran
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par le plein écran. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.fullscreen.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport affectés par le plein écran</li> <li> **Données **<br/>contextuelles (a.media.states.fullscreen.set)<br/> </li> <li> **Écran vidéo **<br/>du flux de données</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.fullscreen.set)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par le plein écran. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Important** <br/> Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.fullscreen.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport affectés par le plein écran</li> <li> **Données **<br/>contextuelles (a.media.states.fullscreen.set)<br/> </li> <li> **Flux **<br/>de données media.states.fullscreen</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.fullscreen.set)</li> </ul> |
 
-#### Comptabilisation en plein écran
-
-|   Mise en œuvre   | Paramètres réseau | Création de rapports |
-| --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre d&#39;affichages d&#39;un plein écran. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateful lscreencount)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nombre de noms **<br/>du rapport en plein écran</li> <li> **Données **<br/>contextuelles (videostateful lscreencount)<br/> </li> <li> **Vidéo **<br/>du fluxde données - statistiques - remonter à l’écran</li> <li> **Audience Manager **<br/>(c_contextdata.videostateful lscreencount)</li> </ul> |
-
-
-
-#### Durée totale du plein écran
+#### Nombre de plein écrans
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionDurée d&#39;affichage d&#39;un écran complet. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateful lscreentime)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nom **<br/>du rapport Durée plein écran</li> <li> **Données **<br/>contextuelles (videostateful lscreentime)<br/> </li> <li> **Flux **<br/>de données videostateful lscreentime</li> <li> **Audience Manager **<br/>(c_contextdata.videostateful lscreentime)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre d&#39;affichages d&#39;un plein écran. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Important **<br/>Si ce événement est défini, le nombre est égal au nombre de fois où la vidéo était à l’état Plein écran. Si cet événement n’est pas défini, aucune valeur n’est envoyée.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.fullscreen.count)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nombre de noms **<br/>du rapport en plein écran</li> <li> **Données **<br/>contextuelles (media.states.fullscreen.count)<br/> </li> <li> **Flux **<br/>de données media.states.fullscreen.count</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.fullscreen.count)</li> </ul> |
+
+
+
+#### Durée totale en plein écran
+
+|   Mise en œuvre   | Paramètres réseau | Création de rapports |
+| --- | --- | --- |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionDurée d&#39;affichage d&#39;un écran complet. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Important **<br/>Si ce événement est défini, la durée correspond à la durée pendant laquelle la vidéo se trouvait à l’état Plein écran. Si cet événement n’est pas défini, aucune valeur n’est envoyée.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.fullscreen.time)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nom **<br/>du rapport Plein écran Durée totale</li> <li> **Données **<br/>contextuelles (media.states.fullscreen.time)<br/> </li> <li> **Flux **<br/>de données media.states.fullscreen.time</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.fullscreen.time)</li> </ul> |
 
 
 ### Fermer les propriétés de légende
 
-#### Flux touchés par le sous-titrage
+#### Diffusions touchées par le sous-titrage codé
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par le sous-titrage fermé. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.closedcaptioning.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport affectés par le sous-titrage fermé</li> <li> **Données **<br/>contextuelles (a.media.states.closedcaptioning.set)<br/> </li> <li> **Vidéostateclosedcaptioning du flux **<br/>de données</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.closedcaptioning.set)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par le sous-titrage fermé. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **Important** <br/> Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.closedcaptioning.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport affectés par le sous-titrage fermé</li> <li> **Données **<br/>contextuelles (a.media.states.closedcaptioning.set)<br/> </li> <li> **Flux **<br/>de données media.states.closedcaptioning</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.closedcaptioning.set)</li> </ul> |
 
 
-#### Comptabilisation des sous-titres fermés
-
-|   Mise en œuvre   | Paramètres réseau | Création de rapports |
-| --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de fois où le sous-titrage a été sélectionné. This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateclosedcaptioningcount)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nombre de sous-titres **<br/>fermés du nom du rapport</li> <li> **Données **<br/>contextuelles (videostateclosedcaptioningcount)<br/> </li> <li> **Flux **<br/>de données videostateclosedcaptioningcount</li> <li> **Audience Manager **<br/>(c_contextdata.videostateclosedcaptioningcount)</li> </ul> |
-
-
-#### Sous-titrage total Durée
+#### Nombre de sous-titrages codés
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionDurée pendant laquelle le sous-titrage a été sélectionné. This metric is set to 1 only if at least one Closed Caption State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateclosedcaptioningtime)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nom **<br/>du rapport Durée du sous-titrage</li> <li> **Données **<br/>contextuelles (videostateclosedcaptioningtime)<br/> </li> <li> **Flux **<br/>de données videostateclosedcaptioningtime</li> <li> **Audience Manager **<br/>(c_contextdata.videostateclosedcaptioningtime)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre d’affichages du sous-titrage fermé. This metric is set to 1 only if at least one Closed Captioning State occurred during a playback session.<br/> **Important **<br/>Si ce événement est défini, le nombre est égal au nombre de fois où la vidéo se trouvait à l’état Sous-titrage fermé. Si cet événement n’est pas défini, aucune valeur n’est envoyée.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(C19)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nombre de sous-titres **<br/>fermés du nom du rapport</li> <li> **Données **<br/>contextuelles (media.states.closedcaptioning.count)<br/> </li> <li> **Flux **<br/>de données media.states.closedcaptioning.count</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.closedcaptioning.count)</li> </ul> |
+
+
+#### Durée totale du sous-titrage codé
+
+|   Mise en œuvre   | Paramètres réseau | Création de rapports |
+| --- | --- | --- |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionDurée d’affichage du sous-titrage fermé. This metric is set to 1 only if at least one Full Screen State occurred during a playback session.<br/> **Important **<br/>Si ce événement est défini, la durée correspond à la durée pendant laquelle la vidéo se trouvait à l’état Sous-titrage fermé. Si cet événement n’est pas défini, aucune valeur n’est envoyée.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.closedcaptioning.time)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nom **<br/>du rapport Sous-titrage total Durée</li> <li> **Données **<br/>contextuelles (media.states.closedcaptioning.time)<br/> </li> <li> **Flux **<br/>de données media.states.closedcaptioning.time</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.closedcaptioning.time)</li> </ul> |
 
 
 ### Propriétés du menu
 
-#### Flux touchés par la coupure
+#### Diffusions touchées par le mode muet
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par le passage en masse. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.mute.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport touchés par le silence</li> <li> **Données **<br/>contextuelles (a.media.states.mute.set)<br/> </li> <li> **Vidéo-déclaration **<br/>du flux de données</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.mute.set)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par le passage en masse. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Important** <br/> Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.mute.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport touchés par le silence</li> <li> **Données **<br/>contextuelles (a.media.states.mute.set)<br/> </li> <li> **Flux **<br/>de données media.states.mute</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.mute.set)</li> </ul> |
 
-#### Comptabilisation en minute
-
-|   Mise en œuvre   | Paramètres réseau | Création de rapports |
-| --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de fois où l&#39;option Silence a été sélectionnée. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatemutecount)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nombre de minutes de nom **<br/>du rapport</li> <li> **Données **<br/>contextuelles (videostatemutecount)<br/> </li> <li> **Vidéo **<br/>du flux de données : statemutecount</li> <li> **Audience Manager **<br/>(c_contextdata.videostatemutecount)</li> </ul> |
-
-#### Durée totale de la coupure
+#### Nombre d’instances muettes
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionDurée pendant laquelle le paramètre Silence a été sélectionné. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatemutetime)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Durée de coupure du nom **<br/>du rapport</li> <li> **Données **<br/>contextuelles (videostatemutetime)<br/> </li> <li> **Flux **<br/>de données videostatemutetime</li> <li> **Audience Manager **<br/>(c_contextdata.videostatemutetime)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre d&#39;affichages du paramètre Silence. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Important **<br/>Si ce événement est défini, le nombre est égal au nombre de fois où la vidéo était à l’état Muet. Si cet événement n’est pas défini, aucune valeur n’est envoyée.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.mute.count)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nombre de minutes de nom **<br/>du rapport</li> <li> **Données **<br/>contextuelles (media.states.mute.count)<br/> </li> <li> **Flux **<br/>de données media.states.mute.count</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.mute.count)</li> </ul> |
+
+#### Durée totale du mode muet
+
+|   Mise en œuvre   | Paramètres réseau | Création de rapports |
+| --- | --- | --- |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionDurée d&#39;affichage du paramètre Silence. This metric is set to 1 only if at least one Mute State occurred during a playback session.<br/> **Important **<br/>Si ce événement est défini, la durée correspond à la durée pendant laquelle la vidéo était à l’état Muet. Si cet événement n’est pas défini, aucune valeur n’est envoyée.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.mute.time)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nom **<br/>du rapport - Durée totale en demi-coupure</li> <li> **Données **<br/>contextuelles (media.states.mute.time)<br/> </li> <li> **Flux **<br/>de données media.states.mute.time</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.mute.time)</li> </ul> |
 
 
 ### Image dans les propriétés de l&#39;image
@@ -139,50 +116,49 @@ Les tableaux des propriétés de suivi de l&#39;état du lecteur sont organisés
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par l&#39;image dans l&#39;image. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.pictureinpicture.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport affectés par l&#39;image dans l&#39;image</li> <li> **Données **<br/>contextuelles (a.media.states.pictureinpicture.set)<br/> </li> <li> **Flux de données **<br/>videostatepictureinpicture</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.pictureinpicture.set)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par l&#39;image dans l&#39;image. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Important** <br/> Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.pictureinpicture.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport affectés par l&#39;image dans l&#39;image</li> <li> **Données **<br/>contextuelles (a.media.states.pictureinpicture.set)<br/> </li> <li> **Flux **<br/>de données media.states.pictureinpicture</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.pictureinpicture.set)</li> </ul> |
 
 
 #### Nombre d&#39;images
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre d&#39;affichages de l&#39;image dans l&#39;image. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatepictureinpicturecount)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Image du nom **<br/>du rapport dans le nombre d&#39;images</li> <li> **Données **<br/>contextuelles (videostatepictureinpicturecount)<br/> </li> <li> **Flux de données **<br/>videostatepictureinpicturecount</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.videostatepictureinpicturecount)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre d&#39;affichages de l&#39;image dans l&#39;image. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Important**<br/> Si ce événement est défini, le nombre est égal au nombre de fois où la vidéo se trouvait dans l’état Image de l’image. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.pictureinpicture.count)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Image du nom **<br/>du rapport dans le nombre d&#39;images</li> <li> **Données **<br/>contextuelles (media.states.pictureinpicture.count)<br/> </li> <li> **Flux **<br/>de données media.states.pictureinpicture.count</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.pictureinpicture.count)</li> </ul> |
 
 
 #### Durée totale de l&#39;image dans l&#39;image
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionLa durée d&#39;affichage de l&#39;image dans l&#39;image. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostatepictureinpicturetime)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Image du nom **<br/>du rapport dans la durée de l&#39;image</li> <li> **Données **<br/>contextuelles (videostatepictureinpicturetime)<br/> </li> <li> **Flux **<br/>de données videostatepictureinpicturetime</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.videostatepictureinpicturetime)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionLa durée d&#39;affichage de l&#39;image dans l&#39;image. This metric is set to 1 only if at least one Picture in Picture State occurred during a playback session.<br/> **Important**<br/> Si ce événement est défini, la durée correspond à la durée pendant laquelle la vidéo se trouvait dans l’état Image dans l’image. Si cet événement n’est pas défini, aucune valeur n’est envoyée..   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.pictureinpicture.time)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Image du nom **<br/>du rapport dans la durée totale de l&#39;image</li> <li> **Données **<br/>contextuelles (media.states.pictureinpicture.time)<br/> </li> <li> **Flux **<br/>de données media.states.pictureinpicture.time</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.pictureinpicture.time)</li> </ul> |
 
 
 ### Propriétés de mise au point
 
-#### Flux touchés par In Focus
+#### Diffusions touchées par le mode « In Focus » (En point de mire)
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par In Focus. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.infocus.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport affectés par In Focus</li> <li> **Données **<br/>contextuelles (a.media.states.infocus.set)<br/> </li> <li> **Flux **<br/>de données videostateinfocus</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.infocus.set)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre de flux touchés par In Focus. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Important** <br/> Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(a.media.states.infocus.set)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Flux de noms **<br/>de rapport affectés par In Focus</li> <li> **Données **<br/>contextuelles (a.media.states.infocus.set)<br/> </li> <li> **Flux **<br/>de données media.states.infocus</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.a.media.states.infocus.set)</li> </ul> |
 
 
-#### Dans les comptes de mise au point
-
-|   Mise en œuvre   | Paramètres réseau | Création de rapports |
-| --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre d&#39;affichages de l&#39;option Mise au point. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateinfocuscount)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nom **<br/>du rapport dans le décompte des focus</li> <li> **Données **<br/>contextuelles (videostateinfocuscount)<br/> </li> <li> **Flux **<br/>de données videostateinfocuscount</li> <li> **Audience Manager **<br/>(c_contextdata.videostateinfocuscount)</li> </ul> |
-
-
-#### Durée totale de mise au point
+#### Nombre d’instances en mode « In Focus »
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionLa durée d&#39;affichage de l&#39;option Mise au point. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Important** Si ce événement est défini, la seule valeur possible est TRUE. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(videostateinfocustime)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nom **<br/>Du Rapport Dans La Durée De Mise Au Point</li> <li> **Données **<br/>contextuelles (videostateinfocustime)<br/> </li> <li> **Flux **<br/>de données videostateinfocustime</li> <li> **Audience Manager **<br/>(c_contextdata.videostateinfocustime)</li> </ul> |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionNombre d&#39;affichages de l&#39;option Mise au point. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Important **<br/>Si ce événement est défini, le nombre est égal au nombre de fois où la vidéo était à l’état Mise au point. Si cet événement n’est pas défini, aucune valeur n’est envoyée.</li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.count)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nom **<br/>du rapport dans le décompte des focus</li> <li> **Données **<br/>contextuelles (media.states.infocus.count)<br/> </li> <li> **Flux **<br/>de données media.states.infocus.count</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.infocus.count)</li> </ul> |
+
+
+#### Durée totale du mode « In Focus »
+
+|   Mise en œuvre   | Paramètres réseau | Création de rapports |
+| --- | --- | --- |
+| <ul> <li> **Clé&#x200B;**<br/>SDK définie automatiquement</li> <li> **Clé&#x200B;**<br/>API N/A</li> <li> **Non requis **<br/></li> <li> **Numéro de type **<br/></li> <li> **Envoyé avec **<br/>fermeture du média</li> <li> **Version SDK Version **<br/>3.0</li> <li> **Exemple de valeur **<br/>TRUE</li><li> ****<br/>DescriptionLa durée d&#39;affichage de l&#39;option Mise au point. This metric is set to 1 only if at least one In Focus State occurred during a playback session.<br/> **Important**<br/> Si ce événement est défini, la durée correspond à la durée pendant laquelle la vidéo était à l’état Mise au point. Si cet événement n’est pas défini, aucune valeur n’est envoyée.   </li> </ul> | <ul> <li> **Adobe Analytics **<br/>(media.states.infocus.time)<br/></li> <li> **Pulsation **<br/>N/A</li> </ul> | <ul> <li> **Disponible **<br/>Oui</li> <li> **événement de variables **<br/>réservées</li> <li> **Nom **<br/>du rapport dans la durée totale de mise au point</li> <li> **Données **<br/>contextuelles (media.states.infocus.time)<br/> </li> <li> **Flux **<br/>de données media.states.infocus.time</li> <li> **Gestionnaire **<br/>d’Audiences (c_contextdata.media.states.infocus.time)</li> </ul> |
 
 
 
 ## API connexes {#related_apis_section}
 
-BESOIN : Ajouter d’API liens vers des documents :
-* Android - [createStateObject](https://need)
-* iOS - [createStateObjectWithName](https://need)
-* JavaScript - [createStateObject](https://need)
+* Android - [createStateObject](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+* iOS - [createStateObjectWithName](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+* JavaScript - [createStateObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html)
