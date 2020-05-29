@@ -2,9 +2,9 @@
 title: Mise en oeuvre et Rapports
 description: Cette rubrique décrit la mise en oeuvre de la fonction de suivi de l’état du lecteur, y compris .
 translation-type: tm+mt
-source-git-commit: 614780a121eac6d5f822d439365fa59f85959ce2
+source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
 workflow-type: tm+mt
-source-wordcount: '326'
+source-wordcount: '311'
 ht-degree: 0%
 
 ---
@@ -100,4 +100,4 @@ Dans Analytics Workspace, toutes les nouvelles propriétés se trouvent dans le 
 
 ## Importation de mesures avec mention du lecteur vers la plateforme d’expérience Adobe
 
-Les données stockées dans Analytics peuvent être utilisées à n’importe quel usage et les mesures d’état du lecteur peuvent être importées dans la plateforme Adobe Experience à l’aide de XDM et utilisées avec Customer Journey Analytics. Les propriétés d’état standard possèdent des propriétés spécifiques tandis que les états personnalisés sont des propriétés disponibles via les événements personnalisés. Pour plus d&#39;informations, consultez la liste de propriétés des identités XDM à l&#39;adresse ?LINK TO METRIC LISTE ?.
+Les données stockées dans Analytics peuvent être utilisées à n’importe quel usage et les mesures d’état du lecteur peuvent être importées dans la plateforme Adobe Experience à l’aide de XDM et utilisées avec Customer Journey Analytics. Les propriétés d’état standard possèdent des propriétés spécifiques tandis que les états personnalisés sont des propriétés disponibles via les événements personnalisés.
