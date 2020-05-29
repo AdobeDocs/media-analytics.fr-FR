@@ -2,9 +2,9 @@
 title: A propos du suivi de l'état du lecteur
 description: Cette rubrique décrit la fonction de suivi de l’état du lecteur, y compris les exigences et les directives relatives à la mise en oeuvre et à l’rapports des états du lecteur.
 translation-type: tm+mt
-source-git-commit: d317188ef664c836c7125e8bbe195baa924c0d80
+source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,7 @@ Avant de mettre en oeuvre le suivi des états du lecteur, tenez compte des recom
 
 * L’état du lecteur est calculé sur l’ensemble des états de lecture (sans fractionnement).
 * Vous pouvez mesurer plusieurs états du lecteur en même temps.
-* Le nombre maximal d’états du lecteur pouvant être suivis au cours d’une lecture est de 10. 
-* Les mesures d’état du lecteur sont envoyées à Analytics pour rapports sur l’appel de fermeture du média UNIQUEMENT
-* Les états du lecteur sont capturés pour chaque session de lecture individuelle ; l’état du lecteur n’est pas calculé sur plusieurs lectures. 
+* Le nombre maximal d’états du lecteur pouvant être suivis au cours de la lecture est de 10.
+* Les mesures d’état du lecteur sont envoyées à Analytics pour rapports uniquement lors de l’appel de fermeture du média.
+* La connaissance de l’état de l’application n’est pas conservée après l’arrêt d’un état. Après la fin d’un état, celui-ci doit être redémarré pour continuer le suivi. Pour chaque nouvel état de lecture, l’état du lecteur doit être redémarré.
+* Les états du lecteur sont capturés pour chaque session de lecture individuelle ; l’état du lecteur n’est pas calculé sur plusieurs lectures.
