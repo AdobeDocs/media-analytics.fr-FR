@@ -2,7 +2,7 @@
 title: Configuration de JavaScript 3.x
 description: Configuration de l’application SDK Media pour l’implémentation sur JavaScript 3.x.
 translation-type: tm+mt
-source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
+source-git-commit: b642bd1a136e62901847f2a8cf004d05282fca01
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 47%
@@ -49,11 +49,11 @@ ht-degree: 47%
 
    La configuration du SDK multimédia requiert une instance de `AppMeasurement` avec `visitor` configuré.
 
-```js
-var appMeasurement = new AppMeasurement(“<rsid>”);
-appMeasurement.visitor = visitor;
-appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
-```
+   ```js
+    var appMeasurement = new AppMeasurement(“<rsid>”);
+    appMeasurement.visitor = visitor;
+    appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
+   ```
 
 1. Configuration du SDK multimédia
 
@@ -62,7 +62,6 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
    >[!IMPORTANT]
    >
    > Media SDK (3.x) utilise l’API Media Collection pour le suivi des médias, qui est différent du point de terminaison HB utilisé dans les SDK 2.x. Contactez votre représentant Adobe pour obtenir plus d’informations.
-
 
    Voici un exemple d’ `MediaConfig` initialisation :
 
@@ -77,7 +76,8 @@ appMeasurement.trackingServer = “<visitor_namespace>.sc.omtrdc.net”;
     mediaConfig.ssl = true;
    
     ADB.Media.configure(mediaConfig, appMeasurement);
-   
+   ```
+
 1. Créez l’instance `MediaTracker`.
 
    Après avoir configuré le SDK multimédia, il est possible de créer des instances d’outil de suivi du contenu multimédia à l’aide de `getInstance` l’API.
