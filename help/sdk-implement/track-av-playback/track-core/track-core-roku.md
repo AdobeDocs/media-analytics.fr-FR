@@ -2,8 +2,11 @@
 title: Suivi de la lecture principale sur Roku
 description: Cette rubrique décrit la mise en œuvre du suivi de base à l’aide du SDK Media sur Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+workflow-type: tm+mt
+source-wordcount: '1022'
+ht-degree: 100%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Déterminez le moment où l’utilisateur déclenche l’intention de lecture (l’utilisateur clique sur le bouton de lecture et/ou la lecture automatique est activée) et créez une instance `MediaObject`.
 
-   **`MediaObject` Référence :**
+   **`MediaObject`Référence :**
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
@@ -27,7 +30,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `streamType` | Type de diffusion (voir les constantes _StreamType_ ci-dessous) | Oui |
    | `mediaType` | Type de média (voir les constantes _MediaType_ ci-dessous) | Oui |
 
-   **Constantes `StreamType` :**
+   **`StreamType`Constantes :**
 
    | Nom de constante | Description   |
    |---|---|
@@ -38,7 +41,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `MEDIA_STREAM_TYPE_AUDIOBOOK` | Type de diffusion pour les livres audio. |
    | `MEDIA_STREAM_TYPE_PODCAST` | Type de diffusion pour les podcasts. |
 
-   **Constantes `MediaType` :**
+   **`MediaType`Constantes :**
 
    | Nom de constante | Description |
    |---|---|
@@ -72,10 +75,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    ```
    mediaInfo = adb_media_init_mediainfo(
-    "<MEDIA_NAME>", 
-    "<MEDIA_ID>", 
-    600, 
-    ADBMobile().MEDIA_STREAM_TYPE_AOD, 
+    "<MEDIA_NAME>",
+    "<MEDIA_ID>",
+    600,
+    ADBMobile().MEDIA_STREAM_TYPE_AOD,
     ADBMobile().MEDIA_TYPE_AUDIO
    )
    ```
@@ -97,7 +100,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    * **Métadonnées standard**
 
-      [Mise en œuvre de métadonnées standard sur JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-js.md)
+      [Mise en œuvre de métadonnées standard sur JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
       >[!NOTE]
       >
@@ -111,11 +114,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
       Créez un objet de variable pour les variables personnalisées et renseignez les données de ce média. Par exemple :
 
       ```js
-      /* Set custom context data */ 
-      var customVideoMetadata = { 
-          isUserLoggedIn: "false", 
-          tvStation: "Sample TV station", 
-          programmer: "Sample programmer" 
+      /* Set custom context data */
+      var customVideoMetadata = {
+          isUserLoggedIn: "false",
+          tvStation: "Sample TV station",
+          programmer: "Sample programmer"
       };
       ```
 
@@ -253,10 +256,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifiez tous les scénarios dans lesquels le lecteur vidéo sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()` :
 
-   * L’utilisateur appuie explicitement sur le bouton de pause dans l’application.
-   * Le lecteur se place dans l’état de pause.
-   * (*Applications mobiles*) - L’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application maintienne la session ouverte.
-   * (*Applications mobiles*) - Tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre la vidéo à partir du point d’interruption.
+   * L’utilisateur appuie délibérément sur pause dans l’application.
+   * Le lecteur se met en pause.
+   * (*Applications mobiles*) : l’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application conserve la session ouverte.
+   * (*Applications mobiles*) : tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre la vidéo à partir du point d’interruption.
 
 1. Identifiez l’événement du lecteur correspondant à la lecture vidéo et/ou à la reprise vidéo après une interruption et appelez `trackPlay` :
 
@@ -267,6 +270,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture vidéo.
 
-* Scénarios de suivi : [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Scénarios de suivi : [lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Exemple de lecteur inclus dans le SDK Roku pour un exemple de suivi complet
-
