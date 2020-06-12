@@ -2,28 +2,28 @@
 title: Chemins de mise en œuvre
 description: null
 uuid: 8400c938-e77e-4c88-b23b-5f5977a5316c
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 0bc3928b8e3076feb8e9a16e005cd0415f723408
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 
 # Chemins de mise en œuvre {#implementation-paths}
 
-Pour chaque chemin d’implémentation, les clients doivent contacter leur représentant commercial/gestionnaire de compte pour signer une nouvelle commande client, car Media Analytics dispose d’un SKU unique et évolue d’un modèle de tarification basé sur les appels serveur vers un modèle basé sur les flux vidéo.
+Pour chaque chemin de mise en œuvre, les clients doivent contacter leur représentant commercial/responsable de compte pour signer une nouvelle commande de ventes car Media Analytics comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions vidéo.
 
 * **Adobe Launch avec l’extension Adobe Media Analytics**
 
-   Adobe Launch est la nouvelle génération de solutions de gestion des balises d’Adobe. Le lancement offre une méthode simple de déploiement et de gestion de toutes les balises d’analyse, de marketing et de publicité nécessaires pour alimenter les expériences client pertinentes. Pour créer et gérer vos propres intégrations avec Launch, vous utilisez des extensions. Une extension est un package JavaScript, HTML et CSS qui étend les fonctionnalités de l’interface utilisateur de lancement et du client. Pour plus d’informations, consultez le Guide de l’utilisateur du lancement de la plateforme [d’expérience.](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html)
+   Adobe Launch représente la nouvelle génération de solution de gestion des balises d’Adobe. Launch offre un moyen simple de déployer et de gérer toutes les balises d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. Pour créer et gérer vos propres intégrations avec Launch, vous utilisez des extensions. Une extension est un module JavaScript, HTML et CSS qui étend l’interface utilisateur de Launch et les fonctionnalités du client. Pour plus d’informations, consultez le [Guide de l’utilisateur d’Experience Platform Launch](https://docs.adobe.com/content/help/fr-FR/launch/using/overview.html)
 
-   L’extension Adobe Media Analytics (MA) ajoute le noyau JavaScript Media SDK (Media 2.x SDK) pour l’audio et la vidéo. Cette extension permet d’ajouter l’instance `MediaHeartbeat` de suivi à un site ou à un projet Launch.
+   L’extension Adobe Media Analytics (MA) ajoute le noyau JavaScript Media SDK (Media 2.x SDK) pour l’audio et la vidéo. Cette extension permet d’ajouter l’instance `MediaHeartbeat` de suivi à un site ou à un projet Launch.
 
-   Adobe Launch avec l’extension Media Analytics nécessite les éléments suivants :
-   * Vous devez être un client Adobe Experience Cloud.
-   * Vous devez déployer le code d’intégration Launch ou DTM sur vos pages Web.
+   Adobe Launch avec l’extension Media Analytics nécessite les éléments suivants :
+   * Vous devez être un client Adobe Experience Cloud.
+   * Vous devez déployer le code Launch ou DTM incorporé sur vos pages web.
    * [Extension Analytics](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html)
    * [L’extension Experience Cloud ID](https://docs.adobe.com/content/help/fr-FR/launch/using/extensions-ref/adobe-extension/id-service-extension/overview.html)
 
