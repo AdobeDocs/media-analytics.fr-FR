@@ -7,7 +7,7 @@ translation-type: tm+mt
 source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
 workflow-type: tm+mt
 source-wordcount: '809'
-ht-degree: 79%
+ht-degree: 83%
 
 ---
 
@@ -15,15 +15,15 @@ ht-degree: 79%
 # Adobe Analytics for Audio and Video {#using}
 
 + [Mesures audio et vidéo dans Adobe Analytics](media-overview.md)
-+ [Périphériques et plates-formes pris en charge](measurement-options/supported-devices.md)
++ [Périphériques et plateformes pris en charge](measurement-options/supported-devices.md)
 + Présentation des analyses audio et vidéo {#intro-to-ava}
    + [Conditions préalables](intro-to-ava/prereqs.md)
    + Chemins de mise en œuvre {#implementation-paths}
       + [Aperçu](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Côté client](intro-to-ava/implementation-paths/client-side-path.md)
-      + Autres chemins d’implémentation {#other-paths}
+      + Autres chemins de mise en œuvre {#other-paths}
          + Suivi des jalons du module média {#mm-milestone-tracking}
-            + [Présentation des jalons](measurement-options/mm-milestone-tracking/milestone-overview.md)
+            + [Aperçu de Milestone](measurement-options/mm-milestone-tracking/milestone-overview.md)
             + [Migrer le jalon vers Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migration de Milestone vers les liens personnalisés](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Lien personnalisé dans Analytics {#cl-in-aa}
@@ -32,7 +32,7 @@ ht-degree: 79%
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Activation d’Audience Manager](intro-to-ava/am-enablement.md)
 + SDK Media Analytics {#sdk-implement}
-   + [FAQ sur la fin de prise en charge du SDK Media Analytics](sdk-implement/end-of-support-faqs.md)
+   + [FAQ sur l’abandon de la prise en charge du SDK Media Analytics](sdk-implement/end-of-support-faqs.md)
    + [Téléchargement des SDK](sdk-implement/download-sdks.md)
    + Installation et configuration {#setup}
       + [Aperçu](sdk-implement/setup/setup-overview.md)
@@ -43,7 +43,7 @@ ht-degree: 79%
          + [Configuration de JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Configuration de Chromecast ](sdk-implement/setup/set-up-chromecast.md)
       + [Configuration de Roku ](sdk-implement/setup/set-up-roku.md)
-   + Track Audio and Video Playback {#track-av-playback}
+   + Suivi de la lecture audio et vidéo {#track-av-playback}
       + [Aperçu](sdk-implement/track-av-playback/track-core-overview.md)
       + Suivi de la lecture audio et vidéo principale {#track-core}
          + [Suivi de la lecture principale sur Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
@@ -69,7 +69,7 @@ ht-degree: 79%
             + [Suivi de la recherche sur JavaScript 3.x](sdk-implement/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
          + [Suivi de la recherche sur Chromecast](sdk-implement/track-av-playback/track-seeking/track-seeking-chromecast.md)
          + [Suivi de la recherche sur Roku](sdk-implement/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Implement Standard Metadata {#impl-std-metadata}
+      + Mise en œuvre de métadonnées standard {#impl-std-metadata}
          + [Mise en œuvre de métadonnées standard sur Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Mise en œuvre de métadonnées standard sur iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [Clés de métadonnées iOS](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
@@ -89,7 +89,7 @@ ht-degree: 79%
          + [Suivi des publicités sur JavaScript 3.x](sdk-implement/track-ads/track-ads-js/track-ads-js3.md)
       + [Suivi des publicités sur Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Suivi des publicités sur Roku](sdk-implement/track-ads/track-ads-roku.md)
-      + Implement Standard ad Metadata {#impl-std-ad-metadata}
+      + Mise en œuvre de métadonnées de publicité standard {#impl-std-ad-metadata}
          + [Mise en œuvre de métadonnées de publicité standard sur Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [Mise en œuvre de métadonnées de publicité standard sur iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
@@ -219,7 +219,7 @@ ht-degree: 79%
 + Suivi de l’état du lecteur {#player-state-tracking}
    + [Aperçu](sdk-implement/player-state-tracking/player-state-overview.md)
    + [Etats standard et personnalisés](sdk-implement/player-state-tracking/standard-and-custom-states.md)
-   + [Mise en oeuvre et rapports](sdk-implement/player-state-tracking/implementation-and-reporting.md)
+   + [Mise en œuvre et création de rapports](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [Exemples de suivi des états du lecteur](sdk-implement/player-state-tracking/player-state-examples.md)
 + Ressources supplémentaires {#additional-resources}
    + [Notes de mise à jour](additional-resources/doc-updates.md)
