@@ -1,33 +1,33 @@
 ---
-title: Mise en oeuvre et Rapports
-description: Cette rubrique décrit la mise en oeuvre de la fonction de suivi de l’état du lecteur, y compris .
+title: Mise en œuvre et création de rapports
+description: Cette rubrique décrit la mise en œuvre de la fonction de suivi de l’état du lecteur, y compris .
 translation-type: tm+mt
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
 workflow-type: tm+mt
 source-wordcount: '333'
-ht-degree: 0%
+ht-degree: 58%
 
 ---
 
 
-# Mise en oeuvre et rapports
+# Mise en œuvre et création de rapports
 
-Au cours d’une session de lecture, chaque occurrence d’état (début à bout) doit faire l’objet d’un suivi individuel. Le SDK Media et l’API Media Collection fournissent de nouvelles méthodes de suivi pour cette fonctionnalité.
+Au cours d’une session de lecture, chaque occurrence d’état (du début à la fin de la lecture) doit faire l’objet d’un suivi individuel. Pour ce faire, le SDK Media et l’API Media Collection fournissent de nouvelles méthodes de suivi.
 
-Le SDK multimédia comprend deux nouvelles méthodes pour le suivi d’état personnalisé :
+Le SDK Media comprend deux nouvelles méthodes pour le suivi d’état personnalisé :
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-L’API de collecte de médias comprend deux nouveaux événements qui comportent `media.stateName` le paramètre requis :
+The Media Collection API includes two new events that have `media.stateName` as the required parameter:
 
 `stateStart` et `stateEnd`
 
-## Mise en oeuvre du SDK Media
+## Mise en œuvre du SDK Media
 
-Débuts d’état du lecteur
+Début de l’état du lecteur
 
 ```
 // StateStart (ex: Mute is switched on)
@@ -35,7 +35,7 @@ var stateObject = ADB.Media.createStateObject(ADB.Media.PlayerState.Mute);
 tracker.trackEvent(ADB.Media.Event.StateStart, stateObject);
 ```
 
-Fin de l&#39;état du lecteur
+Fin de l’état du lecteur
 
 ```
 // StateEnd (ex: Mute is switched off)
@@ -43,9 +43,9 @@ tracker.trackEvent(ADB.Media.Event.StateEnd, stateObject);
 ```
 
 
-## Implémentation de l’API de collecte de médias
+## Mise en œuvre de l’API Media Collection
 
-Débuts d’état du lecteur
+Début de l’état du lecteur
 
 ```
 // StateStart (ex: Mute is switched on)
@@ -62,7 +62,7 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 }
 ```
 
-Fin de l&#39;état du lecteur
+Fin de l’état du lecteur
 
 ```
 // StateEnd (ex: Mute is switched off)
@@ -82,15 +82,15 @@ http(s)://<Analytics_Visitor_Namespace>.hb-api.omtrdc.net/api/v1/sessions/<SID>/
 
 ## Mesures d’état
 
-Les mesures fournies pour chaque état individuel sont calculées et transmises à Adobe Analytics en tant que paramètres de données contextuelles et stockées à des fins de rapports. Trois mesures sont disponibles pour chaque état :
+Les mesures fournies pour chaque état individuel sont calculées et transmises à Adobe Analytics en tant que paramètres de données contextuelles et sont stockées à des fins de création de rapports. Trois mesures sont disponibles pour chaque état :
 
-* `a.media.states.[state.name].set = true` — Définit sur true si l’état a été défini au moins une fois par lecture spécifique d’un flux.
+* `a.media.states.[state.name].set = true` — Défini sur « true » si l’état a été défini au moins une fois au cours de chaque lecture spécifique d’un flux.
 * `a.media.states.[state.name].count = 4` — Identifie le nombre d’occurrences d’un état au cours de chaque lecture individuelle d’un flux.
-* `a.media.states.[state.name].time = 240` — Identifie la durée totale de l’état en secondes par lecture individuelle d’un flux
+* `a.media.states.[state.name].time = 240` — Identifie la durée totale de l’état en secondes au cours de chaque lecture individuelle d’un flux.
 
 ## Création de rapports
 
-Toutes les mesures d’état du lecteur peuvent être utilisées pour toute visualisation de rapports disponible dans Analyse Workspace ou un composant (segment, mesures calculées) une fois qu’une suite de rapports est activée pour le suivi de l’état du lecteur. Les nouvelles mesures peuvent être activées à partir de la Console d’administration pour chaque rapport individuel à l’aide de la configuration du Rapports multimédia (Modifier les paramètres > Gestion des médias > Rapports multimédia).
+Toutes les mesures d’état du lecteur peuvent être utilisées pour toute visualisation de rapports disponible dans Analysis Workspace ou un composant (segment, mesures calculées) une fois qu’une suite de rapports est activée pour le suivi de l’état du lecteur. Les nouvelles mesures peuvent être activées à partir de la Console d’administration pour chaque rapport individuel à l’aide de la configuration du Rapports multimédia (Modifier les paramètres > Gestion des médias > Rapports multimédia).
 
 ![](assets/report-setup.png)
 
@@ -98,6 +98,6 @@ Dans Analytics Workspace, toutes les nouvelles propriétés se trouvent dans le 
 
 ![](assets/full-screen-report.png)
 
-## Importation de mesures avec mention du lecteur vers la plateforme d’expérience Adobe
+## Importation des mesures d’état du lecteur vers Adobe Experience Platform
 
-Les données stockées dans Analytics peuvent être utilisées à n’importe quel usage et les mesures d’état du lecteur peuvent être importées dans la plateforme Adobe Experience à l’aide de XDM et utilisées avec Customer Journey Analytics. Les propriétés d’état standard possèdent des propriétés spécifiques tandis que les états personnalisés sont des propriétés disponibles à l’aide des événements personnalisés. Pour plus d’informations sur les propriétés d’état standard, voir la section *Properties Liste for XDM Identities* ( des propriétés pour les identités [XDM) sur la page](/help/metrics-and-metadata/player-state-parameters.md) Player State Parameters(Paramètresd’état du lecteur).
+Les données stockées dans Analytics peuvent être utilisées à n’importe quelle fin, et les mesures d’état du lecteur peuvent être importées dans Adobe Experience Platform à l’aide de XDM et utilisées avec Customer Journey Analytics. Les propriétés d’état standard possèdent des propriétés spécifiques tandis que les états personnalisés sont des propriétés disponibles à l’aide des événements personnalisés. Pour plus d’informations sur les propriétés d’état standard, voir la section *Properties Liste for XDM Identities* ( des propriétés pour les identités [XDM) sur la page](/help/metrics-and-metadata/player-state-parameters.md) Player State Parameters(Paramètresd’état du lecteur).
