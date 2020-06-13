@@ -2,8 +2,11 @@
 title: Paramètres audio et vidéo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+translation-type: tm+mt
+source-git-commit: ccd4209f6fad0547e9595674602ee978d86e10cd
+workflow-type: tm+mt
+source-wordcount: '6128'
+ht-degree: 99%
 
 ---
 
@@ -70,7 +73,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 public static MediaObject createMediaObject(java.lang.String name,
                                             java.lang.String mediaId, // <==
                                             java.lang.Double length,
-                                            java.lang.String streamType, 
+                                            java.lang.String streamType,
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
@@ -84,7 +87,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 public static MediaObject createMediaObject(java.lang.String name,
                                             java.lang.String mediaId,
                                             java.lang.Double length, // <==
-                                            java.lang.String streamType, 
+                                            java.lang.String streamType,
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
@@ -98,7 +101,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 public static MediaObject createMediaObject(java.lang.String name,
                                             java.lang.String mediaId,
                                             java.lang.Double length, // <==
-                                            java.lang.String streamType, 
+                                            java.lang.String streamType,
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
@@ -156,7 +159,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 public static MediaObject createMediaObject(java.lang.String name,
                                             java.lang.String mediaId, // <==
                                             java.lang.Double length,
-                                            java.lang.String streamType, 
+                                            java.lang.String streamType,
                                             MediaHeartbeat.MediaType mediaType)
 ```
 
@@ -190,7 +193,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/>SHOW</li> <li> **Clé API :**<br/>media.show</li> <li> **Obligatoire :**<br/>Non</li> <li> **Type :**<br/>Chaîne</li> <li> **Envoyé avec :**<br/>Démarrage du média, Fermeture du média</li> <li> **Version minimum du SDK :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> « Modern Family » « Blacklist » « New Girl »</li> <li> **Description :**<br/>nom de série/programme<br/>Le nom de programme est requis uniquement si le programme fait partie d’une série.</li></ul> | <ul> <li> **Adobe Analytics :**<br/>(a.media.show)</li> <li> **Heartbeats :**<br/>(s:meta:<br/>a.media.show)</li> </ul> | <ul> <li> **Disponible :**<br/>Oui</li> <li> **Variable réservée :**<br/>eVar</li> <li> **Expiration :**<br/>À l’ACCÈS</li> <li> **Nom du rapport :**<br/>Programme</li> <li> **Données contextuelles :**<br/>(a.media.show)</li> <li> **Flux de données :**<br/>videoshow</li> <li> **Audience Manager :**<br/>(c_contextdata.<br/>a.media.show)</li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>SHOW</li> <li> **Clé API :**<br/>media.show</li> <li> **Obligatoire :**<br/>Non</li> <li> **Type :**<br/>Chaîne</li> <li> **Envoyé avec :**<br/>Démarrage du média, Fermeture du média</li> <li> **Version minimum du SDK :** 1.5.7 </li> <li> **Exemple de valeur :**<br/>&quot;Famille moderne&quot; &quot;La Dernière Danse&quot; &quot;Nouvelle Fille&quot;</li> <li> **Description :**<br/>nom de série/programme<br/>Le nom de programme est requis uniquement si le programme fait partie d’une série.</li></ul> | <ul> <li> **Adobe Analytics :**<br/>(a.media.show)</li> <li> **Heartbeats :**<br/>(s:meta:<br/>a.media.show)</li> </ul> | <ul> <li> **Disponible :**<br/>Oui</li> <li> **Variable réservée :**<br/>eVar</li> <li> **Expiration :**<br/>À l’ACCÈS</li> <li> **Nom du rapport :**<br/>Programme</li> <li> **Données contextuelles :**<br/>(a.media.show)</li> <li> **Flux de données :**<br/>videoshow</li> <li> **Audience Manager :**<br/>(c_contextdata.<br/>a.media.show)</li> </ul> |
 
 ### Format de diffusion
 
@@ -441,13 +444,13 @@ public static MediaObject createMediaObject(java.lang.String name,
 | <ul> <li> **Clé SDK :**<br/>Définie automatiquement</li> <li> **Clé API :**<br/>S.O.</li> <li> **Type :**<br/>Chaîne</li> <li> **Envoyé avec :**<br/>Fermeture du média</li> <li> **Version minimum du SDK :** Toutes </li> <li> **Exemple de valeur :**<br/> TRUE</li> <li> **Description :**<br/>nombre d’affichages du contenu principal. Un affichage de segments du contenu est comptabilisé lorsqu’au moins une image est visionnée.<br/> **Important :** cette valeur ne peut être égale à true que si elle est définie. Si elle n’est pas définie, aucune valeur n’est renvoyée. </li></ul> | <ul> <li> **Adobe Analytics :**<br/>S.O.</li> <li> **Heartbeats :**<br/>S.O.</li> </ul> | <ul> <li> **Disponible :**<br/>Oui</li> <li> **Variable réservée :**<br/>event</li> <li> **Nom du rapport :**<br/>Affichages de segments du contenu</li> <li> **Données contextuelles :**<br/>(a.media.segmentView)</li> <li> **Flux de données :**<br/>S.O.</li> <li> **Audience Manager :**<br/>(c_contextdata.<br/>a.media.segmentView)</li> </ul> |
 
 <!--
-### Ad Count 
+### Ad Count
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
 | <ul> <li> **SDK Key:**<br/> N/A </li> <li> **API Key:**<br/> N/A </li> <li> **Type:**<br/> number </li> <li> **Sent with:**<br/> Media Close </li> <li> **Min. SDK Version:** Any </li> <li> **Sample value:**<br/> 2 </li> <li> **Description:**<br/> The number of ads started during the media session.   <br/> </li></ul> | <ul> <li> **Adobe Analytics:**<br/> N/A </li> <li> **Heartbeats:**<br/> N/A </li> </ul> | <ul> <li> **Available:**<br/> Use custom processing rule </li> <li> **Reserved Variable:**<br/> N/A </li> <li> **Report Name:**<br/> Custom </li> <li> **Context Data:**<br/> (a.media.adCount) </li> <li> **Data Feed:**<br/> N/A </li> <li> **Audience Manager:**<br/> (c_contextdata.<br/>a.media.adCount) </li> </ul> |
 
-### Chapter Count 
+### Chapter Count
 
 | &nbsp;&nbsp;Implementation&nbsp;&nbsp; | Network&nbsp;Parameters | Reporting |
 | --- | --- | --- |
@@ -482,4 +485,3 @@ public static MediaObject createMediaObject(java.lang.String name,
 * Android - [MediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeatConfig.html)
 * iOS - [ADBMediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/Classes/ADBMediaHeartbeatConfig.html)
 * JavaScript - [MediaHeartbeatConfig](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeatConfig.html)
-
