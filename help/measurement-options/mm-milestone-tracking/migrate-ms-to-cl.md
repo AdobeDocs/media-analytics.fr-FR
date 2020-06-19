@@ -4,6 +4,9 @@ description: null
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 translation-type: tm+mt
 source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
+workflow-type: tm+mt
+source-wordcount: '908'
+ht-degree: 100%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: ccdc3e170d125a76d798be7ce1fa5c12eef1f76a
 
 ## Aperçu {#overview}
 
-Les concepts principaux de la mesure vidéo sont les mêmes pour Milestone et le suivi des liens personnalisés, qui prend les événements du lecteur vidéo et les associe aux méthodes d’analyse, tout en récupérant les métadonnées et les valeurs du lecteur et en les associant aux variables d’analyse. L’approche des liens personnalisés doit être considérée comme une simplification de la mise en œuvre et des données collectées. Avec la solution des liens personnalisés, aucune variable ni méthode n’est prédéfinie pour la mesure vidéo. Une configuration personnalisée complète est requise. Il devrait être possible de mettre à jour le code des événements du lecteur afin qu’il pointe vers les appels de suivi des liens personnalisés pour les événements de lecteur de base tels que start et complete. Consultez le [Guide de mise en œuvre d’un lien personnalisé](/help/measurement-options/cl-in-aa/cl-impl-guide.md) et la rubrique [Suivi d’un lien manuel à l’aide d’un code de lien personnalisé](https://docs.adobe.com/content/help/en/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) pour en savoir plus.
+Les concepts principaux de la mesure vidéo sont les mêmes pour Milestone et le suivi des liens personnalisés, qui prend les événements du lecteur vidéo et les associe aux méthodes d’analyse, tout en récupérant les métadonnées et les valeurs du lecteur et en les associant aux variables d’analyse. L’approche des liens personnalisés doit être considérée comme une simplification de la mise en œuvre et des données collectées. Avec la solution des liens personnalisés, aucune variable ni méthode n’est prédéfinie pour la mesure vidéo. Une configuration personnalisée complète est requise. Il devrait être possible de mettre à jour le code des événements du lecteur afin qu’il pointe vers les appels de suivi des liens personnalisés pour les événements de lecteur de base tels que start et complete. Consultez le [Guide de mise en œuvre d’un lien personnalisé](/help/measurement-options/cl-in-aa/cl-impl-guide.md) et la rubrique [Suivi d’un lien manuel à l’aide d’un code de lien personnalisé](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/measurement-options/cl-in-aa/cl-impl-guide.html) pour en savoir plus.
 
 Les tableaux suivants fournissent des correspondances entre la solution Milestone et la solution des liens personnalisés.
 
@@ -25,7 +28,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 <tr>
 <th><strong>Mesure Milestone</strong></th>
 <th><strong>Type de variable</strong></th>
-<th><strong>Syntaxe</strong></th>
+<th><strong>Lien personnalisé</strong></th>
 </tr>
 </thead>
 <tbody>
