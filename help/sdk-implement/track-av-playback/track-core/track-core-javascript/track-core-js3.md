@@ -1,19 +1,19 @@
 ---
 title: Suivi de la lecture principale à l’aide de JavaScript v3.x
-description: Cette rubrique explique comment mettre en oeuvre le suivi de base à l’aide du SDK Media dans un navigateur utilisant des applications JavaScript 3.x.
-translation-type: tm+mt
+description: Cette rubrique décrit la mise en œuvre du suivi principal à l’aide du SDK Media dans un navigateur à l’aide des applications JavaScript 3.x.
+translation-type: ht
 source-git-commit: 40d75ef32596e915ac07c173b4595bb78db3688d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
 
-# Suivi de la lecture principale à l’aide de JavaScript 3.x{#track-core-playback-on-javascript}
+# Suivi de la lecture principale à l’aide de JavaScript 3.x{#track-core-playback-on-javascript}
 
 >[!IMPORTANT]
->Cette documentation aborde le suivi dans la version 3.x du SDK. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs](/help/sdk-implement/download-sdks.md)
+>Cette documentation aborde le suivi dans la version 3.x du SDK. Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md)
 
 1. **Configuration initiale du suivi**
 
@@ -23,10 +23,10 @@ ht-degree: 81%
 
    | Nom de variable | Type | Description |
    | --- | --- | --- |
-   | `name` | string | Chaîne non vide indiquant le nom du média. |
-   | `id` | string | Chaîne non vide indiquant un identifiant de média unique. |
-   | `length` | nombre | Nombre positif indiquant la longueur du média en secondes. Utilisez 0 si la longueur est inconnue. |
-   | `streamType` | string |  |
+   | `name` | chaîne | Chaîne non vide désignant le nom du média. |
+   | `id` | chaîne | Chaîne non vide désignant l’identifiant de média unique. |
+   | `length` | nombre | Nombre positif désignant la longueur du média en secondes. Indiquez 0 si la longueur est inconnue. |
+   | `streamType` | chaîne |  |
    | `mediaType` |  | Type de média (audio ou vidéo). |
 
    **`StreamType`Constantes :**
@@ -53,13 +53,13 @@ ht-degree: 81%
 
 1. **Ajout de métadonnées**
 
-   Vous pouvez associer des métadonnées standard et/ou personnalisées à la session de suivi au moyen de variables de données contextuelles.
+   Vous pouvez joindre des métadonnées standard et/ou personnalisées à la session de suivi par le biais de variables de données contextuelles.
 
    * **Métadonnées standard**
 
       >[!NOTE]
       >
-      >L’attachement des métadonnées standard est facultatif.
+      >Il est facultatif de joindre les métadonnées standard.
 
       * Référence à l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
@@ -112,7 +112,7 @@ ht-degree: 81%
 
    >[!NOTE]
    >
-   >If you are not using contextData, simply send an empty object for the `data` argument in `trackSessionStart`.
+   >Si vous n’utilisez pas de données contextuelles, envoyez simplement un objet vide pour l’argument `data` dans `trackSessionStart`.
 
 1. **Suivi du début réel de la lecture**
 
