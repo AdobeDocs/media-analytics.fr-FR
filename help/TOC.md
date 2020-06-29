@@ -3,11 +3,11 @@ audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
 product: adobe analytics
 sub-product: media analytics
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f90eec31389431fe5275760d510926fb01c33d9a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '809'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -73,9 +73,9 @@ ht-degree: 83%
          + [Mise en œuvre de métadonnées standard sur Android](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
          + [Mise en œuvre de métadonnées standard sur iOS](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
          + [Clés de métadonnées iOS](sdk-implement/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-         + Implement Standard Metadata on JavaScript {#impl-std-md-js}
-            + [Mise en oeuvre de métadonnées standard sur JavaScript 2.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-            + [Mise en oeuvre de métadonnées standard sur JavaScript 3.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+         + Mise en œuvre de métadonnées standard sur JavaScript {#impl-std-md-js}
+            + [Mise en œuvre de métadonnées standard sur JavaScript 2.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+            + [Mise en œuvre de métadonnées standard sur JavaScript 3.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Mise en œuvre de métadonnées standard sur Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [Paramètres des métadonnées standard - Chromecast ](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
          + [Mise en œuvre de métadonnées standard sur Roku](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
@@ -92,9 +92,9 @@ ht-degree: 83%
       + Mise en œuvre de métadonnées de publicité standard {#impl-std-ad-metadata}
          + [Mise en œuvre de métadonnées de publicité standard sur Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
          + [Mise en œuvre de métadonnées de publicité standard sur iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
-         + Implement Standard ad Metadata on JavaScript {#impl-std-ad-md-js}
-            + [Mise en oeuvre des métadonnées publicitaires standard sur JavaScript 2.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
-            + [Mise en oeuvre des métadonnées publicitaires standard sur JavaScript 3.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + Mise en œuvre de métadonnées de publicité standard sur JavaScript {#impl-std-ad-md-js}
+            + [Mise en œuvre de métadonnées de publicité standard sur JavaScript 2.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
+            + [Mise en œuvre de métadonnées de publicité standard sur JavaScript 3.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [Mise en œuvre de métadonnées de publicité standard sur Roku](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Suivi des chapitres et des segments {#track-chapters}
       + [Aperçu](sdk-implement/track-chapters/track-chapters-overview.md)
@@ -119,8 +119,8 @@ ht-degree: 83%
       + [Erreurs de suivi sur Android](sdk-implement/track-errors/track-errors-android.md)
       + [Erreurs de suivi sur iOS](sdk-implement/track-errors/track-errors-ios.md)
       + Erreurs de suivi sur JavaScript {#track-errors-js}
-         + [Suivi des erreurs sur JavaScript 2.x](sdk-implement/track-errors/track-errors-js/track-errors-js.md)
-         + [Suivi des erreurs sur JavaScript 3.x](sdk-implement/track-errors/track-errors-js/track-errors-js3.md)
+         + [Erreurs de suivi sur JavaScript 2.x](sdk-implement/track-errors/track-errors-js/track-errors-js.md)
+         + [Erreurs de suivi sur JavaScript 3.x](sdk-implement/track-errors/track-errors-js/track-errors-js3.md)
       + [Erreurs de suivi sur Chromecast](sdk-implement/track-errors/track-errors-chromecast.md)
       + [Erreurs de suivi sur Roku](sdk-implement/track-errors/track-errors-roku.md)
    + [Exclusion et confidentialité](sdk-implement/opt-out-privacy.md)
@@ -218,8 +218,8 @@ ht-degree: 83%
 + [Federated Analytics](federated-analytics.md)
 + Suivi de l’état du lecteur {#player-state-tracking}
    + [Aperçu](sdk-implement/player-state-tracking/player-state-overview.md)
-   + [Etats standard et personnalisés](sdk-implement/player-state-tracking/standard-and-custom-states.md)
+   + [États standard et personnalisés](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [Mise en œuvre et création de rapports](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-   + [Exemples de suivi des états du lecteur](sdk-implement/player-state-tracking/player-state-examples.md)
+   + [Exemples de suivi de l’état du lecteur](sdk-implement/player-state-tracking/player-state-examples.md)
 + Ressources supplémentaires {#additional-resources}
    + [Notes de mise à jour](additional-resources/doc-updates.md)
