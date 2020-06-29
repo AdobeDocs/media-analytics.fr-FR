@@ -1,11 +1,11 @@
 ---
 title: FAQ sur l’abandon de la prise en charge du SDK Media Analytics
 description: Cette rubrique comprend des questions fréquentes concernant l’abandon de la prise en charge des SDK Media Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 38adc54438f85ca8ece8c77d9ff0d0aa14eb6605
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Avec l’abandon de la prise en charge des SDK mobiles de version 4 programmée
 
 ## 5 choses à savoir
 
-1. Les SDK mobiles v4 ne seront plus pris en charge après le 31 août 2021. Vous devez migrer vers les SDK Adobe Experience Platform (AEP) pour iOS et Android. Pour plus d’informations, voir FAQ [sur les kits SDK mobiles](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq)Version 4.
+1. Les SDK mobiles v4 ne seront plus pris en charge après le 31 août 2021. Vous devez migrer vers les SDK Adobe Experience Platform (AEP) pour iOS et Android. Pour plus d’informations, reportez-vous à la [FAQ sur l’abandon de la prise en charge des SDK mobiles de version 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
 1. La mise en œuvre d’Analytics for Audio and Video requiert le SDK AEP ainsi que l’utilisation des extensions Analytics et Media Analytics. À compter du 1er septembre 2021, vous devrez utiliser les nouveaux SDK et extensions AEP.  Les extensions Media Analytics sont configurées à l’aide d’Adobe Launch.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html).
 
@@ -32,8 +32,8 @@ Contactez votre gestionnaire de la réussite client Adobe si vous avez des quest
 
 1. **La prise en charge des SDK Roku et Chromecast sera-t-elle affectée ?&#x200B;**
 
-   Non.  Pour le moment, les SDK Roku et Chromecast continueront à être pris en charge en tant que SDK autonomes. 
- 
+   Non.  Pour le moment, les SDK Roku et Chromecast continueront à être pris en charge en tant que SDK autonomes.
+
 1. **Les mises en œuvre du SDK Media Analytics pour JS seront-elles affectées par cette modification ?&#x200B;**
 
    Non.  Les clients qui utilisent le SDK JS pour Media Analytics peuvent continuer à utiliser le SDK ou l’activer par le biais d’Adobe Launch.
@@ -50,7 +50,7 @@ Contactez votre gestionnaire de la réussite client Adobe si vous avez des quest
 
 1. **Dois-je configurer Launch en tant que système de gestion des balises ? Que se passe-t-il si je ne souhaite pas utiliser Launch ?**
 
-   Dans le cas de l’utilisation d’une application mobile, le lancement n’est pas utilisé comme système de gestion des balises comme pour le Web.  L’utilisation de l’interface utilisateur de lancement est requise pour configurer les extensions du SDK. Cette méthode est similaire à celle utilisée dans l’interface utilisateur des services mobiles Adobe pour configurer le SDK mobile v4. Pour l&#39;installation, l&#39;avantage de l&#39;utilisation de Launch est qu&#39;il vous donne des instructions d&#39;installation personnalisées en fonction de l&#39;extension que vous choisissez.
+   Dans le cas de l’utilisation d’applications mobiles, Launch n’est pas employé en tant que système de gestion des balises comme c’est le cas pour le web.  L’utilisation de l’interface utilisateur de Launch est requise pour configurer les extensions du SDK. Cette utilisation est similaire à celle de l’interface utilisateur d’Adobe Mobile Services pour configurer le SDK mobile v4. L’utilisation de Launch pour l’installation a pour avantage de proposer des instructions d’installation personnalisées selon l’extension choisie.
 
 1. **Cet abandon de la prise en charge a-t-il une incidence sur le SDK pour tvOS ?**
 
