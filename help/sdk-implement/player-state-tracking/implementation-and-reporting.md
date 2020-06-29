@@ -1,11 +1,11 @@
 ---
 title: Mise en œuvre et création de rapports
 description: Cette rubrique décrit la mise en œuvre de la fonction de suivi de l’état du lecteur, y compris .
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '333'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Le SDK Media comprend deux nouvelles méthodes pour le suivi d’état personnal
 `trackStateClose("state_name")`
 
 
-The Media Collection API includes two new events that have `media.stateName` as the required parameter:
+L’API Media Collection comprend deux nouveaux événements dont le paramètre requis est `media.stateName` :
 
 `stateStart` et `stateEnd`
 
@@ -90,14 +90,14 @@ Les mesures fournies pour chaque état individuel sont calculées et transmises 
 
 ## Création de rapports
 
-Toutes les mesures d’état du lecteur peuvent être utilisées pour toute visualisation de rapports disponible dans Analysis Workspace ou un composant (segment, mesures calculées) une fois qu’une suite de rapports est activée pour le suivi de l’état du lecteur. Les nouvelles mesures peuvent être activées à partir de la Console d’administration pour chaque rapport individuel à l’aide de la configuration du Rapports multimédia (Modifier les paramètres > Gestion des médias > Rapports multimédia).
+Toutes les mesures d’état du lecteur peuvent être utilisées pour toutes les visualisations de rapports disponibles dans Analysis Workspace ou un composant (segment, mesures calculées) une fois qu’une suite de rapports est activée pour le suivi de l’état du lecteur. Les nouvelles mesures peuvent être activées à partir d’Admin Console pour chaque rapport individuel en configurant la création de rapports multimédia (Modifier les paramètres > Gestion des médias > Création de rapports multimédia).
 
 ![](assets/report-setup.png)
 
-Dans Analytics Workspace, toutes les nouvelles propriétés se trouvent dans le panneau des mesures. Par exemple, vous pouvez effectuer des recherches en fonction `full screen` de la vue des données en plein écran dans le panneau des mesures.
+Dans Analytics Workspace, toutes les nouvelles propriétés se trouvent dans le panneau des mesures. Par exemple, vous pouvez rechercher par `full screen` pour consulter les données portant sur le passage en plein écran dans le panneau des mesures.
 
 ![](assets/full-screen-report.png)
 
 ## Importation des mesures d’état du lecteur vers Adobe Experience Platform
 
-Les données stockées dans Analytics peuvent être utilisées à n’importe quelle fin, et les mesures d’état du lecteur peuvent être importées dans Adobe Experience Platform à l’aide de XDM et utilisées avec Customer Journey Analytics. Les propriétés d’état standard possèdent des propriétés spécifiques tandis que les états personnalisés sont des propriétés disponibles à l’aide des événements personnalisés. Pour plus d’informations sur les propriétés d’état standard, voir la section *Properties Liste for XDM Identities* ( des propriétés pour les identités [XDM) sur la page](/help/metrics-and-metadata/player-state-parameters.md) Player State Parameters(Paramètresd’état du lecteur).
+Les données stockées dans Analytics peuvent être utilisées à n’importe quelle fin, et les mesures d’état du lecteur peuvent être importées dans Adobe Experience Platform à l’aide de XDM et utilisées avec Customer Journey Analytics. Les propriétés d’état standards possèdent des propriétés spécifiques, tandis que les états personnalisés sont des propriétés disponibles en utilisant des événements personnalisés. Pour plus d’informations sur les propriétés d’état standards, reportez-vous à la section *Liste de propriétés des identités XDM* sur la page [Paramètres d’état du lecteur](/help/metrics-and-metadata/player-state-parameters.md).
