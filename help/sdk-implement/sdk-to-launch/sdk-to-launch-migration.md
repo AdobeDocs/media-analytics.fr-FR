@@ -3,9 +3,9 @@ seo-title: Migration du SDK Media autonome vers Adobe Launch
 title: Migration du SDK Media autonome vers Adobe Launch
 seo-description: Instructions et exemples de code pour faciliter la migration du SDK Media vers Launch.
 description: Instructions et exemples de code pour faciliter la migration du SDK Media vers Launch.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: fde203bab895c9a49ebc0d1dadb2c96697dea509
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '184'
 ht-degree: 100%
 
