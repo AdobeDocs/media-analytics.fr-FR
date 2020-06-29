@@ -1,9 +1,9 @@
 ---
 title: Exemples de suivi de l’état du lecteur
 description: Cette rubrique comprend des exemples de la fonctionnalité de suivi de l’état du lecteur.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '119'
 ht-degree: 100%
 
