@@ -1,9 +1,9 @@
 ---
 title: Périphériques et plateformes pris en charge
 description: Adobe Analytics for Audio and Video garantit que chaque flux média est collecté et rapporté sur tous les périphériques.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
 ht-degree: 100%
 
@@ -50,4 +50,4 @@ Le tableau ci-dessous liste les périphériques et les plateformes actuellement 
 
 1. La prise en charge de ces SDK sera abandonnée le 31 août 2021. Pour plus d’informations, reportez-vous à la [FAQ sur l’abandon de la prise en charge du SDK Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
-Pour plus d’informations sur les versions minimum de plateforme prises en charge pour chaque SDK, voir [Prise en charge de version minimum de plateforme](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/setup/setup-overview.html)
+Pour plus d’informations sur les versions minimum de plateforme prises en charge pour chaque SDK, voir [Prise en charge de version minimum de plateforme](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/setup/setup-overview.html).
