@@ -1,8 +1,11 @@
 ---
 title: Attribution des diffusions multimédia
 description: null
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
+workflow-type: tm+mt
+source-wordcount: '209'
+ht-degree: 100%
 
 ---
 
@@ -18,8 +21,8 @@ Grâce à l’attribution des diffusions multimédia, les clients peuvent désor
 Vous devez également réactiver la configuration du suivi multimédia à partir de la console d’administration pour chaque rapport pour lequel vous souhaitez activer cette fonctionnalité.
 
 >[!NOTE]
->Les mesures multimédia _ne sont pas_ disponibles pour être utilisées en dehors du suivi multimédia, car la plupart sont calculées par Media Analytics.
->en fonction des événements de pulsation. En outre, il est important que les mesures multimédia ne soient pas gonflées par des mises en œuvre différentes.
+>
+>Les mesures multimédia _ne sont pas_ disponibles pour être utilisées en dehors du suivi multimédia, car la plupart sont calculées par Media Analytics. en fonction des événements de pulsation. En outre, il est important que les mesures multimédia ne soient pas gonflées par des mises en œuvre différentes.
 
 ## Comment
 
