@@ -2,8 +2,11 @@
 title: Suivi du contenu téléchargé
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: be68a7abf7d5fd4cc725b040583801f2308ab066
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 56%
 
 ---
 
@@ -12,17 +15,17 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 ## Aperçu {#overview}
 
-La fonctionnalité Contenu téléchargé permet d’effectuer le suivi de la consommation multimédia lorsqu’un utilisateur est hors ligne. Par exemple, un utilisateur télécharge et installe une application sur un appareil mobile. L’utilisateur télécharge ensuite du contenu à l’aide de l’application et le stocke localement sur l’appareil. Pour effectuer le suivi des données téléchargées, Adobe a développé la fonctionnalité Contenu téléchargé. Grâce à cette fonction, lorsque l’utilisateur lit du contenu stocké localement sur un appareil, les données de suivi sont elles aussi stockées sur l’appareil, indépendamment de la connectivité de celui-ci. Lorsque l’utilisateur met fin à la session de lecture et que l’appareil est à nouveau en ligne, les informations de suivi stockées sont envoyées au serveur principal de l’API Media Collection au sein d’une seule charge utile. A partir de là, le traitement et la création de rapports se déroulent normalement dans l’API Media Collection.
+La fonctionnalité Contenu téléchargé permet d’effectuer le suivi de la consommation multimédia lorsqu’un utilisateur est hors ligne. Par exemple, un utilisateur télécharge et installe une application sur un périphérique mobile, puis l’utilise pour télécharger du contenu dans l’enregistrement local du périphérique. Pour suivre les données téléchargées, Adobe a développé la fonction Contenu téléchargé. Grâce à cette fonctionnalité, lorsque l’utilisateur lit du contenu à partir de l’enregistrement d’un périphérique, les données de suivi sont stockées sur le périphérique, quelle que soit sa connectivité. Lorsque l’utilisateur termine la session de lecture et que le périphérique revient en ligne, les informations de suivi stockées sont envoyées au serveur principal de l’API de collecte de médias au sein d’une charge utile unique. Les informations de suivi stockées sont ensuite traitées et rapportées comme d’habitude dans l’API de collecte de médias.
 
 Comparez les deux approches :
 
 * En ligne
 
-   Avec l’approche en temps réel, le lecteur multimédia envoie des données de suivi à chaque événement du lecteur et envoie des pings réseau toutes les dix secondes (toutes les secondes pour les publicités) au serveur principal.
+   Avec cette approche en temps réel, le lecteur multimédia envoie des données de suivi pour chaque événement de lecteur et envoie des pings réseau toutes les dix secondes (toutes les secondes pour les publicités), une par une vers le serveur principal.
 
 * Hors ligne (fonctionnalité Contenu téléchargé)
 
-   Avec cette approche de traitement par lot, les mêmes événements de session doivent être générés, mais ils sont stockés sur le périphérique jusqu’à ce qu’ils soient envoyés au serveur principal en tant que session unique (voir l’exemple ci-dessous).
+   Avec cette approche de traitement par lots, les mêmes événements de session doivent être générés, mais ils sont stockés sur le périphérique jusqu&#39;à ce qu&#39;ils soient envoyés en une seule session à l&#39;arrière-plan (voir l&#39;exemple ci-dessous).
 
 Chaque approche a ses avantages et ses inconvénients :
 * Le scénario en ligne est suivi en temps réel ; cela nécessite une vérification de la connectivité avant chaque appel réseau.
@@ -30,16 +33,20 @@ Chaque approche a ses avantages et ses inconvénients :
 
 ## Implémentation {#implementation}
 
+### Plates-formes prises en charge
+
+Le suivi du contenu est pris en charge sur les périphériques mobiles iOS et Android.
+
 ### Schémas d’événements
 
-La fonctionnalité Contenu téléchargé est simplement la version hors ligne de l’API Media Collection en ligne (standard). Les données d’événement que votre lecteur associe et envoie au serveur principal doivent donc utiliser les mêmes schémas que ceux que vous utilisez lorsque vous effectuez des appels en ligne. Pour plus d’informations sur ces schémas, voir :
+La fonction Contenu téléchargé est la version hors ligne de l’API de collecte de médias en ligne (standard). Par conséquent, les données de événement que votre lecteur traite et envoie au serveur principal doivent utiliser les mêmes schémas de événement que ceux que vous utilisez lorsque vous effectuez des appels en ligne. Pour plus d’informations sur ces schémas, voir :
 * [Aperçu ;](/help/media-collection-api/mc-api-overview.md)
 * [Validation des requêtes d’événement](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### Ordre des événements
 
 * Le premier événement de la charge utile du lot doit être `sessionStart` conforme à l’usage avec l’API Media Collection.
-* **Vous devez inclure`media.downloaded: true`** dans les paramètres de métadonnées standard (clé`params`) de`sessionStart`l’événement pour indiquer au serveur principal que vous envoyez du contenu téléchargé. Si ce paramètre n’est pas présent ou est défini sur « false », l’API renverra un code de réponse 400 (Demande incorrecte), Ce paramètre fait la distinction entre le contenu téléchargé et le contenu en direct sur le serveur principal. (Notez que si`media.downloaded: true`est défini sur une session en direct, l’API renverra également une réponse 400.)
+* **Vous devez inclure`media.downloaded: true`** dans les paramètres de métadonnées standard (clé`params`) de`sessionStart`l’événement pour indiquer au serveur principal que vous envoyez du contenu téléchargé. Si ce paramètre n’est pas présent ou est défini sur « false », l’API renverra un code de réponse 400 (Demande incorrecte), Ce paramètre fait la distinction entre le contenu téléchargé et le contenu en direct sur le serveur principal. If`media.downloaded: true`is set on a live session, this will likewise result in a 400 response from the API.
 * La mise en œuvre est chargée de stocker correctement les événements du lecteur dans l’ordre dans lequel ils apparaissent.
 
 ### Codes de réponse :
@@ -60,42 +67,45 @@ Lors du calcul des appels de début/fin Analytics pour le scénario de contenu t
 ### Contenu en ligne
 
 ```
-{ 
-  eventType: "sessionStart", 
-  playerTime: { 
+{
+  eventType: "sessionStart",
+  playerTime: {
     playhead: 0,  
     ts: 1529997923478},  
   params: { /* Standard metadata parameters as documented */ },  
   customMetadata: { /* Custom metadata parameters as documented */ },  
-  qoeData: { /* QoE parameters as documented */ } 
+  qoeData: { /* QoE parameters as documented */ }
 }
 ```
 
 ### Contenu téléchargé
 
 ```
-[{ 
-    eventType: "sessionStart", 
+[{
+    eventType: "sessionStart",
     playerTime:{
-      playhead: 0, 
+      playhead: 0,
       ts: 1529997923478},  
     params:{
         "media.downloaded": true
         ...
-    }, 
+    },
     customMetadata:{},  
-    qoeData:{} 
-}, 
+    qoeData:{}
+},
     {eventType: "play", playerTime:
-        {playhead: 0,  ts: 1529997928174}}, 
+        {playhead: 0,  ts: 1529997928174}},
     {eventType: "ping", playerTime:
-        {playhead: 10, ts: 1529997937503}}, 
+        {playhead: 10, ts: 1529997937503}},
     {eventType: "ping", playerTime:
-        {playhead: 20, ts: 1529997947533}}, 
+        {playhead: 20, ts: 1529997947533}},
     {eventType: "ping", playerTime:
-        {playhead: 30, ts: 1529997957545},}, 
+        {playhead: 30, ts: 1529997957545},},
     {eventType: "sessionComplete", playerTime:
-        {playhead: 35, ts: 1529997960559} 
+        {playhead: 35, ts: 1529997960559}
 }]
 ```
 
+## Référence de l&#39;API de suivi des médias
+
+Pour plus d’informations sur la configuration du contenu téléchargé, voir la référence [de l’API de suivi](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#media-api-reference)multimédia.
