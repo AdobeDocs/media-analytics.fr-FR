@@ -1,9 +1,9 @@
 ---
 title: Attribution des diffusions multimédia
 description: null
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cab9724476f7864ac23c4293e402e0443771cb1e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '209'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Vous devez également réactiver la configuration du suivi multimédia à partir
 
 >[!NOTE]
 >
->Les mesures multimédia _ne sont pas_ disponibles pour être utilisées en dehors du suivi multimédia, car la plupart sont calculées par Media Analytics. en fonction des événements de pulsation. En outre, il est important que les mesures multimédia ne soient pas gonflées par des mises en œuvre différentes.
+>Les mesures multimédia _ne sont pas_ disponibles pour être utilisées en dehors du suivi multimédia, car la plupart sont calculées par Media Analytics en fonction des événements de pulsation. En outre, il est important que les mesures multimédia ne soient pas gonflées par des mises en œuvre différentes.
 
 ## Comment
 
