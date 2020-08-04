@@ -6,7 +6,7 @@ translation-type: tm+mt
 source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
 workflow-type: tm+mt
 source-wordcount: '669'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | S.O. | Nous ne fournissons plus de mappages de lecteur préconfigurés. |
 | Media.completeByCloseOffset | `s.Media.` <br> `  completeByCloseOffset` <br> `  = true` | S.O. | La fin du contenu ne prend en charge qu’un marqueur de progression de 100 %. |
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | S.O. | La fin du contenu ne prend en charge qu’un marqueur de progression de 100 %. |
-| Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | Clé SDK : playerName;<br> Clé d&#39;API : media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
+| Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | Clé SDK : playerName ;<br>Clé API : media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | S.O. | Media Analytics est défini sur 10 secondes pour le contenu et 1 seconde pour les publicités. Aucune autre option n’est disponible. |
 | Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | S.O. | Media Analytics effectue toujours le suivi des marqueurs de progression à 10 %, 25 %, 50 %, 75 % et 95 %.. |
 | Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | S.O. | Media Analytics effectue toujours le suivi des marqueurs de progression à 10 %, 25 %, 50 %, 75 % et 95 %.. |
@@ -80,7 +80,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 | parentName | `parentName`: nom ou identifiant du contenu principal dans lequel la publicité est incorporée. | S.O. | Hérité automatiquement. |
 | parentPod | `parentPod`: position de lecture de la publicité dans le contenu principal. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
 | parentPodPosition | `parentPodPosition`: position de lecture de la publicité dans la capsule. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM | `CPM`: Le CPM ou le CPM chiffré (précédé du préfixe « ~ ») qui s’applique à cette lecture. | S.O. | Non disponible par défaut dans Media Analytics. |
+| CPM | `CPM`: CPM ou CPM chiffré (précédé du préfixe « ~ ») applicable à la lecture. | S.O. | Non disponible par défaut dans Media Analytics. |
 | Media.click | `s.Media.click(name, offset)` | S.O. | Utilisez un appel d’analyse de lien personnalisé pour effectuer le suivi des clics. |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |
