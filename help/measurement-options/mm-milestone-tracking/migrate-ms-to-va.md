@@ -2,9 +2,9 @@
 title: Migration de Milestone vers Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -27,9 +27,9 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 | --- | --- | --- |
 | Contenu | eVar <br>Délai d’expiration par défaut : Visite | Contenu |
 | Type de contenu | eVar <br>Délai d’expiration par défaut : page vue | Type de contenu |
-| Temps passé sur le contenu | Type <br>d’événement : Compteur | Temps passé sur le contenu |
-| Démarrages de vidéo | Type <br>d’événement : Compteur | Démarrages de vidéo |
-| La vidéo se termine | Type <br>d’événement : Compteur | Fin de contenu |
+| Temps passé sur le contenu | Type <br> d’événement : Compteur | Temps passé sur le contenu |
+| Démarrages de vidéo | Type <br> d’événement : Compteur | Démarrages de vidéo |
+| La vidéo se termine | Type <br> d’événement : Compteur | Fin de contenu |
 
 ### Variables du module média
 
@@ -42,7 +42,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables facultatives
 
-| Jalon | Syntaxe de Milestone | Analytics multimédia | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | S.O. | Nous ne fournissons plus de mappages de lecteur préconfigurés. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | S.O. | Nous ne fournissons plus de mappages de lecteur préconfigurés. |
@@ -50,14 +50,14 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 | Media.completeCloseOffsetThreshold | `s.Media.` <br> `  completeCloseOffsetThreshold` <br> `  = 1` | S.O. | La fin du contenu ne prend en charge qu’un marqueur de progression de 100 %. |
 | Media.playerName | `s.Media.playerName` <br> `  = "Custom Player Name"` | Clé SDK : playerName ;<br>Clé API : media.playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.trackSeconds | `s.Media.` <br> `  trackSeconds` <br> `  = 15` | S.O. | Media Analytics est défini sur 10 secondes pour le contenu et 1 seconde pour les publicités. Aucune autre option n’est disponible. |
-| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | S.O. | Media Analytics effectue toujours le suivi des marqueurs de progression à 10 %, 25 %, 50 %, 75 % et 95 %.. |
-| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | S.O. | Media Analytics effectue toujours le suivi des marqueurs de progression à 10 %, 25 %, 50 %, 75 % et 95 %.. |
+| Media.trackMilestones | `s.Media.` <br> `  trackMilestones` <br> `  = "25,50,75";` | S.O. | Media Analytics effectue toujours le suivi des marqueurs de progression à 10 %, 25 %, 50 %, 75 % et 95 %. |
+| Media.trackOffsetMilestones | `s.Media.` <br> `  trackOffsetMilestones` <br> `  = "20,40,60";` | S.O. | Media Analytics effectue toujours le suivi des marqueurs de progression à 10 %, 25 %, 50 %, 75 % et 95 %. |
 | Media.segmentByMilestones | `s.Media.segmentByMilestones` <br> `  = true;` | S.O. | Le suivi automatique n’est plus disponible. |
 | Media.segmentByOffsetMilestones | `s.Media.` <br> `  segmentByOffsetMilestones` <br> `  = true;` | S.O. | Le suivi automatique n’est plus disponible. |
 
 ### Variables de suivi des publicités
 
-| Jalon | Syntaxe de Milestone | Analytics multimédia | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | S.O. | Media Analytics est défini sur 10 secondes pour le contenu et 1 seconde pour les publicités. Aucune autre option n’est disponible. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | S.O. | Les marqueurs de progression ne sont pas fournis par défaut pour les publicités. Utilisez des mesures calculées pour créer des marqueurs de progression des publicités. |
@@ -67,7 +67,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Méthodes du module média
 
-| Jalon | Syntaxe de Milestone | Analytics multimédia | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName` : (obligatoire) nom de la vidéo tel que vous souhaitez le voir apparaître dans les rapports vidéo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -77,10 +77,10 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 | name | `name` : (obligatoire) nom ou identifiant de la vidéo. | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length` : (obligatoire) durée de la publicité. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName` : (obligatoire) nom du lecteur vidéo utilisé pour visionner la publicité. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
-| parentName | `parentName`: nom ou identifiant du contenu principal dans lequel la publicité est incorporée. | S.O. | Hérité automatiquement. |
-| parentPod | `parentPod`: position de lecture de la publicité dans le contenu principal. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
-| parentPodPosition | `parentPodPosition`: position de lecture de la publicité dans la capsule. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
-| CPM | `CPM`: CPM ou CPM chiffré (précédé du préfixe « ~ ») applicable à la lecture. | S.O. | Non disponible par défaut dans Media Analytics. |
+| parentName | `parentName` : nom ou identifiant du contenu principal dans lequel la publicité est incorporée. | S.O. | Hérité automatiquement. |
+| parentPod | `parentPod` : position de lecture de la publicité dans le contenu principal. | position | `createAdBreakObject(` <br> `  name, ` <br> `  position, ` <br> `  startTime)` |
+| parentPodPosition | `parentPodPosition` : position de lecture de la publicité dans la capsule. | position | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| CPM | `CPM` : CPM ou CPM chiffré (précédé du préfixe « ~ ») applicable à la lecture. | S.O. | Non disponible par défaut dans Media Analytics. |
 | Media.click | `s.Media.click(name, offset)` | S.O. | Utilisez un appel d’analyse de lien personnalisé pour effectuer le suivi des clics. |
 | Media.close | `s.Media.close(mediaName)` | trackSessionEnd | `trackSessionEnd()` |
 | Media.complete | `s.Media.complete(name, offset)` | trackComplete | `trackComplete()` |
