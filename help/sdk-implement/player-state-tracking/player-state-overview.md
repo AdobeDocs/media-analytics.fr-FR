@@ -1,11 +1,11 @@
 ---
 title: À propos du suivi de l’état du lecteur
 description: Cette rubrique décrit la fonctionnalité de suivi de l’état du lecteur, y compris les exigences et les directives relatives à la mise en œuvre et à la création de rapports portant sur les états du lecteur.
-translation-type: ht
-source-git-commit: 1b48565bcc5c9a87e5fabbc906049ab791bf89cc
-workflow-type: ht
-source-wordcount: '397'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4c11efd0b8bb457246c746621e7fbb9fbda621b2
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 98%
 
 ---
 
@@ -31,6 +31,7 @@ Le suivi de l’état du lecteur offre les avantages suivants :
 
 Le suivi de l’état du lecteur requiert l’un des éléments suivants pour la collecte de données :
 * SDK Media pour JS 3.0+
+* SDK Chromecast 3.0 pour les solutions Adobe Marketing Cloud
 * Extension Media Analytics (à utiliser avec le SDK Adobe Experience Platform (AEP))
    * Web : Adobe Media Analytics (SDK 3.x) for Audio and Video v1.0+
    * Mobile : Adobe Media Analytics for Audio and Video v2.0+
