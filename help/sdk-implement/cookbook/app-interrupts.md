@@ -2,8 +2,11 @@
 title: Gestion des interruptions de l’application lors de la lecture
 description: Comment gérer les interruptions du suivi pendant la lecture du média.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
-translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+translation-type: tm+mt
+source-git-commit: 29b0d38e904a561d467ba0432b255fdb17d6b829
+workflow-type: tm+mt
+source-wordcount: '366'
+ht-degree: 100%
 
 ---
 
@@ -31,5 +34,5 @@ Dans une application multimédia, la lecture peut être interrompue de différen
 
 * _Comment redémarrer la même session ?_
 
-   Pour obtenir des instructions détaillées sur le redémarrage d’une session de suivi, consultez la page [Reprise manuelle d’une session précédemment fermée.](/help/sdk-implement/cookbook/resuming-inactive.md) Le kit SDK envoie un ping de reprise pour informer le serveur principal que l’utilisateur reprend manuellement la session.
+   Pour obtenir des instructions détaillées sur le redémarrage d’une session de suivi, consultez la page [Reprise manuelle d’une session précédemment fermée](/help/sdk-implement/cookbook/resuming-inactive.md). Le kit SDK envoie un ping de reprise pour informer le serveur principal que l’utilisateur reprend manuellement la session.
 
