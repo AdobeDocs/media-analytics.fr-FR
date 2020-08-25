@@ -2,9 +2,9 @@
 title: Suivi dans SceneGraph (Roku)
 description: Suivi des médias avec la structure de programmation XML SceneGraph de Roku.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
 ht-degree: 100%
 
@@ -38,7 +38,7 @@ Le pont de connecteur est conçu pour fonctionner comme suit :
 
 **Application SceneGraph :**
 
-* Utilise les `AdobeMobileLibrary`API via les API de pont de connecteur SceneGraph.
+* Utilise les `AdobeMobileLibrary` API via les API de pont de connecteur SceneGraph.
 * Enregistre les rappels de réponse sur `adbmobileTask` pour les variables de données de sortie attendues.
 
 **AdobeMobileLibrary :**
@@ -49,7 +49,7 @@ Le pont de connecteur est conçu pour fonctionner comme suit :
 
 **Nœud adbmobileTask :**
 
-* Nœud de tâche SceneGraph qui exécute les `AdobeMobileLibrary`API sur un thread d’arrière-plan.
+* Nœud de tâche SceneGraph qui exécute les `AdobeMobileLibrary` API sur un thread d’arrière-plan.
 * Agit en tant que délégué pour renvoyer des données aux scènes d’application.
 
 ## API SceneGraph publiques {#public-scenegraph-apis}
@@ -202,11 +202,11 @@ Les API `MediaHeartbeat` d’utilitaire globalement définies sur le composant A
 
 | Méthode | Description |
 | --- | --- |
-| `adb_media_init_mediainfo` | Cette méthode renvoie un objet d’informations de média initialisé.`Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
-| `adb_media_init_adinfo` | Cette méthode renvoie un objet d’informations de publicité initialisé `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
-| `adb_media_init_chapterinfo` | Cette méthode renvoie l’objet d’informations de chapitre initialisé.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
-| `adb_media_init_adbreakinfo` | Cette méthode renvoie l’objet Informations de l’AdBreak initialisé.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
-| `adb_media_init_qosinfo` | Cette méthode renvoie un objet d’informations QoS initialisé.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
+| `adb_media_init_mediainfo` | Cette méthode renvoie un objet d’informations de média initialisé.  `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
+| `adb_media_init_adinfo` | Cette méthode renvoie un objet d’informations de publicité initialisé.  `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
+| `adb_media_init_chapterinfo` | Cette méthode renvoie l’objet d’informations de chapitre initialisé.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
+| `adb_media_init_adbreakinfo` | Cette méthode renvoie l’objet Informations de l’AdBreak initialisé.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
+| `adb_media_init_qosinfo` | Cette méthode renvoie un objet d’informations QoS initialisé.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
 ## Implémentation {#implementation}
 
