@@ -2,11 +2,11 @@
 title: Configuration d’Adobe Debug
 description: Cette rubrique décrit la configuration d’Adobe Debug, que vous pouvez utiliser pour résoudre les problèmes de mise en œuvre du SDK Media.
 uuid: e416458d-f23c-41ce-8d99-fa5076c455f0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: f0f04ffab851999becb2b7771eef36ad7477c9f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '653'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Les navigateurs recommandés sont les dernières versions de Chrome et Firefox.
 
 Télécharger et configurer Debug Proxy :
 
-1. Téléchargez l’application Debug Proxy sur la page de [téléchargement des applications.](https://debug.adobe.com/#/downloads)
+1. Téléchargez l’application Debug Proxy sur la page de [téléchargement des applications](https://debug.adobe.com/#/downloads).
 
    Les systèmes d’exploitation pris en charge sont les suivants :
    * OS X 10.7 64 bits ou version ultérieure
@@ -72,13 +72,13 @@ Téléchargez et installez le certificat SSL :
    1. Procédez de l’une des manières suivantes :
 
       * [Ajout de certificats au magasin des autorités de certification racine approuvées pour un ordinateur local](https://technet.microsoft.com/fr-fr/library/cc754841.aspx#BKMK_addlocal)
-   1. Pour Firefox, exécutez la procédure décrite dans [Installation d’un certificat racine dans Mozilla Firefox.](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox)
+   1. Pour Firefox, exécutez la procédure décrite dans [Installation d’un certificat racine dans Mozilla Firefox](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox).
 
-      Vous devrez peut-être quitter et rouvrir Firefox pour voir la modification.
+      Vous devrez peut-être fermer et rouvrir Firefox pour voir la modification.
    **Appareils iOS**
    1. Configurez votre appareil iOS pour qu’il utilise Adobe Debug comme proxy HTTP en cliquant sur **[!UICONTROL Paramètres d’application]** **>** **[!UICONTROL Paramètres Wi-Fi]**.
 
-   1. Dans Safari, accédez à [Débogage.](https://proxy.debug.adobe.com/ssl)
+   1. Dans Safari, accédez à [Débogage](https://proxy.debug.adobe.com/ssl).
 
       Safari vous invite à installer le certificat SSL.
 
@@ -93,13 +93,13 @@ S’il vous manque les appels HTTPS dans Adobe Debug, vous devez installer le ce
 
 Pour installer le certificat SSL sur un appareil iOS :
 
-1. Sur votre ordinateur portable, activez le débogage proxy et accédez à [Adobe Debug.](https://debug.adobe.com)
+1. Sur votre ordinateur portable, activez le débogage proxy et accédez à [Adobe Debug](https://debug.adobe.com).
 1. Effectuez les étapes suivantes sur votre appareil iOS :
    1. Mettez votre appareil en mode avion.
    1. Sélectionnez le signal Wi-Fi utilisé par votre ordinateur portable.
    1. Sur votre ordinateur portable, définissez manuellement l’adresse IP et le port affichés sur l’application Debug Proxy.
    1. Ouvrez une fenêtre de navigateur Apple Safari.
-   1. Accédez à [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
+   1. Accédez à [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl).
    1. Téléchargez et installez le certificat SSL.
 
 1. Sur votre ordinateur portable, démarrez votre session Adobe Debug.
@@ -109,13 +109,13 @@ Pour installer le certificat SSL sur un appareil iOS :
 
 Pour installer le certificat SSL sur un appareil Android :
 
-1. Sur votre ordinateur portable, activez le proxy de débogage et accédez à [Adobe Debug.](https://debug.adobe.com)
+1. Sur votre ordinateur portable, activez le proxy de débogage et accédez à [Adobe Debug](https://debug.adobe.com).
 1. Effectuez les étapes suivantes sur votre appareil Android :
    1. Mettez votre appareil en mode avion.
    1. Sélectionnez le signal Wi-Fi utilisé par votre ordinateur portable.
    1. Sur votre ordinateur portable, définissez manuellement l’adresse IP et le port affichés sur l’application Debug Proxy.
    1. Ouvrez une fenêtre du navigateur.
-   1. Accédez à [https://proxy.debug.adobe.com/ssl.](https://proxy.debug.adobe.com/ssl)
+   1. Accédez à [https://proxy.debug.adobe.com/ssl](https://proxy.debug.adobe.com/ssl).
    1. Téléchargez et installez le certificat SSL.
 
 1. Sur votre ordinateur portable, démarrez votre session Adobe Debug.
