@@ -1,9 +1,9 @@
 ---
 title: FAQ sur l’abandon de la prise en charge du SDK Media Analytics
 description: Cette rubrique comprend des questions fréquentes concernant l’abandon de la prise en charge des SDK Media Analytics.
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cea8c4b31b21f1b13a55268fbcfb9100a7bdbd7c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ Contactez votre gestionnaire de la réussite client Adobe si vous avez des quest
 
 1. **Cet abandon de la prise en charge a-t-il une incidence sur le SDK pour tvOS ?**
 
-   Oui : pour tvOS (version 10+), il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch — iOS](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
+   Oui : pour tvOS (version 10+), il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch — iOS](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
 
 1. **Cet abandon de la prise en charge a-t-il une incidence sur le SDK pour FireTV et AndroidTV ?&#x200B;**
 
-   Oui : pour FireTV et AndroidTV, il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch - Android](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
+   Oui : pour FireTV et AndroidTV, il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch - Android](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
