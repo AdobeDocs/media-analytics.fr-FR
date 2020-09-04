@@ -5,7 +5,7 @@ translation-type: tm+mt
 source-git-commit: 5d6f2c35f11b14222b704888a80e08e7217b33e9
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 10%
+ht-degree: 14%
 
 ---
 
@@ -20,7 +20,7 @@ L’analyse des visionneuses simultanées vous permet de comprendre où s’est 
 
 ## Panneau Visionneuses simultanées de médias en Analysis Workspace
 
-En Analysis Workspace, les visionneuses simultanées représentent le nombre de visiteurs uniques qui visualisent vos flux de médias à un moment donné, quel que soit le nombre de sessions. Le panneau Visionneuses simultanées de médias est disponible pour visualiser les visionneuses simultanées, les ventiler et les comparer. [En savoir plus...](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+En Analysis Workspace, les visionneuses simultanées représentent le nombre de visiteurs uniques qui visualisent vos flux de médias à un moment donné, quel que soit le nombre de sessions. Le panneau Visionneuses simultanées de médias est disponible pour visualiser les visionneuses simultanées, les ventiler et les comparer. [En savoir plus...](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## Obtention de visionneuses simultanées via l’API de Rapports Analytics
 
