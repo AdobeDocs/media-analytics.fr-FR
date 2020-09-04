@@ -2,8 +2,11 @@
 title: Visionneuses simultanées de médias
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 85%
 
 ---
 
@@ -13,8 +16,9 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 Le tableau de bord des visionneuses simultanées de médias affiche les visiteurs simultanés pendant une journée. Les données peuvent être filtrées par contenu, type de périphérique ou pays.
 
 >[!TIP]
->
->Aucune donnée ne s’affiche si l’intervalle sélectionné n’est pas un jour entier.
+> 
+> Conseil : Ce rapport est basé sur des sessions multimédias principales simultanées.  Pour afficher les visionneuses simultanées par visiteur unique, avec les fonctionnalités supplémentaires d’application d’un segment, de ventilation et de comparaison, utilisez la variable [Panneau Visionneuses simultanées de médias en Analysis Workspace](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+
 
 ![](assets/video-concurrent-viewers.png)
 
@@ -34,6 +38,7 @@ Voici quelques caractéristiques de ce rapport :
 
 Voici quelques limites de ce rapport :
 
+* Aucune donnée ne s’affiche si l’intervalle sélectionné n’est pas un jour entier.
 * Vous ne pouvez pas exporter les données, telles que ReportBuilder.
 * Vous ne pouvez pas présenter les données sous forme de tableau.
 * Vous ne pouvez pas envoyer de rapport par email.
