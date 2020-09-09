@@ -3,10 +3,10 @@ title: Visionneuses simultanées de médias
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 translation-type: tm+mt
-source-git-commit: 420d17294f8f4b5c38d960e4e4ebd0b2ee80a60b
+source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
 workflow-type: tm+mt
-source-wordcount: '268'
-ht-degree: 85%
+source-wordcount: '267'
+ht-degree: 86%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 85%
 Le tableau de bord des visionneuses simultanées de médias affiche les visiteurs simultanés pendant une journée. Les données peuvent être filtrées par contenu, type de périphérique ou pays.
 
 >[!TIP]
-> 
-> Conseil : Ce rapport est basé sur des sessions multimédias principales simultanées.  Pour afficher les visionneuses simultanées par visiteur unique, avec les fonctionnalités supplémentaires d’application d’un segment, de ventilation et de comparaison, utilisez la variable [Panneau Visionneuses simultanées de médias en Analysis Workspace](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+>
+> Ce rapport est basé sur des sessions multimédias principales simultanées.  Pour afficher les visionneuses simultanées par visiteur unique, avec les fonctionnalités supplémentaires d’application d’un segment, de ventilation et de comparaison, utilisez la variable [Panneau Visionneuses simultanées de médias en Analysis Workspace](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
@@ -44,4 +44,3 @@ Voici quelques limites de ce rapport :
 * Vous ne pouvez pas envoyer de rapport par email.
 * Même si vous n’effectuez pas le suivi des publicités, vous devez réactiver le suivi des médias et sélectionner le module Media Ad.
 * Cette fonctionnalité fournit des données précises lors de l’utilisation d’une bibliothèque de pulsations dotée de fonctionnalités de suivi Pause.
-
