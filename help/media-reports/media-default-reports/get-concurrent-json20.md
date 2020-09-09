@@ -1,9 +1,9 @@
 ---
-title: Obtenir les données de rapport JSON des visionneuses simultanées avec les API Analytics 2.0
+title: Obtenir des données de rapport JSON des visionneuses simultanées avec les API Analytics 2.0
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 translation-type: tm+mt
-source-git-commit: 687ae6f2037590b58b30ea776635898c93ca144f
+source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 32%
@@ -11,7 +11,7 @@ ht-degree: 32%
 ---
 
 
-# Obtenir les données de rapport JSON des visionneuses simultanées avec les API Analytics 2.0{#get-concurrent-viewers-json-report-data}
+# Obtenir des données de rapport JSON des visionneuses simultanées avec les API Analytics 2.0{#get-concurrent-viewers-json-report-data}
 
 Vous pouvez obtenir des données de rapport de visionneuses simultanées à l’aide de la variable [_*API Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
