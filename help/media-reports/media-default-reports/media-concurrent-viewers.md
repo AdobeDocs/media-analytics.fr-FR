@@ -2,11 +2,11 @@
 title: Visionneuses simultanées de médias
 description: null
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: cb54b862a0d4a179c499e3a28ab49301121de1bf
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '267'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,7 @@ Le tableau de bord des visionneuses simultanées de médias affiche les visiteur
 
 >[!TIP]
 >
-> Ce rapport est basé sur des sessions multimédias principales simultanées.  Pour afficher les visionneuses simultanées par visiteur unique, avec les fonctionnalités supplémentaires d’application d’un segment, de ventilation et de comparaison, utilisez la variable [Panneau Visionneuses simultanées de médias en Analysis Workspace](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
+> Ce rapport est basé sur des sessions de médias actives simultanées.  Pour afficher les observateurs simultanés par visiteur unique, avec les fonctionnalités supplémentaires d’application d’un segment, de ventilation et de comparaison, utilisez le [Panneau Observateurs simultanés de médias dans Analysis Workspace](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html).
 
 
 ![](assets/video-concurrent-viewers.png)
