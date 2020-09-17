@@ -1,30 +1,30 @@
 ---
-title: Obtenir des données de rapport JSON des visionneuses simultanées avec les API Analytics 2.0
+title: Obtenir les données de rapport JSON sur les observateurs simultanés avec les API Analytics 2.0
 description: null
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e93a39fb76c3ccca2c05e5d1590a53394e50b29b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '167'
-ht-degree: 32%
+ht-degree: 100%
 
 ---
 
 
-# Obtenir des données de rapport JSON des visionneuses simultanées avec les API Analytics 2.0{#get-concurrent-viewers-json-report-data}
+# Obtenir les données de rapport JSON sur les observateurs simultanés avec les API Analytics 2.0 {#get-concurrent-viewers-json-report-data}
 
-Vous pouvez obtenir des données de rapport de visionneuses simultanées à l’aide de la variable [_*API Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
+Vous pouvez obtenir des données de rapport sur les observateurs simultanés à l’aide des [_*API Analytics 2.0*_](https://www.adobe.io/apis/experiencecloud/analytics/docs.html).
 
-1. Filtrez les données à l’aide de tout segment créé sur l’interface utilisateur. Pour filtrer selon un identifiant de contenu spécifique, créez un segment.
+1. Filtrez les données à l’aide de n’importe quel segment généré par l’interface utilisateur. Pour filtrer selon un identifiant de contenu spécifique, créez un segment.
 1. Définissez le `elements` -> `id` dans le corps de requête sur `metrics/concurrent_viewers_visitors`.
 1. Demandez une quantité suffisante de données.
 
-   * La plage de données que vous spécifiez dans le rapport rassemble toutes les données de visionneuse simultanées _au moment de la fin de la session vidéo._
-Vous devez rendre compte des sessions qui ont début un jour et se terminent après minuit, c&#39;est-à-dire le lendemain.
+   * La plage de données que vous spécifiez dans le rapport rassemble toutes les données d’observateurs simultanés _au moment de la fin de la session vidéo._
+Vous devez donc tenir compte des sessions qui commencent un jour et se terminent après minuit, c’est-à-dire le lendemain.
 
-   * Demandez un jour de données supplémentaire à la période prévue dans votre requête, mais dans votre analyse. _*utilisez uniquement les données prévues.*_
+   * Demandez un jour de données supplémentaire à la période prévue dans votre requête, mais dans votre analyse _*utilisez uniquement les données prévues.*_
 
-Un exemple de charge utile de requête pour un jour de données ressemble à l’exemple suivant. La demande est faite pour 2 jours consécutifs mais dans le rapports vous n&#39;utilisez que le premier jour.
+Un exemple de payload de requête pour un jour de données ressemble à l’exemple suivant. La requête est faite pour 2 jours consécutifs mais dans le rapports vous n’utilisez que le premier jour.
 
 ## Exemple de requête
 
