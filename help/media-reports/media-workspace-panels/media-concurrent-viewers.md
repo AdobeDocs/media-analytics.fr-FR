@@ -1,20 +1,16 @@
 ---
 title: Rapport sur les Observateurs simultanés de médias
 description: Pour les clients Media Analytics, le panneau Observateurs simultanés de médias dans Analysis Workspace vous permet d’analyser les observateurs simultanés afin de déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu.
-translation-type: ht
-source-git-commit: ee925e7bf2d32431679dd1b82e46c7c124256d13
-workflow-type: ht
-source-wordcount: '224'
+translation-type: tm+mt
+source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+workflow-type: tm+mt
+source-wordcount: '204'
 ht-degree: 100%
 
 ---
 
 
 # Rapport sur les Observateurs simultanés de médias {#media-concurrent-viewers}
-
->[!IMPORTANT]
->
->Cette fonctionnalité est disponible dans Tests limités pour les clients Media Analytics. [En savoir plus...](https://docs.adobe.com/content/help/fr-FR/analytics/landing/an-releases.html)
 
 Analyser les observateurs simultanés de médias vous permet de déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu, afin de mieux comprendre la qualité du contenu et l’engagement des observateurs, et de résoudre les problèmes ou de planifier le volume et l’échelle.
 
