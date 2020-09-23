@@ -1,8 +1,11 @@
 ---
 title: Guide pas à pas Media Analytics
 description: Page du guide pas à pas supérieur, avec des liens généraux vers des guides pas à pas MA et des liens spécifiques au SDK.
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: 298d17ced7a62cad8e2a45814fbfb80c3f58ce35
+workflow-type: tm+mt
+source-wordcount: '32'
+ht-degree: 100%
 
 ---
 
