@@ -1,9 +1,9 @@
 ---
 title: Présentation du guide pas à pas SDK
 description: 'Rubriques spécifiques au guide pas à pas SDK '
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: 298d17ced7a62cad8e2a45814fbfb80c3f58ce35
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '66'
 ht-degree: 100%
 
