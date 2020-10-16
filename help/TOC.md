@@ -1,15 +1,15 @@
 ---
 audience: end-user
 user-guide-title: Adobe Analytics for Audio and Video
-breadcrumb-title: Media Analytics Guide
-user-guide-description: Implement Analytics on audio or video sources. Includes the Media SDK and the Media Collection API.
+breadcrumb-title: Guide de Media Analytics
+user-guide-description: Implémentez Analytics sur des sources audio ou vidéo. Inclut le SDK Media et l’API Media Collection.
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
 source-git-commit: 32865b998afc7b19ef328a2d43c3acd9970a4d5c
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 97%
+source-wordcount: '837'
+ht-degree: 98%
 
 ---
 
@@ -215,7 +215,7 @@ ht-degree: 97%
       + [Rapport Media Daypart](media-reports/media-default-reports/media-reports-daypart.md)
       + [Rapport Visionneuses simultanées de médias](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Panneaux Espace de travail multimédia {#media-workspace-panels}
-      + [Panneau Visionneuses simultanées de médias](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+      + [Panneau des visionneuses simultanées de médias](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Modèles Workspace multimédia](media-reports/media-workspace-templates.md)
    + [Obtenir des données de visionneuses simultanées via l’API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Suivi du contenu téléchargé](media-collection-api/track-downloaded-content.md)
