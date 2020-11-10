@@ -3,8 +3,11 @@ seo-title: Aperçu
 title: Aperçu
 description: null
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
-translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 92%
 
 ---
 
@@ -13,7 +16,7 @@ source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
 
 L’API Media Collection constitue l’alternative RESTful d’Adobe au SDK Media côté client. Grâce à l’API Media Collection, votre lecteur peut effectuer le suivi des événements audio et vidéo à l’aide d’appels HTTP RESTful.
 
-L’API Media Collection est essentiellement un adaptateur, agissant comme une version côté serveur du SDK Media. Cela signifie que certains aspects de la documentation du SDK Media sont également pertinents pour l’API Media Collection. Par exemple, les deux solutions utilisent les mêmes [paramètres audio et vidéo](/help/metrics-and-metadata/audio-video-parameters.md), et les données de suivi audio et vidéo collectées conduisent aux mêmes [rapports et analyses.](/help/media-reports/media-reports-enable.md)
+L’API Media Collection est essentiellement un adaptateur, agissant comme une version côté serveur du SDK Media. Cela signifie que certains aspects de la documentation du SDK Media sont également pertinents pour l’API Media Collection. Par exemple, les deux solutions utilisent la même [Paramètres de média à flux continu](/help/metrics-and-metadata/audio-video-parameters.md), et les données de suivi des médias en flux continu collectées conduisent à la même [Rapports et Analyse.](/help/media-reports/media-reports-enable.md)
 
 ## Flux de données de suivi multimédia {#media-tracking-data-flows}
 
@@ -31,7 +34,7 @@ Les données de suivi capturées avec l’API Media Collection sont envoyées et
 
 ### Appels API {#mc-api-calls}
 
-* **`sessions`-** Établit une session avec le serveur et renvoie un ID de session utilisé dans les appels`events`suivants. Votre application appelle ceci une fois au début d’une session de suivi.
+* **`sessions`-** Établit une session avec le serveur et renvoie un ID de session utilisé dans les appels `events` suivants. Votre application appelle ceci une fois au début d’une session de suivi.
 
    ```
    {uri}/api/v1/sessions
