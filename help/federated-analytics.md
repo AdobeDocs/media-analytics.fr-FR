@@ -1,12 +1,12 @@
 ---
 title: Federated Analytics
-description: Le service Federated Analytics fournit un système pour le partage de données Adobe Media Analytics (audio et vidéo) entre deux partenaires.
+description: Le service Federated Analytics fournit un système de partage des données Adobe Analytics pour la diffusion en continu des médias entre deux partenaires.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 88f4479ec072ab2a332ade09a83e9fbff94a98e9
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 97%
+source-wordcount: '552'
+ht-degree: 92%
 
 ---
 
@@ -38,7 +38,8 @@ Avec Federated Analytics, les mesures audio et vidéo sont plus efficaces, plus 
 
 * **Contrat de diffusion média :** le destinataire et l’expéditeur doivent disposer d’un contrat Adobe Analytics pour les diffusions multimédia avant d’accéder aux données audio et vidéo dans Adobe Analytics. Pour plus d’informations, contactez l’équipe chargée de votre compte.
 * **Federated Addendum :** chaque expéditeur et chaque destinataire doit avoir signé un addendum avec Adobe avant d’envoyer ou de recevoir des données. Un addendum par client est requis, et non un addendum par partenariat. Pour plus d’informations, contactez l’équipe chargée de votre compte.
-* **Mise en œuvre de Media Analytics :** l’expéditeur doit avoir mis en œuvre Media Analytics sur tous les lecteurs qui feront partie du jeu de données fédérées. Seules les données Media Analytics sont disponibles pour la fédération. Voir documentation : [Mesures audio et vidéo dans Adobe Analytics](/help/media-overview.md)
+
+* **Mise en œuvre de Media Analytics :** l’expéditeur doit avoir mis en œuvre Media Analytics sur tous les lecteurs qui feront partie du jeu de données fédérées. Seules les données Media Analytics sont disponibles pour la fédération. Voir la documentation : [Mesure des médias dynamiques en Adobe Analytics](/help/media-overview.md)
 
 * **Contrat de conseil Adobe :** Pour la configuration initiale des règles fédérées entre le récepteur et l’expéditeur, il est recommandé de travailler avec des services de conseil pour examiner les données et créer l’accord de partage de données.
 
