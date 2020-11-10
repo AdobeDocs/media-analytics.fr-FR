@@ -1,11 +1,11 @@
 ---
 title: Périphériques et plateformes pris en charge
-description: Adobe Analytics for Audio and Video garantit que chaque flux média est collecté et rapporté sur tous les périphériques.
-translation-type: ht
-source-git-commit: 4db4e4281ba9c7af078c18d03f73b6e1e007a0e8
-workflow-type: ht
-source-wordcount: '338'
-ht-degree: 100%
+description: Adobe Analytics for Streaming Media garantit que chaque flux média est collecté et rapporté sur tous les périphériques.
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 91%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 >
 >Avec l’abandon de la prise en charge des SDK mobiles de version 4 programmée au 31 août 2021, Adobe cessera également de prendre en charge le SDK Media Analytics pour iOS et Android.  Pour plus d’informations, reportez-vous à la [FAQ sur l’abandon de la prise en charge du SDK Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
-Adobe Analytics for Audio and Video prend en charge tous les principaux périphériques, notamment :
+Adobe Analytics for Streaming Media prend en charge tous les principaux périphériques, notamment :
 
 * Smartphones et tablettes iOS et Android
 * Appareils OTT pour ROKU, Apple TV, FireTV et Android TV
