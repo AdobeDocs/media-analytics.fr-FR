@@ -2,9 +2,9 @@
 title: Migration de Milestone vers Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: ht
-source-git-commit: e25c4d0add969ad31393f2eeb33b1a12b7205586
-workflow-type: ht
+translation-type: tm+mt
+source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
+workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -31,6 +31,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 | Démarrages de vidéo | Type <br> d’événement : Compteur | Démarrages de vidéo |
 | La vidéo se termine | Type <br> d’événement : Compteur | Fin de contenu |
 
+
 ### Variables du module média
 
 | Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
@@ -42,7 +43,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables facultatives
 
-| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Jalon | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | S.O. | Nous ne fournissons plus de mappages de lecteur préconfigurés. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | S.O. | Nous ne fournissons plus de mappages de lecteur préconfigurés. |
@@ -57,7 +58,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables de suivi des publicités
 
-| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Jalon | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | S.O. | Media Analytics est défini sur 10 secondes pour le contenu et 1 seconde pour les publicités. Aucune autre option n’est disponible. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | S.O. | Les marqueurs de progression ne sont pas fournis par défaut pour les publicités. Utilisez des mesures calculées pour créer des marqueurs de progression des publicités. |
@@ -67,7 +68,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Méthodes du module média
 
-| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Jalon | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName` : (obligatoire) nom de la vidéo tel que vous souhaitez le voir apparaître dans les rapports vidéo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
@@ -88,3 +89,4 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 | Media.stop | `s.Media.stop(mediaName, mediaOffset)` | trackPause<br> ou <br>trackEvent | `trackPause()` <br> ou `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  SeekStart)` <br> ou <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `  Event.` <br> `  BufferStart);` |
 | Media.monitor | `s.Media.monitor(s, media)` | Utilisez des métadonnées personnalisées ou standard pour définir des variables supplémentaires. | `var customVideoMetadata = ` <br> `{` <br> `  isUserLoggedIn: ` <br> `    "false",` <br> `  tvStation: ` <br> `    "Sample TV station",` <br> `  programmer: ` <br> `    "Sample programmer"` <br> `};` <br> `...` <br> `var standardVideoMetadata ` <br> `  = {};` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   EPISODE] = ` <br> `  "Sample Episode";` <br> `standardVideoMetadata` <br> `  [MediaHeartbeat.` <br> `   VideoMetadataKeys.` <br> `   SHOW] = "Sample Show";` <br> `...` <br> `mediaObject.setValue(` <br> `  MediaHeartbeat.` <br> `  MediaObjectKey.` <br> `  StandardVideoMetadata, ` <br> `  standardVideoMetadata);` |
 | Media.track | `s.Media.track(mediaName)` | S.O. | La fréquence des appels de suivi est définie automatiquement. |
+
