@@ -2,11 +2,11 @@
 title: Paramètres audio et vidéo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
-translation-type: ht
-source-git-commit: abb2cd2d056ffbefa72126061b11286cc10ec1ca
-workflow-type: ht
-source-wordcount: '6262'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
+workflow-type: tm+mt
+source-wordcount: '6259'
+ht-degree: 99%
 
 ---
 
@@ -47,7 +47,7 @@ Description des données de tableau :
 >Ne modifiez pas les noms de classification des variables répertoriées ci-dessous, qui sont décrites sous Variable de création de rapports/réservée comme « classification ».\
 >Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour le suivi multimédia. De temps à autre, Adobe ajoute de nouvelles propriétés. Dans ce cas, les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés du média. Au cours du processus de mise à jour, Adobe détermine si les classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque, Adobe l’ajoute à nouveau.
 
-## Données audio et vidéo principales {#core-audio-and-video-data}
+## Données de média à flux continu de base {#core-audio-and-video-data}
 
 ### Type de diffusion {#stream-type}
 
@@ -187,7 +187,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **Clé SDK :**<br/> Définie automatiquement </li> <li> **Clé API :**<br/> S.O. </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Fermeture du média </li> <li> **Version minimum du SDK :** 1.5.7 </li> <li> **Exemple de valeur :**<br/> « js-2.0.1.88-c8c0b1 » </li> <li> **Description :**<br/> version du SDK Media utilisée pour la session de suivi. <br/><br/>Les clients devront créer leurs propres règles de traitement afin que la valeur soit disponible pour les rapports.  <br/><br/>[MediaHeartbeat.version();](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html) </li></ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.<br/>vhlVersion) </li> <li> **Heartbeats :**<br/> (s:sp:hb_version) </li> </ul> | <ul> <li> **Disponible :**<br/> Utiliser la règle de traitement personnalisée </li> <li> **Variable réservée :**<br/> S.O. </li> <li> **Nom du rapport :**<br/> Personnalisé </li> <li> **Données contextuelles :**<br/> (a.media.vhlVersion) </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.vhlVersion) </li> </ul> |
 
-## Métadonnées audio et vidéo standard {#standard-audio-and-video-metadata}
+## Métadonnées du média à flux continu standard {#standard-audio-and-video-metadata}
 
 ### Programme
 
@@ -321,7 +321,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 | --- | --- | --- |
 | <ul> <li> **Clé SDK :**<br/> </li> <li> **Clé API :**<br/> media.publisher </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Démarrage du média, Fermeture du média </li> <li> **Version minimum du SDK :** 1.5.7 <br/>Disponible dans [Présentation Media Collection](/help/media-collection-api/mc-api-overview.md) ou [Téléchargement des SDK - Versions 2.2](/help/sdk-implement/download-sdks.md).  </li> <li> **Exemple de valeur :**<br/> « Random Bauhaus » </li> <li> **Description :**<br/> nom de l’éditeur du contenu audio.  <br/> **Date de publication : 13/09/18** </li></ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.publisher) </li> <li> **Heartbeats :**<br/> (s:meta:<br/>a.media.publisher) </li> </ul> | <ul> <li> **Disponible :**<br/> Oui </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> </li> <li> **Données contextuelles :**<br/> (a.media.publisher) </li> <li> **Flux de données :**<br/> videoaudiopublisher </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.publisher) </li> </ul> |
 
-## Mesures audio et vidéo {#audio-and-video-metrics}
+## Mesures de médias à flux continu {#audio-and-video-metrics}
 
 ### Démarrage du contenu multimédia
 
