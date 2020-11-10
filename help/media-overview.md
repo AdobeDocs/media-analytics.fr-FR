@@ -1,31 +1,31 @@
 ---
-title: Mesures audio et vidéo dans Adobe Analytics
+title: Mesure des médias dynamiques en Adobe Analytics
 description: Adobe Analytics for Media (également appelé Media Analytics) fournit aux clients une mesure multimédia performante pour le contenu, le son et les publicités.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
-translation-type: ht
-source-git-commit: bddcbcd844145788518c60399bee9e4744e42d3a
-workflow-type: ht
-source-wordcount: '912'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+workflow-type: tm+mt
+source-wordcount: '903'
+ht-degree: 85%
 
 ---
 
 
-# Mesures audio et vidéo dans Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
+# Mesure des médias dynamiques en Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Bannière](./assets/media_analytics_banner.png)
 
-## À propos d’Adobe Analytics for Audio and Video
+## A propos de Adobe Analytics pour les médias en flux continu
 
-Adobe Analytics for Audio and Video est un module complémentaire d’Adobe Analytics qui fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Adobe Analytics fait partie d’Adobe Experience Platform.
+Adobe Analytics for Streaming Media est un module complémentaire d’Adobe Analytics qui fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Adobe Analytics fait partie d’Adobe Experience Platform.
 
-Adobe Analytics for Audio and Video vous permet de suivre l’ensemble du parcours client sur votre site. Les mesures s’intègrent facilement aux rapports Adobe Analytics et aux autres produits Adobe Experience Cloud. La mesure des médias vous permet de catégoriser vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées nécessaires à une analyse complète et détaillée. Vous pouvez ensuite analyser les données et attribuer des critères de succès au média entièrement consommé, au temps passé moyen et aux publicités terminées.
+Adobe Analytics for Streaming Media vous permet de suivre l’ensemble du parcours des clients sur votre site. Les mesures s’intègrent facilement aux rapports Adobe Analytics et aux autres produits Adobe Experience Cloud. La mesure des médias vous permet de catégoriser vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées nécessaires à une analyse complète et détaillée. Vous pouvez ensuite analyser les données et attribuer des critères de succès au média entièrement consommé, au temps passé moyen et aux publicités terminées.
 
 Vous pouvez déterminer les mesures de diffusion vidéo essentielles liées à la qualité de service, telles que les images perdues, le temps consacré à la mise en mémoire tampon et le débit moyen. De plus, les mesures peuvent être combinées avec les données de votre site Web ou de votre application pour visualiser le chemin et les intérêts des clients, afin de fournir des recommandations optimisées et de personnaliser les expériences client à l’aide d’Adobe Experience Cloud.
 
 ## Fonctionnalités {#features}
 
-Les avantages d’Adobe Analytics for Audio and Video incluent la surveillance en temps réel, une analyse détaillée, des informations exploitables et des opportunités de monétisation.
+Les avantages de Adobe Analytics for Streaming Media incluent une surveillance en temps réel, une analyse détaillée, des informations exploitables et des opportunités de monétisation.
 * **Analyse en temps réel** : prenez des décisions en temps réel et exploitables en utilisant des mesures de performances clés telles que la durée, ex2 et ex3, sur plusieurs canaux. Les principaux événements vidéo de contenu sont mesurés en intervalles de 10 secondes pour capturer toutes les activités au fur et à mesure. Les événements de suivi publicitaires se produisent à des intervalles de 1 seconde.
 * **Stimuler l’engagement** : stimulez l’engagement des utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent s’afficher dans le contenu vidéo pour offrir une expérience de visionnage fluide et moins intrusive qui apporte des visites renouvelées.
 * **Image holistique** : Combinez plusieurs points de données sur tous vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de vos activités multimédia. Mesurez l’engagement et les vues/écoutes sur tous les canaux possibles via la fonctionnalité Federated Analytics.
@@ -35,9 +35,9 @@ Les avantages d’Adobe Analytics for Audio and Video incluent la surveilla
 
 ## Mesure des pulsations {#heartbeat}
 
-Adobe Analytics utilise des « pulsations » pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Adobe Analytics for Audio and Video mesure les pulsations à l’aide d’Adobe Launch avec l’extension Media Analytics, le SDK Media et l’API Media Collection. Les composants `AppMeasurement` et `VisitorID` sont utilisés pour recevoir des données vidéo.
+Adobe Analytics utilise des « pulsations » pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Adobe Analytics for Streaming Media mesure les pulsations à l’aide du lancement d’Adobe avec l’extension Media Analytics, le SDK Media et l’API Media Collection. Les composants `AppMeasurement` et `VisitorID` sont utilisés pour recevoir des données vidéo.
 
-L’utilisation des pulsations Adobe Analytics for Audio and Video présente les avantages suivants :
+L’utilisation de pulsations Adobe Analytics pour la diffusion en continu des médias présente les avantages suivants :
 
 | Fonctionnalité | Description |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -47,7 +47,7 @@ L’utilisation des pulsations Adobe Analytics for Audio and Video présent
 | Tarifs | Suivi transparent par diffusion média (unique) |
 | Mise en œuvre et support | Configuration rationalisée avec mises à jour et améliorations constants<br>Grâce à un processus d’implémentation simplifié, vous pouvez rapidement mettre des variables en correspondance à l’aide de votre API de lecteur et valider les implémentations à l’aide de l’outil de débogage Adobe pour vous assurer que toutes les variables nécessaires sont suivies avec précision. |
 | Partage de partenaires | Federated Analytics et Certified Metrics (Mesures certifiées)<br>Avec les données vidéo partagées par le biais de Federated Analytics, vous pouvez capitaliser sur nos fonctionnalités de partage vidéo leaders du secteur, pour évaluer les données de manière holistique pour l’ensemble de vos partenaires de distribution vidéo (opérateurs, programmeurs et distributeurs). |
-| Suivi avancé | Suivi du contenu téléchargé, suivi de la récupération des erreurs et visiteurs simultanés<br>Vous pouvez effectuer le suivi du contenu audio et vidéo téléchargé et lu sur un périphérique, quelle que soit sa connectivité. |
+| Suivi avancé | Suivi du contenu téléchargé, suivi de la récupération des erreurs et visionneuses simultanées<br>Vous pouvez effectuer le suivi du contenu multimédia en flux continu téléchargé et lu sur un périphérique, quelle que soit sa connectivité. |
 
 
 
