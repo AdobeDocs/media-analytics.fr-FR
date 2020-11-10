@@ -1,24 +1,24 @@
 ---
 audience: end-user
-user-guide-title: Adobe Analytics for Audio and Video
+user-guide-title: Adobe Analytics pour les médias en flux continu
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentez Analytics sur des sources audio ou vidéo. Inclut le SDK Media et l’API Media Collection.
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: 32865b998afc7b19ef328a2d43c3acd9970a4d5c
+source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 98%
+source-wordcount: '830'
+ht-degree: 94%
 
 ---
 
 
-# Adobe Analytics for Audio and Video {#using}
+# Adobe Analytics pour les médias en flux continu {#using}
 
-+ [Mesures audio et vidéo dans Adobe Analytics](media-overview.md)
++ [Mesure des médias en flux continu en Adobe Analytics](media-overview.md)
 + [Périphériques et plateformes pris en charge](measurement-options/supported-devices.md)
-+ Présentation des analyses audio et vidéo {#intro-to-ava}
++ Présentation de la diffusion en continu des analyses des médias {#intro-to-ava}
    + [Conditions préalables](intro-to-ava/prereqs.md)
    + Chemins de mise en œuvre {#implementation-paths}
       + [Aperçu](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 98%
          + [Configuration de JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Configuration de Chromecast ](sdk-implement/setup/set-up-chromecast.md)
       + [Configuration de Roku ](sdk-implement/setup/set-up-roku.md)
-   + Suivi de la lecture audio et vidéo {#track-av-playback}
+   + Suivi de la lecture multimédia à flux continu {#track-av-playback}
       + [Aperçu](sdk-implement/track-av-playback/track-core-overview.md)
-      + Suivi de la lecture audio et vidéo principale {#track-core}
+      + Suivi de la lecture des médias en flux continu principaux {#track-core}
          + [Suivi de la lecture principale sur Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Suivi de la lecture principale sur iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Suivi de la lecture principale sur JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 98%
    + [Guide pas à pas](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Attribution des diffusions multimédia](media-analytics-cookbook/media-dimensions.md)
 + Mesures et métadonnées {#metrics-and-metadata}
-   + [Paramètres audio et vidéo](metrics-and-metadata/audio-video-parameters.md)
+   + [Paramètres de média à flux continu](metrics-and-metadata/audio-video-parameters.md)
    + [Paramètres de publicité](metrics-and-metadata/ad-parameters.md)
    + [Paramètres de chapitre](metrics-and-metadata/chapter-parameters.md)
    + [Paramètres d’état du lecteur](metrics-and-metadata/player-state-parameters.md)
@@ -220,6 +220,8 @@ ht-degree: 98%
    + [Obtenir des données de visionneuses simultanées via l’API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Suivi du contenu téléchargé](media-collection-api/track-downloaded-content.md)
 + [Federated Analytics](federated-analytics.md)
+
+<!-- + Basic Streaming Media Measurement for Adobe Analytics Ultimate{#basic-streaming-measurement} -->
 + Suivi de l’état du lecteur {#player-state-tracking}
    + [Aperçu](sdk-implement/player-state-tracking/player-state-overview.md)
    + [États standard et personnalisés](sdk-implement/player-state-tracking/standard-and-custom-states.md)
