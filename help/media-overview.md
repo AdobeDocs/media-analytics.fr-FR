@@ -1,9 +1,9 @@
 ---
-title: Mesure des médias dynamiques en Adobe Analytics
+title: Mesure des médias en flux continu en Adobe Analytics
 description: Adobe Analytics for Media (également appelé Media Analytics) fournit aux clients une mesure multimédia performante pour le contenu, le son et les publicités.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 85%
@@ -11,7 +11,7 @@ ht-degree: 85%
 ---
 
 
-# Mesure des médias dynamiques en Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Mesure des médias en flux continu en Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Bannière](./assets/media_analytics_banner.png)
 
