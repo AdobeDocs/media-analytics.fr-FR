@@ -3,7 +3,7 @@ title: Federated Analytics
 description: Le service Federated Analytics fournit un système de partage des données Adobe Analytics pour la diffusion en continu des médias entre deux partenaires.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 translation-type: tm+mt
-source-git-commit: 4dad6507966e30accfb4f6c2eb5f1d6a5507d29d
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 92%
@@ -29,23 +29,23 @@ Avec Federated Analytics, les mesures audio et vidéo sont plus efficaces, plus 
 * **Rapide :** envoyer et recevoir des données quasiment en temps réel
 * **Facile :** baliser les lecteurs une seule fois avec les SDK Adobe et partager les données avec de nombreux partenaires
 
-## Définitions {#definitions}
+## Définitions  {#definitions}
 
 * **Expéditeur :** client générant des données d’analyse audio et vidéo sur les lecteurs détenus
 * **Destinataire :** client recevant des données d’analyse audio et vidéo de la part de l’expéditeur
 
-## Conditions {#requirements}
+## Conditions  {#requirements}
 
 * **Contrat de diffusion média :** le destinataire et l’expéditeur doivent disposer d’un contrat Adobe Analytics pour les diffusions multimédia avant d’accéder aux données audio et vidéo dans Adobe Analytics. Pour plus d’informations, contactez l’équipe chargée de votre compte.
 * **Federated Addendum :** chaque expéditeur et chaque destinataire doit avoir signé un addendum avec Adobe avant d’envoyer ou de recevoir des données. Un addendum par client est requis, et non un addendum par partenariat. Pour plus d’informations, contactez l’équipe chargée de votre compte.
 
-* **Mise en œuvre de Media Analytics :** l’expéditeur doit avoir mis en œuvre Media Analytics sur tous les lecteurs qui feront partie du jeu de données fédérées. Seules les données Media Analytics sont disponibles pour la fédération. Voir la documentation : [Mesure des médias dynamiques en Adobe Analytics](/help/media-overview.md)
+* **Mise en œuvre de Media Analytics :** l’expéditeur doit avoir mis en œuvre Media Analytics sur tous les lecteurs qui feront partie du jeu de données fédérées. Seules les données Media Analytics sont disponibles pour la fédération. Voir la documentation : [Mesure des médias en flux continu en Adobe Analytics](/help/media-overview.md)
 
 * **Contrat de conseil Adobe :** Pour la configuration initiale des règles fédérées entre le récepteur et l’expéditeur, il est recommandé de travailler avec des services de conseil pour examiner les données et créer l’accord de partage de données.
 
 ## Télécharger le formulaire Federated Analytics
 
-Pour participer à Federated Analytics, téléchargez et remplissez le [Accord sur les règles de fédération](federated-analytics-form.pdf) formulaire.
+Pour participer à Federated Analytics, téléchargez et remplissez le [formulaire d&#39;accord de règles de fédération](federated-analytics-form.pdf).
 
 
 ## Processus {#process}
