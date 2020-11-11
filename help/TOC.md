@@ -6,7 +6,7 @@ user-guide-description: Implémentez Analytics sur des sources audio ou vidéo. 
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: da13db682f859cfd176a5ab379b7a0a947dc0e3a
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '830'
 ht-degree: 94%
@@ -45,9 +45,9 @@ ht-degree: 94%
          + [Configuration de JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Configuration de Chromecast ](sdk-implement/setup/set-up-chromecast.md)
       + [Configuration de Roku ](sdk-implement/setup/set-up-roku.md)
-   + Suivi de la lecture multimédia à flux continu {#track-av-playback}
+   + Suivi de la lecture multimédia en flux continu {#track-av-playback}
       + [Aperçu](sdk-implement/track-av-playback/track-core-overview.md)
-      + Suivi de la lecture des médias en flux continu principaux {#track-core}
+      + Suivi de la lecture de médias en flux continu de base {#track-core}
          + [Suivi de la lecture principale sur Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Suivi de la lecture principale sur iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Suivi de la lecture principale sur JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 94%
    + [Guide pas à pas](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Attribution des diffusions multimédia](media-analytics-cookbook/media-dimensions.md)
 + Mesures et métadonnées {#metrics-and-metadata}
-   + [Paramètres de média à flux continu](metrics-and-metadata/audio-video-parameters.md)
+   + [Paramètres de média en flux continu](metrics-and-metadata/audio-video-parameters.md)
    + [Paramètres de publicité](metrics-and-metadata/ad-parameters.md)
    + [Paramètres de chapitre](metrics-and-metadata/chapter-parameters.md)
    + [Paramètres d’état du lecteur](metrics-and-metadata/player-state-parameters.md)
