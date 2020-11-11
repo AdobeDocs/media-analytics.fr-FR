@@ -2,7 +2,7 @@
 title: FAQ sur l’abandon de la prise en charge du SDK Media Analytics
 description: Cette rubrique comprend des questions fréquentes concernant l’abandon de la prise en charge des SDK Media Analytics.
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: 82b38f7870b6f890aaa812de30fa2d02d4f3ba8a
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 90%
@@ -12,17 +12,17 @@ ht-degree: 90%
 
 # FAQ sur l’abandon de la prise en charge du SDK Media Analytics
 
-Avec l’abandon de la prise en charge des SDK mobiles de version 4 programmée au 31 août 2021, Adobe cessera également de prendre en charge les SDK Media Analytics pour iOS et Android. Après le 31 août 2021, Adobe ne fournira ni correctifs, ni mises à jour liées au système d’exploitation, ni prise en charge du SDK Media Analytics.  Lors de la migration vers ces nouveaux SDK Experience Platform, gardez à l’esprit que la variable [Extensions Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) doit être implémenté pour activer Adobe Analytics pour la diffusion en continu des médias.
+Avec l’abandon de la prise en charge des SDK mobiles de version 4 programmée au 31 août 2021, Adobe cessera également de prendre en charge les SDK Media Analytics pour iOS et Android. Après le 31 août 2021, Adobe ne fournira ni correctifs, ni mises à jour liées au système d’exploitation, ni prise en charge du SDK Media Analytics.  Pendant le processus de migration vers ces nouveaux SDK Experience Platform, gardez à l’esprit que les [extensions Media Analytics](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics) doivent être implémentées pour activer Adobe Analytics for Streaming Media.
 
 ## 5 choses à savoir
 
 1. Les SDK mobiles v4 ne seront plus pris en charge après le 31 août 2021. Vous devez migrer vers les SDK Adobe Experience Platform (AEP) pour iOS et Android. Pour plus d’informations, reportez-vous à la [FAQ sur l’abandon de la prise en charge des SDK mobiles de version 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
-1. L’implémentation d’Analytics pour les médias dynamiques requiert le SDK AEP et l’utilisation des extensions Analytics et Media Analytics. À compter du 1er septembre 2021, vous devrez utiliser les nouveaux SDK et extensions AEP.  Les extensions Media Analytics sont configurées à l’aide d’Adobe Launch.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html).
+1. La mise en oeuvre d’Analytics pour la diffusion en continu des médias nécessite le SDK AEP et l’utilisation des extensions Analytics et Media Analytics. À compter du 1er septembre 2021, vous devrez utiliser les nouveaux SDK et extensions AEP.  Les extensions Media Analytics sont configurées à l’aide d’Adobe Launch.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html).
 
 1. Le développement des fonctionnalités des SDK Media Analytics pour iOS et Android est terminé.  Les nouvelles fonctionnalités introduites à partir de l’automne 2019 sont activées à l’aide des extensions Media Analytics et de l’API Media Collection.
 
-1. Les SDK Roku et Chromecast restent disponibles pour les clients Analytics pour les médias à flux continu. Les SDK Roku et Chromecast continueront d’être améliorés et pris en charge en tant que SDK autonomes.  Si vous utilisez le SDK JS pour Media Analytics, vous pouvez continuer à utiliser le SDK autonome ou activer l’extension Media Analytics à l’aide d’Adobe Launch.
+1. Les SDK Roku et Chromecast restent disponibles pour les clients Analytics pour les médias en flux continu. Les SDK Roku et Chromecast continueront d’être améliorés et pris en charge en tant que SDK autonomes.  Si vous utilisez le SDK JS pour Media Analytics, vous pouvez continuer à utiliser le SDK autonome ou activer l’extension Media Analytics à l’aide d’Adobe Launch.
 
 1. Avant le 1er septembre 2021, Adobe peut, à sa seule discrétion, élaborer de nouveaux correctifs pour les problèmes présentant une forte incidence sur le plan technique ou un risque pour l’entreprise. En fonction des données fournies par le client, Adobe déterminera l’incidence et le risque ainsi que les activités qui en découlent.
 
