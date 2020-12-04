@@ -2,9 +2,9 @@
 title: Rapport sur les Observateurs simultanés de médias
 description: Pour les clients Media Analytics, le panneau Observateurs simultanés de médias dans Analysis Workspace vous permet d’analyser les observateurs simultanés afin de déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu.
 translation-type: tm+mt
-source-git-commit: eb69c5c68b7bc367a944ce441a196f45791bcb53
+source-git-commit: 2eb5318267546408f2aab5da074dd7f30c4fbb1d
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '193'
 ht-degree: 100%
 
 ---
@@ -20,4 +20,4 @@ Dans Analysis Workspace, les observateurs simultanés représentent le nombre d
 
 ## Obtenir Observateurs simultanés via l’API de création de rapports dans Analytics
 
-Vous pouvez également obtenir des données sur les observateurs simultanés pour une durée maximale de 1 mois à la fois avec une granularité par minute à l’aide de l’API de création de rapports dans Analytics 2.0. L’API de création de rapports utilise la même définition des observateurs simultanés que Analysis Workspace.  Pour plus d’informations, voir [_*Obtenir les données de rapport JSON sur les observateurs simultanés avec les API Analytics 2.0*_](https://docs.adobe.com/content/help/en/media-analytics/using/media-reports/media-default-reports/get-concurrent-json20.html).
+Vous pouvez également obtenir des données sur les observateurs simultanés pour une durée maximale de 1 mois à la fois avec une granularité par minute à l’aide de l’API de création de rapports dans Analytics 2.0. L’API de création de rapports utilise la même définition des observateurs simultanés que Analysis Workspace.  Pour plus d’informations, voir [_*Obtenir les données de rapport JSON sur les observateurs simultanés avec les API Analytics 2.0*_](/help/media-reports/media-default-reports/get-concurrent-json20.md).
