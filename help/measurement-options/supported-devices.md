@@ -2,10 +2,10 @@
 title: Périphériques et plateformes pris en charge
 description: Adobe Analytics for Streaming Media garantit que chaque flux média est collecté et rapporté sur tous les périphériques.
 translation-type: tm+mt
-source-git-commit: fdec4da99a43d889690638f1ff3579e145548b69
+source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
 workflow-type: tm+mt
-source-wordcount: '336'
-ht-degree: 91%
+source-wordcount: '337'
+ht-degree: 89%
 
 ---
 
@@ -28,7 +28,7 @@ Pour les périphériques ou plateformes qui ne prennent pas actuellement en char
 
 Le tableau ci-dessous liste les périphériques et les plateformes actuellement pris en charge. Pour télécharger la dernière version du SDK, consultez [Téléchargement des SDK](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/download-sdks.html). Si un périphérique n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son état.
 
-| Plateformes et périphériques de diffusion en continu |  | Extension Media Launch avec SDK AEP | SDK Media | API Media Collection |
+| Plateformes et périphériques de diffusion en continu |  | Extension Media Launch avec SDK mobile AEP | SDK Media | API Media Collection |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web |  |  |  |  |
 |  | Navigateurs JavaScript | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
