@@ -1,15 +1,15 @@
 ---
 audience: end-user
 user-guide-title: Adobe Analytics pour la diffusion de médias
-breadcrumb-title: Guide de Media Analytics
-user-guide-description: Implémentez Analytics sur des sources audio ou vidéo. Inclut le SDK Media et l’API Media Collection.
+breadcrumb-title: Guide d’analyse des médias en flux continu
+user-guide-description: Mise en oeuvre de Adobe Analytics pour la diffusion en continu des médias. Inclut le SDK Media et l’API Media Collection.
 product: adobe analytics
 sub-product: media analytics
 translation-type: tm+mt
-source-git-commit: a51f9bb33c7385fef0f13b7e1e9009b07a788305
+source-git-commit: 640005cbd90a074a1a441865c4b6abc8f94c1277
 workflow-type: tm+mt
 source-wordcount: '830'
-ht-degree: 95%
+ht-degree: 94%
 
 ---
 
