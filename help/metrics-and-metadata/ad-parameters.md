@@ -3,7 +3,7 @@ title: Paramètres de publicité
 description: null
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 translation-type: tm+mt
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: f59738f48eeb80d3aaead1757abd2ba3785c40da
 workflow-type: tm+mt
 source-wordcount: '1875'
 ht-degree: 100%
@@ -148,7 +148,7 @@ Description des données de tableau :
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/> SITE_ID </li> <li> **Clé API :**<br/> media.ad.siteId </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Démarrage de publicité, Fermeture de publicité </li> <li> **Version minimum du SDK :** 1.5.7 </li> <li> **Exemple de valeur :**<br/>  </li><li> **Description :**<br/> ID du site de la publicité.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.ad.<br/>site) </li> <li> **Heartbeat :**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser la règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Personnalisé* </li> <li> **Données contextuelles :**<br/> (a.media.ad.<br/>site) </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> <br/>* Utiliser la règle de traitement personnalisée |
+| <ul> <li> **Clé SDK :**<br/> SITE_ID </li> <li> **Clé API :**<br/> media.ad.siteId </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Démarrage de publicité, Fermeture de publicité </li> <li> **Version minimum du SDK :** 1.5.7 </li> <li> **Exemple de valeur :**<br/>  </li><li> **Description :**<br/> ID du site de la publicité.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.ad.<br/>site) </li> <li> **Heartbeat :**<br/> (s:meta:<br/>a.media.ad.site) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser la règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Personnalisé* </li> <li> **Données contextuelles :**<br/> (a.media.ad.<br/>site) </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.ad.site) </li> </ul> * Utiliser la règle de traitement personnalisée |
 
 
 
@@ -156,7 +156,7 @@ Description des données de tableau :
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/> CREATIVE_URL </li> <li> **Clé API :**<br/> media.ad.creativeURL </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Démarrage de publicité, Fermeture de publicité </li> <li> **Version minimum du SDK :** 1.5.7 </li> <li> **Exemple de valeur :**<br/>  </li><li> **Description :**<br/> URL de l’élément créatif publicitaire.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Heartbeat :**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser la règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Personnalisé* </li> <li> **Données contextuelles :**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> <br/>* Utiliser la règle de traitement personnalisée |
+| <ul> <li> **Clé SDK :**<br/> CREATIVE_URL </li> <li> **Clé API :**<br/> media.ad.creativeURL </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Démarrage de publicité, Fermeture de publicité </li> <li> **Version minimum du SDK :** 1.5.7 </li> <li> **Exemple de valeur :**<br/>  </li><li> **Description :**<br/> URL de l’élément créatif publicitaire.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Heartbeat :**<br/> (s:meta:<br/>a.media.ad.creativeURL) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser la règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Personnalisé* </li> <li> **Données contextuelles :**<br/> (a.media.ad.<br/>creativeURL) </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.ad.creativeURL) </li> </ul> * Utiliser la règle de traitement personnalisée |
 
 
 
@@ -164,7 +164,7 @@ Description des données de tableau :
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/> PLACEMENT_ID </li> <li> **Clé API :**<br/> media.ad.placementId </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Démarrage de publicité, Fermeture de publicité </li> <li> **Version minimum du SDK :** 1.5.7 </li> <li> **Exemple de valeur :**<br/>  </li><li> **Description :**<br/> identifiant de référencement de la publicité.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.ad.<br/>placement) </li> <li> **Heartbeat :**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser la règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Personnalisé* </li> <li> **Données contextuelles :**<br/> (a.media.ad.<br/>placement) </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.ad.placement) </li> </ul><br/>* Utiliser la règle de traitement personnalisée |
+| <ul> <li> **Clé SDK :**<br/> PLACEMENT_ID </li> <li> **Clé API :**<br/> media.ad.placementId </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Démarrage de publicité, Fermeture de publicité </li> <li> **Version minimum du SDK :** 1.5.7 </li> <li> **Exemple de valeur :**<br/>  </li><li> **Description :**<br/> identifiant de référencement de la publicité.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.ad.<br/>placement) </li> <li> **Heartbeat :**<br/> (s:meta:<br/>a.media.ad.placement) </li> </ul> | <ul> <li> **Disponible :**<br/> <i>Utiliser la règle de traitement personnalisée </i> </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Personnalisé* </li> <li> **Données contextuelles :**<br/> (a.media.ad.<br/>placement) </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.ad.placement) </li> </ul>* Utiliser la règle de traitement personnalisée |
 
 
 
