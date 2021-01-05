@@ -1,11 +1,11 @@
 ---
 title: Périphériques et plateformes pris en charge
-description: Adobe Analytics for Streaming Media garantit que chaque flux média est collecté et rapporté sur tous les périphériques.
-translation-type: tm+mt
+description: Adobe Analytics for Streaming Media garantit que chaque flux média est collecté et transmis à tous les appareils.
+translation-type: ht
 source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '337'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 89%
 >
 >Avec l’abandon de la prise en charge des SDK mobiles de version 4 programmée au 31 août 2021, Adobe cessera également de prendre en charge le SDK Media Analytics pour iOS et Android.  Pour plus d’informations, reportez-vous à la [FAQ sur l’abandon de la prise en charge du SDK Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
-Adobe Analytics for Streaming Media prend en charge tous les principaux périphériques, notamment :
+Adobe Analytics for Streaming Media prend en charge tous les principaux appareils, notamment :
 
 * Smartphones et tablettes iOS et Android
 * Appareils OTT pour ROKU, Apple TV, FireTV et Android TV
@@ -28,7 +28,7 @@ Pour les périphériques ou plateformes qui ne prennent pas actuellement en char
 
 Le tableau ci-dessous liste les périphériques et les plateformes actuellement pris en charge. Pour télécharger la dernière version du SDK, consultez [Téléchargement des SDK](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/download-sdks.html). Si un périphérique n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son état.
 
-| Plateformes et périphériques de diffusion en continu |  | Extension Media Launch avec SDK mobile AEP | SDK Media | API Media Collection |
+| Plateformes et périphériques de diffusion en continu |  | Extension Media Launch avec SDK mobile AEP | SDK Media | API Media Collection |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web |  |  |  |  |
 |  | Navigateurs JavaScript | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
