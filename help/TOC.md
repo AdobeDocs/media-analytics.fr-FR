@@ -9,16 +9,16 @@ translation-type: tm+mt
 source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
 workflow-type: tm+mt
 source-wordcount: '829'
-ht-degree: 94%
+ht-degree: 99%
 
 ---
 
 
 # Adobe Analytics pour la diffusion de médias {#using}
 
-+ [Mesure des médias en flux continu en Adobe Analytics](media-overview.md)
++ [Mesurer des médias en flux continu dans Adobe Analytics](media-overview.md)
 + [Périphériques et plateformes pris en charge](measurement-options/supported-devices.md)
-+ Présentation de la diffusion en continu des analyses des médias {#intro-to-ava}
++ Introduction aux médias en flux continu dans Analytics {#intro-to-ava}
    + [Conditions préalables](intro-to-ava/prereqs.md)
    + Chemins de mise en œuvre {#implementation-paths}
       + [Aperçu](intro-to-ava/implementation-paths/implementation-paths.md)
@@ -45,9 +45,9 @@ ht-degree: 94%
          + [Configuration de JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
       + [Configuration de Chromecast ](sdk-implement/setup/set-up-chromecast.md)
       + [Configuration de Roku ](sdk-implement/setup/set-up-roku.md)
-   + Suivi de la lecture multimédia en flux continu {#track-av-playback}
+   + Suivi de la lecture des médias en flux continu {#track-av-playback}
       + [Aperçu](sdk-implement/track-av-playback/track-core-overview.md)
-      + Suivi de la lecture de médias en flux continu de base {#track-core}
+      + Suivi de la lecture principale des médias en flux continu {#track-core}
          + [Suivi de la lecture principale sur Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Suivi de la lecture principale sur iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
          + Suivi de la lecture principale sur JavaScript {#track-core-javascript}
@@ -199,7 +199,7 @@ ht-degree: 94%
    + [Guide pas à pas](media-analytics-cookbook/media-analytics-cookbook.md)
    + [Attribution des diffusions multimédia](media-analytics-cookbook/media-dimensions.md)
 + Mesures et métadonnées {#metrics-and-metadata}
-   + [Paramètres de média en flux continu](metrics-and-metadata/audio-video-parameters.md)
+   + [Paramètres des médias en flux continu](metrics-and-metadata/audio-video-parameters.md)
    + [Paramètres de publicité](metrics-and-metadata/ad-parameters.md)
    + [Paramètres de chapitre](metrics-and-metadata/chapter-parameters.md)
    + [Paramètres d’état du lecteur](metrics-and-metadata/player-state-parameters.md)
@@ -212,12 +212,12 @@ ht-degree: 94%
       + [Aperçu des rapports par défaut](media-reports/media-default-reports/default-reports-overview.md)
       + [Présentation du média](media-reports/media-default-reports/media-reports-overview.md)
       + [Détails du média](media-reports/media-default-reports/media-reports-detail.md)
-      + [Rapport Media Daypart](media-reports/media-default-reports/media-reports-daypart.md)
-      + [Rapport Visionneuses simultanées de médias](media-reports/media-default-reports/media-concurrent-viewers.md)
-   + Panneaux Espace de travail multimédia {#media-workspace-panels}
+      + [Rapport sur les tranches horaires des médias](media-reports/media-default-reports/media-reports-daypart.md)
+      + [Rapport sur les observateurs simultanés de médias](media-reports/media-default-reports/media-concurrent-viewers.md)
+   + Panneaux Workspace multimédia {#media-workspace-panels}
       + [Panneau des visionneuses simultanées de médias](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Modèles Workspace multimédia](media-reports/media-workspace-templates.md)
-   + [Obtenir des données de visionneuses simultanées via l’API](media-reports/media-default-reports/get-concurrent-json20.md)
+   + [Obtenir des données d’observateurs simultanés via l’API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Suivi du contenu téléchargé](media-collection-api/track-downloaded-content.md)
 + Suivi de l’état du lecteur {#player-state-tracking}
    + [Aperçu](sdk-implement/player-state-tracking/player-state-overview.md)
