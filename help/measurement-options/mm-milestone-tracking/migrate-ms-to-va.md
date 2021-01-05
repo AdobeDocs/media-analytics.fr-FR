@@ -2,9 +2,9 @@
 title: Migration de Milestone vers Media Analytics
 description: null
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: e079b90f8fb9197e5ebae0fb6ca31081ba28de1d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '669'
 ht-degree: 100%
 
@@ -43,7 +43,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables facultatives
 
-| Jalon | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | S.O. | Nous ne fournissons plus de mappages de lecteur préconfigurés. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | S.O. | Nous ne fournissons plus de mappages de lecteur préconfigurés. |
@@ -58,7 +58,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables de suivi des publicités
 
-| Jalon | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | S.O. | Media Analytics est défini sur 10 secondes pour le contenu et 1 seconde pour les publicités. Aucune autre option n’est disponible. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | S.O. | Les marqueurs de progression ne sont pas fournis par défaut pour les publicités. Utilisez des mesures calculées pour créer des marqueurs de progression des publicités. |
@@ -68,7 +68,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Méthodes du module média
 
-| Jalon | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName` : (obligatoire) nom de la vidéo tel que vous souhaitez le voir apparaître dans les rapports vidéo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
