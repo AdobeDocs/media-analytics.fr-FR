@@ -2,11 +2,11 @@
 title: Configuration d’iOS
 description: Configuration de l’application du SDK Media pour l’implémentation sur iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
-translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
-workflow-type: ht
-source-wordcount: '690'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 99%
 
 ---
 
@@ -32,6 +32,17 @@ ht-degree: 100%
    * _Une API qui fournit des informations au lecteur_ - Ces informations incluent des éléments tels que le nom du média et la position de la tête de lecture.
 
 ## Implémentation du SDK
+
+>[!IMPORTANT]
+>
+>À compter de la version 2.3.0, le SDK est distribué par le biais de XCFrameworks.
+>
+>La version 2.3.0 du SDK requiert Xcode 12.0 ou une version ultérieure et, le cas échéant, Cocoapods 1.10.0 ou une version ultérieure.
+
+* Chaque fois qu’un fichier de bibliothèque binaire est mentionné, son remplaçant XCFramework doit être utilisé à la place :
+   * MediaSDK.a > MediaSDK.xcframework
+   * MediaSDK_TV.a > MediaSDKTV.xcframework
+* Si vous ajoutez manuellement les XCFrameworks Adobe à votre projet, vérifiez qu’ils ne sont pas incorporés.
 
 1. Ajoutez le SDK Media que vous avez [téléchargé](/help/sdk-implement/download-sdks.md#download-2x-sdks) à votre projet.
 
@@ -64,6 +75,7 @@ ht-degree: 100%
          * **AdobeMobileLibrary.a**
          * **MediaSDK.a**
          * **libsqlite3.0.tbd**
+
          **Cibles d’une application Apple TV (tvOS) :**
 
          * **AdobeMobileLibrary_TV.a**
