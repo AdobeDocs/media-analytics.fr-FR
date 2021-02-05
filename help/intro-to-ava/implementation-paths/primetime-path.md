@@ -1,16 +1,18 @@
 ---
-title: Primetime
-description: null
-uuid: 3d5a5ebd-b897-40f6-ba75-bba1bae3a081
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+title: Qu’est-ce qu’Adobe Primetime ?
+description: Découvrez la solution Adobe Primetime et comment elle permet de monétiser les médias en flux continu.
+translation-type: tm+mt
+source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+workflow-type: tm+mt
+source-wordcount: '255'
+ht-degree: 89%
 
 ---
 
 
 # Primetime {#primetime}
 
-Media Analytics (Heartbeats) est la solution de suivi de média normalisée d’Adobe. Elle a remplacé le modèle Milestone plus ancien d’Adobe.
+Media Analytics (Heartbeats) est la solution de suivi des médias normalisée de l’Adobe qui a remplacé le modèle Adobe Milestone.
 
 Adobe Primetime est une solution Adobe Experience Cloud qui aide les programmeurs et les distributeurs de contenu à monétiser le média sur chaque écran connecté.
 
