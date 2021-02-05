@@ -2,8 +2,11 @@
 title: Paramètres de requête
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+translation-type: tm+mt
+source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+workflow-type: tm+mt
+source-wordcount: '1195'
+ht-degree: 99%
 
 ---
 
@@ -45,6 +48,7 @@ source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
 
 | Clé de requête  | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
+| `media.streamFormat` | N | `sessionStart` | Format du flux, p. ex. &quot;HD&quot; |
 | `media.show` | N | `sessionStart` | Nom du programme ou de la série |
 | `media.season` | N | `sessionStart` | Numéro de la saison à laquelle le programme ou la série appartient |
 | `media.episode` | N | `sessionStart` | Numéro de l’épisode |
@@ -123,17 +127,17 @@ Transmettez l’identifiant utilisateur Experience Cloud (également appelé `MI
 
 ### appInstallationId
 
-* **Si vous ne transmettez *pas*de valeur`appInstallationId` :** Le serveur principal MA ne générera plus de MCID, mais à la place s’en remettra à Adobe Analytics pour cela. La recommandation d’Adobe est d’envoyer un MCID s’il est disponible, ou une valeur `appInstallationId` (ainsi que la valeur `marketingCloudOrgId` encore obligatoire) pour que l’API Media Collection génère le MCID et l’envoie sur tous les appels.
+* **Si vous ne transmettez *pas* de valeur `appInstallationId` :** Le serveur principal MA ne générera plus de MCID, mais à la place s’en remettra à Adobe Analytics pour cela. La recommandation d’Adobe est d’envoyer un MCID s’il est disponible, ou une valeur `appInstallationId` (ainsi que la valeur `marketingCloudOrgId` encore obligatoire) pour que l’API Media Collection génère le MCID et l’envoie sur tous les appels.
 
-* **Si vous ne transmettez *pas*de valeur`appInstallationId` :** Le MCID *peut être* généré par le serveur principal MA, si vous transmettez des valeurs pour les paramètres `appInstallationId` et `marketingCloudOrgId` (obligatoire). Si vous transmettez la valeur `appInstallationId` vous-même, vous devez conserver sa valeur côté client. Elle doit être propre à l’application sur un appareil et doit être permanente tant que l’application n’est pas réinstallée.
+* **Si vous ne transmettez *pas* de valeur `appInstallationId` :** Le MCID *peut être* généré par le serveur principal MA, si vous transmettez des valeurs pour les paramètres `appInstallationId` et `marketingCloudOrgId` (obligatoire). Si vous transmettez la valeur `appInstallationId` vous-même, vous devez conserver sa valeur côté client. Elle doit être propre à l’application sur un appareil et doit être permanente tant que l’application n’est pas réinstallée.
 
 >[!NOTE]
 >
 >Le `appInstallationId` identifie de manière unique l’application *et l’appareil*. Elle doit être unique pour chaque application sur chaque appareil : deux utilisateurs utilisant la même version d’une même application sur différents appareils doivent chacun envoyer une valeur `appInstallationId` différente (unique).
 
-<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The . 
-\<ul id="ul_iwc_fqt_pbb"\> 
- \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li> 
+<!-- Initially, there were no browser-based customers. In future this will be part of a two-bullet list, one bullet for Native Apps, the other for Browser apps. The .
+\<ul id="ul_iwc_fqt_pbb"\>
+ \<li\>For Browser Apps, this should be a first-party cookie that is persistent for as long as the user stays in the same browser. If clients have multiple websites, they need to have different cookies for each site.</li>
 </ul> -->
 
 ### visitor.marketingCloudOrgId
@@ -152,7 +156,7 @@ En plus d’être nécessaire à la génération du MCID lorsqu’il n’est pas
    ```js
    "<<insert your ID name here>>": {  
      "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>> 
+      "authState": <<insert one of 0, 1, 2>>
    }
    ```
 
