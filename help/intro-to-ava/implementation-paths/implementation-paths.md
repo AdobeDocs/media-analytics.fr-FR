@@ -1,18 +1,18 @@
 ---
 title: Quels chemins d’implémentation des médias en flux continu sont disponibles ?
-description: Découvrez les chemins d’implémentation des médias en flux continu Adobe, y compris le lancement d’Adobe.
-translation-type: tm+mt
+description: Découvrez les chemins d’implémentation des médias en flux continu Adobe, y compris Adobe Launch.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '505'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
 # Chemins de mise en œuvre {#implementation-paths}
 
-Pour chaque chemin d’implémentation, les clients doivent contacter leur représentant commercial/gestionnaire de compte pour signer une nouvelle commande client, car Streaming Media Analytics possède un SKU unique et évolue d’un modèle de tarification basé sur les appels serveur à un modèle basé sur les flux vidéo.
+Pour chaque chemin de mise en œuvre, les clients doivent contacter leur représentant commercial/responsable de compte pour signer une nouvelle commande car Media Analytics comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions vidéo.
 
 * **Adobe Launch avec l’extension Adobe Media Analytics**
 
