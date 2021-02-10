@@ -1,11 +1,11 @@
 ---
-title: Qu'est-ce que l'activation de Adobe Audience Manager ?
-description: Découvrez comment lier des actions d’application à des données de suivi des médias sans qu’il faille ajouter des règles de traitement supplémentaires et des variables personnalisées.
-translation-type: tm+mt
+title: Qu’est-ce que l’activation d’Adobe Audience Manager ?
+description: Apprenez à lier les actions d’application aux données de suivi multimédia sans avoir besoin de règles de traitement supplémentaires ni de variables personnalisées.
+translation-type: ht
 source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '409'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
