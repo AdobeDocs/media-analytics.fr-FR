@@ -2,23 +2,23 @@
 title: Paramètres de requête
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
-translation-type: tm+mt
+translation-type: ht
 source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1195'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 
 # Paramètres de requête {#request-parameters}
 
-## Données d’analyse
+## Données d’Analytics
 
 | Clé de requête  | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
 | `analytics.trackingServer` | Y | `sessionStart` | URL de votre serveur Adobe Analytics |
-| `analytics.reportSuite` | Y | `sessionStart` | ID identifiant vos données de rapport d’analyse |
+| `analytics.reportSuite` | Y | `sessionStart` | ID identifiant vos données de rapport d’Analytics |
 | `analytics.enableSSL` | N | `sessionStart` | True ou false pour activer SSL |
 | `analytics.visitorId` | N | `sessionStart` | L’identifiant visiteur Adobe est un ID personnalisé que vous pouvez utiliser dans plusieurs applications Adobe. La pulsation `visitorId` est égale au `VID.` Analytics |
 
@@ -48,7 +48,7 @@ ht-degree: 99%
 
 | Clé de requête  | Obligatoire | Définir sur... |  Description  |
 | --- | :---: | :---: | --- |
-| `media.streamFormat` | N | `sessionStart` | Format du flux, p. ex. &quot;HD&quot; |
+| `media.streamFormat` | N | `sessionStart` | Format du flux, par exemple « HD » |
 | `media.show` | N | `sessionStart` | Nom du programme ou de la série |
 | `media.season` | N | `sessionStart` | Numéro de la saison à laquelle le programme ou la série appartient |
 | `media.episode` | N | `sessionStart` | Numéro de l’épisode |
