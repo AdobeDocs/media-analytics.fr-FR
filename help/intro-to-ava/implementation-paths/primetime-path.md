@@ -1,18 +1,18 @@
 ---
 title: Qu’est-ce qu’Adobe Primetime ?
-description: Découvrez la solution Adobe Primetime et comment elle permet de monétiser les médias en flux continu.
-translation-type: tm+mt
+description: Découvrez la solution Adobe Primetime et la manière dont elle contribue à la monétisation des médias en flux continu.
+translation-type: ht
 source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '255'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
 
 # Primetime {#primetime}
 
-Media Analytics (Heartbeats) est la solution de suivi des médias normalisée de l’Adobe qui a remplacé le modèle Adobe Milestone.
+Media Analytics (Heartbeats) est la solution de suivi de médias standardisée d’Adobe, qui a remplacé le modèle Milestone d’Adobe.
 
 Adobe Primetime est une solution Adobe Experience Cloud qui aide les programmeurs et les distributeurs de contenu à monétiser le média sur chaque écran connecté.
 
@@ -30,4 +30,4 @@ TVSDK est déjà intégré au kit SDK Media, ce qui rend la mise en œuvre beauc
 
 >[!NOTE]
 >
->Pour ce chemin de mise en œuvre, les clients doivent contacter leur représentant commercial/responsable de compte pour signer une nouvelle commande de ventes, car Media Analytics comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions multimédia: Vous devez également contacter votre représentant commercial/responsable de compte pour discuter de l’achat de TVSDK.
+>Pour ce chemin de mise en œuvre, les clients doivent contacter leur représentant commercial/responsable de compte pour signer une nouvelle commande de ventes, car Media Analytics comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions multimédia. Vous devez également contacter votre représentant commercial/responsable de compte pour discuter de l’achat de TVSDK.
