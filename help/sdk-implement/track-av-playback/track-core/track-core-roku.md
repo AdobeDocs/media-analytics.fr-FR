@@ -2,14 +2,14 @@
 title: Suivi de la lecture principale sur Roku
 description: Cette rubrique décrit la mise en œuvre du suivi de base à l’aide du SDK Media sur Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
+exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
+source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
-
 
 # Suivi de la lecture principale sur Roku {#track-core-playback-on-roku}
 
@@ -99,91 +99,6 @@ ht-degree: 100%
    Vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi par le biais de variables de données contextuelles.
 
    * **Métadonnées standard**
-
-      [Mise en œuvre de métadonnées standard sur JavaScript](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
-
-      >[!NOTE]
-      >
-      >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
-
-      * Référence à l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-         Consultez la liste complète des métadonnées disponibles dans la rubrique [Paramètres audio et vidéo](/help/metrics-and-metadata/audio-video-parameters.md).
-   * **Métadonnées personnalisées**
-
-      Créez un objet de variable pour les variables personnalisées et renseignez les données de ce média. Par exemple :
-
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
-
-1. **Suivi de l’intention de démarrer la lecture**
-
-   Pour commencer le suivi d’une session multimédia, appelez `trackSessionStart` sur l’instance Media Heartbeat :
-
-   ```js
-   mediaHeartbeat.trackSessionStart(mediaObject, customVideoMetadata);
-   ```
-
-   >[!TIP]
-   >
-   >La deuxième valeur est le nom d’objet de métadonnées multimédia personnalisé que vous avez créé à l’étape 2.
-
-   >[!IMPORTANT]
-   >
-   >`trackSessionStart` effectue le suivi de l’intention de lecture de l’utilisateur, et non du début de la lecture. Cette API est utilisée pour charger les données/métadonnées et estimer le temps jusqu’au démarrage de la mesure QoS (durée entre `trackSessionStart` et `trackPlay`).
-
-   >[!NOTE]
-   >
-   >Si vous n’utilisez pas de métadonnées personnalisées, envoyez simplement un objet vide pour l’argument `data` dans `trackSessionStart`, tel que décrit dans la ligne commentée de l’exemple iOS ci-dessus.
-
-1. **Suivi du début réel de la lecture**
-
-   Identifiez l’événement du lecteur multimédia correspondant au début de la lecture, où la première image du média s’affiche à l’écran, et appelez `trackPlay` :
-
-   ```js
-   mediaHeartbeat.trackPlay();
-   ```
-
-1. **Suivi de la fin de la lecture**
-
-   Identifiez l’événement du lecteur multimédia correspondant à la fin de la lecture, où l’utilisateur a visionné le contenu jusqu’à la fin, et appelez `trackComplete` :
-
-   ```js
-   mediaHeartbeat.trackComplete();
-   ```
-
-1. **Suivi de la fin de la session**
-
-   Identifiez l’événement du lecteur multimédia correspondant au déchargement/à la fermeture de la lecture, où l’utilisateur ferme la vidéo et/ou le contenu média est terminé et déchargé, et appelez `trackSessionEnd` :
-
-   ```js
-   mediaHeartbeat.trackSessionEnd();
-   ```
-
-   >[!IMPORTANT]
-   >
-   >Un `trackSessionEnd` marque la fin d’une session de suivi. Si la session a été visionnée jusqu’à la fin, où l’utilisateur a visionné le contenu jusqu’à la fin, assurez-vous que `trackComplete` est appelé avant `trackSessionEnd`. Tout autre appel à l’API `track*` est ignoré après `trackSessionEnd`, sauf `trackSessionStart` dans le cadre d’une nouvelle session de suivi.  Méthode de suivi de lecture de média pour suivre le chargement du média et définir la session actuelle sur active :
-
-   ```
-   ‘ Create a media info object
-   mediaInfo = adb_media_init_mediainfo()
-   mediaInfo.id = <MEDIA_ID>
-   mediaInfo.playhead = "0"
-   mediaInfo.length = "600"
-   ```
-
-1. **Ajout de métadonnées vidéo**
-
-   Vous pouvez joindre des objets de métadonnées vidéo standard et/ou personnalisés à la session de suivi vidéo par le biais de variables de données contextuelles.
-
-   * **Métadonnées vidéo standard**
 
       [Mise en œuvre de métadonnées standard sur Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
