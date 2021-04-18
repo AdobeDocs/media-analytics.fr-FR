@@ -1,12 +1,15 @@
 ---
 title: Types et descriptions d’événement
-description: null
+description: Types et descriptions d’événement
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '346'
+ht-degree: 100%
 
 ---
-
 
 # Types et descriptions d’événement {#event-types-and-descriptions}
 
@@ -86,4 +89,3 @@ Envoyé lorsque la fin du contenu principal est atteinte.
 >[!IMPORTANT]
 >
 >Vous devez vous référer aux [schémas de validation JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) pour chaque type d’événement afin de vérifier les types et les exigences de paramètre corrects.
-
