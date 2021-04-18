@@ -1,12 +1,15 @@
 ---
 title: Requête events
-description: null
+description: Requête events
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
-translation-type: ht
-source-git-commit: 0d2d75dd411edea2a7a853ed425af5c6da154b06
+exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
+translation-type: tm+mt
+source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 100%
 
 ---
-
 
 # Requête events {#events-request}
 
@@ -74,4 +77,3 @@ Access-Control-Expose-Headers Location
 | **404** | **Non trouvé.** <br/><br/>L’ID de session pour la session multimédia n’a pas été trouvé dans le service principal. | L’application client doit utiliser l’API de [demande Sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et en effectuer le suivi dans les rapports. |
 | **410** | **Parti.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus générer de rapports d’activité sur celle-ci. | L’application client doit utiliser l’API de [demande Sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et en effectuer le suivi dans les rapports. |
 | **500** | **Erreur du serveur** | S.O. |
-
