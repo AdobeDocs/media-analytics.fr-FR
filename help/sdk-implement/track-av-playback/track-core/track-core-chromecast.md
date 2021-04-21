@@ -2,11 +2,14 @@
 title: Suivi de la lecture principale sur Chromecast
 description: Cette rubrique décrit la mise en œuvre du suivi principal à l’aide du SDK Media sur Chromecast.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
+exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '661'
+ht-degree: 100%
 
 ---
-
 
 # Suivi de la lecture principale sur Chromecast {#track-core-playback-on-chromecast}
 
@@ -26,11 +29,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    mediaObject = ADBMobile.media.createMediaObject(<name>, <id>, <duration>, <streamType>, <mediaType>); 
    ```
 
-   **Constantes `StreamType` :**
+   **`StreamType`Constantes :**
 
    [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.StreamType)
 
-   **Constantes `MediaType` :**
+   **`MediaType`Constantes :**
 
    [ADBMobile Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.MediaType)
 
@@ -115,10 +118,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifiez tous les scénarios dans lesquels le lecteur vidéo sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()` :
 
-   * L’utilisateur appuie explicitement sur le bouton de pause dans l’application.
-   * Le lecteur se place dans l’état de pause.
-   * (*Applications mobiles*) - L’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application maintienne la session ouverte.
-   * (*Applications mobiles*) - Tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre la vidéo à partir du point d’interruption.
+   * L’utilisateur appuie délibérément sur pause dans l’application.
+   * Le lecteur se met en pause.
+   * (*Applications mobiles*) : l’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application conserve la session ouverte.
+   * (*Applications mobiles*) : tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre la vidéo à partir du point d’interruption.
 
 1. Identifiez l’événement du lecteur correspondant à la lecture vidéo et/ou à la reprise vidéo après une interruption et appelez [trackPlay](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete) :
 
@@ -130,6 +133,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >
    >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture vidéo.
 
-* Scénarios de suivi : [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Scénarios de suivi : [lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Exemple de lecteur inclus dans le SDK Chromecast pour un exemple de suivi complet
-
