@@ -2,14 +2,14 @@
 title: Paramètres de publicité
 description: null
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
+exl-id: 949e86cb-d265-4836-8825-a06b87203b15
 translation-type: ht
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1863'
 ht-degree: 100%
 
 ---
-
 
 # Paramètres de publicité {#ad-parameters}
 
