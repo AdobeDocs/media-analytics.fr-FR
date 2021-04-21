@@ -2,14 +2,14 @@
 title: 'Chronologie 1 : Regarder jusqu’à la fin du contenu'
 description: null
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
+exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 translation-type: ht
-source-git-commit: c86c7932f932af0a121e0b757921973d6f4084e8
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1164'
 ht-degree: 100%
 
 ---
-
 
 # Chronologie 1 : Regarder jusqu’à la fin du contenu {#timeline-view-to-end-of-content}
 
@@ -406,7 +406,7 @@ Suivez le déplacement du lecteur à l’état « mise en mémoire tampon ».
 
 **Détails de mise en œuvre**
 
-La mise en mémoire tampon se terminant au bout de 3 secondes, replacez le lecteur à l’état « lecture ». Vous devez envoyer un autre événement de suivi de lecture provenant de la mise en mémoire tampon.  **L’appel`play`après un`bufferStart`impliquant un appel « bufferEnd » au serveur principal,** un événement `bufferEnd` n’est pas nécessaire.
+La mise en mémoire tampon se terminant au bout de 3 secondes, replacez le lecteur à l’état « lecture ». Vous devez envoyer un autre événement de suivi de lecture provenant de la mise en mémoire tampon.  **L’appel`play` après un `bufferStart` impliquant un appel « bufferEnd » au serveur principal,** un événement `bufferEnd` n’est pas nécessaire.
 
 **Exemple de corps de requête**
 
@@ -641,7 +641,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes. Le lecteur est tou
 
 **Détails de mise en œuvre**
 
-Déplacez l’état de lecture sur « lecture ».  **L’appel`play`après un événement`pauseStart`impliquant un appel « resume » au serveur principal,** un événement `resume` n’est pas nécessaire.
+Déplacez l’état de lecture sur « lecture ».  **L’appel `play` après un événement `pauseStart` impliquant un appel « resume » au serveur principal,** un événement `resume` n’est pas nécessaire.
 
 **Exemple de corps de requête**
 
