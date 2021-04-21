@@ -2,11 +2,14 @@
 title: Suivi des chapitres et des segments sur Roku
 description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media sur Roku.
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
+exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '197'
+ht-degree: 100%
 
 ---
-
 
 # Suivi des chapitres et des segments sur Roku {#track-chapters-and-segments-on-roku}
 
@@ -71,4 +74,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. S’il existe d’autres chapitres, répétez les étapes 1 à 5.
-
