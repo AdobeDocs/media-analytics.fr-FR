@@ -2,14 +2,14 @@
 title: Paramètres de qualité
 description: null
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
+exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 translation-type: ht
-source-git-commit: 5802a474588a6df6c66e0d1d7cb2fd30f83e4e3d
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '2996'
 ht-degree: 100%
 
 ---
-
 
 # Paramètres de qualité {#quality-parameters}
 
