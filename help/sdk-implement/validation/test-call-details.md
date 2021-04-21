@@ -2,11 +2,14 @@
 title: Détails des appels de test
 description: Cette rubrique détaille les appels que vous devez effectuer pour valider votre mise en œuvre.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
+exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '616'
+ht-degree: 100%
 
 ---
-
 
 # Détails des appels de test {#test-call-details}
 
@@ -257,7 +260,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
-| _**`s:event:type`**_ | _**terminé**_ |
+| _**`s:event:type`**_ | _**complete**_ |
 | `l:event:playhead` | 15 |
 | `l:event:duration` | 0 |
 | `s:asset:ad_id` | 9378 |
@@ -299,5 +302,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
 | `s:asset:type` | main |
-
-
