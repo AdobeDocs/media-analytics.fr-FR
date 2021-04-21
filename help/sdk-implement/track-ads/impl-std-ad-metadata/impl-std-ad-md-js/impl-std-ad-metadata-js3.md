@@ -1,16 +1,16 @@
 ---
-title: Mise en oeuvre des métadonnées publicitaires standard à l’aide de JavaScript 3.x
-description: Utilisation des métadonnées publicitaires standard dans le suivi des publicités dans un navigateur à l’aide d’applications JavaScript 3.x.
-translation-type: tm+mt
-source-git-commit: 83b38ac8f7fc88f982d194e776efccf8d5b983e4
-workflow-type: tm+mt
+title: Implémentation de métadonnées d’annonce publicitaire standard à l’aide de JavaScript 3.x
+description: Comment utiliser les métadonnées d’annonce publicitaire standard dans le suivi publicitaire au sein d’un navigateur à l’aide d’applications JavaScript 3.x.
+exl-id: ba9abf1d-3778-49ef-a2fc-6c0eafa3b227
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '54'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
-
-# Mise en oeuvre des métadonnées publicitaires standard à l’aide de JavaScript 3.x{#implement-standard-ad-metadata-on-javascript}
+# Implémentation de métadonnées d’annonce publicitaire standard à l’aide de JavaScript 3.x {#implement-standard-ad-metadata-on-javascript}
 
 ## Mise en œuvre de métadonnées de publicité standard
 
