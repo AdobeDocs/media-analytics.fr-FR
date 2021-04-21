@@ -2,11 +2,14 @@
 title: Conversion de l’API 1.x vers 2.x
 description: ette rubrique comprend des liens vers des références API et répertorie les API de suivi requises et facultatives pour les versions 1.x et 2.x du SDK Media.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
+exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '203'
+ht-degree: 100%
 
 ---
-
 
 # Cnversion d’API 1.x à 2.x {#one-x-to-two-x-conv}
 
@@ -50,4 +53,3 @@ Toutes les API de suivi facultatives telles que les API de publicité, de chapit
 | `playerPlugin.trackBufferComplete()` | `trackEvent(Event.BufferComplete)` |
 | `playerPlugin.trackBitrateChange()` | `trackEvent(Event.BitrateChange)` |
 | `playerPlugin.trackTimedMetadata()` | `trackEvent(Event.TimedMetadataUpdate)` |
-
