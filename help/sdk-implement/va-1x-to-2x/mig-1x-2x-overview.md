@@ -2,11 +2,14 @@
 title: Présentation de la migration
 description: Cette rubrique présente un aperçu de la migration des versions 1.x vers 2.x du SDK Media.
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
+exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '213'
+ht-degree: 100%
 
 ---
-
 
 # Présentation de la migration {#migration-overview}
 
