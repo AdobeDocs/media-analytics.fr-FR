@@ -1,14 +1,14 @@
 ---
 title: FAQ sur l’abandon de la prise en charge du SDK Media Analytics
 description: Cette rubrique comprend des questions fréquentes concernant l’abandon de la prise en charge des SDK Media Analytics.
+exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 translation-type: ht
-source-git-commit: dfffcf1e1d815ca178e0bdba881d973d60fe1631
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '679'
 ht-degree: 100%
 
 ---
-
 
 # FAQ sur l’abandon de la prise en charge du SDK Media Analytics
 
