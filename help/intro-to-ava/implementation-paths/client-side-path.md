@@ -2,14 +2,14 @@
 title: Qu’est-ce que Media Analytics et les intégrations côté client ?
 description: Découvrez comment Media Analytics fonctionne avec les intégrations côté client et le SDK Media et/ou l’API Media Collection.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
+exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
 translation-type: ht
-source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '152'
 ht-degree: 100%
 
 ---
-
 
 # Côté client {#client-side}
 
