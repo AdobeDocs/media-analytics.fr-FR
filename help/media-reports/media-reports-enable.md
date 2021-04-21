@@ -24,7 +24,7 @@ Chaque suite de rapports qui collecte des mesures multimédia doit être configu
 
    ![](assets/media-reporting.png){width=&quot;400px&quot;}
 
-1. Sur la page **[!UICONTROL Création de rapports multimédia]**, activez **[!UICONTROL Noyau multimédia]** et éventuellement **[!UICONTROL Publicités multimédia],** **[!UICONTROL Chapitres multimédia]** et **[!UICONTROL Qualité multimédia].**
+1. Sur la page **[!UICONTROL Création de rapports multimédia]**, activez **[!UICONTROL Noyau multimédia]** et éventuellement **[!UICONTROL Publicités multimédia],** **[!UICONTROL Chapitres multimédia],** et **[!UICONTROL Qualité multimédia].**
 
    La mesure multimédia inclut les modules suivants :
 
