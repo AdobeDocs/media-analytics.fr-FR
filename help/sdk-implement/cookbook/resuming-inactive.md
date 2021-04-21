@@ -2,11 +2,14 @@
 title: Reprise des sessions inactives
 description: Comment gérer la reprise d’une session inactive.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
+exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '157'
+ht-degree: 100%
 
 ---
-
 
 # Reprise des sessions inactives {#resuming-inactive-sessions}
 
@@ -86,4 +89,3 @@ _onmediaLoad = function () {
   this._mediaHeartbeat.trackSessionStart(mediaObject, contextData); 
 };
 ```
-
