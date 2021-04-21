@@ -2,11 +2,14 @@
 title: Suivi des chapitres et des segments sur Chromecast
 description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media sur Chromecast.
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
+exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '218'
+ht-degree: 100%
 
 ---
-
 
 # Suivi des chapitres et des segments sur Chromecast {#track-chapters-and-segments-on-chromecast}
 
@@ -62,4 +65,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. S’il existe d’autres chapitres, répétez les étapes 1 à 5.
-
