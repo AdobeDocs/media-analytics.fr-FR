@@ -1,17 +1,17 @@
 ---
-title: Suivi des erreurs à l’aide de JavaScript 2.x
+title: Suivi des erreurs à l’aide de JavaScript 2.x
 description: Cette rubrique décrit l’implémentation du suivi des erreurs à l’aide du SDK Media dans les applications de navigateur (JS).
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
-workflow-type: tm+mt
+exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '96'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-
-# Suivi des erreurs à l’aide de JavaScript 2.x{#track-errors-on-javascript}
+# Suivi des erreurs à l’aide de JavaScript 2.x {#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
