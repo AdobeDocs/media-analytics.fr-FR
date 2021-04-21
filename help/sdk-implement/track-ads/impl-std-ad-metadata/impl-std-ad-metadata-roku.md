@@ -2,11 +2,14 @@
 title: Mise en œuvre de métadonnées de publicité standard sur Roku
 description: Utilisation des métadonnées publicitaires standard dans le suivi des publicités sur Roku.
 uuid: 20a437d7-18b8-4099-ac81-9f3628384236
+exl-id: d2c0a1e0-8d40-4f60-a82d-5860550ac152
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '47'
+ht-degree: 100%
 
 ---
-
 
 # Mise en œuvre de métadonnées de publicité standard sur Roku {#implement-standard-ad-metadata-on-roku}
 
@@ -21,4 +24,3 @@ standardAdMetadata[ADBMobile().MEDIA_AdMetadataKeyADVERTISER] = "sample advertis
 
 adInfo[ADBMobile().MEDIA_STANDARD_AD_METADATA] = standardAdMetadata 
 ```
-
