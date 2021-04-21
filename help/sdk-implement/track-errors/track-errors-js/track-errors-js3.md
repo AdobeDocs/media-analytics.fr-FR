@@ -1,20 +1,20 @@
 ---
-title: Suivi des erreurs à l’aide de JavaScript 3.x
+title: Suivi des erreurs à l’aide de JavaScript 3.x
 description: Cette rubrique décrit l’implémentation du suivi des erreurs à l’aide du SDK Media dans les applications de navigateur (JS).
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
-workflow-type: tm+mt
+exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '95'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-
-# Suivi des erreurs à l’aide de JavaScript 3.x{#track-errors-on-javascript}
+# Suivi des erreurs à l’aide de JavaScript 3.x {#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 3.x. Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Mise en œuvre du suivi des erreurs
 
