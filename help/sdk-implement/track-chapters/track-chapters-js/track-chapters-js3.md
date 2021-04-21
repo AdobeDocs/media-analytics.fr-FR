@@ -1,20 +1,20 @@
 ---
-title: Suivi des chapitres et des segments à l’aide de JavaScript 3.x
+title: Suivi des chapitres et des segments à l’aide de JavaScript 3.x
 description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media dans les applications de navigateur (JS).
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-
-# Suivi des chapitres et des segments à l’aide de JavaScript 3.x{#track-chapters-and-segments-on-javascript}
+# Suivi des chapitres et des segments à l’aide de JavaScript 3.x {#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guide here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 3.x. Si vous implémentez une version précédente du SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
 
 1. Identifiez le moment où a lieu l’événement de début de chapitre et créez l’instance `ChapterObject` à l’aide des informations de chapitre.
 
@@ -26,10 +26,10 @@ ht-degree: 71%
 
    | Nom de variable | Type | Description |
    | --- | --- | --- |
-   | `name` | string | Chaîne non vide indiquant le nom du chapitre. |
-   | `position` | nombre | Position du chapitre dans le contenu, commençant par 1. |
-   | `length` | nombre | Nombre positif indiquant la longueur du chapitre. |
-   | `startTime` | nombre | Valeur du curseur de lecture au début du chapitre. |
+   | `name` | chaîne | Chaîne non vide désignant le nom du chapitre. |
+   | `position` | nombre | Position du chapitre dans le contenu, en commençant par 1. |
+   | `length` | nombre | Nombre positif désignant la longueur du chapitre. |
+   | `startTime` | nombre | Valeur de la tête de lecture au début du chapitre. |
 
    Objet de chapitre :
 
