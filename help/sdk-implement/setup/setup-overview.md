@@ -2,14 +2,14 @@
 title: Présentation de la configuration
 description: Présentation de la configuration du SDK Media pour le suivi des médias dans vos applications mobiles, OTT et de navigateur (JS).
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
+exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '734'
 ht-degree: 100%
 
 ---
-
 
 # Présentation de la configuration {#setup-overview}
 
