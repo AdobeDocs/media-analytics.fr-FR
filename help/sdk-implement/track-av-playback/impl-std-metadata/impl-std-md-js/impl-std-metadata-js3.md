@@ -1,16 +1,16 @@
 ---
-title: Mise en oeuvre de métadonnées standard à l’aide de JavaScript 3.x
+title: Implémentation de métadonnées standard à l’aide de JavaScript 3.x
 description: Décrit la définition des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi dans les applications de navigateur (JS).
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 228ba000-10e2-4906-8417-265a03367a9b
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '43'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
-
-# Mise en oeuvre de métadonnées standard à l’aide de JavaScript 3.x{#implement-standard-metadata-on-javascript}
+# Implémentation de métadonnées standard à l’aide de JavaScript 3.x {#implement-standard-metadata-on-javascript}
 
 ## Mise en œuvre
 
