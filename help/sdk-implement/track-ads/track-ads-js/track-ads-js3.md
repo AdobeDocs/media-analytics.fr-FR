@@ -1,20 +1,20 @@
 ---
-title: Suivi des publicités à l’aide de JavaScript 3.x
+title: Suivi des annonces publicitaires à l’aide de JavaScript 3.x
 description: Mettez en œuvre le suivi des publicités dans les applications de navigateur (JS) à l’aide du SDK Media.
-translation-type: tm+mt
-source-git-commit: 815965d1cd41e73e50666a89f4a7c450af5022da
-workflow-type: tm+mt
+exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '359'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-
-# Suivi des publicités à l’aide de JavaScript 3.x{#track-ads-on-javascript}
+# Suivi des annonces publicitaires à l’aide de JavaScript 3.x {#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 3.x. Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi des publicités
 
@@ -34,7 +34,7 @@ ht-degree: 80%
 
    | Nom de variable | Type | Description |
    | --- | --- | --- |
-   | `name` | string | Chaîne non vide indiquant le nom de l’abréviation (preroll, mid-roll et post-roll). |
+   | `name` | chaîne | Chaîne non vide désignant le nom de la coupure publicitaire (pre-roll, mid-roll et post-roll). |
    | `position` | nombre | Position du nombre au début de la coupure publicitaire commençant par 1. |
    | `startTime` | nombre | Valeur du curseur de lecture au début de la coupure publicitaire. |
 
@@ -59,10 +59,10 @@ ht-degree: 80%
 
    | Nom de variable | Type | Description |
    | --- | --- | --- |
-   | `name` | string | Chaîne non vide indiquant le nom de la publicité. |
-   | `adId` | string | Chaîne non vide indiquant l&#39;identifiant de publicité. |
-   | `position` | nombre | Position du numéro de la publicité dans l&#39;adbreak, commençant par 1. |
-   | `length` | nombre | Numéro positif indiquant la longueur de la publicité. |
+   | `name` | chaîne | Chaîne non vide désignant le nom de l’annonce publicitaire. |
+   | `adId` | chaîne | Chaîne non vide désignant l’identifiant de l’annonce publicitaire. |
+   | `position` | nombre | Position du numéro de l’annonce publicitaire dans la coupure publicitaire, en commençant par 1. |
+   | `length` | nombre | Numéro positif désignant la longueur de l’annonce publicitaire. |
 
    Création d’objet publicitaire :
 
