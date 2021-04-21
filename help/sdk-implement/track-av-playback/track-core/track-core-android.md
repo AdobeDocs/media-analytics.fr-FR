@@ -2,11 +2,14 @@
 title: Suivi de la lecture principale sur Android
 description: Cette rubrique décrit la mise en œuvre du suivi principal à l’aide du SDK Media sur Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
+exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '707'
+ht-degree: 100%
 
 ---
-
 
 # Suivi de la lecture principale sur Android {#track-core-playback-on-android}
 
@@ -23,11 +26,11 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | --- | --- | :---: |
    | `name` | Nom du média | Oui |
    | `mediaId` | Identifiant unique du média | Oui |
-   | `length` | Durée du média | Oui |
+   | `length` | Longueur du média | Oui |
    | `streamType` | Type de diffusion (voir les constantes _StreamType_ ci-dessous) | Oui |
    | `mediaType` | Type de média (voir les constantes _MediaType_ ci-dessous) | Oui |
 
-   **Constantes `StreamType` :**
+   **`StreamType`Constantes :**
 
    | Nom de constante | Description |
    |---|---|
@@ -38,7 +41,7 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    | `AUDIOBOOK` | Type de diffusion pour les livres audio. |
    | `PODCAST` | Type de diffusion pour les podcasts. |
 
-   **Constantes `MediaType` :**
+   **`MediaType`Constantes :**
 
    | Nom de constante | Description |
    |---|---|
@@ -150,10 +153,10 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
    Identifiez tous les scénarios dans lesquels le lecteur vidéo sera interrompu et assurez-vous que `trackPause` est correctement appelé. Les scénarios suivants exigent tous que votre application appelle `trackPause()` :
 
-   * L’utilisateur appuie explicitement sur le bouton de pause dans l’application.
-   * Le lecteur se place dans l’état de pause.
-   * (*Applications mobiles*) - L’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application maintienne la session ouverte.
-   * (*Applications mobiles*) - Tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre le média à partir du point d’interruption.
+   * L’utilisateur appuie délibérément sur pause dans l’application.
+   * Le lecteur se met en pause.
+   * (*Applications mobiles*) : l’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application conserve la session ouverte.
+   * (*Applications mobiles*) : tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle provenant d’une autre application apparaît, mais vous souhaitez que l’application conserve la session ouverte pour donner à l’utilisateur la possibilité de reprendre le média à partir du point d’interruption.
 
 1. Identifiez l’événement du lecteur correspondant à la lecture multimédia et/ou à la reprise multimédia après une interruption et appelez `trackPlay`.
 
@@ -170,6 +173,5 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 
 Consultez les ressources suivantes pour en savoir plus sur le suivi de la lecture principale :
 
-* Scénarios de suivi : [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
+* Scénarios de suivi : [lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md)
 * Exemple de lecteur inclus dans le SDK Android pour un exemple de suivi complet
-
