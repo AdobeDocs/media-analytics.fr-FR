@@ -2,11 +2,14 @@
 title: Plusieurs dispositifs de suivi VOD en parallèle
 description: Exemple de suivi VOD à l’aide de plusieurs suivis en parallèle.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
+exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '244'
+ht-degree: 100%
 
 ---
-
 
 # Plusieurs dispositifs de suivi VOD en parallèle {#vod-multiple-trackers-in-parallel}
 
@@ -108,7 +111,7 @@ protected void onCreate(Bundle savedInstanceState) {
 } 
 ```
 
-Les deux instances de `MediaAnalyticsProvider` et `MediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session. Les deux sessions de l’outil de débogage Charles ou des journaux de débogage peuvent être identifiées à l’aide de la valeur ID de session. Pour afficher ce scénario dans Android, configurez le code suivant :
+Les deux instances de `MediaAnalyticsProvider` et `MediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session unique. Les deux sessions de l’outil de débogage Charles ou des journaux de débogage peuvent être identifiées à l’aide de la valeur ID de session. Pour afficher ce scénario dans Android, configurez le code suivant :
 
 ```java
 // Set up mediaObject 
@@ -272,7 +275,7 @@ _mediaHeartbeat.trackSessionEnd();
 } 
 ```
 
-Les deux instances de `MediaAnalyticsProvider` et `ADBMediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session. Les deux sessions de l’outil de débogage Charles ou des journaux de débogage peuvent être identifiées à l’aide de la valeur ID de session.
+Les deux instances de `MediaAnalyticsProvider` et `ADBMediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session unique. Les deux sessions de l’outil de débogage Charles ou des journaux de débogage peuvent être identifiées à l’aide de la valeur ID de session.
 
 Pour afficher ce scénario dans iOS, configurez le code suivant :
 
@@ -373,5 +376,4 @@ analyticsProvider2 = new MediaAnalyticsProvider(_player2);
 _player2.loadContent(URL_TO_MEDIA_2); 
 ```
 
-Les deux instances de `MediaAnalyticsProvider` et `MediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session. Vous pouvez voir les deux sessions dans l’outil de débogage Charles.
-
+Les deux instances de `MediaAnalyticsProvider` et `MediaHeartbeat` effectuent le suivi de deux sessions séparées, chacune disposant de son propre ID de session unique. Vous pouvez voir les deux sessions dans l’outil de débogage Charles.
