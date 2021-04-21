@@ -1,14 +1,14 @@
 ---
 title: Qu’est-ce que l’activation d’Adobe Audience Manager ?
 description: Apprenez à lier les actions d’application aux données de suivi multimédia sans avoir besoin de règles de traitement supplémentaires ni de variables personnalisées.
+exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 translation-type: ht
-source-git-commit: 901539a2095b23f9108a934eb61d182b14ccd9e8
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '409'
 ht-degree: 100%
 
 ---
-
 
 # Activation d’Audience Manager {#audience-manager-enablement}
 
