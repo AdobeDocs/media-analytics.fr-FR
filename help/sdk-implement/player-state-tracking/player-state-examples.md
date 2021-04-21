@@ -1,14 +1,14 @@
 ---
 title: Exemples de suivi de l’état du lecteur
 description: Cette rubrique comprend des exemples de la fonctionnalité de suivi de l’état du lecteur.
+exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
 translation-type: ht
-source-git-commit: 1c2992d2a5992b07fa24823501d542c1878aa296
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '119'
 ht-degree: 100%
 
 ---
-
 
 # Exemples de suivi de l’état du lecteur
 
