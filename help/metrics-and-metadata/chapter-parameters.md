@@ -2,14 +2,14 @@
 title: Paramètres de chapitre
 description: null
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
+exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 translation-type: ht
-source-git-commit: ef237fd0d9e2bcebe011d819224d98d450830d07
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1074'
 ht-degree: 100%
 
 ---
-
 
 # Paramètres de chapitre {#chapter-parameters}
 
