@@ -2,11 +2,14 @@
 title: Clés de métadonnées iOS
 description: Cette rubrique décrit les clés de métadonnées iOS disponibles.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
+exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '115'
+ht-degree: 100%
 
 ---
-
 
 # Clés de métadonnées iOS {#ios-metadata-keys}
 
@@ -31,7 +34,7 @@ De `ADBStandardMetadataKeys.h` :
 | `ADBVideoMetadataKeySHOW_TYPE` | Type de programme | Vidéo |
 | `ADBVideoMetadataKeyAD_LOAD` | Chargement de publicité | Vidéo |
 | `ADBVideoMetadataKeyMVPD` | mvpd | Vidéo |
-| `ADBVideoMetadataKeyAUTHORIZED` | Autorisation | Vidéo |
+| `ADBVideoMetadataKeyAUTHORIZED` | Authorization | Vidéo |
 | `ADBVideoMetadataKeyDAY_PART` | Partie de la journée | Vidéo |
 | `ADBVideoMetadataKeyFEED` | Flux | Vidéo |
 | `ADBVideoMetadataKeySTREAM_FORMAT` | Format de diffusion | Vidéo |
@@ -57,4 +60,3 @@ De `ADBStandardMetadataKeys.h` :
 | `ADBAdMetadataKeyPLACEMENT_ID` | Identifiant de référencement | Publicité |
 | `ADBAdMetadataKeySITE_ID` | ID du site | Publicité |
 | `ADBAdMetadataKeyCREATIVE_URL` | URL de l’élément créatif | Publicité |
-
