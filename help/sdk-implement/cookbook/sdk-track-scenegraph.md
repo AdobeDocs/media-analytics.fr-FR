@@ -2,14 +2,14 @@
 title: Suivi dans SceneGraph (Roku)
 description: Suivi des médias avec la structure de programmation XML SceneGraph de Roku.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
+exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 translation-type: ht
-source-git-commit: 305f97d6d1350a3bb8b0ad9c4c58e0a5fefca045
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1171'
 ht-degree: 100%
 
 ---
-
 
 # Suivi dans SceneGraph (Roku) {#tracking-in-scenegraph-roku}
 
@@ -202,11 +202,11 @@ Les API `MediaHeartbeat` d’utilitaire globalement définies sur le composant A
 
 | Méthode | Description |
 | --- | --- |
-| `adb_media_init_mediainfo` | Cette méthode renvoie un objet d’informations de média initialisé.  `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
-| `adb_media_init_adinfo` | Cette méthode renvoie un objet d’informations de publicité initialisé.  `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
-| `adb_media_init_chapterinfo` | Cette méthode renvoie l’objet d’informations de chapitre initialisé.  `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
-| `adb_media_init_adbreakinfo` | Cette méthode renvoie l’objet Informations de l’AdBreak initialisé.  `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
-| `adb_media_init_qosinfo` | Cette méthode renvoie un objet d’informations QoS initialisé.  `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
+| `adb_media_init_mediainfo` | Cette méthode renvoie un objet d’informations de média initialisé. `Function adb_media_init_mediainfo(name As String, id As String, length As Double, streamType As String) As Object` |
+| `adb_media_init_adinfo` | Cette méthode renvoie un objet d’informations de publicité initialisé. `Function adb_media_init_adinfo(name As String, id As String, position As Double, length As Double) As Object` |
+| `adb_media_init_chapterinfo` | Cette méthode renvoie l’objet d’informations de chapitre initialisé. `Function adb_media_init_adbreakinfo(name As String, startTime as Double, position as Double) As Object` |
+| `adb_media_init_adbreakinfo` | Cette méthode renvoie l’objet Informations de l’AdBreak initialisé. `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
+| `adb_media_init_qosinfo` | Cette méthode renvoie un objet d’informations QoS initialisé. `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
 ## Implémentation {#implementation}
 
@@ -358,4 +358,3 @@ function onAdbmobileApiResponse() as void
     endif 
 end function
 ```
-
