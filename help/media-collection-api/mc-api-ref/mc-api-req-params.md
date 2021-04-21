@@ -2,14 +2,14 @@
 title: Paramètres de requête
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
+exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 translation-type: ht
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '1195'
 ht-degree: 100%
 
 ---
-
 
 # Paramètres de requête {#request-parameters}
 
