@@ -2,11 +2,14 @@
 title: Clés de métadonnées Roku
 description: Cette rubrique décrit les clés de métadonnées Roku disponibles.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
+exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '461'
+ht-degree: 100%
 
 ---
-
 
 # Clés de métadonnées Roku {#roku-metadata-keys}
 
@@ -99,4 +102,3 @@ Vous pouvez utiliser les constantes suivantes pour suivre les événements de m�
 | `MEDIA_AD_START` | Type d’événement pour le début de la publicité |
 | `MEDIA_AD_COMPLETE` | Type d’événement pour la fin de la publicité |
 | `MEDIA_AD_SKIP` | Type d’événement pour le saut de la publicité |
-
