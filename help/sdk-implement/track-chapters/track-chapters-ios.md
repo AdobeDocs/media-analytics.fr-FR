@@ -2,11 +2,14 @@
 title: Suivi des chapitres et des segments sur iOS
 description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media sur iOS.
 uuid: ffc5ce9f-04ba-4059-92d4-4cb4180ac9ed
+exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '193'
+ht-degree: 100%
 
 ---
-
 
 # Suivi des chapitres et des segments sur iOS {#track-chapters-and-segments-on-ios}
 
@@ -79,4 +82,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    ```
 
 1. S’il existe d’autres chapitres, répétez les étapes 1 à 5.
-
