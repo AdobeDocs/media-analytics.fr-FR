@@ -2,11 +2,14 @@
 title: Présentation du suivi
 description: 'Cette rubrique décrit le suivi de la lecture principale, dont le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. '
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
+exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '891'
+ht-degree: 100%
 
 ---
-
 
 # Présentation du suivi {#tracking-overview}
 
@@ -235,4 +238,3 @@ if (e.type == “buffered”) {
 ## Validation {#validate}
 
 Pour plus d’informations sur la validation de votre mise en œuvre, voir [Validation.](/help/sdk-implement/validation/validation-overview.md)
-
