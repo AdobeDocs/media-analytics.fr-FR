@@ -2,13 +2,16 @@
 title: Test 1 - Lecture standard
 description: Cette rubrique décrit le test de lecture standard utilisé dans la validation.
 uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
+exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 translation-type: ht
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '839'
+ht-degree: 100%
 
 ---
 
-
-# Test 1 - Lecture standard{#test-standard-playback}
+# Test 1 - Lecture standard {#test-standard-playback}
 
 Ce cas de test valide la lecture et le séquencement généraux.
 
@@ -32,6 +35,7 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
    * **Serveur Adobe Analytics (AppMeasurement) -** Un serveur de suivi RDC ou CNAME se résolvant sur un serveur de suivi RDC est requis pour le service d’identifiant visiteur Experience Cloud. Le serveur de suivi Adobe Analytics doit se terminer par « `.sc.omtrdc.net` » ou être un serveur CNAME.
 
    * **Serveur Media Analytics (Heartbeats) -** Ce serveur a toujours le format « `[namespace].hb.omtrdc.net` », où `[namespace]` spécifie le nom de votre société. Ce nom est fourni par Adobe.
+
    Vous devez valider certaines variables clés universelles pour tous les appels de suivi :
 
    **Identifiant visiteur Adobe (`mid`) :** La variable `mid` est utilisée pour capturer la valeur définie dans le cookie AMCV. La variable `mid` est la principale valeur d’identification pour les sites Web et les applications mobiles, et elle indique également que le service d’identification des visiteurs Experience Cloud est configuré correctement. Elle se trouve dans les appels Adobe Analytics (AppMeasurement) et Media Analytics (pulsations).
@@ -81,6 +85,7 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
    1. Serveur Adobe Analytics - Appel de démarrage
    1. Serveur Media Analytics - Appel de démarrage
    1. Serveur Media Analytics - « Appel de démarrage d’Adobe Analytics demandé »
+
    Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d’appel et les métadonnées, voir [Détails des appels de test.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
    Le troisième appel ci-dessus indique au serveur Media Analytics que le SDK Media a demandé que l’appel de démarrage d’Adobe Analytics (`pev2=ms_s`) soit envoyé au serveur Adobe Analytics.
@@ -88,11 +93,13 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 1. **Afficher la coupure publicitaire si possible**
 
    * **Démarrage de publicité**
+
    Au démarrage de la publicité, les appels clés ci-dessous sont envoyés dans l’ordre suivant :
 
    1. Serveur Adobe Analytics - Appel de démarrage de la publicité
    1. Serveur Media Analytics - Appel de démarrage de la publicité
    1. Serveur Media Analytics - « Appel de démarrage de la publicité d’Adobe Analytics demandé »
+
    Les deux premiers appels contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/sdk-implement/validation/test-call-details.md#view-ad-playback)
 
    Le troisième appel indique au serveur Media Analytics que le SDK Media a demandé que l’appel de démarrage de la publicité d’Adobe Analytics (`pev2=msa_s`) soit envoyé au serveur Adobe Analytics.
