@@ -2,14 +2,14 @@
 title: Configuration d’Android
 description: Configuration de l’application Media SDK pour implémentation sur Android.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
+exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 translation-type: ht
-source-git-commit: 300eb77858296f0246a2cb484386c0dcdf8b87b9
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '427'
 ht-degree: 100%
 
 ---
-
 
 # Configuration d’Android {#set-up-android}
 
@@ -47,6 +47,7 @@ ht-degree: 100%
 
       1. Sélectionnez les modules dans lesquels vous prévoyez d’utiliser la bibliothèque mobile.
       1. Cliquez sur **[!UICONTROL Appliquer]** puis sur **[!UICONTROL OK]** pour fermer la fenêtre Paramètres du module.
+
       **Eclipse :**
 
       1. Dans Eclipse IDE, cliquez avec le bouton droit sur le nom du projet.
