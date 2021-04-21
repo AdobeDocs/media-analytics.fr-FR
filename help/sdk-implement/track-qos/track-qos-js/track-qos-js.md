@@ -1,17 +1,17 @@
 ---
-title: Suivi de la qualité de l’expérience à l’aide de JavaScript 2.x
-description: Cette rubrique décrit la mise en oeuvre du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media dans les applications de navigateur utilisant JavaScript 2.x.
+title: Suivi de la qualité de l’expérience à l’aide de JavaScript 2.x
+description: Cette rubrique décrit l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media dans les applications de navigateur avec JavaScript 2.x.
 uuid: 3bc762a2-9706-4b62-aa91-747f461dd13d
-translation-type: tm+mt
-source-git-commit: fa161e2d41629fdfe77100d87d6a44728e23d77f
-workflow-type: tm+mt
+exl-id: 5924eba4-15a9-405b-9a05-8a7308ddec47
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-
-# Suivi de la qualité de l’expérience à l’aide de JavaScript 2.x{#track-quality-of-experience-on-javascript}
+# Suivi de la qualité de l’expérience à l’aide de JavaScript 2.x {#track-quality-of-experience-on-javascript}
 
 >[!IMPORTANT]
 >
