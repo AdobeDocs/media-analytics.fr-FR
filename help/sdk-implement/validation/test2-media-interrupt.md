@@ -2,11 +2,14 @@
 title: Test 2 Interruption du média
 description: Cette rubrique décrit le test d’interruption du média utilisé dans la validation.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
-translation-type: tm+mt
-source-git-commit: cebf5697e3746721d29bfaa5356d5a2748fea435
+exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '244'
+ht-degree: 100%
 
 ---
-
 
 # Test 2 - Interruption du média {#test-media-interruption}
 
@@ -23,6 +26,7 @@ Vous devez effectuer et enregistrer ces tâches dans l’ordre suivant :
    1. Démarrage d’Adobe Analytics (AppMeasurement)
    1. Démarrage de Media Analytics (pulsations)
    1. Appel de démarrage d’Adobe Analytics de Media Analytics (pulsations) demandé
+
    Les deux premiers appels ci-dessus contiennent des métadonnées et des variables supplémentaires. Pour les paramètres d’appel et les métadonnées, voir [Détails des appels de test.](/help/sdk-implement/validation/test-call-details.md#start-the-media-player)
 
    Le troisième appel ci-dessus indique au serveur Media Analytics que le SDK Media a demandé que l’appel de démarrage d’Adobe Analytics (`pev2=ms_s`) soit envoyé au serveur Adobe Analytics.
