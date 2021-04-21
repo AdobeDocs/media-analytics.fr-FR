@@ -2,11 +2,14 @@
 title: Suivi de la qualité de l’expérience sur Roku
 description: Cette rubrique décrit l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur Roku.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
+exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '195'
+ht-degree: 100%
 
 ---
-
 
 # Suivi de la qualité de l’expérience sur Roku {#track-quality-of-experience-on-roku}
 
@@ -81,4 +84,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
    >[!TIP]
    >
    >Le suivi des erreurs du lecteur multimédia n’arrête pas la session de suivi multimédia. Si l’erreur du lecteur multimédia empêche la lecture de se poursuivre, veillez à ce que la session de suivi multimédia soit fermée en appelant `trackSessionEnd()` après avoir appelé `trackError()`.
-
