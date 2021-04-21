@@ -2,14 +2,14 @@
 title: Configuration d’iOS
 description: Configuration de l’application du SDK Media pour l’implémentation sur iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
+exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 translation-type: ht
-source-git-commit: f54733c44e96c517d0c4c624a40742b421a54325
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '748'
 ht-degree: 100%
 
 ---
-
 
 # Configuration d’iOS {#set-up-ios}
 
