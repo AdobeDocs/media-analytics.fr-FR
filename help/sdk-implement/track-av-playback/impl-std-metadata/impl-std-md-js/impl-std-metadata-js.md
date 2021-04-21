@@ -1,17 +1,17 @@
 ---
-title: Mise en oeuvre de métadonnées standard à l’aide de JavaScript 2.x
+title: Implémentation de métadonnées standard à l’aide de JavaScript 2.x
 description: Décrit la définition des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi dans les applications de navigateur (JS).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '62'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
-
-# Mise en oeuvre de métadonnées standard à l’aide de JavaScript 2.x{#implement-standard-metadata-on-javascript}
+# Implémentation de métadonnées standard à l’aide de JavaScript 2.x {#implement-standard-metadata-on-javascript}
 
 ## Constante de métadonnées
 
