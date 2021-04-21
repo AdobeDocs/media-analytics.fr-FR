@@ -2,11 +2,14 @@
 title: Aperçu de la validation
 description: Cette rubrique présente un aperçu du processus de validation.
 uuid: bbc6b6d6-1899-45b9-9fb7-8031f07563f6
+exl-id: 908e9de6-9461-4f3d-9d94-5541c5dfeabb
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '52'
+ht-degree: 100%
 
 ---
-
 
 # Aperçu de la validation {#validation-overview}
 
