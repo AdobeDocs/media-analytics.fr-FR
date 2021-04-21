@@ -2,11 +2,14 @@
 title: Lecture VOD avec publicités preroll
 description: Exemple de suivi du contenu VOD contenant des publicités preroll à l’aide du SDK Media.
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
+exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '526'
+ht-degree: 100%
 
 ---
-
 
 # Lecture VOD avec publicités preroll {#vod-playback-with-pre-roll-ads}
 
