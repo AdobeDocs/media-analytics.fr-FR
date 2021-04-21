@@ -1,20 +1,20 @@
 ---
-title: Suivi de la mise en mémoire tampon à l’aide de JavaScript 3.x
+title: Suivi de la mise en mémoire tampon à l’aide de JavaScript 3.x
 description: Décrit le suivi des événements de mise en mémoire tampon dans les applications de navigateur (JS).
-translation-type: tm+mt
-source-git-commit: 318bb60d9835d9a07fb7aa0a0a02162248410d09
-workflow-type: tm+mt
+exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '115'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-
-# Suivi de la mise en mémoire tampon à l’aide de JavaScript 3.x{#track-buffering-on-javascript}
+# Suivi de la mise en mémoire tampon à l’aide de JavaScript 3.x {#track-buffering-on-javascript}
 
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 3.x. If you are implementing any previous versions of the SDK, you can download the Developers Guides here: [Download SDKs.](/help/sdk-implement/download-sdks.md)
+>Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 3.x. Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi de la mémoire tampon
 
