@@ -2,14 +2,14 @@
 title: Comparaison de code 1.x vers 2.x
 description: Ctte rubrique compare le code des versions 1.x et 2.x du SDK Media
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
-translation-type: tm+mt
-source-git-commit: 72cdf2d03ebae6998514c9092ab462c29345c9f9
-workflow-type: tm+mt
+exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
+translation-type: ht
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
 source-wordcount: '567'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
-
 
 # Comparaison de code : 1.x vers 2.x {#code-comparison-x-to-x}
 
