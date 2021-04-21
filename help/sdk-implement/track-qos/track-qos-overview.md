@@ -2,11 +2,14 @@
 title: Aperçu
 description: Présentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
+exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '254'
+ht-degree: 100%
 
 ---
-
 
 # Aperçu {#overview}
 
@@ -70,4 +73,3 @@ if (e.type == "bitrate_change") {
     this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BitrateChange, qosObject); 
 };
 ```
-
