@@ -2,11 +2,14 @@
 title: Lecture VOD avec un chapitre
 description: Exemple de suivi de la lecture VOD contenant un chapitre.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
+exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '430'
+ht-degree: 100%
 
 ---
-
 
 # Lecture VOD avec un chapitre {#vod-playback-with-one-chapter}
 
@@ -465,4 +468,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
