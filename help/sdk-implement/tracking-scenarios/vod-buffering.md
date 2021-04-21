@@ -2,11 +2,14 @@
 title: Lecture VOD avec mise en mémoire tampon
 description: Exemple de suivi du contenu VOD à l’aide du SDK Media.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
+exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '228'
+ht-degree: 100%
 
 ---
-
 
 # Lecture VOD avec mise en mémoire tampon {#vod-playback-with-buffering}
 
@@ -222,4 +225,3 @@ this._mediaHeartbeat.trackSessionEnd();
 ........ 
 ........ 
 ```
-
