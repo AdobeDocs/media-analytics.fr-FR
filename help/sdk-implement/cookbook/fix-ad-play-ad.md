@@ -2,11 +2,14 @@
 title: Résolution des appels main:play apparaissant entre les publicités
 description: Comment gérer les appels main:play inattendus entre les publicités.
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
+exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '448'
+ht-degree: 100%
 
 ---
-
 
 # Résolution des appels main:play apparaissant entre les publicités {#resolving-main-play-appearing-between-ads}
 
@@ -45,11 +48,11 @@ Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour 
 
 **À chaque démarrage de ressource publicitaire :**
 
-* **appelez`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **Appelez`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
-   >Appelez cette méthode uniquement si la publicité précédente n’était pas complète. Pensez à une valeur booléenne pour conserver l’état "`isinAd`" de la publicité précédente.
+   >Appelez cette méthode uniquement si la publicité précédente n’était pas complète. Pensez à une valeur booléenne pour conserver l’état &quot;`isinAd`&quot; de la publicité précédente.
 
 * Créez l’instance d’objet publicitaire pour la ressource publicitaire : par exemple, `adObject`.
 * Renseignez les métadonnées de publicité, `adCustomMetadata`.
@@ -70,11 +73,10 @@ Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour 
 
 **À la fin de la coupure publicitaire :**
 
-* **appelez`trackEvent(MediaHeartbeat.Event.AdComplete);`**
+* **Appelez`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
    >[!NOTE]
    >
    >Si cette étape est déjà effectuée ci-dessus dans le cadre du dernier appel `trackEvent:AdComplete`, elle peut être ignorée.
 
 * L’appel `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.
-
