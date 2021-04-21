@@ -1,14 +1,14 @@
 ---
 title: Présentation du guide pas à pas SDK
-description: 'Rubriques spécifiques au guide pas à pas SDK '
+description: Rubriques spécifiques au guide pas à pas SDK
+exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 translation-type: ht
-source-git-commit: 298d17ced7a62cad8e2a45814fbfb80c3f58ce35
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '66'
 ht-degree: 100%
 
 ---
-
 
 # Présentation du guide pas à pas SDK
 
