@@ -2,14 +2,14 @@
 title: Paramètres audio et vidéo
 description: null
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
+exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 translation-type: ht
-source-git-commit: b1b94b4cde74908ea528fb69d78250dc1da1db80
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
 workflow-type: ht
 source-wordcount: '6268'
 ht-degree: 100%
 
 ---
-
 
 # Paramètres audio et vidéo {#audio-and-video-parameters}
 
