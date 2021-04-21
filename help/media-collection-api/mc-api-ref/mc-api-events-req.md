@@ -73,7 +73,7 @@ Access-Control-Expose-Headers Location
 | Code de réponse HTTP | Description | Éléments d’action client |
 |---|---|---|
 | **204** | **Aucun contenu.** <br/><br/>L’appel Heartbeat a réussi. | S.O. |
-| **400** | **Requête incorrecte.** <br/><br/>Le format de la requête est incorrect. | Recherchez les [schémas de validation JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) pour le type de requête. |
+| **400** | **Requête incorrecte.**<br/><br/>Le format de la requête est incorrect. | Recherchez les [schémas de validation JSON](/help/media-collection-api/mc-api-ref/mc-api-json-validation.md) pour le type de requête. |
 | **404** | **Non trouvé.** <br/><br/>L’ID de session pour la session multimédia n’a pas été trouvé dans le service principal. | L’application client doit utiliser l’API de [demande Sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et en effectuer le suivi dans les rapports. |
 | **410** | **Parti.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus générer de rapports d’activité sur celle-ci. | L’application client doit utiliser l’API de [demande Sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour créer une autre session multimédia et en effectuer le suivi dans les rapports. |
 | **500** | **Erreur du serveur** | S.O. |
