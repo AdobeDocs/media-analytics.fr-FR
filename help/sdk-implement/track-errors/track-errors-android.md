@@ -2,11 +2,14 @@
 title: Erreurs de suivi sur Android
 description: Cette rubrique décrit l’implémentation du suivi des erreurs à l’aide du SDK Media sur Android.
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
+exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
 translation-type: ht
-source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
+source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
+workflow-type: ht
+source-wordcount: '89'
+ht-degree: 100%
 
 ---
-
 
 # Erreurs de suivi sur Android {#track-errors-on-android}
 
@@ -25,4 +28,3 @@ source-git-commit: 7da115fae0a05548173e8ca3ec68fae250128775
 >[!NOTE]
 >
 >Le suivi des erreurs du lecteur multimédia n’arrête pas la session de suivi multimédia. Si l’erreur du lecteur multimédia empêche la lecture de se poursuivre, veillez à ce que la session de suivi multimédia soit fermée en appelant `trackSessionEnd` après avoir appelé `trackError`.
-
