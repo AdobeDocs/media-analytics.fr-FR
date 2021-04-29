@@ -4,7 +4,7 @@ description: Contrôle de l’ordre des événements
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
 translation-type: tm+mt
-source-git-commit: e0da35f364dc057a241fbb05a718a731ffee1e94
+source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 4%
@@ -16,6 +16,7 @@ ht-degree: 4%
 Le suivi vidéo en flux continu est une opération très dépendante du temps. Les appels de suivi de l’API de collecte de médias arrivent parfois en arrière-plan hors service. Dans ce cas, l’arrière-plan tente de mettre en file d’attente et de réorganiser les événements en fonction de l’horodatage fourni dans l’objet `playerTime`.  Cela se produit avec certaines limites. Actuellement, la réorganisation peut échouer si les retards entre les appels en rupture de commande sont de plus d’une seconde. Dans les futures mises à jour, le &quot;délai acceptable&quot; peut être optimisé et configurable.
 
 ## Exemple de événement hors service
+
 Des événements hors service se produisent lorsque des événements traversent le réseau, ce qui entraîne parfois des retards.
 
 Par exemple, vous pouvez envoyer un événement `adBreakStart` suivi d’un événement `adStart`. Il s’agit d’un cas d’utilisation courant, car il est nécessaire pour qu’une publicité se début au sein d’une coupure publicitaire.
