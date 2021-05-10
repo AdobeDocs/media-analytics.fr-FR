@@ -3,11 +3,11 @@ title: Paramètres de requête
 description: null
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '1195'
-ht-degree: 100%
+translation-type: tm+mt
+source-git-commit: 64a91795bd2f9120991be2a67e68c645dc24c8d1
+workflow-type: tm+mt
+source-wordcount: '1205'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 100%
 | --- | :---: | :---: | --- |
 | `visitor.marketingCloudOrgId` | Y | `sessionStart` | Identifiant d’entreprise Experience Cloud ; identifie votre organisation dans l’écosystème Adobe Experience Cloud |
 | `visitor.marketingCloudUserId` | N | `sessionStart` | Il s’agit de l’identifiant utilisateur Experience Cloud (ECID). Dans la plupart des cas, il s’agit de l’identifiant que vous devez utiliser pour identifier un utilisateur. La pulsation `marketingCloudUserId` est égale au `MID` dans Adobe Analytics. Bien que cela ne soit pas techniquement requis, ce paramètre est nécessaire pour accéder à la famille d’applications Experience Cloud. |
-| `visitor.aamLocationHint` | N | `sessionStart` | Fournit les données edge Adobe Audience Manager |
+| `visitor.aamLocationHint` | N | `sessionStart` | Fournit les données edge Adobe Audience Manager — Si aucune valeur n&#39;est saisie, la valeur est nulle. |
 | `appInstallationId` | N | `sessionStart` | L’ID appInstallationId identifie de manière unique l’application et l’appareil |
 
 ## Données du contenu
