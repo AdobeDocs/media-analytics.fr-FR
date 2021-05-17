@@ -2,9 +2,8 @@
 title: Qu’est-ce que l’activation d’Adobe Audience Manager ?
 description: Apprenez à lier les actions d’application aux données de suivi multimédia sans avoir besoin de règles de traitement supplémentaires ni de variables personnalisées.
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+source-git-commit: e781af84f23400aa7c899b686f0e9fee2c19d660
+workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 100%
 
@@ -59,7 +58,7 @@ Vous pouvez utiliser ces méthodes pour envoyer des signaux et récupérer des s
    Définit les DPID et DPUUID. Si les DPID et DPUUID sont définis, ils seront envoyés avec chaque signal.
 
    ```js
-   ADBMobile.audienceManager.SetDpidAndDpuuid("myDpid", "myDpuuid");
+   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
    ```
 
 * `submitSignal() -`
@@ -67,7 +66,7 @@ Vous pouvez utiliser ces méthodes pour envoyer des signaux et récupérer des s
    Envoie à la gestion de l’audience par un signal avec des caractéristiques.
 
    ```js
-   ADBMobile.audienceManager.SubmitSignal();
+   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
    ```
 
 ### Roku {#am-roku}
@@ -109,5 +108,7 @@ Vous pouvez utiliser ces méthodes pour envoyer des signaux et récupérer des s
    Envoie à la gestion de l’audience par un signal avec des caractéristiques.
 
    ```js
-   ADBMobile().audienceSubmitSignal()
+   traitData = {}
+   traitData["sampleTrait"] = "sampleValue"
+   ADBMobile().audienceSubmitSignal(traitData)
    ```
