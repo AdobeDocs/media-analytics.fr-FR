@@ -3,9 +3,8 @@ title: Configuration de Chromecast
 description: Configuration de l’application du SDK Media pour implémentation sur Chromecast.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
+workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 100%
 
@@ -63,7 +62,7 @@ Le kit SDK Chromecast 2.x pour les solutions Experience Cloud vous permet de m
             "analytics": {
               "rsids": "mobile5vhl.sample.player",
               "server": "obumobile5.sc.omtrdc.net",
-              "ssl": false,
+              "ssl": true,
               "offlineEnabled": false,
               "charset": "UTF-8",
               "lifecycleTimeout": 300,
@@ -78,7 +77,7 @@ Le kit SDK Chromecast 2.x pour les solutions Experience Cloud vous permet de m
               "server": "obumobile5.hb.omtrdc.net",
               "publisher": "972C898555E9F7BC7F000101@AdobeOrg",
               "channel": "test-channel-chromecast",
-              "ssl": false,
+              "ssl": true,
               "ovp": "chromecast-player",
               "sdkVersion": "chromecast-sdk",
               "playerName": "Chromecast"
