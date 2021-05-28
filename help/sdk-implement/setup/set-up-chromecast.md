@@ -4,7 +4,7 @@ description: Configuration de l’application du SDK Media pour implémentation 
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '630'
 ht-degree: 100%
 
