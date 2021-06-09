@@ -2,11 +2,10 @@
 title: FAQ sur l’abandon de la prise en charge du SDK Media Analytics
 description: Cette rubrique comprend des questions fréquentes concernant l’abandon de la prise en charge des SDK Media Analytics.
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '679'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '669'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +17,7 @@ Avec l’abandon de la prise en charge des SDK mobiles de version 4 programmée
 
 1. Les SDK mobiles v4 ne seront plus pris en charge après le 31 août 2021. Vous devez migrer vers les SDK mobiles Adobe Experience Platform (AEP) pour iOS et Android. Pour plus d’informations, reportez-vous à la [FAQ sur l’abandon de la prise en charge des SDK mobiles de version 4](https://aep-sdks.gitbook.io/docs/version-4-sdk-end-of-support-faq).
 
-1. La mise en œuvre d’Analytics for Streaming Media requiert le SDK mobile AEP ainsi que l’utilisation des extensions Analytics et Media Analytics. À compter du 1er septembre 2021, vous devrez utiliser les nouveaux SDK mobiles et extensions AEP.  Les extensions Media Analytics sont configurées à l’aide d’Adobe Launch.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html).
+1. La mise en œuvre d’Analytics for Streaming Media requiert le SDK mobile AEP ainsi que l’utilisation des extensions Analytics et Media Analytics. À compter du 1er septembre 2021, vous devrez utiliser les nouveaux SDK mobiles et extensions AEP.  Les extensions Media Analytics sont configurées à l’aide d’Adobe Launch.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration.html).
 
 1. Le développement des fonctionnalités des SDK Media Analytics pour iOS et Android est terminé.  Les nouvelles fonctionnalités introduites à partir de l’automne 2019 sont activées à l’aide des extensions Media Analytics et de l’API Media Collection.
 
@@ -42,9 +41,9 @@ Contactez votre gestionnaire de la réussite client Adobe si vous avez des quest
 
    Le niveau d’effort dépend de la mise en œuvre de chaque client : il est donc variable.  Après avoir consulté la documentation concernant la migration ci-dessous, rapprochez-vous du service de nos conseillers et/ou de l’assistance clientèle pour obtenir une assistance supplémentaire.
 
-   [Extensions Media Analytics : migration sous Android](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)
+   [Extensions Media Analytics : migration sous Android](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html)
 
-   [Extensions Media Analytics : migration sous iOS](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)
+   [Extensions Media Analytics : migration sous iOS](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html)
 
    [Extensions Media Analytics : nouvelles mises en œuvre](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
 
@@ -54,8 +53,8 @@ Contactez votre gestionnaire de la réussite client Adobe si vous avez des quest
 
 1. **Cet abandon de la prise en charge a-t-il une incidence sur le SDK pour tvOS ?**
 
-   Oui : pour tvOS (version 10+), il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch — iOS](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
+   Oui : pour tvOS (version 10+), il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch — iOS](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
 
 1. **Cet abandon de la prise en charge a-t-il une incidence sur le SDK pour FireTV et AndroidTV ?&#x200B;**
 
-   Oui : pour FireTV et AndroidTV, il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch - Android](https://docs.adobe.com/content/help/fr-FR/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
+   Oui : pour FireTV et AndroidTV, il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch - Android](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
