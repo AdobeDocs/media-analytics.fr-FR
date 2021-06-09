@@ -3,15 +3,14 @@ title: Conditions préalables
 description: Conditions préalables
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 96%
 
 ---
 
-# Conditions préalables {#prerequisites}
+# Conditions préalables{#prerequisites}
 
 ## Décisions {#decision}
 
@@ -33,7 +32,7 @@ Pour une mise en œuvre *Media Analytics*, vous devez effectuer les tâches suiv
 
    ![](assets/mc_id_service_graphic.png)
 
-   Le service d’ID peut également remplacer les différents ID spécifiques à une solution (par exemple, Analytics AID). Via la fonctionnalité [ID de client et états d’authentification](https://docs.adobe.com/content/help/fr-FR/id-service/using/reference/authenticated-state.html), le service d’ID permet de transmettre vos propres ID de client à Experience Cloud. Toutefois, n’oubliez pas que le service d’ID fonctionne uniquement avec les solutions auxquelles vous vous êtes déjà abonné. Si vous n’êtes pas abonné pour accéder à d’autres produits, le service d’ID ne fournit pas l’accès.
+   Le service d’ID peut également remplacer les différents ID spécifiques à une solution (par exemple, Analytics AID). Via la fonctionnalité [ID de client et états d’authentification](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html), le service d’ID permet de transmettre vos propres ID de client à Experience Cloud. Toutefois, n’oubliez pas que le service d’ID fonctionne uniquement avec les solutions auxquelles vous vous êtes déjà abonné. Si vous n’êtes pas abonné pour accéder à d’autres produits, le service d’ID ne fournit pas l’accès.
 
    Par ailleurs, le service d’ID est un composant à part entière de plusieurs fonctionnalités, améliorations et services actuels et futurs d’Experience Cloud. Actuellement, le service d’ID prend en charge [Analytics](https://www.adobe.com/fr/marketing-cloud/web-analytics.html), [Audience Manager](https://www.adobe.com/fr/marketing-cloud/data-management-platform.html) et [Target.](https://www.adobe.com/fr/marketing-cloud/testing-targeting.html)
 
@@ -47,7 +46,7 @@ Pour une mise en œuvre *Media Analytics*, vous devez effectuer les tâches suiv
    >
    >En l’absence d’information sur l’identifiant utilisateur présente dans les appels spécifiques au média, les [méthodes d’ID de secours](https://docs.adobe.com/content/help/fr-FR/analytics/technotes/visitor-identification.translate.html) par défaut s’appliquent.
 
-   Pour en savoir plus sur Experience Cloud ID, consultez [Aperçu du service Experience Cloud ID](https://docs.adobe.com/content/help/fr-FR/id-service/using/intro/overview.html) et [Service d’identité d’Adobe Experience Platform.](https://docs.adobe.com/content/help/fr-FR/id-service/using/home.html)
+   Pour en savoir plus sur Experience Cloud ID, consultez [Aperçu du service Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html) et [Service d’identité d’Adobe Experience Platform.](https://docs.adobe.com/content/help/fr-FR/id-service/using/home.html)
 
 1. **Activez les rapports Adobe Analytics.**
 
