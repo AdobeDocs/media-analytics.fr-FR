@@ -3,11 +3,10 @@ title: Suivi du contenu téléchargé
 description: null
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '611'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '609'
+ht-degree: 98%
 
 ---
 
@@ -31,7 +30,7 @@ Chaque approche a ses avantages et ses inconvénients :
 * Le scénario en ligne est suivi en temps réel ; cela nécessite une vérification de la connectivité avant chaque appel réseau.
 * Le scénario hors ligne (fonctionnalité Contenu téléchargé) ne nécessite qu’une vérification de la connectivité réseau, mais il requiert également une plus grande empreinte mémoire sur le périphérique.
 
-## Implémentation {#implementation}
+## Mise en œuvre  {#implementation}
 
 ### Plateformes prises en charge
 
@@ -40,7 +39,7 @@ Le suivi du contenu est pris en charge sur les appareils mobiles iOS et Android.
 ### Schémas d’événements
 
 La fonctionnalité Contenu téléchargé est la version hors ligne de l’API Media Collection en ligne (standard). Les données d’événement que votre lecteur associe et envoie au serveur principal doivent donc utiliser les mêmes schémas que ceux que vous utilisez lorsque vous effectuez des appels en ligne. Pour plus d’informations sur ces schémas, voir :
-* [Aperçu ;](/help/media-collection-api/mc-api-overview.md)
+* [Aperçu;](/help/media-collection-api/mc-api-overview.md)
 * [Validation des requêtes d’événement](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### Ordre des événements
@@ -56,7 +55,7 @@ La fonctionnalité Contenu téléchargé est la version hors ligne de l’API Me
 
 ## Intégration avec Adobe Analytics {#integration-with-adobe-analtyics}
 
-Lors du calcul des appels de début/fin Analytics pour le scénario de contenu téléchargé, le serveur principal définit un champ Analytics supplémentaire appelé `ts.` Ceux-ci sont des horodatages pour les premier et dernier événements reçus (début et fin). Ce mécanisme permet de placer une session multimédia terminée au bon moment (c’est-à-dire que même si l’utilisateur ne revient pas en ligne pendant plusieurs jours, la session multimédia est indiquée comme ayant eu lieu au moment où le contenu a été visionné). Vous devez activer ce mécanisme du côté Adobe Analytics en créant une _suite de rapports facultative horodatée._ Pour activer une suite de rapports facultative horodatée, consultez [Horodatages facultatifs.](https://docs.adobe.com/content/help/fr-FR/analytics/admin/admin-tools/timestamp-optional.html)
+Lors du calcul des appels de début/fin Analytics pour le scénario de contenu téléchargé, le serveur principal définit un champ Analytics supplémentaire appelé `ts.` Ceux-ci sont des horodatages pour les premier et dernier événements reçus (début et fin). Ce mécanisme permet de placer une session multimédia terminée au bon moment (c’est-à-dire que même si l’utilisateur ne revient pas en ligne pendant plusieurs jours, la session multimédia est indiquée comme ayant eu lieu au moment où le contenu a été visionné). Vous devez activer ce mécanisme du côté Adobe Analytics en créant une _suite de rapports facultative horodatée._ Pour activer une suite de rapports facultative horodatée, consultez [Horodatages facultatifs.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html)
 
 ## Comparaison d’exemples de sessions {#sample-session-comparison}
 
