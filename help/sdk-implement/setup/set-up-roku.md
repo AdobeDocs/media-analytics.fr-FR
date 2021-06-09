@@ -3,10 +3,10 @@ title: Configuration de Roku
 description: Configuration de l’application du SDK Media pour l’implémentation sur Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-source-git-commit: 218c4f6a841a988477eb4509bff8d418e18715f5
-workflow-type: ht
-source-wordcount: '709'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '707'
+ht-degree: 99%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Au départ, le service Mobile intègre de manière transparente les fonctionnalités d’analyse et de ciblage des applications pour les solutions Adobe Analytics et Adobe Target.
 
-Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://docs.adobe.com/content/help/fr-FR/mobile-services/using/home.html)
+Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
 
 Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesurer les applications Roku écrites en BrightScript, d’exploiter et de collecter les données d’audience par le biais de la gestion de l’audience et de mesurer l’engagement vidéo grâce aux pulsations vidéo.
 
@@ -174,4 +174,4 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesurer
    | `processMediaMessages` | Responsable de la transmission des événements Media au SDK à gérer. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->
