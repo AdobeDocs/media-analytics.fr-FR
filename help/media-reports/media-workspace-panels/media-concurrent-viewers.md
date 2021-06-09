@@ -2,11 +2,10 @@
 title: Rapport sur les Observateurs simultanés de médias
 description: Pour les clients Media Analytics, le panneau Observateurs simultanés de médias dans Analysis Workspace vous permet d’analyser les observateurs simultanés afin de déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu.
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '193'
-ht-degree: 100%
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
+workflow-type: tm+mt
+source-wordcount: '191'
+ht-degree: 95%
 
 ---
 
@@ -16,7 +15,7 @@ Analyser les observateurs simultanés de médias vous permet de déterminer où 
 
 ## Panneau Observateurs simultanés de médias dans Analysis Workspace
 
-Dans Analysis Workspace, les observateurs simultanés représentent le nombre de visiteurs uniques qui visualisent vos flux de médias à un moment donné, quel que soit le nombre de sessions. Le panneau Observateurs simultanés de médias est disponible pour visualiser les observateurs simultanés, les ventiler et les comparer. [En savoir plus...](https://docs.adobe.com/content/help/fr-FR/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
+Dans Analysis Workspace, les observateurs simultanés représentent le nombre de visiteurs uniques qui visualisent vos flux de médias à un moment donné, quel que soit le nombre de sessions. Le panneau Observateurs simultanés de médias est disponible pour visualiser les observateurs simultanés, les ventiler et les comparer. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html)
 
 ## Obtenir Observateurs simultanés via l’API de création de rapports dans Analytics
 
