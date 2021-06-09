@@ -1,24 +1,23 @@
 ---
-title: Quoi de neuf en Adobe Analytics pour les médias en flux continu ?
-description: Découvrez les nouveautés d'Adobe Analytics pour les médias en flux continu
+title: Nouveautés d’Adobe Analytics for Streaming Media
+description: Découvrez les nouveautés d’Adobe Analytics for Streaming Media
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
-translation-type: tm+mt
-source-git-commit: 5f0de1e0f0694987c6bab0bd97ac8c98e843f23a
+exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
+source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
 workflow-type: tm+mt
-source-wordcount: '30'
-ht-degree: 43%
+source-wordcount: '28'
+ht-degree: 39%
 
 ---
-
 
 # Ressources {#resources}
 
 ## Notes de mise à jour {#release-notes}
 
-* [Notes de mise à jour](https://docs.adobe.com/content/help/fr-FR/release-notes/experience-cloud/current.html)
+* [Notes de mise à jour](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
 
 <!--
 ## Documentation Updates{#documentation-updates}
