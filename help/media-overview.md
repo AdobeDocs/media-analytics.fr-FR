@@ -3,11 +3,10 @@ title: Mesurer des médias en flux continu dans Adobe Analytics
 description: Adobe Analytics for Media (également appelé Media Analytics) fournit aux clients une mesure multimédia performante pour le contenu, le son et les publicités.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '903'
-ht-degree: 100%
+source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 98%
 
 ---
 
@@ -23,10 +22,10 @@ Adobe Analytics for Streaming Media vous permet de suivre l’ensemble du par
 
 Vous pouvez déterminer les mesures de diffusion vidéo essentielles liées à la qualité de service, telles que les images perdues, le temps consacré à la mise en mémoire tampon et le débit moyen. De plus, les mesures peuvent être combinées avec les données de votre site Web ou de votre application pour visualiser le chemin et les intérêts des clients, afin de fournir des recommandations optimisées et de personnaliser les expériences client à l’aide d’Adobe Experience Cloud.
 
-## Fonctionnalités {#features}
+## Fonctionnalités  {#features}
 
 Les avantages d’Adobe Analytics for Streaming Media incluent la surveillance en temps réel, les analyses détaillées, des informations exploitables et des opportunités de monétisation.
-* **Analyse en temps réel** : prenez des décisions en temps réel et exploitables en utilisant des mesures de performances clés telles que la durée, ex2 et ex3, sur plusieurs canaux. Les principaux événements vidéo de contenu sont mesurés en intervalles de 10 secondes pour capturer toutes les activités au fur et à mesure. Les événements de suivi publicitaires se produisent à des intervalles de 1 seconde.
+* **Analyse** en temps réel : prenez des décisions en temps réel exploitables à l’aide de mesures de performances clés telles que les démarrages de média, sur plusieurs canaux.
 * **Stimuler l’engagement** : stimulez l’engagement des utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent s’afficher dans le contenu vidéo pour offrir une expérience de visionnage fluide et moins intrusive qui apporte des visites renouvelées.
 * **Image holistique** : combinez plusieurs points de données sur tous vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de vos activités multimédia. Mesurez l’engagement et les vues/écoutes sur tous les canaux possibles via la fonctionnalité Federated Analytics.
 * **Meilleure granularité** : évaluez le comportement de visionnage au niveau le plus granulaire, y compris l’heure des visiteurs individuels dans la journée, les observateurs simultanés par minute et la durée moyenne d’affichage du contenu.
