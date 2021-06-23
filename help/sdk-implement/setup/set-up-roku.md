@@ -4,15 +4,15 @@ description: Configuration de l’application du SDK Media pour l’implémentat
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '707'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Configuration de Roku {#set-up-roku}
 
-## Conditions préalables
+## Conditions préalables 
 
 * **Obtention de paramètres de configuration valides pour Heartbeats** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Media Analytics.
 * **Fournissez les informations suivantes à votre lecteur multimédia :**
@@ -21,7 +21,7 @@ ht-degree: 99%
 
 Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Au départ, le service Mobile intègre de manière transparente les fonctionnalités d’analyse et de ciblage des applications pour les solutions Adobe Analytics et Adobe Target.
 
-Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
+Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=fr)
 
 Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesurer les applications Roku écrites en BrightScript, d’exploiter et de collecter les données d’audience par le biais de la gestion de l’audience et de mesurer l’engagement vidéo grâce aux pulsations vidéo.
 
