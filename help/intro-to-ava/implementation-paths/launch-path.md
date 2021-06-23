@@ -2,9 +2,9 @@
 title: Comment Adobe Launch implémente-t-il le suivi des médias en flux continu ?
 description: Découvrez l’extension Adobe Streaming Media Launch pour les médias en flux continu.
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ Media Analytics (Heartbeats) est la solution de suivi de média normalisée d’
 
 Adobe Experience Platform Launch, le produit associé à la Dynamic Tag Management, comprend une extension Launch qui facilite la mise en œuvre du suivi dans vos lecteurs multimédia.
 
-Vous pouvez en savoir plus sur l’extension Launch ici : [Extension Adobe Media Analytics for Audio and Video.](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+Vous pouvez en savoir plus sur l’extension Launch ici : [Extension Adobe Media Analytics for Audio and Video.](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=fr)
 
 >[!NOTE]
 >
