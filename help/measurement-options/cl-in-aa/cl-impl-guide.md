@@ -4,9 +4,9 @@ description: null
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '189'
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Le suivi vidéo personnalisé utilise le suivi manuel des liens à l’aide du c
 Le plus souvent, il est utilisé sur les plateformes et les appareils nécessitant peu de mesures vidéo.
 
 * Dans JavaScript : la fonction `s.tl()`
-* Dans les applications mobiles : [trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html), [trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
+* Dans les applications mobiles : [trackAction() Android](https://experienceleague.adobe.com/docs/mobile-services/android/analytics-android/actions.html?lang=fr), [trackAction() iOS](https://experienceleague.adobe.com/docs/mobile-services/ios/analytics-ios/actions.html?lang=fr), [trackAction() OTT](/help/sdk-implement/analytics-with-ott/track-app-actions.md)
 * Dans l’API Data Insertion : [balise linktype](https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md)
 
 ## Conditions
