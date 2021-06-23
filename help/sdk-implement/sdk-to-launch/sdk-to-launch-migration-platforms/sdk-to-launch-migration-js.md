@@ -3,9 +3,9 @@ title: 'Migration du SDK Media autonome vers Adobe Launch : Web (JS)'
 description: Instructions et exemples de code pour faciliter la migration du SDK Media vers Launch.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Video, puis cliquez sur [!UICONTROL Installer].
 
    ![](assets/launch_config_js.png)
 
-[Guide de l’utilisateur de Launch : installation et configuration de l’extension média](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html#install-and-configure-the-ma-extension)
+[Guide de l’utilisateur de Launch : installation et configuration de l’extension média](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=fr#install-and-configure-the-ma-extension)
 
 ## Différences dans la création du dispositif de suivi
 
@@ -122,5 +122,5 @@ Transmettez un objet délégué à `get-instance` qui expose les fonctions `getQ
 
 ### Launch
 
-* [Présentation de Launch](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html)
-* [Extension Media Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html)
+* [Présentation de Launch](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.html)
+* [Extension Media Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=fr)
