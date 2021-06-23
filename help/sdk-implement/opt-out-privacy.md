@@ -4,9 +4,9 @@ description: Comment gérer l’inclusion, l’exclusion et la confidentialité.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '356'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -16,8 +16,8 @@ ht-degree: 96%
 
 Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil spécifique :
 
-* **Applications mobiles -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de la bibliothèque `AdobeMobile`. Pour exclure le suivi, vous devez utiliser la bibliothèque `AdobeMobile`. Pour en savoir plus sur les paramètres d’exclusion et de confidentialité de la bibliothèque `AdobeMobile`, consultez la rubrique [Paramètres d’exclusion et de confidentialité](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html).
-* **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. Pour plus d’informations sur l’exclusion et la confidentialité, consultez la rubrique [Service identité Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html).
+* **Applications mobiles -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de la bibliothèque `AdobeMobile`. Pour exclure le suivi, vous devez utiliser la bibliothèque `AdobeMobile`. Pour en savoir plus sur les paramètres d’exclusion et de confidentialité de la bibliothèque `AdobeMobile`, consultez la rubrique [Paramètres d’exclusion et de confidentialité](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=fr).
+* **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. Pour plus d’informations sur l’exclusion et la confidentialité, consultez la rubrique [Service identité Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr).
 * **Applications OTT (Chromecast, Roku) -** Les SDK OTT fournissent des API conformes au Règlement général sur la protection des données (RGPD) qui vous permettent de définir des indicateurs d’état `opt` pour la collecte et la transmission de données, ainsi que de récupérer des identités stockées localement.
 
    >[!NOTE]
