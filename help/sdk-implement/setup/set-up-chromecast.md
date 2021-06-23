@@ -4,9 +4,9 @@ description: Configuration de l’application du SDK Media pour implémentation 
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -20,14 +20,14 @@ La bonne réponse est « Chromecast », pour les raisons suivantes :
 * Les bibliothèques AppMeasurement et VisitorAPI du SDK JS standard ne sont pas certifiées pour fonctionner sur les plateformes OTT. Dans le SDK JS Chromecast, la bibliothèque Video Heartbeats (VHL), Analytics et VisitorAPI sont tous intégrés au SDK unique, unifié et certifié pour Chromecast.
 * Le SDK Chromecast est beaucoup plus léger que le SDK JS standard. Ce point est essentiel pour le matériel bas de gamme utilisé par les plateformes OTT.
 
-## Conditions préalables
+## Conditions préalables 
 
 * **Obtention de paramètres de configuration valides pour Heartbeats** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Media Analytics.
 * **Fournissez les informations suivantes à votre lecteur multimédia :**
    * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
    * *Une API qui fournit des informations au lecteur* - Ces informations incluent des éléments tels que le nom du média et la position de la tête de lecture.
 
-Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Au départ, le service Mobile intègre de manière transparente les fonctionnalités d’analyse et de ciblage des applications pour les solutions Adobe Analytics et Adobe Target. Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)
+Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Au départ, le service Mobile intègre de manière transparente les fonctionnalités d’analyse et de ciblage des applications pour les solutions Adobe Analytics et Adobe Target. Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=fr)
 
 Le kit SDK Chromecast 2.x pour les solutions Experience Cloud vous permet de mesurer les applications Chromecast écrites dans JavaScript, d’exploiter et de collecter les données des utilisateurs grâce à la gestion de l’audience, et de mesurer l’engagement vidéo au moyen de pulsations vidéo.
 
