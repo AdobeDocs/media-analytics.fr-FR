@@ -3,7 +3,7 @@ title: Qu’est-ce que l’activation d’Adobe Audience Manager ?
 description: Apprenez à lier les actions d’application aux données de suivi multimédia sans avoir besoin de règles de traitement supplémentaires ni de variables personnalisées.
 exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Adobe Audience Manager (AAM), une plateforme de gestion des données (DMP), vous permet de rassembler vos ressources de données d’audience, et ainsi de collecter facilement des informations commercialement pertinentes sur les visiteurs du site, de créer des segments pouvant faire l’objet d’un marketing et de diffuser des publicités et du contenu ciblés auprès de la bonne audience.
 
-Avec AAM, vous n’êtes pas lié à une plateforme de vendeur de données, d’échange ou côté demande. De plus, AAM est entièrement indépendant par rapport aux ressources de données de vos partenaires. Grâce à l’accès à plusieurs sources de données, AAM offre aux éditeurs numériques la possibilité d’utiliser une grande variété de données tierces et notre Co-op de données privées. Pour en savoir plus sur AAM, consultez la documentation AAM [Documentation du produit Audience Manager](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.translate.html).
+Avec AAM, vous n’êtes pas lié à une plateforme de vendeur de données, d’échange ou côté demande. De plus, AAM est entièrement indépendant par rapport aux ressources de données de vos partenaires. Grâce à l’accès à plusieurs sources de données, AAM offre aux éditeurs numériques la possibilité d’utiliser une grande variété de données tierces et notre Co-op de données privées. Pour en savoir plus sur AAM, consultez la documentation AAM [Documentation du produit Audience Manager](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.html).
 
 **Transfert de données de VA vers AAM** - Pour les publicités vidéo et le contenu vidéo, les mesures et les métadonnées collectées à l’aide de variables de solution (réservées) peuvent être envoyées automatiquement à AAM. Le transfert de données est disponible sur toutes les plateformes, y compris les plateformes de bureau, mobiles et OTT. Pour activer ce transfert de données côté serveur, vous devez contacter le service clientèle d’Adobe et demander l’activation de ce flux.
 
