@@ -1,16 +1,18 @@
 ---
-title: Paramètres de requête
-description: Apprenez en plus sur les paramètres de requête des contenus en streaming Adobe Analytics.
+title: API de collecte de médias en flux continu � paramètres de requête
+description: '"Quels sont les paramètres de requête de l’API Media Collection, les clés de requête et les descriptions ?"'
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
-source-git-commit: 00e9992712034dc67072e09cce7819719c0371d1
-workflow-type: ht
-source-wordcount: '1297'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1307'
+ht-degree: 98%
 
 ---
 
-# Paramètres de requête {#request-parameters}
+# Paramètres de requête{#request-parameters}
 
 ## Données d’Analytics
 
