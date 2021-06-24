@@ -1,17 +1,18 @@
 ---
-title: Suivi des chapitres et des segments sur Android
-description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media sur Android.
+title: Découvrez comment effectuer le suivi des chapitres et des segments sur Android
+description: Découvrez l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media sur Android.
 uuid: 013815d7-4d9e-48f4-a2b9-3b70cb1149d3
 exl-id: ada2e2a7-1383-471c-9ce6-c82ea93fa79d
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '196'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '200'
+ht-degree: 89%
 
 ---
 
-# Suivi des chapitres et des segments sur Android {#track-chapters-and-segments-on-android}
+# Suivi des chapitres et des segments sur Android{#track-chapters-and-segments-on-android}
 
 >[!IMPORTANT]
 >
