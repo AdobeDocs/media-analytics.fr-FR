@@ -1,17 +1,18 @@
 ---
-title: Suivi de la recherche sur Roku
-description: Cette rubrique décrit l’implémentation du suivi des recherches à l’aide du SDK Media sur Roku.
+title: Découvrez comment effectuer le suivi de la recherche sur Roku
+description: Découvrez comment effectuer le suivi des événements Début de la recherche et Fin de la recherche à l’aide du SDK Media sur Roku.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '123'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
 
-# Suivi de la recherche sur Roku {#track-seeking-on-roku}
+# Suivi de la recherche sur Roku{#track-seeking-on-roku}
 
 >[!IMPORTANT]
 >
