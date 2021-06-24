@@ -1,17 +1,18 @@
 ---
-title: Suivi des publicités sur iOS
+title: Découvrez comment effectuer le suivi des publicités sur iOS
 description: Mettez en œuvre le suivi des publicités dans les applications iOS à l’aide du SDK Media.
 uuid: e979e679-cde5-4c30-8f34-867feceac13a
 exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '352'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
-# Suivi des publicités sur iOS {#track-ads-on-ios}
+# Suivi des publicités sur iOS{#track-ads-on-ios}
 
 >[!IMPORTANT]
 >
