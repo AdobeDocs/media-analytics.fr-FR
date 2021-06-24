@@ -1,17 +1,18 @@
 ---
 title: Suivi des états de l’application
-description: 'Les états d’application sont les différents écrans ou affichages de votre application, qui, lorsqu’ils sont affichés, doivent déclencher un appel trackState. '
+description: 'Les états d’application sont les différents écrans ou affichages de votre application. Découvrez comment effectuer le suivi de l’état de l’application dans votre application à l’aide de l’appel trackState . '
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '183'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 86%
 
 ---
 
-# Suivi des états d’application {#track-app-states}
+# Suivi des états de l’application{#track-app-states}
 
 Les états correspondent aux différents écrans ou affichages de votre application. Chaque fois qu’un nouvel état est affiché dans votre application, vous devez envoyer un appel `trackState`. Par exemple, lorsqu’un utilisateur navigue de la page d’accueil vers l’écran des détails de la vidéo, envoyez un appel `trackState`. Les états sont généralement consultés au moyen d’un rapport de cheminement afin de découvrir comment les utilisateurs naviguent dans votre application et les états les plus vus.
 
