@@ -1,17 +1,18 @@
 ---
-title: Schémas de validation JSON
-description: null
+title: Schémas de validation JSON des analyses de médias en flux continu
+description: Que sont les schémas de validation JSON des médias en flux continu et comment sont-ils utilisés pour déterminer les paramètres corrects du corps de la requête pour chaque type d’événement ?
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '55'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '84'
+ht-degree: 64%
 
 ---
 
-# Schémas de validation JSON {#json-validation-schemas}
+# Schémas de validation JSON{#json-validation-schemas}
 
 Le serveur principal Media Analytics valide les paramètres de requête pour chaque type d’événement à l’aide des schémas de validation JSON. Ces schémas sont à votre disposition et constituent l’autorité actuelle concernant les types de paramètre utilisés dans l’API MA.
 
