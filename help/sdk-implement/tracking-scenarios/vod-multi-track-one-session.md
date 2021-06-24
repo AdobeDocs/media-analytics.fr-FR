@@ -1,17 +1,18 @@
 ---
 title: Un dispositif de suivi VOD pour plusieurs sessions
-description: Exemple d’utilisation d’un dispositif de suivi pour effectuer le suivi de plusieurs sessions à l’aide du SDK Media.
+description: Affichez un exemple d’utilisation d’un dispositif de suivi pour effectuer le suivi de plusieurs sessions à l’aide du SDK Media.
 uuid: 355c83f4-52bd-4bdd-92dc-ab506e412d0a
 exl-id: 72edb484-0d45-446e-bda3-cda9e2272e7e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '183'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 87%
 
 ---
 
-# Un dispositif de suivi VOD pour plusieurs sessions {#vod-one-tracker-for-multiple-sessions}
+# Un dispositif de suivi VOD pour plusieurs sessions{#vod-one-tracker-for-multiple-sessions}
 
 ## Scénario {#scenario}
 
