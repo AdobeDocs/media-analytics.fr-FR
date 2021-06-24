@@ -1,17 +1,18 @@
 ---
-title: Suivi de la recherche sur Android
-description: Cette rubrique décrit l’implémentation du suivi des recherches à l’aide du SDK Media sur Android.
+title: Découvrez comment effectuer le suivi de la recherche sur Android
+description: Découvrez comment effectuer le suivi des événements Début de la recherche et Fin de la recherche à l’aide du SDK Media sur Android.
 uuid: 65addd99-eebf-4a80-8b4a-d5fbdff8ab06
 exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '123'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '132'
+ht-degree: 82%
 
 ---
 
-# Suivi de la recherche sur Android {#track-seeking-on-android}
+# Suivi de la recherche sur Android{#track-seeking-on-android}
 
 >[!IMPORTANT]
 >
