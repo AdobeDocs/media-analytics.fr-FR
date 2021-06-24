@@ -1,17 +1,18 @@
 ---
-title: Lecture VOD avec publicités preroll
-description: Exemple de suivi du contenu VOD contenant des publicités preroll à l’aide du SDK Media.
+title: '"Lecture VOD avec publicités preroll"'
+description: '"Affichez un exemple de suivi du contenu VOD contenant des publicités preroll à l’aide du SDK Media."'
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '526'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 95%
 
 ---
 
-# Lecture VOD avec publicités preroll {#vod-playback-with-pre-roll-ads}
+# Lecture VOD avec publicités preroll{#vod-playback-with-pre-roll-ads}
 
 Dans ce scénario, des publicités preroll ont été insérées avant le contenu principal. Sauf indication contraire, les appels réseau sont identiques à ceux du scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). L’appel réseau se produit simultanément, mais la charge utile est différente.
 
