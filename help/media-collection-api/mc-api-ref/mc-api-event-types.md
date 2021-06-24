@@ -1,17 +1,18 @@
 ---
-title: Types et descriptions d’événement
-description: Types et descriptions d’événement
+title: Types et descriptions d’événement de média en flux continu
+description: '"Quels sont les types et descriptions d’événement Media Collection ? "'
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '346'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 95%
 
 ---
 
-# Types et descriptions d’événement {#event-types-and-descriptions}
+# Types et descriptions d’événement{#event-types-and-descriptions}
 
 ## sessionStart
 
