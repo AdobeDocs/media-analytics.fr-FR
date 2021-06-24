@@ -1,17 +1,18 @@
 ---
-title: Requête events
-description: Requête events
+title: API de collecte de médias en flux continu � point de terminaison de la demande d’événements
+description: '"Quels sont les paramètres et les réponses des points de terminaison de requête des événements de l’API Media Collection ?"'
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '246'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 92%
 
 ---
 
-# Requête events {#events-request}
+# Requête events{#events-request}
 
 ```
 POST 
