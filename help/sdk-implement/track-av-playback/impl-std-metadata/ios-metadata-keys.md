@@ -1,17 +1,18 @@
 ---
-title: Clés de métadonnées iOS
-description: Cette rubrique décrit les clés de métadonnées iOS disponibles.
+title: Explication des clés de métadonnées iOS
+description: Découvrez les clés de métadonnées iOS disponibles.
 uuid: 8eb90111-c9dd-4ca7-9766-91530a8ae6cf
 exl-id: a4bbbcba-9644-486a-95f4-65e5dc57623e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '115'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 90%
 
 ---
 
-# Clés de métadonnées iOS {#ios-metadata-keys}
+# Clés de métadonnées iOS{#ios-metadata-keys}
 
 [Référence de l’API iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/)
 
