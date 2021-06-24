@@ -1,13 +1,14 @@
 ---
 title: Descriptions des paramètres Heartbeat
-description: Liste des paramètres Heartbeat que Adobe collecte et traite sur le serveur Media Analytics (pulsations).
+description: Explorez les paramètres de pulsation que Adobe collecte et traite sur le serveur Media Analytics (pulsations).
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '866'
-ht-degree: 100%
+feature: '"Media Analytics, Variables"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '813'
+ht-degree: 79%
 
 ---
 
@@ -25,7 +26,7 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 | l:event:duration | SDK Media | (Obligatoire)<br/><br/>Cette valeur est définie en interne (en millisecondes) par le SDK Media et non par le lecteur. Elle permet de calculer les mesures de temps passé sur le serveur principal. Par exemple, a.media.totalTimePlayed est calculé en tant que somme de la durée de toutes les pulsations Play (type=play) générées. <br/>*Remarque :* ce paramètre est défini sur 0 pour certains événements, car il s’agit d’« événements de changement d’état » (par exemple, type=complete, type=chapter_complete ou type=bitrate_change). |
 | l:event:playhead | VideoInfo | (Obligatoire)<br/><br/>Curseur de lecture présent dans la ressource active (principale ou publicité) lorsque l’événement a été enregistré. |
 | s:event:sid | SDK Media | (Obligatoire)<br/><br/>ID de session (chaîne générée de manière aléatoire). Tous les événements d’une même session (vidéo + publicités) doivent être identiques. |
-| l:asset:length / l:asset:length <br/>(renommé à partir de la durée) | VideoInfo | (Obligatoire)<br/><br/>Durée de la ressource vidéo de la ressource principale. |
+| l:asset:duration / l:asset:length <br/>(renommé à partir de la durée) | VideoInfo | (Obligatoire)<br/><br/>Durée de la ressource vidéo de la ressource principale. |
 | s:asset:publisher | MediaHeartbeatConfig | (Obligatoire)<br/><br/>Éditeur de la ressource. |
 | s:asset:video_id | VideoInfo | (Obligatoire)<br/><br/>Identifiant qui identifie de manière unique la vidéo dans le catalogue de l’éditeur. |
 | s:asset:type | SDK Media | (Obligatoire)<br/><br/>Type de ressource (principale ou publicité). |
@@ -41,7 +42,7 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 | h:sc:ssl | MediaHeartbeatConfig | (Obligatoire)<br/><br/>Indique si le trafic s’effectue par HTTPS (s’il est défini sur 1) ou par HTTP (s’il est défini sur 0). |
 | s:sp:ovp | MediaHeartbeatConfig | (Facultatif)<br/><br/>Défini sur « primetime » pour les lecteurs Primetime ou sur l’OVP réel pour les autres lecteurs. |
 | s:sp:sdk | MediaHeartbeatConfig | (Obligatoire)<br/><br/>Chaîne de version OVP. |
-| s:sp:player_name | VideoInfo | (Obligatoire)<br/><br/>Nom du lecteur vidéo (logiciel du lecteur réel, sert à identifier le lecteur). |
+| s:sp:nom_du_lecteur | VideoInfo | (Obligatoire)<br/><br/>Nom du lecteur vidéo (logiciel du lecteur réel, sert à identifier le lecteur). |
 | s:sp:channel | MediaHeartbeatConfig | (Facultatif)<br/><br/>Canal sur lequel l’utilisateur visionne le contenu. Pour une application mobile, nom de l’application. Pour un site web, nom du domaine. |
 | s:sp:hb_version | SDK Media | (Obligatoire)<br/><br/>Numéro de version de la bibliothèque du SDK Media qui émet l’appel. |
 | l:stream:bitrate | QoSInfo | (Obligatoire)<br/><br/>Valeur actuelle du débit de diffusion (en bit/s). |
@@ -69,7 +70,7 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 | Nom | Source de données | Description   |
 | ---  | --- | --- |
 | s:stream:chapter_sid | SDK Media | (Obligatoire)<br/><br/>Identifiant unique associé à l’instance de lecture du chapitre. <br/> **Remarque :** Un chapitre peut être lu à plusieurs reprises en raison des opérations de recherche vers l’arrière effectuées par l’utilisateur. |
-| s:stream:chapter_name | ChapterInfo | (Facultatif)<br/><br/>Nom convivial (c-à-d., lisible par un humain) du chapitre. |
+| s:stream:nom_chapitre | ChapterInfo | (Facultatif)<br/><br/>Nom convivial (c-à-d., lisible par un humain) du chapitre. |
 | s:stream:chapter_id | SDK Media | (Obligatoire)<br/><br/>ID unique du chapitre. Cette valeur est calculée automatiquement à partir de la formule suivante : <br/>`MD5(video_id) +`<br/>` "_" +`<br/>`chapter_pos` |
 | l:stream:chapter_pos | ChapterInfo | (Obligatoire)<br/><br/>Index du chapitre parmi la liste de chapitres (commençant par 1). |
 | l:stream:chapter_offset | ChapterInfo | (Obligatoire)<br/><br/>Décalage du chapitre (exprimé en secondes) à l’intérieur du contenu principal, à l’exception des publicités. |
