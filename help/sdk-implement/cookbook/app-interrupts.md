@@ -1,17 +1,18 @@
 ---
 title: Gestion des interruptions de l’application lors de la lecture
-description: Comment gérer les interruptions du suivi pendant la lecture du média.
+description: Découvrez comment gérer les interruptions du suivi pendant la lecture du média.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '366'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 95%
 
 ---
 
-# Gestion des interruptions de l’application lors de la lecture {#handling-application-interrupts-during-playback}
+# Gestion des interruptions de l’application lors de la lecture{#handling-application-interrupts-during-playback}
 
 Dans une application multimédia, la lecture peut être interrompue de différentes façons : par exemple lorsqu’un utilisateur appuie sur le bouton de pause ou place l’application en arrière-plan. Quelle que soit la cause de l’interruption de la lecture multimédia, les instructions de suivi sont les mêmes :
 
@@ -22,7 +23,7 @@ Dans une application multimédia, la lecture peut être interrompue de différen
 >
 >L’équipe médias Analytics a déjà vu des clients qui appelaient `trackSessionStart` lorsque leur application revenait au premier plan. En procédant ainsi, la durée totale de lecture reprendra à zéro et vous perdrez les marqueurs de progression, segments, etc. À la place, appelez `trackPlay` lorsque l’application revient au premier plan et/ou que la lecture du média reprend.
 
-## FAQ sur la gestion des interruptions de l’application : {#faq-about-handling-application-interrupts}
+## FAQ sur la gestion des interruptions de l’application :  {#faq-about-handling-application-interrupts}
 
 * _Pendant combien de temps une application doit-elle être placée en arrière-plan avant que la session ne se ferme ?_
 
