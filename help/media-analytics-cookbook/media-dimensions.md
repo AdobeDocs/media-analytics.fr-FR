@@ -2,10 +2,11 @@
 title: Qu’est-ce que l’attribution du flux média ?
 description: Apprenez à lier les actions d’application aux données de suivi multimédia sans avoir besoin de règles de traitement supplémentaires ni de variables personnalisées.
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '231'
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '233'
 ht-degree: 100%
 
 ---
