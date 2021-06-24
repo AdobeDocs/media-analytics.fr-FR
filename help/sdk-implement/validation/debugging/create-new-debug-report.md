@@ -1,17 +1,18 @@
 ---
 title: Création d’un nouveau rapport de débogage
-description: Cette rubrique explique comment créer un nouveau rapport de débogage.
+description: Découvrez comment créer un nouveau rapport de débogage.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
 source-wordcount: '205'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
-# Création d’un nouveau rapport de débogage {#create-a-new-debug-report}
+# Création d’un nouveau rapport de débogage{#create-a-new-debug-report}
 
 Pour créer un nouveau rapport de débogage :
 
