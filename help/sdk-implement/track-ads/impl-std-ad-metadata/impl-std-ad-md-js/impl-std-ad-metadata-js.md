@@ -1,17 +1,18 @@
 ---
-title: Implémentation de métadonnées d’annonce publicitaire standard à l’aide de JavaScript 2.x
+title: Découvrez comment mettre en oeuvre des métadonnées de publicité standard à l’aide de JavaScript 2.x
 description: Comment utiliser des métadonnées d’annonce publicitaire standard dans le suivi publicitaire au sein d’un navigateur à l’aide d’applications JavaScript 2.x.
 uuid: 4ea10c5a-ae2b-45d0-aad3-9f10028ee7c3
 exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '68'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '72'
+ht-degree: 87%
 
 ---
 
-# Implémentation de métadonnées d’annonce publicitaire standard à l’aide de JavaScript 2.x {#implement-standard-ad-metadata-on-javascript}
+# Implémentation de métadonnées d’annonce publicitaire standard à l’aide de JavaScript 2.x{#implement-standard-ad-metadata-on-javascript}
 
 ## Constantes publicitaires
 
