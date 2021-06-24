@@ -3,15 +3,16 @@ title: Suivi des actions de l’application
 description: Les actions de l’application sont des événements qui se produisent dans l’application que vous souhaitez mesurer.
 uuid: 9cdc048a-419a-4725-bd61-6ca6d909cf10
 exl-id: 88b7d540-67b7-4ec1-8273-02e34853bf60
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '132'
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '134'
 ht-degree: 100%
 
 ---
 
-# Suivi des actions d’application {#track-app-actions}
+# Suivi des actions de l’application{#track-app-actions}
 
 Les actions sont des événements qui se produisent votre application que vous souhaitez mesurer.
 
