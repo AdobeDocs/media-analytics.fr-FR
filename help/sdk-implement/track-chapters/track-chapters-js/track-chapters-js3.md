@@ -1,16 +1,17 @@
 ---
-title: Suivi des chapitres et des segments à l’aide de JavaScript 3.x
-description: Cette rubrique décrit l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media dans les applications de navigateur (JS).
+title: Découvrez comment effectuer le suivi des chapitres et des segments à l’aide de JavaScript 3.x
+description: Découvrez l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media dans les applications de navigateur (JS).
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '217'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '220'
+ht-degree: 89%
 
 ---
 
-# Suivi des chapitres et des segments à l’aide de JavaScript 3.x {#track-chapters-and-segments-on-javascript}
+# Suivi des chapitres et des segments à l’aide de JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
 >[!IMPORTANT]
 >
