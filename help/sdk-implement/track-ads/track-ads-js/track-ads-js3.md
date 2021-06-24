@@ -1,16 +1,17 @@
 ---
-title: Suivi des annonces publicitaires à l’aide de JavaScript 3.x
+title: Découvrez comment effectuer le suivi des publicités à l’aide de JavaScript 3.x
 description: Mettez en œuvre le suivi des publicités dans les applications de navigateur (JS) à l’aide du SDK Media.
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '359'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 97%
 
 ---
 
-# Suivi des annonces publicitaires à l’aide de JavaScript 3.x {#track-ads-on-javascript}
+# Suivi des annonces publicitaires à l’aide de JavaScript 3.x{#track-ads-on-javascript}
 
 >[!IMPORTANT]
 >
