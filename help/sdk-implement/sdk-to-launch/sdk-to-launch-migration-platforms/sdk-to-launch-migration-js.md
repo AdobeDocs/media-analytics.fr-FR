@@ -1,11 +1,13 @@
 ---
-title: 'Migration du SDK Media autonome vers Adobe Launch : Web (JS)'
-description: Instructions et exemples de code pour faciliter la migration du SDK Media vers Launch.
+title: '"Migration du SDK Media autonome vers Adobe Launch - Web (JS)"'
+description: Découvrez comment migrer du SDK Media vers Launch pour JS.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
