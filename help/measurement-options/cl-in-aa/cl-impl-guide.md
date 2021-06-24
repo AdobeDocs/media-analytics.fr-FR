@@ -1,12 +1,14 @@
 ---
-title: Guide de mise en œuvre d’un lien personnalisé
-description: null
+title: Explication de la mise en oeuvre d’un lien personnalisé
+description: Découvrez comment mettre en oeuvre le suivi des liens personnalisés dans Streaming Media Analytics.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
-source-git-commit: e56ce73316d9cf00193220df8959a489fc3f2124
-workflow-type: ht
-source-wordcount: '189'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 92%
 
 ---
 
