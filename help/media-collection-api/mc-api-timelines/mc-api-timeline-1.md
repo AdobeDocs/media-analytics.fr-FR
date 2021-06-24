@@ -1,17 +1,18 @@
 ---
-title: 'Chronologie 1 : Regarder jusqu’à la fin du contenu'
-description: null
+title: En savoir plus sur les chronologies de suivi � la vue jusqu’à la fin du contenu
+description: Explorez la chronologie du curseur de lecture et les actions de l’utilisateur correspondant �. Découvrez les détails de chaque action et des demandes qui l’accompagnent.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '1164'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '1193'
+ht-degree: 97%
 
 ---
 
-# Chronologie 1 : Regarder jusqu’à la fin du contenu {#timeline-view-to-end-of-content}
+# Chronologie 1 : Regarder jusqu’à la fin du contenu{#timeline-view-to-end-of-content}
 
 ## VOD, publicités preroll, mise en pause, mise en mémoire tampon, affichage du contenu jusqu’à la fin
 
