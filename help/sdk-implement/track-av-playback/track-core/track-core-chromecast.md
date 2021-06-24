@@ -1,17 +1,18 @@
 ---
-title: Suivi de la lecture principale sur Chromecast
-description: Cette rubrique décrit la mise en œuvre du suivi principal à l’aide du SDK Media sur Chromecast.
+title: Découvrez comment effectuer le suivi de la lecture principale sur Chromecast
+description: Découvrez comment mettre en oeuvre le suivi principal à l’aide du SDK Media sur Chromecast.
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '661'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '664'
+ht-degree: 96%
 
 ---
 
-# Suivi de la lecture principale sur Chromecast {#track-core-playback-on-chromecast}
+# Suivi de la lecture principale sur Chromecast{#track-core-playback-on-chromecast}
 
 >[!IMPORTANT]
 >
