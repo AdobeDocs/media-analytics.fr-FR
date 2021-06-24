@@ -1,17 +1,18 @@
 ---
 title: Envoi de données QoE
-description: Envoi de données QoE
+description: Découvrez comment envoyer des événements avec une clé JSON qoeData.
 uuid: 52a02d92-195d-4ce8-8ce3-585ed68969f9
 exl-id: 41a20410-78e6-481d-bd5c-0febadb290d8
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '49'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '57'
+ht-degree: 84%
 
 ---
 
-# Envoi de données QoE {#sending-qoe-data}
+# Envoi de données QoE{#sending-qoe-data}
 
 Chaque événement peut être accompagné d’une clé JSON supplémentaire appelée `qoeData`, qui est placée à côté de la clé `params` dans le corps de la requête JSON.
 
