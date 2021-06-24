@@ -1,17 +1,18 @@
 ---
-title: Suivi de la mise en mémoire tampon sur Android
-description: Décrit le suivi des événements de mise en mémoire tampon sur Android.
+title: Découvrez comment effectuer le suivi de la mise en mémoire tampon sur Android
+description: Découvrez comment effectuer le suivi des événements de mise en mémoire tampon sur Android.
 uuid: f16ce76d-1db3-4b51-8c98-54cb781f71d7
 exl-id: fcea2ef8-53c5-41fb-8b70-06599c2d9cbf
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
 
-# Suivi de la mise en mémoire tampon sur Android {#track-buffering-on-android}
+# Suivi de la mise en mémoire tampon sur Android{#track-buffering-on-android}
 
 >[!IMPORTANT]
 >Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
