@@ -1,13 +1,14 @@
 ---
-title: Migration de Milestone vers Media Analytics
-description: Migration de Milestone vers Media Analytics
+title: Découvrez comment migrer de Milestone à Media Analytics
+description: Découvrez comment modifier les variables Milestone en mesures Media Analytics et les méthodes du module Milestone en syntaxe Media Analytics.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '675'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '692'
+ht-degree: 96%
 
 ---
 
