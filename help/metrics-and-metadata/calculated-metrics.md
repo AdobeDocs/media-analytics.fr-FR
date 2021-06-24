@@ -1,17 +1,18 @@
 ---
 title: Mesures calculées
-description: Mesures calculées
+description: Découvrez les mesures calculées et les formules de mesure des médias en flux continu Adobe.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '192'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '198'
+ht-degree: 78%
 
 ---
 
-# Mesures calculées {#calculated-metrics}
+# Mesures calculées{#calculated-metrics}
 
 >[!NOTE]
 >
@@ -21,7 +22,7 @@ ht-degree: 100%
 |---|---|---|
 | Nombre moyen de publicités par flux de média | Démarrages de publicité par démarrages de média | `Ad Starts / Media Starts` |
 | Nombre moyen de chapitres par flux de média | Démarrages de chapitre par démarrages de média | `Chapter Start / Media Starts` |
-| Temps moyen passé sur le média | Temps total passé par démarrages de média (HH:MM:SS) | `Media Time Spent / Media Starts` |
+| Temps moyen passé sur le média | Durée totale passée par démarrage de média (HH:MM:SS) | `Media Time Spent / Media Starts` |
 | Temps moyen passé sur le contenu | Temps passé sur le contenu par démarrage de contenu (HH:MM:SS) | `Content Time Spent / Content Start` |
 | Temps moyen passé sur la publicité | Temps passé sur la publicité par démarrage de publicité (HH:MM:SS) | `Ad Time Spent / Ad Start` |
 | Temps moyen passé par chapitre | Temps passé par chapitre par démarrage de chapitre (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
