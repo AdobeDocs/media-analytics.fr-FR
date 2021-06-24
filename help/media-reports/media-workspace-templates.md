@@ -1,17 +1,18 @@
 ---
 title: Modèles d’espaces de travail multimédia
-description: null
+description: Utilisez les modèles d’espace de travail Media pour analyser vos données de suivi. Choisissez des modèles standard pour Acquisition ou Streaming Media ou créez vos propres modèles personnalisés.
 uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '187'
-ht-degree: 100%
+feature: '"Media Analytics, Notions de base sur Workspace"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '214'
+ht-degree: 87%
 
 ---
 
-# Modèles d’espaces de travail multimédia {#media-workspace-templates}
+# Modèles d’espaces de travail multimédia{#media-workspace-templates}
 
 Adobe Analytics Workspace vous permet de configurer rapidement des tableaux de bord pour analyser vos données de suivi. Lorsque vous créez un projet, ou lorsque vous accédez à Workspace pour gérer un projet existant, vous pouvez choisir entre des modèles standard qui couvrent les scénarios de suivi général courants, par exemple Acquisition, Consommation des médias en flux continu, et plus encore. Vous pouvez également créer, modifier et enregistrer vos propres modèles personnalisés.
 
