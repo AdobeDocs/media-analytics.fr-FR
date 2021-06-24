@@ -1,11 +1,13 @@
 ---
-title: Périphériques et plateformes pris en charge
-description: Adobe Analytics for Streaming Media garantit que chaque flux média est collecté et transmis à tous les appareils.
+title: En savoir plus sur les périphériques et plateformes pris en charge
+description: '"Découvrez les principaux appareils tels que iOS, Android, appareils OTT et navigateurs JavaScript pris en charge par Adobe Analytics for Streaming Media."'
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '333'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '341'
+ht-degree: 92%
 
 ---
 
