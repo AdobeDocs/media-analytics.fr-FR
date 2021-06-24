@@ -1,16 +1,18 @@
 ---
 title: Contrôle de l’ordre des événements
-description: Contrôle de l’ordre des événements
+description: Découvrez comment contrôler l’ordre des événements et comment, dans certains cas, les événements sont réorganisés en fonction de l’horodatage fourni dans l’objet playerTime .
 uuid: 007fccc6-be72-4b79-826d-588c957ccf15
 exl-id: c0cac319-2bea-42c8-8674-641dfbb44fa2
-source-git-commit: 27694ec83de89980404df7a7cc77fa42b3d1a751
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 92%
 
 ---
 
-# Contrôle de l’ordre des événements {#controlling-the-order-of-events}
+# Contrôle de l’ordre des événements{#controlling-the-order-of-events}
 
 Le suivi vidéo en flux continu est une opération qui dépend énormément du temps. Les appels de suivi de l’API de collecte de médias arrivent parfois au serveur principal dans le désordre. Dans un tel cas, le serveur principal tente de mettre en file d’attente et de réorganiser les événements en fonction de l’horodatage fourni et de l’objet `playerTime`.  Cela se produit avec certaines limites. Actuellement, la réorganisation peut échouer si les délais entre les appels dans le désordre dépassent une seconde. Dans les futures mises à jour, le « délai acceptable » peut être optimisé et configurable.
 
