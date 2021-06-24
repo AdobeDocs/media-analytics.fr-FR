@@ -1,17 +1,18 @@
 ---
-title: Suivi des erreurs à l’aide de JavaScript 2.x
-description: Cette rubrique décrit l’implémentation du suivi des erreurs à l’aide du SDK Media dans les applications de navigateur (JS).
+title: Découvrez comment effectuer le suivi des erreurs à l’aide de JavaScript 2.x
+description: Découvrez comment implémenter le suivi des erreurs à l’aide du SDK Media dans les applications de navigateur (JS).
 uuid: 5a4fc5df-2677-4189-92af-5cd074847b39
 exl-id: b3012bce-4b92-408e-8b7a-57ae9d52e93d
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '96'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '100'
+ht-degree: 79%
 
 ---
 
-# Suivi des erreurs à l’aide de JavaScript 2.x {#track-errors-on-javascript}
+# Suivi des erreurs à l’aide de JavaScript 2.x{#track-errors-on-javascript}
 
 >[!IMPORTANT]
 >
