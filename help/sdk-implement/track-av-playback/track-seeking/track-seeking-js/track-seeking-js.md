@@ -1,17 +1,18 @@
 ---
-title: Suivi de la recherche à l’aide de JavaScript 2.x
-description: Cette rubrique décrit l’implémentation du suivi des recherches à l’aide du SDK Media dans les applications de navigateur (JS).
+title: Découvrez comment effectuer le suivi de la recherche à l’aide de JavaScript 2.x
+description: Découvrez comment effectuer le suivi des événements Début de la recherche et Fin de la recherche à l’aide du SDK Media dans les applications de navigateur (JS 2.x).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '127'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 80%
 
 ---
 
-# Suivi de la recherche à l’aide de JavaScript 2.x {#track-seeking-on-javascript}
+# Suivi de la recherche à l’aide de JavaScript 2.x{#track-seeking-on-javascript}
 
 >[!IMPORTANT]
 >
