@@ -1,17 +1,18 @@
 ---
 title: Paramètres d’état du lecteur
-description: Cette rubrique décrit les paramètres du suivi de l’état du lecteur.
+description: '"Découvrez les paramètres de suivi de l’état du lecteur pour le mode Plein écran, la légende de fermeture, le mode silencieux et l’image dans les propriétés de l’image."'
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '2236'
-ht-degree: 100%
+feature: '"Media Analytics, Variables"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '2249'
+ht-degree: 99%
 
 ---
 
-# Paramètres d’état du lecteur {#player-state-parameters}
+# Paramètres d’état du lecteur{#player-state-parameters}
 
 Cette rubrique présente une liste de données concernant l’état du lecteur collectées par Adobe au moyen de variables de solution.
 
