@@ -1,17 +1,18 @@
 ---
-title: Mise en œuvre de métadonnées standard sur Android
-description: Décrit la définition des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi sur Android.
+title: Découvrez comment mettre en oeuvre des métadonnées standard sur Android
+description: Découvrez comment définir des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi sur Android.
 uuid: c48b4190-b062-4c4e-9c40-8dde4598a50e
 exl-id: 31afd8b5-0f23-4025-afcb-6df906cf6be5
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '101'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 76%
 
 ---
 
-# Mise en œuvre de métadonnées standard sur Android {#implement-standard-metadata-on-android}
+# Mise en œuvre de métadonnées standard sur Android{#implement-standard-metadata-on-android}
 
 ## Constantes de métadonnées standard
 
