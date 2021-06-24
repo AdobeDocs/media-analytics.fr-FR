@@ -1,17 +1,18 @@
 ---
-title: Suivi de la lecture principale sur Roku
-description: Cette rubrique décrit la mise en œuvre du suivi de base à l’aide du SDK Media sur Roku.
+title: Découvrez comment effectuer le suivi de la lecture principale sur Roku
+description: Découvrez comment mettre en oeuvre le suivi principal à l’aide du SDK Media sur Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-translation-type: ht
-source-git-commit: d11f68d0967dc27a6866a9b5a39c6b84ac9532e4
-workflow-type: ht
-source-wordcount: '681'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '684'
+ht-degree: 97%
 
 ---
 
-# Suivi de la lecture principale sur Roku {#track-core-playback-on-roku}
+# Suivi de la lecture principale sur Roku{#track-core-playback-on-roku}
 
 >[!IMPORTANT]
 >Cette documentation aborde le suivi dans la version 2.x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
@@ -100,7 +101,7 @@ ht-degree: 100%
 
    * **Métadonnées standard**
 
-      [Mise en œuvre de métadonnées standard sur Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Mise en œuvre de métadonnées standard sur Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Il est facultatif de joindre un objet de métadonnées vidéo standard à l’objet multimédia.
