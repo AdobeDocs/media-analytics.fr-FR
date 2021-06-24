@@ -1,17 +1,18 @@
 ---
 title: Reprise des sessions inactives
-description: Comment gérer la reprise d’une session inactive.
+description: Découvrez comment gérer la reprise d’une session inactive.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '157'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '160'
+ht-degree: 95%
 
 ---
 
-# Reprise des sessions inactives {#resuming-inactive-sessions}
+# Reprise des sessions inactives{#resuming-inactive-sessions}
 
 ## Longues pauses
 
