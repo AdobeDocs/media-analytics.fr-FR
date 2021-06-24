@@ -1,13 +1,14 @@
 ---
 title: Test 2 Interruption du média
-description: Cette rubrique décrit le test d’interruption du média utilisé dans la validation.
+description: Découvrez le test d’interruption du média utilisé dans la validation.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '244'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 96%
 
 ---
 
