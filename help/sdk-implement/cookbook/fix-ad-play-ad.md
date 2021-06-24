@@ -1,13 +1,14 @@
 ---
-title: Résolution des appels main:play apparaissant entre les publicités
-description: Comment gérer les appels main:play inattendus entre les publicités.
+title: Résolution Du Jeu Principal Apparaissant Entre Les Publicités
+description: '"Découvrez comment gérer les appels main:play inattendus entre les publicités."'
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '448'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '451'
+ht-degree: 96%
 
 ---
 
