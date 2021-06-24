@@ -1,17 +1,18 @@
 ---
 title: Contenu principal en direct
-description: Exemple de suivi du contenu en direct à l’aide du SDK Media.
+description: Découvrez un exemple de suivi du contenu en direct à l’aide du SDK Media.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '528'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 96%
 
 ---
 
-# Contenu principal en direct {#live-main-content}
+# Contenu principal en direct{#live-main-content}
 
 ## Scénario {#scenario}
 
