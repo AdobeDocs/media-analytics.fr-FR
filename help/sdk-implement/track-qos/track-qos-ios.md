@@ -1,17 +1,18 @@
 ---
-title: Suivi de la qualité de l’expérience sur iOS
-description: Cette rubrique décrit l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur iOS.
+title: Découvrez comment suivre la qualité de l’expérience sur iOS
+description: '"Découvrez comment mettre en oeuvre le suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur iOS."'
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '154'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '158'
+ht-degree: 84%
 
 ---
 
-# Suivi de la qualité de l’expérience sur iOS {#track-quality-of-experience-on-ios}
+# Suivi de la qualité de l’expérience sur iOS{#track-quality-of-experience-on-ios}
 
 >[!IMPORTANT]
 >
