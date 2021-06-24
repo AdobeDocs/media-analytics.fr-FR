@@ -1,12 +1,13 @@
 ---
 title: À propos des états standards et personnalisés
-description: Cette rubrique décrit la fonctionnalité de suivi de l’état du lecteur, y compris les exigences et les instructions relatives à la mise en œuvre et à la création de rapports portant sur les états du lecteur standards et personnalisés.
+description: Découvrez la fonctionnalité de suivi de l’état du lecteur, y compris les exigences et les instructions relatives à la mise en oeuvre et à la création de rapports sur les états du lecteur standard et personnalisés.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '280'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '281'
+ht-degree: 92%
 
 ---
 
