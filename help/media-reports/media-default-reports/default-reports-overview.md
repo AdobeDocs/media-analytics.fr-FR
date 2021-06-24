@@ -1,17 +1,18 @@
 ---
 title: Aperçu des rapports par défaut
-description: Aperçu des rapports par défaut
+description: '"Découvrez les types de rapports et les mesures utilisés pour effectuer le suivi multimédia sur votre site web. Explorez les rapports de style tableau de bord disponibles avec le module Media Core."'
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '328'
-ht-degree: 100%
+feature: '"Notions de base sur Media Analytics, Reports & Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '355'
+ht-degree: 91%
 
 ---
 
-# Aperçu des rapports par défaut {#default-reports-overview}
+# Aperçu des rapports par défaut{#default-reports-overview}
 
 Adobe Analytics fournit plusieurs rapports et mesures pour effectuer le suivi des performances multimédia sur votre site web.
 
