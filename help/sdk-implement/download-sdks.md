@@ -1,16 +1,18 @@
 ---
-title: Téléchargement des SDK
+title: Liens d’accès à Téléchargement des SDK Media Analytics
 description: Liens vers les téléchargements du SDK pour les plateformes disponibles, dont Android, iOS, JavaScript, Chromecast et Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '513'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 98%
 
 ---
 
-# Téléchargement des SDK {#download-sdks}
+# Téléchargement des SDK{#download-sdks}
 
 >[!IMPORTANT]
 >
@@ -51,5 +53,5 @@ ht-degree: 100%
 | iOS | [SDK pour iOS v1.5.9](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/ios-v1.5.9) | [Prise en main - Media 1.x pour iOS](setup/vhl-dev-guide-v15_ios.pdf) |
 | JavaScript | [SDK pour JavaScript v1.5.7](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/js-v1.5.7) | [Prise en main - Media 1.x pour JS](setup/vhl-dev-guide-v15_js.pdf) |
 | TVML | [SDK pour TVML v1.0.0](https://github.com/Adobe-Marketing-Cloud/video-heartbeat/releases/tag/tvml-v1.0.0) | [Prise en main - Media 1.x pour TVML](setup/vhl_tvml.pdf) |
-| Apple TV | SDK pour Apple TV v1.0.0 (Contactez l’[Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir le SDK hérité 1.x) | [Prise en main - Media 1.x pour Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
-| Chromecast | SDK pour Chromecast v1.0.0 (Contactez l’[Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir le SDK hérité 1.x) | [Prise en main - Media 1.x pour Chromecast](setup/chromecast_1.x_sdk.pdf) |
+| Apple TV | SDK pour Apple TV v1.0.0 (Contactez l’[Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html) pour obtenir le SDK hérité 1.x) | [Prise en main - Media 1.x pour Apple TV](setup/vhl-dev-guide-v1x_appletv.pdf) |
+| Chromecast | SDK pour Chromecast v1.0.0 (Contactez l’[Assistance clientèle](https://helpx.adobe.com/marketing-cloud/contact-support.html) pour obtenir le SDK hérité 1.x) | [Prise en main - Media 1.x pour Chromecast](setup/chromecast_1.x_sdk.pdf) |
