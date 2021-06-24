@@ -1,17 +1,18 @@
 ---
 title: Validation des requêtes d’événement
-description: Validation des requêtes d’événement
+description: Découvrez comment utiliser le schéma de validation JSON pour valider les requêtes d’événement.
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '123'
+ht-degree: 90%
 
 ---
 
-# Validation des requêtes d’événement {#validating-event-requests}
+# Validation des requêtes d’événement{#validating-event-requests}
 
 Le corps de la requête JSON pour chaque type d’événement est validé sur le serveur principal avec les schémas JSON. Le corps de la réponse HTTP est renseigné avec un message d’erreur lorsque la validation échoue pour un appel API.
 
