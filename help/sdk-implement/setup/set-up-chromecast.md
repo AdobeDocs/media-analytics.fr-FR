@@ -1,16 +1,18 @@
 ---
-title: Configuration de Chromecast
-description: Configuration de l’application du SDK Media pour implémentation sur Chromecast.
+title: Configuration du SDK Media pour Chromecast
+description: Pour configurer l’application du SDK Media sur Chromecast, procédez comme suit.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
-source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
-source-wordcount: '628'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '639'
+ht-degree: 96%
 
 ---
 
-# Configuration de Chromecast {#set-up-chromecast}
+# Configuration de Chromecast{#set-up-chromecast}
 
 ## FAQ
 
