@@ -1,13 +1,14 @@
 ---
-title: Comparaison de code 1.x vers 2.x
-description: Ctte rubrique compare le code des versions 1.x et 2.x du SDK Media
+title: Comparaison de code v1.x vers v2.x
+description: Découvrez la différence entre le code des versions 1.x et 2.x du SDK Media.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '567'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '572'
+ht-degree: 96%
 
 ---
 
