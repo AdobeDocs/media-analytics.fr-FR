@@ -1,17 +1,18 @@
 ---
-title: Suivi de la mise en mémoire tampon sur Roku
-description: Décrit le suivi des événements de mise en mémoire tampon sur Roku.
+title: Découvrez comment effectuer le suivi de la mise en mémoire tampon sur Roku
+description: Découvrez comment effectuer le suivi des événements de mise en mémoire tampon sur Roku.
 uuid: 6666b270-9aa3-42ff-95a8-f12502022d47
 exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '112'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '119'
+ht-degree: 87%
 
 ---
 
-# Suivi de la mise en mémoire tampon sur Roku {#track-buffering-on-roku}
+# Suivi de la mise en mémoire tampon sur Roku{#track-buffering-on-roku}
 
 >[!IMPORTANT]
 >
