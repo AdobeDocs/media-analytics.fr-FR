@@ -1,17 +1,18 @@
 ---
-title: Mise en œuvre de métadonnées standard sur Roku
-description: Décrit la définition des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi sur Roku.
+title: Découvrez comment mettre en oeuvre des métadonnées standard sur Roku
+description: Découvrez comment définir des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi sur Roku.
 uuid: ae14d809-343f-452c-832a-f94bd3d83a90
 exl-id: 1552b16a-3c2d-4caa-b571-e6628f0b6866
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '58'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '65'
+ht-degree: 61%
 
 ---
 
-# Mise en œuvre de métadonnées standard sur Roku {#implement-standard-metadata-on-roku}
+# Mise en œuvre de métadonnées standard sur Roku{#implement-standard-metadata-on-roku}
 
 Instanciez un objet de métadonnées standard, renseignez les variables désirées et définissez l’objet de métadonnées sur l’objet Media Heartbeat.
 
