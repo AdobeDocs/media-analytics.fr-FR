@@ -1,17 +1,18 @@
 ---
-title: Suivi des publicités sur Android
+title: Découvrez comment effectuer le suivi des publicités sur Android
 description: Mettez en oeuvre le suivi des publicités dans les applications Android à l’aide du SDK Media.
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '352'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 98%
 
 ---
 
-# Suivi des publicités sur Android {#track-ads-on-android}
+# Suivi des publicités sur Android{#track-ads-on-android}
 
 >[!IMPORTANT]
 >
