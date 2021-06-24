@@ -1,12 +1,13 @@
 ---
 title: À propos du suivi de l’état du lecteur
-description: Cette rubrique décrit la fonctionnalité de suivi de l’état du lecteur, y compris les exigences et les directives relatives à la mise en œuvre et à la création de rapports portant sur les états du lecteur.
+description: Découvrez la fonctionnalité de suivi de l’état du lecteur, y compris les exigences et les instructions relatives à la mise en oeuvre et à la création de rapports sur les états du lecteur.
 exl-id: c678e182-74e4-4f46-8596-7be57e645c66
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '404'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '405'
+ht-degree: 95%
 
 ---
 
