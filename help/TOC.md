@@ -1,12 +1,11 @@
 ---
+product: adobe analytics
 audience: end-user
 user-guide-title: Adobe Analytics pour la diffusion de médias
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
-product: adobe analytics
 sub-product: media analytics
-translation-type: tm+mt
-source-git-commit: 82923f4ad4d6fd2394fe83850edca3ffd6a913ea
+source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -19,7 +18,7 @@ ht-degree: 100%
 + [Mesurer des médias en flux continu dans Adobe Analytics](media-overview.md)
 + [Périphériques et plateformes pris en charge](measurement-options/supported-devices.md)
 + Introduction aux médias en flux continu dans Analytics {#intro-to-ava}
-   + [Conditions préalables](intro-to-ava/prereqs.md)
+   + [Conditions préalables ](intro-to-ava/prereqs.md)
    + Chemins de mise en œuvre {#implementation-paths}
       + [Aperçu](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Côté client](intro-to-ava/implementation-paths/client-side-path.md)
@@ -29,7 +28,7 @@ ht-degree: 100%
             + [Migrer le jalon vers Media Analytics](measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
             + [Migration de Milestone vers les liens personnalisés](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Lien personnalisé dans Analytics {#cl-in-aa}
-            + [Guide de mise en œuvre d’un lien personnalisé](measurement-options/cl-in-aa/cl-impl-guide.md)
+            + [Guide de mise en œuvre d’un lien personnalisé ](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Activation d’Audience Manager](intro-to-ava/am-enablement.md)
@@ -43,8 +42,8 @@ ht-degree: 100%
       + Configuration de JavaScript {#setup-javascript}
          + [Configuration de JavaScript 2.x](sdk-implement/setup/setup-javascript/set-up-js-2.md)
          + [Configuration de JavaScript 3.x](sdk-implement/setup/setup-javascript/set-up-js-3.md)
-      + [Configuration de Chromecast ](sdk-implement/setup/set-up-chromecast.md)
-      + [Configuration de Roku ](sdk-implement/setup/set-up-roku.md)
+      + [Configuration de Chromecast](sdk-implement/setup/set-up-chromecast.md)
+      + [Configuration de Roku](sdk-implement/setup/set-up-roku.md)
    + Suivi de la lecture des médias en flux continu {#track-av-playback}
       + [Aperçu](sdk-implement/track-av-playback/track-core-overview.md)
       + Suivi de la lecture principale des médias en flux continu {#track-core}
@@ -158,7 +157,7 @@ ht-degree: 100%
    + Guide pas à pas {#cookbook}
       + [Guide pas à pas SDK](sdk-implement/cookbook/sdk-cookbook-overview.md)
       + [Gestion des interruptions de l’application lors de la lecture](sdk-implement/cookbook/app-interrupts.md)
-      + [Résolution des appels main:play apparaissant entre les publicités](sdk-implement/cookbook/fix-ad-play-ad.md)
+      + [Résolution des appels main:play apparaissant entre les publicités ](sdk-implement/cookbook/fix-ad-play-ad.md)
       + [Reprise des sessions inactives](sdk-implement/cookbook/resuming-inactive.md)
       + [Suivi dans SceneGraph (Roku)](sdk-implement/cookbook/sdk-track-scenegraph.md)
    + Migration de Media Analytics 1.x vers 2.x {#va-1x-to-2x}
