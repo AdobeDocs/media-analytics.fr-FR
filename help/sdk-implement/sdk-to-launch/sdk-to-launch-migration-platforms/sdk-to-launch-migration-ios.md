@@ -1,12 +1,13 @@
 ---
-title: 'Migration du SDK Media autonome vers Adobe Launch : iOS'
-description: Instructions et exemples de code pour faciliter la migration du SDK Media vers Launch pour iOS.
+title: '"Migration du SDK Media autonome vers Adobe Launch - iOS"'
+description: Découvrez comment migrer du SDK Media vers Launch pour iOS.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '364'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '362'
+ht-degree: 93%
 
 ---
 
