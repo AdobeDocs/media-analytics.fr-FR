@@ -1,17 +1,18 @@
 ---
-title: Erreurs de suivi sur Android
-description: Cette rubrique décrit l’implémentation du suivi des erreurs à l’aide du SDK Media sur Android.
+title: Découvrez comment effectuer le suivi des erreurs sur Android
+description: Découvrez l’implémentation du suivi des erreurs à l’aide du SDK Media sur Android.
 uuid: 7d0c77e5-924c-4619-8e29-3484748ab736
 exl-id: 6c4f693d-45c0-4a9c-bda1-c8721afe31f5
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '89'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 80%
 
 ---
 
-# Erreurs de suivi sur Android {#track-errors-on-android}
+# Erreurs de suivi sur Android{#track-errors-on-android}
 
 >[!IMPORTANT]
 >
