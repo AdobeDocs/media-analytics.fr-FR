@@ -3,15 +3,16 @@ title: Qu’est-ce que Media Analytics et les intégrations côté client ?
 description: Découvrez comment Media Analytics fonctionne avec les intégrations côté client et le SDK Media et/ou l’API Media Collection.
 uuid: ba0496e2-585a-4176-b583-c705726fecc6
 exl-id: 6fd4e82e-b471-4ed1-864d-5dd77cc6ffe0
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '152'
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '154'
 ht-degree: 100%
 
 ---
 
-# Côté client {#client-side}
+# Côté client{#client-side}
 
 Media Analytics (Heartbeats) est la solution de suivi de média normalisée d’Adobe. qui a remplacé le modèle Milestone d’Adobe.
 
