@@ -1,21 +1,22 @@
 ---
 title: Détails des appels de test
-description: Cette rubrique détaille les appels que vous devez effectuer pour valider votre mise en œuvre.
+description: Explorez les appels que vous devez effectuer pour valider votre mise en oeuvre.
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
 source-wordcount: '616'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
-# Détails des appels de test {#test-call-details}
+# Détails des appels de test{#test-call-details}
 
 ## Démarrage du lecteur multimédia {#start-the-media-player}
 
-### Appel de démarrage d’Adobe Analytics (AppMeasurement) {#aa-start-call}
+### Appel de démarrage d’Adobe Analytics (AppMeasurement)  {#aa-start-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -34,13 +35,13 @@ ht-degree: 100%
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La durée des diffusions linéaires doit être définie sur la meilleure estimation pour le programme actuel.
 
-### Métadonnées standard dans l’appel de démarrage d’Adobe Analytics (AppMeasurement) {#std-metadata-aa}
+### Métadonnées standard dans l’appel de démarrage d’Adobe Analytics (AppMeasurement)  {#std-metadata-aa}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | Titre de l’épisode |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -53,21 +54,21 @@ ht-degree: 100%
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Métadonnées personnalisées dans l’appel de démarrage d’Adobe Analytics (AppMeasurement) {#custom-metadata-aa}
+### Métadonnées personnalisées dans l’appel de démarrage d’Adobe Analytics (AppMeasurement)  {#custom-metadata-aa}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `custom.metadataA` | value |
 | `custom.metadataB` | value |
 
-### Appel de démarrage de Media Analytics (pulsations) {#ma-start-call}
+### Appel de démarrage de Media Analytics (pulsations)  {#ma-start-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | Titre de l’épisode |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -80,13 +81,13 @@ ht-degree: 100%
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La position du curseur de lecture pour les diffusions linéaires au démarrage de la vidéo doit être définie sur le nombre de secondes écoulées depuis le démarrage du programme actuel, et non sur 0.
 
-### Métadonnées standard dans l’appel de démarrage de Media Analytics (pulsations) {#std-metadata-ma}
+### Métadonnées standard dans l’appel de démarrage de Media Analytics (pulsations)  {#std-metadata-ma}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:meta:a.media.show` | Programme |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | Titre de l’épisode |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
@@ -99,21 +100,21 @@ ht-degree: 100%
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Métadonnées personnalisées dans l’appel de démarrage de Media Analytics (pulsations) {#custom-metadata-ma}
+### Métadonnées personnalisées dans l’appel de démarrage de Media Analytics (pulsations)  {#custom-metadata-ma}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Appel de démarrage Adobe Analytics de Media Analytics (pulsations) {#ma-aa-start}
+### Appel de démarrage Adobe Analytics de Media Analytics (pulsations)  {#ma-aa-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | Titre de l’épisode |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -126,7 +127,7 @@ ht-degree: 100%
 
 ## Afficher la lecture de la publicité {#view-ad-playback}
 
-### Appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement) {#aa-ad-start-call}
+### Appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement)  {#aa-ad-start-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -149,13 +150,13 @@ ht-degree: 100%
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La durée de la publicité doit être définie sur -1 si elle n’est pas disponible au démarrage de la publicité.
 
-### Métadonnées standard dans l’appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement) {#std-metadata-aa-ad-start}
+### Métadonnées standard dans l’appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement)  {#std-metadata-aa-ad-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
-| `a.media.show` | Show Title |
+| `a.media.show` | Afficher le titre |
 | `a.media.season` | 6 |
-| `a.media.episode` | Episode Title |
+| `a.media.episode` | Titre de l’épisode |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -168,14 +169,14 @@ ht-degree: 100%
 | `a.media.feed` | no feed |
 | `a.media.stream_format` | 0 |
 
-### Métadonnées personnalisées dans l’appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement) {#custom-metadata-aa-ad-start}
+### Métadonnées personnalisées dans l’appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement)  {#custom-metadata-aa-ad-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `custom.metadata` | value |
 | `custom.metadata` | value |
 
-### Appel de démarrage de la publicité de Media Analytics (pulsations) {#ma-ad-start-call}
+### Appel de démarrage de la publicité de Media Analytics (pulsations)  {#ma-ad-start-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -194,13 +195,13 @@ ht-degree: 100%
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
 * La durée de la publicité doit être définie sur -1 si elle n’est pas disponible au démarrage de la publicité.
 
-### Métadonnées standard dans l’appel de démarrage de la publicité de Media Analytics (pulsations) {#std-metadata-ma-ad-start}
+### Métadonnées standard dans l’appel de démarrage de la publicité de Media Analytics (pulsations)  {#std-metadata-ma-ad-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:meta:a.media.show` | Programme |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Episode Title |
+| `s:meta:a.media.episode` | Titre de l’épisode |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
@@ -213,14 +214,14 @@ ht-degree: 100%
 | `s:meta:a.media.feed` | no feed |
 | `s:meta:a.media.stream_format` | 0 |
 
-### Métadonnées personnalisées dans l’appel de démarrage de la publicité de Media Analytics (pulsations) {#custom-metadata-ma-ad-start}
+### Métadonnées personnalisées dans l’appel de démarrage de la publicité de Media Analytics (pulsations)  {#custom-metadata-ma-ad-start}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:meta:custom.metadata` | value |
 | `s:meta:custom.metadata` | value |
 
-### Appel de démarrage de la publicité d’Adobe Analytics de Media Analytics (pulsations) {#ma-aa-ad-start-call}
+### Appel de démarrage de la publicité d’Adobe Analytics de Media Analytics (pulsations)  {#ma-aa-ad-start-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -232,7 +233,7 @@ ht-degree: 100%
 | `s:stream:type` | vod |
 | `s:asset:type` | ad |
 
-### Appel de démarrage de la publicité de Media Analytics (pulsations) {#ma-ad-play-call}
+### Appel de démarrage de la publicité de Media Analytics (pulsations)  {#ma-ad-play-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -244,7 +245,7 @@ ht-degree: 100%
 | `s:stream:type` | vod |
 | _**`s:asset:type`**_ | _**ad**_ |
 
-### Appel de pause de la publicité de Media Analytics (pulsations) {#ma-ad-pause-call}
+### Appel de pause de la publicité de Media Analytics (pulsations)  {#ma-ad-pause-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
@@ -270,14 +271,14 @@ ht-degree: 100%
 
 ## Lire le contenu principal {#play-main-content}
 
-### Appel de lecture de Media Analytics (pulsations) {#ma-play-call}
+### Appel de lecture de Media Analytics (pulsations)  {#ma-play-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | Titre de l’épisode |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -290,14 +291,14 @@ ht-degree: 100%
 
 ## Pause du contenu principal {#pause-main-content}
 
-### Appel de pause de Media Analytics (pulsations) {#ma-pause-call}
+### Appel de pause de Media Analytics (pulsations)  {#ma-pause-call}
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
-| `s:asset:name` | Episode Title |
+| `s:asset:name` | Titre de l’épisode |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
