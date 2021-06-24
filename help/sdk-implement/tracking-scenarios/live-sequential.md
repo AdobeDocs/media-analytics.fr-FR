@@ -1,17 +1,18 @@
 ---
 title: Contenu principal en direct avec suivi séquentiel
-description: Exemple de suivi du contenu en direct avec suivi séquentiel à l’aide du SDK Media.
+description: Découvrez un exemple de suivi du contenu en direct avec le suivi séquentiel à l’aide du SDK Media.
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '520'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 91%
 
 ---
 
-# Contenu principal en direct avec suivi séquentiel {#live-main-content-with-sequential-tracking}
+# Contenu principal en direct avec suivi séquentiel{#live-main-content-with-sequential-tracking}
 
 ## Scénario {#scenario}
 
@@ -47,7 +48,7 @@ Il s’agit du même scénario que le scénario [Lecture VOD sans publicité](/h
 
 ## Heartbeat Content Play {#heartbeat-content-play}
 
-Cela devrait ressembler presque exactement à l’appel Heartbeat Content Start, mais avec une différence majeure dans le paramètre « s:event:type ». Tous les paramètres devraient toujours être en place ici.
+Cela devrait ressembler presque exactement à l’appel Heartbeat Content Start, mais avec la différence clé dans le paramètre &quot;s:event:type&quot;. Tous les paramètres devraient toujours être en place ici.
 
 | Paramètre | Valeur | Remarques |
 |---|---|---|
