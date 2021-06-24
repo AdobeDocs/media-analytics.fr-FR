@@ -1,16 +1,18 @@
 ---
-title: Mesurer des médias en flux continu dans Adobe Analytics
-description: Adobe Analytics for Media (également appelé Media Analytics) fournit aux clients une mesure multimédia performante pour le contenu, le son et les publicités.
+title: 'Adobe de médias en flux continu dans Adobe Analytics '
+description: '"Explorez de plus près la mesure de médias en flux continu dernier cri pour le contenu, l’audio et les publicités. Découvrez Adobe Analytics for Streaming Media."'
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-source-git-commit: eaae56abd3e549ad57c45852fe0bedb618f80e9e
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 98%
+source-wordcount: '880'
+ht-degree: 95%
 
 ---
 
-# Mesurer des médias en flux continu dans Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
+# Mesurer des médias en flux continu dans Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Bannière](./assets/media_analytics_banner.png)
 
