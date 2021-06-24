@@ -1,17 +1,18 @@
 ---
 title: Présentation multimédia
-description: Présentation multimédia
+description: Utilisez le tableau de bord Présentation multimédia pour afficher des mesures agrégées. Découvrez comment surveiller rapidement les performances multimédia.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '93'
-ht-degree: 100%
+feature: '"Notions de base sur Media Analytics, Reports & Analytics"'
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 81%
 
 ---
 
-# Présentation multimédia {#media-overview}
+# Présentation multimédia{#media-overview}
 
 Le tableau de bord Présentation multimédia est conçu pour vous permettre de contrôler les médias sur votre site. L’affichage Présentation multimédia montre plusieurs mesures consolidées afin de vérifier rapidement que les médias fonctionnent comme prévu. Un graphique affiche les démarrages de contenu en regard des démarrages de publicités pour vous donner un aperçu rapide de ces mesures pour chaque élément multimédia.
 
