@@ -1,17 +1,18 @@
 ---
-title: Suivi des publicités sur Roku
+title: Découvrez comment effectuer le suivi des publicités sur Roku
 description: Mettez en œuvre le suivi des publicités dans les applications Roku à l’aide du SDK Media.
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '292'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '297'
+ht-degree: 97%
 
 ---
 
-# Suivi des publicités sur Roku {#track-ads-on-roku}
+# Suivi des publicités sur Roku{#track-ads-on-roku}
 
 >[!IMPORTANT]
 >
