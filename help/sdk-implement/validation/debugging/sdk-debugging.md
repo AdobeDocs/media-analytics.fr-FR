@@ -1,17 +1,18 @@
 ---
 title: Débogage du SDK
-description: Cette rubrique décrit le suivi et la journalisation disponibles dans le SDK Media.
+description: Découvrez le suivi et la journalisation disponibles dans le SDK Media.
 uuid: a5972d87-c593-4b4f-a56f-dca6e25268e1
 exl-id: c2de6454-8538-4d07-a099-e278b153d894
-translation-type: ht
-source-git-commit: 7ad0c85108e6d3800dce0fcf91175fd5eb4526e7
-workflow-type: ht
-source-wordcount: '271'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 96%
 
 ---
 
-# Débogage du SDK {#sdk-debugging}
+# Débogage du SDK{#sdk-debugging}
 
 Vous pouvez activer et désactiver la journalisation. Le SDK Media fournit un mécanisme de suivi/journalisation étendu dans toute la pile de suivi multimédia. Vous pouvez activer ou désactiver cette journalisation de la bibliothèque en assignant l’indicateur `debugLogging` sur l’objet de configuration.
 
