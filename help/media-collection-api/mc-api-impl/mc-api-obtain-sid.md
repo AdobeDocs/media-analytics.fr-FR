@@ -1,17 +1,18 @@
 ---
 title: Obtention d’un ID de session
-description: Obtention d’un ID de session
+description: Découvrez comment coder une requête sessions pour obtenir l’ID de session à partir de l’en-tête Emplacement dans une réponse.
 uuid: fc8712fa-848f-4564-af5d-5dd9d6b088d8
 exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
-translation-type: ht
-source-git-commit: d4491dfec33d8729f40bcef1d57622467443bdbb
-workflow-type: ht
-source-wordcount: '46'
-ht-degree: 100%
+feature: Media Analytics
+role: Business Practitioner, Administrator, Data Engineer
+source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+workflow-type: tm+mt
+source-wordcount: '63'
+ht-degree: 69%
 
 ---
 
-# Obtention d’un ID de session {#obtaining-a-session-id}
+# Obtention d’un ID de session{#obtaining-a-session-id}
 
 Ce fragment de code du lecteur de référence affiche une méthode permettant de coder une [requête sessions](/help/media-collection-api/mc-api-ref/mc-api-sessions-req.md), ainsi que d’extraire l’ID de session (et la version de l’API Media Collection) de l’en-tête Emplacement de la réponse :
 
