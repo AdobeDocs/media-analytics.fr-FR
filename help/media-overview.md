@@ -8,11 +8,11 @@ role: Business Practitioner, Administrator, Data Engineer
 source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 95%
+ht-degree: 97%
 
 ---
 
-# Mesurer des médias en flux continu dans Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Mesurer des médias en flux continu dans Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
 
 ![Bannière](./assets/media_analytics_banner.png)
 
@@ -27,7 +27,7 @@ Vous pouvez déterminer les mesures de diffusion vidéo essentielles liées à l
 ## Fonctionnalités  {#features}
 
 Les avantages d’Adobe Analytics for Streaming Media incluent la surveillance en temps réel, les analyses détaillées, des informations exploitables et des opportunités de monétisation.
-* **Analyse** en temps réel : prenez des décisions en temps réel exploitables à l’aide de mesures de performances clés telles que les démarrages de média, sur plusieurs canaux.
+* **Analyse en temps réel** : prenez des décisions exploitables en temps réel en utilisant des mesures de performances clés telles que les démarrages de média, sur plusieurs canaux.
 * **Stimuler l’engagement** : stimulez l’engagement des utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent s’afficher dans le contenu vidéo pour offrir une expérience de visionnage fluide et moins intrusive qui apporte des visites renouvelées.
 * **Image holistique** : combinez plusieurs points de données sur tous vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de vos activités multimédia. Mesurez l’engagement et les vues/écoutes sur tous les canaux possibles via la fonctionnalité Federated Analytics.
 * **Meilleure granularité** : évaluez le comportement de visionnage au niveau le plus granulaire, y compris l’heure des visiteurs individuels dans la journée, les observateurs simultanés par minute et la durée moyenne d’affichage du contenu.
