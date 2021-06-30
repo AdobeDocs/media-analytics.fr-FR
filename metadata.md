@@ -1,18 +1,12 @@
 ---
 cloud: Experience Cloud
-solution-title: Formation et assistance
-solution-hub-url: https://helpx.adobe.com/fr/support/analytics.html
-solution-image: assets/analytics-icon-24.png
-getting-started-title: Prise en main
-getting-started-url: https://helpx.adobe.com/fr/analytics/get-started.html
-tutorials-title: Tutoriels
-tutorials-url: https://helpx.adobe.com/fr/analytics/kt/index/analytics-videos.html
+solution: Analytics
+feature-set: Analytics
 git-repo: https://git.corp.adobe.com/AdobeDocs/media-analytics.fr-FR
 index: true
-translation-type: tm+mt
-source-git-commit: 171053b49a2fda22cbd228f49170c3acdd7bc681
+source-git-commit: 10faed698a8c4b0531a032bdfbb24fc8693055ce
 workflow-type: tm+mt
-source-wordcount: '136'
+source-wordcount: '114'
 ht-degree: 100%
 
 ---
