@@ -5,9 +5,9 @@ uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: 1f18ba0c0c1b62f4228a590276164034474ebd08
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1192'
 ht-degree: 97%
 
 ---
@@ -342,7 +342,7 @@ La coupure publicitaire est terminée. Tout au long de la coupure publicitaire, 
 
 **Détails de mise en œuvre**
 
-Après l’événement `adBreakComplete`, placez le lecteur dans l’état « lecture » à l’aide de l’événement `play`.
+Après l’événement `adBreakComplete`, placez le lecteur à l’état « lecture » à l’aide de l’événement `play`.
 
 **Exemple de corps de requête**
 
