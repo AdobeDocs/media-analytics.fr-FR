@@ -5,10 +5,10 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Media Analytics
 role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+source-git-commit: a6872703529159ded6f747b6429a9b94b4202abe
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 96%
+source-wordcount: '549'
+ht-degree: 75%
 
 ---
 
@@ -59,17 +59,17 @@ Il n’y aura pas d’appel complet dans ce scénario, car la diffusion en direc
 
 ## Paramètres des valeurs du curseur de lecture
 
-Pour les flux LIVE, vous devez définir le curseur de lecture sur un décalage par rapport au début de la programmation, de sorte que, dans le rapport, les analystes puissent déterminer à quel moment les utilisateurs rejoignent et quittent le flux dans une vue de 24 heures.
+Pour les flux LIVE, vous devez définir la valeur du curseur de lecture comme le nombre de secondes depuis minuit UTC ce jour-là, de sorte que dans les rapports, les analystes puissent déterminer à quel moment les utilisateurs rejoignent et quittent le flux en direct dans une vue de 24 heures.
 
 ### Au début
 
-Pour le média LIVE, lorsqu’un utilisateur commence la lecture du flux, vous devez définir `l:event:playhead` sur le décalage actuel, en secondes. Ceci s’oppose à VOD, où vous définissez le curseur de lecture sur « 0 ».
+Pour le média LIVE, lorsqu’un utilisateur commence la lecture du flux, vous devez définir `l:event:playhead` sur le nombre de secondes depuis minuit UTC ce jour-là. Ceci s’oppose à VOD, où vous définissez le curseur de lecture sur « 0 ».
 
-Par exemple, supposons qu’un événement de diffusion LIVE commence à minuit et dure 24 heures (`a.media.length=86400` ; `l:asset:length=86400`). Supposons ensuite qu’un utilisateur commence à lire ce flux en direct à 12h00. Dans ce scénario, vous devez définir `l:event:playhead` sur 43200 (12 heures dans le flux).
+Par exemple, supposons qu’un événement de diffusion LIVE commence à minuit et dure 24 heures (`a.media.length=86400` ; `l:asset:length=86400`). Supposons ensuite qu’un utilisateur commence à lire ce flux en direct à 12h00. Dans ce scénario, vous devez définir `l:event:playhead` sur 43200 (12 heures depuis minuit UTC ce jour-là en secondes).
 
 ### En pause
 
-La même logique de « curseur de lecture en direct » appliquée au début de la lecture doit être appliquée lorsqu’un utilisateur interrompt la lecture. Lorsque l’utilisateur revient pour lire le flux en direct, vous devez définir la valeur `l:event:playhead` sur la nouvelle position du curseur de lecture décalée, _pas_ au point où l’utilisateur a interrompu le flux en direct.
+La même logique de « curseur de lecture en direct » appliquée au début de la lecture doit être appliquée lorsqu’un utilisateur interrompt la lecture. Lorsque l’utilisateur revient pour lire le flux LIVE, vous devez définir la valeur `l:event:playhead` en fonction du nouveau nombre de secondes écoulées depuis minuit UTC, _et non_ au point où l’utilisateur a interrompu le flux LIVE.
 
 ## Exemple de code {#sample-code}
 
