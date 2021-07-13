@@ -3,8 +3,8 @@ title: Quels chemins d’implémentation des médias en flux continu sont dispon
 description: Découvrez les chemins d’implémentation des médias en flux continu Adobe, y compris Adobe Launch.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
-role: Business Practitioner, Administrator, Data Engineer
-source-git-commit: c96532bb032a4c9aaf9eed28d97fbd33ceb1516f
+role: User, Admin, Data Engineer
+source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 100%
@@ -17,7 +17,7 @@ Pour chaque chemin de mise en œuvre, les clients doivent contacter leur représ
 
 * **Adobe Launch avec l’extension Adobe Media Analytics**
 
-   Adobe Launch représente la nouvelle génération de solution de gestion des balises d’Adobe. Launch offre un moyen simple de déployer et de gérer toutes les balises d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. Pour créer et gérer vos propres intégrations avec Launch, vous utilisez des extensions. Une extension est un module JavaScript, HTML et CSS qui étend l’interface utilisateur de Launch et les fonctionnalités du client. Pour plus d’informations, consultez le [Guide de l’utilisateur d’Experience Platform Launch](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.html)
+   Adobe Launch représente la nouvelle génération de solution de gestion des balises d’Adobe. Launch offre un moyen simple de déployer et de gérer toutes les balises d’analyse, de marketing et de publicité nécessaires pour offrir des expériences client pertinentes. Pour créer et gérer vos propres intégrations avec Launch, vous utilisez des extensions. Une extension est un module JavaScript, HTML et CSS qui étend l’interface utilisateur de Launch et les fonctionnalités du client. Pour plus d’informations, consultez le [Guide de l’utilisateur d’Experience Platform Launch](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=fr)
 
    L’extension Adobe Media Analytics (MA) ajoute le noyau JavaScript Media SDK (Media 2.x SDK) pour l’audio et la vidéo. Cette extension permet d’ajouter l’instance `MediaHeartbeat` de suivi à un site ou à un projet Launch.
 
