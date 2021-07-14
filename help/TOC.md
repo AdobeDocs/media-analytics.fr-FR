@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics pour la diffusion de médias
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 230488398dc145798e4b12ddb94cd73f4f790f28
+source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
 workflow-type: tm+mt
 source-wordcount: '829'
 ht-degree: 100%
@@ -15,10 +15,10 @@ ht-degree: 100%
 
 # Adobe Analytics pour la diffusion de médias {#using}
 
-+ [Mesurer des médias en flux continu dans Adobe Analytics](media-overview.md)
++ [Mesurer des médias en flux continu dans Adobe Analytics ](media-overview.md)
 + [Périphériques et plateformes pris en charge](measurement-options/supported-devices.md)
 + Introduction aux médias en flux continu dans Analytics {#intro-to-ava}
-   + [Conditions préalables ](intro-to-ava/prereqs.md)
+   + [Conditions préalables](intro-to-ava/prereqs.md)
    + Chemins de mise en œuvre {#implementation-paths}
       + [Aperçu](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Côté client](intro-to-ava/implementation-paths/client-side-path.md)
@@ -224,10 +224,12 @@ ht-degree: 100%
    + [Mise en œuvre et création de rapports](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [Exemples de suivi de l’état du lecteur](sdk-implement/player-state-tracking/player-state-examples.md)
 + [Federated Analytics](federated-analytics.md)
++ Ressources supplémentaires {#additional-resources}
+   + [Notes de mise à jour](additional-resources/doc-updates.md)
+
 <!-- + Player State Tracking {#player-state-tracking}
     + [Overview](sdk-implement/player-state-tracking/player-state-overview.md)
     + [Standard and custom states](sdk-implement/player-state-tracking/standard-and-custom-states.md)
     + [Implementation and reporting](sdk-implement/player-state-tracking/implementation-and-reporting.md)
-    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) -->
-+ Ressources supplémentaires {#additional-resources}
-   + [Notes de mise à jour](additional-resources/doc-updates.md)
+    + [Player state tracking examples](sdk-implement/player-state-tracking/player-state-examples.md) 
+-->
