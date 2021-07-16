@@ -1,6 +1,6 @@
 ---
 title: Découvrez comment effectuer le suivi des chapitres et des segments sur Chromecast
-description: Découvrez l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media sur Chromecast.
+description: Découvrez la mise en œuvre du suivi des chapitres et des segments à lʼaide du SDK Media sur Chromecast.
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
