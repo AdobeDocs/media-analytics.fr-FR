@@ -1,5 +1,5 @@
 ---
-title: '"Migration du SDK Media autonome vers Adobe Launch - iOS"'
+title: '« Migration du SDK Media autonome vers Adobe Launch : iOS »'
 description: Découvrez comment migrer du SDK Media vers Launch pour iOS.
 exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,8 @@ ADBMediaHeartbeat* tracker =
 
 1. Dans Experience Platform Launch, cliquez sur l’onglet [!UICONTROL Extensions] pour votre propriété mobile
 1. Dans l’onglet [!UICONTROL Catalogue], recherchez l’extension Adobe Media Analytics for Audio and Video, puis cliquez sur [!UICONTROL Installer].
-1. Dans la page des paramètres d’extension, configurez les paramètres de suivi. L’extension Media utilisera les paramètres configurés pour le suivi.
+1. Dans la page des paramètres d’extension, configurez les paramètres de suivi.
+L’extension Media utilisera les paramètres configurés pour le suivi.
 
    ![](assets/launch_config_mobile.png)
 
