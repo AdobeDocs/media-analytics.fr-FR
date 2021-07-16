@@ -1,6 +1,6 @@
 ---
 title: Découvrez comment effectuer le suivi des chapitres et des segments sur Roku
-description: Découvrez l’implémentation du suivi des chapitres et des segments à l’aide du SDK Media sur Roku.
+description: Découvrez la mise en œuvre du suivi des chapitres et des segments à lʼaide du SDK Media sur Roku.
 uuid: 15c07131-77d7-4a97-92c6-0a190c6b08d3
 exl-id: b5eb8be7-4b85-4ba7-9216-dd691be7ba46
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
