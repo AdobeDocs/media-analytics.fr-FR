@@ -1,6 +1,6 @@
 ---
 title: Lecture VOD avec un chapitre
-description: Affichez un exemple de suivi de la lecture VOD contenant un chapitre.
+description: Voir un exemple de suivi de la lecture VOD contenant un chapitre.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '433'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
