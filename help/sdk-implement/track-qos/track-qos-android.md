@@ -1,6 +1,6 @@
 ---
-title: Découvrez comment suivre la qualité de l’expérience sur Android
-description: '"Découvrez comment mettre en oeuvre le suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur Android."'
+title: Découvrez comment effectuer le suivi de la qualité de lʼexpérience sur Android
+description: « Découvrez comment mettre en œuvre le suivi de la qualité de lʼexpérience (QoE, QoS) à lʼaide du SDK Media sur Android. »
 uuid: 81ff3939-48a6-45c1-8837-ddfa33490559
 exl-id: cee8b119-bca2-4a5c-8111-2b49f7eede66
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '158'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
