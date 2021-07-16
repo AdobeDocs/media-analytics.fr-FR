@@ -1,18 +1,18 @@
 ---
 title: Descriptions des paramètres Heartbeat
-description: Explorez les paramètres de pulsation que Adobe collecte et traite sur le serveur Media Analytics (pulsations).
+description: Explorez les paramètres Heartbeat qu’Adobe collecte et traite sur le serveur Media Analytics (heartbeats).
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
-feature: '"Media Analytics, Variables"'
+feature: « Media Analytics, Variables »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '813'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
-# Descriptions des paramètres Media Analytics (pulsations) {#heartbeat-parameter-descriptions}
+# Descriptions des paramètres Media Analytics (pulsations){#heartbeat-parameter-descriptions}
 
 Liste des paramètres Media Analytics collectés et traités par Adobe sur le serveur Media Analytics (pulsations) :
 
@@ -23,11 +23,11 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 | s:event:type | SDK Media | (Obligatoire)<br/><br/>Type d’événement suivi. Types d’événement : <ul> <li> s:event:type=start </li> <li> s:event:type=complete </li> <li> s:event:type=chapter_start </li> <li> s:event:type=chapter_complete </li> <li> s:event:type=buffer </li> <li> s:event:type=pause </li> <li> s:event:type=resume </li> <li> s:event:type=bitrate_change </li> <li> s:event:type=aa_start </li> <li> s:event:type=stall </li> <li> s:event:type=end </li> </ul> |
 | l:event:prev_ts | SDK Media | (Obligatoire)<br/><br/>Horodatage du dernier événement du même type dans cette session. La valeur est -1. |
 | l:event:ts | SDK Media | (Obligatoire)<br/><br/>Horodatage de l’événement. |
-| l:event:duration | SDK Media | (Obligatoire)<br/><br/>Cette valeur est définie en interne (en millisecondes) par le SDK Media et non par le lecteur. Elle permet de calculer les mesures de temps passé sur le serveur principal. Par exemple, a.media.totalTimePlayed est calculé en tant que somme de la durée de toutes les pulsations Play (type=play) générées. <br/>*Remarque :* ce paramètre est défini sur 0 pour certains événements, car il s’agit d’« événements de changement d’état » (par exemple, type=complete, type=chapter_complete ou type=bitrate_change). |
-| l:event:playhead | VideoInfo | (Obligatoire)<br/><br/>Curseur de lecture présent dans la ressource active (principale ou publicité) lorsque l’événement a été enregistré. |
+| l:event:durée | SDK Media | (Obligatoire)<br/><br/>Cette valeur est définie en interne (en millisecondes) par le SDK Media et non par le lecteur. Elle permet de calculer les mesures de temps passé sur le serveur principal. Par exemple, a.media.totalTimePlayed est calculé en tant que somme de la durée de toutes les pulsations Play (type=play) générées. <br/>*Remarque :* ce paramètre est défini sur 0 pour certains événements, car il s’agit d’« événements de changement d’état » (par exemple, type=complete, type=chapter_complete ou type=bitrate_change). |
+| l:event:tête de lecture | VideoInfo | (Obligatoire)<br/><br/>Curseur de lecture présent dans la ressource active (principale ou publicité) lorsque l’événement a été enregistré. |
 | s:event:sid | SDK Media | (Obligatoire)<br/><br/>ID de session (chaîne générée de manière aléatoire). Tous les événements d’une même session (vidéo + publicités) doivent être identiques. |
-| l:asset:duration / l:asset:length <br/>(renommé à partir de la durée) | VideoInfo | (Obligatoire)<br/><br/>Durée de la ressource vidéo de la ressource principale. |
-| s:asset:publisher | MediaHeartbeatConfig | (Obligatoire)<br/><br/>Éditeur de la ressource. |
+| l:asset:durée / l:asset:longueur <br/>(renommé, auparavant longueur durée) | VideoInfo | (Obligatoire)<br/><br/>Durée de la ressource vidéo de la ressource principale. |
+| s:asset:éditeur | MediaHeartbeatConfig | (Obligatoire)<br/><br/>Éditeur de la ressource. |
 | s:asset:video_id | VideoInfo | (Obligatoire)<br/><br/>Identifiant qui identifie de manière unique la vidéo dans le catalogue de l’éditeur. |
 | s:asset:type | SDK Media | (Obligatoire)<br/><br/>Type de ressource (principale ou publicité). |
 | s:stream:type | VideoInfo | (Obligatoire)<br/><br/>Type de flux. Peut être l’un des paramètres suivants : <ul> <li> live </li> <li> vod </li> <li> linéaire </li> </ul> |
@@ -42,10 +42,10 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 | h:sc:ssl | MediaHeartbeatConfig | (Obligatoire)<br/><br/>Indique si le trafic s’effectue par HTTPS (s’il est défini sur 1) ou par HTTP (s’il est défini sur 0). |
 | s:sp:ovp | MediaHeartbeatConfig | (Facultatif)<br/><br/>Défini sur « primetime » pour les lecteurs Primetime ou sur l’OVP réel pour les autres lecteurs. |
 | s:sp:sdk | MediaHeartbeatConfig | (Obligatoire)<br/><br/>Chaîne de version OVP. |
-| s:sp:nom_du_lecteur | VideoInfo | (Obligatoire)<br/><br/>Nom du lecteur vidéo (logiciel du lecteur réel, sert à identifier le lecteur). |
-| s:sp:channel | MediaHeartbeatConfig | (Facultatif)<br/><br/>Canal sur lequel l’utilisateur visionne le contenu. Pour une application mobile, nom de l’application. Pour un site web, nom du domaine. |
+| s:sp:player_name | VideoInfo | (Obligatoire)<br/><br/>Nom du lecteur vidéo (logiciel du lecteur réel, sert à identifier le lecteur). |
+| s:sp:canal | MediaHeartbeatConfig | (Facultatif)<br/><br/>Canal sur lequel l’utilisateur visionne le contenu. Pour une application mobile, nom de l’application. Pour un site web, nom du domaine. |
 | s:sp:hb_version | SDK Media | (Obligatoire)<br/><br/>Numéro de version de la bibliothèque du SDK Media qui émet l’appel. |
-| l:stream:bitrate | QoSInfo | (Obligatoire)<br/><br/>Valeur actuelle du débit de diffusion (en bit/s). |
+| l:stream:débit | QoSInfo | (Obligatoire)<br/><br/>Valeur actuelle du débit de diffusion (en bit/s). |
 
 ## Événements d’erreur
 
@@ -62,7 +62,7 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 | s:asset:ad_sid | SDK Media | (Obligatoire)<br/><br/>Identifiant unique généré par le SDK Media, ajouté à tous les pings de publicité. |
 | s:asset:pod_id | SDK Media | (Obligatoire)<br/><br/>Identifiant de la capsule dans la vidéo. Cette valeur est calculée automatiquement à partir de la formule suivante : <br/>`MD5(video_id) + `<br/>`"_" + `<br/>`[pod index]` |
 | s:asset:pod_position | AdBreakInfo | (Obligatoire)<br/><br/>Index de la publicité dans la capsule (la première publicité affiche index 0, la deuxième publicité affiche index 1, etc.). |
-| s:asset:resolver | AdBreakInfo | (Obligatoire)<br/><br/>Résolveur de la publicité. |
+| s:asset:résolveur | AdBreakInfo | (Obligatoire)<br/><br/>Résolveur de la publicité. |
 | s:meta:custom_ad_metadata.x | MediaHeartbeat | (Facultatif)<br/><br/>Métadonnées de publicité personnalisées. |
 
 ## Événements de chapitre
@@ -70,7 +70,7 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 | Nom | Source de données | Description   |
 | ---  | --- | --- |
 | s:stream:chapter_sid | SDK Media | (Obligatoire)<br/><br/>Identifiant unique associé à l’instance de lecture du chapitre. <br/> **Remarque :** Un chapitre peut être lu à plusieurs reprises en raison des opérations de recherche vers l’arrière effectuées par l’utilisateur. |
-| s:stream:nom_chapitre | ChapterInfo | (Facultatif)<br/><br/>Nom convivial (c-à-d., lisible par un humain) du chapitre. |
+| s:stream:chapter_name | ChapterInfo | (Facultatif)<br/><br/>Nom convivial (c-à-d., lisible par un humain) du chapitre. |
 | s:stream:chapter_id | SDK Media | (Obligatoire)<br/><br/>ID unique du chapitre. Cette valeur est calculée automatiquement à partir de la formule suivante : <br/>`MD5(video_id) +`<br/>` "_" +`<br/>`chapter_pos` |
 | l:stream:chapter_pos | ChapterInfo | (Obligatoire)<br/><br/>Index du chapitre parmi la liste de chapitres (commençant par 1). |
 | l:stream:chapter_offset | ChapterInfo | (Obligatoire)<br/><br/>Décalage du chapitre (exprimé en secondes) à l’intérieur du contenu principal, à l’exception des publicités. |
@@ -81,4 +81,4 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 
 | Nom | Source de données | Description   |
 | ---  | --- | --- |
-| s:event:type=end | SDK Media | (Obligatoire)<br/><br/> Le `end``close` |
+| s:event:type=end | SDK Media | (Obligatoire)<br/><br/> Le `end` `close` |
