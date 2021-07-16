@@ -1,5 +1,5 @@
 ---
-title: Découvrez Comment Effectuer Le Suivi De La Mise En Mémoire Tampon À L’Aide De JavaScript 3.x
+title: Découvrez comment effectuer le suivi de la mise en mémoire tampon à lʼaide de JavaScript 3.x
 description: Découvrez comment effectuer le suivi des événements de mise en mémoire tampon dans les applications de navigateur (JS).
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '122'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
