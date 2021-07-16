@@ -1,5 +1,5 @@
 ---
-title: Explication des clés de métadonnées Chromecast
+title: Présentation des clés de métadonnées Chromecast
 description: Découvrez comment définir des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi sur Chromecast.
 uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
