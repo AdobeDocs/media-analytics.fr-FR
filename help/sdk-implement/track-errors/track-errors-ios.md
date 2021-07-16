@@ -1,6 +1,6 @@
 ---
 title: Découvrez comment effectuer le suivi des erreurs sur iOS
-description: Découvrez l’implémentation du suivi des erreurs à l’aide du SDK Media sur iOS.
+description: Cette rubrique décrit l’implémentation du suivi des erreurs à l’aide du SDK Media sur iOS.
 uuid: 18ea93d3-5948-4375-bcdb-72309268e38d
 exl-id: c4ce7092-a102-41da-80a6-a4359f925708
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
