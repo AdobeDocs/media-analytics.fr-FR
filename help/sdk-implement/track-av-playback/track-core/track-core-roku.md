@@ -5,7 +5,7 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 97%
@@ -14,8 +14,10 @@ ht-degree: 97%
 
 # Suivi de la lecture principale sur Roku{#track-core-playback-on-roku}
 
+Cette documentation aborde le suivi dans la version 2.x du SDK.
+
 >[!IMPORTANT]
->Cette documentation aborde le suivi dans la version 2.x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
+>Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
 
 1. **Configuration initiale du suivi**
 
@@ -101,7 +103,7 @@ ht-degree: 97%
 
    * **Métadonnées standard**
 
-      [Mise en œuvre de métadonnées standard sur Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+[Mise en œuvre de métadonnées standard sur Roku](/help/sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
       >[!NOTE]
       >Il est facultatif de joindre un objet de métadonnées vidéo standard à l’objet multimédia.
