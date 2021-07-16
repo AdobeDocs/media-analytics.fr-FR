@@ -1,6 +1,6 @@
 ---
 title: Suivi du contenu téléchargé
-description: Découvrez comment utiliser la fonction Contenu téléchargé pour effectuer le suivi de la consommation multimédia lorsqu’un utilisateur est hors ligne.
+description: Découvrez comment utiliser la fonction Contenu téléchargé pour effectuer le suivi de la consommation multimédia lorsquʼun utilisateur est hors ligne.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '628'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Chaque approche a ses avantages et ses inconvénients :
 * Le scénario en ligne est suivi en temps réel ; cela nécessite une vérification de la connectivité avant chaque appel réseau.
 * Le scénario hors ligne (fonctionnalité Contenu téléchargé) ne nécessite qu’une vérification de la connectivité réseau, mais il requiert également une plus grande empreinte mémoire sur le périphérique.
 
-## Mise en œuvre  {#implementation}
+## Mise en œuvre {#implementation}
 
 ### Plateformes prises en charge
 
@@ -50,7 +50,7 @@ La fonctionnalité Contenu téléchargé est la version hors ligne de l’API Me
 * **Vous devez inclure `media.downloaded: true`** dans les paramètres de métadonnées standard (clé `params`) de l’événement `sessionStart` pour indiquer au serveur principal que vous envoyez du contenu téléchargé. Si ce paramètre n’est pas présent ou est défini sur « false », l’API renverra un code de réponse 400 (Demande incorrecte). Ce paramètre fait la distinction entre le contenu téléchargé et le contenu en direct sur le serveur principal. Si `media.downloaded: true` est défini sur une session en direct, l’API renverra également une réponse 400.
 * La mise en œuvre est chargée de stocker correctement les événements du lecteur dans l’ordre dans lequel ils apparaissent.
 
-### Codes de réponse :
+### Codes de réponse
 
 * 201 - Created : requête traitée avec succès ; les données sont valides et la session a été créée et sera traitée.
 * 400 - Bad Request ; la validation du schéma a échoué, toutes les données sont ignorées, aucune donnée de session ne sera traitée.
