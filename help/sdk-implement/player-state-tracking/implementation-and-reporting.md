@@ -1,13 +1,13 @@
 ---
 title: Mise en œuvre et création de rapports
-description: Découvrez comment mettre en oeuvre la fonction de suivi de l’état du lecteur, y compris .
+description: Découvrez comment mettre en œuvre la fonction de suivi de lʼétat du lecteur, y compris.
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
