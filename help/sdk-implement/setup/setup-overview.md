@@ -1,6 +1,6 @@
 ---
-title: Explication de la mise en oeuvre des SDK Media
-description: '"Découvrez comment configurer le SDK Media pour le suivi multimédia dans vos applications mobiles, OTT et de navigateur (JS)."'
+title: Explication de l’implémentation des SDK Media
+description: « Découvrez comment configurer le SDK Media pour le suivi des médias dans vos applications mobiles, OTT et de navigateur (JS). »
 uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '742'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
@@ -125,7 +125,7 @@ Suivez les étapes de mise en œuvre suivantes :
      new MediaHeartbeat(mediaDelegate, mediaConfig, appMeasurementInstance);  
    ```
 
-## Validation  {#validate}
+## Validation {#validate}
 
 Les mises en œuvre de suivi Media Analytics génèrent deux types d’appels de suivi :
 
