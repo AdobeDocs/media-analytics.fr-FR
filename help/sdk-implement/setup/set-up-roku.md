@@ -1,6 +1,6 @@
 ---
-title: Configuration du SDK Media pour Roku
-description: Pour configurer l’application du SDK Media sur Roku, procédez comme suit.
+title: Découvrez comment configurer le SDK Media pour Roku
+description: Suivez les étapes suivantes pour configurer lʼapplication du SDK Media sur Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
@@ -8,13 +8,13 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '718'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 # Configuration de Roku{#set-up-roku}
 
-## Conditions préalables 
+## Conditions préalables
 
 * **Obtention de paramètres de configuration valides pour Heartbeats** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Media Analytics.
 * **Fournissez les informations suivantes à votre lecteur multimédia :**
