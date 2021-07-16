@@ -1,6 +1,6 @@
 ---
-title: API de collecte de médias en flux continu � paramètres de requête
-description: '"Quels sont les paramètres de requête de l’API Media Collection, les clés de requête et les descriptions ?"'
+title: API Streaming Media Collection � Paramètres des requêtes
+description: « Quels sont les paramètres de requête, les clés de requête et les descriptions de lʼAPI Media Collection ? »
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1307'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -104,10 +104,10 @@ ht-degree: 98%
 
 | Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
 | --- | :---: | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | entier | N’importe quel(le) | Débit binaire de la diffusion |
-| `media.qoe.droppedFrames` | N | entier | N’importe quel(le) | Nombre d’images perdues dans la diffusion |
-| `media.qoe.framesPerSecond` | N | entier | N’importe quel(le) | Nombre d’images par seconde |
-| `media.qoe.timeToStart` | N | entier | N’importe quel(le) | Durée (en millisecondes) écoulée entre le moment où l’utilisateur lance la lecture et le contenu se charge et commence à être lu |
+| `media.qoe.bitrate` | N | entier | Tous | Débit binaire de la diffusion |
+| `media.qoe.droppedFrames` | N | entier | Tous | Nombre d’images perdues dans la diffusion |
+| `media.qoe.framesPerSecond` | N | entier | Tous | Nombre d’images par seconde |
+| `media.qoe.timeToStart` | N | entier | Tous | Durée (en millisecondes) écoulée entre le moment où l’utilisateur lance la lecture et le contenu se charge et commence à être lu |
 
 ## Paramètres de la Loi sur la protection du consommateur (CCPA) de Californie {#ccpa-params}
 
