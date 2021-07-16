@@ -1,14 +1,14 @@
 ---
 title: Visionneuses simultanées de médias
-description: '"Découvrez le tableau de bord des visionneuses simultanées de médias utilisé pour afficher les visionneuses simultanées pendant une journée. Les données peuvent être filtrées par contenu, type d’appareil ou pays."'
+description: « Découvrez le tableau de bord des visionneuses simultanées de médias utilisé pour afficher les visionneuses simultanées pendant une journée. Les données peuvent être filtrées par contenu, type dʼappareil ou pays. »
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-feature: '"Notions de base sur Media Analytics, Reports & Analytics"'
+feature: « Media Analytics, Concepts de base de Reports & Analytics »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
