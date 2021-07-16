@@ -1,6 +1,6 @@
 ---
 title: Lecture VOD avec mise en mémoire tampon
-description: Découvrez un exemple de suivi du contenu VOD à l’aide du SDK Media.
+description: Consultez un exemple de suivi du contenu VOD à lʼaide du SDK Media.
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '231'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
