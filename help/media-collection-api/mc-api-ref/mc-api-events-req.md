@@ -1,6 +1,6 @@
 ---
-title: API de collecte de médias en flux continu � point de terminaison de la demande d’événements
-description: '"Quels sont les paramètres et les réponses des points de terminaison de requête des événements de l’API Media Collection ?"'
+title: API Streaming Media Collection � Point dʼentrée de la requête events
+description: « Quels sont les paramètres et les réponses du point dʼentrée de la requête events de lʼAPI Media Collection ? »
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
