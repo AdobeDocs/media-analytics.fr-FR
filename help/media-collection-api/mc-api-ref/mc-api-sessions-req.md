@@ -1,6 +1,6 @@
 ---
-title: API de collecte de médias en flux continu Point de terminaison de requête � sessions
-description: '"Quels sont les paramètres et les réponses des points de terminaison de requête de l’API de sessions Media Collection ?"'
+title: API Streaming Media Collection � Point d’entrée de requêtes de sessions
+description: « Quels sont les paramètres et les réponses des points d’entrée de requêtes de sessions de l’API Media Collection ? »
 uuid: 9609192d-4f7f-4fb5-844f-ea89d47c4e30
 exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '97'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
