@@ -1,18 +1,18 @@
 ---
-title: En savoir plus sur les conditions préalables requises pour les médias en flux continu
-description: Prise en main d’Adobe Analytics Streaming Media. Découvrez ce dont vous avez besoin pour mettre en oeuvre Adobe Analytics for Streaming Media.
+title: En savoir plus sur les conditions préalables requises pour Streaming Media
+description: Prise en main d’Adobe Analytics for Streaming Media. Découvrez ce dont vous avez besoin pour implémenter Adobe Analytics for Streaming Media.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: '"Media Analytics, configuration système requise"'
+feature: « Media Analytics, configuration requise »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '414'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Conditions préalables {#prerequisites}
+# Conditions préalables{#prerequisites}
 
 ## Décisions {#decision}
 
