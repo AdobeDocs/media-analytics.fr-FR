@@ -4,7 +4,7 @@ description: Découvrez comment mettre en oeuvre le suivi principal à l’aide 
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 95%
@@ -13,8 +13,10 @@ ht-degree: 95%
 
 # Suivi de la lecture principale à l’aide de JavaScript 3.x {#track-core-playback-on-javascript}
 
+Cette documentation aborde le suivi dans la version 3.x du SDK.
+
 >[!IMPORTANT]
->Cette documentation aborde le suivi dans la version 3.x du SDK. Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md)
+> Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md)
 
 1. **Configuration initiale du suivi**
 
