@@ -1,6 +1,6 @@
 ---
 title: Lecture VOD avec recherche dans le contenu principal
-description: Découvrez un exemple de suivi du contenu VOD dans lequel une recherche s’est produite à l’aide du SDK Media.
+description: Affichez un exemple de suivi du contenu VOD dans lequel une recherche a été effectuée à l’aide du SDK Media.
 uuid: 5c2392f6-9b9c-42f5-833f-77423d1e6222
 exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '277'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
