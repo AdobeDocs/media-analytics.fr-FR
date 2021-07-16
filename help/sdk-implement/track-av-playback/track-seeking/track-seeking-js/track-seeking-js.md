@@ -1,6 +1,6 @@
 ---
-title: Découvrez comment effectuer le suivi de la recherche à l’aide de JavaScript 2.x
-description: Découvrez comment effectuer le suivi des événements Début de la recherche et Fin de la recherche à l’aide du SDK Media dans les applications de navigateur (JS 2.x).
+title: Découvrez comment effectuer le suivi de la recherche à l’aide de JavaScript 2.x
+description: Découvrez comment effectuer le suivi des événements Début de la recherche et Fin de la recherche à l’aide du SDK Media dans les applications de navigateur (JS 2.x).
 uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '137'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
