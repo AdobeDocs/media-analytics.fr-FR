@@ -5,7 +5,7 @@ uuid: 089947fb-8bae-4ae8-b215-53793620efd7
 exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 80%
@@ -14,9 +14,11 @@ ht-degree: 80%
 
 # Suivi de la recherche à l’aide de JavaScript 2.x{#track-seeking-on-javascript}
 
+Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
+
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi de la recherche
 
