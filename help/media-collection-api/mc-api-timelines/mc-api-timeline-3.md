@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les chronologies de suivi multimédia � chapitres
+title: Découvrez les chronologies de suivi des médias � Chapitres
 description: Découvrez la chronologie du curseur de lecture et le moment où un chapitre commence et se termine.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1237'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
