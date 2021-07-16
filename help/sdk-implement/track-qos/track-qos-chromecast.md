@@ -1,6 +1,6 @@
 ---
-title: Découvrez comment suivre la qualité de l’expérience sur Chromecast
-description: '"Découvrez comment mettre en oeuvre le suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur Chromecast."'
+title: Découvrez comment effectuer le suivi de la qualité de lʼexpérience sur Chromecast
+description: « Apprenez en plus sur la mise en œuvre du suivi de la qualité de lʼexpérience (QoE, QoS) à lʼaide du SDK Media sur Chromecast. »
 uuid: d0cdc8cd-4db0-45ef-9470-1cba3996305b
 exl-id: 04b9b888-2727-4aa6-a934-94a02c85a490
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ La qualité du suivi de l’expérience inclut la qualité du service (QoS) et l
 ### À chaque événement de changement de débit binaire
 
 * Créez/mettez à jour l’instance d’objet QoS pour la lecture, `qosObject`
-* L’appel `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);`
+* Appel `trackEvent(Media.Heartbeat.Event.BitrateChange, qosObject);`
 
 ### Lors des erreurs du lecteur
 
