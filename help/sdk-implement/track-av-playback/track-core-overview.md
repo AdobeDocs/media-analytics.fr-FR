@@ -1,6 +1,6 @@
 ---
-title: Explication du suivi de la lecture du contenu
-description: '"Découvrez le suivi de la lecture principale, y compris le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. "'
+title: Présentation du suivi de la lecture du contenu
+description: « Découvrez le suivi de la lecture principale, dont le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. » "
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '894'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Le suivi de la lecture principale comprend le suivi du chargement du média, du 
 
 ### À la mise en pause/reprise
 
-* Appelez `trackPause`
+* Appel `trackPause`
 * Appelez `trackPlay`   _lorsque la lecture reprend_
 
 ### À la fin du média
