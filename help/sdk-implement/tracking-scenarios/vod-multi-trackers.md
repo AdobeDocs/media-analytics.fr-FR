@@ -1,6 +1,6 @@
 ---
 title: Plusieurs dispositifs de suivi VOD en parallèle
-description: Affichez un exemple de suivi VOD à l’aide de plusieurs dispositifs de suivi en parallèle.
+description: Consultez un exemple de suivi VOD à lʼaide de plusieurs suivis en parallèle.
 uuid: 6e25dd92-522f-455c-8e71-99d71d352e06
 exl-id: 318beba8-bb26-4cec-81d7-c6fc446ec7b4
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
