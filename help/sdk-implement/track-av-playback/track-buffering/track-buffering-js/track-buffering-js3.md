@@ -4,7 +4,7 @@ description: Découvrez comment effectuer le suivi des événements de mise en m
 exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 85%
@@ -13,9 +13,11 @@ ht-degree: 85%
 
 # Suivi de la mise en mémoire tampon à l’aide de JavaScript 3.x{#track-buffering-on-javascript}
 
+Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 3.x.
+
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 3.x. Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi de la mémoire tampon
 
