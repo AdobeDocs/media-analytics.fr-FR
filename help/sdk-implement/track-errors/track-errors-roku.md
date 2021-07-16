@@ -1,6 +1,6 @@
 ---
 title: Découvrez comment effectuer le suivi des erreurs sur Roku
-description: Découvrez comment implémenter le suivi des erreurs à l’aide du SDK Media sur Roku.
+description: Découvrez comment mettre en œuvre le suivi des erreurs à lʼaide du SDK Media sur Roku.
 uuid: 4e0165f9-9169-47ed-9f11-ea8a8778f663
 exl-id: 6a6aae4c-60c3-43ea-9954-0bb31f6456f8
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '96'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
