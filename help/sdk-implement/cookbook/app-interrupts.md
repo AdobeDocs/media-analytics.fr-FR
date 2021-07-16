@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Dans une application multimédia, la lecture peut être interrompue de différen
 >
 >L’équipe médias Analytics a déjà vu des clients qui appelaient `trackSessionStart` lorsque leur application revenait au premier plan. En procédant ainsi, la durée totale de lecture reprendra à zéro et vous perdrez les marqueurs de progression, segments, etc. À la place, appelez `trackPlay` lorsque l’application revient au premier plan et/ou que la lecture du média reprend.
 
-## FAQ sur la gestion des interruptions de l’application :  {#faq-about-handling-application-interrupts}
+## FAQ sur la gestion des interruptions de l’application : {#faq-about-handling-application-interrupts}
 
 * _Pendant combien de temps une application doit-elle être placée en arrière-plan avant que la session ne se ferme ?_
 
