@@ -1,13 +1,13 @@
 ---
-title: Découvrez comment effectuer le suivi de la qualité de l’expérience à l’aide de JavaScript 3.x
-description: '"Découvrez comment mettre en oeuvre le suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media dans les applications de navigateur à l’aide de JavaScript 3x."'
+title: Découvrez comment effectuer le suivi de la qualité de lʼexpérience à lʼaide de JavaScript 3.x
+description: « Découvrez comment mettre en œuvre le suivi de la qualité de lʼexpérience (QoE, QoS) à lʼaide du SDK Media dans les applications de navigateur avec JavaScript 3x. »
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
