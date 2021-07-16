@@ -1,6 +1,6 @@
 ---
-title: Découvrez comment mettre en oeuvre des métadonnées standard sur Chromecast
-description: Découvrez comment définir des métadonnées vidéo et publicitaires standard sur Chromecast.
+title: Découvrez comment implémenter des métadonnées standard sur Chromecast
+description: Découvrez comment définir des métadonnées de vidéo et d’annonce publicitaire standard sur Chromecast.
 uuid: 1560d3e0-29f5-4678-9f01-c672e0ae547b
 exl-id: 052ede4b-ea8a-4ca6-bf02-0aab22a8bcda
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '61'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
