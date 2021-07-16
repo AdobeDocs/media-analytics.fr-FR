@@ -1,13 +1,13 @@
 ---
 title: Rapport sur les Observateurs simultanés de médias
-description: '"Découvrez comment utiliser le panneau Observateurs simultanés de médias pour analyser les observateurs simultanés et comprendre le pic d’accès simultanés et les abandons."'
+description: « Découvrez comment utiliser le panneau d’observateurs simultanés de médias pour analyser les observateurs simultanés et comprendre le pic d’accès simultanés et les abandons. »
 exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
-feature: '"Media Analytics, Notions de base sur Workspace"'
+feature: « Media Analytics, Concepts de base de Workspace »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '187'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
