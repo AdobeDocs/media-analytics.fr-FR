@@ -4,7 +4,7 @@ description: Découvrez l’implémentation du suivi des chapitres et des segmen
 exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 89%
@@ -13,9 +13,11 @@ ht-degree: 89%
 
 # Suivi des chapitres et des segments à l’aide de JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
+Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 3.x.
+
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 3.x. Si vous implémentez une version précédente du SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
+> Si vous implémentez une version précédente du SDK, vous pouvez télécharger le Guide du développeur dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
 
 1. Identifiez le moment où a lieu l’événement de début de chapitre et créez l’instance `ChapterObject` à l’aide des informations de chapitre.
 
