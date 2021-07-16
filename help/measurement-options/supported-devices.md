@@ -1,13 +1,13 @@
 ---
 title: En savoir plus sur les périphériques et plateformes pris en charge
-description: '"Découvrez les principaux appareils tels que iOS, Android, appareils OTT et navigateurs JavaScript pris en charge par Adobe Analytics for Streaming Media."'
+description: « Découvrez les principaux périphériques pris en charge par Adobe Analytics for Streaming Media, tels que les appareils iOS, Android, OTT et les navigateurs JavaScript. »
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '341'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
