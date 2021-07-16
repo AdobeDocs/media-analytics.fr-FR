@@ -1,6 +1,6 @@
 ---
 title: Événements de mise en file d’attente lorsque la réponse des sessions est lente
-description: 'Découvrez ce que vous devez faire lorsque l’ID de session est renvoyé après le déclenchement des événements par votre lecteur. '
+description: 'Découvrez ce que vous devez faire lorsque l’ID de session est renvoyé après le déclenchement d’événements par votre lecteur. '
 uuid: 39ea59d9-89d3-4087-a806-48a43ecf0c98
 exl-id: 2c23c378-c104-4256-b6e7-8eb6871f62da
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
