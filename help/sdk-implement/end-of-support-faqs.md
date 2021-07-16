@@ -1,5 +1,5 @@
 ---
-title: En savoir plus sur les FAQ sur l’abandon de la prise en charge du SDK Media Analytics
+title: En savoir plus sur les FAQ relatives à l’abandon de la prise en charge du SDK Media Analytics
 description: Cette rubrique comprend des questions fréquentes concernant l’abandon de la prise en charge des SDK Media Analytics.
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '673'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,6 @@ Contactez votre gestionnaire de la réussite client Adobe si vous avez des quest
 1. **La prise en charge des SDK Roku et Chromecast sera-t-elle affectée ?&#x200B;**
 
    Non.  Pour le moment, les SDK Roku et Chromecast continueront à être pris en charge en tant que SDK autonomes.
-
 1. **Les mises en œuvre du SDK Media Analytics pour JS seront-elles affectées par cette modification ?&#x200B;**
 
    Non.  Les clients qui utilisent le SDK JS pour Media Analytics peuvent continuer à utiliser le SDK ou l’activer par le biais d’Adobe Launch.
