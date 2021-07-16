@@ -1,6 +1,6 @@
 ---
 title: Lecture VOD avec publicités ignorées
-description: Découvrez un exemple de suivi du contenu VOD dans lequel l’utilisateur a ignoré les publicités à l’aide du SDK Media.
+description: Exemple de suivi du contenu VOD dans lequel l’utilisateur a ignoré les publicités à l’aide du SDK Media.
 uuid: f3ab3524-abcb-4051-b64e-a1aad6e3dd3f
 exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '282'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Lecture VOD avec saut de publicité{#vod-playback-with-skipped-ads}
+# Lecture VOD avec publicités ignorées{#vod-playback-with-skipped-ads}
 
 ## Scénario {#scenario}
 
