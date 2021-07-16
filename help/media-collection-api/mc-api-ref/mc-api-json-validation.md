@@ -1,6 +1,6 @@
 ---
-title: Schémas de validation JSON des analyses de médias en flux continu
-description: Que sont les schémas de validation JSON des médias en flux continu et comment sont-ils utilisés pour déterminer les paramètres corrects du corps de la requête pour chaque type d’événement ?
+title: Schémas de validation JSON des analyses de streaming multimédia
+description: Que sont les schémas de validation JSON de streaming multimédia et comment sont-ils utilisés pour déterminer les paramètres corrects du corps de la requête pour chaque type d’événement ?
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
