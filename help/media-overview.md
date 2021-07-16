@@ -1,6 +1,6 @@
 ---
-title: 'Adobe de médias en flux continu dans Adobe Analytics '
-description: '"Explorez de plus près la mesure de médias en flux continu dernier cri pour le contenu, l’audio et les publicités. Découvrez Adobe Analytics for Streaming Media."'
+title: 'Streaming multimédia Adobe dans Adobe Analytics '
+description: « Explorez de plus près la mesure de streaming multimédia de pointe pour le contenu, l’audio et les publicités. À propos d’Adobe Analytics pour le streaming multimédia. »
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '880'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Mesurer des médias en flux continu dans Adobe Analytics {#measuring-audio-and-video-in-adobe-analytics}
+# Mesurer des médias en flux continu dans Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
 
 ![Bannière](./assets/media_analytics_banner.png)
 
@@ -24,7 +24,7 @@ Adobe Analytics for Streaming Media vous permet de suivre l’ensemble du par
 
 Vous pouvez déterminer les mesures de diffusion vidéo essentielles liées à la qualité de service, telles que les images perdues, le temps consacré à la mise en mémoire tampon et le débit moyen. De plus, les mesures peuvent être combinées avec les données de votre site Web ou de votre application pour visualiser le chemin et les intérêts des clients, afin de fournir des recommandations optimisées et de personnaliser les expériences client à l’aide d’Adobe Experience Cloud.
 
-## Fonctionnalités  {#features}
+## Fonctionnalités {#features}
 
 Les avantages d’Adobe Analytics for Streaming Media incluent la surveillance en temps réel, les analyses détaillées, des informations exploitables et des opportunités de monétisation.
 * **Analyse en temps réel** : prenez des décisions exploitables en temps réel en utilisant des mesures de performances clés telles que les démarrages de média, sur plusieurs canaux.
