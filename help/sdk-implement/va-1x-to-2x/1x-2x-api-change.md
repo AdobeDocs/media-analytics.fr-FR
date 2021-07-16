@@ -1,6 +1,6 @@
 ---
-title: Conversion de l’API version 1.x vers 2.x
-description: Explorez les références d’API et les listes des API de suivi requises et facultatives pour les versions 1.x et 2.x du SDK Media.
+title: Conversion de lʼAPI de la version 1.x vers la version 2.x
+description: Examinez les références API et répertoriez les API de suivi requises et facultatives pour les versions 1.x et 2.x du SDK Media.
 uuid: 6e619288-c082-4cb4-8685-e90823dadf4a
 exl-id: 8d06b7df-f246-49e6-aa58-91a9d6fa889a
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
