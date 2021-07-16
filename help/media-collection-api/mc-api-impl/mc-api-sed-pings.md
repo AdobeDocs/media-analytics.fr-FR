@@ -1,6 +1,6 @@
 ---
 title: Envoi d’événements ping
-description: Les événements ping sont la pulsation de Streaming Media Analytics. Découvrez comment envoyer un ping chronométré pour le contenu principal ou le suivi des publicités.
+description: Les événements ping sont la quintessence de Streaming Media Analytics. Découvrez comment envoyer un ping programmé pour effectuer le suivi du contenu principal ou/et des publicités.
 uuid: c92c1a92-3af6-4474-9e42-ffb8f6c94b33
 exl-id: 0a645363-26d5-41e7-aa16-c775253e2b1d
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
