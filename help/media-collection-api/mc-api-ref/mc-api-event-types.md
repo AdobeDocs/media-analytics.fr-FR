@@ -1,6 +1,6 @@
 ---
-title: Types et descriptions d’événement de média en flux continu
-description: '"Quels sont les types et descriptions d’événement Media Collection ? "'
+title: Types et descriptions d’événements de streaming multimédia
+description: « Quels sont les types et descriptions d’événements Media Collection ? "
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
