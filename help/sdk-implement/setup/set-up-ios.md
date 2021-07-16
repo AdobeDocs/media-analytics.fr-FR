@@ -5,14 +5,16 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 97%
+source-wordcount: '765'
+ht-degree: 96%
 
 ---
 
 # Configuration d’iOS{#set-up-ios}
+
+Découvrez comment configurer les analyses des médias en flux continu pour les appareils iOS.
 
 >[!IMPORTANT]
 >
