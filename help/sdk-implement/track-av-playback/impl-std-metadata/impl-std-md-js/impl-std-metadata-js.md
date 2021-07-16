@@ -1,5 +1,5 @@
 ---
-title: Découvrez comment mettre en oeuvre des métadonnées standard à l’aide de JavaScript 2.x
+title: Découvrez comment mettre en œuvre des métadonnées standard à lʼaide de JavaScript 2.x
 description: Découvrez comment définir des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi dans les applications de navigateur (JS 2.x).
 uuid: 523d29e3-0a62-40d7-ac74-da645024cdcb
 exl-id: 889c294b-ac45-4e82-abb3-88ab70abbc3d
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
