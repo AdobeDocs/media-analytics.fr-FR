@@ -1,18 +1,18 @@
 ---
-title: OTT et Experience Cloud
-description: Découvrez les détails de l’intégration des applications OTT à Experience Cloud.
+title: 'OTT et Experience Cloud '
+description: Découvrez en détail comment intégrer des applications OTT avec Experience Cloud.
 uuid: 89264403-0fc8-4c76-b001-22e20e57bef2
 exl-id: dfeb0708-e744-4ff1-a644-3d77812f736a
-feature: '"Media Analytics, intégration Experience Cloud"'
+feature: « Media Analytics, intégration Experience Cloud »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '46'
-ht-degree: 69%
+ht-degree: 100%
 
 ---
 
-# OTT et Experience Cloud{#ott-and-experience-cloud}
+# OTT et Experience Cloud {#ott-and-experience-cloud}
 
 Pour en savoir plus sur l’intégration des applications OTT avec Experience Cloud, consultez les rubriques de configuration pour Chromecast et Roku :
 
