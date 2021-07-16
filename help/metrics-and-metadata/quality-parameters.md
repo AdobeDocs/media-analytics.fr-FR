@@ -5,10 +5,10 @@ uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
 feature: '"Media Analytics, Variables"'
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
-source-wordcount: '2980'
-ht-degree: 93%
+source-wordcount: '3001'
+ht-degree: 92%
 
 ---
 
@@ -50,11 +50,11 @@ Description des données de tableau :
 | <ul> <li> **Clé SDK :**<br/> </li> <li> **Clé API :**<br/> media.qoe.timeToStart </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Nombre </li> <li> **Envoyé avec :**<br/> Démarrage du média, Fermeture du média </li> <li> **Version minimum du SDK :** Toutes </li> <li> **Exemple de valeur :**<br/> 30 000 </li><li> **Description :**<br/> cette valeur est définie par défaut sur zéro si vous ne la définissez pas via la propriété QoSObject. Cette valeur est exprimée en millisecondes. La valeur s’affichera au format d’heure (HH:MM:SS) dans Analysis Workspace et Reports &amp; Analytics. Dans les API Flux de données, Data Warehouse et Création de rapports, les valeurs seront exprimées en secondes.  </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **Heartbeat :**<br/> (:stream:startup_time) </li> </ul> | <ul> <li> **Disponible :**<br/> Oui </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Temps jusqu’au début </li> <li> **Données contextuelles :**<br/> (a.media.qoe.<br/>timeToStart) </li> <li> **Flux de données :**<br/> videoqoetimetostartevar </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.qoe.<br/>timeToStart) </li> </ul> |
 
 
-### FPS
+### Images par seconde
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- | --- |
-| <ul> <li> **Clé SDK :**<br/> </li> <li> **Clé API :**<br/> media.qoe.framesPerSecond </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Nombre </li> <li> **Envoyé avec :**<br/> Démarrage du média, Fermeture du média </li> <li> **Version minimum du SDK :** Toutes </li> <li> **Exemple de valeur :**<br/> 24 </li><li> **Description :**<br/> valeur actuelle de la fréquence d’image de la diffusion en images par seconde.  </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> </li> <li> **Heartbeat :**<br/>  (:stream:lfps) </li> </ul> | <ul> <li> **Disponible :**<br/> Non </li> <li> **Variable réservée :**<br/> S.O. </li> <li> **Nom du rapport :**<br/> S.O. </li> <li> **Données contextuelles :**<br/> </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/> </li> <li> **Clé API :**<br/> media.qoe.framesPerSecond </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Nombre </li> <li> **Envoyé avec :**<br/> Démarrage du média, Fermeture du média </li> <li> **Version minimum du SDK :** Toutes </li> <li> **Exemple de valeur :**<br/> 24 </li><li> **Description :**<br/> valeur actuelle de la fréquence d’image de la diffusion en images par seconde. Le champ est mappé sur le champ fps de l’appel close et est accessible via les règles de traitement.  </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> </li> <li> **Heartbeat :**<br/>  (:stream:lfps) </li> </ul> | <ul> <li> **Disponible :**<br/> Non </li> <li> **Variable réservée :**<br/> S.O. </li> <li> **Nom du rapport :**<br/> S.O. </li> <li> **Données contextuelles :**<br/> </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> </li> </ul> |
 
 
 
