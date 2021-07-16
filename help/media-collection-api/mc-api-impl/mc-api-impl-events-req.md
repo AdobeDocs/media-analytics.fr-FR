@@ -1,6 +1,6 @@
 ---
 title: Mise en œuvre d’une requête events
-description: Découvrez comment utiliser le point de terminaison de requête events pour tous les appels de suivi suivants après avoir obtenu un ID de session
+description: Découvrez comment utiliser le point d’entrée de requêtes Events pour tous les appels de suivi ultérieurs à l’obtention d’un ID de session
 uuid: 3bfa313c-ff74-4e2e-bbde-6f4a6221d85b
 exl-id: af9a3470-85c7-498e-9bf4-6df3c6aafad9
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
