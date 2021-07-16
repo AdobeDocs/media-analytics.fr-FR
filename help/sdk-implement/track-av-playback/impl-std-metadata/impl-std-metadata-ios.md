@@ -1,5 +1,5 @@
 ---
-title: Découvrez comment implémenter des métadonnées standard sur iOS
+title: Découvrez comment mettre en œuvre des métadonnées standard sur iOS
 description: Découvrez comment définir des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi sur iOS.
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '102'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
