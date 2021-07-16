@@ -1,6 +1,6 @@
 ---
-title: En savoir plus sur les rapports Milestone (obsolète)
-description: � obsolète Découvrez comment configurer les rapports vidéo pour une mise en oeuvre Milestone
+title: Découvrez les rapports Milestone (obsolète)
+description: Obsolète � Découvrez comment configurer les rapports vidéo pour une mise en œuvre Milestone
 uuid: 2f9ec6bb-8860-4863-98bc-5cffb356ccc5
 exl-id: 960785e3-f507-4f09-8f85-6eeca57dd2f3
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '3353'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
