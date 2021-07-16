@@ -1,5 +1,5 @@
 ---
-title: Explication des clés de métadonnées Roku
+title: Présentation des clés de métadonnées Roku
 description: Découvrez les clés de métadonnées Roku disponibles et consultez la liste complète des constantes de métadonnées standard.
 uuid: 2ca6bb1d-c545-43d3-9c3e-63b890aa268d
 exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '472'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
