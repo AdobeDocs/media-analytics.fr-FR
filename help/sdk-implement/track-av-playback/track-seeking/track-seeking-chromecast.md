@@ -5,7 +5,7 @@ uuid: 8018e6c4-fed9-4de7-9eae-c720da55ad8c
 exl-id: 03be8ed3-ae3a-4e9a-b667-0d9280a844a1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 84%
@@ -14,9 +14,11 @@ ht-degree: 84%
 
 # Suivi de la recherche sur Chromecast{#track-seeking-on-chromecast}
 
+Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
+
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi de la recherche
 
@@ -30,13 +32,13 @@ ht-degree: 84%
 1. Prêtez attention aux événements de recherche se produisant dans le lecteur multimédia. Une fois que vous avez reçu la notification de début de la recherche, effectuez-en le suivi à l’aide de l’événement `SeekStart` : [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekStart); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekStart);
    ```
 
 1. Une fois que vous avez reçu la notification de fin de la recherche, effectuez-en le suivi à l’aide de l’événement `SeekComplete` : [trackEvent](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackEvent)
 
    ```
-   ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekComplete); 
+   ADBMobile.media.trackEvent(ADBMobile.media.Event.SeekComplete);
    ```
 
 Consultez le scénario de suivi [Lecture VOD avec recherche dans le contenu principal](/help/sdk-implement/tracking-scenarios/vod-seeking.md) pour en savoir plus.
