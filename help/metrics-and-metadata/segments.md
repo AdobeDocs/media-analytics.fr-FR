@@ -1,20 +1,20 @@
 ---
-title: Explication des segments de diffusion multimédia
-description: '"Découvrez les segments de création de rapports associés au type de diffusion multimédia, y compris le segment, la description et la règle pour le type de diffusion multimédia."'
+title: Présentation des segments de streaming multimédia
+description: « Découvrez les segments de création de rapports associés au type de streaming multimédia, y compris le segment, la description et la règle pour le type de diffusion de streaming multimédia. »
 uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
-feature: '"Media Analytics, Segmentation"'
+feature: « Media Analytics, Segmentation »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Segments{#segments}
 
-Les segments vous permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions Web. Les segments de médias en flux continu vous permettent d’identifier le type de flux des visiteurs, par exemple les diffusions audio, en direct ou en podcast. Pour plus d’informations sur les segments Adobe Analytics, voir [À propos des segments et des conteneurs](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=en) dans le guide des composants Adobe Analytics.
+Les segments vous permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions Web. La diffiusion de segments de streaming multimédia vous permet d’identifier le type de flux des visiteurs, par exemple les diffusions audio, en direct ou en podcast. Pour plus d’informations sur les segments Adobe Analytics, voir [À propos des segments et des conteneurs](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=fr) dans le guide des composants Adobe Analytics.
 
 >[!NOTE]
 >
