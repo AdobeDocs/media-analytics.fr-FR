@@ -1,5 +1,5 @@
 ---
-title: Liens d’accès à Téléchargement des SDK Media Analytics
+title: Liens d’accès au téléchargement des SDK Media Analytics
 description: Liens vers les téléchargements du SDK pour les plateformes disponibles, dont Android, iOS, JavaScript, Chromecast et Roku.
 uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '520'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
