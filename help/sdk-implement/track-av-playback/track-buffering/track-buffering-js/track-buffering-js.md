@@ -5,7 +5,7 @@ uuid: c380cf2c-7729-4d4a-a4da-581bd94a5896
 exl-id: 62c1d5b4-2717-42b3-8343-d41e895a9da3
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '123'
 ht-degree: 85%
@@ -14,9 +14,11 @@ ht-degree: 85%
 
 # Suivi de la mise en mémoire tampon à l’aide de JavaScript 2.x{#track-buffering-on-javascript}
 
+Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
+
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Constantes de suivi de la mémoire tampon
 
