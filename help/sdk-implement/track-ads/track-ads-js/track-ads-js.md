@@ -1,5 +1,5 @@
 ---
-title: Découvrez comment effectuer le suivi des publicités à l’aide de JavaScript 2.x
+title: Découvrez comment effectuer le suivi des publicités à lʼaide de JavaScript 2.x
 description: Mettez en œuvre le suivi des publicités dans les applications de navigateur (JS) à l’aide du SDK Media.
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '357'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
