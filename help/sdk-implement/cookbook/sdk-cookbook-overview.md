@@ -1,13 +1,13 @@
 ---
 title: Présentation du guide pas à pas SDK
-description: '"Exploration des rubriques du guide pas à pas spécifique au SDK"'
+description: « Consultation des rubriques du guide pas à pas spécifique au SDK »
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '69'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -18,6 +18,6 @@ Vous trouverez ici les rubriques générales du guide pas à pas Media Analytics
 Les rubriques du livre de cuisine répertoriées ci-dessous sont spécifiques à la version Media SDK de Media Analytics :
 
 * [Gestion des interruptions de l’application lors de la lecture](/help/sdk-implement/cookbook/app-interrupts.md)
-* [Résolution des appels main:play apparaissant entre les publicités ](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
+* [Résolution des appels main:play apparaissant entre les publicités](/help/sdk-implement/cookbook/fix-ad-play-ad.md)
 * [Reprise des sessions inactives](/help/sdk-implement/cookbook/resuming-inactive.md)
 * [Suivi dans SceneGraph (Roku)](/help/sdk-implement/cookbook/sdk-track-scenegraph.md)
