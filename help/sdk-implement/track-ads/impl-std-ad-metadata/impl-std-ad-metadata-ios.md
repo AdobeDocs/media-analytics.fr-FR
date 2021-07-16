@@ -1,5 +1,5 @@
 ---
-title: Découvrez comment mettre en oeuvre des métadonnées de publicité standard sur iOS
+title: Découvrez comment mettre en œuvre des métadonnées publicitaires standard sur iOS
 description: Utilisation des métadonnées publicitaires standard dans le suivi des publicités sur iOS.
 uuid: f15fb727-5a5b-46c5-bf12-93b376c10fd1
 exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '67'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
