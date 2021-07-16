@@ -1,6 +1,6 @@
 ---
-title: Explication de la mise en oeuvre d’un lien personnalisé
-description: Découvrez comment mettre en oeuvre le suivi des liens personnalisés dans Streaming Media Analytics.
+title: Présentation de l’implémentation d’un lien personnalisé
+description: Découvrez comment implémenter le suivi des liens personnalisés dans Streaming Media Analytics.
 uuid: 83315e73-20ca-4db5-9d43-33daade45a13
 exl-id: ee6f931a-ef80-4ebe-8ccb-cdbf970516e6
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Guide de mise en œuvre d’un lien personnalisé {#custom-link-implementation-guide}
+# Guide de mise en œuvre d’un lien personnalisé{#custom-link-implementation-guide}
 
 Le suivi vidéo personnalisé utilise le suivi manuel des liens à l’aide du code de lien personnalisé dans le code `appMeasurement` d’Analytics.
 Le plus souvent, il est utilisé sur les plateformes et les appareils nécessitant peu de mesures vidéo.
