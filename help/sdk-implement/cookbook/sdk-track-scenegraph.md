@@ -1,6 +1,6 @@
 ---
 title: Suivi dans SceneGraph (Roku)
-description: Découvrez comment effectuer le suivi des médias avec la structure de programmation XML SceneGraph Roku.
+description: Découvrez comment effectuer le suivi des médias avec le framework de programmation XML SceneGraph de Roku.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -209,7 +209,7 @@ Les API `MediaHeartbeat` d’utilitaire globalement définies sur le composant A
 | `adb_media_init_adbreakinfo` | Cette méthode renvoie l’objet Informations de l’AdBreak initialisé. `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | Cette méthode renvoie un objet d’informations QoS initialisé. `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
-## Mise en œuvre  {#implementation}
+## Mise en œuvre {#implementation}
 
 1. **Téléchargement de la bibliothèque Roku -** Téléchargez la [dernière bibliothèque Roku.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
 
