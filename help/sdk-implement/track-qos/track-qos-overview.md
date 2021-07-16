@@ -1,5 +1,5 @@
 ---
-title: Explication du suivi de la qualité de l’expérience
+title: Présentation du suivi de la qualité de l’expérience
 description: Présentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media.
 uuid: 4d73c47f-d0a4-4228-9040-d6432311c9eb
 exl-id: af5f3372-a9a5-46ea-9c2f-81b0f5c96ccf
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Créez ou mettez à jour l’instance d’objet QoS pour la lecture. [Référenc
 
 ### À chaque événement de changement de débit binaire
 
-L’appel`trackEvent(Media.Heartbeat.Event.BitrateChange);`
+L’appel `trackEvent(Media.Heartbeat.Event.BitrateChange);`
 
 ## Mise en œuvre de QoS
 
