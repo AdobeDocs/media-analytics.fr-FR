@@ -1,5 +1,5 @@
 ---
-title: '"Migration du SDK Media autonome vers Adobe Launch - Web (JS)"'
+title: '« Migration du SDK Media autonome vers Adobe Launch : Web (JS) »'
 description: Découvrez comment migrer du SDK Media vers Launch pour JS.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
@@ -7,7 +7,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '403'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,8 @@ de fonctionner correctement.
 propriété Web.
 1. Dans l’onglet [!UICONTROL Catalogue], recherchez l’extension Adobe Media Analytics for Audio and
 Video, puis cliquez sur [!UICONTROL Installer].
-1. Dans la page des paramètres d’extension, configurez les paramètres de suivi. L’extension Media utilisera les paramètres configurés pour le suivi.
+1. Dans la page des paramètres d’extension, configurez les paramètres de suivi.
+L’extension Media utilisera les paramètres configurés pour le suivi.
 
    ![](assets/launch_config_js.png)
 
@@ -124,5 +125,5 @@ Transmettez un objet délégué à `get-instance` qui expose les fonctions `getQ
 
 ### Launch
 
-* [Présentation de Launch](https://docs.adobe.com/content/help/fr-FR/experience-cloud/user-guides/home.html)
+* [Présentation de Launch](https://experienceleague.adobe.com/docs/launch/using/overview.html?lang=fr)
 * [Extension Media Analytics](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/media-analytics-extension/overview.html?lang=fr)
