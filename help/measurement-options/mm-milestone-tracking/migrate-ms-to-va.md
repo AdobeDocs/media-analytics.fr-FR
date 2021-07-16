@@ -1,5 +1,5 @@
 ---
-title: Découvrez comment migrer de Milestone à Media Analytics
+title: Découvrez comment migrer de Milestone vers Media Analytics
 description: Découvrez comment modifier les variables Milestone en mesures Media Analytics et les méthodes du module Milestone en syntaxe Media Analytics.
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '692'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -72,11 +72,11 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 | Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
-| mediaName | `mediaName` : (obligatoire) nom de la vidéo tel que vous souhaitez le voir apparaître dans les rapports vidéo. | name | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
+| mediaName | `mediaName` : (obligatoire) nom de la vidéo tel que vous souhaitez le voir apparaître dans les rapports vidéo. | nom | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
 | mediaLength | `mediaLength` : (obligatoire) durée de la vidéo, en secondes. | length | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |
 | mediaPlayerName | `mediaPlayerName` : (obligatoire) nom du lecteur vidéo utilisé pour visionner la vidéo, tel que vous souhaitez le voir apparaître dans les rapports vidéo. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | Media.openAd | `s.Media.openAd(` <br> `  name,` <br> `  length,` <br> `  playerName,` <br> `  parentName,` <br> `  parentPod,` <br> `  parentPodPosition,` <br> `  CPM)` | trackEvent | `mediaHeartbeat.trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdBreakStart, ` <br> `  adBreakObject);` <br> `...` <br> `trackEvent(` <br> `  MediaHeartbeat.` <br> `    Event.` <br> `    AdStart, ` <br> `  adObject, ` <br> `  adCustomMetadata);` |
-| name | `name` : (obligatoire) nom ou identifiant de la vidéo. | name | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
+| nom | `name` : (obligatoire) nom ou identifiant de la vidéo. | nom | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | length | `length` : (obligatoire) durée de la publicité. | length | `createAdObject(` <br> `  name, ` <br> `  adId, ` <br> `  position, ` <br> `  length)` |
 | playerName | `playerName` : (obligatoire) nom du lecteur vidéo utilisé pour visionner la publicité. | playerName | `MediaHeartbeatConfig.` <br> `  playerName` |
 | parentName | `parentName` : nom ou identifiant du contenu principal dans lequel la publicité est incorporée. | S.O. | Hérité automatiquement. |
