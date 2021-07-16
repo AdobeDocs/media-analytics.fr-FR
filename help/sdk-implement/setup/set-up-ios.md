@@ -1,6 +1,6 @@
 ---
-title: Configuration du SDK Media sur iOS
-description: Pour configurer l’application du SDK Media sur iOS, procédez comme suit.
+title: Découvrez comment configurer le SDK Media sur iOS
+description: Suivez les étapes suivantes pour configurer lʼapplication du SDK Media sur iOS.
 uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '765'
-ht-degree: 96%
+ht-degree: 98%
 
 ---
 
@@ -20,7 +20,7 @@ Découvrez comment configurer les analyses des médias en flux continu pour les 
 >
 >Avec l’abandon de la prise en charge des SDK mobiles de version 4 programmée au 31 août 2021, Adobe cessera également de prendre en charge le SDK Media Analytics pour iOS et Android.  Pour plus d’informations, reportez-vous à la [FAQ sur l’abandon de la prise en charge du SDK Media Analytics](/help/sdk-implement/end-of-support-faqs.md).
 
-## Conditions préalables 
+## Conditions préalables
 
 * **Obtention de paramètres de configuration valides pour le SDK Media** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
 * **Mise en œuvre d’ADBMobile pour iOS dans votre application** Pour plus d’informations sur la documentation du kit SDK Adobe Mobile, reportezvous à la rubrique [Kit SDK iOS 4.x pour les solutions Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/ios/overview.html?lang=fr)
