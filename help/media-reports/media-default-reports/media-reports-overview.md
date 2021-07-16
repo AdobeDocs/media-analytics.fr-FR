@@ -1,14 +1,14 @@
 ---
 title: Présentation multimédia
-description: Utilisez le tableau de bord Présentation multimédia pour afficher des mesures agrégées. Découvrez comment surveiller rapidement les performances multimédia.
+description: Utilisez le tableau de bord Aperçu des médias pour afficher des mesures agrégées. Découvrez comment consulter rapidement les performances des médias.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: '"Notions de base sur Media Analytics, Reports & Analytics"'
+feature: « Media Analytics, Concepts de base de Reports & Analytics »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Affiche rapidement les mesures multimédia par appareil ou pays géographique :
 
 ## Performances multimédia {#media-performance}
 
-Effectuez un cliquer-glisser pour zoomer, puis survolez des médias spécifiques pour afficher des mesures granulaires. Cliquez sur  ![](assets/video-overview-report-revert.png)
+Effectuez un cliquer-glisser pour zoomer, puis survolez des médias spécifiques pour afficher des mesures granulaires. Cliquez sur ![](assets/video-overview-report-revert.png)
 
 pour réinitialiser l’affichage après avoir zoomé.
 
