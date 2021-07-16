@@ -1,6 +1,6 @@
 ---
-title: Résolution Du Jeu Principal Apparaissant Entre Les Publicités
-description: '"Découvrez comment gérer les appels main:play inattendus entre les publicités."'
+title: Résolution des appels main:play apparaissant entre les publicités
+description: « Découvrez comment gérer les appels main:play inattendus entre les publicités. »
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '451'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Résolution des appels main:play apparaissant entre les publicités {#resolving-main-play-appearing-between-ads}
+# Résolution des appels main:play apparaissant entre les publicités{#resolving-main-play-appearing-between-ads}
 
 ## Problème
 
@@ -28,7 +28,7 @@ Pendant que vous utilisez Adobe Debug ou un renifleur de paquets réseau tel que
 * Démarrage de publicité : `s:event:type=start` &amp; `s:asset:type=ad`
 * Lecture de la publicité : `s:event:type=play` &amp; `s:asset:type=ad`
 * Fin de la publicité : `s:event:type=complete` &amp; `s:asset:type=ad`
-* Lecture du contenu principal : `s:event:type=play` &amp; `s:asset:type=main`**(inattendu)**
+* Lecture du contenu principal : `s:event:type=play` &amp; `s:asset:type=main` **(inattendu)**
 
 * Démarrage de publicité : `s:event:type=start` &amp; `s:asset:type=ad`
 * Lecture de la publicité : `s:event:type=play` &amp; `s:asset:type=ad`
