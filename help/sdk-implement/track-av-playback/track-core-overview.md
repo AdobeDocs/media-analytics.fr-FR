@@ -5,7 +5,7 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 97%
@@ -14,9 +14,11 @@ ht-degree: 97%
 
 # Présentation du suivi{#tracking-overview}
 
+Cette documentation aborde le suivi dans la version 2.x du SDK.
+
 >[!IMPORTANT]
 >
->Cette documentation aborde le suivi dans la version 2.x du SDK. Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Événements du lecteur
 
@@ -158,81 +160,81 @@ Consultez des exemples de chaque étape dans les rubriques suivantes spécifique
 Voici un exemple simple de suivi de lecture à l’aide du SDK JavaScript 2.x dans un lecteur HTML5 :
 
 ```js
-/* Call on media start */ 
-if (e.type == "play") { 
- 
-    // Check for start of media 
-    if (!sessionStarted) { 
+/* Call on media start */
+if (e.type == "play") {
+
+    // Check for start of media
+    if (!sessionStarted) {
         /* Set media info */     
         /* MediaHeartbeat.createMediaObject(<MEDIA_NAME>,  
                                             <MEDIA_ID>,  
-                                            <MEDIA_LENGTH>, 
+                                            <MEDIA_LENGTH>,
                                             <MEDIA_STREAMTYPE>,
-                                            <MEDIA_MEDIATYPE>);*/ 
-        var mediaInfo = MediaHeartbeat.createMediaObject( 
+                                            <MEDIA_MEDIATYPE>);*/
+        var mediaInfo = MediaHeartbeat.createMediaObject(
           document.getElementsByTagName('video')[0].getAttribute("name"),  
           document.getElementsByTagName('video')[0].getAttribute("id"),  
-          video.duration, 
-          MediaHeartbeat.StreamType.VOD); 
- 
-        /* Set custom context data */ 
-        var customVideoMetadata = { 
-            isUserLoggedIn: "false", 
-            tvStation: "Sample TV station", 
-            programmer: "Sample programmer" 
-        }; 
- 
+          video.duration,
+          MediaHeartbeat.StreamType.VOD);
+
+        /* Set custom context data */
+        var customVideoMetadata = {
+            isUserLoggedIn: "false",
+            tvStation: "Sample TV station",
+            programmer: "Sample programmer"
+        };
+
         /* Set standard video metadata */     
-        var standardVideoMetadata = {}; 
-        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.EPISODE] = "Sample Episode"; 
-        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.SHOW] = "Sample Show"; 
+        var standardVideoMetadata = {};
+        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.EPISODE] = "Sample Episode";
+        standardVideoMetadata[MediaHeartbeat.VideoMetadataKeys.SHOW] = "Sample Show";
         mediaInfo.setValue(MediaHeartbeat.MediaObjectKey.StandardVideoMetadata,  
                            standardVideoMetadata);     
- 
-        // Start Session 
+
+        // Start Session
         this.mediaHeartbeat.trackSessionStart(mediaInfo, customVideoMetadata);    
- 
-        // Track play 
+
+        // Track play
         this.mediaHeartbeat.trackPlay();  
         sessionStarted = true;     
- 
-    } else { 
+
+    } else {
         // Track play for resuming playack    
         this.mediaHeartbeat.trackPlay();  
-    } 
-}; 
- 
-/* Call on video complete */ 
-if (e.type == "ended") { 
-    console.log("video ended"); 
-    this.mediaHeartbeat.trackComplete(); 
-    this.mediaHeartbeat.trackSessionEnd(); 
+    }
+};
+
+/* Call on video complete */
+if (e.type == "ended") {
+    console.log("video ended");
+    this.mediaHeartbeat.trackComplete();
+    this.mediaHeartbeat.trackSessionEnd();
     sessionStarted = false;     
-}; 
- 
-/* Call on pause */ 
-if (e.type == "pause") { 
-    this.mediaHeartbeat.trackPause(); 
-}; 
- 
-/* Call on scrub start */ 
-if (e.type == "seeking") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart); 
-}; 
-     
-/* Call on scrub stop */ 
-if (e.type == "seeked") { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete); 
-}; 
- 
-/* Call on buffer start */ 
-if (e.type == “buffering”) { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart); 
-}; 
- 
-/* Call on buffer complete */ 
-if (e.type == “buffered”) { 
-    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete); 
+};
+
+/* Call on pause */
+if (e.type == "pause") {
+    this.mediaHeartbeat.trackPause();
+};
+
+/* Call on scrub start */
+if (e.type == "seeking") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekStart);
+};
+
+/* Call on scrub stop */
+if (e.type == "seeked") {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.SeekComplete);
+};
+
+/* Call on buffer start */
+if (e.type == “buffering”) {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferStart);
+};
+
+/* Call on buffer complete */
+if (e.type == “buffered”) {
+    this.mediaHeartbeat.trackEvent(MediaHeartbeat.Event.BufferComplete);
 };
 ```
 
