@@ -1,5 +1,5 @@
 ---
-title: Configuration du SDK Media pour Chromecast
+title: Comment configurer le SDK Media pour Chromecast
 description: Pour configurer l’application du SDK Media sur Chromecast, procédez comme suit.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '639'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ La bonne réponse est « Chromecast », pour les raisons suivantes :
 * Les bibliothèques AppMeasurement et VisitorAPI du SDK JS standard ne sont pas certifiées pour fonctionner sur les plateformes OTT. Dans le SDK JS Chromecast, la bibliothèque Video Heartbeats (VHL), Analytics et VisitorAPI sont tous intégrés au SDK unique, unifié et certifié pour Chromecast.
 * Le SDK Chromecast est beaucoup plus léger que le SDK JS standard. Ce point est essentiel pour le matériel bas de gamme utilisé par les plateformes OTT.
 
-## Conditions préalables 
+## Conditions préalables
 
 * **Obtention de paramètres de configuration valides pour Heartbeats** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Media Analytics.
 * **Fournissez les informations suivantes à votre lecteur multimédia :**
