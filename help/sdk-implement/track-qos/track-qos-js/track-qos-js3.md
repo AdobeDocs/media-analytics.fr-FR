@@ -4,7 +4,7 @@ description: '"Découvrez comment mettre en oeuvre le suivi de la qualité de l�
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 87%
@@ -13,9 +13,11 @@ ht-degree: 87%
 
 # Suivi de la qualité de l’expérience à l’aide de JavaScript 3.x{#track-quality-of-experience-on-javascript}
 
+Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
+
 >[!IMPORTANT]
 >
->Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 3.x. Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
+>Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK.](/help/sdk-implement/download-sdks.md)
 
 ## Implémentation de QOE
 
