@@ -1,6 +1,6 @@
 ---
-title: Explication des erreurs de suivi
-description: Explorez plus en détail le suivi des erreurs à l’aide du SDK Media.
+title: Présentation des erreurs de suivi
+description: Examinez plus en détail le suivi des erreurs à lʼaide du SDK Media.
 uuid: d71429e6-ef8b-4ea2-8491-ff3cdbf4357f
 exl-id: 61c5f835-d66c-4621-a0af-2e4f47a922ac
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '95'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
