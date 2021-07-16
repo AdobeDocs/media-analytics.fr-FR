@@ -1,17 +1,17 @@
 ---
-title: Découvrez Comment Effectuer Le Suivi De La Lecture Principale À L’Aide De JavaScript v3.x
-description: Découvrez comment mettre en oeuvre le suivi principal à l’aide du SDK Media dans un navigateur à l’aide des applications JavaScript 3.x.
+title: Découvrez comment effectuer le suivi de la lecture principale à lʼaide de JavaScript v3.x
+description: Découvrez comment mettre en œuvre le suivi principal à lʼaide du SDK Media dans un navigateur à lʼaide des applications JavaScript 3.x.
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '647'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Suivi de la lecture principale à l’aide de JavaScript 3.x {#track-core-playback-on-javascript}
+# Suivi de la lecture principale à l’aide de JavaScript 3.x{#track-core-playback-on-javascript}
 
 Cette documentation aborde le suivi dans la version 3.x du SDK.
 
