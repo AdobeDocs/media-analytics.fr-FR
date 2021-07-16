@@ -1,6 +1,6 @@
 ---
-title: Découvrez comment suivre la qualité de l’expérience sur Roku
-description: '"Découvrez comment mettre en oeuvre le suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur Roku."'
+title: Découvrez comment effectuer le suivi de la qualité de l’expérience sur Roku
+description: « Découvrez l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur Roku. »
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
 workflow-type: tm+mt
 source-wordcount: '199'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
