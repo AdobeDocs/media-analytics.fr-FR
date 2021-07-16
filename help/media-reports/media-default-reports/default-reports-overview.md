@@ -1,14 +1,14 @@
 ---
 title: Aperçu des rapports par défaut
-description: '"Découvrez les types de rapports et les mesures utilisés pour effectuer le suivi multimédia sur votre site web. Explorez les rapports de style tableau de bord disponibles avec le module Media Core."'
+description: « Découvrez les types de rapports et les mesures utilisés pour effectuer le suivi multimédia sur votre site web. » « Explorez les rapports sous forme de tableaux de bord disponibles avec le module Media Core. »
 uuid: a078aa59-3b2d-45b2-9e66-3d9c29c82f0c
 exl-id: 0040006e-cd59-48a1-b019-1feafc275fa3
-feature: '"Notions de base sur Media Analytics, Reports & Analytics"'
+feature: « Media Analytics, Concepts de base de Reports & Analytics »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
