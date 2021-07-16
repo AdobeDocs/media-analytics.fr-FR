@@ -1,6 +1,6 @@
 ---
-title: '"Lecture VOD avec publicités preroll"'
-description: '"Affichez un exemple de suivi du contenu VOD contenant des publicités preroll à l’aide du SDK Media."'
+title: « Lecture VOD avec publicités preroll »
+description: « Consultez un exemple de suivi du contenu VOD contenant des publicités preroll à lʼaide du SDK Media. »
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
