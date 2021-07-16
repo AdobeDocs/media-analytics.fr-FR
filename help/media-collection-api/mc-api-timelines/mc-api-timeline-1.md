@@ -1,6 +1,6 @@
 ---
-title: En savoir plus sur les chronologies de suivi � la vue jusqu’à la fin du contenu
-description: Explorez la chronologie du curseur de lecture et les actions de l’utilisateur correspondant �. Découvrez les détails de chaque action et des demandes qui l’accompagnent.
+title: En savoir plus sur les chronologies de suivi de médias � Afficher jusqu’à la fin du contenu
+description: Explorez plus en détail la chronologie de la tête de lecture et les actions correspondantes de l’utilisateur �. Découvrez les détails de chaque action et des demandes qui l’accompagnent.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
