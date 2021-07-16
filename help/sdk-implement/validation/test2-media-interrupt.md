@@ -1,6 +1,6 @@
 ---
 title: Test 2 Interruption du média
-description: Découvrez le test d’interruption du média utilisé dans la validation.
+description: Découvrez le test dʼinterruption des médias utilisé lors de la validation.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Test 2 - Interruption du média {#test-media-interruption}
+# Test 2 - Interruption du média{#test-media-interruption}
 
 Ce cas de test valide le comportement d’interruption mobile.
 
