@@ -6,7 +6,7 @@ breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
 source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '829'
 ht-degree: 100%
 
@@ -17,10 +17,10 @@ ht-degree: 100%
 
 + [Mesurer des médias en flux continu dans Adobe Analytics](media-overview.md)
 + [Périphériques et plateformes pris en charge](measurement-options/supported-devices.md)
-+ Introduction aux médias en flux continu dans Analytics {#intro-to-ava}
++ Présentation de Streaming Media Analytics {#intro-to-ava}
    + [Conditions préalables](intro-to-ava/prereqs.md)
    + Chemins de mise en œuvre {#implementation-paths}
-      + [Aperçu](intro-to-ava/implementation-paths/implementation-paths.md)
+      + [Aperçu ](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Côté client](intro-to-ava/implementation-paths/client-side-path.md)
       + Autres chemins de mise en œuvre {#other-paths}
          + Suivi des jalons du module média {#mm-milestone-tracking}
@@ -36,7 +36,7 @@ ht-degree: 100%
    + [FAQ sur l’abandon de la prise en charge du SDK Media Analytics](sdk-implement/end-of-support-faqs.md)
    + [Téléchargement des SDK](sdk-implement/download-sdks.md)
    + Installation et configuration {#setup}
-      + [Aperçu](sdk-implement/setup/setup-overview.md)
+      + [Aperçu ](sdk-implement/setup/setup-overview.md)
       + [Configuration d’Android](sdk-implement/setup/set-up-android.md)
       + [Configuration d’iOS](sdk-implement/setup/set-up-ios.md)
       + Configuration de JavaScript {#setup-javascript}
@@ -45,7 +45,7 @@ ht-degree: 100%
       + [Configuration de Chromecast](sdk-implement/setup/set-up-chromecast.md)
       + [Configuration de Roku](sdk-implement/setup/set-up-roku.md)
    + Suivi de la lecture des médias en flux continu {#track-av-playback}
-      + [Aperçu](sdk-implement/track-av-playback/track-core-overview.md)
+      + [Aperçu ](sdk-implement/track-av-playback/track-core-overview.md)
       + Suivi de la lecture principale des médias en flux continu {#track-core}
          + [Suivi de la lecture principale sur Android](sdk-implement/track-av-playback/track-core/track-core-android.md)
          + [Suivi de la lecture principale sur iOS](sdk-implement/track-av-playback/track-core/track-core-ios.md)
@@ -79,10 +79,10 @@ ht-degree: 100%
             + [Mise en œuvre de métadonnées standard sur JavaScript 3.x](sdk-implement/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Mise en œuvre de métadonnées standard sur Chromecast](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
          + [Paramètres des métadonnées standard - Chromecast](sdk-implement/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-         + [Mise en œuvre de métadonnées standard sur Roku](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+         + [Mise en œuvre de métadonnées standard sur Roku ](sdk-implement/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
          + [Paramètres des métadonnées standard - Roku](sdk-implement/track-av-playback/impl-std-metadata/roku-metadata.md)
    + Suivi des publicités {#track-ads}
-      + [Aperçu](sdk-implement/track-ads/track-ads-overview.md)
+      + [Aperçu ](sdk-implement/track-ads/track-ads-overview.md)
       + [Suivi des publicités sur Android](sdk-implement/track-ads/track-ads-android.md)
       + [Suivi des publicités sur iOS](sdk-implement/track-ads/track-ads-ios.md)
       + Suivi des publicités sur JavaScript {#track-ads-js}
@@ -91,14 +91,14 @@ ht-degree: 100%
       + [Suivi des publicités sur Chromecast](sdk-implement/track-ads/track-ads-chromecast.md)
       + [Suivi des publicités sur Roku](sdk-implement/track-ads/track-ads-roku.md)
       + Mise en œuvre de métadonnées de publicité standard {#impl-std-ad-metadata}
-         + [Mise en œuvre de métadonnées de publicité standard sur Android](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
-         + [Mise en œuvre de métadonnées de publicité standard sur iOS](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+         + [Mise en œuvre de métadonnées de publicité standard sur Android ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+         + [Mise en œuvre de métadonnées de publicité standard sur iOS ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
          + Mise en œuvre de métadonnées de publicité standard sur JavaScript {#impl-std-ad-md-js}
             + [Mise en œuvre de métadonnées de publicité standard sur JavaScript 2.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
             + [Mise en œuvre de métadonnées de publicité standard sur JavaScript 3.x](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [Mise en œuvre de métadonnées de publicité standard sur Roku ](sdk-implement/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Suivi des chapitres et des segments {#track-chapters}
-      + [Aperçu](sdk-implement/track-chapters/track-chapters-overview.md)
+      + [Aperçu ](sdk-implement/track-chapters/track-chapters-overview.md)
       + [Suivi des chapitres et des segments sur Android](sdk-implement/track-chapters/track-chapters-android.md)
       + [Suivi des chapitres et des segments sur iOS](sdk-implement/track-chapters/track-chapters-ios.md)
       + Suivi des chapitres et des segments sur JavaScript {#track-chapters-js}
@@ -107,7 +107,7 @@ ht-degree: 100%
       + [Suivi des chapitres et des segments sur Chromecast](sdk-implement/track-chapters/track-chapters-chromecast.md)
       + [Suivi des chapitres et des segments sur Roku](sdk-implement/track-chapters/track-chapters-roku.md)
    + Suivi de la qualité de l’expérience {#track-qos}
-      + [Aperçu](sdk-implement/track-qos/track-qos-overview.md)
+      + [Aperçu ](sdk-implement/track-qos/track-qos-overview.md)
       + [Suivi de la qualité de l’expérience sur Android](sdk-implement/track-qos/track-qos-android.md)
       + [Suivi de la qualité de l’expérience sur iOS](sdk-implement/track-qos/track-qos-ios.md)
       + Suivi de la qualité de l’expérience sur JavaScript {#track-qos-js}
@@ -116,9 +116,9 @@ ht-degree: 100%
       + [Suivi de la qualité de l’expérience sur Chromecast](sdk-implement/track-qos/track-qos-chromecast.md)
       + [Suivi de la qualité de l’expérience sur Roku](sdk-implement/track-qos/track-qos-roku.md)
    + Erreurs de suivi {#track-errors}
-      + [Aperçu](sdk-implement/track-errors/track-errors-overview.md)
+      + [Aperçu ](sdk-implement/track-errors/track-errors-overview.md)
       + [Erreurs de suivi sur Android](sdk-implement/track-errors/track-errors-android.md)
-      + [Erreurs de suivi sur iOS](sdk-implement/track-errors/track-errors-ios.md)
+      + [Erreurs de suivi sur iOS ](sdk-implement/track-errors/track-errors-ios.md)
       + Erreurs de suivi sur JavaScript {#track-errors-js}
          + [Erreurs de suivi sur JavaScript 2.x](sdk-implement/track-errors/track-errors-js/track-errors-js.md)
          + [Erreurs de suivi sur JavaScript 3.x](sdk-implement/track-errors/track-errors-js/track-errors-js3.md)
@@ -171,7 +171,7 @@ ht-degree: 100%
          + [iOS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JS](sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + API Media Collection (RESTful) {#media-collection-api}
-   + [Aperçu](media-collection-api/mc-api-overview.md)
+   + [Aperçu ](media-collection-api/mc-api-overview.md)
    + Référence d’API {#mc-api-ref}
       + [Requête Sessions](media-collection-api/mc-api-ref/mc-api-sessions-req.md)
       + [Requête events](media-collection-api/mc-api-ref/mc-api-events-req.md)
@@ -182,7 +182,7 @@ ht-degree: 100%
       + [Démarrage rapide](media-collection-api/mc-api-impl/mc-api-quick-start.md)
       + [Définition du type de requête HTTP dans votre lecteur](media-collection-api/mc-api-impl/mc-api-set-http-req.md)
       + [Obtention d’un ID de session](media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-      + [Mise en œuvre d’une requête events](media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+      + [Mise en œuvre d’une requête events ](media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
       + [Validation des requêtes d’événement](media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
       + [Envoi d’événements ping](media-collection-api/mc-api-impl/mc-api-sed-pings.md)
       + [Envoi de données QoE](media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
@@ -219,7 +219,7 @@ ht-degree: 100%
    + [Obtenir des données d’observateurs simultanés via l’API](media-reports/media-default-reports/get-concurrent-json20.md)
 + [Suivi du contenu téléchargé](media-collection-api/track-downloaded-content.md)
 + Suivi de l’état du lecteur {#player-state-tracking}
-   + [Aperçu](sdk-implement/player-state-tracking/player-state-overview.md)
+   + [Aperçu ](sdk-implement/player-state-tracking/player-state-overview.md)
    + [États standard et personnalisés](sdk-implement/player-state-tracking/standard-and-custom-states.md)
    + [Mise en œuvre et création de rapports](sdk-implement/player-state-tracking/implementation-and-reporting.md)
    + [Exemples de suivi de l’état du lecteur](sdk-implement/player-state-tracking/player-state-examples.md)
