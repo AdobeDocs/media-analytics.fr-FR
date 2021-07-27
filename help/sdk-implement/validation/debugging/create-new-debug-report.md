@@ -6,7 +6,7 @@ exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '205'
 ht-degree: 100%
 
@@ -30,7 +30,7 @@ Pour créer un nouveau rapport de débogage :
          L’accès peut s’effectuer de l’une des manières suivantes :
 
          * [!UICONTROL Analytics > Admin > Paramètres de la société > Services Web]
-         * [!UICONTROL Analytics > Administration > Gestion des utilisateurs > Utilisateurs > Paramètres d’utilisateur individuels] Pour créer des informations d’identification d’API de services Web pour un nouvel utilisateur, dans [!UICONTROL Gestion des utilisateurs], ajoutez l’utilisateur au groupe d’utilisateurs **Accès au service Web**.
+         * [!UICONTROL Analytics > Administration > Gestion des utilisateurs > Utilisateurs > Paramètres d’utilisateur individuels]  Pour créer des informations d’identification d’API de services Web pour un nouvel utilisateur, dans [!UICONTROL Gestion des utilisateurs], ajoutez l’utilisateur au groupe d’utilisateurs **Accès au service Web**.
       * [!UICONTROL Point de terminaison par défaut] - Les données de ce champ sont fournies par Adobe et ne peuvent pas être modifiées.
       * [!UICONTROL Point de terminaison supplémentaire] - Ajoutez `CNAMES`, si vous les utilisez, pour le suivi de serveur comme `metrics.companyname.com`
    * **Vidéo Heartbeat (Media Analytics)**
