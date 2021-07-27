@@ -6,7 +6,7 @@ exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
 ht-degree: 100%
 
@@ -14,7 +14,7 @@ ht-degree: 100%
 
 # Suivi du contenu téléchargé{#track-downloaded-content}
 
-## Aperçu {#overview}
+## Aperçu  {#overview}
 
 La fonctionnalité Contenu téléchargé permet d’effectuer le suivi de la consommation multimédia lorsqu’un utilisateur est hors ligne. Par exemple, un utilisateur télécharge et installe une application sur un appareil mobile, puis l’utilise pour télécharger du contenu dans le stockage local de l’appareil. Pour effectuer le suivi des données téléchargées, Adobe a développé la fonctionnalité Contenu téléchargé. Grâce à cette fonction, lorsque l’utilisateur lit du contenu stocké localement sur un appareil, les données de suivi sont elles aussi stockées sur l’appareil, indépendamment de la connectivité de celui-ci. Lorsque l’utilisateur met fin à la session de lecture et que l’appareil est à nouveau en ligne, les informations de suivi stockées sont envoyées au serveur principal de l’API Media Collection au sein d’une seule payload. Les informations de suivi stockées sont ensuite traitées et déclarées comme d’habitude dans l’API Media Collection.
 
@@ -41,7 +41,7 @@ Le suivi du contenu est pris en charge sur les appareils mobiles iOS et Android.
 ### Schémas d’événements
 
 La fonctionnalité Contenu téléchargé est la version hors ligne de l’API Media Collection en ligne (standard). Les données d’événement que votre lecteur associe et envoie au serveur principal doivent donc utiliser les mêmes schémas que ceux que vous utilisez lorsque vous effectuez des appels en ligne. Pour plus d’informations sur ces schémas, voir :
-* [Aperçu;](/help/media-collection-api/mc-api-overview.md)
+* [Aperçu ;](/help/media-collection-api/mc-api-overview.md)
 * [Validation des requêtes d’événement](/help/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
 
 ### Ordre des événements
