@@ -6,15 +6,15 @@ exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '765'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Configuration d’iOS{#set-up-ios}
 
-Découvrez comment configurer les analyses des médias en flux continu pour les appareils iOS.
+Découvrez comment configurer Streaming Media Analytics pour les appareils iOS.
 
 >[!IMPORTANT]
 >
