@@ -6,15 +6,15 @@ exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # Suivi de la lecture principale à l’aide de JavaScript 2.x{#track-core-playback-on-javascript}
 
-Les instructions suivantes fournissent des conseils pour la mise en oeuvre sur les SDK 2.x.
+Les instructions suivantes fournissent des conseils pour la mise en œuvre sur les kits SDK 2.x.
 
 >[!IMPORTANT]
 >Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/sdk-implement/download-sdks.md).
