@@ -6,13 +6,13 @@ exl-id: 908e9de6-9461-4f3d-9d94-5541c5dfeabb
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
 ht-degree: 100%
 
 ---
 
-# Aperçu de la validation{#validation-overview}
+# Aperçu de la validation {#validation-overview}
 
 La validation comprend une liste de scripts de test requis que les clients doivent exécuter (à l’aide d’Adobe Debug) pour envoyer des journaux validant une mise en œuvre correcte.
 Des résultats sont attendus pour chaque événement et paramètre de métadonnées.
