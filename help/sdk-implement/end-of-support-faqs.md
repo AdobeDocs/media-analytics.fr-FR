@@ -5,7 +5,7 @@ exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ Contactez votre gestionnaire de la réussite client Adobe si vous avez des quest
 
 1. **Cet abandon de la prise en charge a-t-il une incidence sur le SDK pour tvOS ?**
 
-   Oui : pour tvOS (version 10+), il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch — iOS](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html).
+   Oui : pour tvOS (version 10+), il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch — iOS](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.html?lang=fr).
 
 1. **Cet abandon de la prise en charge a-t-il une incidence sur le SDK pour FireTV et AndroidTV ?&#x200B;**
 
-   Oui : pour FireTV et AndroidTV, il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch - Android](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html).
+   Oui : pour FireTV et AndroidTV, il est recommandé de migrer vers les extensions Media Analytics.  Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch - Android](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.html?lang=fr).
