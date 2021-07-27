@@ -6,9 +6,9 @@ exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '742'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Suivez les étapes de mise en œuvre suivantes :
    |  Nom de méthode  |  Description  | Obligatoire |
    | --- | --- | :---: |
    | `getQoSObject()` | Retourne l’instance `MediaObject` contenant les informations actuelles sur la qualité de service (QoS). Cette méthode est appelée à plusieurs reprises au cours d’une session de lecture. La mise en œuvre du lecteur doit toujours retourner les plus récentes données QoS disponibles. | Oui |
-   | `getCurrentPlaybackTime()` | Renvoie la position actuelle du curseur de lecture. Pour le suivi VOD, la valeur est indiquée en secondes à partir du début de l’élément média. Pour le suivi LINEAR/LIVE, la valeur est spécifiée comme le nombre de secondes depuis minuit UTC ce jour-là. | Oui |
+   | `getCurrentPlaybackTime()` | Renvoie la position actuelle du curseur de lecture. Pour le suivi VOD, la valeur est indiquée en secondes à partir du début de l’élément média. Pour le suivi LINÉAIRE/EN DIRECT, la valeur est spécifiée comme le nombre de secondes écoulées depuis minuit UTC ce jour-là. | Oui |
 
    >[!TIP]
    >
