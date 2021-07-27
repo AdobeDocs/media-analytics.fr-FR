@@ -5,7 +5,7 @@ exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '233'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Vous devez également réactiver la configuration du suivi multimédia à partir
 
 >[!NOTE]
 >
->Les mesures multimédia _ne sont pas_ disponibles pour être utilisées en dehors du suivi multimédia, car la plupart sont calculées par Media Analytics en fonction des événements de pulsation. En outre, il est important que les mesures multimédia ne soient pas gonflées par des mises en œuvre différentes.
+>Les mesures multimédia _ne sont pas_ disponibles pour être utilisées en dehors du suivi multimédia, car la plupart sont calculées par Media Analytics  en fonction des événements de pulsation. En outre, il est important que les mesures multimédia ne soient pas gonflées par des mises en œuvre différentes.
 
 ## Comment
 
