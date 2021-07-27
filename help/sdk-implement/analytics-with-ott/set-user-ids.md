@@ -6,13 +6,13 @@ exl-id: 6b451082-47f3-4e65-9fe0-cecb2d20dc2d
 feature: « Media Analytics, API »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '56'
 ht-degree: 100%
 
 ---
 
-# Configuration d’identifiants utilisateur{#set-user-ids}
+# Configuration d’identifiants utilisateur {#set-user-ids}
 
 L’identifiant utilisateur est un identifiant visiteur personnalisé unique défini par l’application pour un utilisateur.
 
