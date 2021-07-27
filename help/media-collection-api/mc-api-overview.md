@@ -1,5 +1,5 @@
 ---
-seo-title: Aperçu
+seo-title: 'Aperçu '
 title: Présentation de l’API Streaming Media Collection
 description: Découvrez l’API Media Collection et la façon dont votre lecteur peut suivre les événements vidéo et audio à l’aide d’appels HTTP RESTful.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
@@ -7,13 +7,13 @@ exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '357'
 ht-degree: 100%
 
 ---
 
-# Aperçu{#overview}
+# Aperçu {#overview}
 
 L’API Media Collection constitue l’alternative RESTful d’Adobe au SDK Media côté client. Grâce à l’API Media Collection, votre lecteur peut effectuer le suivi des événements audio et vidéo à l’aide d’appels HTTP RESTful.
 
