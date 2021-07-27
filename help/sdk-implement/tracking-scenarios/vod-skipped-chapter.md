@@ -6,7 +6,7 @@ exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '315'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ Il s’agit du même scénario que la lecture [VOD avec un chapitre](/help/sdk-i
 
 | Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques |
 |---|---|---|---|
-| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario [Lecture sans interruptions dans un scénario iOS](vod-no-intrs-details.md). |
+| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario  [Lecture sans interruptions dans un scénario iOS](vod-no-intrs-details.md). |
 | Le chapitre démarre. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Chapter Play | Lorsque le contenu d’un chapitre est lu avant le contenu principal, nous voulons commencer les pulsations lorsque le chapitre commence. |
 | Le chapitre est lu. |  | Chapter Heartbeats |  |
@@ -35,7 +35,7 @@ Il s’agit du même scénario que la lecture [VOD avec un chapitre](/help/sdk-i
 
 ## Paramètres {#parameters}
 
-Les paramètres utilisés pendant la lecture de ce chapitre sont identiques à ceux du scénario [Lecture VOD avec un chapitre](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), mais il n’est pas question d’appel réseau de fin du chapitre.
+Les paramètres utilisés pendant la lecture de ce chapitre sont identiques à ceux du scénario  [Lecture VOD avec un chapitre](/help/sdk-implement/tracking-scenarios/vod-one-chapter.md), mais il n’est pas question d’appel réseau de fin du chapitre.
 
 ## Exemple de code {#sample-code}
 
