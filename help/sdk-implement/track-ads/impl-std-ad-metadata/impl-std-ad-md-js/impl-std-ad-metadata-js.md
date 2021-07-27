@@ -6,13 +6,13 @@ exl-id: b331db87-ab4e-44fa-a97c-9691974cacd4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '72'
 ht-degree: 100%
 
 ---
 
-# Implémentation de métadonnées d’annonce publicitaire standard à l’aide de JavaScript 2.x{#implement-standard-ad-metadata-on-javascript}
+# Implémentation de métadonnées d’annonce publicitaire standard à l’aide de JavaScript 2.x {#implement-standard-ad-metadata-on-javascript}
 
 ## Constantes publicitaires
 
