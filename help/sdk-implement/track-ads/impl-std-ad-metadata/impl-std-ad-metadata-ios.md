@@ -6,13 +6,13 @@ exl-id: 018ae833-51d9-4ff0-80e7-3dbcaefb997c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '67'
 ht-degree: 100%
 
 ---
 
-# Mise en œuvre de métadonnées de publicité standard sur iOS{#implement-standard-ad-metadata-on-ios}
+# Mise en œuvre de métadonnées de publicité standard sur iOS {#implement-standard-ad-metadata-on-ios}
 
 ## Constantes publicitaires
 
