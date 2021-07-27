@@ -6,13 +6,13 @@ exl-id: fc5590a5-4d0e-4a2d-8f40-54c53eabc6f0
 feature: « Media Analytics, Tableaux de bord Analytics »
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
 ht-degree: 100%
 
 ---
 
-# Tableaux de bord et rapports de débogage{#debug-dashboards-and-reports}
+# Tableaux de bord et rapports de débogage {#debug-dashboards-and-reports}
 
 Adobe Debug fournit des rapports en temps réel, ce qui vous permet de visualiser les accès et les métadonnées envoyées pendant la lecture vidéo. Chacun de ces rapports peut être enregistré dans Debug.
 
