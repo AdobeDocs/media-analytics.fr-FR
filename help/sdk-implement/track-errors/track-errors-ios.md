@@ -6,13 +6,13 @@ exl-id: c4ce7092-a102-41da-80a6-a4359f925708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '96'
 ht-degree: 100%
 
 ---
 
-# Erreurs de suivi sur iOS{#track-errors-on-ios}
+# Erreurs de suivi sur iOS {#track-errors-on-ios}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
 
