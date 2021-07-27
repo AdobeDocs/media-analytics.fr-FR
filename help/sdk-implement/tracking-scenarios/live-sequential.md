@@ -6,7 +6,7 @@ exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '522'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Il s’agit du même scénario que le scénario [Lecture VOD sans publicité](/h
 | La première image du contenu s’affiche. | trackPlay | Heartbeat Content Play | Lorsque le contenu du chapitre est lu avant le contenu principal, le Heartbeats commence lorsque le chapitre commence. |
 | Le contenu est lu |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/sdk-implement/tracking-scenarios/vod-no-intrs-details.md). |
 | Fin de la session (fin de l’épisode 1) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete signifie que la session 1 du 1er épisode a été atteinte et visionnée complètement. Avant de commencer la session pour le prochain épisode, cette session doit être terminée. |
-| Démarrage de l’épisode 2 (démarrage de la session 2) | trackSessionStart | Analytics Content Start Heartbeat Content Start | Cela se produit lorsqu’un utilisateur a visionné un premier épisode suivi d’un autre épisode. |
+| Démarrage de l’épisode 2  (démarrage de la session 2) | trackSessionStart | Analytics Content Start  Heartbeat Content Start | Cela se produit lorsqu’un utilisateur a visionné un premier épisode suivi d’un autre épisode. |
 | 1re image du média | trackPlay | Heartbeat Content Play | Cette méthode déclenche le minuteur et, à partir de ce moment, les pulsations sont envoyées toutes les 10 secondes tant que la lecture se poursuit. |
 | Le contenu est lu |  | Content Heartbeats |  |
 | Fin de la session (fin de l’épisode 2) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete signifie que la session 2 du 2e épisode a été atteinte et visionnée complètement. Avant de commencer la session pour le prochain épisode, cette session doit être terminée. |
