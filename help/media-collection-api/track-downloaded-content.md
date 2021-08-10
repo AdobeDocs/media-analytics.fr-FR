@@ -5,7 +5,7 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 41023be25308092a1b3e7c40bad2d8085429a0bc
+source-git-commit: 8da6889ecb50edd12b7ea4139500c35b923830f2
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 90%
@@ -105,9 +105,13 @@ POST /api/v1/downloaded HTTP/1.1
 }]
 ```
 
-#### Avis d’obsolescence
+### Avis d’obsolescence
 
-Le contenu téléchargé pouvait auparavant également être envoyé à l’API `/api/v1/sessions`. Cette méthode de suivi du contenu téléchargé est **obsolète** et sera **supprimée** à l’avenir.
+>[!IMPORTANT]
+>
+>Le contenu téléchargé pouvait auparavant également être envoyé à l’API `/api/v1/sessions`. Cette méthode de suivi du contenu téléchargé est **obsolète** et sera **supprimée** à l’avenir.
+
+
 L’API `/api/v1/sessions` accepte uniquement les événements d’initialisation de session.
 Lors de l’utilisation de la nouvelle API, l’indicateur `media.downloaded` précédemment obligatoire n’est plus nécessaire.
 Nous vous recommandons vivement d’utiliser l’API `/api/v1/downloaded` pour de nouvelles implémentations de contenu téléchargées, ainsi que de mettre à jour les implémentations existantes qui reposent sur l’ancienne API.
