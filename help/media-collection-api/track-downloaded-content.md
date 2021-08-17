@@ -8,11 +8,11 @@ role: User, Admin, Data Engineer
 source-git-commit: 8da6889ecb50edd12b7ea4139500c35b923830f2
 workflow-type: tm+mt
 source-wordcount: '698'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Suivi du contenu téléchargé{#track-downloaded-content}
+# Suivi du contenu téléchargé {#track-downloaded-content}
 
 ## Aperçu  {#overview}
 
@@ -109,12 +109,12 @@ POST /api/v1/downloaded HTTP/1.1
 
 >[!IMPORTANT]
 >
->Le contenu téléchargé pouvait auparavant également être envoyé à l’API `/api/v1/sessions`. Cette méthode de suivi du contenu téléchargé est **obsolète** et sera **supprimée** à l’avenir.
+>Le contenu téléchargé pouvait auparavant être également envoyé à l’API `/api/v1/sessions`. Cette méthode de suivi du contenu téléchargé est **obsolète** et sera **supprimée** dans le futur.
 
 
 L’API `/api/v1/sessions` accepte uniquement les événements d’initialisation de session.
-Lors de l’utilisation de la nouvelle API, l’indicateur `media.downloaded` précédemment obligatoire n’est plus nécessaire.
-Nous vous recommandons vivement d’utiliser l’API `/api/v1/downloaded` pour de nouvelles implémentations de contenu téléchargées, ainsi que de mettre à jour les implémentations existantes qui reposent sur l’ancienne API.
+Lors de l’utilisation de la nouvelle API, l’indicateur `media.downloaded`, auparavant obligatoire, n’est plus nécessaire.
+Nous vous recommandons vivement d’utiliser l’API `/api/v1/downloaded` pour obtenir de nouvelles implémentations de contenu téléchargé, mais également de mettre à jour les implémentations existantes qui reposent sur l’ancienne API.
 
 
 ```
