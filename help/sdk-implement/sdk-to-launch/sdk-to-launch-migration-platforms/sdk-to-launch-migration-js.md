@@ -5,9 +5,9 @@ exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: ceef739641ae07ea05314fb2bc23028de6ee5efb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -52,7 +52,7 @@ L’extension Media utilisera les paramètres configurés pour le suivi.
 
    ![](assets/launch_config_js.png)
 
-[Guide de l’utilisateur de Launch : installation et configuration de l’extension média](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html#install-and-configure-the-ma-extension)
+[Guide de l’utilisateur de Launch : installation et configuration de l’extension média](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=fr#install-and-configure-the-ma-extension)
 
 ## Différences dans la création du dispositif de suivi
 
@@ -125,5 +125,5 @@ Transmettez un objet délégué à `get-instance` qui expose les fonctions `getQ
 
 ### Launch
 
-* [Présentation de Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
-* [Extension Media Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html)
+* [Présentation de Launch](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr)
+* [Extension Media Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=fr)
