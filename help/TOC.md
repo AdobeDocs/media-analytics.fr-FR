@@ -7,7 +7,7 @@ user-guide-description: Implémentation d’Adobe Analytics for Streaming Medi
 sub-product: media analytics
 source-git-commit: 42a8e33f03c95c7ad7d1c73387450ef36b3e1560
 workflow-type: ht
-source-wordcount: '829'
+source-wordcount: '827'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 100%
             + [Migration de Milestone vers les liens personnalisés](measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
          + Lien personnalisé dans Analytics {#cl-in-aa}
             + [Guide de mise en œuvre d’un lien personnalisé](measurement-options/cl-in-aa/cl-impl-guide.md)
-         + Primetime {#primetime}
+         + {#primetime} Primetime
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
          + [Activation d’Audience Manager](intro-to-ava/am-enablement.md)
 + SDK Media Analytics {#sdk-implement}
