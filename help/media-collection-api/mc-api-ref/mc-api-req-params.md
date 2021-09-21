@@ -5,10 +5,10 @@ uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '1307'
-ht-degree: 100%
+source-git-commit: d8b10249c542d2875cba4916e4a2c7942c5589c4
+workflow-type: tm+mt
+source-wordcount: '1329'
+ht-degree: 99%
 
 ---
 
@@ -104,7 +104,7 @@ ht-degree: 100%
 
 | Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
 | --- | :---: | :---: | :---: | --- |
-| `media.qoe.bitrate` | N | entier | Tous | Débit binaire de la diffusion |
+| `media.qoe.bitrate` | N | entier | Tous | Débit moyen (en bit/s). Ce débit moyen correspond à la valeur moyenne pondérée de toutes les valeurs de débit liées à la durée des lectures au cours d’une session de lecture. |
 | `media.qoe.droppedFrames` | N | entier | Tous | Nombre d’images perdues dans la diffusion |
 | `media.qoe.framesPerSecond` | N | entier | Tous | Nombre d’images par seconde |
 | `media.qoe.timeToStart` | N | entier | Tous | Durée (en millisecondes) écoulée entre le moment où l’utilisateur lance la lecture et le contenu se charge et commence à être lu |
