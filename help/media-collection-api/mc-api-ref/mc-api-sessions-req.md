@@ -8,7 +8,7 @@ role: User, Admin, Data Engineer
 source-git-commit: ef881900766be773256e2732953f7b63c5d488fa
 workflow-type: tm+mt
 source-wordcount: '130'
-ht-degree: 56%
+ht-degree: 94%
 
 ---
 
@@ -62,8 +62,8 @@ Le corps de requête doit être JSON et doit avoir la même structure que le co
 ```
 
 * `playerTime` (Obligatoire)
-   * `playhead` - Si le contenu est actif, le curseur de lecture doit être la seconde de la journée en cours, 0  &lt;> Si le contenu est enregistré, le curseur de lecture doit correspondre à la seconde actuelle du contenu, 0 &lt;= curseur de lecture &lt; durée du contenu. La valeur peut être un nombre à virgule flottante.
-   * `ts` - Horodatage ; doit être en millisecondes ; Temps universel coordonné (UTC).
+   * `playhead` - Si le contenu est diffusé en direct, la tête de lecture doit correspondre à la seconde actuelle du jour, 0 &lt;= tête de lecture &lt; 86400. Si le contenu est enregistré, la tête de lecture doit correspondre à la seconde actuelle du contenu, 0 &lt;= tête de lecture &lt; durée du contenu. La valeur peut être un nombre à virgule flottante.
+   * `ts` - Date et heure ; doit être en millisecondes ; Temps universel coordonné (UTC).
 * `eventType` (Obligatoire)
 
    **Valeur valide :** `sessionStart`
