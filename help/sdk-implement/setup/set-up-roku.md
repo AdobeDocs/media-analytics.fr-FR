@@ -1,14 +1,14 @@
 ---
-title: Découvrez comment configurer le SDK Media pour Roku
+title: Configuration du SDK Media pour Roku
 description: Suivez les étapes suivantes pour configurer lʼapplication du SDK Media sur Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '718'
-ht-degree: 100%
+source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 98%
 
 ---
 
