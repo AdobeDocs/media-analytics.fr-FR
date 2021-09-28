@@ -4,16 +4,16 @@ description: '"Découvrez comment utiliser le panneau Durée de lecture multimé
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 55d77d1576236fbc1165a41d7a0775b9ee246d8a
+source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '218'
 ht-degree: 8%
 
 ---
 
 # Temps passé sur la lecture du média {#media-playback-time-spent}
 
-L’analyse de la durée de lecture permet de déterminer où s’est produit le pic d’accès simultané ou où des abandons ont eu lieu. La durée de lecture des médias permet d’obtenir des informations précieuses sur la qualité du contenu, l’engagement des observateurs et la manière dont le contenu impacte les heures supplémentaires de l’audience. La fonction Durée de lecture du média permet de résoudre les problèmes ou de planifier le volume ou l’échelle.
+L’analyse de la durée de lecture permet de déterminer où s’est produit le pic d’accès simultané ou où des abandons ont eu lieu. La durée de lecture des médias permet d’obtenir des informations précieuses sur la qualité du contenu, l’engagement des observateurs et la manière dont le contenu impacte l’audience au fil du temps. La fonction Durée de lecture du média permet de résoudre les problèmes ou de planifier le volume ou l’échelle.
 
 ## Panneau Durée de lecture du média dans Analysis Workspace
 
