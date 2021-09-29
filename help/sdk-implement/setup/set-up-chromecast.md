@@ -1,18 +1,18 @@
 ---
-title: Configuration du SDK Media pour Chromecast
+title: Comment configurer le SDK Media pour Chromecast
 description: Pour configurer l’application du SDK Media sur Chromecast, procédez comme suit.
 uuid: d664e394-02a2-4985-bbad-be1bcc44fb2b
 exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 2cebb3db58e28be3e448fdfa4da5f96c8c37a947
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Configuration de Chromecast{#set-up-chromecast}
+# Configuration de Chromecast {#set-up-chromecast}
 
 ## FAQ
 
@@ -136,7 +136,7 @@ Le kit SDK Chromecast 2.x pour les solutions Experience Cloud vous permet de m
    | `getMarketingCloudID()` | Récupère l’identifiant visiteur Experience Cloud auprès du service d’identification des visiteurs.  <br/><br/>`ADBMobile.visitor.getMarketingCloudID();` |
    | `syncIdentifiers()` | Avec l’identifiant visiteur d’Experience Cloud, vous pouvez définir d’autres identifiants de client qui peuvent être associés à chaque visiteur. L’API visiteur accepte plusieurs identifiants de client pour un même visiteur, ainsi qu’un identifiant de type client, afin de séparer la portée des différents identifiants de client. Cette méthode correspond aux identifiants `setCustomerIDs()` dans la bibliothèque JavaScript.  Par exemple : <br/><br/>`var identifiers = {};` <br/><br/>`identifiers["idType"] = "idValue";` <br/><br/>`ADBMobile.visitor.syncIdentifiers(identifiers);` |
 
-1. Pour le suivi des médias, implémentation du protocole MediaDelegate
+1. Pour le suivi des médias, mettez en œuvre le protocole MediaDelegate.
 
    ```js
     var delegate = {
