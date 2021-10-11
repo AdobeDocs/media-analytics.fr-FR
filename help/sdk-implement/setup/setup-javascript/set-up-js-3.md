@@ -1,13 +1,13 @@
 ---
-title: Configuration du SDK Media à l’aide de JavaScript 3.x
+title: Comment configurer le SDK Media à lʼaide de JavaScript 3.x
 description: Suivez les étapes suivantes pour configurer lʼapplication du SDK Media sur JavaScript 3.x.
 exl-id: 35e27495-e480-4463-9f00-4b60a54d02c1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 97%
 
 * **Obtention de paramètres de configuration valides** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
 * **Implémentez `AppMeasurement` et `Experience Cloud Identity Service` pour JavaScript dans votre application multimédia**
-Pour plus d’informations, reportez-vous aux sections [Mise en œuvre d’Analytics à l’aide de JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html) et [Mise en œuvre d’Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr).
+Pour plus d’informations, reportez-vous aux sections [Mise en œuvre d’Analytics à l’aide de JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr) et [Mise en œuvre d’Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr).
 
 * **Fournissez les informations suivantes à votre lecteur multimédia :**
 
    * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
-   * *Une API qui fournit des informations sur le lecteur* : elle inclut des informations sur les médias en cours de lecture, les publicités et le chapitre.
+   * *Une API qui fournit des informations sur le lecteur* - elle inclut des informations sur les médias en cours de lecture, les publicités et le chapitre.
 
 1. Ajoutez la bibliothèque que vous avez [téléchargée](/help/sdk-implement/download-sdks.md#download-3x-sdks) à votre projet. Créez des références locales aux classes pour des raisons pratiques.
 
