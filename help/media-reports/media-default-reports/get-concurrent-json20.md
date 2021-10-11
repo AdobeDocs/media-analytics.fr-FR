@@ -3,14 +3,15 @@ title: Obtenir les données de rapport JSON sur les observateurs simultanés ave
 description: Découvrez comment obtenir les données de rapport sur les visionneuses simultanées à l’aide des API Analytics 2.0. Affichez un exemple de requête et de réponse.
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-feature: « Media Analytics, Concepts de base de Reports & Analytics »
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
+source-git-commit: 03b274fa0c5580ee2759560efbea45eb308d4278
 workflow-type: ht
-source-wordcount: '190'
+source-wordcount: '185'
 ht-degree: 100%
 
 ---
+
 
 # Obtenir les données de rapport JSON sur les observateurs simultanés avec les API Analytics 2.0{#get-concurrent-viewers-json-report-data}
 
