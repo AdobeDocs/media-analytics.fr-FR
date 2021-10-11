@@ -1,26 +1,26 @@
 ---
-title: Temps passé sur la lecture du média
-description: '"Découvrez comment utiliser le panneau Durée de lecture multimédia pour analyser le temps de lecture passé et comprendre le pic d’accès simultané et l’endroit où des abandons ont eu lieu."'
+title: Temps de lecture de média
+description: « Découvrez comment utiliser le panneau Temps de lecture de média pour analyser le temps de lecture et comprendre le pic d’accès simultanés et l’endroit où des abandons ont eu lieu. »
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
-ht-degree: 8%
+ht-degree: 100%
 
 ---
 
-# Temps passé sur la lecture du média {#media-playback-time-spent}
+# Temps de lecture de média {#media-playback-time-spent}
 
-L’analyse de la durée de lecture permet de déterminer où s’est produit le pic d’accès simultané ou où des abandons ont eu lieu. La durée de lecture des médias permet d’obtenir des informations précieuses sur la qualité du contenu, l’engagement des observateurs et la manière dont le contenu impacte l’audience au fil du temps. La fonction Durée de lecture du média permet de résoudre les problèmes ou de planifier le volume ou l’échelle.
+L’analyse du temps de lecture permet de déterminer où s’est produit le pic d’accès simultanés mais aussi où des abandons ont eu lieu. Le temps de lecture du média permet d’obtenir des informations précieuses sur la qualité du contenu, l’engagement des spectateurs et la manière dont le contenu impacte l’audience au fil du temps. La fonctionnalité Temps de lecture de média permet de planifier le volume ou l’échelle ou de résoudre les problèmes liés à ces derniers.
 
-## Panneau Durée de lecture du média dans Analysis Workspace
+## Panneau Temps de lecture de média dans Analysis Workspace
 
-Dans Analysis Workspace, la durée de lecture est le temps passé à visionner vos flux multimédia à un moment donné et comprend la mise en pause, la mise en mémoire tampon et le temps de démarrage. Grâce à la durée de lecture multimédia, vous pouvez fractionner la durée de lecture par différents intervalles de temps, tels que 5 minutes, 15 minutes, 30 minutes ou 1 heure.
+Dans Analysis Workspace, le temps de lecture est la durée de visionnage de votre ou vos flux multimédias à un moment donné. Cela comprend la mise en pause, la mise en mémoire tampon et le temps de démarrage. Grâce au temps de lecture de média, vous pouvez fractionner la durée de lecture en différents intervalles de temps, par exemple 5 minutes, 15 minutes, 30 minutes ou 1 heure.
 
 
-La durée de lecture du média permet d’analyser la lecture au fil du temps, avec des détails sur la simultanéité la plus élevée et la possibilité de ventiler et de comparer. Pour accéder au panneau Durée de lecture du média , accédez à une suite de rapports avec les composants Media Analytics activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html)
+Le temps de lecture de média permet d’analyser la lecture au fil du temps, avec des détails sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Temps de lecture de média, naviguez vers une suite de rapports dans laquelle les composants Media Analytics sont activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html?lang=fr)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
