@@ -1,14 +1,14 @@
 ---
-title: Configuration du SDK Media sur Android
+title: Comment configurer le SDK Media sur Android
 description: Pour configurer l’application du SDK Media sur Android, procédez comme suit.
 uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: e10f705e135cc6b9c630059596994d12fc787866
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Découvrez comment configurer Streaming Media Analytics pour les appareils Andro
       1. Sélectionnez **[!UICONTROL Ouvrir les paramètres du module]**.
       1. Sous **[!UICONTROL Paramètres du projet]**, sélectionnez **[!UICONTROL Bibliothèques]**.
 
-      1. Cliquez sur ]**+**[!UICONTROL  pour ajouter une nouvelle bibliothèque.
+      1. Cliquez sur **[!UICONTROL +]** pour ajouter une nouvelle bibliothèque.
       1. Sélectionnez **[!UICONTROL Java]** et accédez au fichier `MediaSDK.jar`.
 
       1. Sélectionnez les modules dans lesquels vous prévoyez d’utiliser la bibliothèque mobile.
