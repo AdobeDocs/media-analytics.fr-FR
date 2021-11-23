@@ -5,9 +5,9 @@ exl-id: f70b8e1b-cb9f-4230-86b2-171bdaed4615
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 7afd4d6ff7fd2dd2c4edb7ad2b5d6462eb7eba2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -17,7 +17,8 @@ ht-degree: 93%
 
 ### SDK Media autonome
 
-Dans le SDK Media autonome, vous configurez le suivi dans l’application, puis vous le transmettez au SDK lorsque vous créez le dispositif de suivi.
+Dans le SDK Media autonome, vous configurez le suivi dans l’application avant de le transmettre
+au SDK lorsque vous créez le dispositif de suivi.
 
 ```objective-c
 ADBMediaHeartbeatConfig *config =
