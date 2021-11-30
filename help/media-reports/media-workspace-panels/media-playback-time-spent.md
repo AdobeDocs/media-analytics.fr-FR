@@ -4,10 +4,10 @@ description: « Découvrez comment utiliser le panneau Temps de lecture de méd
 exl-id: null
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 60e222e85c593e331d13e804f520a35a682e66a3
-workflow-type: ht
-source-wordcount: '218'
-ht-degree: 100%
+source-git-commit: d5769f3eed3f0c3770e427420025ff624e775f9f
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 95%
 
 ---
 
@@ -20,7 +20,7 @@ L’analyse du temps de lecture permet de déterminer où s’est produit le pic
 Dans Analysis Workspace, le temps de lecture est la durée de visionnage de votre ou vos flux multimédias à un moment donné. Cela comprend la mise en pause, la mise en mémoire tampon et le temps de démarrage. Grâce au temps de lecture de média, vous pouvez fractionner la durée de lecture en différents intervalles de temps, par exemple 5 minutes, 15 minutes, 30 minutes ou 1 heure.
 
 
-Le temps de lecture de média permet d’analyser la lecture au fil du temps, avec des détails sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Temps de lecture de média, naviguez vers une suite de rapports dans laquelle les composants Media Analytics sont activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent.html?lang=fr)
+Le temps de lecture de média permet d’analyser la lecture au fil du temps, avec des détails sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Temps de lecture de média, naviguez vers une suite de rapports dans laquelle les composants Media Analytics sont activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
