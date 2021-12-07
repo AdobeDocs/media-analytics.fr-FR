@@ -1,11 +1,9 @@
 ---
 title: Obtention des données de rapport JSON sur le temps de lecture de média avec les API Analytics 2.0
 description: Découvrez comment obtenir des données de rapport sur le temps de lecture de média à l’aide des API Analytics 2.0. Affichez un exemple de requête et de réponse.
-uuid: null
-exl-id: null
 feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
-source-git-commit: 3118a5eeef56c7768d88df7c658468c356921aac
+source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
