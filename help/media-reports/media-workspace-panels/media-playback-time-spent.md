@@ -1,12 +1,13 @@
 ---
 title: Temps de lecture de média
-description: « Découvrez comment utiliser le panneau Temps de lecture de média pour analyser le temps de lecture et comprendre le pic d’accès simultanés et l’endroit où des abandons ont eu lieu. »
+description: Découvrez comment utiliser le panneau Durée de lecture du média pour analyser le temps de lecture passé et comprendre le pic d’accès simultané et l’endroit où des abandons ont eu lieu.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 30f71465feac8bbca917630597ece4876b955ca0
+exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
+source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
 workflow-type: tm+mt
 source-wordcount: '219'
-ht-degree: 95%
+ht-degree: 89%
 
 ---
 
@@ -19,7 +20,7 @@ L’analyse du temps de lecture permet de déterminer où s’est produit le pic
 Dans Analysis Workspace, le temps de lecture est la durée de visionnage de votre ou vos flux multimédias à un moment donné. Cela comprend la mise en pause, la mise en mémoire tampon et le temps de démarrage. Grâce au temps de lecture de média, vous pouvez fractionner la durée de lecture en différents intervalles de temps, par exemple 5 minutes, 15 minutes, 30 minutes ou 1 heure.
 
 
-Le temps de lecture de média permet d’analyser la lecture au fil du temps, avec des détails sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Temps de lecture de média, naviguez vers une suite de rapports dans laquelle les composants Media Analytics sont activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html)
+Le temps de lecture de média permet d’analyser la lecture au fil du temps, avec des détails sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Temps de lecture de média, naviguez vers une suite de rapports dans laquelle les composants Media Analytics sont activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=fr)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
