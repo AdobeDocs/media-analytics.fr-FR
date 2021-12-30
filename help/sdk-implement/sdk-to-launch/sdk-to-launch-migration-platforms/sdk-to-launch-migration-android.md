@@ -5,13 +5,13 @@ exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '411'
 ht-degree: 100%
 
 ---
 
-# Migration du SDK Media autonome vers Adobe Launch : Android
+# Migration du SDK Media autonome vers Adobe Launch : Android
 
 >[!NOTE]
 >Adobe Experience Platform Launch est désormais une suite de technologies destinées à la collecte de données dans Experience Platform. Plusieurs modifications terminologiques ont par conséquent été apportées à la documentation du produit. Reportez-vous au [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=fr) suivant pour consulter une référence consolidée des modifications terminologiques.
