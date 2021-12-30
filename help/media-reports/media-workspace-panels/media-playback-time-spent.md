@@ -1,13 +1,13 @@
 ---
 title: Temps de lecture de média
-description: Découvrez comment utiliser le panneau Durée de lecture du média pour analyser le temps de lecture passé et comprendre le pic d’accès simultané et l’endroit où des abandons ont eu lieu.
+description: Découvrez comment utiliser le panneau Temps de lecture de média pour analyser le temps de lecture et comprendre le pic d’accès simultanés et l’endroit où des abandons ont eu lieu.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
 source-git-commit: 65e3615dc4af1eeaf4b58c9db6896d2ff90f56f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
