@@ -5,9 +5,9 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '338'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Pour les périphériques ou plateformes qui ne prennent pas actuellement en char
 
 Le tableau ci-dessous liste les périphériques et les plateformes actuellement pris en charge. Pour télécharger la dernière version du SDK, consultez [Téléchargement des SDK](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/download-sdks.html?lang=fr). Si un périphérique n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son état.
 
-| Plateformes et périphériques de diffusion en continu |  | Collecte de données avec SDK mobile AEP | SDK Media | API Media Collection |
+| Plateformes et périphériques de diffusion en continu |  | Collecte de données avec SDK AEP Mobile | SDK Media | API Media Collection |
 |:---------------------------:|:-----------------------------------------------:|:----------------------------:|:-------------------:|:--------------------:|
 | Web/Mobile Web |  |  |  |  |
 |  | Navigateurs JavaScript | ![](/help/assets/icon-blue-check.png) | ![](/help/assets/icon-blue-check.png)    | ![](/help/assets/icon-blue-check.png) |
