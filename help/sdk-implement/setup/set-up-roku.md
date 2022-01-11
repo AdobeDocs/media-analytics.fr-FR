@@ -6,13 +6,13 @@ exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 07192eca8bad89d005d88fa084ec891df346f96a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '716'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Configuration de Roku{#set-up-roku}
+# Configuration de Roku {#set-up-roku}
 
 ## Conditions préalables
 
@@ -146,14 +146,14 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesurer
 
    |  Méthode   | Description |
    | --- | --- |
-   | `setDebugLogging` | Permet d’activer ou de désactiver la journalisation de débogage pour le SDK.  <br/><br/>`ADBMobile().setDebugLogging(true)` |
-   | `getDebugLogging` | Renvoie true si l’enregistrement de débogage est activé.  <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
+   | `setDebugLogging` | Utilisé pour activer ou désactiver l’enregistrement de débogage pour le SDK. <br/><br/>`ADBMobile().setDebugLogging(true)` |
+   | `getDebugLogging` | Renvoie true si l’enregistrement de débogage est activé. <br/><br/>`isDebugLoggingEnabled = ADBMobile().getDebugLogging()` |
 
    **PrivacyStatus**
 
-   |  Constante   | Description |
+   | Constante | Description |
    | --- | --- |
-   | `PRIVACY_STATUS_OPT_IN` | Constante à transmettre lors de l’appel de setPrivacyStatus pour l’inclusion. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
+   | `PRIVACY_STATUS_OPT_IN` | Constante à transmettre lors de l’appel de setPrivacyStatus pour l’opt-in. <br/><br/>`optInString = ADBMobile().PRIVACY_STATUS_OPT_IN` |
    | `PRIVACY_STATUS_OPT_OUT` | Constante à transmettre lors de l’appel de setPrivacyStatus pour l’opt-out. <br/><br/>`optOutString = ADBMobile().PRIVACY_STATUS_OPT_OUT` |
 
    |  Méthode   | Description |
