@@ -3,11 +3,11 @@ title: Visionneuses simultanées de médias
 description: « Découvrez le tableau de bord des visionneuses simultanées de médias utilisé pour afficher les visionneuses simultanées pendant une journée. Les données peuvent être filtrées par contenu, type dʼappareil ou pays. »
 uuid: e61c50e5-8196-4538-b67c-ebc01c6e6ba7
 exl-id: 2c679c1a-a4bd-44fc-8e11-173c8544ab06
-feature: « Media Analytics, Concepts de base de Reports & Analytics »
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '295'
+workflow-type: tm+mt
+source-wordcount: '290'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,6 @@ Le tableau de bord des visionneuses simultanées de médias affiche les visiteur
 >[!TIP]
 >
 > Ce rapport est basé sur des sessions de médias actives simultanées.  Pour afficher les observateurs simultanés par visiteur unique, avec les fonctionnalités supplémentaires d’application d’un segment, de ventilation et de comparaison, utilisez le [Panneau Observateurs simultanés de médias dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers.html?lang=fr).
-
 
 ![](assets/video-concurrent-viewers.png)
 

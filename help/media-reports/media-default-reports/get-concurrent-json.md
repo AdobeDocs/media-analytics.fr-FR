@@ -3,14 +3,14 @@ title: Obtention des données du rapport JSON sur les visionneuses simultanées
 description: Obtention des données du rapport JSON sur les visionneuses simultanées
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 source-git-commit: 0d5edcae0a80357247ada7f61daece9840d5c4b5
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '164'
 ht-degree: 100%
 
 ---
 
 
-# Obtention des données du rapport JSON sur les visionneuses simultanées {#get-concurrent-viewers-json-report-data}
+# Obtention des données du rapport JSON sur les visionneuses simultanées{#get-concurrent-viewers-json-report-data}
 
 Vous pouvez obtenir des données de rapport des visionneuses simultanées à l’aide de la _*version 1.4*_ des API Analytics :
 * [Interfaces API Analytics](https://github.com/AdobeDocs/analytics-1.4-apis)

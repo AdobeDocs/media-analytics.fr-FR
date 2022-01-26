@@ -3,11 +3,11 @@ title: En savoir plus sur les conditions préalables requises pour Streaming Med
 description: Prise en main d’Adobe Analytics for Streaming Media. Découvrez ce dont vous avez besoin pour implémenter Adobe Analytics for Streaming Media.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: « Media Analytics, configuration requise »
+feature: Media Analytics, System Requirements
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '414'
+workflow-type: tm+mt
+source-wordcount: '410'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Pour une mise en œuvre *Media Analytics*, vous devez effectuer les tâches suiv
 
    Vous devez mettre en œuvre le service d’identité d’Adobe Experience Platform.
 
-   Le service d’identité active le framework d’identification courant pour les services principaux, les solutions, les attributs du client et les audiences d’Experience Cloud dans le service principal aux personnes Pour ce faire, le service attribue un identifiant persistant et unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
+   Le service d’identité active le framework d’identification courant pour les services principaux, les solutions, les attributs du client et les audiences d’Experience Cloud dans le service principal aux personnes Pour ce faire, le service attribue un identifiant persistant et unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
 
    ![](assets/mc_id_service_graphic.png)
 

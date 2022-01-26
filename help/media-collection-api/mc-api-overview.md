@@ -1,5 +1,5 @@
 ---
-seo-title: 'Aperçu '
+seo-title: Overview
 title: Présentation de l’API Streaming Media Collection
 description: Découvrez l’API Media Collection et la façon dont votre lecteur peut suivre les événements vidéo et audio à l’aide d’appels HTTP RESTful.
 uuid: c14bdbef-5846-4d31-8a14-8e9e0e9c9861
@@ -7,8 +7,8 @@ exl-id: 58430636-7fab-433a-8ead-52ccaa45d920
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '357'
+workflow-type: tm+mt
+source-wordcount: '354'
 ht-degree: 100%
 
 ---

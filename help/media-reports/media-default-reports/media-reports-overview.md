@@ -3,11 +3,11 @@ title: Présentation multimédia
 description: Utilisez le tableau de bord Aperçu des médias pour afficher des mesures agrégées. Découvrez comment consulter rapidement les performances des médias.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: « Media Analytics, Concepts de base de Reports & Analytics »
+feature: Media Analytics, Reports & Analytics Basics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '112'
+workflow-type: tm+mt
+source-wordcount: '107'
 ht-degree: 100%
 
 ---

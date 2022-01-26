@@ -3,11 +3,11 @@ title: 'OTT et Experience Cloud '
 description: Découvrez en détail comment intégrer des applications OTT avec Experience Cloud.
 uuid: 89264403-0fc8-4c76-b001-22e20e57bef2
 exl-id: dfeb0708-e744-4ff1-a644-3d77812f736a
-feature: « Media Analytics, intégration Experience Cloud »
+feature: Media Analytics, Experience Cloud Integration
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: ht
-source-wordcount: '46'
+workflow-type: tm+mt
+source-wordcount: '41'
 ht-degree: 100%
 
 ---
