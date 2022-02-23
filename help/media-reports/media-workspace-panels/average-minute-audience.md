@@ -3,10 +3,11 @@ title: Audience moyenne par minute du média
 description: Découvrez comment utiliser le panneau Audience moyenne par minute du média pour ______.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
-source-git-commit: 741491f996910a7e441fcc6792fab4a7534cd123
+exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
+source-git-commit: 45a566dd66b7ace05e3b63fb63df9266a9912b91
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '248'
+ht-degree: 7%
 
 ---
 
@@ -21,7 +22,7 @@ Dans Analysis Workspace, l’audience par minute moyenne correspond au temps pas
 
 Le panneau Audience moyenne par minute du média fournit une analyse de l’audience par minute moyenne selon le contenu spécifique sélectionné si la durée est rendue disponible à l’aide des classifications.
 
-Le panneau Audience moyenne par minute fournit également des analyses sur une période sélectionnée qui peuvent être filtrées selon du contenu spécifique, que la durée soit disponible ou non à l’aide de classifications. Pour accéder au panneau Audience moyenne par minute du média, accédez à une suite de rapports avec les composants Media Analytics activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/c-panels/average-minute-audience-panel.html)
+Le panneau Audience moyenne par minute fournit également des analyses sur une période sélectionnée qui peuvent être filtrées selon du contenu spécifique, que la durée soit disponible ou non à l’aide de classifications. Pour accéder au panneau Audience moyenne par minute du média, accédez à une suite de rapports avec les composants Media Analytics activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
