@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '662'
-ht-degree: 100%
+source-wordcount: '750'
+ht-degree: 90%
 
 ---
 
@@ -87,6 +87,14 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
    ```
    ADBMobile.media.trackPlay();
+   ```
+
+1. **Mise à jour de la valeur de la tête de lecture**
+
+   Mettre à jour `mediaUpdatePlayhead`&quot; valeur de position plusieurs fois lorsque le curseur de lecture change. <br />Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct en continu, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée sous la forme du nombre de secondes écoulées depuis minuit UTC de cette journée. <br />  Remarque : Lors de l’utilisation de marqueurs de progression, la durée du contenu est requise et le curseur de lecture doit être mis à jour en tant que nombre de secondes à partir du début de l’élément multimédia, en commençant par 0.
+
+   ```
+   ADBMobile().mediaUpdatePlayhead(position)
    ```
 
 1. **Suivi de la fin de la lecture**

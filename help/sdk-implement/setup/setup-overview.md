@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 8e0f5d012e1404623e3a0a460a9391303e2ab4e0
+source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
 workflow-type: tm+mt
-source-wordcount: '740'
-ht-degree: 100%
+source-wordcount: '781'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ Suivez les étapes de mise en œuvre suivantes :
    |  Nom de méthode  |  Description  | Obligatoire |
    | --- | --- | :---: |
    | `getQoSObject()` | Retourne l’instance `MediaObject` contenant les informations actuelles sur la qualité de service (QoS). Cette méthode est appelée à plusieurs reprises au cours d’une session de lecture. La mise en œuvre du lecteur doit toujours retourner les plus récentes données QoS disponibles. | Oui |
-   | `getCurrentPlaybackTime()` | Renvoie la position actuelle du curseur de lecture. Pour le suivi VOD, la valeur est indiquée en secondes à partir du début de l’élément média. Pour le suivi LINÉAIRE/EN DIRECT, la valeur est spécifiée comme le nombre de secondes écoulées depuis minuit UTC ce jour-là. | Oui |
+   | `getCurrentPlaybackTime()` | Renvoie la position actuelle du curseur de lecture. <br /> Pour le suivi VOD, la valeur est indiquée en secondes à partir du début de l’élément média. <br /> Pour la diffusion en direct en continu, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée sous la forme du nombre de secondes écoulées depuis minuit UTC de cette journée. <br /> Remarque : Lors de l’utilisation de marqueurs de progression, la durée du contenu est requise et le curseur de lecture doit être mis à jour en tant que nombre de secondes à partir du début de l’élément multimédia, en commençant par 0. | Oui |
 
    >[!TIP]
    >

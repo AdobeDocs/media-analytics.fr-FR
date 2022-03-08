@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: d7cb36c2dd6b35da4531ca975c7fc730e387b750
+source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 100%
+source-wordcount: '771'
+ht-degree: 92%
 
 ---
 
@@ -145,7 +145,8 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 1. **Mise à jour de la valeur de la tête de lecture**
 
-   Lorsque la tête de lecture du média se déplace, informez le SDK en appelant lʼAPI `mediaUpdatePlayhead`. Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. Pour les vidéos en flux continu, la valeur est spécifiée comme le nombre de secondes écoulées depuis minuit UTC ce jour-là.
+   Lorsque la tête de lecture du média se déplace, informez le SDK en appelant lʼAPI `mediaUpdatePlayhead`. <br />Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct en continu, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée sous la forme du nombre de secondes écoulées depuis minuit UTC de cette journée. <br /> Remarque : Lors de l’utilisation de marqueurs de progression, la durée du contenu est requise et le curseur de lecture doit être mis à jour en tant que nombre de secondes à partir du début de l’élément multimédia, en commençant par 0.
+
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
