@@ -1,5 +1,5 @@
 ---
-title: Audience moyenne par minute du média
+title: Audience moyenne par minute de média
 description: Découvrez comment utiliser le panneau Audience moyenne par minute du média pour analyser l’audience moyenne par minute pour une partie de contenu spécifique ou sur une période personnalisée.
 feature: Media Analytics, Workspace Basics
 role: User, Admin, Data Engineer
@@ -7,27 +7,27 @@ exl-id: af4d430c-1349-4606-b587-da5d40e0fe4b
 source-git-commit: a138edbfd7b5136f038cc9397e53521110446076
 workflow-type: tm+mt
 source-wordcount: '271'
-ht-degree: 9%
+ht-degree: 86%
 
 ---
 
-# Audience moyenne par minute du média {#media-average-minute-audience}
+# Audience moyenne par minute de média {#media-average-minute-audience}
 
 >[!NOTE]
 >
 >Cette fonctionnalité fait actuellement l’objet de tests limités.
 
 
-Les clients Media Analytics peuvent utiliser le panneau d’audience de minute moyenne pour mieux comprendre la consommation moyenne de leur contenu. Une audience de moyenne minute permet de comparer des programmes de n’importe quelle longueur ou genre. En outre, les clients peuvent comparer ou ajouter cette audience numérique de moyenne par minute aux mesures de moyenne par minute de la télévision linéaire. Ce panneau offre davantage de flexibilité pour mesurer l’audience moyenne pour des périodes personnalisées, ainsi que le moment où la classification de durée a été mise à jour après coup. La mesure d’audience moyenne actuelle ne fonctionne que si la durée est disponible au moment du traitement.
+Le panneau dʼaudience moyenne par minute permet aux clients Media Analytics de mieux comprendre la consommation de leur contenu en moyenne. Lʼaudience moyenne par minute permet de comparer des programmes de toute longueur ou de tout genre. En outre, les clients peuvent comparer ou ajouter cette audience numérique moyenne par minute aux mesures moyennes par minute de la télévision linéaire. Ce panneau offre plus de flexibilité pour mesurer l’audience moyenne pour des périodes personnalisées, ainsi que lorsque la classification de la durée a été mise à jour après coup. La mesure d’audience moyenne par minute actuelle ne fonctionne que si la durée est disponible au moment du traitement.
 
-## Panneau Audience moyenne par minute du média dans Analysis Workspace
+## Panneau Audience moyenne par minute de média dans Analysis Workspace
 
-Dans Analysis Workspace, l’audience par minute moyenne correspond au temps passé à visionner votre flux multimédia, divisé par la durée du contenu ou la sélection totale de la période et de la granularité sélectionnée.
+Dans Analysis Workspace, l’audience moyenne par minute correspond au temps passé à regarder votre flux multimédia divisé par la durée du contenu ou la sélection totale de la période et de la granularité sélectionnée.
 
 
-Le panneau Audience moyenne par minute du média fournit une analyse de l’audience par minute moyenne selon le contenu spécifique sélectionné si la durée est rendue disponible à l’aide des classifications.
+Le panneau Audience moyenne par minute de média fournit une analyse de l’audience moyenne par minute pour le contenu spécifique sélectionné, si la durée est disponible à l’aide des classifications.
 
-Le panneau Audience moyenne par minute fournit également des analyses sur une période sélectionnée qui peuvent être filtrées selon du contenu spécifique, que la durée soit disponible ou non à l’aide de classifications. Pour accéder au panneau Audience moyenne par minute du média, accédez à une suite de rapports avec les composants Media Analytics activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en)
+Le panneau Audience moyenne par minute fournit également une analyse sur une période sélectionnée qui peut être filtrée par un contenu spécifique, que la durée soit disponible ou non à l’aide des classifications. Pour afficher le panneau Audience moyenne par minute de média, accédez à une suite de rapports dont les composants Media Analytics sont activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel.html?lang=en)
 
 <!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
