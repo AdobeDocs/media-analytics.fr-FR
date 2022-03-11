@@ -6,9 +6,9 @@ breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
 source-git-commit: 5465631bf29e746d7d5dc07603f57fd7033935c4
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '833'
+ht-degree: 100%
 
 ---
 
@@ -211,8 +211,8 @@ ht-degree: 0%
       + [Rapport sur les tranches horaires des médias](media-reports/media-default-reports/media-reports-daypart.md)
       + [Rapport sur les observateurs simultanés de médias](media-reports/media-default-reports/media-concurrent-viewers.md)
    + Panneaux Workspace multimédia {#media-workspace-panels}
-   + [Panneau Audience moyenne par minute du média](media-reports/media-workspace-panels/average-minute-audience.md)
-   + [Panneau des visionneuses simultanées de médias](media-reports/media-workspace-panels/media-concurrent-viewers.md)
+   + [Panneau Audience moyenne par minute de média](media-reports/media-workspace-panels/average-minute-audience.md)
+   + [Panneau Observateurs simultanés de médias](media-reports/media-workspace-panels/media-concurrent-viewers.md)
    + [Panneau Temps de lecture de média](media-reports/media-workspace-panels/media-playback-time-spent.md)
    + [Modèles Workspace multimédia](media-reports/media-workspace-templates.md)
    + [Obtenir des données d’observateurs simultanés via l’API](media-reports/media-default-reports/get-concurrent-json20.md)
