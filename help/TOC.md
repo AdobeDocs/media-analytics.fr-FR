@@ -6,7 +6,7 @@ breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
 source-git-commit: 534f6f77d69a8fe3574c214cd56d2f77758c1643
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '833'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ ht-degree: 100%
          + Suivi de la lecture principale sur JavaScript {#track-core-javascript}
             + [Suivi de la lecture principale sur JavaScript 2.x](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js.md)
             + [Suivi de la lecture principale sur JavaScript 3.x](sdk-implement/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-         + [Suivi de la lecture principale sur Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
+         + [Suivre la lecture principale sur Chromecast](sdk-implement/track-av-playback/track-core/track-core-chromecast.md)
          + [Suivi de la lecture principale sur Roku](sdk-implement/track-av-playback/track-core/track-core-roku.md)
       + Suivi de la mise en mémoire tampon {#track-buffering}
          + [Suivi de la mise en mémoire tampon sur Android](sdk-implement/track-av-playback/track-buffering/track-buffering-android.md)
@@ -135,7 +135,7 @@ ht-degree: 100%
       + [Lecture VOD avec mise en mémoire tampon](sdk-implement/tracking-scenarios/vod-buffering.md)
       + [Plusieurs dispositifs de suivi VOD en parallèle](sdk-implement/tracking-scenarios/vod-multi-trackers.md)
       + [Un dispositif de suivi VOD pour plusieurs sessions](sdk-implement/tracking-scenarios/vod-multi-track-one-session.md)
-      + [Contenu principal en direct](sdk-implement/tracking-scenarios/live-main-content.md)
+      + [Contenu principal en direct ](sdk-implement/tracking-scenarios/live-main-content.md)
       + [Contenu principal en direct avec suivi séquentiel](sdk-implement/tracking-scenarios/live-sequential.md)
    + Validation {#validation}
       + [Aperçu de la validation](sdk-implement/validation/validation-overview.md)
