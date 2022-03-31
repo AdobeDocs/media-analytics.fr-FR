@@ -6,9 +6,9 @@ exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 14329fab02e88cbad69ceea4ccd719b90f6555a6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -145,7 +145,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 1. **Mise à jour de la valeur de la tête de lecture**
 
-   Lorsque la tête de lecture du média se déplace, informez le SDK en appelant lʼAPI `mediaUpdatePlayhead`. <br />Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct en continu, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée sous la forme du nombre de secondes écoulées depuis minuit UTC de cette journée. <br /> Remarque : Lors de l’utilisation de marqueurs de progression, la durée du contenu est requise et le curseur de lecture doit être mis à jour en tant que nombre de secondes à partir du début de l’élément multimédia, en commençant par 0.
+   Lorsque la tête de lecture du média se déplace, informez le SDK en appelant lʼAPI `mediaUpdatePlayhead`. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour. <br /> Remarque : lors de l’utilisation de marqueurs de progression, la durée du contenu est une donnée obligatoire et le curseur de lecture doit être mis à jour en tant que nombre de secondes écoulées depuis le début de l’élément média, en commençant par 0.
 
 
    ```
