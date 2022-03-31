@@ -6,13 +6,13 @@ exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Présentation de la configuration{#setup-overview}
+# Présentation de la configuration {#setup-overview}
 
 Les instructions suivantes s’appliquent aux SDK Media 2.x. Si vous mettez en œuvre une version 1.x du SDK Media, consultez la [Documentation du SDK Media 1.x.](/help/sdk-implement/download-sdks.md) Pour les intégrateurs Primetime, consultez la _Documentation du SDK Media Primetime_ ci-dessous.
 
@@ -60,7 +60,7 @@ Suivez les étapes de mise en œuvre suivantes :
    |  Nom de méthode  |  Description  | Obligatoire |
    | --- | --- | :---: |
    | `getQoSObject()` | Retourne l’instance `MediaObject` contenant les informations actuelles sur la qualité de service (QoS). Cette méthode est appelée à plusieurs reprises au cours d’une session de lecture. La mise en œuvre du lecteur doit toujours retourner les plus récentes données QoS disponibles. | Oui |
-   | `getCurrentPlaybackTime()` | Renvoie la position actuelle du curseur de lecture. <br /> Pour le suivi VOD, la valeur est indiquée en secondes à partir du début de l’élément média. <br /> Pour la diffusion en direct en continu, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée sous la forme du nombre de secondes écoulées depuis minuit UTC de cette journée. <br /> Remarque : Lors de l’utilisation de marqueurs de progression, la durée du contenu est requise et le curseur de lecture doit être mis à jour en tant que nombre de secondes à partir du début de l’élément multimédia, en commençant par 0. | Oui |
+   | `getCurrentPlaybackTime()` | Renvoie la position actuelle du curseur de lecture. <br /> Pour le suivi VOD, la valeur est indiquée en secondes à partir du début de l’élément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour. <br /> Remarque : lors de l’utilisation de marques de progression, la durée du contenu est une donnée obligatoire et le curseur de lecture doit être mis à jour en tant que nombre de secondes écoulées depuis le début de l’élément média, en commençant par 0. | Oui |
 
    >[!TIP]
    >
