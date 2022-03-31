@@ -1,14 +1,14 @@
 ---
-title: En savoir plus sur les chronologies de suivi de médias � Afficher jusqu’à la fin du contenu
-description: Explorez plus en détail la chronologie de la tête de lecture et les actions correspondantes de l’utilisateur �. Découvrez les détails de chaque action et des demandes qui l’accompagnent.
+title: En savoir plus sur les chronologies de suivi de médias Afficher jusqu’à la fin du contenu
+description: Explorez plus en détail la chronologie de la tête de lecture et les actions correspondantes de l’utilisateur. Découvrez les détails de chaque action et des demandes qui l’accompagnent.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 88bf699cb5b0872cefa4d6a6609c74f8fa35189a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1203'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -137,7 +137,7 @@ Démarrez le suivi de la première publicité preroll, qui dure 15 secondes. In
 }
 ```
 
-**REMARQUE : Entre les événements AdBreakStart et AdStart, il ne doit pas y avoir d’événements de lecture supplémentaires.**
+**REMARQUE : entre les événements AdBreakStart et AdStart, aucun événement de lecture supplémentaire ne devrait se produire.**
 
 ### Action 5 - Pings de publicité {#Action-5}
 
