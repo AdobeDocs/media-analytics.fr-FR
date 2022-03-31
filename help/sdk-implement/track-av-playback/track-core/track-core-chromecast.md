@@ -6,13 +6,13 @@ exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 165c7f01a2d2c32df518c89a5c49637107d41086
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '750'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
-# Suivi de la lecture principale sur Chromecast{#track-core-playback-on-chromecast}
+# Suivre la lecture principale sur Chromecast {#track-core-playback-on-chromecast}
 
 Cette documentation aborde le suivi dans la version 2.x du SDK.
 
@@ -89,9 +89,9 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
    ADBMobile.media.trackPlay();
    ```
 
-1. **Mise à jour de la valeur de la tête de lecture**
+1. **Mettre à jour la valeur du curseur de lecture**
 
-   Mettre à jour `mediaUpdatePlayhead`&quot; valeur de position plusieurs fois lorsque le curseur de lecture change. <br />Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct en continu, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée sous la forme du nombre de secondes écoulées depuis minuit UTC de cette journée. <br />  Remarque : Lors de l’utilisation de marqueurs de progression, la durée du contenu est requise et le curseur de lecture doit être mis à jour en tant que nombre de secondes à partir du début de l’élément multimédia, en commençant par 0.
+   Mettez à jour la valeur de la position du `mediaUpdatePlayhead` plusieurs fois lorsque le curseur de lecture change. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour. <br />  Remarque : lors de l’utilisation de marques de progression, la durée du contenu est une donnée obligatoire et le curseur de lecture doit être mis à jour en tant que nombre de secondes écoulées depuis le début de l’élément média, en commençant par 0.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
