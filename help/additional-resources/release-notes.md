@@ -1,26 +1,26 @@
 ---
 title: Notes de mise à jour d’Adobe Analytics for Streaming Media
-description: View the Adobe Analytics release notes.
+description: Affichez les notes de mise à jour d’Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 232d7ce89e3867527363235f08b492a92193d50e
+source-git-commit: 8ca8416ba3dd8f5d3ef4ba9399e7c84335f3abf1
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '525'
 ht-degree: 68%
 
 ---
 
 # Notes de mise à jour d’Adobe Analytics for Streaming Media (mars 2022)
 
-**Last update**: March 23, 2022
+**Dernière mise à jour**: 23 mars 2022
 
 ## *Notes de mise à jour de la version actuelle*
 
-## New features in Adobe Analytics for Streaming Media  {#sm-features}
+## Nouvelles fonctionnalités d’Adobe Analytics pour les médias en flux continu  {#sm-features}
 
 | Fonctionnalité | Description | Date ciblée |
 | ----------- | ---------- | ------- |
-| **Audience moyenne par minute** | Les clients Media Analytics peuvent utiliser le panneau Audience moyenne par minute pour mieux comprendre la consommation moyenne de contenu. <br>Lʼaudience moyenne par minute permet de comparer des programmes de toute longueur ou de tout genre. En outre, vous pouvez comparer ou ajouter l’audience numérique de moyenne par minute aux mesures de moyenne par minute de la télévision linéaire. This panel gives more flexibility to measure the average audience for custom time periods, as well as when the duration classification has been updated.  [En savoir plus](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 16 mars 2022 |
+| **Audience moyenne par minute** | Les clients Media Analytics peuvent utiliser le panneau Audience moyenne par minute pour mieux comprendre la consommation moyenne de contenu. <br>Lʼaudience moyenne par minute permet de comparer des programmes de toute longueur ou de tout genre. En outre, vous pouvez comparer ou ajouter l’audience numérique de moyenne par minute aux mesures de moyenne par minute de la télévision linéaire. Ce panneau offre davantage de flexibilité pour mesurer l’audience moyenne pour des périodes personnalisées, ainsi que le moment où la classification de durée a été mise à jour.  [En savoir plus](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/average-minute-audience.html?lang=en) | 16 mars 2022 |
 
 ## Ressources d’aide d’Analytics for Streaming Media
 
@@ -48,7 +48,7 @@ Nouveaux tutoriels et cours sur Analytics
 
 | Fonctionnalité | Disponibilité générale | Description |
 | ----------- | ---------- | -------------- |
-| **Temps de lecture de média** | 28 septembre 2021 | La fonctionnalité de Durée de lecture des médias en flux continu dʼAdobe fournit des informations précieuses sur lʼengagement des observateurs. Elle permet aux organisations de médias dʼobtenir des informations plus approfondies et granulaires sur lʼinteraction client, minute par minute, grâce à une analyse avancée de la durée de la lecture et de fonctionnalités dʼanalyse par tranches horaires. Vous pouvez observer la durée de visionnage de vos flux multimédias à un moment précis. Vous pouvez diviser la durée de lecture selon différentes granularités, notamment les nouvelles granularités de 5 minutes, 15 minutes et 30 minutes. [En savoir plus...](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-playback-time-spent.html?lang=en) |
+| **Temps de lecture de média** | 28 septembre 2021 | La fonctionnalité de Durée de lecture des médias en flux continu dʼAdobe fournit des informations précieuses sur lʼengagement des observateurs. Elle permet aux organisations de médias dʼobtenir des informations plus approfondies et granulaires sur lʼinteraction client, minute par minute, grâce à une analyse avancée de la durée de la lecture et de fonctionnalités dʼanalyse par tranches horaires. Vous pouvez observer la durée de visionnage de vos flux multimédias à un moment précis. Vous pouvez diviser la durée de lecture selon différentes granularités, notamment les nouvelles granularités de 5 minutes, 15 minutes et 30 minutes. [En savoir plus...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) |
 
 ## Janvier 2021
 
@@ -63,9 +63,9 @@ Nouveaux tutoriels et cours sur Analytics
 
 Nouvelles fonctionnalités de Media Analytics
 
-| Fonctionnalité | General Availability | Description |
+| Fonctionnalité | Disponibilité générale | Description |
 | -------- | -------------------- | ----------- |
-| Panneau **Observateur simultané de médias dans Workspace** | 17 septembre 2020 | Le panneau Observateurs simultanés de médias vous permet de déterminer où s’est produit le pic d’accès simultané ou où des abandons ont eu lieu. Il fournit des informations importantes sur la qualité du contenu et l’engagement des observateurs et aide à la résolution des problèmes ou à la planification du volume/de l’échelle. [En savoir plus…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=en) |
+| Panneau **Observateur simultané de médias dans Workspace** | 17 septembre 2020 | Le panneau Observateurs simultanés de médias vous permet de déterminer où s’est produit le pic d’accès simultané ou où des abandons ont eu lieu. Il fournit des informations importantes sur la qualité du contenu et l’engagement des observateurs et aide à la résolution des problèmes ou à la planification du volume/de l’échelle. [En savoir plus…](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) |
 
 
 ## Juillet 2020
