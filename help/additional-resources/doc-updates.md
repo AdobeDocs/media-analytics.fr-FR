@@ -1,6 +1,6 @@
 ---
-title: Nouveautés d’Adobe Analytics for Streaming Media
-description: Découvrez les nouveautés d’Adobe Analytics for Streaming Media.
+title: Nouveautés d’Adobe Analytics pour la diffusion de médias en streaming
+description: Découvrez les nouveautés d’Adobe Analytics pour la diffusion de médias en streaming.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
@@ -9,15 +9,15 @@ exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '28'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
 # Ressources {#resources}
 
-## Notes de mise à jour{#release-notes}
+## Notes de mise à jour {#release-notes}
 
 * [Notes de mise à jour](https://experienceleague.adobe.com/docs/release-notes/experience-cloud/current.html?lang=fr)
 
