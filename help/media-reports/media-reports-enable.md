@@ -6,17 +6,17 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '952'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Activation des rapports multimédia{#media-reports-enablement}
+# Activation des rapports multimédia {#media-reports-enablement}
 
 Chaque suite de rapports qui collecte des mesures multimédia doit être configurée avant que les données multimédia ne soient envoyées.
 
-Les clients avancés ne peuvent utiliser les panneaux multimédia dans Analysis Workspace qu’une fois Media Core activé et que le suivi est activé pour [Qualité d’expérience](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=en).
+Les clients expérimentés peuvent utiliser les panneaux de médias dans Analysis Workspace seulement après que Media Core et le suivi ont été activés pour [Qualité d’expérience](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=fr).
 
 >[!TIP]
 >
