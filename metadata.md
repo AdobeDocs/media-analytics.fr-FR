@@ -2,12 +2,12 @@
 cloud: Experience Cloud
 solution: Analytics
 feature-set: Analytics
-git-repo: https://git.corp.adobe.com/AdobeDocs/media-analytics.fr-FR
+git-repo: https://github.com/AdobeDocs/media-analytics.fr-FR
 index: true
 source-git-commit: 10faed698a8c4b0531a032bdfbb24fc8693055ce
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 100%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
