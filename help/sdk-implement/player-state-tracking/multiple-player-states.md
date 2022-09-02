@@ -1,19 +1,18 @@
 ---
 title: Mise à jour simultanée de plusieurs états du lecteur
 description: Cette rubrique décrit la fonction de suivi de l’état du lecteur multiple.
-exl-id: a77bc882-ac03-40b4-ac64-87f26a09707b
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 7a28674024739593431a942d5e0a498294bbe793
+source-git-commit: fdbb777547181422b81ff6f7874bec3d317d02e9
 workflow-type: tm+mt
-source-wordcount: '161'
-ht-degree: 10%
+source-wordcount: '186'
+ht-degree: 9%
 
 ---
 
 # Suivi de plusieurs états du lecteur
 
-Il existe des situations où deux états du lecteur démarrent et se terminent en même temps ou lorsque la fin d’un état correspond également au début d’un autre état. Examinez l’exemple suivant :
+Parfois, deux états du lecteur démarrent et se terminent en même temps ou la fin d’un état correspond également au début d’un autre état, comme illustré dans l’image suivante :
 
 ![Plusieurs états du lecteur](assets/multiple-player-states.svg)
 
@@ -25,18 +24,22 @@ L’implémentation actuelle permet les deux scénarios :
 - `stateStart(fullScreen)` - t1
 - `stateEnd(fullScreen)` - t2
 
-Cependant, le client doit émettre de nombreuses `stateStart` et `stateEnd` pour signaler plusieurs changements d’état simultanés. Pour optimiser ce comportement commun, une nouvelle `statesUpdate` le type d’événement a été implémenté, qui met fin à une liste d’états et lance une liste de nouveaux états.
+Toutefois, cela nécessite que vous émettiez plusieurs `stateStart` et `stateEnd` pour signaler plusieurs changements d’état simultanés. Pour optimiser ce comportement commun, une nouvelle `statesUpdate` le type d’événement a été implémenté, qui met fin à une liste d’états et lance une liste de nouveaux états.
 
 Utiliser la nouvelle `statesUpdate` , la liste d’événements ci-dessus devient :
 - `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` - t0
 - `statesUpdate(statesEnd=[mute, pictureInPicture], statesStart=[fullScreen])` - t1
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
-Le nombre d’appels de mises à jour d’état a été réduit de 6 à 3 uniquement pour le même comportement. Le dernier événement aurait également pu être simple : `stateEnd(fullScreen)`.
+Le nombre d’appels de mises à jour d’état a été réduit de six à trois pour le même comportement. Le dernier événement aurait également pu être simple : `stateEnd(fullScreen)`.
 
-## Mise en œuvre de l’API Media Collection
+## Mise en œuvre de l’API Media Collection {#mpst-api}
 
-Exemples :
+Vous pouvez utiliser l’API Media Collection pour mettre en oeuvre le suivi de l’état de plusieurs lecteurs.
+
+### Exemple
+
+Vous trouverez ci-dessous un exemple de mise en oeuvre de l’API Media Collection pour le suivi de l’état de plusieurs lecteurs.
 
 ```
 // statesUpdate (ex: mute and pictureInPicture are switched on)
