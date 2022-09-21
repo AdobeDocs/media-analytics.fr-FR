@@ -1,11 +1,11 @@
 ---
-title: 'Paramètres de chapitre '
+title: Paramètres de chapitre
 description: « Apprenez en plus sur les paramètres des chapitres pour la mise en œuvre, le réseau et la création de rapports. »
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: 73da3e52-9498-478e-bfd7-8ff6c8e6bfc5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '1177'
 ht-degree: 91%
@@ -68,8 +68,8 @@ Description des données de tableau :
 ### Chapitre
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
-| --- | --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **Clé SDK :**<br/> Définie automatiquement </li> <li> **Clé API :**<br/> S.O. </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Fermeture de chapitre </li> <li> **Version minimum du SDK :**  1.3 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description :**<br/> ID généré automatiquement du chapitre.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.chapter.<br/>name) </li> <li> **Heartbeat :**<br/> (s:stream:chapter_id) </li> </ul> | <ul> <li> **Disponible :**<br/> Oui </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Chapitre </li> <li> **Données contextuelles :**<br/> (a.media.chapter.<br/>name) </li> <li> **Flux de données :**<br/> videochapter </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.chapter.<br/>name) </li> <li> **Chemin du champ XDM :**<br/> media.mediaTimed.mediaChapter<br/>chapterAssetReference.@id </li> <li> **Chemin du champ XDM de création de rapports :**<br/> mediaReporting.chapterDetails.chapterID </li> </ul> |
+| --- | --- |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> **Clé SDK :**<br/> Définie automatiquement </li> <li> **Clé API :**<br/> S.O. </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Fermeture de chapitre </li> <li> **Version minimum du SDK :**  1.3 </li> <li> **Exemple de valeur :**<br/> </li><li> **Description :**<br/> ID généré automatiquement du chapitre.   </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.chapter.<br/>name) </li> <li> **Heartbeat :**<br/> (s:stream:chapter_id) </li> </ul> | <ul> <li> **Disponible :**<br/> Oui </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Chapitre </li> <li> **Données contextuelles :**<br/> (a.media.chapter.<br/>name) </li> <li> **Flux de données :**<br/> videochapter </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.chapter.<br/>name) </li> <li> **Chemin du champ XDM :**<br/> media.mediaTimed.mediaChapter<br/>chapterAssetReference.@id </li> <li> **Chemin du champ XDM de création de rapports :**<br/> mediaReporting.chapterDetails.ID </li> </ul> |
 
 ## Mesures de chapitre {#chapter-Metrics}
 

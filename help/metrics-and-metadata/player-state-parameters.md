@@ -1,11 +1,11 @@
 ---
-title: 'Paramètres d’état du lecteur '
+title: Paramètres d’état du lecteur
 description: « Découvrez les paramètres de suivi de lʼétat du lecteur pour les propriétés plein écran, sous-titres, muet et incrustation dʼimage. »
 uuid: 2a6b9247-a694-46e9-98e1-424c08c27ec2
 exl-id: cd51ed3a-fe37-41e9-8243-dfd9deb514c1
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 7e5ce452a9c96c4e34150ae0e06d73b0cff98741
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 94%
@@ -41,7 +41,7 @@ Description des données de tableau :
 
 ## Propriétés de l’état du lecteur {#player-state-properties}
 
-Les capacités de suivi de l’état du lecteur peuvent être associées à un flux audio ou vidéo. Les mesures de suivi standard de l’état du lecteur sont stockées en tant que variables de solution. Les états standard sont les suivants : fullScreen, mute, closeCaption, pictureInPicture et inFocus.
+Les capacités de suivi de l’état du lecteur peuvent être associées à un flux audio ou vidéo. Les mesures de suivi standard de l’état du lecteur sont stockées en tant que variables de solution. Les états standard sont les suivants : plein écran, mute, closedCaptioning, pictureInPicture et inFocus.
 
 ### Propriétés du plein écran
 
