@@ -1,11 +1,11 @@
 ---
-title: 'Paramètres de qualité '
+title: Paramètres de qualité
 description: Découvrez les paramètres de qualité de l’expérience (QoE) utilisés pour capturer les métadonnées de qualité.
 uuid: 0d9fa764-edef-4178-8650-90c9a0852a57
 exl-id: aac178dc-5a46-4ce3-80e9-ec82cbfbfff5
-feature: Media Analytics, Variables
+feature: "Media Analytics, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 01afcf648f13af4d47b5fb41b7c9e89c2a89f590
+source-git-commit: 6c311eea2b748ba5409935208c048c43d7bbe39b
 workflow-type: tm+mt
 source-wordcount: '3324'
 ht-degree: 93%
@@ -184,8 +184,8 @@ Description des données de tableau :
 ### Pertes avant le début
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
-| --- | --- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **Clé SDK :**<br/> Définie automatiquement </li> <li> **Clé API :**<br/> S.O. </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Fermeture du média </li> <li> **Version minimum du SDK :**  Tous </li> <li> **Exemple de valeur :**<br/> TRUE </li><li> **Description :**<br/> le nombre de fois où l’utilisateur quitte la vidéo avant que celle-ci ne démarre. Cette mesure est définie sur 1 uniquement si aucun contenu ne s’est affiché, sans tenir compte des publicités.  </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Heartbeat :**<br/> (s:event:<br/>type=aa_start) </li> </ul> | <ul> <li> **Disponible :**<br/> Oui </li> <li> **Variable réservée :**<br/> event </li> <li> **Nom du rapport :**<br/> Pertes avant le début </li> <li> **Données contextuelles :**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **Chemin d’accès du champ XDM :**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>qoe.dropBeforeStarts.value >= 1 => &quot;TRUE&quot; </li> <li> **Chemin du champ XDM de création de rapports :**<br/> mediaReporting.qoeDataDetails.<br/>hasDroptedBeforeStart </li> </ul> |
+| --- | --- |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| <ul> <li> **Clé SDK :**<br/> Définie automatiquement </li> <li> **Clé API :**<br/> S.O. </li> <li> **Obligatoire :**<br/> Non </li> <li> **Type :**<br/> Chaîne </li> <li> **Envoyé avec :**<br/> Fermeture du média </li> <li> **Version minimum du SDK :**  Tous </li> <li> **Exemple de valeur :**<br/> TRUE </li><li> **Description :**<br/> le nombre de fois où l’utilisateur quitte la vidéo avant que celle-ci ne démarre. Cette mesure est définie sur 1 uniquement si aucun contenu ne s’est affiché, sans tenir compte des publicités.  </li> </ul> | <ul> <li> **Adobe Analytics :**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Heartbeat :**<br/> (s:event:<br/>type=aa_start) </li> </ul> | <ul> <li> **Disponible :**<br/> Oui </li> <li> **Variable réservée :**<br/> event </li> <li> **Nom du rapport :**<br/> Pertes avant le début </li> <li> **Données contextuelles :**<br/> (a.media.qoe.<br/>dropBeforeStart) </li> <li> **Flux de données :**<br/> S.O. </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.media.qoe.<br/>dropBeforeStart) </li> <li> **Chemin d’accès du champ XDM :**<br/> media.mediaTimed.primaryAssetViewDetails.<br/>qoe.dropBeforeStarts.value >= 1 => &quot;TRUE&quot; </li> <li> **Chemin du champ XDM de création de rapports :**<br/> mediaReporting.qoeDataDetails.<br/>isDroptedBeforeStart </li> </ul> |
 
 
 
