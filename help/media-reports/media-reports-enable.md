@@ -6,8 +6,8 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 1682a10a1d24e55854a77a8f44b43f92893adaa2
-workflow-type: ht
-source-wordcount: '952'
+workflow-type: tm+mt
+source-wordcount: '950'
 ht-degree: 100%
 
 ---
@@ -25,7 +25,7 @@ Les clients expérimentés peuvent utiliser les panneaux de médias dans Analysi
 1. Dans [Reports &amp; Analytics](https://my.omniture.com/login/) cliquez sur **[!UICONTROL Administration > Suites de rapports].**
 1. Sélectionnez la ou les suite(s) de rapports à l’emplacement où vous effectuez la collecte de données multimédia, puis cliquez sur **[!UICONTROL Modifier les paramètres > Gestion des médias > Création de rapports multimédia].**
 
-   ![](assets/media-reporting.png){width=&quot;400px&quot;}
+   ![](assets/media-reporting.png){width="400px"}
 
 1. Sur la page **[!UICONTROL Création de rapports multimédia]**, activez **[!UICONTROL Noyau multimédia]** et éventuellement **[!UICONTROL Publicités multimédia],** **[!UICONTROL Chapitres multimédia],** et **[!UICONTROL Qualité multimédia].**
 
