@@ -6,13 +6,13 @@ exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b6df391016ab4b9095e3993808a877e3587f0a51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '256'
 ht-degree: 100%
 
 ---
 
-# Mesures calculées{#calculated-metrics}
+# Mesures calculées {#calculated-metrics}
 
 Les mesures calculées pour le streaming multimédia sont des mesures personnalisées qui vous permettent dʼobtenir des données ciblées sur les streaming multimédia, telles que le temps passé sur la publicité ou la moyenne des publicités par flux multimédia.
 
