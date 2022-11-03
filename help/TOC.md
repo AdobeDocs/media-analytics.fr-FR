@@ -3,12 +3,12 @@ product: adobe analytics
 audience: end-user
 user-guide-title: Adobe Analytics pour la diffusion de médias
 breadcrumb-title: Guide de Media Analytics
-user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Découvrez le SDK Media et l’API Media Collection.
+user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Découvrez le SDK Media et l’API Media Collection.
 sub-product: media analytics
 source-git-commit: 212fad8592c9f935869e55d034b17519c8b9de36
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '838'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 98%
 + [Mesurer des médias en flux continu dans Adobe Analytics](media-overview.md)
 + [Périphériques et plateformes pris en charge](measurement-options/supported-devices.md)
 + Présentation de Streaming Media Analytics {#intro-to-ava}
-   + [Conditions préalables](intro-to-ava/prereqs.md)
+   + [Conditions préalables ](intro-to-ava/prereqs.md)
    + Chemins de mise en œuvre {#implementation-paths}
       + [Aperçu](intro-to-ava/implementation-paths/implementation-paths.md)
       + [Côté client](intro-to-ava/implementation-paths/client-side-path.md)
@@ -31,7 +31,7 @@ ht-degree: 98%
             + [Guide de mise en œuvre d’un lien personnalisé](measurement-options/cl-in-aa/cl-impl-guide.md)
          + Primetime {#primetime}
             + [Primetime](intro-to-ava/implementation-paths/primetime-path.md)
-         + [Activation d’Audience Manager](intro-to-ava/am-enablement.md)
+         + [Activation d’Audience Manager ](intro-to-ava/am-enablement.md)
 + SDK Media Analytics {#sdk-implement}
    + [FAQ sur l’abandon de la prise en charge du SDK Media Analytics](sdk-implement/end-of-support-faqs.md)
    + [Téléchargement des SDK](sdk-implement/download-sdks.md)
@@ -200,8 +200,8 @@ ht-degree: 98%
    + [Paramètres de chapitre](metrics-and-metadata/chapter-parameters.md)
    + [Paramètres d’état du lecteur](metrics-and-metadata/player-state-parameters.md)
    + [Paramètres de qualité](metrics-and-metadata/quality-parameters.md)
-   + [Segments](metrics-and-metadata/segments.md)
-   + [Mesures calculées](metrics-and-metadata/calculated-metrics.md)
+   + [Segments ](metrics-and-metadata/segments.md)
+   + [Mesures calculées ](metrics-and-metadata/calculated-metrics.md)
 + Rapports et analyses {#media-reports}
    + [Activation des rapports multimédia](media-reports/media-reports-enable.md)
    + Rapports multimédia par défaut {#media-default-reports}
