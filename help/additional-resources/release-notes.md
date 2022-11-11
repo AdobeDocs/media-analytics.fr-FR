@@ -3,8 +3,8 @@ title: Notes de mise à jour d’Adobe Analytics for Streaming Media
 description: Affichez les notes de mise à jour d’Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 5a7d1725333f9f47fb13469a0877402f4fff506f
-workflow-type: ht
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+workflow-type: tm+mt
 source-wordcount: '854'
 ht-degree: 100%
 
@@ -54,8 +54,8 @@ Pour plus d’informations sur les nouvelles fonctionnalités, les correctifs et
 
 | Fonctionnalité | Description | Date ciblée ou mise à jour |
 | ----------- | ---------- | -------------- |
-| Temps de lecture de média | La fonctionnalité Temps de lecture de média en flux continu dʼAdobe fournit des informations précieuses sur lʼengagement des observateurs. Elle permet aux organisations de médias dʼobtenir des informations plus approfondies et granulaires sur lʼinteraction client, minute par minute, grâce à une analyse avancée de la durée de la lecture et de fonctionnalités dʼanalyse par tranches horaires. Vous pouvez observer la durée de visionnage de vos flux multimédias à un moment précis. Vous pouvez diviser la durée de lecture selon différentes granularités, notamment les nouvelles granularités de 5 minutes, 15 minutes et 30 minutes. [En savoir plus...](/help/media-reports/media-workspace-panels/media-playback-time-spent.md) | Septembre 2021 |
-| Panneau Observateur simultané de médias dans Analytics Workspace | Déterminez où s’est produit le pic d’accès simultanés et où des abandons ont eu lieu. Obtenez des informations importantes sur la qualité du contenu et l’engagement des observateurs, ainsi que de l’aide concernant la résolution de problèmes ou la planification du volume et de l’échelle. [En savoir plus...](/help/media-reports/media-workspace-panels/media-concurrent-viewers.md) <br><br>[Panneau Observateurs simultanés de médias dans Analytics Workspace (tutoriel)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=fr#analysis-workspace) | Septembre 2020 <br><br><br>Janvier 2021 |
+| Temps de lecture de média | La fonctionnalité Temps de lecture de média en flux continu dʼAdobe fournit des informations précieuses sur lʼengagement des observateurs. Elle permet aux organisations de médias dʼobtenir des informations plus approfondies et granulaires sur lʼinteraction client, minute par minute, grâce à une analyse avancée de la durée de la lecture et de fonctionnalités dʼanalyse par tranches horaires. Vous pouvez observer la durée de visionnage de vos flux multimédias à un moment précis. Vous pouvez diviser la durée de lecture selon différentes granularités, notamment les nouvelles granularités de 5 minutes, 15 minutes et 30 minutes. [En savoir plus...](/help/reporting/workspace/media-playback-time-spent.md) | Septembre 2021 |
+| Panneau Observateur simultané de médias dans Analytics Workspace | Déterminez où s’est produit le pic d’accès simultanés et où des abandons ont eu lieu. Obtenez des informations importantes sur la qualité du contenu et l’engagement des observateurs, ainsi que de l’aide concernant la résolution de problèmes ou la planification du volume et de l’échelle. [En savoir plus...](/help/reporting/workspace/media-concurrent-viewers-overview.md) <br><br>[Panneau Observateurs simultanés de médias dans Analytics Workspace (tutoriel)](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=fr#analysis-workspace) | Septembre 2020 <br><br><br>Janvier 2021 |
 | Périphériques et plateformes pris en charge | L’extension Media Launch avec SDK AEP prend désormais en charge les appareils OTT suivants : <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Système d’exploitation Fire)</li><li>Android TV</li></ul></div> | Juin 2020 |
 
 

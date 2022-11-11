@@ -1,70 +1,49 @@
 ---
-title: Streaming multimédia Adobe dans Adobe Analytics
-description: « Explorez de plus près la mesure de streaming multimédia de pointe pour le contenu, l’audio et les publicités. À propos d’Adobe Analytics pour le streaming multimédia. »
+title: Présentation d’Adobe Analytics for Streaming Media
+description: Utilisez Streaming Media Analytics pour obtenir de puissantes informations sur le contenu, le son et les publicités.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: f0abffb48a6c0babb37f16aff2e3302bf5dd0cb4
+source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
 workflow-type: tm+mt
-source-wordcount: '930'
-ht-degree: 100%
+source-wordcount: '529'
+ht-degree: 16%
 
 ---
 
-# Mesurer des médias en flux continu dans Adobe Analytics{#measuring-audio-and-video-in-adobe-analytics}
+# Présentation d’Adobe Analytics for Streaming Media
 
 ![Bannière](./assets/media_analytics_banner.png)
 
-## À propos d’Adobe Analytics for Streaming Media
+Adobe Analytics for Streaming Media est un module complémentaire d’Adobe Analytics qui fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Avec Analytics for Streaming Media, vous obtenez des détails granulaires en temps quasi réel sur la durée, les arrêts et les démarrages qui vous permettent d’évaluer et de combiner des mesures vidéo et audio. Ces informations vous permettent de comprendre les habitudes de visionnage et d’écoute de vos clients et d’augmenter l’engagement avec des recommandations hautement personnalisées.
 
-Adobe Analytics for Streaming Media est un module complémentaire d’Adobe Analytics qui fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Adobe Analytics fait partie d’Adobe Experience Platform.
+Adobe Analytics for Streaming Media vous permet de suivre l’ensemble du parcours client sur votre site et les applications de diffusion en continu. Vous pouvez combiner les mesures de médias en flux continu avec d’autres fonctionnalités Adobe Analytics, telles que les analyses d’Audience Analytics, de périphériques mobiles ou entre appareils. Les mesures s’intègrent facilement dans les rapports Adobe Analytics et d’autres produits Adobe Experience Platform. La mesure des médias vous permet de catégoriser vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées nécessaires à une analyse complète et détaillée. Vous pouvez ensuite analyser les données et attribuer des critères de succès au média entièrement consommé, au temps passé moyen et aux publicités terminées.
 
-Adobe Analytics for Streaming Media vous permet de suivre l’ensemble du parcours client sur votre site. Les mesures s’intègrent facilement aux rapports Adobe Analytics et aux autres produits Adobe Experience Cloud. La mesure des médias vous permet de catégoriser vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées nécessaires à une analyse complète et détaillée. Vous pouvez ensuite analyser les données et attribuer des critères de succès au média entièrement consommé, au temps passé moyen et aux publicités terminées.
+Vous pouvez mesurer des mesures de diffusion essentielles liées à la qualité de l’expérience (QoE), telles que les images perdues, le temps passé à la mise en mémoire tampon et le débit moyen. De plus, les mesures peuvent être combinées avec les données de votre site web ou de votre application afin de visualiser le chemin et les intérêts du client, afin de fournir des recommandations optimisées et de personnaliser les expériences client à l’aide de Adobe Experience Platform.
 
-Vous pouvez déterminer les mesures de diffusion vidéo essentielles liées à la qualité de service, telles que les images perdues, le temps consacré à la mise en mémoire tampon et le débit moyen. De plus, les mesures peuvent être combinées avec les données de votre site Web ou de votre application pour visualiser le chemin et les intérêts des clients, afin de fournir des recommandations optimisées et de personnaliser les expériences client à l’aide d’Adobe Experience Cloud.
+## Fonctionnement
 
-## Fonctionnalités {#features}
+Les données de suivi des médias en flux continu sont collectées à partir d’un lecteur à l’aide des SDK Media, des API Media Collection ou des extensions Media (avec balises). Toutes les données granulaires (jusqu’à 10 secondes) sont envoyées au service Media Analytics qui collecte et traite les données pour chaque session de lecture individuelle. Une fois la session de lecture terminée, les données de suivi calculées sont envoyées à Adobe Analytics pour stockage et création de rapports. Avec les mises en oeuvre d’Adobe Customer Journey Analytics (CJA), les données peuvent être envoyées à CJA à l’aide d’Analytics Data Connector (ADC) afin que les clients puissent utiliser CJA comme outil de création de rapports.
+
+<!-- ![streaming media process](./assets/streaming-process1.png) -->
+
+<div style="text-align: center;">
+<img src="./assets/streaming-process1.png" alt="Processus de diffusion en continu de médias" width="75%">
+</div>
+
+## Fonctionnalités
 
 Les avantages d’Adobe Analytics for Streaming Media incluent la surveillance en temps réel, les analyses détaillées, des informations exploitables et des opportunités de monétisation.
-* **Analyse en temps réel** : prenez des décisions exploitables en temps réel en utilisant des mesures de performances clés telles que les démarrages de média, sur plusieurs canaux.
-* **Stimuler l’engagement** : stimulez l’engagement des utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent s’afficher dans le contenu vidéo pour offrir une expérience de visionnage fluide et moins intrusive qui apporte des visites renouvelées.
-* **Image holistique** : combinez plusieurs points de données sur tous vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de vos activités multimédia. Mesurez l’engagement et les vues/écoutes sur tous les canaux possibles via la fonctionnalité Federated Analytics.
-* **Meilleure granularité** : évaluez le comportement de visionnage au niveau le plus granulaire, y compris l’heure des visiteurs individuels dans la journée, les observateurs simultanés par minute et la durée moyenne d’affichage du contenu.
-* **Mesure précise** : effectuez une mesure pour les différents appareils utilisés pour la consommation de vidéos, notamment les appareils OTT, les smartphones, les tablettes, les postes de travail et autres, pour surveiller les schémas et les habitudes d’engagement des utilisateurs.
-* **Segmentation** : appliquez des classifications à vos lecteurs, appareils, genres, chapitres et programmes pour voir comment chacun a un impact sur vos vues générales et l’implication du client dans le contenu, le son, les publicités et ces éléments combinés.
 
-## Mesure des pulsations {#heartbeat}
+* **Analyse en temps réel**: Prenez des décisions en temps réel exploitables à l’aide de mesures de performances clés telles que les démarrages de média, sur plusieurs canaux.
 
-Adobe Analytics utilise des « pulsations » pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Adobe Analytics for Streaming Media mesure les pulsations à l’aide d’Adobe Launch avec l’extension Media Analytics, le SDK Media et l’API Media Collection. Les composants `AppMeasurement` et `VisitorID` sont utilisés pour recevoir des données vidéo.
+* **Stimuler l’engagement**: Contactez les utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent être lues dans le contenu afin de fournir une expérience fluide et moins intrusive qui offre des visites renouvelées.
 
->[!NOTE]
->Adobe Experience Platform Launch est désormais une suite de technologies destinées à la collecte de données dans Experience Platform. Plusieurs modifications terminologiques ont par conséquent été apportées à la documentation du produit. Reportez-vous au [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html?lang=fr) suivant pour consulter une référence consolidée des modifications terminologiques.
+* **Image holistique**: Combinez plusieurs points de données sur tous vos distributeurs de contenu pour obtenir une vue complète de toute votre activité multimédia. Mesurez l’engagement et les vues/écoutes sur tous les canaux possibles via la fonctionnalité Federated Analytics.
 
+* **Granularité accrue**: Évaluer le comportement de visionnage au niveau le plus granulaire, y compris l’heure des visiteurs individuels de la journée, les observateurs simultanés ou les auditeurs par minute, et la durée moyenne de visionnage du contenu.
 
-L’utilisation de pulsations Adobe Analytics pour les médias en flux continu présente les avantages suivants :
+* **Mesure précise**: Mesurez les différents appareils utilisés pour la consommation de médias (OTT, smartphone, tablette, bureau, etc.) afin de surveiller les schémas et les habitudes d’engagement des utilisateurs.
 
-| Fonctionnalité | Description |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Événements de médias | Des événements détaillés et personnalisés sont envoyés toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. |
-| Mesures et dimensions | Contrôlez des mesures, dimensions et benchmarks standardisés pour plusieurs fournisseurs<br>Grâce à une solution standardisée sur toutes les plates-formes, vous pouvez utiliser des variables uniformes et standardisées sur l’ensemble de vos supports et plates-formes pour permettre une comparaison plus efficace entre les campagnes, les périphériques et les fournisseurs. |
-| Intégrations | L’Experience Cloud ID est lié à Adobe Experience Cloud pour une analyse croisée plus facile<br>Avec l’intégration automatique d’Adobe Experience Cloud, vous pouvez segmenter vos audiences multimédia, les cibler et faire des recommandations multimédia en fonction de leurs préférences. |
-| Tarifs | Suivi transparent par diffusion média (unique) |
-| Mise en œuvre et support | Configuration rationalisée avec mises à jour et améliorations constants<br>Grâce à un processus d’implémentation simplifié, vous pouvez rapidement mettre des variables en correspondance à l’aide de votre API de lecteur et valider les implémentations à l’aide de l’outil de débogage Adobe pour vous assurer que toutes les variables nécessaires sont suivies avec précision. |
-| Partage de partenaires | Federated Analytics et Certified Metrics (Mesures certifiées)<br>Avec les données vidéo partagées par le biais de Federated Analytics, vous pouvez capitaliser sur nos fonctionnalités de partage vidéo leaders du secteur, pour évaluer les données de manière holistique pour l’ensemble de vos partenaires de distribution vidéo (opérateurs, programmeurs et distributeurs). |
-| Suivi avancé | Suivi du contenu téléchargé, suivi de la récupération des erreurs et observateurs simultanés<br>Vous pouvez effectuer le suivi du contenu multimédia en flux continu téléchargé et lu sur un appareil, quelle que soit sa connectivité. |
-
-
-
-## Sécurité {#security}
-
-Chez Adobe, nous prenons la sécurité de vos ressources numériques très au sérieux. De l’intégration rigoureuse de la sécurité dans notre processus et nos outils de développement logiciel interne à nos équipes interfonctionnelles d’intervention en cas d’incident, nous nous efforçons d’être proactifs et flexibles. De plus, notre collaboration avec des partenaires, des chercheurs et d’autres organisations du secteur nous aide à comprendre les dernières menaces et les bonnes pratiques en matière de sécurité, et à renforcer continuellement la sécurité dans les produits et les services que nous offrons.
-
-
-### Sécurité du calque de transport {#transport-layer-security}
-
-**Remarque TLS -** Adobe applique des normes de conformité de sécurité qui exigent la fin de vie des anciens protocoles de sécurité. Pour continuer à répondre aux normes de protocole de sécurité en constante évolution, Adobe se dirige vers l’utilisation de TLS 1.2, afin d’avoir la version la plus récente et la plus sécurisée en usage. A partir du 20 février 2019, Adobe ne prendra en charge que TLS 1.1 ou version ultérieure. Avec cette modification, Adobe ne collectera plus de données provenant d’utilisateurs finaux disposant d’anciens appareils ou navigateurs web qui déploient TLS 1.0. La migration vers TLS 1.2 améliore la sécurité. Il est important que vous passiez en revue les détails et que vous planifiiez les changements pour une transition en douceur.
-
->[!NOTE]
->
->TLS est actuellement le protocole de sécurité le plus répandu, utilisé pour les navigateurs web et autres applications exigeant que les données soient échangées en toute sécurité sur un réseau.
+* **Segmentation**: Appliquez des classifications à vos lecteurs, appareils, genres, chapitres et programmes pour voir comment chacun a un impact sur vos vues/écoutes générales et l’engagement du client avec du contenu, du son, des publicités et des éléments combinés.
