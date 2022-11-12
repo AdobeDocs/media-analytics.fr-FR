@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics pour la diffusion de médias
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 1d30415b0874c1e0f35045026cb341bab1833d98
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 81%
+source-wordcount: '869'
+ht-degree: 79%
 
 ---
 
@@ -179,6 +179,8 @@ ht-degree: 81%
    + [Suivi du contenu téléchargé hors ligne](use-cases/track-downloaded-content.md)
    + [Federated Analytics](use-cases/federated-analytics.md)
    + [Gestion des interruptions de l’application lors de la lecture](use-cases/cookbook/app-interrupts.md)
+   + [Présentation du guide pas à pas SDK hérité](use-cases/cookbook/sdk-cookbook-overview.md)
+   + [Hérité - Guide pas à pas Media Analytics](use-cases/media-analytics-cookbook/media-analytics-cookbook.md)
    + [Attribution des diffusions multimédia](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Reprise des sessions inactives](use-cases/cookbook/resuming-inactive.md)
    + [Suivi Roku dans SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
@@ -214,7 +216,10 @@ ht-degree: 81%
    + [Adobe Primetime et Analyse des médias en flux continu](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Activation de la gestion de l’audience Adobe](legacy/intro-to-ava/am-enablement.md)
    + [Implémentation d’un lien personnalisé](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
-   + [Suivi des jalons hérité](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+   + Suivi des jalons hérité {#legacy-milestone-tracking}
+      + [Suivi des jalons hérité](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
+      + [Migration de Milestone vers VA](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-va.md)
+      + [Migration de Milestone vers CL](legacy/measurement-options/mm-milestone-tracking/migrate-ms-to-cl.md)
    + Validation {#validation}
       + [Aperçu de la validation](legacy/validation/validation-overview.md)
       + [Test 1 - Lecture standard](legacy/validation/test1-standard-playback.md)
@@ -227,4 +232,5 @@ ht-degree: 81%
    + [Configuration de JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Comparaison de code v1.x vers v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [API de suivi 1x à 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
+   + [Hérité - Intro à AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [Chemin côté client](legacy/intro-to-ava/implementation-paths/client-side-path.md)

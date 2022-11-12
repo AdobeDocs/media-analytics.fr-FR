@@ -4,7 +4,7 @@ description: Découvrez les chemins d’implémentation des médias en flux cont
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
 workflow-type: tm+mt
 source-wordcount: '650'
 ht-degree: 98%
@@ -42,7 +42,7 @@ La collecte de données Adobe avec l’extension Media Analytics nécessite les
 
 Il s’agit d’intégrations propres à Media Analytics. Vous pouvez choisir le SDK Video Heartbeat et/ou les intégrations de l’API Media Collection. Ce chemin peut être utilisé sur n’importe quel lecteur vidéo, y compris les lecteurs clients et/ou OVP tels que Brightcove, Ooyala, thePlatform, etc.
 
-Si Media Analytics est le chemin que vous choisissez, consultez [Mise en œuvre du SDK Media](/help/implementation/media-sdk/setup/setup-overview.md) et [API Media Collection](/help/media-collection-api/mc-api-overview.md)
+Si Media Analytics est le chemin que vous choisissez, consultez [Mise en œuvre du SDK Media](/help/legacy/setup/legacy-setup-overview.md) et [API Media Collection](/help/implementation/media-collection-api/mc-api-overview.md)
 
 >[!IMPORTANT]
 >Pour utiliser Media Analytics, les clients doivent également utiliser Adobe Analytics.
@@ -60,6 +60,6 @@ Primetime élimine la complexité liée à l’atteinte, la monétisation et l�
 * Prise en charge intégrée de Nielsen DTVR (linéaire) avec métadonnées ID3 et de DCR avec métadonnées CMS.
 
 
-TVSDK est déjà intégré au SDK Media Analytics (Heartbeats), ce qui rend l’implémentation beaucoup plus facile et rapide sur chaque plateforme prise en charge. Pour tirer parti de Primetime, suivez les mêmes directives et conditions préalables que celles qui figurent dans [Côté client](/help/intro-to-ava/implementation-paths/client-side-path.md), ainsi que les documents suivants pour vos plateformes : [Guide de l’utilisateur Primetime.](https://helpx.adobe.com/fr/support/primetime.html)
+TVSDK est déjà intégré au SDK Media Analytics (Heartbeats), ce qui rend l’implémentation beaucoup plus facile et rapide sur chaque plateforme prise en charge. Pour tirer parti de Primetime, suivez les mêmes directives et conditions préalables que celles qui figurent dans [Côté client](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md), ainsi que les documents suivants pour vos plateformes : [Guide de l’utilisateur Primetime.](https://helpx.adobe.com/fr/support/primetime.html)
 
 Vous devez également contacter votre représentant commercial/responsable de compte pour discuter des mesures à prendre pour acheter TVSDK.
