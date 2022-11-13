@@ -1,14 +1,14 @@
 ---
-title: Découvrez les chronologies de suivi des médias � Lʼutilisateur abandonne la session
+title: En savoir plus sur les chronologies de suivi multimédia - L’utilisateur abandonne la session
 description: Apprenez en plus sur la chronologie du curseur de lecture et � lʼaction correspondante de lʼutilisateur lorsquʼune session vidéo est abandonnée. Découvrez les détails de chaque action et requête.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
 workflow-type: tm+mt
 source-wordcount: '600'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
