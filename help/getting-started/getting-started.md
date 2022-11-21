@@ -4,13 +4,13 @@ description: Prise en main d’Adobe Analytics for Streaming Media.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
+source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '439'
 ht-degree: 6%
 
 ---
-
 
 # Prise en main {#getting-started}
 
@@ -47,10 +47,6 @@ Le **API Media Collection** vous permettent de personnaliser votre implémentat
 Pour plus d’informations sur l’utilisation des API Media Collection, voir [Documentation de l’API de média dynamique](/help/implementation/media-collection-api/mc-api-overview.md).
 
 ## Extensions Adobe {#adobe-extensions}
-
->[!NOTE]
->
->INTRO REQUIS POUR LES EXTENSIONS
 
 * Le [**Extension Adobe Medium Analytics for Audio and Video**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) (Extension Media Analytics), est requis pour les mises en oeuvre d’iOS et de tvOS. Il permet d’ajouter l’instance de suivi à un site ou à un projet de balise. L’extension MA requiert également l’extension Analytics et l’extension d’ID Experience Cloud.
 
