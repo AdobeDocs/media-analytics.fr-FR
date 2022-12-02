@@ -5,9 +5,9 @@ exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '259'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -16,16 +16,16 @@ ht-degree: 58%
 Adobe Analytics for Streaming Media prend en charge tous les principaux appareils, notamment :
 
 * Smartphones et tablettes iOS et Android
-* Appareils OTT pour Roku, Fire TV et Android TV
+* Appareils OTT pour ROKU, Fire TV et Android TV
 * Navigateurs JavaScript pour ordinateur de bureau et ordinateur portable
 
-Les SDK Media sont régulièrement mis à jour lorsque de nouvelles versions d’appareils sont commercialisées. Vous pouvez également utiliser les SDK pour intégrer des lecteurs natifs de chaque plateforme ou de tout autre lecteur multimédia disponible.
+Les SDK Media sont régulièrement mis à jour lorsque de nouvelles versions de périphériques sont publiées. Vous pouvez également utiliser les SDK pour intégrer les lecteurs natifs de chaque plateforme ou de tout autre lecteur multimédia disponible.
 
-Pour les appareils qui ne prennent pas actuellement en charge le SDK ou dans les cas où vous devrez peut-être personnaliser votre mise en oeuvre, vous pouvez utiliser l’API Media Collection. L’API Media Collection vous permet d’effectuer des appels d’API RESTful directement d’un appareil au serveur principal Media Analytics.
+Pour les périphériques qui ne sont pas actuellement compatibles avec des SDK, ou dans les cas où vous devrez personnaliser votre implémentation, vous pouvez utiliser l’API Media Collection. L’API Media Collection vous permet d’effectuer des appels API RESTful directement depuis un périphérique vers le serveur principal Media Analytics.
 
-Le tableau ci-dessous liste les périphériques actuellement pris en charge. Si un périphérique n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son état.
+Le tableau ci-dessous répertorie les périphériques actuellement pris en charge. Si un périphérique n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son statut.
 
-| Plateformes et périphériques de diffusion en continu |  | Collecte de données avec<br></br> Adobe Experience Platform<br></br> SDK Mobile | SDK Media | API Media Collection |
+| Plateformes et périphériques de diffusion en continu |  | Collecte de données avec le SDK Mobile<br></br> Adobe Experience Platform<br></br> | SDK Media | API Media Collection |
 |:---|:---|:---:|:---:|:---:|
 | Web/Mobile Web |  |  |  |  |
 |  | Navigateurs JavaScript | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) |
