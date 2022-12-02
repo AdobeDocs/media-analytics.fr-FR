@@ -1,6 +1,6 @@
 ---
-title: Nouveautés d’Adobe Analytics pour la diffusion de médias en streaming
-description: Découvrez les nouveautés d’Adobe Analytics pour la diffusion de médias en streaming.
+title: Nouveautés d’Adobe Analytics for Streaming Media en streaming
+description: Découvrez les nouveautés d’Adobe Analytics for Streaming Media en streaming.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
