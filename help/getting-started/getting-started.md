@@ -6,50 +6,50 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
 source-git-commit: 8b939da2374acb5d573a553c848ba880345e64b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '439'
-ht-degree: 6%
+ht-degree: 100%
 
 ---
 
 # Prise en main {#getting-started}
 
-Adobe Analytics for Streaming Media offre deux méthodes principales de mise en oeuvre, les SDK Media et les API Media Collection.
+Adobe Analytics for Streaming Media offre deux méthodes principales d’implémentation, les SDK Media et les API Media Collection.
 
-![methods](assets/getting-started2.png)
+![méthodes](assets/getting-started2.png)
 
-Utilisation de la logique intégrée de la variable **SDK Media**, vous pouvez mesurer avec précision plusieurs plateformes multimédias, notamment des sites web, des téléphones mobiles, des télévisions connectées, des tablettes, des appareils OTT, des décodeurs et des consoles de jeux. Vous pouvez même mesurer le contenu téléchargé. Les insights que vous obtenez vont profondément dans l’engagement de l’utilisateur à consulter, afin que vous puissiez comprendre combien de temps, quand et où les visiteurs s’engagent. Les SDK Media utilisent la variable **API Media Collection** pour le suivi. Les API Media Collection peuvent être personnalisées si votre application requiert des fonctionnalités de suivi personnalisées. Pour les appareils non pris en charge par les SDK Media, vous pouvez utiliser les API Media Collection.
+Grâce à la logique intégrée des **SDK Media**, vous pouvez comparer avec précision plusieurs plateformes multimédias, notamment des sites Web, des téléphones mobiles, des télévisions connectées, des tablettes, des appareils OTT, des décodeurs et des consoles de jeux. Vous pouvez même comparer le contenu téléchargé. Vous obtenez des informations approfondies sur l’engagement de l’utilisateur, vous pouvez ainsi comprendre la durée, le moment et le lieu de l’engagement des observateurs. Les SDK Media utilisent les **API Media Collection** pour effectuer le suivi. Les API Media Collection sont personnalisables si votre application nécessite des fonctionnalités de suivi personnalisées. Pour les appareils non pris en charge par les SDK Media, vous pouvez utiliser les API Media Collection.
 
-La solution Adobe Analytics Streaming Media est fournie pour les plateformes multimédias suivantes :
+La solution Adobe Analytics for Streaming Media est fournie pour les plateformes multimédias suivantes :
 
 * Web
 * Mobile
-* En haut
-* Tout appareil connecté pouvant être utilisé pour la diffusion en continu de médias ou une intégration serveur à serveur
+* OTT
+* Tout appareil connecté pouvant être utilisé pour les médias en flux continu ou une intégration serveur à serveur
 
-Pour plus d’informations, voir [Périphériques et plateformes pris en charge](#_Supported_devices_and).
+Pour obtenir de plus amples informations, consultez [Périphériques et plateformes pris en charge](#_Supported_devices_and).
 
 >[!IMPORTANT]
 >
->Pour mettre en oeuvre Adobe Analytics Streaming Media, contactez votre représentant commercial ou votre gestionnaire de compte Adobe pour vous assurer que Streaming Media fait partie de votre portefeuille de produits.
+>Pour implémenter Adobe Analytics for Streaming Media, contactez votre représentant commercial ou votre responsable de compte Adobe pour vous assurer que Streaming Media fait partie de votre portefolio de produits.
 
 ## SDK Media pour les médias en flux continu {#media-sdks}
 
 Les SDK Media pour les médias en flux continu sont disponibles pour les plateformes JavaScript, Android, iOS, tvOS, Chromecast et Roku.
 
-Pour plus d’informations sur le téléchargement et l’installation des SDK Media, voir [Obtention des SDK Media, des extensions à l’aide de balises et des SDK OTT](/help/getting-started/download-sdks.md).
+Pour obtenir de plus amples informations sur le téléchargement et l’installation des SDK Media, consultez [Obtention des SDK Media, des extensions à l’aide de balises et des SDK OTT](/help/getting-started/download-sdks.md).
 
 
 ## API Media Collection {#media-collection-apis}
 
-Le **API Media Collection** vous permettent de personnaliser votre implémentation de media analytics. Utilisez les API Media Collection pour appeler directement les serveurs d’Adobe afin d’effectuer pratiquement toute action que vous pouvez effectuer à l’aide des SDK, etc. Personnalisez votre collecte de données afin de créer des rapports qui explorent vos données multimédia en flux continu, y obtiennent des informations ou répondent à des questions importantes.
+Les **API Media Collection** vous permettent de personnaliser votre implémentation de Media Analytics. Utilisez les API Media Collection pour appeler directement les serveurs d’Adobe afin d’effectuer pratiquement toutes les actions réalisables à l’aide des SDK et plus encore. Personnalisez votre collecte de données afin de créer des rapports qui explorent vos données de médias en flux continu, y obtiennent des insights ou répondent à des questions importantes à leur sujet.
 
-Pour plus d’informations sur l’utilisation des API Media Collection, voir [Documentation de l’API de média dynamique](/help/implementation/media-collection-api/mc-api-overview.md).
+Pour obtenir de plus amples informations sur l’utilisation des API Media Collection, consultez [Documentation relative à l’API Streaming Media](/help/implementation/media-collection-api/mc-api-overview.md).
 
 ## Extensions Adobe {#adobe-extensions}
 
-* Le [**Extension Adobe Medium Analytics for Audio and Video**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=en) (Extension Media Analytics), est requis pour les mises en oeuvre d’iOS et de tvOS. Il permet d’ajouter l’instance de suivi à un site ou à un projet de balise. L’extension MA requiert également l’extension Analytics et l’extension d’ID Experience Cloud.
+* L’[**extension Adobe Media Analytics for Audio and Video**](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=fr) (extension Media Analytics) est requise pour les implémentations iOS et tvOS. Cette extension permet d’ajouter l’instance de suivi à un site ou un projet de balise. L’extension MA nécessite également les extensions Analytics et Experience Cloud ID.
 
-* [Extension Analytics v1.6 ou version ultérieure](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=en): cette extension vous permet de charger la bibliothèque JavaScript du SDK Web de Adobe Experience Platform pour envoyer des données aux solutions Adobe.
+* [Extension Analytics v1.6 ou version ultérieure](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=fr) : cette extension vous permet de charger la bibliothèque JavaScript du SDK Web Adobe Experience Platform pour envoyer des données aux solutions Adobe.
 
-* [Extension d’ID Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=en): cette extension met en oeuvre le service d’identification des Experience Cloud qui identifie les visiteurs dans toutes les solutions Experience Cloud. Le service d’ID Experience Cloud est une extension de personnalisation de Adobe Experience Platform.
+* [Extension Experience Cloud ID](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=fr) : cette extension implémente le service Experience Cloud ID qui identifie les visiteurs à travers l’ensemble des solutions Experience Cloud. Le service Experience Cloud ID est une extension de personnalisation d’Adobe Experience Platform.
