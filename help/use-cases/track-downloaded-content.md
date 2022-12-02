@@ -1,14 +1,14 @@
 ---
-title: Comment effectuer le suivi du contenu téléchargé hors ligne dans Adobe Streaming Media
+title: Comment effectuer le suivi du contenu téléchargé hors ligne dans Adobe Streaming Media
 description: Découvrez comment utiliser la fonction Contenu téléchargé pour effectuer le suivi de la consommation multimédia lorsquʼun utilisateur est hors ligne.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
