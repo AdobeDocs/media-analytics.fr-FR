@@ -6,13 +6,13 @@ exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '210'
 ht-degree: 100%
 
 ---
 
-# Modèles d’espaces de travail multimédia{#media-workspace-templates}
+# Modèles d’espaces de travail multimédia {#media-workspace-templates}
 
 Adobe Analytics Workspace vous permet de configurer rapidement des tableaux de bord pour analyser vos données de suivi. Lorsque vous créez un projet, ou lorsque vous accédez à l’espace de travail pour gérer un projet existant, vous pouvez choisir entre des modèles standard qui couvrent les scénarios de suivi général courants, par exemple Acquisition, Consommation des médias en flux continu, et plus encore. Vous pouvez également créer, modifier et enregistrer vos propres modèles personnalisés.
 
