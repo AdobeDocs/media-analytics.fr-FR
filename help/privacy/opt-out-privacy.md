@@ -1,18 +1,18 @@
 ---
-title: Explication de l’exclusion et de la confidentialité
-description: Découvrez comment gérer l’inclusion, l’exclusion et la confidentialité.
+title: Présentation de la désinscription et de la confidentialité
+description: Découvrez comment gérer lʼinscription, la désinscription et la confidentialité.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '358'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Exclusion et confidentialité{#opt-out-and-privacy}
+# Exclusion et confidentialité {#opt-out-and-privacy}
 
 ## Exclusion/Inclusion {#opt-out-opt-in}
 
