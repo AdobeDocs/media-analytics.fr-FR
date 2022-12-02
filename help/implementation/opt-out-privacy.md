@@ -1,18 +1,18 @@
 ---
-title: Explication de l’exclusion et de la confidentialité
-description: Découvrez comment gérer l’inclusion, l’exclusion et la confidentialité.
+title: Présentation de la désinscription et de la confidentialité
+description: Découvrez comment gérer lʼinscription, la désinscription et la confidentialité.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '385'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
-# Exclusion et confidentialité{#opt-out-and-privacy}
+# Exclusion et confidentialité {#opt-out-and-privacy}
 
 ## Exclusion/Inclusion {#opt-out-opt-in}
 
@@ -36,15 +36,15 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
 
          * **Chromecast :**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
          * **Roku :**
 
-                &quot;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-                &quot;
+                ```
             
             >[!IMPORTANT]
             >
@@ -53,28 +53,28 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
 
          * **Chromecast :**
 
-                &quot;
+                ```
                 ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             
          * **Roku :**
 
-                &quot;
+                ```
                 ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-                &quot;
+                ```
             * **Renvoyer le paramètre actuel :**
 
          * **Chromecast :**
 
-                &quot;
+                ```
                 ADBMobile.config.getPrivacyStatus()
-                &quot;
+                ```
             
          * **Roku :**
 
-                &quot;
+                ```
                 ADBMobile().getPrivacyStatus()
-                &quot;
+                ```
             Une fois le paramètre de confidentialité modifié à l’aide de `setPrivacyStatus`, le changement est permanent jusqu’à ce qu’il soit modifié à nouveau en utilisant cette méthode, ou jusqu’à la désinstallation et la réinstallation de l’application.
 
 ## Récupération des identifiants stockés (applications OTT) {#retrieving-stored-identifiers-ott-apps}
