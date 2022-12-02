@@ -2,14 +2,14 @@
 title: Nouveautés de Media Analytics
 description: Les nouveautés comprennent des informations sur les nouvelles fonctionnalités et notifications.
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
 ht-degree: 100%
 
 ---
 
 
-# Nouveautés de Media Analytics{#whats-new}
+# Nouveautés de Media Analytics {#whats-new}
 
 ![Bannière](assets/media_analytics_banner.png)
 
@@ -34,7 +34,7 @@ Les notes de mise à jour d’Adobe Experience Cloud décrivent les nouvelles fo
 
 ## Notifications importantes
 
-| Fonctionnalité | [Disponibilité générale](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html) - Date cible | Description |
+| Fonctionnalité | [Disponibilité générale](https://experienceleague.adobe.com/docs/analytics/landing/an-releases.html?lang=fr) - Date cible | Description |
 | ----------- | ---------- | ---------- |
 | [Périphériques et plateformes pris en charge](../getting-started/supported-devices.md) | 31 août 2021 | Avec l’abandon de la prise en charge des SDK mobiles de version 4 programmée au 31 août 2021, Adobe cessera également de prendre en charge le SDK Media Analytics pour iOS et Android. Pour plus d’informations, reportez-vous à la FAQ sur l’abandon de la prise en charge du SDK Media Analytics. |
 | [FAQ sur l’abandon de la prise en charge du SDK Media Analytics](sdk-implement/end-of-support-faqs.md) | Automne 2019 | Le développement des fonctionnalités des SDK Media Analytics pour iOS et Android est terminé.  Les nouvelles fonctionnalités introduites à partir de l’automne 2019 sont activées à l’aide des extensions Media Analytics et de l’API Media Collection. |
