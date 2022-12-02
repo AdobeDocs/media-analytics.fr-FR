@@ -5,13 +5,13 @@ exl-id: 2eadd5e7-45de-4275-aac5-d16e2a6a9fed
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '183'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Présentation des visionneuses simultanées de médias {#media-concurrent-viewers}
+# Aperçu des observateurs simultanés de médias {#media-concurrent-viewers}
 
 Analyser les observateurs simultanés de médias vous permet de déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu, afin de mieux comprendre la qualité du contenu et l’engagement des observateurs, et de résoudre les problèmes ou de planifier le volume et l’échelle.
 
