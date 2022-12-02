@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '915'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ Chaque suite de rapports qui collecte des mesures multimédia doit être configu
 >
 >Pour tirer parti des nouvelles capacités, les clients Media Analytics existants doivent réactiver le suivi multimédia de leurs RSID.
 
-1. Dans [Adobe Analytics](https://experience.adobe.com) click **[!UICONTROL Admin > Suites de rapports].**
+1. Dans [Adobe Analytics](https://experience.adobe.com), cliquez sur **[!UICONTROL Administration > Suites de rapports].**
 1. Sélectionnez la ou les suite(s) de rapports à l’emplacement où vous effectuez la collecte de données multimédia, puis cliquez sur **[!UICONTROL Modifier les paramètres > Gestion des médias > Création de rapports multimédia].**
 
    ![](assets/media-reporting.png){width="400px"}
