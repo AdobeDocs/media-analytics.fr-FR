@@ -6,9 +6,9 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '950'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -71,4 +71,4 @@ Les clients expérimentés peuvent utiliser les panneaux de médias dans Analysi
 
 >[!IMPORTANT]
 >
->Ne modifiez pas les noms de classification des variables répertoriées dans les tableaux Mesures et métadonnées (par exemple, [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md) qui y sont décrites sous Variable de création de rapports/réservée comme &quot;classification&quot;. Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour le suivi multimédia. De temps à autre, Adobe ajoute de nouvelles propriétés. Dans ce cas, les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés du média. Au cours du processus de mise à jour, Adobe détermine si les classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque, Adobe l’ajoute à nouveau.
+>Ne modifiez pas les noms de classification des variables répertoriées dans les tableaux Mesures et métadonnées (par exemple, [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md)) qui sont décrits comme « classification » sous Variable de création de rapports/réservée. Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour le suivi multimédia. De temps à autre, Adobe ajoute de nouvelles propriétés. Dans ce cas, les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés du média. Au cours du processus de mise à jour, Adobe détermine si les classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque, Adobe l’ajoute à nouveau.
