@@ -33,9 +33,9 @@ Cette section _____
 
 Nouveaux tutoriels et cours sur Analytics
 
-| Publication | Nom | type | Description |
+| Publié | Nom | type | Description |
 | ----------- | ---------- | ---------- | --------- |
-| Janvier | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">Panneau Temps de lecture de média</a> | Vidéo | Découvrez comment le panneau Temps de lecture de médias permet aux utilisateurs de médias de comprendre leur audience en fonction du temps de visionnage au cours de la journée selon une granularité choisie. |
+| Janvier | <a href="/docs/analytics-learn/tutorials/media-analytics/measuring-media-analytics/media-playback-time-spent-panel.html?lang=en">Panneau Temps de lecture de média</a> | Vidéo | Découvrez comment le panneau Temps de lecture de média permet aux utilisateurs de médias de comprendre leur audience en fonction du temps de visionnage au cours de la journée selon une granularité choisie. |
 
 
 
@@ -58,7 +58,7 @@ Nouveaux tutoriels et cours sur Analytics
 
 Nouveaux tutoriels et cours sur Analytics
 
-| Publication | Nom | type | Description |
+| Publié | Nom | type | Description |
 | ----------- | ---------- | ---------- | --------- |
 | 6 janvier 2021 | [Panneau Observateurs simultanés de médias dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-workspace/using-panels/media-concurrent-viewers-panel-in-analysis-workspace.html?lang=fr#analysis-workspace) | Vidéo | Déterminez où s’est produit le pic d’accès simultanés et où des abandons ont eu lieu. Obtenez des informations importantes sur la qualité du contenu et l’engagement des observateurs, ainsi que de l’aide concernant la résolution de problèmes ou la planification du volume et de l’échelle. |
 
@@ -69,7 +69,7 @@ Nouvelles fonctionnalités de Media Analytics
 
 | Fonctionnalité | Disponibilité générale | Description |
 | -------- | -------------------- | ----------- |
-| Panneau Observateurs simultanés de médias dans l’espace de travail | 17 septembre 2020 | Le panneau Observateurs simultanés de médias vous permet de déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu. Il fournit des informations importantes sur la qualité du contenu et l’engagement des observateurs et aide à la résolution des problèmes ou à la planification du volume/de l’échelle. [En savoir plus…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=fr) |
+| Panneau Observateurs simultanés de médias dans l’espace de travail | 17 septembre 2020 | Le panneau Observateurs simultanés de médias vous permet de déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu. Il fournit des informations importantes sur la qualité du contenu et l’engagement des observateurs, et aide à la résolution des problèmes ou à la planification du volume/de l’échelle. [En savoir plus…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=fr) |
 
 
 ## Septembre 2020
@@ -78,7 +78,7 @@ Nouvelles fonctionnalités de Media Analytics
 
 | Fonctionnalité | Disponibilité générale | Description |
 | -------- | -------------------- | ----------- |
-| Panneau Observateurs simultanés de médias dans l’espace de travail | 17 septembre 2020 | Le panneau Observateurs simultanés de médias vous permet de déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu. Il fournit des informations importantes sur la qualité du contenu et l’engagement des observateurs et aide à la résolution des problèmes ou à la planification du volume/de l’échelle. [En savoir plus…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=fr) |
+| Panneau Observateurs simultanés de médias dans l’espace de travail | 17 septembre 2020 | Le panneau Observateurs simultanés de médias vous permet de déterminer où s’est produit le pic d’accès simultanés ou où des abandons ont eu lieu. Il fournit des informations importantes sur la qualité du contenu et l’engagement des observateurs, et aide à la résolution des problèmes ou à la planification du volume/de l’échelle. [En savoir plus…](https://experienceleague.adobe.com/docs/media-analytics/using/media-reports/media-workspace-panels/media-concurrent-viewers.html?lang=fr) |
 
 
 ## Juillet 2020
