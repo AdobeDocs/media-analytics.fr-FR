@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+workflow-type: tm+mt
+source-wordcount: '531'
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,7 @@ Vous pouvez déterminer les mesures de diffusion vidéo essentielles liées à l
 
 ## Fonctionnement
 
-Les données de Streaming Media sont collectées à partir d’un lecteur à l’aide des SDK Media, des API Media Collection ou des extensions Media (avec balises). Toutes les données granulaires (jusqu’à 10 secondes) sont envoyées au service Media Analytics qui collecte et traite les données pour chaque session de lecture individuelle. Une fois la session de lecture terminée, les données de suivi calculées sont envoyées à Adobe Analytics pour stockage et création de rapports. Grâce aux implémentations d’Adobe Customer Journey Analytics (CJA), les données peuvent être envoyées à CJA à l’aide d’Analytics Data Connector (ADC) afin que les clients puissent utiliser CJA comme outil de création de rapports.
+Les données de suivi des médias en flux continu sont collectées à partir d’un lecteur à l’aide des SDK Media ou des extensions Adobe Experience Platform Media et des API Media Collection. Toutes les données granulaires (jusqu’à 10 secondes) sont envoyées au service Media Analytics qui collecte et traite les données pour chaque session de lecture individuelle. Une fois la session de lecture terminée, les données de suivi calculées sont envoyées à Adobe Analytics pour stockage et création de rapports. Grâce aux implémentations d’Adobe Customer Journey Analytics (CJA), les données peuvent être envoyées à CJA à l’aide d’Analytics Data Connector (ADC) afin que les clients puissent utiliser CJA comme outil de création de rapports.
 
 <!-- ![streaming media process](./assets/streaming-process1.png) -->
 

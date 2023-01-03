@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
+workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Utilisez les informations du tableau suivant pour trouver la documentation de la
 | Implémentation | Documentation |
 |:-----------------------:|----------------|
 | **Web** | * [Implémentation web pour les médias en flux continu](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Implémentation avec l’extension Adobe Media Analytics for Audio and Video ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr) |
-| **Mobile** | *[Guide du SDK mobile Adobe Experience Platform](https://aep-sdks.gitbook.io/docs/) <br> *[Extension Adobe Media Analytics for Audio and Video](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)<br> *[Versions actuelles du SDK mobile](https://developer.adobe.com/client-sdks/documentation/) <br> *[Implémentation mobile pour les médias en flux continu](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
+| **Mobile** | *[Guide du SDK mobile Adobe Experience Platform](https://developer.adobe.com/client-sdks/documentation/) <br> *[Extension Adobe Media Analytics for Audio and Video](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Versions actuelles du SDK mobile](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Implémentation mobile pour les médias en flux continu](/help/implementation/media-sdk/setup/mobile-implementation.md) |  |  |
 | **OTT** | *[SDK Chromecast 3.0 pour solutions Adobe Marketing Cloud](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Configurer Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> *[Configurer Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **API Adobe Experience Platform** | *[API Media Collection](/help/implementation/media-collection-api/mc-api-overview.md) |
 
@@ -33,7 +33,7 @@ Le tableau ci-dessous répertorie la documentation sur les produits Adobe utilis
 
 | Produit | Documentation |
 |:-----------------------:|----------------|
-| **Adobe Analytics** | *[Guide d’implémentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr)<br> *[Guide des composants d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=fr)<br> *[Guide sur les outils d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=fr)<br> *[Tutoriels Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=fr#tutorials) <br> *[API Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Implémentation mobile pour Analytics](https://developer.adobe.com/client-sdks/documentation/) |
+| **Adobe Analytics** | *[Guide d’implémentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr)<br> *[Guide des composants d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/components/home.html?lang=fr)<br> *[Guide sur les outils d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/home.html?lang=fr)<br> *[Tutoriels Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=fr#tutorials) <br> *[API Adobe Analytics](https://developer.adobe.com/analytics-apis/docs/2.0/)<br> *[Implémentation mobile pour Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/) |
 | **Balises** | *[Documentation sur les balises d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr) |
 
 ## Tutoriels sur Adobe Enterprise {#adobe-tutorials}

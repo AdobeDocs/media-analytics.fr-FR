@@ -4,10 +4,10 @@ description: Découvrez comment migrer du SDK Media vers Launch pour Android.
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
 workflow-type: tm+mt
 source-wordcount: '411'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -48,7 +48,7 @@ L’extension Media utilisera les paramètres configurés pour le suivi.
 
 ![](assets/launch_config_mobile.png)
 
-[Utilisation des extensions mobiles](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics)
+[Utilisation des extensions mobiles](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)
 
 ## Création du dispositif de suivi
 
@@ -91,7 +91,7 @@ MediaHeartbeatDelegate delegate = new MediaHeartbeatDelegate() {
 
 ### Extension de Launch
 
-[Référence de l’API Media : création d’un outil de suivi des médias](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#create-a-media-tracker)
+[Référence de l’API Media : création d’un outil de suivi des médias](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createtracker)
 
 Avant de créer le dispositif de suivi, vous devez enregistrer l’extension média et
 les extensions dépendantes avec le noyau mobile.
@@ -145,12 +145,12 @@ L’implémentation doit mettre à jour le curseur de lecture actuel du lecteur 
 méthode `updateCurrentPlayhead` exposée par le dispositif de suivi. Pour un suivi précis,
 vous devez appeler cette méthode au moins une fois par seconde.
 
-[Référence de l’API Media : mise à jour du lecteur actuel](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updatecurrentplayhead)
+[Référence de l’API Media : mise à jour du lecteur actuel](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#updatecurrentplayhead)
 
 L’implémentation doit mettre à jour les informations relatives à la qualité de l’expérience en appelant la
 méthode `updateQoEObject` exposée par le dispositif de suivi. Cette méthode est censée être appelée chaque à fois qu’il y a un changement dans les mesures de qualité.
 
-[Référence de l’API Media : mise à jour de l’objet QoE (qualité de l’expérience)](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#updateqoeobject)
+[Référence de l’API Media : mise à jour de l’objet QoE (qualité de l’expérience)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/#createqoeobject)
 
 ## Transmission de métadonnées publicitaires / médias standard
 

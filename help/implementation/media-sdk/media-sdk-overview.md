@@ -1,15 +1,15 @@
 ---
 title: Comment mettre en oeuvre les SDK de médias en flux continu Adobe
-description: Découvrez comment mettre en oeuvre Adobe Analytics for Streaming Media à l’aide des SDK Media.
+description: Découvrez comment mettre en oeuvre Adobe Analytics pour les médias en streaming à l’aide des SDK Media.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
 source-wordcount: '202'
-ht-degree: 3%
+ht-degree: 6%
 
 ---
-
 
 # Présentation du SDK Media {#implementation-overview}
 
@@ -19,23 +19,23 @@ Mettez en oeuvre les SDK de médias en flux continu dans votre structure de lect
 
 ### Implémentation web
 
-| Plateforme | Version  |
+| Plateforme | Version |
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [SDK Media pour JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Extension Adobe Medium Analytics avec balises (collecte de données) pour Javascript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Extension Adobe Medium Analytics avec balises (collecte de données) pour JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
 ### Implémentation mobile
 
-| Plateforme | Version  |
+| Plateforme | Version |
 |:----:|:----|
 | <img src="assets/android-icon.png"> | [Extension Adobe Experience Platform Media Analytics avec des balises (collecte de données)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 | <img src="assets/apple-ios-icon.png"> | [Extension Adobe Experience Platform Media Analytics avec des balises (collecte de données)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 
 * L’extension iOS Media Analytics for Audio and Video prend en charge iOS, iPadOS et tvOS.
 
-### Mise en oeuvre par-dessus le plan
+### Implémentation over-the-top
 
-| Plateforme | Version  |
+| Plateforme | Version |
 |:------:|:-----|
 | <img src="assets/chromecast-icon.png"> | [SDK Media pour Chromecast v3.x](../../getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries) |
 | <img src="assets/roku-icon.png"> | [SDK Media pour Roku v2.x](../../getting-started/download-sdks.md#over-the-top-implementation-download-ott-libraries) |

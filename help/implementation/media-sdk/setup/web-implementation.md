@@ -1,24 +1,25 @@
 ---
-title: Configuration d’une mise en oeuvre web pour Analytics for Streaming Media
+title: Configuration d’une mise en oeuvre web pour Analytics pour les médias en streaming
 description: Découvrez comment mettre en oeuvre Adobe Streaming Media pour les applications web.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
+source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 71%
+source-wordcount: '449'
+ht-degree: 73%
 
 ---
 
-
 # Installation des SDK Web {#install-web-sdks}
 
-Configuration du SDK Media v3.x pour JavaScript &quot; ce que Calise souhaite dans la page/le lien de téléchargement
+Cette section contient des informations sur l’installation du SDK Web autonome et la configuration de JavaScript.
 
-Cette section contient des informations sur l’installation du SDK web et la configuration de JavaScript.
+* [SDK Web autonome](/help/implementation/media-sdk/setup/web-implementation.md)
 
+* [SDK d’extension web](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr){target=_blank}
 
-## Conditions préalables  {#prerequesites}
+## Conditions préalables {#prerequesites}
 
 * **Obtention de paramètres de configuration valides**
 
@@ -33,7 +34,7 @@ Cette section contient des informations sur l’installation du SDK web et la co
    * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
    * *Une API qui fournit des informations sur le lecteur* - Cela inclut des informations sur les médias en cours de lecture, les publicités et le chapitre.
 
-## Configuration de JavaScript 3.x {#set-up-javascript}
+## Configuration de JavaScript 3.x {#set-up-javascript}
 
 1. Ajoutez la bibliothèque que vous avez [téléchargée](/help/getting-started/download-sdks.md) à votre projet. Créez des références locales aux classes pour des raisons pratiques.
 
