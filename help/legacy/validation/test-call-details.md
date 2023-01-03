@@ -6,7 +6,7 @@ exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
 ht-degree: 100%
 
@@ -41,7 +41,7 @@ ht-degree: 100%
 |---|---|
 | `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | Titre de l’épisode |
+| `a.media.episode` | Episode Title |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -68,7 +68,7 @@ ht-degree: 100%
 | `s:event:type` | start |
 | _**`l:event:playhead`**_ | _**0**_ |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Titre de l’épisode |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -87,7 +87,7 @@ ht-degree: 100%
 |---|---|
 | `s:meta:a.media.show` | Programme |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Titre de l’épisode |
+| `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
@@ -114,7 +114,7 @@ ht-degree: 100%
 | _**`s:event:type`**_ | _**aa_start**_ |
 | `l:event:playhead` | 0 |
 | `l:event:duration` | 4 |
-| `s:asset:name` | Titre de l’épisode |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -154,9 +154,9 @@ ht-degree: 100%
 
 | Paramètre |  Valeur (exemple)  |
 |---|---|
-| `a.media.show` | Afficher le titre |
+| `a.media.show` | Show Title |
 | `a.media.season` | 6 |
-| `a.media.episode` | Titre de l’épisode |
+| `a.media.episode` | Episode Title |
 | `a.media.asset_id` | 123456 |
 | `a.media.genre` | comedy |
 | `a.media.first_air_date` | 2016-07-04 |
@@ -201,7 +201,7 @@ ht-degree: 100%
 |---|---|
 | `s:meta:a.media.show` | Programme |
 | `s:meta:a.media.season` | 6 |
-| `s:meta:a.media.episode` | Titre de l’épisode |
+| `s:meta:a.media.episode` | Episode Title |
 | `s:meta:a.media.asset_id` | 123456 |
 | `s:meta:a.media.genre` | comedy |
 | `s:meta:a.media.first_air_date` | 2018-07-04 |
@@ -278,7 +278,7 @@ ht-degree: 100%
 | `s:event:type` | play |
 | _**`l:event:playhead`**_ | _**29**_ |
 | _**`l:event:duration`**_ | _**10189**_ |
-| `s:asset:name` | Titre de l’épisode |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
@@ -298,7 +298,7 @@ ht-degree: 100%
 | _**`s:event:type`**_ | _**pause**_ |
 | _**`l:event:playhead`**_ | _**29**_ |
 | `l:event:duration` | 10189 |
-| `s:asset:name` | Titre de l’épisode |
+| `s:asset:name` | Episode Title |
 | `s:asset:video_id` | 123456 |
 | `l:asset:length` | 120 |
 | `s:stream:type` | vod |
