@@ -5,7 +5,7 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 97d5d1df35bb282cac803500e1ddd72d654aef6e
+source-git-commit: 9ff1cf4f622f9f2d34275297ffbc3ebf92c2f1ba
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 97%
@@ -20,9 +20,10 @@ ht-degree: 97%
    + [Notes de mise à jour des médias en flux continu](additional-resources/release-notes.md)
 + Prise en main {#getting-started}
    + [Présentation](getting-started/getting-started.md)
-   + [SDK, bibliothèques et extensions](getting-started/download-sdks.md)
-   + [Périphériques pris en charge](getting-started/supported-devices.md)
    + [Conditions préalables](getting-started/prereqs.md)
+   + [Périphériques pris en charge](getting-started/supported-devices.md)
+   + [Documentation sur les médias en flux continu](getting-started/implementation-documentation.md)
+   + [SDK, bibliothèques et extensions](getting-started/download-sdks.md)
    + Fin de la prise en charge {#end-of-support}
       + [Fin de la prise en charge du SDK Mobile Media Analytics](additional-resources/end-of-support-faqs.md)
       + Hérité - Migration du SDK Media vers Launch {#sdk-to-launch}
@@ -30,7 +31,6 @@ ht-degree: 97%
          + [Android - SDK Media vers Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - SDK Media vers Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JavaScript - SDK Media vers Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
-   + [Documentation sur les médias en flux continu](getting-started/implementation-documentation.md)
 + Implémentation {#implementation}
    + [Présentation de l’implémentation](implementation/overview.md)
    + SDK Media - Implémentation {#media-sdk}
