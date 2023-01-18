@@ -5,9 +5,9 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '950'
+source-git-commit: e0a8d2d16a746a717d54bdb171f66f3a7d112251
+workflow-type: tm+mt
+source-wordcount: '940'
 ht-degree: 100%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 Chaque suite de rapports qui collecte des mesures multimédia doit être configurée avant que les données multimédia ne soient envoyées.
 
-Les clients expérimentés peuvent utiliser les panneaux de médias dans Analysis Workspace seulement après que Media Core et le suivi ont été activés pour [Qualité d’expérience](https://experienceleague.adobe.com/docs/media-analytics/using/sdk-implement/track-qos/track-qos-overview.html?lang=fr).
+Les clients expérimentés peuvent utiliser les panneaux de médias dans Analysis Workspace seulement après que Media Core et le suivi ont été activés pour [Qualité d’expérience](/help/use-cases/track-qos/track-qos-overview.md).
 
 >[!TIP]
 >
