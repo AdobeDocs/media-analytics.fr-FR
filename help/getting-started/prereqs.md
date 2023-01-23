@@ -6,9 +6,9 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '486'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Demandez à votre représentant Adobe Analytics de vous fournir l’URL du serve
 l’URL `collection-api-server` du SDK Mobile, du SDK JavaScript et du serveur de suivi non-collection-api pour Roku. Les noms de domaine pour l’implémentation de l’API sont les suivants : `[your_namespace].hb-api.omtrdc.net`.
 
 1. **Télécharger le SDK Media actuel ou mettre en œuvre les extensions requises**<br>
-Selon le chemin d’implémentation, [téléchargez le SDK actuel](download-sdks.md) pour les plateformes web, mobiles ou de type OTT. Les extensions requises doivent être mises en oeuvre pour activer les chemins d’accès des extensions Adobe Analytics pour les médias en streaming.
+Selon le chemin d’implémentation, [téléchargez le SDK actuel](download-sdks.md) pour les plateformes web, mobiles ou de type OTT. Les extensions requises doivent être implémentées pour activer les chemins d’accès vers les extensions Adobe Analytics for Streaming Media.
 
 1. **Activer les rapports Adobe Analytics**<br>
 Pour activer les rapports dans Analytics et afficher le contenu et les données de publicité que vous collectez, vous devez activer les rapports dans Analytics. Voir [Activation des rapports multimédia](/help/reporting/media-reports-enable.md).
