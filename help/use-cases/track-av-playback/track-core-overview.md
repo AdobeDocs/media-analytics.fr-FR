@@ -6,9 +6,9 @@ exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '896'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -242,4 +242,4 @@ if (e.type == "buffered") {
 
 ## Validation {#validate}
 
-Pour plus d’informations sur la validation de votre *hérité* implémentation, voir [Validation héritée.](/help/legacy/validation/validation-overview.md)
+Pour plus d’informations sur la validation de votre implémentation *héritée*, voir la section [Validation héritée.](/help/legacy/validation/validation-overview.md)
