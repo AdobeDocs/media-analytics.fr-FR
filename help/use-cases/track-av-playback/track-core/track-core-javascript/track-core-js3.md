@@ -5,13 +5,13 @@ exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '645'
 ht-degree: 100%
 
 ---
 
-# Suivi de la lecture principale à l’aide de JavaScript 3.x{#track-core-playback-on-javascript}
+# Effectuer le suivi de la lecture principale à l’aide de JavaScript 3.x{#track-core-playback-on-javascript}
 
 Cette documentation aborde le suivi dans la version 3.x du SDK.
 
@@ -26,10 +26,10 @@ Cette documentation aborde le suivi dans la version 3.x du SDK.
 
    | Nom de variable | Type | Description |
    | --- | --- | --- |
-   | `name` | chaîne | Chaîne non vide désignant le nom du média. |
-   | `id` | chaîne | Chaîne non vide désignant l’identifiant de média unique. |
-   | `length` | nombre | Nombre positif désignant la longueur du média en secondes. Indiquez 0 si la longueur est inconnue. |
-   | `streamType` | chaîne |  |
+   | `name` | string | Chaîne non vide désignant le nom du média. |
+   | `id` | string | Chaîne non vide désignant l’identifiant de média unique. |
+   | `length` | number | Nombre positif désignant la longueur du média en secondes. Indiquez 0 si la longueur est inconnue. |
+   | `streamType` | string |  |
    | `mediaType` |  | Type de média (audio ou vidéo). |
 
    **`StreamType`Constantes :**
