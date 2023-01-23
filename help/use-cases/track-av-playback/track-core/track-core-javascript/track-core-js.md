@@ -6,13 +6,13 @@ exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '689'
 ht-degree: 100%
 
 ---
 
-# Suivi de la lecture principale à l’aide de JavaScript 2.x{#track-core-playback-on-javascript}
+# Effectuer le suivi de la lecture principale à l’aide de JavaScript 2.x{#track-core-playback-on-javascript}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur les kits SDK 2.x.
 
