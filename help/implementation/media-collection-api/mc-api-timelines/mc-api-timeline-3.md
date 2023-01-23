@@ -1,14 +1,14 @@
 ---
-title: Découvrez les chronologies de suivi des médias � Chapitres
+title: Découvrez les chronologies de suivi des médias ‐ Chapitres
 description: Découvrez la chronologie du curseur de lecture et le moment où un chapitre commence et se termine.
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1092'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Les diagrammes suivants illustrent la chronologie du curseur de lecture et la ch
 | --- | :---: | :---: | --- |
 | Bouton Lecture automatique ou bouton Lecture enfoncé, début du chargement de la vidéo. | 0 | 0 | `/api/v1/sessions` |
 
-Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renvoie un ID de session (`{sid}`) au client, utilisé pour identifier tous les appels de suivi suivants dans la session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ».  Les [paramètres de session obligatoires](../mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
+Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renvoie un ID de session (`{sid}`) au client, utilisé pour identifier tous les appels de suivi suivants dans la session. L’état du lecteur n’est pas encore « en cours de lecture », mais à la place, « en cours de démarrage ».  Les [paramètres de session obligatoires](../mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
 
 ```json
 {
@@ -70,7 +70,7 @@ Démarrez votre minuteur de ping. Le premier événement ping doit alors se déc
 | --- | :---: | :---: | --- |
 | Suivi du début de la coupure publicitaire preroll | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Les publicités ne peuvent être suivies que dans une coupure publicitaire.
+Les annonces publicitaires ne peuvent être suivies que dans une coupure publicitaire.
 
 ```json
 {
@@ -146,7 +146,7 @@ Envoyez un ping au serveur principal toutes les secondes. (Les pings de publici
 | --- | :---: | :---: | --- |
 | Le suivi de la publicité preroll N°1 est terminé | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Suivez la fin de la première publicité preroll.
+Effectuez le suivi de la fin de la première publicité preroll.
 
 ```json
 {
@@ -164,7 +164,7 @@ Suivez la fin de la première publicité preroll.
 | --- | :---: | :---: | --- |
 | Le suivi de la publicité preroll N°2 commence | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Suivez le début de la seconde publicité preroll, qui dure 7 secondes.
+Effectuez le suivi du début de la seconde publicité preroll, qui dure 7 secondes.
 
 ```json
 {
@@ -214,7 +214,7 @@ Envoyez un ping au serveur principal toutes les secondes. (Les pings de publici
 | --- | :---: | :---: | --- |
 | Le suivi de la publicité preroll N°2 est terminé | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Suivez la fin de la seconde publicité preroll.
+Effectuez le suivi de la fin de la seconde publicité preroll.
 
 ```json
 {
@@ -250,7 +250,7 @@ La coupure publicitaire est terminée. Tout au long de la coupure publicitaire, 
 | --- | :---: | :---: | --- |
 | Suivi de l’événement de lecture | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Après l’événement `adBreakComplete`, placez le lecteur à l’état « lecture » à l’aide de l’événement `play`.
+Après l’événement `adBreakComplete`, placez le lecteur à l’état « en cours de lecture » à l’aide de l’événement `play`.
 
 ```json
 {
@@ -268,7 +268,7 @@ Après l’événement `adBreakComplete`, placez le lecteur à l’état « lec
 | --- | :---: | :---: | --- |
 | Suivi de l’événement de début de chapitre | 23 | 1 | `/api/v1/sessions/{sid}/events` |
 
-Après l’événement de lecture, suivez le début du premier chapitre.
+Après l’événement de lecture, effectuez le suivi du début du premier chapitre.
 
 ```json
 {
@@ -308,7 +308,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 | --- | :---: | :---: | --- |
 | L’événement de début de la mémoire tampon a eu lieu | 33 | 11 | `/api/v1/sessions/{sid}/events` |
 
-Suivez le déplacement à l’état « mise en mémoire tampon ».
+Effectuez le suivi du passage à l’état « mise en mémoire tampon ».
 
 ```json
 {
@@ -380,7 +380,7 @@ Le premier chapitre se termine, juste avant la seconde coupure publicitaire.
 | --- | :---: | :---: | --- |
 | Le suivi de la coupure publicitaire mid-roll commence | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
+Annonce publicitaire mid-roll d’une durée de 8 secondes : envoyez `adBreakStart`.
 
 ```json
 {
@@ -402,7 +402,7 @@ Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
 | --- | :---: | :---: | --- |
 | Le suivi de la publicité mid-roll N°3 commence | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Suivez la publicité mid-roll.
+Suivez l’annonce publicitaire mid-roll.
 
 ```json
 {
@@ -528,7 +528,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 | --- | :---: | :---: | --- |
 | L’utilisateur a appuyé sur Pause | 64 | 31 | `/api/v1/sessions/{sid}/events` |
 
-L’action de l’utilisateur déplace l’état de lecture sur « pause ».
+L’action de l’utilisateur ou de l’utilisatrice déplace l’état de lecture sur « pause ».
 
 ```json
 {
@@ -600,7 +600,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 | --- | :---: | :---: | --- |
 | Fin du chapitre 2 | 87 | 44 | `/api/v1/sessions/{sid}/events` |
 
-Suivez la fin du second chapitre et du dernier chapitre.
+Effectuez le suivi de la fin du second et dernier chapitre.
 
 ```json
 {
