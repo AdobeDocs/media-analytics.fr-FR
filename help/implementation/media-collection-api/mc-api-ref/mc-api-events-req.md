@@ -1,14 +1,14 @@
 ---
-title: API Streaming Media Collection � Point dʼentrée de la requête events
+title: API Streaming Media Collection ‐ Point dʼentrée de la requête events
 description: « Quels sont les paramètres et les réponses du point dʼentrée de la requête events de lʼAPI Media Collection ? »
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '261'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 96%
 
 ## Paramètre URI
 
-`sid`: L’ID de session renvoyé par une [Requête sessions](mc-api-sessions-req.md).
+`sid` : ID de session renvoyé à partir d’une [requête Sessions](mc-api-sessions-req.md).
 
 ## Corps de requête
 
