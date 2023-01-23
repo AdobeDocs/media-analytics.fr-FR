@@ -1,14 +1,14 @@
 ---
-title: API Streaming Media Collection � Paramètres des requêtes
+title: API Streaming Media Collection ‐ Paramètres des requêtes
 description: « Quels sont les paramètres de requête, les clés de requête et les descriptions de lʼAPI Media Collection ? »
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1329'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -18,87 +18,87 @@ ht-degree: 99%
 
 | Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.trackingServer` | O | chaîne | `sessionStart` | URL de votre serveur Adobe Analytics |
-| `analytics.reportSuite` | O | chaîne | `sessionStart` | ID identifiant vos données de rapport d’Analytics |
+| `analytics.trackingServer` | O | string | `sessionStart` | URL de votre serveur Adobe Analytics |
+| `analytics.reportSuite` | O | string | `sessionStart` | ID identifiant vos données de rapport d’Analytics |
 | `analytics.enableSSL` | N | booléen | `sessionStart` | True ou false pour activer SSL |
-| `analytics.visitorId` | N | chaîne | `sessionStart` | L’identifiant visiteur Adobe est un ID personnalisé que vous pouvez utiliser dans plusieurs applications Adobe. La pulsation `visitorId` est égale au `VID.` Analytics |
+| `analytics.visitorId` | N | string | `sessionStart` | L’identifiant visiteur Adobe est un ID personnalisé que vous pouvez utiliser dans plusieurs applications Adobe. La pulsation `visitorId` est égale au `VID.` Analytics |
 
 ## Données du visiteur
 
 | Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | O | chaîne | `sessionStart` | Identifiant d’entreprise Experience Cloud ; identifie votre organisation dans l’écosystème Adobe Experience Cloud |
-| `visitor.marketingCloudUserId` | N | chaîne | `sessionStart` | Il s’agit de l’identifiant utilisateur Experience Cloud (ECID). Dans la plupart des cas, il s’agit de l’identifiant que vous devez utiliser pour identifier un utilisateur. La pulsation `marketingCloudUserId` est égale au `MID` dans Adobe Analytics. Bien que cela ne soit pas techniquement requis, ce paramètre est nécessaire pour accéder à la famille d’applications Experience Cloud. |
+| `visitor.marketingCloudOrgId` | O | string | `sessionStart` | Identifiant d’entreprise Experience Cloud ; identifie votre organisation dans l’écosystème Adobe Experience Cloud |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | Il s’agit de l’identifiant utilisateur Experience Cloud (ECID). Dans la plupart des cas, il s’agit de l’identifiant que vous devez utiliser pour identifier un utilisateur. La pulsation `marketingCloudUserId` est égale au `MID` dans Adobe Analytics. Bien que cela ne soit pas techniquement requis, ce paramètre est nécessaire pour accéder à la famille d’applications Experience Cloud. |
 | `visitor.aamLocationHint` | N | entier | `sessionStart` | Fournit des données Adobe Audience Manager Edge : si aucune valeur nʼest saisie, la valeur est nulle. |
-| `appInstallationId` | N | chaîne | `sessionStart` | L’ID appInstallationId identifie de manière unique l’application et l’appareil |
+| `appInstallationId` | N | string | `sessionStart` | L’ID appInstallationId identifie de manière unique l’application et l’appareil |
 
 ## Données du contenu
 
 | Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
 | --- | :---: | :---: | :---: | --- |
-| `media.id` | O | chaîne | `sessionStart` | Identifiant unique du contenu |
-| `media.name` | N | chaîne | `sessionStart` | Nom du contenu lisible par l’homme |
-| `media.length` | O | nombre | `sessionStart` | Durée du contenu (secondes) |
-| `media.contentType` | O | chaîne | `sessionStart` | Format de la diffusion (peut correspondre à n’importe quelle chaîne ; quelques valeurs recommandées sont &quot;live&quot;, &quot;VOD&quot; ou &quot;Linear&quot;) |
-| `media.playerName` | O | chaîne | `sessionStart` | Nom du lecteur responsable du rendu du contenu |
-| `media.channel` | O | chaîne | `sessionStart` | Chaîne de distribution du contenu. Il peut s’agir du nom d’une application, d’un site web, d’un nom de propriété, etc. |
+| `media.id` | O | string | `sessionStart` | Identifiant unique du contenu |
+| `media.name` | N | string | `sessionStart` | Nom du contenu lisible par l’homme |
+| `media.length` | O | number | `sessionStart` | Durée du contenu (secondes) |
+| `media.contentType` | O | string | `sessionStart` | Format de la diffusion (peut correspondre à n’importe quelle chaîne ; quelques valeurs recommandées sont &quot;live&quot;, &quot;VOD&quot; ou &quot;Linear&quot;) |
+| `media.playerName` | O | string | `sessionStart` | Nom du lecteur responsable du rendu du contenu |
+| `media.channel` | O | string | `sessionStart` | Chaîne de distribution du contenu. Il peut s’agir du nom d’une application, d’un site web, d’un nom de propriété, etc. |
 | `media.resume` | N | booléen | `sessionStart` | Indique si un utilisateur reprend ou non une session précédente (au lieu de commencer une nouvelle session). |
-| `media.sdkVersion` | N | chaîne | `sessionStart` | Version SDK utilisée par le lecteur |
+| `media.sdkVersion` | N | string | `sessionStart` | Version SDK utilisée par le lecteur |
 
 ## Métadonnées standard du contenu
 
 | Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
 | --- | :---: | :---: | :---: | --- |
-| `media.streamFormat` | N | chaîne | `sessionStart` | Format de diffusion, par exemple : &quot;HD&quot; |
-| `media.show` | N | chaîne | `sessionStart` | Nom du programme ou de la série |
-| `media.season` | N | chaîne | `sessionStart` | Numéro de la saison à laquelle le programme ou la série appartient |
-| `media.episode` | N | chaîne | `sessionStart` | Numéro de l’épisode |
-| `media.assetId` | N | chaîne | `sessionStart` | L’identifiant unique du contenu de la ressource vidéo, tel que l’identifiant d’épisode de la série télévisée, l’identifiant de la ressource de film ou l’identifiant d’événement en direct. En règle générale, ces identifiants sont issus des autorités de métadonnées telles que EIDR, TMS/Gracenote ou Rovi. Ces identifiants peuvent également provenir d’autres systèmes propriétaires ou internes. |
-| `media.genre` | N | chaîne | `sessionStart` | Type de contenu tel que défini par le producteur de contenu |
-| `media.firstAirDate` | N | chaîne | `sessionStart` | Date à laquelle le contenu a été diffusé à la télévision pour la première fois |
-| `media.firstDigitalDate` | N | chaîne | `sessionStart` | Date à laquelle le contenu a été diffusé pour la première fois sur une chaîne ou une plateforme numérique |
-| `media.rating` | N | chaîne | `sessionStart` | Évaluation telle que définie par les directives parentales de la télévision |
-| `media.originator` | N | chaîne | `sessionStart` | Créateur du contenu |
-| `media.network` | N | chaîne | `sessionStart` | Nom du réseau/canal |
-| `media.showType` | N | chaîne | `sessionStart` | Type de contenu, exprimé sous la forme d’un nombre entier compris entre 0 et 3 : <ul> <li>0 - épisode entier </li> <li>1 - aperçu </li> <li>2 - clip </li> <li>3 - autre </li> </ul> |
-| `media.adLoad` | N | chaîne | `sessionStart` | Type de publicité chargée |
-| `media.pass.mvpd` | N | chaîne | `sessionStart` | MVPD fourni par l’authentification Adobe |
-| `media.pass.auth` | N | chaîne | `sessionStart` | Indique que l’utilisateur a été autorisé par l’authentification Adobe (peut uniquement avoir la valeur true si défini) |
-| `media.dayPart` | N | chaîne | `sessionStart` | Heure de la journée à laquelle le contenu a été diffusé |
-| `media.feed` | N | chaîne | `sessionStart` | Type de flux, tel que &quot;West-HD&quot; |
+| `media.streamFormat` | N | string | `sessionStart` | Format du flux, par exemple « HD » |
+| `media.show` | N | string | `sessionStart` | Nom du programme ou de la série |
+| `media.season` | N | string | `sessionStart` | Numéro de la saison à laquelle le programme ou la série appartient |
+| `media.episode` | N | string | `sessionStart` | Numéro de l’épisode |
+| `media.assetId` | N | string | `sessionStart` | L’identifiant unique du contenu de la ressource vidéo, tel que l’identifiant d’épisode de la série télévisée, l’identifiant de la ressource de film ou l’identifiant d’événement en direct. En règle générale, ces identifiants sont issus des autorités de métadonnées telles que EIDR, TMS/Gracenote ou Rovi. Ces identifiants peuvent également provenir d’autres systèmes propriétaires ou internes. |
+| `media.genre` | N | string | `sessionStart` | Type de contenu tel que défini par le producteur de contenu |
+| `media.firstAirDate` | N | string | `sessionStart` | Date à laquelle le contenu a été diffusé à la télévision pour la première fois |
+| `media.firstDigitalDate` | N | string | `sessionStart` | Date à laquelle le contenu a été diffusé pour la première fois sur une chaîne ou une plateforme numérique |
+| `media.rating` | N | string | `sessionStart` | Évaluation telle que définie par les directives parentales de la télévision |
+| `media.originator` | N | string | `sessionStart` | Créateur du contenu |
+| `media.network` | N | string | `sessionStart` | Nom du réseau/canal |
+| `media.showType` | N | string | `sessionStart` | Type de contenu, exprimé sous la forme d’un nombre entier compris entre 0 et 3 : <ul> <li>0 - épisode entier </li> <li>1 - aperçu </li> <li>2 - clip </li> <li>3 - autre </li> </ul> |
+| `media.adLoad` | N | string | `sessionStart` | Type de publicité chargée |
+| `media.pass.mvpd` | N | string | `sessionStart` | MVPD fourni par l’authentification Adobe |
+| `media.pass.auth` | N | string | `sessionStart` | Indique que l’utilisateur a été autorisé par l’authentification Adobe (peut uniquement avoir la valeur true si défini) |
+| `media.dayPart` | N | string | `sessionStart` | Heure de la journée à laquelle le contenu a été diffusé |
+| `media.feed` | N | string | `sessionStart` | Type de flux, tel que &quot;West-HD&quot; |
 
 ## Données de publicité
 
 | Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
 | --- | :---: | :---: | :---: | --- |
-| `media.ad.podFriendlyName` | N | chaîne | `adBreakStart` | Nom convivial de la coupure publicitaire |
+| `media.ad.podFriendlyName` | N | string | `adBreakStart` | Nom convivial de la coupure publicitaire |
 | `media.ad.podIndex` | O | entier | `adBreakStart` | Index de la capsule publicitaire dans la vidéo |
-| `media.ad.podSecond` | O | nombre | `adBreakStart` | Seconde à laquelle la capsule a commencé |
+| `media.ad.podSecond` | O | number | `adBreakStart` | Seconde à laquelle la capsule a commencé |
 | `media.ad.podPosition` | O | entier | `adStart` | Index de la publicité dans la coupure publicitaire commençant à 1 |
-| `media.ad.name` | N | chaîne | `adStart` | Nom convivial de la publicité |
-| `media.ad.id` | O | chaîne | `adStart` | Nom de la publicité |
-| `media.ad.length` | O | nombre | `adStart` | Durée de la publicité vidéo en secondes |
-| `media.ad.playerName` | O | chaîne | `adStart` | Nom du lecteur responsable du rendu de la publicité |
+| `media.ad.name` | N | string | `adStart` | Nom convivial de la publicité |
+| `media.ad.id` | O | string | `adStart` | Nom de la publicité |
+| `media.ad.length` | O | number | `adStart` | Durée de la publicité vidéo en secondes |
+| `media.ad.playerName` | O | string | `adStart` | Nom du lecteur responsable du rendu de la publicité |
 
 ## Métadonnées standard de la publicité
 
 | Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
 | --- | :---: | :---: | :---: | --- |
-| `media.ad.advertiser` | N | chaîne | `adStart` | Entreprise ou marque dont le produit apparaît dans la publicité |
-| `media.ad.campaignId` | N | chaîne | `adStart` | ID de la campagne publicitaire |
-| `media.ad.creativeId` | N | chaîne | `adStart` | ID de l’élément créatif publicitaire |
-| `media.ad.siteId` | N | chaîne | `adStart` | ID du site publicitaire |
-| `media.ad.creativeURL` | N | chaîne | `adStart` | URL de l’élément créatif publicitaire |
-| `media.ad.placementId` | N | chaîne | `adStart` | Identifiant de référencement de la publicité |
+| `media.ad.advertiser` | N | string | `adStart` | Entreprise ou marque dont le produit apparaît dans la publicité |
+| `media.ad.campaignId` | N | string | `adStart` | ID de la campagne publicitaire |
+| `media.ad.creativeId` | N | string | `adStart` | ID de l’élément créatif publicitaire |
+| `media.ad.siteId` | N | string | `adStart` | ID du site publicitaire |
+| `media.ad.creativeURL` | N | string | `adStart` | URL de l’élément créatif publicitaire |
+| `media.ad.placementId` | N | string | `adStart` | Identifiant de référencement de la publicité |
 
 ## Données du chapitre
 
 | Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
 | --- | :---: | :---: | :---: | --- |
 | `media.chapter.index` | O | entier | `chapterStart` | Identifie la position du chapitre dans le contenu |
-| `media.chapter.offset` | O | nombre | `chapterStart` | Seconde dans la lecture à laquelle le chapitre commence |
-| `media.chapter.length` | O | nombre | `chapterStart` | Durée du chapitre en secondes |
-| `media.chapter.friendlyName` | N | chaîne | `chapterStart` | Nom convivial du chapitre |
+| `media.chapter.offset` | O | number | `chapterStart` | Seconde dans la lecture à laquelle le chapitre commence |
+| `media.chapter.length` | O | number | `chapterStart` | Durée du chapitre en secondes |
+| `media.chapter.friendlyName` | N | string | `chapterStart` | Nom convivial du chapitre |
 
 ## Données de qualité
 
