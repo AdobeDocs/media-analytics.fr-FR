@@ -6,15 +6,15 @@ exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '364'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
 # Gestion des interruptions de l’application lors de la lecture{#handling-application-interrupts-during-playback}
 
-La lecture dans une application multimédia peut être interrompue de différentes manières. Par exemple, un utilisateur peut appuyer explicitement sur pause ou l’utilisateur peut mettre l’application en arrière-plan. Quelles que soient les causes d’une interruption de la lecture multimédia, les instructions de suivi sont les mêmes.
+La lecture dans une application multimédia peut être interrompue de différentes manières. Par exemple, un utilisateur peut appuyer explicitement sur pause ou l’utilisateur peut mettre l’application en arrière-plan. Quelle que soit la cause de l’interruption de la lecture multimédia, les instructions de suivi sont les mêmes.
 
 1. Appelez **`trackPause`** lorsque l’application est interrompue (mise en arrière-plan, pause du média, etc.).
 1. Appelez **`trackPlay`** lorsque l’application revient au premier plan et/ou que la lecture du média reprend.
@@ -35,4 +35,4 @@ La lecture dans une application multimédia peut être interrompue de différent
 
 * _Comment redémarrer la même session ?_
 
-   Pour plus d’informations sur la reprise d’une session de suivi, voir [Reprise des sessions inactives](resuming-inactive.md).Le SDK envoie un ping de reprise pour informer le serveur principal que l’utilisateur reprend manuellement la session.
+   Pour plus d’informations sur la reprise d’une session de suivi, voir la section [Reprise des sessions inactives](resuming-inactive.md).Le SDK envoie un ping de reprise pour informer le serveur principal que l’utilisateur(utilisatrice) reprend manuellement la session.
