@@ -5,13 +5,13 @@ exl-id: 3769fc47-fbc4-4498-9d2a-04c88cdd0e83
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '97'
 ht-degree: 100%
 
 ---
 
-# Suivi des erreurs à l’aide de JavaScript 3.x{#track-errors-on-javascript}
+# Effectuer le suivi des erreurs à l’aide de JavaScript 3.x{#track-errors-on-javascript}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
 
