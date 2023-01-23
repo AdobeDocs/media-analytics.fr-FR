@@ -6,13 +6,13 @@ exl-id: ea8a1dd6-043f-41a4-9cef-845da92bfa32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '195'
 ht-degree: 100%
 
 ---
 
-# Suivi des chapitres et des segments sur iOS{#track-chapters-and-segments-on-ios}
+# Effectuer le suivi des chapitres et des segments sur iOS{#track-chapters-and-segments-on-ios}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x.
 
