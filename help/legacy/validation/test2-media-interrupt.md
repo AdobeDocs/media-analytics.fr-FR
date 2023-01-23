@@ -1,18 +1,18 @@
 ---
-title: Test 2 Interruption des médias
+title: 'Test 2 : interruption des médias'
 description: Découvrez le test dʼinterruption des médias utilisé lors de la validation.
 uuid: eeccd534-63fd-4dd3-b096-0431bc9a11ff
 exl-id: 3f22ce2d-4385-4a3b-8d1f-52e25a9b1101
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Test 2 - Interruption du média{#test-media-interruption}
+# Test 2 - Interruption des médias{#test-media-interruption}
 
 Ce cas de test valide le comportement d’interruption mobile.
 
@@ -40,7 +40,7 @@ Vous devez effectuer et enregistrer ces tâches dans l’ordre suivant :
 
    Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/legacy/validation/test-call-details.md#play-main-content)
 
-   Voir également la section [Suivi des publicités](/help/use-cases/track-ads/track-ads-overview.md) instructions pour plus d’informations sur ces appels publicitaires.
+   Reportez-vous également aux instructions de [suivi des annonces publicitaires](/help/use-cases/track-ads/track-ads-overview.md) de votre plateforme pour en savoir plus sur ces appels publicitaires.
 
 1. **Déplacer l’application ou le navigateur en arrière-plan**
 
