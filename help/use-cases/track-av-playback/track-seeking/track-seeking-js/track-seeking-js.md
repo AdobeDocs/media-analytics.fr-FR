@@ -6,13 +6,13 @@ exl-id: 90f35376-24d8-405d-82b4-d6b737acf7b9
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '135'
 ht-degree: 100%
 
 ---
 
-# Suivi de la recherche à l’aide de JavaScript 2.x{#track-seeking-on-javascript}
+# Suivre la recherche à l’aide de JavaScript 2.x{#track-seeking-on-javascript}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
 
