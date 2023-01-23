@@ -1,14 +1,14 @@
 ---
-title: En Savoir Plus Sur Les Chronologies De Suivi Multimédia
-description: Explorez plus en détail la chronologie du curseur de lecture et les actions de l’utilisateur correspondant. Découvrez les détails de chaque action et des demandes qui l’accompagnent.
+title: En savoir plus sur les étapes du suivi de médias
+description: Explorez plus en détail la chronologie de la tête de lecture et les actions de l’utilisateur correspondantes. Découvrez les détails de chaque action et des demandes qui l’accompagnent.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1074'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,9 +32,9 @@ Les diagrammes suivants illustrent la chronologie du curseur de lecture et la ch
 
 Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo.
 
-Il renvoie un ID de session (`{sid}`) au client, utilisé pour identifier tous les appels de suivi suivants dans la session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ». 
+Il renvoie un ID de session (`{sid}`) au client, utilisé pour identifier tous les appels de suivi suivants dans la session. L’état du lecteur n’est pas encore « en cours de lecture », mais à la place, « en cours de démarrage ».
 
-Les paramètres de session obligatoires doivent être inclus dans la carte `params` du corps de la requête. Pour plus d’informations sur les sessions, consultez la documentation de l’API Media Collection.
+Les paramètres de session obligatoires doivent être inclus dans la carte `params` du corps de la requête. Pour plus d’informations sur les sessions, consultez la documentation de l’API Media Collection.
 
 Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
 
@@ -75,7 +75,7 @@ Démarrez le minuteur de ping de votre application. Le premier événement ping 
 | --- | :---: | :---: | --- |
 | Suivi du début de la coupure publicitaire preroll | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Les publicités ne peuvent être suivies que dans une coupure publicitaire.
+Les annonces publicitaires ne peuvent être suivies que dans une coupure publicitaire.
 
 ```json
 {
@@ -138,7 +138,7 @@ Démarrez le suivi de la première publicité preroll, qui dure 15 secondes. In
 | --- | :---: | :---: | --- |
 | L’application envoie un événement ping | 1 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Envoyez un ping au serveur principal toutes les secondes pendant dans une publicité.
+Envoyez un ping au serveur principal toutes les secondes pendant dans une annonce publicitaire.
 
 ```json
 {
@@ -156,7 +156,7 @@ Envoyez un ping au serveur principal toutes les secondes pendant dans une publi
 | --- | :---: | :---: | --- |
 | L’application envoie un événement ping | 2 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Envoyez un ping au serveur principal toutes les secondes pendant dans une publicité.
+Envoyez un ping au serveur principal toutes les secondes pendant dans une annonce publicitaire.
 
 ```json
 {
@@ -174,7 +174,7 @@ Envoyez un ping au serveur principal toutes les secondes pendant dans une publi
 | --- | :---: | :---: | --- |
 | L’application envoie un événement ping | 3 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Envoyez un ping au serveur principal toutes les secondes pendant dans une publicité.
+Envoyez un ping au serveur principal toutes les secondes pendant dans une annonce publicitaire.
 
 >[!NOTE]
 >
@@ -197,7 +197,7 @@ Envoyez un ping au serveur principal toutes les secondes pendant dans une publi
 | --- | :---: | :---: | --- |
 | Le suivi de la publicité preroll N°1 est terminé | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Suivez la fin de la première publicité preroll.
+Effectuez le suivi de la fin de la première publicité preroll.
 
 ```json
 {
@@ -215,7 +215,7 @@ Suivez la fin de la première publicité preroll.
 | --- | :---: | :---: | --- |
 | Le suivi de la publicité preroll N°2 commence | 15 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Suivez le début de la seconde publicité preroll, qui dure 7 secondes.
+Effectuez le suivi du début de la seconde publicité preroll, qui dure 7 secondes.
 
 ```json
 {
@@ -265,7 +265,7 @@ Envoyez un ping au serveur principal toutes les secondes.
 | --- | :---: | :---: | --- |
 | Le suivi de la publicité preroll N°2 est terminé | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Suivez la fin de la seconde publicité preroll.
+Effectuez le suivi de la fin de la seconde publicité preroll.
 
 ```json
 {
@@ -301,7 +301,7 @@ La coupure publicitaire est terminée. Tout au long de la coupure publicitaire, 
 | --- | :---: | :---: | --- |
 | Suivi de l’événement de lecture | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Après l’événement `adBreakComplete`, placez le lecteur à l’état « lecture » à l’aide de l’événement `play`.
+Après l’événement `adBreakComplete`, placez le lecteur à l’état « en cours de lecture » à l’aide de l’événement `play`.
 
 ```json
 {
@@ -389,7 +389,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 | --- | :---: | :---: | --- |
 | Le suivi de la coupure publicitaire mid-roll commence | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
+Annonce publicitaire mid-roll d’une durée de 8 secondes : envoyez `adBreakStart`.
 
 ```json
 {
@@ -412,7 +412,7 @@ Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
 | --- | :---: | :---: | --- |
 | Le suivi de la publicité mid-roll N°3 commence | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Suivez la publicité mid-roll.
+Suivez l’annonce publicitaire mid-roll.
 
 ```json
 {
@@ -515,7 +515,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 | --- | :---: | :---: | --- |
 | L’utilisateur a appuyé sur Pause | 64 | 31 | `/api/v1/sessions/{sid}/events` |
 
-L’action de l’utilisateur déplace l’état de lecture sur « pause ».
+L’action de l’utilisateur déplace l’état du lecteur sur « pause ».
 
 ```json
 {
