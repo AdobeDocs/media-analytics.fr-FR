@@ -6,13 +6,13 @@ exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
 ht-degree: 100%
 
 ---
 
-# Suivi des publicités sur Roku{#track-ads-on-roku}
+# Effectuer le suivi des publicités sur Roku{#track-ads-on-roku}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x.
 
@@ -38,7 +38,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
-   | `name` | Nom de la coupure publicitaire tel que preroll, mid-roll et post-roll. | Oui |
+   | `name` | Nom de la coupure publicitaire tel que pre-roll, mid-roll et post-roll. | Oui |
    | `position` | Position du nombre au début de la coupure publicitaire commençant par 1. | Oui |
    | `startTime` | Valeur du curseur de lecture au début de la coupure publicitaire. | Oui |
 
