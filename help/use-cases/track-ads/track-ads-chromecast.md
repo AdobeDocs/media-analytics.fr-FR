@@ -1,18 +1,18 @@
 ---
-title: Découvrez comment effectuer le suivi des publicités sur Chromecast
+title: Découvrez comment effectuer le suivre les publicités sur Chromecast
 description: Mettez en œuvre le suivi des publicités dans les applications Chromecast à l’aide du SDK Media.
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '332'
 ht-degree: 100%
 
 ---
 
-# Suivi des publicités sur Chromecast{#track-ads-on-chromecast}
+# Suivre les publicités sur Chromecast{#track-ads-on-chromecast}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x.
 
