@@ -6,17 +6,17 @@ exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1169'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Roku — Suivi dans SceneGraph {#tracking-in-scenegraph-roku}
+# Roku - Suivi dans SceneGraph {#tracking-in-scenegraph-roku}
 
 ## Introduction {#introduction}
 
-Vous pouvez utiliser la structure de programmation XML SceneGraph de Roku pour développer des applications. Cette structure présente deux concepts clés :
+Vous pouvez utiliser le framework de programmation XML SceneGraph de Roku pour développer des applications. Ce framework comprend deux nouveaux concepts clés :
 
 * Rendu SceneGraph des écrans de l’application
 * Configuration XML des écrans SceneGraph
@@ -211,7 +211,7 @@ Les API `MediaHeartbeat` d’utilitaire globalement définies sur le composant A
 | `adb_media_init_adbreakinfo` | Cette méthode renvoie l’objet Informations de l’AdBreak initialisé. `Function adb_media_init_chapterinfo(name As String, position As Double, length As Double, startTime As Double) As Object` |
 | `adb_media_init_qosinfo` | Cette méthode renvoie un objet d’informations QoS initialisé. `Function adb_media_init_qosinfo(bitrate As Double, startupTime as Double, fps as Double, droppedFrames as Double) As Object` |
 
-## Mise en œuvre {#implementation}
+## Implémentation {#implementation}
 
 1. **Téléchargement de la bibliothèque Roku -** Téléchargez la [dernière bibliothèque Roku.](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.2)
 
