@@ -6,13 +6,13 @@ exl-id: a352bca9-bcfc-4418-b2a2-c9b1ad226359
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
 ht-degree: 100%
 
 ---
 
-# Suivi des publicités sur iOS{#track-ads-on-ios}
+# Effectuer le suivi des publicités sur iOS{#track-ads-on-ios}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x.
 
@@ -38,7 +38,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
-   | `name` | Nom de la coupure publicitaire tel que preroll, mid-roll et post-roll. | Oui |
+   | `name` | Nom de la coupure publicitaire tel que pre-roll, mid-roll et post-roll. | Oui |
    | `position` | Position du numéro de la coupure publicitaire dans le contenu, en commençant par 1. | Oui |
    | `startTime` | Valeur du curseur de lecture au début de la coupure publicitaire. | Oui |
 
