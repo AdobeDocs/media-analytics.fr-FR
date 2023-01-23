@@ -6,13 +6,13 @@ exl-id: 73b10b42-02ab-47f8-8250-58f03c5e0dd1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
 ht-degree: 100%
 
 ---
 
-# Suivi de la mise en mémoire tampon sur Roku{#track-buffering-on-roku}
+# Effectuer le suivi de la mise en mémoire tampon sur Roku{#track-buffering-on-roku}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
 
