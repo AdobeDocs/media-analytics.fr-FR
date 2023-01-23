@@ -6,29 +6,29 @@ exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '618'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# Hérité - Présentation de la configuration du SDK Media {#setup-overview}
+# Hérité - Présentation de la configuration du SDK Media {#setup-overview}
 
-Après avoir téléchargé le SDK Media de votre application ou lecteur vidéo, suivez les informations de cette section pour configurer et mettre en oeuvre le SDK Media.
+Après avoir téléchargé le SDK Media pour votre application ou lecteur vidéo, suivez les informations de cette section pour configurer et implémenter le SDK Media.
 
 
 ## Instructions générales de mise en œuvre {#general-implementation-guidelines}
 
-Trois composants principaux du SDK sont utilisés dans le suivi des médias en flux continu Adobe :
-* Media Heartbeat Config : The `MediaHeartbeatConfig` contient les paramètres de base de la création de rapports.
-* Media Heartbeat Delegate : Le `MediaHeartbeatDelegate` contrôle la durée de lecture et l’objet QoS.
-* Media Heartbeat : The `MediaHeartbeat` est la Principale bibliothèque contenant les membres et les méthodes.
+Trois composants principaux du SDK sont utilisés dans le suivi d’Adobe Streaming Media :
+* Media Heartbeat Config : le `MediaHeartbeatConfig` contient les paramètres de base de la création de rapports.
+* Media Heartbeat Delegate : le `MediaHeartbeatDelegate` contrôle la durée de lecture et l’objet QoS.
+* Media Heartbeat : le `MediaHeartbeat` correspond à la bibliothèque principale qui contient les membres et les méthodes.
 
-## Mise en oeuvre du SDK de médias en flux continu
+## Implémenter le SDK Streaming Media
 
-Pour configurer et utiliser le SDK de médias en flux continu, procédez comme suit :
+Pour configurer et utiliser le SDK Streaming Media, procédez comme suit :
 
-1. Créez un `MediaHeartbeatConfig` et définissez vos valeurs de paramètre de configuration.
+1. Créez une instance `MediaHeartbeatConfig` et définissez les valeurs des paramètres de configuration.
 
    |  Nom de variable  | Description  | Obligatoire |  Valeur par défaut  |
    |---|---|:---:|---|
