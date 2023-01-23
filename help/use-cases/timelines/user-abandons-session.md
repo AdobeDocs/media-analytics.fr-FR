@@ -1,14 +1,14 @@
 ---
-title: En savoir plus sur les chronologies de suivi multimédia - L’utilisateur abandonne la session
-description: Apprenez en plus sur la chronologie du curseur de lecture et � lʼaction correspondante de lʼutilisateur lorsquʼune session vidéo est abandonnée. Découvrez les détails de chaque action et requête.
+title: Découvrez les chronologies de suivi des médias – Lʼutilisateur abandonne la session
+description: Apprenez en plus sur la chronologie du curseur de lecture et lʼaction correspondante de lʼutilisateur lorsquʼune session vidéo est abandonnée. Découvrez les détails de chaque action et requête.
 uuid: 74b89e8f-ef56-4e0c-b9a8-40739e15b4cf
 exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 4c68f5997a9d336e8c3545cdfb7b9cb955602b69
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '600'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Les diagrammes suivants illustrent la chronologie du curseur de lecture et la ch
 | --- | :---: | :---: | --- |
 | Bouton Lecture automatique ou bouton Lecture enfoncé | 0 | 0 | `/api/v1/sessions` |
 
-Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renvoie un ID de session (`{sid}`) au client, utilisé pour identifier tous les appels de suivi suivants dans la session. L’état du lecteur n’est pas encore « lecture », mais à la place, « démarrage ».  Les paramètres de session obligatoires doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics. Pour plus d’informations sur les sessions, consultez la documentation de l’API Media Collection.
+Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renvoie un ID de session (`{sid}`) au client, utilisé pour identifier tous les appels de suivi suivants dans la session. L’état du lecteur n’est pas encore « en cours de lecture », mais à la place, « en cours de démarrage ».  Les paramètres de session obligatoires doivent être inclus dans la carte `params` du corps de la requête.  Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics. Pour plus d’informations sur les sessions, consultez la documentation de l’API Media Collection.
 
 ```json
 {
@@ -70,7 +70,7 @@ Démarrez le minuteur de ping de votre application. Le premier événement ping 
 | --- | :---: | :---: | --- |
 | Suivi du début de la coupure publicitaire preroll | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Les publicités preroll doivent être suivies. Les publicités ne peuvent être suivies que dans une coupure publicitaire.
+Les publicités preroll doivent être suivies. Les annonces publicitaires ne peuvent être suivies que dans une coupure publicitaire.
 
 ```json
 {
@@ -179,7 +179,7 @@ La coupure publicitaire est terminée. Tout au long de la coupure publicitaire, 
 | --- | :---: | :---: | --- |
 | Suivi de l’événement de lecture | 12 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Déplacez le lecteur vers l’état « lecture » ; commencez le suivi du début de la lecture du contenu.
+Déplacez le lecteur vers l’état « en cours de lecture » ; commencez le suivi du début de la lecture du contenu.
 
 ```json
 {
@@ -289,7 +289,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 | --- | :---: | :---: | --- |
 | Le suivi de la coupure publicitaire mid-roll commence | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
+Annonce publicitaire mid-roll d’une durée de 8 secondes : envoyez `adBreakStart`.
 
 ```json
 {
@@ -312,7 +312,7 @@ Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` .
 | --- | :---: | :---: | --- |
 | Le suivi de la publicité mid-roll N°1 commence | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Suivez la publicité mid-roll.
+Suivez l’annonce publicitaire mid-roll.
 
 ```json
 {
