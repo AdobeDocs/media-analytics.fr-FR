@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 96%
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour des médias en flux continu](additional-resources/release-notes.md)
 + Prise en main {#getting-started}
-   + [Présentation](getting-started/getting-started.md)
+   + [Aperçu](getting-started/getting-started.md)
    + [Conditions préalables](getting-started/prereqs.md)
    + [Périphériques pris en charge](getting-started/supported-devices.md)
    + [Documentation sur les médias en flux continu](getting-started/implementation-documentation.md)
@@ -27,19 +27,19 @@ ht-degree: 96%
    + Fin de la prise en charge {#end-of-support}
       + [Fin de la prise en charge du SDK Mobile Media Analytics](additional-resources/end-of-support-faqs.md)
       + Hérité - Migration du SDK Media autonome vers Launch {#sdk-to-launch}
-         + [Présentation](legacy/sdk-to-launch/sdk-to-launch-migration.md)
+         + [Aperçu](legacy/sdk-to-launch/sdk-to-launch-migration.md)
          + [Android - SDK Media vers Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
          + [iOS - SDK Media vers Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-ios.md)
          + [JavaScript - SDK Media vers Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Implémentation {#implementation}
    + [Présentation de l’implémentation](implementation/overview.md)
    + SDK Media - Implémentation {#media-sdk}
-      + [Présentation du SDK Media](implementation/media-sdk/media-sdk-overview.md)
+      + [Présentation des SDK Media](implementation/media-sdk/media-sdk-overview.md)
       + Installation et configuration {#setup}
-         + Installation des SDK web {#install-web-sdk}
+         + Installer les SDK web {#install-web-sdk}
             + [Installation d’Analytics à l’aide de JavaScript](implementation/media-sdk/setup/web-implementation.md)
             + [Installation d’Analytics à l’aide de l’extension Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [Installation des SDK mobiles](implementation/media-sdk/setup/mobile-implementation.md)
+         + [Installer les SDK mobiles](implementation/media-sdk/setup/mobile-implementation.md)
          + Installation des SDK OTT {#ott-setup}
             + [Installation du SDK Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Installation du SDK Roku](implementation/media-sdk/setup/set-up-roku.md)
@@ -93,7 +93,7 @@ ht-degree: 96%
       + [Mise en œuvre et création de rapports](use-cases/player-state-tracking/implementation-and-reporting.md)
       + [Suivi de plusieurs états du lecteur](use-cases/player-state-tracking/multiple-player-states.md)
       + [Exemples de suivi de l’état du lecteur](use-cases/player-state-tracking/player-state-examples.md)
-   + [Suivi du contenu téléchargé hors ligne](use-cases/track-downloaded-content.md)
+   + [Effectuer le suivi du contenu téléchargé hors ligne](use-cases/track-downloaded-content.md)
    + [Federated Analytics ](use-cases/federated-analytics.md)
    + [Gestion des interruptions de l’application lors de la lecture](use-cases/cookbook/app-interrupts.md)
    + [Attribution des diffusions multimédia](use-cases/media-analytics-cookbook/media-dimensions.md)
@@ -119,12 +119,12 @@ ht-degree: 96%
          + [Suivi de la lecture principale sur Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
       + Suivi de la mise en mémoire tampon {#track-buffering}
          + [Suivi de la mise en mémoire tampon sur JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-         + [Suivi de la mise en mémoire tampon sur Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Suivi de la mise en mémoire tampon sur Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
+         + [Effectuer le suivi de la mise en mémoire tampon sur Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
+         + [Effectuer le suivi de la mise en mémoire tampon sur Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
       + Suivi de la recherche {#track-seeking}
          + [Suivi de la recherche sur JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-         + [Suivi de la recherche sur Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Suivi de la recherche sur Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
+         + [Effectuer le suivi de la recherche sur Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
+         + [Suivre la recherche sur Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
       + Mise en œuvre de métadonnées standard {#impl-std-metadata}
          + [Mise en œuvre de métadonnées standard sur JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
          + [Mise en œuvre de métadonnées standard sur Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
@@ -134,21 +134,21 @@ ht-degree: 96%
       + Suivi des publicités {#track-ads}
          + [Aperçu](use-cases/track-ads/track-ads-overview.md)
          + [Suivi des publicités sur JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-         + [Suivi des publicités sur Chromecast](use-cases/track-ads/track-ads-chromecast.md)
-         + [Suivi des publicités sur Roku](use-cases/track-ads/track-ads-roku.md)
+         + [Suivre les publicités sur Chromecast](use-cases/track-ads/track-ads-chromecast.md)
+         + [Effectuer le suivi des publicités sur Roku](use-cases/track-ads/track-ads-roku.md)
          + Mise en œuvre de métadonnées de publicité standard {#impl-std-ad-metadata}
             + [Mise en œuvre de métadonnées de publicité standard sur JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
             + [Mise en œuvre de métadonnées de publicité standard sur Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
       + Suivi des chapitres et des segments {#track-chapters}
          + [Aperçu](use-cases/track-chapters/track-chapters-overview.md)
          + [Suivi des chapitres et des segments sur JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-         + [Suivi des chapitres et des segments sur Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
+         + [Effectuer le suivi des chapitres et des segments sur Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
          + [Suivi des chapitres et des segments sur Roku](use-cases/track-chapters/track-chapters-roku.md)
       + Suivi de la qualité de l’expérience {#track-qos}
          + [Aperçu](use-cases/track-qos/track-qos-overview.md)
          + [Suivi de la qualité de l’expérience sur JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-         + [Suivi de la qualité de l’expérience sur Chromecast](use-cases/track-qos/track-qos-chromecast.md)
-         + [Suivi de la qualité de l’expérience sur Roku](use-cases/track-qos/track-qos-roku.md)
+         + [Suivre la qualité de l’expérience sur Chromecast](use-cases/track-qos/track-qos-chromecast.md)
+         + [Effectuer le suivi de la qualité de l’expérience sur Roku](use-cases/track-qos/track-qos-roku.md)
       + Erreurs de suivi {#track-errors}
          + [Aperçu](use-cases/track-errors/track-errors-overview.md)
          + [Erreurs de suivi sur JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
@@ -159,16 +159,16 @@ ht-degree: 96%
    + [Sécurité](privacy/security.md)
 + Mises en œuvre héritées {#legacy-implementations}
    + [Hérité - Aperçu](legacy/setup/legacy-setup-overview.md)
-   + [Hérité - Téléchargement des SDK](legacy/legacy-download-sdks.md)
+   + [Téléchargement des SDK hérités](legacy/legacy-download-sdks.md)
    + Hérité - SDK Media {#legacy-media-sdks}
-      + [Hérité - Présentation du SDK Media](legacy/media-sdk/setup/setup-overview.md)
+      + [Hérité - Présentation des SDK Media](legacy/media-sdk/setup/setup-overview.md)
       + [Configuration d’Android](legacy/media-sdk/setup/set-up-android.md)
       + [Configuration d’iOS](legacy/media-sdk/setup/set-up-ios.md)
       + Configuration de JavaScript {#setup-javascript}
-         + [Configuration de JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
+         + [Configurer JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
    + [À propos de la mesure de pulsation](legacy/heartbeat-measurement.md)
    + [Adobe Primetime et l’analyse des médias en flux continu](legacy/intro-to-ava/implementation-paths/primetime-path.md)
-   + [Activation de la gestion d’audience Adobe](legacy/intro-to-ava/am-enablement.md)
+   + [Activation de Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
    + [Mise en œuvre d’un lien personnalisé](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + Suivi du jalon hérité {#legacy-milestone-tracking}
       + [Suivi du jalon hérité](legacy/measurement-options/mm-milestone-tracking/milestone-overview.md)
@@ -177,7 +177,7 @@ ht-degree: 96%
    + Validation {#validation}
       + [Aperçu de la validation](legacy/validation/validation-overview.md)
       + [Test 1 - Lecture standard](legacy/validation/test1-standard-playback.md)
-      + [Test 2 - Interruption du média](legacy/validation/test2-media-interrupt.md)
+      + [Test 2 - Interruption des médias](legacy/validation/test2-media-interrupt.md)
       + [Détails des appels de test](legacy/validation/test-call-details.md)
       + [Descriptions des paramètres Heartbeat](legacy/validation/heartbeat-params.md)
       + Débogage {#debugging}
@@ -189,16 +189,16 @@ ht-degree: 96%
    + [Hérité - Introduction à AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
    + [Chemin côté client](legacy/intro-to-ava/implementation-paths/client-side-path.md)
    + Suivi hérité {#track-av-playback}
-      + [Suivi de la lecture principale sur Android](use-cases/track-av-playback/track-core/track-core-android.md)
-      + [Suivi de la lecture principale sur iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
+      + [Effectuer le suivi de la lecture principale sur Android](use-cases/track-av-playback/track-core/track-core-android.md)
+      + [Suivre la lecture principale sur iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
       + Suivi de la lecture principale sur JavaScript {#track-core-javascript}
          + [Suivi de la lecture principale sur JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-      + [Suivi de la mise en mémoire tampon sur Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [Suivi de la mise en mémoire tampon sur iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+      + [Effectuer le suivi de la mise en mémoire tampon sur Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+      + [Effectuer le suivi de la mise en mémoire tampon sur iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
       + Suivi de la mise en mémoire tampon sur JavaScript {#track-buffering-js}
          + [Suivi de la mise en mémoire tampon sur JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-      + [Suivi de la recherche sur Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [Suivi de la recherche sur iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+      + [Effectuer le suivi de la recherche sur Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+      + [Suivre la recherche sur iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
       + Suivi de la recherche sur JavaScript {#track-seeking-js}
          + [Suivi de la recherche sur JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
       + [Mise en œuvre de métadonnées standard sur Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
@@ -207,8 +207,8 @@ ht-degree: 96%
       + Mise en œuvre de métadonnées standard sur JavaScript {#impl-std-md-js}
          + [Mise en œuvre de métadonnées standard sur JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + Suivi des publicités {#track-ads}
-         + [Suivi des publicités sur Android](use-cases/track-ads/track-ads-android.md)
-         + [Suivi des publicités sur iOS](use-cases/track-ads/track-ads-ios.md)
+         + [Effectuer le suivi des publicités sur Android](use-cases/track-ads/track-ads-android.md)
+         + [Effectuer le suivi des publicités sur iOS](use-cases/track-ads/track-ads-ios.md)
          + Suivi des publicités sur JavaScript {#track-ads-js}
             + [Suivi des publicités sur JavaScript 2.x](use-cases/track-ads/track-ads-js/track-ads-js.md)
             + [Mise en œuvre de métadonnées de publicité standard sur Android](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
@@ -216,12 +216,12 @@ ht-degree: 96%
             + Mise en œuvre de métadonnées de publicité standard sur JavaScript {#impl-std-ad-md-js}
                + [Mise en œuvre de métadonnées de publicité standard sur JavaScript 2.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
       + Suivi des chapitres et des segments {#track-chapters}
-         + [Suivi des chapitres et des segments sur Android](use-cases/track-chapters/track-chapters-android.md)
-         + [Suivi des chapitres et des segments sur iOS](use-cases/track-chapters/track-chapters-ios.md)
+         + [Suivre les chapitres et les segments sur Android](use-cases/track-chapters/track-chapters-android.md)
+         + [Effectuer le suivi des chapitres et des segments sur iOS](use-cases/track-chapters/track-chapters-ios.md)
          + Suivi des chapitres et des segments sur JavaScript {#track-chapters-js}
             + [Suivi des chapitres et des segments sur JavaScript 2.x](use-cases/track-chapters/track-chapters-js/track-chapters-js.md)
-         + [Suivi de la qualité de l’expérience sur Android](use-cases/track-qos/track-qos-android.md)
-         + [Suivi de la qualité de l’expérience sur iOS](use-cases/track-qos/track-qos-ios.md)
+         + [Suivre la qualité de l’expérience sur Android](use-cases/track-qos/track-qos-android.md)
+         + [Effectuer le suivi de la qualité de l’expérience sur iOS](use-cases/track-qos/track-qos-ios.md)
          + Suivi de la qualité de l’expérience sur JavaScript {#track-qos-js}
             + [Suivi de la qualité de l’expérience sur JavaScript 2.x](use-cases/track-qos/track-qos-js/track-qos-js.md)
       + Erreurs de suivi {#track-errors}

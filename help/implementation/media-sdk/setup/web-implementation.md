@@ -1,13 +1,13 @@
 ---
-title: Configuration d’une mise en oeuvre web pour Analytics pour les médias en streaming
-description: Découvrez comment mettre en oeuvre Adobe Streaming Media pour les applications web.
+title: Comment configurer l’implémentation web pour Analytics for Streaming Media
+description: Découvrez comment implémenter Adobe Streaming Media pour les applications web.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
 source-git-commit: d1e7a74a03c68e08987f03a295edc69989d9a4c6
 workflow-type: tm+mt
 source-wordcount: '453'
-ht-degree: 69%
+ht-degree: 90%
 
 ---
 
@@ -19,20 +19,20 @@ Vous pouvez également utiliser l’extension Adobe Medium Analytics pour implé
 
 ## Conditions préalables {#prerequesites}
 
-* **Obtention de paramètres de configuration valides**
+* **Obtenir des paramètres de configuration valides**
 
-   Vous pouvez obtenir ces paramètres auprès d’un représentant d’Adobe après avoir configuré votre compte Analytics.
+   Vous pouvez obtenir ces paramètres auprès d’un représentant Adobe une fois votre compte d’analyse configuré.
 
-* **Mise en oeuvre `AppMeasurement` et `Experience Cloud Identity Service` pour JavaScript dans votre application multimédia**
+* **Implémenter `AppMeasurement` et `Experience Cloud Identity Service` pour JavaScript dans votre application multimédia**
 
-   Pour plus d’informations, voir [Mise en oeuvre d’Analytics avec JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr) et [Mise en oeuvre du service Identity Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr).
+   Pour plus d’informations, consultez [Implémentation d’Analytics avec JavaScript](https://experienceleague.adobe.com/docs/analytics/implementation/js/overview.html?lang=fr) et [Implémentation du service d’identité Experience Cloud](https://experienceleague.adobe.com/docs/id-service/using/implementation/setup-analytics.html?lang=fr).
 
 * **Incluez les API suivantes dans votre lecteur multimédia**
 
    * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
-   * *Une API qui fournit des informations sur le lecteur* - Cela inclut des informations sur les médias en cours de lecture, les publicités et le chapitre.
+   * *Une API qui fournit des informations sur le lecteur* - Elle inclut des informations sur les médias en cours de lecture, les publicités et le chapitre.
 
-## Configuration de JavaScript 3.x {#set-up-javascript}
+## Configurer JavaScript 3.x {#set-up-javascript}
 
 1. Ajoutez la bibliothèque que vous avez [téléchargée](/help/getting-started/download-sdks.md) à votre projet. Créez des références locales aux classes pour des raisons pratiques.
 
@@ -106,4 +106,4 @@ Vous pouvez également utiliser l’extension Adobe Medium Analytics pour implé
 
 Pour plus d’informations sur la migration de 2.x vers 3.x, voir [Migration de 2.x vers 3.x.](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/MigrationGuide.html)
 
-Pour le contenu hérité, voir [Mises en oeuvre héritées](/help/legacy/media-sdk/setup/setup-overview.md)
+Pour le contenu hérité, consultez [Implémentations héritées](/help/legacy/media-sdk/setup/setup-overview.md).
