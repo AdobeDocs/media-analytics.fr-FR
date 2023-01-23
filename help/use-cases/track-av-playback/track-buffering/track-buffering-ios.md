@@ -6,13 +6,13 @@ exl-id: 5f0a3c4b-7c9e-499d-98d0-6fcf316c4d9c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '117'
 ht-degree: 100%
 
 ---
 
-# Suivi de la mise en mémoire tampon sur iOS{#track-buffering-on-ios}
+# Effectuer le suivi de la mise en mémoire tampon sur iOS{#track-buffering-on-ios}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
 
