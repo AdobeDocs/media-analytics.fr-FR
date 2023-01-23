@@ -1,18 +1,18 @@
 ---
-title: Découvrez comment effectuer le suivi de la recherche sur iOS
+title: Découvrez comment effectuer le suivre la recherche sur iOS
 description: Découvrez comment effectuer le suivi des événements Début de la recherche et Fin de la recherche à l’aide du SDK Media sur iOS.
 uuid: 1d31ae99-384f-4b4d-b557-4018db177349
 exl-id: e8cb4962-2a14-4bfe-9a25-2405e503ba0b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
 ht-degree: 100%
 
 ---
 
-# Suivi de la recherche sur iOS{#track-seeking-on-ios}
+# Suivre la recherche sur iOS{#track-seeking-on-ios}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
 
