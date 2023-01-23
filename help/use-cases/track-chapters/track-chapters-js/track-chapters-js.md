@@ -6,13 +6,13 @@ exl-id: 9964ec0c-cce9-4ccc-bd26-a2b3fcdc3e28
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '198'
 ht-degree: 100%
 
 ---
 
-# Suivi des chapitres et des segments à l’aide de JavaScript 2.x{#track-chapters-and-segments-on-javascript}
+# Suivre les chapitres et les segments à l’aide de JavaScript 2.x{#track-chapters-and-segments-on-javascript}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x.
 
