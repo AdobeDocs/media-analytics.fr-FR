@@ -5,15 +5,15 @@ exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '650'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Chemins de mise en œuvre {#implementation-paths}
+# Chemins d’implémentation {#implementation-paths}
 
-**CE CONTENU A ÉTÉ DÉPLACÉ VERS LE FICHIER DE CHEMINS DE MISE EN OEUVRE ACTUEL.**
+**CE CONTENU A ÉTÉ DÉPLACÉ VERS LE FICHIER DE CHEMINS D’IMPLÉMENTATION ACTUEL.**
 
 Pour chaque chemin d’implémentation, les clients doivent contacter leur représentant commercial/responsable de compte pour signer une nouvelle commande, car Media Analytics en flux continu comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions vidéo.
 
@@ -35,7 +35,7 @@ La collecte de données Adobe avec l’extension Media Analytics nécessite les
 * Vous devez être un client Adobe Experience Cloud.
 * Vous devez déployer la collecte de données ou le code DTM incorporé sur vos pages web.
 * [Extension Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=fr)
-* [L’extension Experience Cloud ID](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=fr)
+* [Extension Experience Cloud ID](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=fr)
 
 
 ## Côté client
