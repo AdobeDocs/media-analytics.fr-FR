@@ -6,15 +6,15 @@ exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '216'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
-# Présentation de la migration héritée pour VHL 1.x vers VHL 2.x {#migration-overview}
+# Présentation de la migration héritée : VHL 1.x vers VHL 2.x {#migration-overview}
 
-La migration de VHL 1.x vers VHL 2.x est simple, avec la nouvelle version comprenant des API simplifiées pour l’initialisation, la configuration et les délégués de lecteur.i
+La migration de VHL 1.x vers VHL 2.x est simple grâce à la nouvelle version qui offre des API simplifiées pour l’initialisation, la configuration et les délégués de lecteur.
 
 Voici les différences principales entre les versions 1.x et 2.x :
 
