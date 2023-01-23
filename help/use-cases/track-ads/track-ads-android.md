@@ -6,13 +6,13 @@ exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '360'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Suivi des publicités sur Android{#track-ads-on-android}
+# Effectuer le suivi des publicités sur Android{#track-ads-on-android}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x.
 
@@ -38,7 +38,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
-   | `name` | Nom de la coupure publicitaire tel que preroll, mid-roll et post-roll. | Oui |
+   | `name` | Nom de la coupure publicitaire tel que pre-roll, mid-roll et post-roll. | Oui |
    | `position` | Position du numéro de la coupure publicitaire dans le contenu, en commençant par 1. | Oui |
    | `startTime` | Valeur du curseur de lecture au début de la coupure publicitaire. | Oui |
 
