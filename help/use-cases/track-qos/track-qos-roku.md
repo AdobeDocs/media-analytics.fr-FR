@@ -6,13 +6,13 @@ exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '197'
 ht-degree: 100%
 
 ---
 
-# Suivi de la qualité de l’expérience sur Roku{#track-quality-of-experience-on-roku}
+# Effectuer le suivi de la qualité de l’expérience sur Roku{#track-quality-of-experience-on-roku}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
 
