@@ -5,13 +5,13 @@ exl-id: 00ba11df-d226-45a2-a561-dc9f15dcf714
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '218'
 ht-degree: 100%
 
 ---
 
-# Suivi des chapitres et des segments à l’aide de JavaScript 3.x{#track-chapters-and-segments-on-javascript}
+# Effectuer le suivi des chapitres et des segments à l’aide de JavaScript 3.x{#track-chapters-and-segments-on-javascript}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 3.x.
 
@@ -29,10 +29,10 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
    | Nom de variable | Type | Description |
    | --- | --- | --- |
-   | `name` | chaîne | Chaîne non vide désignant le nom du chapitre. |
-   | `position` | nombre | Position du chapitre dans le contenu, en commençant par 1. |
-   | `length` | nombre | Nombre positif désignant la longueur du chapitre. |
-   | `startTime` | nombre | Valeur de la tête de lecture au début du chapitre. |
+   | `name` | string | Chaîne non vide désignant le nom du chapitre. |
+   | `position` | number | Position du chapitre dans le contenu, en commençant par 1. |
+   | `length` | number | Nombre positif désignant la longueur du chapitre. |
+   | `startTime` | number | Valeur de la tête de lecture au début du chapitre. |
 
    Objet de chapitre :
 
