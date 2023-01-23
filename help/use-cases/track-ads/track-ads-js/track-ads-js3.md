@@ -5,13 +5,13 @@ exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
 ht-degree: 100%
 
 ---
 
-# Suivi des annonces publicitaires à l’aide de JavaScript 3.x{#track-ads-on-javascript}
+# Effectuer le suivi des publicités à l’aide de JavaScript 3.x{#track-ads-on-javascript}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 3.x.
 
@@ -37,9 +37,9 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
    | Nom de variable | Type | Description |
    | --- | --- | --- |
-   | `name` | chaîne | Chaîne non vide désignant le nom de la coupure publicitaire (pre-roll, mid-roll et post-roll). |
-   | `position` | nombre | Position du nombre au début de la coupure publicitaire commençant par 1. |
-   | `startTime` | nombre | Valeur du curseur de lecture au début de la coupure publicitaire. |
+   | `name` | string | Chaîne non vide désignant le nom de la coupure publicitaire (pre-roll, mid-roll et post-roll). |
+   | `position` | number | Position du nombre au début de la coupure publicitaire commençant par 1. |
+   | `startTime` | number | Valeur du curseur de lecture au début de la coupure publicitaire. |
 
    Création d’objet de coupure publicitaire :
 
@@ -62,10 +62,10 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
    | Nom de variable | Type | Description |
    | --- | --- | --- |
-   | `name` | chaîne | Chaîne non vide désignant le nom de l’annonce publicitaire. |
-   | `adId` | chaîne | Chaîne non vide désignant l’identifiant de l’annonce publicitaire. |
-   | `position` | nombre | Position du numéro de l’annonce publicitaire dans la coupure publicitaire, en commençant par 1. |
-   | `length` | nombre | Numéro positif désignant la longueur de l’annonce publicitaire. |
+   | `name` | string | Chaîne non vide désignant le nom de l’annonce publicitaire. |
+   | `adId` | string | Chaîne non vide désignant l’identifiant de l’annonce publicitaire. |
+   | `position` | number | Position du numéro de l’annonce publicitaire dans la coupure publicitaire, en commençant par 1. |
+   | `length` | number | Numéro positif désignant la longueur de l’annonce publicitaire. |
 
    Création d’objet publicitaire :
 
