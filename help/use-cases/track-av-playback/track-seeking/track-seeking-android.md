@@ -6,13 +6,13 @@ exl-id: 8a8fcbcf-3232-4565-8c27-4167b6741613
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
 ht-degree: 100%
 
 ---
 
-# Suivi de la recherche sur Android{#track-seeking-on-android}
+# Effectuer le suivi de la recherche sur Android{#track-seeking-on-android}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 2.x.
 
