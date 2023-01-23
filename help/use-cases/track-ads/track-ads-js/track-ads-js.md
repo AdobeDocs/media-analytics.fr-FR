@@ -6,13 +6,13 @@ exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '355'
 ht-degree: 100%
 
 ---
 
-# Suivi des annonces publicitaires à l’aide de JavaScript 2.x{#track-ads-on-javascript}
+# Effectuer le suivi des publicités à l’aide de JavaScript 2.x{#track-ads-on-javascript}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x.
 
@@ -38,7 +38,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
-   | `name` | Nom de la coupure publicitaire tel que preroll, mid-roll et post-roll. | Oui |
+   | `name` | Nom de la coupure publicitaire tel que pre-roll, mid-roll et post-roll. | Oui |
    | `position` | Position du nombre au début de la coupure publicitaire commençant par 1. | Oui |
    | `startTime` | Valeur du curseur de lecture au début de la coupure publicitaire. | Oui |
 
