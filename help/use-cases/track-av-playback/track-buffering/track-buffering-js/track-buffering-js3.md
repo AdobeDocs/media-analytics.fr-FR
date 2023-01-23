@@ -5,13 +5,13 @@ exl-id: c6941942-02f9-4f9c-99ad-0c52ed2f793b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '120'
 ht-degree: 100%
 
 ---
 
-# Suivi de la mise en mémoire tampon à l’aide de JavaScript 3.x{#track-buffering-on-javascript}
+# Suivre la mise en mémoire tampon à l’aide de JavaScript 3.x{#track-buffering-on-javascript}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre sur tous les kits SDK 3.x.
 
