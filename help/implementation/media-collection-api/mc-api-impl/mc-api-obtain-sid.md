@@ -6,15 +6,15 @@ exl-id: 4a1c4ade-4a5e-4af0-8117-19d718dd8bda
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '61'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
 # Obtention d’un ID de session {#obtaining-a-session-id}
 
-Ce fragment de code du lecteur de référence affiche une méthode permettant de coder une [Requête sessions](../mc-api-ref/mc-api-sessions-req.md), ainsi que l’extraction de l’ID de session (et de la version de l’API Media Collection) à partir de l’en-tête Emplacement de la réponse :
+Ce fragment de code du lecteur de référence affiche une méthode permettant de coder une [requête de sessions](../mc-api-ref/mc-api-sessions-req.md), ainsi que d’extraire l’ID de session (et la version de l’API Media Collection) de l’en-tête Emplacement de la réponse :
 
 ```js
 var  
