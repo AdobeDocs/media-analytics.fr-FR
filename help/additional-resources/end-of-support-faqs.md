@@ -5,9 +5,9 @@ exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '691'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Contactez votre gestionnaire de la réussite client Adobe si vous avez des quest
 &#x200B;
 1. **Quel est le niveau d’effort demandé par la migration vers les extensions Media Analytics ?&#x200B;**
 
-   La PERTE dépend de la mise en oeuvre de chaque client. Elle varie donc.  Après avoir consulté la documentation concernant la migration ci-dessous, rapprochez-vous du service de nos conseillers et/ou de l’assistance clientèle pour obtenir une assistance supplémentaire.
+   Le niveau d’effort dépend de l’implémentation de chaque client et peut donc varier.  Après avoir consulté la documentation concernant la migration ci-dessous, rapprochez-vous du service de nos conseillers et/ou de l’assistance clientèle pour obtenir une assistance supplémentaire.
 
 [Extensions Media Analytics : migration sous Android](/help/legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-android.md)
 
