@@ -1,18 +1,18 @@
 ---
-title: Découvrez comment effectuer le suivi de la lecture principale sur iOS
+title: Découvrez comment effectuer le suivre la lecture principale sur iOS
 description: Cette rubrique décrit la mise en œuvre du suivi principal à l’aide du SDK Media sur iOS.
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '711'
 ht-degree: 100%
 
 ---
 
-# Suivi de la lecture principale sur iOS{#track-core-playback-on-ios}
+# Suivre la lecture principale sur iOS{#track-core-playback-on-ios}
 
 Cette documentation aborde le suivi dans la version 2.x du SDK.
 
