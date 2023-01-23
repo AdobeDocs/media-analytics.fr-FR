@@ -6,9 +6,9 @@ exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Découvrez comment configurer Streaming Media Analytics pour les appareils iOS.
 
       1. Assurez-vous que la case **[!UICONTROL Copier les éléments si nécessaire]** est cochée, que **[!UICONTROL Créer des groupes]** est sélectionné et qu’aucune des cases dans **[!UICONTROL Ajouter à la cible]** n’est cochée.
 
-      ![Choix des options](assets/choose-options_ios.png)
+      ![Choisissez les options](assets/choose-options_ios.png).
 
       1. Cliquez sur **[!UICONTROL Terminer]**.
       1. Dans **[!UICONTROL Navigateur de projets]**, sélectionnez votre application et vos cibles.
@@ -159,7 +159,7 @@ Découvrez comment configurer Streaming Media Analytics pour les appareils iOS.
 
 Dans la version 2.x, toutes les méthodes publiques sont consolidées dans la classe `ADBMediaHeartbeat` pour faciliter le travail des développeurs. Toutes les configurations ont été consolidées dans la classe `ADBMediaHeartbeatConfig`.
 
-Pour plus d’informations sur la migration de la version 1.x vers la version 2.x, consultez la documentation sur l’implémentation héritée.)
+Pour plus d’informations sur la migration de la version 1.x vers la version 2.x, consultez la documentation sur l’implémentation héritée.
 
 ## Configuration d’une application native pour tvOS
 
