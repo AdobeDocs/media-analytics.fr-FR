@@ -6,13 +6,13 @@ exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '220'
 ht-degree: 100%
 
 ---
 
-# Suivi des chapitres et des segments sur Chromecast{#track-chapters-and-segments-on-chromecast}
+# Effectuer le suivi des chapitres et des segments sur Chromecast{#track-chapters-and-segments-on-chromecast}
 
 Les instructions suivantes fournissent des conseils pour la mise en œuvre à l’aide des kits SDK 2.x.
 
