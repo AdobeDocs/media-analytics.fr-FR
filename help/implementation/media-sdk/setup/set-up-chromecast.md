@@ -6,31 +6,31 @@ exl-id: 5dfe3407-2858-48c0-a70c-8ea87967ac47
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '575'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# Configuration du SDK Mobile v3.x pour Chromecast {#set-up-chromecast}
+# Configurer le SDK mobile v3.x pour Chromecast {#set-up-chromecast}
 
-Cette section décrit les conditions préalables à la configuration d’une installation Chromecast pour la diffusion en continu de médias.
+Cette section décrit les conditions préalables à la configuration d’une installation Chromecast pour le streaming de médias.
 
-## Conditions préalables 
+## Conditions préalables
 
-* **Obtention de paramètres de configuration valides**
+* **Obtenir des paramètres de configuration valides**
 
-   Vous pouvez obtenir ces paramètres auprès d’un représentant d’Adobe après avoir configuré votre compte Media Analytics.
-* **Incluez les API suivantes dans votre lecteur multimédia**
+   Vous pouvez obtenir ces paramètres auprès d’un représentant Adobe une fois votre compte Media Analytics configuré.
+* **Inclure les API suivantes dans votre lecteur multimédia**
 
    * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
    * *Une API qui fournit des informations au lecteur* - Ces informations incluent des éléments tels que le nom du média et la position de la tête de lecture.
 
 Adobe Mobile Services offre une nouvelle interface utilisateur qui réunit les fonctionnalités de marketing mobile pour les applications mobiles issues d’Adobe Experience Cloud. Au départ, le service Mobile intègre de manière transparente les fonctionnalités d’analyse et de ciblage des applications pour les solutions Adobe Analytics et Adobe Target. Pour en savoir plus, consultez la [Documentation d’Adobe Mobile Services.](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=fr)
 
-La bibliothèque mobile Adobe pour Chromecast v3.x pour les solutions Experience Cloud vous permet de mesurer les applications Chromecast écrites en JavaScript, d’exploiter et de collecter les données d’audience grâce à la gestion de l’audience et de mesurer l’engagement vidéo.
+La bibliothèque mobile Adobe pour Chromecast v3.x pour les solutions Experience Cloud vous permet de mesurer les applications Chromecast écrites en JavaScript, d’exploiter et de collecter les données d’audience grâce à la gestion de l’audience et de mesurer l’engagement vidéo.
 
-## Mise en oeuvre de la bibliothèque mobile/du SDK
+## Mise en œuvre de la bibliothèque/du SDK mobile
 
 1. Ajoutez la bibliothèque Chromecast que vous avez téléchargée à votre projet.
 
@@ -43,7 +43,7 @@ La bibliothèque mobile Adobe pour Chromecast v3.x pour les solutions Experience
       * Fichier de configuration `ADBMobileConfig`
 
          Ce fichier de configuration SDK est personnalisé pour votre application. Un exemple de mise en œuvre `ADBMobileConfig` est fourni avec le SDK (sous `samples/`). Obtenez les paramètres appropriés auprès d’un représentant Adobe.
-   1. Ajoutez le fichier de bibliothèque à votre `index.html` et créez le fichier `ADBMobileConfig` la variable globale comme suit (la variable globale utilisée pour configurer Adobe Mobile pour Media Analytics comporte une clé exclusive nommée `mediaHeartbeat`) :
+   1. Ajoutez le fichier de bibliothèque à votre fichier `index.html` et créez la variable globale `ADBMobileConfig` comme suit (la variable globale utilisée pour configurer Adobe Mobile pour Media Analytics comporte une clé exclusive appelée `mediaHeartbeat`) :
 
       ```js
       <script>
@@ -88,7 +88,7 @@ La bibliothèque mobile Adobe pour Chromecast v3.x pour les solutions Experience
 
       >[!IMPORTANT]
       >
-      >If `mediaHeartbeat` n’est pas correctement configuré, le module multimédia entre dans un état d’erreur et arrête l’envoi des appels de suivi.
+      >Si `mediaHeartbeat` n’est pas correctement configuré, le module multimédia passe en état d’erreur et arrête l’envoi des appels de suivi.
 
       Paramètres de configuration ADBMobile pour la clé mediaHeartbeat :
    | Paramètre de configuration | Description     |
@@ -104,7 +104,7 @@ La bibliothèque mobile Adobe pour Chromecast v3.x pour les solutions Experience
 
 1. Configurez l’identifiant visiteur Experience Cloud.
 
-   Le service d’identification des visiteurs Experience Cloud fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Le service d’identification des visiteurs est requis par Media Analytics et d’autres intégrations de Marketing Cloud.
+   Le service d’identification des visiteurs Experience Cloud fournit un identifiant visiteur universel pour toutes les solutions Experience Cloud. Le service d’identifiant visiteur est requis par Media Analytics et d’autres intégrations Marketing Cloud.
 
    Vérifiez que votre configuration `ADBMobileConfig` contient votre ID d’organisation `marketingCloud`.
 
