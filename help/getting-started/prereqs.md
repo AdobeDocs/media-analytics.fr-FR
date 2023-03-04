@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '486'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '487'
+ht-degree: 94%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 Pour implémenter Adobe Analytics for Streaming Media, effectuez les tâches suivantes :
 
 1. **Confirmer votre modèle de tarification des médias en flux continu**<br>
-Le modèle de tarification actuel est basé sur les flux vidéo. Si nécessaire, contactez votre représentant commercial ou votre gestionnaire de compte pour signer une nouvelle commande de vente, car l’analyse des médias en flux continu est vendue séparément d’Adobe Analytics.
+Le modèle de tarification actuel est basé sur les flux vidéo. Si nécessaire, contactez votre représentant commercial ou votre équipe de compte d’Adobe pour signer une nouvelle commande de ventes, car les analyses de médias en flux continu sont vendues séparément d’Adobe Analytics.
 
 1. **Confirmer que vous mettez en œuvre Adobe Analytics**<br>
 Les médias en flux continu pour Adobe Analytics nécessitent également une mise en œuvre de base d’Adobe Analytics. Pour plus d’informations, voir [Implémentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).

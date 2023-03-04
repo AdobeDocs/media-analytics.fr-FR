@@ -4,10 +4,10 @@ description: Découvrez les chemins d’implémentation des médias en flux cont
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
-source-wordcount: '650'
-ht-degree: 100%
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 93%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 100%
 
 **CE CONTENU A ÉTÉ DÉPLACÉ VERS LE FICHIER DE CHEMINS D’IMPLÉMENTATION ACTUEL.**
 
-Pour chaque chemin d’implémentation, les clients doivent contacter leur représentant commercial/responsable de compte pour signer une nouvelle commande, car Media Analytics en flux continu comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions vidéo.
+Pour chaque chemin de mise en oeuvre, les clients doivent contacter leur représentant commercial/équipe de compte d’Adobe pour signer une nouvelle commande de ventes, car l’analyse des médias en flux continu comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions vidéo.
 
 ## Collecte de données Adobe Experience Platform avec l’extension Adobe Media Analytics
 
@@ -27,7 +27,7 @@ Les balises dans Adobe Experience Platform Launch représentent la nouvelle g�
 
 Les balises permettent à tout un chacun de créer et de gérer leurs propres intégrations, appelées extensions. Ces extensions sont disponibles pour les clients Adobe Experience Cloud dans une boutique dʼapplications qui leur permet dʼinstaller, de configurer et de déployer rapidement leurs balises.
 
-Une extension est un module de code (JavaScript, HTML et CSS) qui étend les fonctionnalités des balises. Créez, gérez et mettez à jour vos intégrations à l’aide d’une interface en libre-service ou presque. Vous pouvez considérer les extensions comme des applications que vous utilisez pour réaliser vos tâches. Pour plus d’informations, consultez l’article *Présentation des balises* dans la [documentation d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr).
+Une extension est un package de code (JavaScript, HTML et CSS) qui étend les fonctionnalités des balises. Créez, gérez et mettez à jour vos intégrations à l’aide d’une interface en libre-service ou presque. Vous pouvez considérer les extensions comme des applications que vous utilisez pour réaliser vos tâches. Pour plus d’informations, consultez l’article *Présentation des balises* dans la [documentation d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=fr).
 
 L’extension Adobe Media Analytics (MA) ajoute le noyau JavaScript Media SDK (Media 2.x SDK) pour l’audio et la vidéo. Cette extension fournit la fonctionnalité permettant d’ajouter l’instance de suivi `MediaHeartbeat` à un site ou un projet de collecte de données.
 

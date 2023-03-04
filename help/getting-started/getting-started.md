@@ -5,10 +5,10 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 660aa29a-2a3d-4a4f-acd6-471551d1047b
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
+source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
 workflow-type: tm+mt
-source-wordcount: '298'
-ht-degree: 100%
+source-wordcount: '299'
+ht-degree: 91%
 
 ---
 
@@ -31,7 +31,7 @@ Pour obtenir de plus amples informations, consultez [Périphériques et platefor
 
 >[!IMPORTANT]
 >
->Pour implémenter Adobe Analytics for Streaming Media, contactez votre représentant commercial ou votre responsable de compte Adobe pour vous assurer que Streaming Media fait partie de votre portefolio de produits.
+>Pour mettre en oeuvre Adobe Analytics Streaming Media, contactez votre représentant commercial de l’Adobe ou votre équipe de compte d’Adobe pour vous assurer que Streaming Media fait partie de votre portefeuille de produits.
 
 ## SDK Media pour les médias en flux continu {#media-sdks}
 
