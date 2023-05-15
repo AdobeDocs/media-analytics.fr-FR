@@ -4,10 +4,10 @@ description: Découvrez comment mettre en œuvre Adobe Analytics for Streaming 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
-source-git-commit: 85e1d5223cec7168bbf592d941e6a5aece249459
-workflow-type: ht
-source-wordcount: '202'
-ht-degree: 100%
+source-git-commit: e75eb6ddbcf693cd200159392dd3026ca55fc22d
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 95%
 
 ---
 
@@ -23,6 +23,7 @@ Implémentez les SDK Streaming Media dans votre framework de lecteur vidéo et v
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [SDK Media pour JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 | <img src="assets/javascript-icon.png"> | [Extension Adobe Media Analytics avec balises (collecte de données) pour JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 
 ### Implémentation mobile
 
@@ -30,6 +31,8 @@ Implémentez les SDK Streaming Media dans votre framework de lecteur vidéo et v
 |:----:|:----|
 | <img src="assets/android-icon.png"> | [Extension Adobe Experience Platform Media Analytics avec balises (collecte de données)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 | <img src="assets/apple-ios-icon.png"> | [Extension Adobe Experience Platform Media Analytics avec balises (collecte de données)](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/android-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
+| <img src="assets/apple-ios-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#mobile-implementation-get-mobile-extension) |
 
 * L’extension iOS Media Analytics for Audio and Video prend en charge iOS, iPadOS et tvOS.
 

@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 5c0195ab6945b65cd37f2e8fd9ddc8c8e91507f0
-workflow-type: ht
-source-wordcount: '895'
-ht-degree: 100%
+source-git-commit: 9b448c75604abe2683ab4d522a7197dfe1af55be
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -40,6 +40,7 @@ ht-degree: 100%
             + [Installer Analytics à l’aide de JavaScript](implementation/media-sdk/setup/web-implementation.md)
             + [Installer Analytics à l’aide de l’extension Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [Installer les SDK mobiles](implementation/media-sdk/setup/mobile-implementation.md)
+         + [Installation d’Analytics avec Adobe Experience Platform Edge](implementation/media-sdk/implementation-edge.md)
          + Installation des SDK OTT {#ott-setup}
             + [Installation du SDK Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Installation du SDK Roku](implementation/media-sdk/setup/set-up-roku.md)
@@ -193,19 +194,19 @@ ht-degree: 100%
       + [Suivre la lecture principale sur iOS](use-cases/track-av-playback/track-core/track-core-ios.md)
       + Suivi de la lecture principale sur JavaScript {#track-core-javascript}
          + [Suivi de la lecture principale sur JavaScript 2.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js.md)
-      + [Effectuer le suivi de la mise en mémoire tampon sur Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
-      + [Effectuer le suivi de la mise en mémoire tampon sur iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
-      + Suivi de la mise en mémoire tampon sur JavaScript {#track-buffering-js}
-         + [Suivi de la mise en mémoire tampon sur JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
-      + [Effectuer le suivi de la recherche sur Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
-      + [Suivre la recherche sur iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
-      + Suivi de la recherche sur JavaScript {#track-seeking-js}
-         + [Suivi de la recherche sur JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
-      + [Mise en œuvre de métadonnées standard sur Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
-      + [Mise en œuvre de métadonnées standard sur iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
-      + [Clés de métadonnées iOS](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
-      + Mise en œuvre de métadonnées standard sur JavaScript {#impl-std-md-js}
-         + [Mise en œuvre de métadonnées standard sur JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+         + [Effectuer le suivi de la mise en mémoire tampon sur Android](use-cases/track-av-playback/track-buffering/track-buffering-android.md)
+         + [Effectuer le suivi de la mise en mémoire tampon sur iOS](use-cases/track-av-playback/track-buffering/track-buffering-ios.md)
+         + Suivi de la mise en mémoire tampon sur JavaScript {#track-buffering-js}
+            + [Suivi de la mise en mémoire tampon sur JavaScript 2.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js.md)
+         + [Effectuer le suivi de la recherche sur Android](use-cases/track-av-playback/track-seeking/track-seeking-android.md)
+         + [Suivre la recherche sur iOS](use-cases/track-av-playback/track-seeking/track-seeking-ios.md)
+         + Suivi de la recherche sur JavaScript {#track-seeking-js}
+            + [Suivi de la recherche sur JavaScript 2.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js.md)
+         + [Mise en œuvre de métadonnées standard sur Android](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+         + [Mise en œuvre de métadonnées standard sur iOS](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
+         + [Clés de métadonnées iOS](use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+         + Mise en œuvre de métadonnées standard sur JavaScript {#impl-std-md-js}
+            + [Mise en œuvre de métadonnées standard sur JavaScript 2.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
       + Suivi des publicités {#track-ads}
          + [Effectuer le suivi des publicités sur Android](use-cases/track-ads/track-ads-android.md)
          + [Effectuer le suivi des publicités sur iOS](use-cases/track-ads/track-ads-ios.md)
