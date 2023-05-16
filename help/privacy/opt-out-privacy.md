@@ -45,6 +45,7 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
             ```
+
          >[!IMPORTANT]
          >
          >Lorsqu’un utilisateur exclut le suivi, tous les identifiants et données d’appareil conservés sont purgés jusqu’à ce que l’utilisateur procède à nouveau à l’inclusion.
@@ -62,6 +63,7 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
             ```
             ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
             ```
+
       * **Renvoyer le paramètre actuel :**
 
          * **Chromecast :**
@@ -75,6 +77,7 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
             ```
             ADBMobile().getPrivacyStatus()
             ```
+
    Une fois le paramètre de confidentialité modifié à l’aide de `setPrivacyStatus`, le changement est permanent jusqu’à ce qu’il soit modifié à nouveau en utilisant cette méthode, ou jusqu’à la désinstallation et la réinstallation de l’application.
 
 ## Récupération des identifiants stockés (applications OTT) {#retrieving-stored-identifiers-ott-apps}
