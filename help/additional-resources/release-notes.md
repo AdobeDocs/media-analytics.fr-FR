@@ -3,16 +3,16 @@ title: Notes de mise à jour d’Adobe Analytics for Streaming Media
 description: Affichez les notes de mise à jour d’Adobe Analytics.
 feature: Release Notes
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
-source-git-commit: 0c02fec77d6484774ea81e997529accddb19d175
+source-git-commit: 328a62fa0f0f895f81a101f1e0225f7090d9a3ca
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '921'
 ht-degree: 92%
 
 ---
 
-# Notes de mise à jour d’Adobe Analytics for Streaming Media (septembre 2022)
+# Notes de mise à jour d’Adobe Analytics pour les médias en streaming (mai 2023)
 
-**Dernière mise à jour** : 22 septembre 2022
+**Dernière mise à jour** : 12 mai 2023
 
 ## Ressources connexes
 
@@ -30,7 +30,7 @@ Pour plus d’informations sur les nouvelles fonctionnalités, les correctifs et
 
 | Fonctionnalité | Description | Date ciblée |
 | ----------- | ---------- | ------- |
-| Media Collection : Intégration avec Experience Edge (API et SDK mobile) | Vous pouvez désormais utiliser l’API Experience Edge et le SDK mobile pour mettre en oeuvre les médias en flux continu, ce qui vous permet de créer davantage de campagnes personnalisées et de fournir un contenu plus personnalisé, ce qui génère davantage de données de suivi sur lesquelles générer des rapports.<p>Cette amélioration fournit une méthode de collecte unifiée à l’échelle de toutes les solutions, comme les rapports CJA, RT-CDP, AJO et le transfert d’événement.  [En savoir plus](/help/implementation/media-sdk/implementation-edge.md) | Fin mai 2023 |
+| Media Collection : Intégration avec Experience Edge (API et SDK mobile) | Vous pouvez désormais utiliser l’API Experience Edge et le SDK mobile pour mettre en oeuvre les médias en flux continu, ce qui vous permet de créer davantage de campagnes personnalisées et de fournir un contenu plus personnalisé, ce qui génère davantage de données de suivi sur lesquelles générer des rapports.<p>Cette amélioration fournit une méthode de collecte unifiée à l’échelle de toutes les solutions, comme les rapports CJA, RT-CDP, AJO et le transfert d’événement.  [En savoir plus](/help/implementation/implementation-edge.md) | 12 mai 2023 |
 | Panneau Observateurs simultanés de médias | Déterminez où s’est produit le pic d’accès simultanés et où des abandons ont eu lieu. Obtenez des informations importantes sur la qualité du contenu et l’engagement des observateurs, ainsi que de l’aide concernant la résolution de problèmes ou la planification du volume et de l’échelle. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers.html?lang=fr) | 9 août 2022 |
 | Panneau Temps de lecture de média | Le panneau Temps de lecture de média fournit des informations importantes sur lʼengagement des observateurs. Il permet également aux organisations de médias dʼobtenir des informations plus approfondies et plus granulaires sur lʼinteraction client, minute par minute, grâce à une analyse avancée de la durée de la lecture et des fonctionnalités dʼanalyse par tranches horaires. Vous pouvez observer la durée de visionnage de vos flux multimédia à un moment précis. Vous pouvez diviser la durée de lecture selon différentes granularités, notamment les nouvelles granularités de 5 minutes, 15 minutes et 30 minutes. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=fr) | 9 août 2022 |
 | Partage des annotations dans les cartes de performance mobiles | Vous pouvez afficher les annotations créées dans l’espace de travail sur les cartes de performance mobiles. Cela vous permet de partager des nuances et insights de données contextuelles sur votre organisation et vos campagnes directement au sein des projets de cartes de performance mobiles, visibles dans l’application mobile des tableaux de bord Analytics. [En savoir plus](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-components/annotations/mobile-annotations.html?lang=fr) | 15 juin 2022 |
