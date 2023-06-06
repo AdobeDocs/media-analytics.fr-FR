@@ -4,9 +4,9 @@ description: Cette rubrique décrit la fonctionnalité de suivi de l’état du 
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '279'
+source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+workflow-type: tm+mt
+source-wordcount: '278'
 ht-degree: 100%
 
 ---
@@ -42,4 +42,4 @@ Les données sont calculées de la même manière pour les états standards et p
 
 Créer des états personnalisés vous permet de capturer des actions personnalisées et de mettre à jour des métadonnées personnalisées au cours d’une session de lecture.
 
-Pour plus d’informations sur la création d’états personnalisés, reportez-vous au [guide de référence de l’API Media : `createStateObject`](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/adobe-media-analytics/media-api-reference#createstateobject)
+Pour plus d’informations sur la création d’états personnalisés, reportez-vous au [guide de référence de l’API Media : `createStateObject`](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/api-reference/)
