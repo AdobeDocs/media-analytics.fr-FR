@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre Adobe Streaming Media.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: e3380ad898b551b6e0bbf5624d8419c5a95496f6
+source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1883'
 ht-degree: 11%
 
 ---
@@ -344,7 +344,7 @@ Pour créer et configurer un schéma :
 
 ## Envoi de données à Experience Platform Edge à l’aide du SDK AEP Mobile
 
-Vous pouvez utiliser le SDK mobile Adobe Experience Platform pour envoyer des données mobiles à Experience Platform Edge. (Vous pouvez également utiliser une implémentation personnalisée des API Edge.<!-- I guess we don't need/want to document this? -->)
+Vous pouvez utiliser le SDK mobile Adobe Experience Platform pour envoyer des données mobiles à Experience Platform Edge. (Vous pouvez également utiliser une implémentation personnalisée des API Edge.<!-- Waiting for link from John -->)
 
 Utilisez les ressources de documentation suivantes pour terminer la mise en oeuvre pour iOS et Android :
 
@@ -352,5 +352,5 @@ Utilisez les ressources de documentation suivantes pour terminer la mise en oeuv
 
 * [Référence d’API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migration vers Adobe Streaming Media pour l’extension Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) (Pour les utilisateurs effectuant la migration de l’extension Media vers Edge)
+* [Migration vers Adobe Streaming Media pour l’extension Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
