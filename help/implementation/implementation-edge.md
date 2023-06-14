@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre Adobe Streaming Media.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: bcab6a94547b79a565dc2303ab640dc1b8994bd4
+source-git-commit: 1280c0851094234b308e69ba2be3da21dfdc1302
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1939'
 ht-degree: 11%
 
 ---
@@ -344,7 +344,7 @@ Pour créer et configurer un schéma :
 
 ## Envoi de données à Experience Platform Edge à l’aide du SDK AEP Mobile
 
-Vous pouvez utiliser le SDK mobile Adobe Experience Platform pour envoyer des données mobiles à Experience Platform Edge. (Vous pouvez également utiliser une implémentation personnalisée des API Edge.<!-- Waiting for link from John -->)
+Vous pouvez utiliser le SDK mobile Adobe Experience Platform pour envoyer des données mobiles à Experience Platform Edge.
 
 Utilisez les ressources de documentation suivantes pour terminer la mise en oeuvre pour iOS et Android :
 
@@ -354,3 +354,13 @@ Utilisez les ressources de documentation suivantes pour terminer la mise en oeuv
 
 * [Migration vers Adobe Streaming Media pour l’extension Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
+
+Vous pouvez également utiliser une implémentation personnalisée des API Edge à l’aide des ressources suivantes :
+
+* [Présentation de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
+
+* [Prise en main de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
+
+* [Guide de dépannage de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+
+* [Utilisation du fichier Open API Specification pour les API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
