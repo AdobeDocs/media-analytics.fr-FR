@@ -4,10 +4,10 @@ description: Découvrez comment mettre en œuvre Adobe Analytics for Streaming 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dc1b9fe0-6c75-4f93-a558-a3f3186bcf22
-source-git-commit: e75eb6ddbcf693cd200159392dd3026ca55fc22d
+source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 95%
+source-wordcount: '213'
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ Implémentez les SDK Streaming Media dans votre framework de lecteur vidéo et v
 |:----:|:----|
 | <img src="assets/javascript-icon.png"> | [SDK Media pour JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
 | <img src="assets/javascript-icon.png"> | [Extension Adobe Media Analytics avec balises (collecte de données) pour JavaScript v3.x](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
-| <img src="assets/javascript-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) |
+| <img src="assets/javascript-icon.png"> | [Experience Platform Edge](../../getting-started/download-sdks.md#web-implementation-download-web-sdk) (Bientôt disponible) |
 
 ### Implémentation mobile
 
