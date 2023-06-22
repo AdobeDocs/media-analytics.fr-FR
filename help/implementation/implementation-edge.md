@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre Adobe Streaming Media.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 29d58b41-9a49-4b71-bdc5-4e2848cd3236
-source-git-commit: 547c47b09b2cc18ee155953eaad314599fa8d749
+source-git-commit: b57db92ae4ce01e259424e3d71e36311af88ccac
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1785'
 ht-degree: 11%
 
 ---
@@ -46,75 +46,58 @@ Pour créer et configurer un schéma :
 
    ![Ajout de groupes de champs](assets/schema-field-groups-added.png)
 
-1. Dans le [!UICONTROL **Structure**] , sélectionnez la zone `endUserIds` > `_experience` groupe de champs, puis sélectionnez [!UICONTROL **Gestion des champs associés**].
 
-   ![Bouton Gérer les champs associés](assets/manage-related-fields.png)
+Les étapes suivantes de cette section sont facultatives et les requêtes envoyées à l’API Media Edge fonctionneront même sans masquer les champs spécifiés dans l’interface utilisateur du schéma AEP.
+Toutefois, le masquage des champs facilite la lecture et la compréhension du schéma, car les champs masqués ne sont pas utilisés par l’API Media Edge.
+Les étapes suivantes ne concernent que les champs de la `MediaAnalytics Interaction Details` fieldgroup
 
-1. Mettez à jour le schéma comme suit :
+1. Dans le [!UICONTROL **Structure**] , sélectionnez la zone `Media Collection Details` champ, sélectionnez [!UICONTROL **Gestion des champs associés**], puis mettez à jour le schéma comme suit :
 
-   * Dans le `Adobe Analytics ExperienceEvent Template` groupe de champs, masquer tous les champs, sauf `EndUserIDs`.
+   ![manage-related-fields](assets/manage-related-fields.png)
 
-   * Dans le `endUserIds` > `_experience` > `Adobe Advertising Cloud end user IDs` groupe de champs, masquez tous les champs, à l’exception du champ `Identifier` champ .
-
-   * Dans le `endUserIds` > `_experience` > `Adobe Analytics Cloud Custom end user IDs` groupe de champs, masquez tous les champs, à l’exception du champ `Identifier` champ .
-
-     ![champs à masquer](assets/schema-hide-fields.png)
-
-1. Sélectionner [!UICONTROL **Confirmer**] pour enregistrer vos modifications.
-
-1. Dans le [!UICONTROL **Structure**] , sélectionnez la zone `Implementation Details` groupe de champs, sélectionnez [!UICONTROL **Gestion des champs associés**], puis mettez à jour le schéma comme suit :
-
-   * Dans le `Implementation Details` > `Implementation details` groupe de champs, masquer tous les champs, à l’exception de `version`.
-
-     ![champs à masquer](assets/schema-hide-fields2.png)
-
-1. Sélectionner [!UICONTROL **Confirmer**] pour enregistrer vos modifications.
-
-1. Dans le [!UICONTROL **Structure**] , sélectionnez la zone `Media Collection Details` groupe de champs, sélectionnez [!UICONTROL **Gestion des champs associés**], puis mettez à jour le schéma comme suit :
-
-   * Dans le `Media Collection Details` groupe de champs, masquez la variable `List Of States` groupe de champs.
+   * Dans le `Media Collection Details` , masquez la variable `List Of States` champ .
 
      ![masquer les états de collection de médias](assets/schema-hide-media-collection-states.png)
 
-   * Dans le `Media Collection Details` > `Advertising Details` , masquez les champs de rapport suivants : `Ad Completed`, `Ad Started`, et `Ad Time Played`.
+   * Dans le `Media Collection Details` > `Advertising Details` masquez les champs de création de rapports suivants : `Ad Completed`, `Ad Started`, et `Ad Time Played`.
 
-   * Dans le `Media Collection Details` > `Advertising Pod Details` , masquez le champ de création de rapports suivant : `Ad Break ID`
+   * Dans le `Media Collection Details` > `Advertising Pod Details` masquez le champ de création de rapports suivant : `Ad Break ID`
 
-   * Dans le `Media Collection Details` > `Chapter Details` masquez les champs de rapport suivants : `Chapter ID`, `Chapter Completed`, `Chapter Started`, et `Chapter Time Played`.
+   * Dans le `Media Collection Details` > `Chapter Details` masquez les champs de création de rapports suivants : `Chapter ID`, `Chapter Completed`, `Chapter Started`, et `Chapter Time Played`.
 
-   * Dans le `Media Collection Details` > `Qoe Data Details` masquez les champs de rapport suivants : `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, et `Total Stalling Duration`.
+   * Dans le `Media Collection Details` > `Qoe Data Details` masquez les champs de création de rapports suivants : `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, et `Total Stalling Duration`.
 
-   * Dans le `Media Collection Details` > `Session Details` masquez les champs de rapport suivants : `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, et `Pccr`.
+   * Dans le `Media Collection Details` > `Session Details` masquez les champs de création de rapports suivants : `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, et `Pccr`.
 
-   * Dans le `Media Collection Details` > `List Of States End` et `Media Collection Details` > `List Of States Start` groupes de champs, masquez les champs de rapport suivants : `Player State Count`, `Player State Set`, et `Player State Time`.
+   * Dans le `Media Collection Details` > `List Of States End` et `Media Collection Details` > `List Of States Start` masquez les champs de création de rapports suivants : `Player State Count`, `Player State Set`, et `Player State Time`.
 
      ![champs à masquer](assets/schema-hide-listofstates.png)
 
 1. Sélectionner [!UICONTROL **Confirmer**] pour enregistrer vos modifications.
 
-1. Dans le [!UICONTROL **Structure**] , sélectionnez la zone `List Of Media Collection Downloaded Content Events` groupe de champs, sélectionnez [!UICONTROL **Gestion des champs associés**], puis mettez à jour le schéma comme suit :
+1. Dans le [!UICONTROL **Structure**] , sélectionnez la zone `List Of Media Collection Downloaded Content Events` champ, sélectionnez [!UICONTROL **Gestion des champs associés**], puis mettez à jour le schéma comme suit :
 
-   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` groupe de champs, masquez la variable `List Of States` groupe de champs.
+   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` , masquez la variable `List Of States` champ .
 
-   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` , masquez les champs de rapport suivants : `Ad Completed`, `Ad Started`, et `Ad Time Played`.
+   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Details` masquez les champs de création de rapports suivants : `Ad Completed`, `Ad Started`, et `Ad Time Played`.
 
-   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` , masquez le champ de création de rapports suivant : `Ad Break ID`
+   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Advertising Pod Details` masquez le champ de création de rapports suivant : `Ad Break ID`
 
-   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` masquez les champs de rapport suivants : `Chapter ID`, `Chapter Completed`, `Chapter Started`, et `Chapter Time Played`.
+   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Chapter Details` masquez les champs de création de rapports suivants : `Chapter ID`, `Chapter Completed`, `Chapter Started`, et `Chapter Time Played`.
 
-   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` masquez les champs de rapport suivants : `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, et `Total Stalling Duration`.
+   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Qoe Data Details` masquez les champs de création de rapports suivants : `Average Bitrate`, `Average Bitrate Bucket`, `Bitrate Changes`, `Buffer Events`, `Total Buffer Duration`, `Errors`, `External Error IDs`, `Bitrate Change Impacted Streams`, `Buffer Impacted Streams`, `Dropped Frame Impacted Streams`, `Error Impacted Streams`, `Stalling Impacted Streams`, `Drops Before Starts`, `Media SDK Error IDs`, `Player SDK Error IDs`, `Stalling Events`, et `Total Stalling Duration`.
 
-   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` masquez les champs de rapport suivants : `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, et `Pccr`.
+   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `Session Details` masquez les champs de création de rapports suivants : `Media Session ID`, `Ad Count`, `Average Minute Audience`, `Chapter Count`, `Estimated Streams`, `Pause Impacted Streams`, `10% Progress Marker`, `25% Progress Marker`, `50% Progress Marker`, `75% Progress Marker`, `95% Progress Marker`, `Media Segment Views`, `Content Completes`, `Media Downloaded Flag`, `Federated Data`, `Content Starts`, `Media Starts`, `Pause Events`, `Total Pause Duration`, `Media Session Server Timeout`, `Video Segment`, `Content Time Spent`, `Media Time Spent`, `Unique Time Played`, `Pev3`, et `Pccr`.
 
-   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` et `Media Collection Details` > `List Of States Start` groupes de champs, masquez les champs de rapport suivants : `Player State Count`, `Player State Set`, et `Player State Time`.
+   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details` > `List Of States End` et `Media Collection Details` > `List Of States Start` masquez les champs de création de rapports suivants : `Player State Count`, `Player State Set`, et `Player State Time`.
 
-   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details`  groupe de champs, masquez la variable `Media Session ID` champ .
+   * Dans le `List Of Media Collection Downloaded Content Events` > `Media Details`  , masquez la variable `Media Session ID` champ .
 
 1. Sélectionner [!UICONTROL **Confirmer**] pour enregistrer vos modifications.
 
-1. Dans le [!UICONTROL **Structure**] , sélectionnez la zone `Media Reporting Details` groupe de champs, sélectionnez [!UICONTROL **Gestion des champs associés**], puis mettez à jour le schéma comme suit :
+1. Dans le [!UICONTROL **Structure**] , sélectionnez la zone `Media Reporting Details` champ, sélectionnez [!UICONTROL **Gestion des champs associés**], puis mettez à jour le schéma comme suit :
 
-   * Dans le `Media Reporting Details` masquez les groupes de champs suivants : `Error Details`, `List Of States End`, `List of States Start`, `Playhead`, et `Media Session ID`.
+   * Dans le `Media Reporting Details` masquez les champs suivants : `Error Details`, `List Of States End`, `List of States Start`, et `Media Session ID`.
 
 1. Sélectionner [!UICONTROL **Confirmer**] > [!UICONTROL **Enregistrer**]  pour enregistrer vos modifications.
 
