@@ -1,14 +1,14 @@
 ---
 title: Présentation d’Adobe Analytics for Streaming Media
-description: Utilisez Streaming Media Analytics pour obtenir de puissants insights sur le contenu, l’audio et les publicités.
+description: Utilisez Streaming Media Analytics pour obtenir de puissantes informations sur le contenu, l’audio et les publicités.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b022bed6b7be0cc97caaaf6b7bbc42474a57b400
-workflow-type: ht
-source-wordcount: '531'
-ht-degree: 100%
+source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+workflow-type: tm+mt
+source-wordcount: '559'
+ht-degree: 72%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 ![Bannière](./assets/media_analytics_banner.png)
 
-Adobe Analytics for Streaming Media est un module complémentaire d’Adobe Analytics qui fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Grâce à Analytics for Streaming Media, vous pouvez obtenir des détails granulaires en temps quasi réel sur la durée, les arrêts et les démarrages. Vous pourrez ainsi mieux évaluer et combiner des mesures vidéo et audio. Ces insights vous permettent de comprendre les habitudes de visionnage et d’écoute de vos clients et d’augmenter l’engagement grâce à des recommandations hautement personnalisées.
+Adobe Analytics for Streaming Media est un module complémentaire d’Adobe Analytics qui fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Avec Analytics pour les médias en streaming, vous obtenez des détails granulaires en temps quasi réel sur la durée, les arrêts et les démarrages qui vous permettent d’évaluer et de combiner des mesures vidéo et audio. Ces informations vous permettent de comprendre les habitudes de visionnage et d’écoute de vos clients et d’augmenter l’engagement grâce à des recommandations hautement personnalisées.
 
 Adobe Analytics for Streaming Media vous permet de suivre l’ensemble du parcours client sur votre site et vos applications en flux continu. Vous pouvez combiner les mesures Streaming Media avec d’autres fonctionnalités Adobe Analytics, telles qu’Audience Analytics, Mobile ou Analytics sur l’ensemble des appareils. Ces mesures s’intègrent facilement aux rapports Adobe Analytics et aux autres produits Adobe Experience Platform. La mesure des médias vous permet de catégoriser vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées nécessaires à une analyse complète et détaillée. Vous pouvez ensuite analyser les données et attribuer des critères de succès au média entièrement consommé, au temps passé moyen et aux publicités terminées.
 
@@ -24,13 +24,18 @@ Vous pouvez déterminer les mesures de diffusion vidéo essentielles liées à l
 
 ## Fonctionnement
 
-Les données de suivi des médias en flux continu sont collectées à partir d’un lecteur à l’aide des SDK Media ou des extensions de médias Adobe Experience Platform et des API Media Collection. Toutes les données granulaires (jusqu’à 10 secondes) sont envoyées au service Media Analytics qui collecte et traite les données pour chaque session de lecture individuelle. Une fois la session de lecture terminée, les données de suivi calculées sont envoyées à Adobe Analytics pour stockage et création de rapports. Grâce aux implémentations d’Adobe Customer Journey Analytics (CJA), les données peuvent être envoyées à CJA à l’aide d’Analytics Data Connector (ADC) afin que les clients puissent utiliser CJA comme outil de création de rapports.
+Les données de suivi des médias en flux continu sont collectées à partir d’un lecteur à l’aide du SDK/de l’extension Media for Edge Network, de l’extension Media avec des balises, des SDK Media, de l’API Media Edge ou de l’API Media Collection.
 
-<!-- ![streaming media process](./assets/streaming-process1.png) -->
+Toutes les données granulaires (jusqu’à 10 secondes) sont envoyées au service Media Analytics ou à Experience Edge (en fonction de la variable [méthode de mise en oeuvre](/help/implementation/overview.md) vous choisissez), qui collecte et traite les données pour chaque session de lecture individuelle.
 
-<div style="text-align: center;">
-<img src="./assets/streaming-process1.png" alt="Processus Streaming Media" width="75%">
-</div>
+Une fois la session de lecture terminée, les données de suivi calculées sont envoyées à Adobe Analytics ou à Customer Journey Analytics pour stockage et création de rapports.
+
+>[!NOTE]
+>
+>Avec les mises en oeuvre de Customer Journey Analytics, les données peuvent être envoyées à Customer Journey Analytics à l’aide d’Experience Edge ou d’Analytics Data Connector (ADC).
+
+
+Voir [Mise en oeuvre de médias en flux continu pour Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md) pour plus d’informations.
 
 ## Fonctionnalités
 
