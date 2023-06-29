@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 129818d73bdcc63fcf922d295e3f360ab1375dbe
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
-source-wordcount: '902'
-ht-degree: 99%
+source-wordcount: '904'
+ht-degree: 96%
 
 ---
 
@@ -33,36 +33,39 @@ ht-degree: 99%
          + [JavaScript - SDK Media vers Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Implémentation {#implementation}
    + [Présentation de l’implémentation](implementation/overview.md)
-   + SDK Media - Implémentation {#media-sdk}
-      + [Présentation des SDK Media](implementation/media-sdk/media-sdk-overview.md)
-      + Installation et configuration {#setup}
-         + Installer les SDK web {#install-web-sdk}
-            + [Installer Analytics à l’aide de JavaScript](implementation/media-sdk/setup/web-implementation.md)
-            + [Installer Analytics à l’aide de l’extension Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
-         + [Installer les SDK mobiles](implementation/media-sdk/setup/mobile-implementation.md)
-         + Installation des SDK OTT {#ott-setup}
+   + [Présentation des SDK Media](/help/implementation/media-sdk-overview.md)
+   + Implémentations Edge (recommandées) {#edge-recommended}
+      + SDK/extension Media Edge {#media-edge-sdk}
+         + [SDK Media Edge / Configuration de l’extension](/help/implementation/edge/implementation-edge.md)
+         + [SDK Media Edge Mobile](/help/implementation/edge/edge-mobile-sdk.md)
+      + [API Media Edge](/help/implementation/edge/implementation-edge-api.md)
+   + Implémentations Adobe Analytics uniquement {#analytics-only}
+      + SDK Media / Extension {#media-sdk}
+         + [SDK Web JavaScript](implementation/media-sdk/setup/web-implementation.md)
+         + [Extension Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
+         + [SDK mobiles](implementation/media-sdk/setup/mobile-implementation.md)
+         + SDK OTT {#ott-setup}
             + [Installation du SDK Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
             + [Installation du SDK Roku](implementation/media-sdk/setup/set-up-roku.md)
-   + [Installation d’Analytics avec Adobe Experience Platform Edge](implementation/implementation-edge.md)
-   + API Media Collection - Implémentation {#streaming-media-apis}
-      + [Media Collection](implementation/media-collection-api/mc-api-overview.md)
-      + [Démarrage rapide de l’API](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
-      + [Requête Sessions](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
-      + [Requête events](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
-      + [Paramètres de requête](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
-      + [Types et descriptions d’événement](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
-      + Mise en œuvre de l’API {#mc-api-impl}
-         + [Définition du type de requête HTTP dans votre lecteur](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
-         + [Obtention d’un ID de session](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
-         + [Mise en œuvre d’une requête events](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
-         + [Schémas de validation JSON](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
-         + [Validation des requêtes d’événement](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
-         + [Envoi d’événements ping](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
-         + [Envoi de données QoE](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
-         + [Prise en charge des métadonnées personnalisées](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
-         + [Conditions d’expiration](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
-         + [Contrôle de l’ordre des événements](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
-         + [Événements de mise en file d’attente lorsque la réponse des sessions est lente](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+      + API Media Collection - Implémentation {#streaming-media-apis}
+         + [Media Collection](implementation/media-collection-api/mc-api-overview.md)
+         + [Démarrage rapide de l’API](implementation/media-collection-api/mc-api-impl/mc-api-quick-start.md)
+         + [Requête Sessions](implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md)
+         + [Requête events](implementation/media-collection-api/mc-api-ref/mc-api-events-req.md)
+         + [Paramètres de requête](implementation/media-collection-api/mc-api-ref/mc-api-req-params.md)
+         + [Types et descriptions d’événement](implementation/media-collection-api/mc-api-ref/mc-api-event-types.md)
+         + Mise en œuvre de l’API {#mc-api-impl}
+            + [Définition du type de requête HTTP dans votre lecteur](implementation/media-collection-api/mc-api-impl/mc-api-set-http-req.md)
+            + [Obtention d’un ID de session](implementation/media-collection-api/mc-api-impl/mc-api-obtain-sid.md)
+            + [Mise en œuvre d’une requête events](implementation/media-collection-api/mc-api-impl/mc-api-impl-events-req.md)
+            + [Schémas de validation JSON](implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md)
+            + [Validation des requêtes d’événement](implementation/media-collection-api/mc-api-impl/mc-api-validate-reqs.md)
+            + [Envoi d’événements ping](implementation/media-collection-api/mc-api-impl/mc-api-sed-pings.md)
+            + [Envoi de données QoE](implementation/media-collection-api/mc-api-impl/mc-api-sending-qoe.md)
+            + [Prise en charge des métadonnées personnalisées](implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+            + [Conditions d’expiration](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
+            + [Contrôle de l’ordre des événements](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
+            + [Événements de mise en file d’attente lorsque la réponse des sessions est lente](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
    + Variables {#variables}
       + [Paramètres des médias en flux continu](implementation/variables/audio-video-parameters.md)
       + [Paramètres de publicité](implementation/variables/ad-parameters.md)

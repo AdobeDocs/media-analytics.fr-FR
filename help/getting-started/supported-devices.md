@@ -4,7 +4,7 @@ description: « Découvrez les principaux périphériques pris en charge par Ad
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: deae677d9e8b4dc241765cf5d168fcd71b9c8310
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 69%
@@ -25,7 +25,7 @@ Pour les appareils qui ne prennent pas actuellement en charge le SDK ou dans les
 
 Le tableau ci-dessous répertorie les périphériques actuellement pris en charge. Si un périphérique n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son statut.
 
-Pour plus d’informations sur l’implémentation de Media sur Edge, voir [Installation de Media Analytics avec Experience Platform Edge](/help/implementation/implementation-edge.md).
+Pour plus d’informations sur l’implémentation de Media sur Edge, voir [Installation de Media Analytics avec Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Plateformes et périphériques de diffusion en continu | | Media for Edge Network SDK/Extension | API Media Edge | Extension Media avec des balises ou SDK mobile AEP | SDK Media | API Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

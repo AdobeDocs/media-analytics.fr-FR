@@ -5,9 +5,9 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '398'
 ht-degree: 13%
 
 ---
@@ -18,11 +18,11 @@ Il existe plusieurs façons de mettre en oeuvre les médias en flux continu. Pou
 
 ## Méthodes de mise en oeuvre Edge
 
-Dans la plupart des cas, il est recommandé d’utiliser Edge lors de la mise en oeuvre de Media Analytics pour tous les nouveaux clients Adobe Analytics ou Customer Journey Analytics.
+Il est recommandé d’utiliser Edge lors de la mise en oeuvre de Media Analytics pour tous les nouveaux clients Adobe Analytics ou Customer Journey Analytics.
 
 * **Media for Edge Network SDK/Extension :** Collecte des données à partir des appareils iOS et Android et les envoie à Edge. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 
-  Pour plus d’informations sur le SDK/l’extension Media for Edge Network, voir [Installation de Media Analytics avec Experience Platform Edge](/help/implementation/implementation-edge.md).
+  Pour plus d’informations sur le SDK/l’extension Media for Edge Network, voir [Installation de Media Analytics avec Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
   >[!NOTE]
   >
@@ -34,11 +34,11 @@ Dans la plupart des cas, il est recommandé d’utiliser Edge lors de la mise en
 
 ![Workflow CJA](assets/cja-implementation.png)
 
-## Autres méthodes de mise en oeuvre
+## Méthodes de mise en oeuvre Adobe Analytics uniquement
 
-Dans la plupart des cas, les méthodes d’implémentation Edge décrites ci-dessus sont recommandées pour Customer Journey Analytics et Adobe Analytics, en particulier pour les nouvelles implémentations.
+Les méthodes d’implémentation Edge décrites ci-dessus sont recommandées pour Customer Journey Analytics et Adobe Analytics, en particulier pour les nouvelles implémentations.
 
-Outre les méthodes de mise en oeuvre Edge, d’autres méthodes de mise en oeuvre sont disponibles. Ces méthodes d’implémentation ont été initialement conçues pour être utilisées avec Adobe Analytics. Cependant, les clients qui utilisent l’une des méthodes de mise en oeuvre suivantes peuvent toujours rendre les données disponibles dans Customer Journey Analytics en créant une [Connexion source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr).
+Outre les méthodes de mise en oeuvre Edge, d’autres méthodes de mise en oeuvre sont disponibles. Ces méthodes d’implémentation ont été conçues pour être utilisées avec Adobe Analytics. Cependant, les clients existants qui disposent de l’une des méthodes de mise en oeuvre suivantes peuvent toujours rendre les données disponibles dans Customer Journey Analytics en créant une [Connexion source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr).
 
 * **Extension Media avec des balises :** L’extension Adobe Medium Analytics for Audio and Video permet d’ajouter l’instance de suivi Media à un site ou à un projet prenant en charge les balises. Les données sont envoyées à Adobe Analytics.
 

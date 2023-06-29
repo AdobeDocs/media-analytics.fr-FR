@@ -5,8 +5,8 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Annuler les modifications
 
 >[!TIP]
 >
->La position du curseur de lecture est définie dans le cadre du code d’installation et de configuration. Pour plus d’informations sur `getCurrentPlayheadTime`, voir [Présentation : Instructions générales de mise en œuvre.](/help/implementation/media-sdk/media-sdk-overview.md)
+>La position du curseur de lecture est définie dans le cadre du code d’installation et de configuration. Pour plus d’informations sur `getCurrentPlayheadTime`, voir [Présentation : Instructions générales de mise en œuvre.](/help/implementation/media-sdk-overview.md)
 
 
 ## Mise en œuvre {#implement}
@@ -107,13 +107,13 @@ Annuler les modifications
 
    * **Métadonnées standard -**
 
-      >[!NOTE]
-      >
-      >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
+     >[!NOTE]
+     >
+     >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
 
-      Instanciez un objet de métadonnées standard, renseignez les variables désirées et définissez l’objet de métadonnées sur l’objet Media Heartbeat.
+     Instanciez un objet de métadonnées standard, renseignez les variables désirées et définissez l’objet de métadonnées sur l’objet Media Heartbeat.
 
-      Consultez la liste complète des métadonnées dans la rubrique [Paramètres audio et vidéo](../../implementation/variables/audio-video-parameters.md).
+     Consultez la liste complète des métadonnées dans la rubrique [Paramètres audio et vidéo](../../implementation/variables/audio-video-parameters.md).
 
    * **Métadonnées personnalisées -** Créez un objet de variable pour les variables personnalisées et renseignez les données de ce contenu.
 
