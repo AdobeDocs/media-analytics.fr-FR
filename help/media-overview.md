@@ -5,10 +5,10 @@ uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 355b3b079d53ae8e83822f61fc79e60e47f6d715
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '559'
-ht-degree: 72%
+source-wordcount: '563'
+ht-degree: 68%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 72%
 
 ![Bannière](./assets/media_analytics_banner.png)
 
-Adobe Analytics for Streaming Media est un module complémentaire d’Adobe Analytics qui fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Avec Analytics pour les médias en streaming, vous obtenez des détails granulaires en temps quasi réel sur la durée, les arrêts et les démarrages qui vous permettent d’évaluer et de combiner des mesures vidéo et audio. Ces informations vous permettent de comprendre les habitudes de visionnage et d’écoute de vos clients et d’augmenter l’engagement grâce à des recommandations hautement personnalisées.
+Adobe Analytics pour les médias en streaming est un module complémentaire d’Adobe Analytics et de Customer Journey Analytics qui fournit de puissants outils de mesure pour le son, la vidéo et les publicités. Avec Analytics pour les médias en streaming, vous obtenez des détails granulaires en temps quasi réel sur la durée, les arrêts et les démarrages qui vous permettent d’évaluer et de combiner des mesures vidéo et audio. Ces informations vous permettent de comprendre les habitudes de visionnage et d’écoute de vos clients et d’augmenter l’engagement grâce à des recommandations hautement personnalisées.
 
 Adobe Analytics for Streaming Media vous permet de suivre l’ensemble du parcours client sur votre site et vos applications en flux continu. Vous pouvez combiner les mesures Streaming Media avec d’autres fonctionnalités Adobe Analytics, telles qu’Audience Analytics, Mobile ou Analytics sur l’ensemble des appareils. Ces mesures s’intègrent facilement aux rapports Adobe Analytics et aux autres produits Adobe Experience Platform. La mesure des médias vous permet de catégoriser vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées nécessaires à une analyse complète et détaillée. Vous pouvez ensuite analyser les données et attribuer des critères de succès au média entièrement consommé, au temps passé moyen et aux publicités terminées.
 

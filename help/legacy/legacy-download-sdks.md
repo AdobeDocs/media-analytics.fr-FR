@@ -4,16 +4,16 @@ description: Liens vers les téléchargements des SDK hérités pour les platefo
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: c546a8cf4cf471d47e1ae43661821f3c3a6b4a44
 workflow-type: tm+mt
-source-wordcount: '334'
-ht-degree: 93%
+source-wordcount: '339'
+ht-degree: 76%
 
 ---
 
 # Téléchargement des SDK hérités{#legacy-download-sdks}
 
-Les informations de cette page comprennent des liens pour télécharger les SDK Media 2.x et 1.x **hérités**.
+Les informations de cette page comprennent des liens pour télécharger la variable **hérité**  SDK Media 2.x et **hérité** SDK Media 1.x.
 
 Pour plus d’informations sur le téléchargement des SDK **actuels**, consultez [Téléchargement de SDK](/help/getting-started/download-sdks.md).
 
@@ -34,8 +34,8 @@ La collecte de données Adobe avec l’extension Media Analytics requiert les �
 
 | SDK Media 2.x  | Téléchargements du dernier SDK Media |  API   |  Documentation  |
 | --- | --- | --- | --- |
-| Android/Fire TV | [SDK Media pour Android v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Référence de l’API Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Configuration d’Android](/help/legacy/media-sdk/setup/set-up-android.md) |
-| iOS/Apple TV | [SDK Media pour iOS v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (Contactez l’[Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) pour obtenir le SDK hérité 2.0) | [Référence de l’API iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Configuration d’iOS](/help/legacy/media-sdk/setup/set-up-ios.md) |
-| JavaScript | [SDK Media pour JS v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [Référence de l’API JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [Configuration de JavaScript 2.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
-| Roku | [SDK Media pour Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) |  | [Configuration de Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
-| Chromecast | [SDK Media pour Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Référence à l’API Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configuration de Chromecast ](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
+| Android/Fire TV | [SDK Media hérité pour Android v2.2.4](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/android-v2.2.4) | [Référence de l’API Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/) | [Configuration d’Android](/help/legacy/media-sdk/setup/set-up-android.md) |
+| iOS/Apple TV | [SDK Media hérité pour iOS v2.3.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/ios-v2.3.0) (Contact) [Assistance clientèle](https://helpx.adobe.com/fr/marketing-cloud/contact-support.html) Obtention du SDK hérité 2.0) | [Référence de l’API iOS](https://adobe-marketing-cloud.github.io/media-sdks/reference/ios/) | [Configuration d’iOS](/help/legacy/media-sdk/setup/set-up-ios.md) |
+| JavaScript | [SDK Media hérité pour JS v2.2.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v2.2.2) | [Référence de l’API JS](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/) | [Configuration de JavaScript 2.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md) |
+| Roku | [SDK Media hérité pour Roku v2.2.6](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.6) | | [Configuration de Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
+| Chromecast | [SDK Media hérité pour Chromecast v2.2.0](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v2.2.0) | [Référence à l’API Chromecast](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/) | [Configuration de Chromecast ](/help/implementation/media-sdk/setup/set-up-chromecast.md) |
