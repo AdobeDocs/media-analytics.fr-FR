@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: a26e4e283646e5ceb352f357789748f376f5c747
+source-git-commit: cb45048d77edc188b5fdbd60ae89c165ff9befa0
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '900'
 ht-degree: 96%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 96%
 + Prise en main {#getting-started}
    + [Aperçu](getting-started/getting-started.md)
    + [Conditions préalables](getting-started/prereqs.md)
-   + [Périphériques pris en charge](getting-started/supported-devices.md)
+   + [Appareils pris en charge](getting-started/supported-devices.md)
    + [Documentation sur les médias en flux continu](getting-started/implementation-documentation.md)
    + [SDK, bibliothèques et extensions](getting-started/download-sdks.md)
    + Fin de la prise en charge {#end-of-support}
@@ -169,7 +169,7 @@ ht-degree: 96%
       + [Configuration d’Android](legacy/media-sdk/setup/set-up-android.md)
       + [Configuration d’iOS](legacy/media-sdk/setup/set-up-ios.md)
       + Configuration de JavaScript {#setup-javascript}
-         + [Configurer JavaScript 3.x](legacy/media-sdk/setup/setup-javascript/set-up-js-3.md)
+         + [Configuration de JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [À propos de la mesure de pulsation](legacy/heartbeat-measurement.md)
    + [Adobe Primetime et l’analyse des médias en flux continu](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Activation de Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
@@ -187,7 +187,6 @@ ht-degree: 96%
       + Débogage {#debugging}
          + [Débogage du SDK](legacy/validation/debugging/sdk-debugging.md)
    + [Migration héritée : VHL 1.x vers VHL 2.x](legacy/va-1x-to-2x/mig-1x-2x-overview.md)
-   + [Configuration de JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [Comparaison de code v1.x vers v2.x](legacy/va-1x-to-2x/code-comparison-1x-2x.md)
    + [API de suivi 1x à 2x](legacy/va-1x-to-2x/1x-2x-api-change.md)
    + [Hérité - Introduction à AVA](legacy/intro-to-ava/implementation-paths/implementation-paths.md)
