@@ -8,7 +8,7 @@ sub-product: media analytics
 source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
 workflow-type: tm+mt
 source-wordcount: '896'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -36,11 +36,11 @@ ht-degree: 96%
       + SDK/extension Media Edge {#media-edge-sdk}
          + [SDK Media Edge / Configuration de l’extension](/help/implementation/edge/implementation-edge.md)
          + [SDK Media Edge Mobile](/help/implementation/edge/edge-mobile-sdk.md)
-      + [API Media Edge](/help/implementation/edge/implementation-edge-api.md)
-   + Implémentations Adobe Analytics uniquement {#analytics-only}
-      + SDK Media / Extension {#media-sdk}
+      + [API Media Edge](/help/implementation/edge/implementation-edge-api.md)
+   + Implémentations Adobe Analytics uniquement {#analytics-only}
+      + SDK / Extension Media {#media-sdk}
          + [SDK Web JavaScript](implementation/media-sdk/setup/web-implementation.md)
-         + [Extension Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
+         + [Extension Media Analytics](implementation/media-sdk/setup/web-implementation-tags.md)
          + [SDK mobiles](implementation/media-sdk/setup/mobile-implementation.md)
          + SDK OTT {#ott-setup}
             + [Installation du SDK Chromecast](implementation/media-sdk/setup/set-up-chromecast.md)
