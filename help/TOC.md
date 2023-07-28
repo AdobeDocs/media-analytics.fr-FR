@@ -5,9 +5,9 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: b807359636e17bf36e33ca20e9dc4dee4d7f2a8f
+source-git-commit: b33a6205d5c6921c4ee0fcfc968593c62461c2a0
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '895'
 ht-degree: 100%
 
 ---
@@ -113,49 +113,48 @@ ht-degree: 100%
       + [OTT et Audience Manager](use-cases/analytics-with-ott/ott-am.md)
       + [OTT et Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Suivi {#tracking}
-   + Suivi {#track-av-playback}
-      + [Aperçu](use-cases/track-av-playback/track-core-overview.md)
-      + Suivi de la lecture principale des médias en flux continu {#track-core}
-         + [Suivi de la lecture principale sur JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
-         + [Suivre la lecture principale sur Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
-         + [Suivi de la lecture principale sur Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
-      + Suivi de la mise en mémoire tampon {#track-buffering}
-         + [Suivi de la mise en mémoire tampon sur JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
-         + [Effectuer le suivi de la mise en mémoire tampon sur Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
-         + [Effectuer le suivi de la mise en mémoire tampon sur Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
-      + Suivi de la recherche {#track-seeking}
-         + [Suivi de la recherche sur JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
-         + [Effectuer le suivi de la recherche sur Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
-         + [Suivre la recherche sur Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
-      + Mise en œuvre de métadonnées standard {#impl-std-metadata}
-         + [Mise en œuvre de métadonnées standard sur JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
-         + [Mise en œuvre de métadonnées standard sur Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
-         + [Paramètres des métadonnées standard - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
-         + [Mise en œuvre de métadonnées standard sur Roku](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
-         + [Paramètres des métadonnées standard - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
-      + Suivi des publicités {#track-ads}
-         + [Aperçu](use-cases/track-ads/track-ads-overview.md)
-         + [Suivi des publicités sur JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
-         + [Suivre les publicités sur Chromecast](use-cases/track-ads/track-ads-chromecast.md)
-         + [Effectuer le suivi des publicités sur Roku](use-cases/track-ads/track-ads-roku.md)
-         + Mise en œuvre de métadonnées de publicité standard {#impl-std-ad-metadata}
-            + [Mise en œuvre de métadonnées de publicité standard sur JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
-            + [Mise en œuvre de métadonnées de publicité standard sur Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
-      + Suivi des chapitres et des segments {#track-chapters}
-         + [Aperçu](use-cases/track-chapters/track-chapters-overview.md)
-         + [Suivi des chapitres et des segments sur JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
-         + [Effectuer le suivi des chapitres et des segments sur Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
-         + [Suivi des chapitres et des segments sur Roku](use-cases/track-chapters/track-chapters-roku.md)
-      + Suivi de la qualité de l’expérience {#track-qos}
-         + [Aperçu](use-cases/track-qos/track-qos-overview.md)
-         + [Suivi de la qualité de l’expérience sur JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
-         + [Suivre la qualité de l’expérience sur Chromecast](use-cases/track-qos/track-qos-chromecast.md)
-         + [Effectuer le suivi de la qualité de l’expérience sur Roku](use-cases/track-qos/track-qos-roku.md)
-      + Erreurs de suivi {#track-errors}
-         + [Aperçu](use-cases/track-errors/track-errors-overview.md)
-         + [Erreurs de suivi sur JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
-         + [Erreurs de suivi sur Chromecast](use-cases/track-errors/track-errors-chromecast.md)
-         + [Erreurs de suivi sur Roku](use-cases/track-errors/track-errors-roku.md)
+   + [Aperçu](use-cases/track-av-playback/track-core-overview.md)
+   + Suivi de la lecture principale des médias en flux continu {#track-core}
+      + [Suivi de la lecture principale sur JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
+      + [Suivre la lecture principale sur Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
+      + [Suivi de la lecture principale sur Roku](use-cases/track-av-playback/track-core/track-core-roku.md)
+   + Suivi de la mise en mémoire tampon {#track-buffering}
+      + [Suivi de la mise en mémoire tampon sur JavaScript 3.x](use-cases/track-av-playback/track-buffering/track-buffering-js/track-buffering-js3.md)
+      + [Effectuer le suivi de la mise en mémoire tampon sur Chromecast](use-cases/track-av-playback/track-buffering/track-buffering-chromecast.md)
+      + [Effectuer le suivi de la mise en mémoire tampon sur Roku](use-cases/track-av-playback/track-buffering/track-buffering-roku.md)
+   + Suivi de la recherche {#track-seeking}
+      + [Suivi de la recherche sur JavaScript 3.x](use-cases/track-av-playback/track-seeking/track-seeking-js/track-seeking-js3.md)
+      + [Effectuer le suivi de la recherche sur Chromecast](use-cases/track-av-playback/track-seeking/track-seeking-chromecast.md)
+      + [Suivre la recherche sur Roku](use-cases/track-av-playback/track-seeking/track-seeking-roku.md)
+   + Mise en œuvre de métadonnées standard {#impl-std-metadata}
+      + [Mise en œuvre de métadonnées standard sur JavaScript 3.x](use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js3.md)
+      + [Mise en œuvre de métadonnées standard sur Chromecast](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+      + [Paramètres des métadonnées standard - Chromecast](use-cases/track-av-playback/impl-std-metadata/chromecast-metadata.md)
+      + [Mise en œuvre de métadonnées standard sur Roku](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+      + [Paramètres des métadonnées standard - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
+   + Suivi des publicités {#track-ads}
+      + [Aperçu](use-cases/track-ads/track-ads-overview.md)
+      + [Suivi des publicités sur JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
+      + [Suivre les publicités sur Chromecast](use-cases/track-ads/track-ads-chromecast.md)
+      + [Effectuer le suivi des publicités sur Roku](use-cases/track-ads/track-ads-roku.md)
+      + Mise en œuvre de métadonnées de publicité standard {#impl-std-ad-metadata}
+         + [Mise en œuvre de métadonnées de publicité standard sur JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
+         + [Mise en œuvre de métadonnées de publicité standard sur Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   + Suivi des chapitres et des segments {#track-chapters}
+      + [Aperçu](use-cases/track-chapters/track-chapters-overview.md)
+      + [Suivi des chapitres et des segments sur JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
+      + [Effectuer le suivi des chapitres et des segments sur Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
+      + [Suivi des chapitres et des segments sur Roku](use-cases/track-chapters/track-chapters-roku.md)
+   + Suivi de la qualité de l’expérience {#track-qos}
+      + [Aperçu](use-cases/track-qos/track-qos-overview.md)
+      + [Suivi de la qualité de l’expérience sur JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
+      + [Suivre la qualité de l’expérience sur Chromecast](use-cases/track-qos/track-qos-chromecast.md)
+      + [Effectuer le suivi de la qualité de l’expérience sur Roku](use-cases/track-qos/track-qos-roku.md)
+   + Erreurs de suivi {#track-errors}
+      + [Aperçu](use-cases/track-errors/track-errors-overview.md)
+      + [Erreurs de suivi sur JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
+      + [Erreurs de suivi sur Chromecast](use-cases/track-errors/track-errors-chromecast.md)
+      + [Erreurs de suivi sur Roku](use-cases/track-errors/track-errors-roku.md)
 + Confidentialité et sécurité {#streaming-media-privacy}
    + [Paramètres d’opposition et de confidentialité](privacy/opt-out-privacy.md)
    + [Sécurité](privacy/security.md)
