@@ -5,10 +5,10 @@ uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: 60702b2cf466df7a1b328743c5d5f4c1834d9554
+source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 75%
+source-wordcount: '442'
+ht-degree: 74%
 
 ---
 
@@ -20,7 +20,7 @@ Avant de commencer à implémenter les médias en flux continu, effectuez les t�
 Avant de commencer à implémenter les médias en flux continu, passez en revue les [Présentation des médias en flux continu](/help/media-overview.md) pour vous assurer que les médias en flux continu répondent à vos besoins.
 
 1. **Confirmer votre modèle de tarification des médias en flux continu**<br>
-Le modèle de tarification actuel est basé sur les flux vidéo. Si nécessaire, contactez votre représentant commercial ou votre équipe de compte d’Adobe pour signer une nouvelle commande de ventes, car les analyses de médias en flux continu sont vendues séparément d’Adobe Analytics.
+Le modèle de tarification actuel est basé sur les flux vidéo. Si nécessaire, contactez votre représentant commercial ou votre équipe de compte d’Adobe, dans la mesure où les médias en flux continu sont vendus séparément, en tant que module complémentaire d’Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Activer les rapports Adobe Analytics**<br>
 Pour activer les rapports dans Analytics et afficher le contenu et les données de publicité que vous collectez, vous devez activer les rapports dans Analytics. Voir [Activation des rapports multimédia](/help/reporting/media-reports-enable.md).
@@ -46,3 +46,5 @@ Pour activer les rapports dans Analytics et afficher le contenu et les données 
    * [Conditions préalables pour les implémentations Adobe Analytics uniquement](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
    * [Conditions préalables pour les implémentations Edge](/help/implementation/edge/prerequisites-edge.md)
+
+   Utilisez la variable [Présentation de l’implémentation](/help/implementation/overview.md) pour déterminer la méthode de mise en oeuvre qui vous convient.
