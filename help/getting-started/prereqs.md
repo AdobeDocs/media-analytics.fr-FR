@@ -6,26 +6,26 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '442'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Conditions préalables  {#prerequisites}
 
-Avant de commencer à implémenter les médias en flux continu, effectuez les tâches suivantes :
+Avant de commencer à implémenter les médias en streaming, effectuez les tâches suivantes :
 
-1. **Présentation des médias en flux continu**<br>
-Avant de commencer à implémenter les médias en flux continu, passez en revue les [Présentation des médias en flux continu](/help/media-overview.md) pour vous assurer que les médias en flux continu répondent à vos besoins.
+1. **Consulter la vue d’ensemble des médias en streaming**<br>
+Avant de commencer à implémenter les médias en streaming, consultez la [vue d’ensemble des médias en streaming](/help/media-overview.md) pour vous assurer que les médias en streaming répondent à vos besoins.
 
-1. **Confirmer votre modèle de tarification des médias en flux continu**<br>
-Le modèle de tarification actuel est basé sur les flux vidéo. Si nécessaire, contactez votre représentant commercial ou votre équipe de compte d’Adobe, dans la mesure où les médias en flux continu sont vendus séparément, en tant que module complémentaire d’Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
+1. **Confirmer votre modèle de tarification des médias en streaming**<br>
+Le modèle de tarification actuel est basé sur les flux vidéo. Si nécessaire, contactez votre représentant ou représentante commercial(e) ou votre équipe Adobe chargée des comptes, dans la mesure où les médias en streaming sont vendus séparément, en tant que module complémentaire d’Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
 
 1. **Activer les rapports Adobe Analytics**<br>
 Pour activer les rapports dans Analytics et afficher le contenu et les données de publicité que vous collectez, vous devez activer les rapports dans Analytics. Voir [Activation des rapports multimédia](/help/reporting/media-reports-enable.md).
 
-1. **Mise en oeuvre du service Adobe Experience Platform Identity dans Experience Cloud**
+1. **Implémenter le service d’identité d’Adobe Experience Platform dans Experience Cloud**
 
    Le **service d’identités** active le framework d’identification courant pour les services principaux d’Experience Cloud, les solutions, les attributs du client et les audiences dans le service principal des Personnes. Pour ce faire, le service attribue un identifiant persistant et unique à un visiteur du site. Lorsque votre organisation met en œuvre le service d’ID, cet identifiant permet d’identifier un même visiteur et ses données dans différentes solutions Experience Cloud.
 
@@ -39,12 +39,12 @@ Pour activer les rapports dans Analytics et afficher le contenu et les données 
 
    Pour en savoir plus sur Experience Cloud ID, consultez [Aperçu du service Experience Cloud ID](https://experienceleague.adobe.com/docs/id-service/using/intro/overview.html?lang=fr) et [Service d’identité d’Adobe Experience Platform](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr).
 
-1. **Afficher les conditions préalables supplémentaires pour votre méthode de mise en oeuvre**
+1. **Afficher les conditions préalables supplémentaires pour votre méthode d’implémentation**
 
-   Selon la manière dont vous prévoyez de mettre en oeuvre les médias en flux continu, consultez les conditions préalables à l’une des méthodes de mise en oeuvre suivantes :
+   Selon la manière dont vous prévoyez d’implémenter les médias en streaming, affichez les conditions préalables de l’une des méthodes d’implémentation :
 
-   * [Conditions préalables pour les implémentations Adobe Analytics uniquement](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [Conditions préalables pour les implémentations Adobe Analytics uniquement](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 
    * [Conditions préalables pour les implémentations Edge](/help/implementation/edge/prerequisites-edge.md)
 
-   Utilisez la variable [Présentation de l’implémentation](/help/implementation/overview.md) pour déterminer la méthode de mise en oeuvre qui vous convient.
+   Utilisez la [vue d’ensemble de l’implémentation](/help/implementation/overview.md) pour déterminer la méthode d’implémentation qui vous convient.
