@@ -8,17 +8,17 @@ role: User, Admin, Data Engineer
 source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
 workflow-type: tm+mt
 source-wordcount: '590'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
-# Présentation d’Adobe Analytics pour les médias en streaming
+# Vue d’ensemble d’Adobe Analytics pour les médias en streaming
 
 ![Bannière](./assets/media_analytics_banner.png)
 
-Adobe Analytics pour les médias en streaming fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Vous pouvez combiner les mesures Streaming Media avec d’autres fonctionnalités Adobe Analytics, telles qu’Audience Analytics, Mobile ou Analytics sur l’ensemble des appareils.
+Adobe Analytics pour les médias en streaming fournit de puissants outils de mesure pour l’audio, la vidéo et les publicités. Vous pouvez combiner les mesures Média en streaming avec d’autres fonctionnalités Adobe Analytics, telles qu’Audience Analytics, Mobile ou Analytics sur l’ensemble des appareils.
 
-Vous pouvez acheter des médias en flux continu sous la forme d’un module complémentaire d’Adobe Analytics<!-- update this when SKUs are available for other AEP products -->, et les mesures de médias en flux continu s’intègrent facilement aux produits Adobe Experience Platform suivants :
+Vous pouvez acheter des médias en streaming sous la forme d’un module complémentaire d’Adobe Analytics<!-- update this when SKUs are available for other AEP products -->, et les mesures de médias en streaming s’intègrent facilement aux produits Adobe Experience Platform suivants :
 
 * Adobe Analytics
 
@@ -30,7 +30,7 @@ Vous pouvez acheter des médias en flux continu sous la forme d’un module comp
 
 >[!IMPORTANT]
 >
->Pour implémenter Adobe Analytics for Streaming Media, contactez votre représentant(e) commercial(e) ou votre équipe Adobe en charge des comptes pour vous assurer que Streaming Media fait partie de votre portefolio de produits.
+>Pour implémenter Adobe Analytics pour les médias en streaming, contactez votre représentant(e) commercial(e) ou votre équipe Adobe en charge des comptes pour vous assurer qu’Adobe Aanalytic pour les médias en streaming fait partie de votre portefolio de produits.
 
 ## Principales fonctionnalités
 
@@ -38,15 +38,15 @@ Les avantages d’Adobe Analytics pour les médias en streaming incluent la sur
 
 * **Analyse en temps réel** : prenez des décisions applicables en temps réel à l’aide des mesures de performances clés, telles que les démarrages de média, sur plusieurs canaux.
 
-  Grâce à Analytics for Streaming Media, vous pouvez obtenir des détails granulaires en temps quasi réel sur la durée, les arrêts et les démarrages. Vous pourrez ainsi mieux évaluer et combiner des mesures vidéo et audio. Ces informations vous permettent de comprendre les habitudes de visionnage et d’écoute de vos clients et d’augmenter l’engagement grâce à des recommandations hautement personnalisées.
+  Grâce à Analytics for Streaming Media, vous pouvez obtenir des détails granulaires en temps quasi réel sur la durée, les arrêts et les démarrages. Vous pourrez ainsi mieux évaluer et combiner des mesures vidéo et audio. Ces informations vous permettent de comprendre les habitudes de visionnage et d’écoute de vos clients et clientes et d’augmenter l’engagement grâce à des recommandations hautement personnalisées.
 
-* **Stimuler l’engagement** : stimulez l’engagement des utilisateurs en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent s’afficher dans le contenu vidéo pour offrir une expérience de visionnage fluide et moins intrusive qui apporte des visites renouvelées.
+* **Stimuler l’engagement** : stimulez l’engagement des utilisateurs et utilisatrices en réduisant le nombre d’événements de mise en mémoire tampon et en sachant où et quand les publicités doivent s’afficher dans le contenu vidéo pour offrir une expérience de visionnage fluide et moins intrusive qui apporte des visites renouvelées.
 
-* **Image holistique**: Combinez plusieurs points de données sur tous vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de votre activité multimédia. Mesurez l’engagement et les vues/écoutes sur tous les canaux possibles.
+* **Image holistique** : combinez plusieurs points de données sur tous vos distributeurs de contenu pour obtenir une vue complète de l’ensemble de vos activités multimédia. Mesurez l’engagement et les vues/écoutes sur tous les canaux possibles.
 
-  Adobe Analytics pour les médias en streaming vous permet de suivre l’ensemble du parcours client sur votre site et les applications de diffusion en continu afin de visualiser le chemin et les intérêts du client, de fournir des recommandations optimisées et de personnaliser les expériences client.  La mesure des médias vous permet de catégoriser vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées nécessaires à une analyse complète et détaillée. Vous pouvez ensuite analyser les données et attribuer des critères de succès au média entièrement consommé, au temps passé moyen et aux publicités terminées.
+  Adobe Analytics pour les médias en streaming vous permet de suivre l’ensemble du parcours client sur votre site et les applications de streaming afin de visualiser le chemin et les intérêts de la clientèle, de fournir des recommandations optimisées et de personnaliser les expériences client.  La mesure des médias vous permet de catégoriser vos données en plusieurs dimensions et segments, en capturant toutes les métadonnées nécessaires à une analyse complète et détaillée. Vous pouvez ensuite analyser les données et attribuer des critères de succès au média entièrement consommé, au temps passé moyen et aux publicités terminées.
 
-* **Mesures vitales**: mesurez les mesures de diffusion essentielles liées à la qualité de l’expérience (QoE), telles que les images perdues, le temps passé à la mise en mémoire tampon et le débit moyen.
+* **Mesures essentielles** : détermine les mesures de diffusion essentielles liées à la qualité d’expérience (QoE), telles que les images manquantes, le temps consacré à la mise en mémoire tampon et le débit moyen.
 
 * **Meilleure granularité** : évaluez le comportement de visionnage au niveau le plus granulaire, y compris l’heure des visiteurs individuels dans la journée, les observateurs simultanés par minute et la durée moyenne d’affichage du contenu.
 
@@ -68,4 +68,4 @@ Une fois la session de lecture terminée, les données de suivi calculées sont 
 >Avec les implémentations de Customer Journey Analytics, les données peuvent être envoyées à Customer Journey Analytics à l’aide d’Experience Edge ou d’Analytics Data Connector (ADC).
 
 
-Pour plus d’informations sur les différentes méthodes de mise en oeuvre, voir [Mise en oeuvre de médias en flux continu pour Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
+Pour plus d’informations sur les différentes méthodes d’implémentation, voir [Implémenter des médias en streaming pour Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
