@@ -6,13 +6,13 @@ exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 28fcf03600585e3d6a067eca99560218bfef0e05
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7026'
 ht-degree: 100%
 
 ---
 
-# Paramètres audio et vidéo{#audio-and-video-parameters}
+# Paramètres audio et vidéo {#audio-and-video-parameters}
 
 Cette rubrique présente une liste des données de contenu audio et vidéo, y compris les valeurs de données contextuelles, qu’Adobe collecte via les variables de solution.
 
