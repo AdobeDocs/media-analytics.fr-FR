@@ -5,25 +5,41 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '210'
-ht-degree: 100%
+source-git-commit: 41de1573b001deb65f525af9c5c648d85cac8629
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 11%
 
 ---
 
-# Modèles d’espaces de travail multimédia {#media-workspace-templates}
+# Rapports multimédia dans Analysis Workspace {#media-workspace-templates}
 
-Adobe Analytics Workspace vous permet de configurer rapidement des tableaux de bord pour analyser vos données de suivi. Lorsque vous créez un projet, ou lorsque vous accédez à l’espace de travail pour gérer un projet existant, vous pouvez choisir entre des modèles standard qui couvrent les scénarios de suivi général courants, par exemple Acquisition, Consommation des médias en flux continu, et plus encore. Vous pouvez également créer, modifier et enregistrer vos propres modèles personnalisés.
+>[!NOTE]
+>
+>*Rapports* dans Workspace étaient auparavant connues sous le nom *templates*.
 
-Vous utilisez des modèles de l’onglet Espace de travail dans Adobe Analytics lorsque vous créez ou gérez un projet. Lorsque vous accédez pour la première fois à l’espace de travail, les options de création d’un projet ou d’ouverture d’un projet existant s’affichent :
+Analysis Workspace propose un ensemble de rapports prédéfinis, disponibles par défaut, que vous pouvez utiliser pour analyser les données. Pour plus d’informations sur tous les rapports par défaut disponibles, voir [Affichage des rapports](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).
 
-* **Créer un projet -** Lorsque vous cliquez sur le bouton **[!UICONTROL Créer un projet]** dans l’espace de travail, une boîte de dialogue s’affiche et vous permet de sélectionner un modèle parmi votre collection (dont Standard et Personnalisé) :
+Certains de ces rapports sont particulièrement utiles pour l’analyse des données de médias en flux continu, comme décrit dans les sections suivantes.
 
-   ![](/help/reporting/assets/all-templates-audio.png)
+## Présentation des rapports multimédia par défaut
 
-   Par exemple, si vous choisissez le modèle **[!UICONTROL Consommation audio]**, un projet avec le tableau de bord suivant axé sur le contenu audio s’affiche :
+Voici une liste des rapports par défaut qui sont utiles pour analyser les données de médias en flux continu :
 
-   ![](/help/reporting/assets/aa-workspace.png)
+* [!UICONTROL **Consommation de contenu multimédia**]: crée un rapport qui indique quel contenu est le plus consommé et attire le plus d’utilisateurs.
 
-* **Gérer des projets -** Dans un projet existant, vous pouvez modifier la présentation des données et utiliser l’option « Enregistrer sous » pour créer votre propre collection de modèles personnalisés.
+* [!UICONTROL **Consommation des médias en flux continu**]: crée un rapport avec un tableau de bord, comme illustré dans l’exemple ci-dessous.
+
+* [!UICONTROL **Récence, fréquence et fidélité des médias**]: crée un rapport qui affiche la récence (nombre de jours depuis la dernière visite), la fréquence (nombre de visites par visiteur) et la fidélité (fréquence à laquelle les cohortes d’utilisateurs reviennent sur le site).
+
+Par exemple, si vous choisissez la variable  [!UICONTROL **Consommation des médias en flux continu**] , un projet avec le tableau de bord suivant s’affiche :
+
+![](/help/reporting/assets/aa-workspace.png)
+
+## Utilisation des rapports multimédia par défaut
+
+Vous pouvez utiliser les rapports multimédia par défaut comme suit : lors de la création d’un projet. Vous pouvez également effectuer ou lors de la modification d’un projet existant.
+
+* **Lors de la création d’un projet :** Pour plus d’informations sur la création d’un projet à partir d’un rapport par défaut, voir [Créer un projet à partir d’un projet vierge ou d’un rapport](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) in [Création de projets dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+
+* **Lors de la création d’un rapport d’entreprise personnalisé :** Pour plus d’informations sur la création d’un rapport d’entreprise personnalisé, voir [Création d’un rapport d’entreprise personnalisé](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in [Page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).

@@ -5,14 +5,14 @@ uuid: 61906b8c-3362-4463-82be-fe0e741a5eb3
 exl-id: a450801c-0d6b-4e2a-8662-f00aaaa6e4e0
 feature: "Media Analytics, Segmentation"
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '204'
-ht-degree: 100%
+source-git-commit: b15a81dc8f08e94c9b80d66019f3d0fe95ef5a74
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 99%
 
 ---
 
-# Segments {#segments}
+# Segments de média{#segments}
 
 Les segments vous permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions Web. La diffiusion de segments de streaming multimédia vous permet d’identifier le type de flux des visiteurs, par exemple les diffusions audio, en direct ou en podcast. Pour plus d’informations sur les segments Adobe Analytics, voir [À propos des segments et des conteneurs](https://experienceleague.adobe.com/docs/analytics/components/segmentation/seg-overview.html?lang=fr) dans le guide des composants Adobe Analytics.
 

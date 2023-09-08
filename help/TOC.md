@@ -5,10 +5,10 @@ user-guide-title: Adobe Analytics for Streaming Media
 breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 8a0f2c0b367b48ee5ac94e7fc6bcd0eadafbc5d8
+source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
 workflow-type: tm+mt
 source-wordcount: '897'
-ht-degree: 100%
+ht-degree: 96%
 
 ---
 
@@ -74,21 +74,22 @@ ht-degree: 100%
       + [Paramètres de qualité](implementation/variables/quality-parameters.md)
       + [Mesures calculées](implementation/variables/calculated-metrics.md)
 + Création de rapports {#media-reports}
-   + [Activation des rapports multimédia](reporting/media-reports-enable.md)
-   + [À propos des segments](reporting/segments.md)
-   + Rapports multimédia par défaut {#media-default-reports}
-      + [Aperçu des rapports par défaut](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Présentation du média](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Détails du média](reporting/reports-and-analytics/media-reports-detail.md)
-      + [Rapport sur les tranches horaires des médias](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [Rapport sur les observateurs simultanés de médias](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + Panneaux d’espace de travail multimédia {#media-workspace-panels}
+   + [Activation des rapports multimédia ](reporting/media-reports-enable.md)
+   + Panneaux multimédia dans Workspace {#media-workspace-panels}
       + [Panneau Audience moyenne par minute de média](reporting/workspace/average-minute-audience.md)
       + [Panneau Observateurs simultanés de médias](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [Panneau Temps de lecture de média](reporting/workspace/media-playback-time-spent.md)
-   + [Modèles d’espaces de travail multimédia ](reporting/workspace/media-workspace-templates.md)
-   + [Obtenir des données d’observateurs simultanés via l’API](reporting/reports-and-analytics/get-concurrent-json20.md)
-   + [Obtention des données de temps de lecture de média via l’API](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+      + [Panneau Durée de lecture des médias](reporting/workspace/media-playback-time-spent.md)
+   + [Rapports multimédia dans Workspace](reporting/workspace/media-workspace-templates.md)
+   + [Segments de média](reporting/segments.md)
+   + Rapports multimédia par défaut {#media-default-reports}
+      + [Aperçu des rapports par défaut](reporting/reports-and-analytics/default-reports-overview.md)
+      + [Présentation multimédia ](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Détails du média ](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Rapport Tranche horaire du média](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [Rapport Visionneuses simultanées de médias](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + API Media {#media-api}
+      + [Obtention des données des visionneuses simultanées](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [Obtention des données sur le temps de lecture du média](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Cas d’utilisation {#media-use-cases}
    + [Cas d’utilisation du SDK Media](use-cases/cookbook/sdk-cookbook-overview.md)
    + Suivi de l’état du lecteur {#player-state-tracking}
