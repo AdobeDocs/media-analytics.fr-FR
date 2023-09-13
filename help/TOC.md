@@ -6,9 +6,9 @@ breadcrumb-title: Guide de Media Analytics
 user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
 source-git-commit: ee147c2446162257b03f2f0b972e591435d787a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -74,22 +74,22 @@ ht-degree: 96%
       + [Paramètres de qualité](implementation/variables/quality-parameters.md)
       + [Mesures calculées](implementation/variables/calculated-metrics.md)
 + Création de rapports {#media-reports}
-   + [Activation des rapports multimédia ](reporting/media-reports-enable.md)
-   + Panneaux multimédia dans Workspace {#media-workspace-panels}
+   + [Activation des rapports sur les médias](reporting/media-reports-enable.md)
+   + Panneaux de médias dans Workspace {#media-workspace-panels}
       + [Panneau Audience moyenne par minute de média](reporting/workspace/average-minute-audience.md)
       + [Panneau Observateurs simultanés de médias](reporting/workspace/media-concurrent-viewers-overview.md)
       + [Panneau Durée de lecture des médias](reporting/workspace/media-playback-time-spent.md)
-   + [Rapports multimédia dans Workspace](reporting/workspace/media-workspace-templates.md)
-   + [Segments de média](reporting/segments.md)
-   + Rapports multimédia par défaut {#media-default-reports}
-      + [Aperçu des rapports par défaut](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Présentation multimédia ](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Détails du média ](reporting/reports-and-analytics/media-reports-detail.md)
-      + [Rapport Tranche horaire du média](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [Rapport Visionneuses simultanées de médias](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
+   + [Rapports sur les médias dans Workspace](reporting/workspace/media-workspace-templates.md)
+   + [Segments de médias](reporting/segments.md)
+   + Rapports sur les médias par défaut {#media-default-reports}
+      + [Vue d’ensemble des rapports par défaut](reporting/reports-and-analytics/default-reports-overview.md)
+      + [Vue d’ensemble des médias](reporting/reports-and-analytics/media-reports-overview.md)
+      + [Détails des médias](reporting/reports-and-analytics/media-reports-detail.md)
+      + [Rapport sur les tranches horaires des médias](reporting/reports-and-analytics/media-reports-daypart.md)
+      + [Rapport sur les visionneuses simultanées de médias](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + API Media {#media-api}
-      + [Obtention des données des visionneuses simultanées](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [Obtention des données sur le temps de lecture du média](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+      + [Obtenir les données des visionneuses simultanées](reporting/reports-and-analytics/get-concurrent-json20.md)
+      + [Obtenir les données de temps de lecture de médias](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Cas d’utilisation {#media-use-cases}
    + [Cas d’utilisation du SDK Media](use-cases/cookbook/sdk-cookbook-overview.md)
    + Suivi de l’état du lecteur {#player-state-tracking}
