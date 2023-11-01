@@ -4,8 +4,8 @@ description: Découvrez comment mettre en œuvre le suivi principal à lʼaide d
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 59e03f550a35edecc949f7ef5e70c1cb2a784725
+workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 100%
 
@@ -16,7 +16,8 @@ ht-degree: 100%
 Cette documentation aborde le suivi dans la version 3.x du SDK.
 
 >[!IMPORTANT]
-> Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK](/help/getting-started/download-sdks.md)
+>
+>Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK](/help/getting-started/download-sdks.md)
 
 1. **Configuration initiale du suivi**
 
@@ -29,8 +30,8 @@ Cette documentation aborde le suivi dans la version 3.x du SDK.
    | `name` | string | Chaîne non vide désignant le nom du média. |
    | `id` | string | Chaîne non vide désignant l’identifiant de média unique. |
    | `length` | number | Nombre positif désignant la longueur du média en secondes. Indiquez 0 si la longueur est inconnue. |
-   | `streamType` | string |  |
-   | `mediaType` |  | Type de média (audio ou vidéo). |
+   | `streamType` | string |   |
+   | `mediaType` | | Type de média (audio ou vidéo). |
 
    **`StreamType`Constantes :**
 
@@ -60,30 +61,30 @@ Cette documentation aborde le suivi dans la version 3.x du SDK.
 
    * **Métadonnées standard**
 
-      >[!NOTE]
-      >
-      >Il est facultatif de joindre les métadonnées standard.
+     >[!NOTE]
+     >
+     >Il est facultatif de joindre les métadonnées standard.
 
       * Référence à l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         Consultez la liste complète des métadonnées disponibles dans la rubrique [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md).
+        Consultez la liste complète des métadonnées disponibles dans la rubrique [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md).
+
    * **Métadonnées personnalisées**
 
-      Créez un objet de variable pour les variables personnalisées et renseignez les données de ce média. Par exemple :
+     Créez un objet de variable pour les variables personnalisées et renseignez les données de ce média. Par exemple :
 
-      ```js
-      /* Set context data */
-       var contextData = {};
-      
-       //Standard metadata
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
-       contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
-      
-       //Custom metadata
-       contextData["isUserLoggedIn"] = "false";
-       contextData["tvStation"] = "Sample TV Station";
-      ```
-
+     ```js
+     /* Set context data */
+      var contextData = {};
+     
+      //Standard metadata
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Episode";
+      contextData[ADB.Media.VideoMetadataKeys] = "Sample Show";
+     
+      //Custom metadata
+      contextData["isUserLoggedIn"] = "false";
+      contextData["tvStation"] = "Sample TV Station";
+     ```
 
 1. **Suivi de l’intention de démarrer la lecture**
 
