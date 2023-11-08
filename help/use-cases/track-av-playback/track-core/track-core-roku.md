@@ -5,10 +5,10 @@ uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '771'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '792'
+ht-degree: 92%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 >[!IMPORTANT]
+>
 >Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/getting-started/download-sdks.md).
 
 1. **Configuration initiale du suivi**
@@ -105,18 +106,19 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 [Mise en œuvre de métadonnées standard sur Roku ](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
-      >[!NOTE]
-      >Il est facultatif de joindre un objet de métadonnées vidéo standard à l’objet multimédia.
+     >[!NOTE]
+     >
+     >Il est facultatif de joindre un objet de métadonnées vidéo standard à l’objet multimédia.
 
    * **Métadonnées personnalisées**
 
-      Créez un objet de variable pour les variables personnalisées et renseignez les données de cette vidéo. Par exemple :
+     Créez un objet de variable pour les variables personnalisées et renseignez les données de cette vidéo. Par exemple :
 
-      ```
-      mediaContextData = {}
-      mediaContextData["cmk1"] = "cmv1"
-      mediaContextData["cmk2"] = "cmv2"
-      ```
+     ```
+     mediaContextData = {}
+     mediaContextData["cmk1"] = "cmv1"
+     mediaContextData["cmk2"] = "cmv2"
+     ```
 
 1. **Suivi de l’intention de démarrer la lecture**
 
@@ -127,12 +129,15 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
    ```
 
    >[!TIP]
+   >
    >La deuxième valeur est le nom d’objet de métadonnées vidéo personnalisé que vous avez créé à l’étape 2.
 
    >[!IMPORTANT]
+   >
    >`trackSessionStart` effectue le suivi de l’intention de lecture de l’utilisateur, et non du début de la lecture. Cette API est utilisée pour charger les données/métadonnées de la vidéo et estimer le temps jusqu’au démarrage de la mesure QoS (durée entre `trackSessionStart` et `trackPlay`).
 
    >[!NOTE]
+   >
    >Si vous n’utilisez pas de métadonnées vidéo personnalisées, envoyez simplement un objet vide pour l’argument `data` dans `trackSessionStart`, tel que décrit dans la ligne commentée de l’exemple iOS ci-dessus.
 
 1. **Suivi du début réel de la lecture**
@@ -145,12 +150,18 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 1. **Mise à jour de la valeur de la tête de lecture**
 
-   Lorsque la tête de lecture du média se déplace, informez le SDK en appelant lʼAPI `mediaUpdatePlayhead`. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour. <br /> Remarque : lors de l’utilisation de marqueurs de progression, la durée du contenu est une donnée obligatoire et le curseur de lecture doit être mis à jour en tant que nombre de secondes écoulées depuis le début de l’élément média, en commençant par 0.
-
+   Lorsque le curseur de lecture multimédia change, informez le SDK en appelant la fonction `mediaUpdatePlayhead` API. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >Tenez compte des points suivants lors de l’appel de la fonction `mediaUpdatePlayhead` API :
+   >* Lors de l’utilisation de marqueurs de progression, la durée du contenu est requise et le curseur de lecture doit être mis à jour en tant que nombre de secondes à partir du début de l’élément multimédia, en commençant par 0.
+   >* Lors de l’utilisation des SDK Media, vous devez appeler la méthode `mediaUpdatePlayhead` API au moins une fois par seconde.
+
 
 1. **Suivi de la fin de la lecture**
 

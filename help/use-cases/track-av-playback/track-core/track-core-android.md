@@ -5,8 +5,8 @@ uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '708'
 ht-degree: 100%
 
@@ -16,6 +16,7 @@ ht-degree: 100%
 
 Cette documentation aborde le suivi dans la version 2.x du SDK.
 >[!IMPORTANT]
+>
 >Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger le Guide du développeur 1.x pour Android dans la rubrique [Téléchargement des SDK](/help/getting-started/download-sdks.md).
 
 1. **Configuration initiale du suivi**
@@ -61,26 +62,26 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
    * **Métadonnées standard**
 
-      [Mise en œuvre de métadonnées standard sur Android](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
+     [Mise en œuvre de métadonnées standard sur Android](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-android.md)
 
-      >[!NOTE]
-      >
-      >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
+     >[!NOTE]
+     >
+     >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
 
       * Référence de l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
       * Consultez la liste complète des métadonnées vidéo disponibles dans la rubrique [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md).
+
    * **Métadonnées personnalisées**
 
-      Créez un dictionnaire pour les variables personnalisées et renseignez les données de ce média. Par exemple :
+     Créez un dictionnaire pour les variables personnalisées et renseignez les données de ce média. Par exemple :
 
-      ```java
-      HashMap<String, String> mediaMetadata =  
-        new HashMap<String, String>();
-      mediaMetadata.put("isUserLoggedIn", "false");
-      mediaMetadata.put("tvStation", "Sample TV Station");
-      mediaMetadata.put("programmer", "Sample programmer");
-      ```
-
+     ```java
+     HashMap<String, String> mediaMetadata =  
+       new HashMap<String, String>();
+     mediaMetadata.put("isUserLoggedIn", "false");
+     mediaMetadata.put("tvStation", "Sample TV Station");
+     mediaMetadata.put("programmer", "Sample programmer");
+     ```
 
 1. **Suivi de l’intention de démarrer la lecture**
 

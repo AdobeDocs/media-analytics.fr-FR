@@ -5,10 +5,10 @@ uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '750'
-ht-degree: 100%
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
+source-wordcount: '770'
+ht-degree: 93%
 
 ---
 
@@ -46,24 +46,24 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
    * **Métadonnées vidéo standard**
 
-      [Mise en œuvre de métadonnées standard sur Chromecast](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
+     [Mise en œuvre de métadonnées standard sur Chromecast](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-chromecast.md)
 
-      >[!NOTE]
-      >
-      >Il est facultatif de joindre un objet de métadonnées vidéo standard à l’objet multimédia.
+     >[!NOTE]
+     >
+     >Il est facultatif de joindre un objet de métadonnées vidéo standard à l’objet multimédia.
 
    * **Métadonnées personnalisées**
 
-      Créez un objet de variable pour les variables personnalisées et renseignez les données de cette vidéo. Par exemple :
+     Créez un objet de variable pour les variables personnalisées et renseignez les données de cette vidéo. Par exemple :
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **Suivi de l’intention de démarrer la lecture**
 
@@ -91,11 +91,17 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 1. **Mettre à jour la valeur du curseur de lecture**
 
-   Mettez à jour la valeur de la position du `mediaUpdatePlayhead` plusieurs fois lorsque le curseur de lecture change. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour. <br />  Remarque : lors de l’utilisation de marques de progression, la durée du contenu est une donnée obligatoire et le curseur de lecture doit être mis à jour en tant que nombre de secondes écoulées depuis le début de l’élément média, en commençant par 0.
+   Mettez à jour la valeur de la position du `mediaUpdatePlayhead` plusieurs fois lorsque le curseur de lecture change. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour.
 
    ```
-   ADBMobile().mediaUpdatePlayhead(position)
+   ADBMobile().media.updatePlayhead(position)
    ```
+
+   >[!NOTE]
+   >
+   >Tenez compte des points suivants lors de l’appel de la fonction `media.updatePlayhead` API :
+   >* Lors de l’utilisation de marqueurs de progression, la durée du contenu est requise et le curseur de lecture doit être mis à jour en tant que nombre de secondes à partir du début de l’élément multimédia, en commençant par 0.
+   >* Lors de l’utilisation des SDK Media, vous devez appeler la méthode `media.updatePlayhead` API au moins une fois par seconde.
 
 1. **Suivi de la fin de la lecture**
 

@@ -5,8 +5,8 @@ uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+workflow-type: tm+mt
 source-wordcount: '711'
 ht-degree: 100%
 
@@ -17,6 +17,7 @@ ht-degree: 100%
 Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 >[!IMPORTANT]
+>
 >Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK](/help/getting-started/download-sdks.md).
 
 1. **Configuration initiale du suivi**
@@ -70,24 +71,23 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
       * [Mise en œuvre de métadonnées standard sur iOS](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-ios.md)
       * **Clés de métadonnées vidéo**
-
-         [Clés de métadonnées iOS](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
+        [Clés de métadonnées iOS](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)
 
       * Consultez la liste complète des métadonnées vidéo dans la rubrique [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md).
-      >[!NOTE]
-      >
-      >Il est facultatif de joindre un objet de métadonnées vidéo standard à l’objet multimédia.
+
+     >[!NOTE]
+     >
+     >Il est facultatif de joindre un objet de métadonnées vidéo standard à l’objet multimédia.
 
    * **Métadonnées personnalisées**
 
-      Créez un objet de variable pour les variables personnalisées et renseignez les données de cette vidéo. Par exemple :
+     Créez un objet de variable pour les variables personnalisées et renseignez les données de cette vidéo. Par exemple :
 
-      ```
-      NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
-      [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
-      [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
-      ```
-
+     ```
+     NSMutableDictionary *videoMetadata = [[NSMutableDictionary alloc] init];
+     [videoMetadata setObject:@"false" forKey:@"isUserLoggedIn"];
+     [videoMetadata setObject:@"Sample TV station" forKey:@"tvStation"];
+     ```
 
 1. **Suivi de l’intention de démarrer la lecture**
 

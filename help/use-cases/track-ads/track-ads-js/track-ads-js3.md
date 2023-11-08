@@ -4,7 +4,7 @@ description: Mettez en œuvre le suivi des publicités dans les applications de 
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: fd9f0a7f4592c01082bcad015351d9128df2f8c9
+source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 88%
@@ -133,13 +133,14 @@ Consultez le scénario de suivi [Lecture VOD avec publicités preroll](/help/use
 
 ## Suivi des publicités granulaire
 
+L’intervalle de ping de publicité par défaut est `10 seconds`.
+
 Vous pouvez configurer un suivi des publicités granulaires pour activer `1 second` suivi des publicités.
 
-Ces informations doivent être fournies lors du démarrage d’une session de suivi.
-
->[!NOTE]
+>[!IMPORTANT]
 >
->   L’intervalle de ping de publicité par défaut est `10 seconds`.
+>Ces informations doivent être fournies lors du démarrage d’une session de suivi.
+
 
 
 **Syntaxe**
