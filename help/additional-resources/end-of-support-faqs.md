@@ -4,9 +4,9 @@ description: Cette rubrique comprend des questions fréquentes concernant l’ab
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: b955b20495a504020a214c3a9e32b676701ee4cc
+source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '602'
 ht-degree: 79%
 
 ---
@@ -20,7 +20,7 @@ Cela signifie qu’Adobe ne fournit plus de correctifs, de mises à jour liées 
 
 ## 5 choses à savoir
 
-1. Les SDK mobiles v4 ne sont plus pris en charge à compter du 31 août 2021. Vous devez migrer vers les SDK mobiles Adobe Experience Platform (AEP) pour iOS et Android. Pour plus d’informations, reportez-vous à la [FAQ sur l’abandon de la prise en charge des SDK mobiles de version 4](https://developer.adobe.com/client-sdks/documentation/v4-end-of-life-faq/).
+1. Les SDK mobiles v4 ne sont plus pris en charge à compter du 31 août 2021. Vous devez migrer vers les SDK mobiles Adobe Experience Platform (AEP) pour iOS et Android.
 
 1. La mise en œuvre d’Analytics for Streaming Media requiert le SDK mobile AEP ainsi que l’utilisation des extensions Analytics et Media Analytics. À compter du 1er septembre 2021, vous devrez utiliser les nouveaux SDK et extensions AEP Mobile.  Les extensions Media Analytics sont configurées à l’aide des balises Adobe (collecte de données). Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
 
