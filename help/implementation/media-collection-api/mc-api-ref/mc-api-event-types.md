@@ -5,10 +5,10 @@ uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '353'
-ht-degree: 100%
+source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+workflow-type: tm+mt
+source-wordcount: '364'
+ht-degree: 88%
 
 ---
 
@@ -81,7 +81,7 @@ Signale la survenue d’une erreur.
 
 Permet d’indiquer au serveur principal Media Analytics de fermer immédiatement la session lorsque l’utilisateur a arrêté de regarder le contenu et ne reviendra probablement pas.
 
-Si vous n’envoyez pas d’événement `sessionEnd`, une session abandonnée expirera normalement (si aucun événement n’est reçu pendant 10 minutes, ou si aucun mouvement du curseur de lecture n’a lieu pendant 30 minutes), et la session est supprimée par le serveur principal.
+Si une `sessionEnd` n’est pas envoyé, une session abandonnée sera [délai d’expiration normalement](../mc-api-impl/mc-api-timeout.md) (soit qu’aucun événement n’est reçu pendant 10 minutes, soit qu’aucun mouvement du curseur de lecture ne se produit pendant 30 minutes). De plus, tous les appels de médias ultérieurs effectués avec cet ID de session seront ignorés.
 
 ## sessionComplete
 
