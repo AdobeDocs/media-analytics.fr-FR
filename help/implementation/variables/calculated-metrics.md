@@ -5,10 +5,10 @@ uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '256'
-ht-degree: 100%
+source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+workflow-type: tm+mt
+source-wordcount: '241'
+ht-degree: 90%
 
 ---
 
@@ -26,10 +26,10 @@ Pour plus dʼinformations sur les mesures calculées Adobe Analytics, voir [Mesu
 |---|---|---|
 | Nombre moyen de publicités par flux de média | Démarrages de publicité par démarrages de média | `Ad Starts / Media Starts` |
 | Nombre moyen de chapitres par flux de média | Démarrages de chapitre par démarrages de média | `Chapter Start / Media Starts` |
-| Temps moyen passé sur le média | Temps total passé par démarrages de média (HH:MM:SS) | `Media Time Spent / Media Starts` |
-| Temps moyen Temps passé sur le contenu | Temps passé sur le contenu par démarrage de contenu (HH:MM:SS) | `Content Time Spent / Content Start` |
-| Temps moyen passé sur la publicité | Temps passé sur la publicité par démarrage de publicité (HH:MM:SS) | `Ad Time Spent / Ad Start` |
-| Temps moyen Passé sur le chapitre | Temps passé sur le chapitre par démarrage de chapitre (HH:MM:SS) | `Chapter Time Spent / Chapter Start` |
+| Temps moyen passé sur le média | Durée totale de la visite par démarrage de média (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
+| Temps moyen Temps passé sur le contenu | Temps passé sur le contenu par démarrage de contenu (`HH:MM:SS`) | `Content Time Spent / Content Start` |
+| Temps moyen passé sur la publicité | Temps passé sur la publicité par démarrage de publicité (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
+| Temps moyen Passé sur le chapitre | Temps passé par chapitre par démarrage de chapitre (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
 | Taux d’achèvement du média | Taux de contenu terminé par rapport au média initié (%) | `Content Completes/ Media Starts` |
 | Taux de contenus terminés | Taux de contenus terminés par rapport aux démarrages de contenu (%) | `Content Completes / Content Starts` |
 | Taux d’achèvement de la publicité | Taux de publicités terminées par rapport aux démarrages de publicité (%) | `Ad Completes / Ad Starts` |
