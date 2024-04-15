@@ -4,9 +4,9 @@ description: « Découvrez les principaux périphériques pris en charge par Ad
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
-workflow-type: ht
-source-wordcount: '307'
+source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+workflow-type: tm+mt
+source-wordcount: '306'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,7 @@ Pour plus d’informations sur l’implémentation de Media sur Edge, consultez 
 | | Appareils Windows | | ![Pris en charge](/help/assets/icon-blue-check.png) | | | ![Pris en charge](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |
 | | Apple TV (tvOS) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png) |
-| | Roku | (En cours de planification) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Pris en charge](/help/assets/icon-blue-check.png)<br>(natif) |
+| | Roku | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png)<br>(BrightScript) | ![Pris en charge](/help/assets/icon-blue-check.png)<br>(natif) |
 | | Fire TV (Système d’exploitation Fire) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png) |
 | | Android TV | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png) |
 | | Chromecast | | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) |
