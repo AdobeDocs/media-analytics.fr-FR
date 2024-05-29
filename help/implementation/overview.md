@@ -5,14 +5,14 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 984f058fda15b1c5e960e4c8d8e2378308d2b541
-workflow-type: ht
-source-wordcount: '471'
-ht-degree: 100%
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 81%
 
 ---
 
-# Implémentation de Streaming Media for Adobe Analytics ou Customer Journey Analytics
+# Implémentation de Streaming Media for Adobe Analytics ou Customer Journey Analytics
 
 Il existe plusieurs façons d’implémenter Streaming Media. Pour une comparaison détaillée des appareils et plateformes pris en charge pour les méthodes d’implémentation décrites sur cette page, consultez [Appareils et plateformes pris en charge](/help/getting-started/supported-devices.md).
 
@@ -20,19 +20,15 @@ Il existe plusieurs façons d’implémenter Streaming Media. Pour une comparais
 
 Nous recommandons d’utiliser Edge lors de l’implémentation de Media Analytics pour l’ensemble des nouveaux clients et des nouvelles clientes d’Adobe Analytics ou de Customer Journey Analytics.
 
-* **SDK/Extension pour réseau Edge pour Media :** collecte des données à partir des appareils iOS et Android et les envoie à Edge. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
+* **Media for Edge Network SDK / Extension :** Collecte des données à partir d’appareils Web, iOS et Android ou Roku et les envoie à l’Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 
-  Pour plus d’informations sur le SDK/l’extension pour réseau Edge pour Media, consultez [Installer Media Analytics avec Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+  Pour plus d’informations sur le SDK/l’extension Media for Edge Network, voir [Installation de Media Analytics avec Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-  >[!NOTE]
-  >
-  >Cette méthode d’implémentation ne prend actuellement pas en charge le SDK Web ou Roku. Toutefois, les deux sont pris en charge lors de l’implémentation avec l’API Media Edge.
+* **API Media Edge :** Peut être personnalisé pour collecter des données à partir de n’importe quel appareil ou format (y compris les appareils mobiles, web et de bureau) et envoyer des données à l’Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 
-* **API Media Edge :** peut être personnalisée pour collecter des données à partir de n’importe quel appareil ou format (y compris les appareils mobiles, web et de bureau) et envoyer des données à Edge. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
+  Pour plus d’informations sur l’API Media Edge, voir [Présentation de l’API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
-  <!-- For more information about the Media Edge API, see (link to John's docs when they're ready) -->
-
-![Workflow CJA](assets/cja-implementation.png)
+![Workflow CJA](assets/streaming-media-edge.png)
 
 ## Méthodes d’implémentation Adobe Analytics uniquement
 

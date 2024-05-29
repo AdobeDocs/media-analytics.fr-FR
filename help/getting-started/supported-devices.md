@@ -4,9 +4,9 @@ description: « Découvrez les principaux périphériques pris en charge par Ad
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 1cc995959aa9070f895e0d03be62533bd3a0ca0d
+source-git-commit: b538b973509ee2a2c2010da300cbed1ce06ec2af
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '305'
 ht-degree: 100%
 
 ---
@@ -30,7 +30,7 @@ Pour plus d’informations sur l’implémentation de Media sur Edge, consultez 
 | Plateformes et appareils de streaming | | SDK/Extension pour Media pour réseau Edge | API Media Edge | Extension Media avec balises ou SDK AEP Mobile | SDK Media | API Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
 | Web/Mobile Web | | | | | |
-| | Navigateurs JavaScript | (Bientôt disponible) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) |
+| | Navigateurs JavaScript | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) |
 | Application mobile | | | | | |
 | | Appareils iOS | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png) | |
 | | Appareils Android | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png) |

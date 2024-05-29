@@ -4,10 +4,10 @@ description: Découvrez comment mettre en oeuvre Adobe Streaming Media avec Expe
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 798a2b155742476f0bf648b482c75e0b03449977
+source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
 workflow-type: tm+mt
-source-wordcount: '1807'
-ht-degree: 10%
+source-wordcount: '1837'
+ht-degree: 9%
 
 ---
 
@@ -17,15 +17,11 @@ Adobe Experience Platform Edge vous permet d’envoyer des données destinée
 
 Le graphique suivant illustre la manière dont une mise en oeuvre de Media Analytics peut utiliser Experience Platform Edge pour rendre les données disponibles dans Analysis Workspace, que ce soit dans Adobe Analytics ou dans Customer Journey Analytics :
 
-![Workflow CJA](assets/cja-implementation.png)
+![Workflow CJA](assets/streaming-media-edge.png)
 
 Pour obtenir un aperçu de toutes les options de mise en oeuvre, y compris les méthodes de mise en oeuvre qui n’utilisent pas Experience Platform Edge, voir [Mise en oeuvre de médias en flux continu pour Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
 
->[!IMPORTANT]
->
->Les médias en flux continu ne sont pas encore intégrés au SDK Web AEP.
-
-Que vous utilisiez le SDK Mobile ou l’API pour mettre en oeuvre des médias en flux continu avec Experience Edge, vous devez d’abord suivre les sections suivantes :
+Que vous utilisiez le SDK Web de Adobe Experience Platform, le SDK Mobile de Adobe Experience Platform, le SDK Roku de Adobe Experience Platform ou l’API pour mettre en oeuvre les médias en flux continu avec Experience Edge, vous devez d’abord suivre les sections suivantes :
 
 ## Configuration du schéma dans Adobe Experience Platform
 
@@ -35,7 +31,13 @@ Pour créer et configurer un schéma :
 
 1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans la section [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
-   Lors de la création du schéma, choisissez [!UICONTROL **XDM ExperienceEvent**] de la [!UICONTROL **Créer un schéma**] menu déroulant.
+1. Sur la page Détails du schéma lors de la création du schéma, sélectionnez [!UICONTROL **Événement d’expérience**] lors du choix de la classe de base pour le schéma.
+
+   ![Ajout de groupes de champs](assets/schema-experience-event.png)
+
+1. Sélectionnez [!UICONTROL **Suivant**].
+
+1. Spécifiez un nom d’affichage et une description de schéma, puis sélectionnez [!UICONTROL **Terminer**].
 
 1. Dans le [!UICONTROL **Composition**] , dans la zone [!UICONTROL **Groupes de champs**] , sélectionnez [!UICONTROL **Ajouter**], puis recherchez et ajoutez les nouveaux groupes de champs suivants au schéma :
    * `Adobe Analytics ExperienceEvent Template`
@@ -46,7 +48,7 @@ Pour créer et configurer un schéma :
 
    ![Ajout de groupes de champs](assets/schema-field-groups-added.png)
 
-1. Sélectionner [!UICONTROL **Confirmer**] pour enregistrer vos modifications.
+1. Sélectionner [!UICONTROL **Enregistrer**] pour enregistrer vos modifications.
 
 1. (Facultatif) Vous pouvez masquer certains champs qui ne sont pas utilisés par l’API Media Edge. Le masquage de ces champs facilite la lecture et la compréhension du schéma, mais il n’est pas obligatoire. Ces champs ne font référence qu’à ceux de la section `MediaAnalytics Interaction Details` fieldgroup
 
@@ -141,7 +143,7 @@ Pour créer et configurer un schéma :
 
       * [!UICONTROL **Adobe Analytics**] (si vous utilisez Adobe Analytics)
 
-        Si vous utilisez Adobe Analytics, veillez à définir une suite de rapports, comme décrit dans la section . [Définition d’une suite de rapports](#define-a-report-suite) dans cet article.
+        Si vous utilisez Adobe Analytics, veillez à définir une suite de rapports, comme décrit à la section [Création d’une suite de rapports](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (en cas d’utilisation de Customer Journey Analytics)
 
@@ -311,7 +313,11 @@ Pour créer et configurer un schéma :
 
 Selon le type de données à envoyer à Experience Platform Edge, vous pouvez utiliser l’une des méthodes suivantes :
 
-### Mobile : utilisation du SDK mobile Adobe Experience Platform
+### Web : utilisation du SDK Web de Adobe Experience Platform
+
+
+
+### Mobile : utilisation du SDK Mobile Adobe Experience Platform
 
 Utilisez les ressources de documentation suivantes pour terminer la mise en oeuvre pour iOS et Android :
 
