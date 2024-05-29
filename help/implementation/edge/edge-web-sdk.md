@@ -3,7 +3,7 @@ title: Envoi de données web vers Edge avec le SDK web Adobe Experience Platform
 description: Découvrez comment envoyer des données Adobe Streaming Media à Experience Platform Edge avec le SDK Web Adobe Experience Platform.
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4e6ae687175b45680d8de071dbc3011f18921a44
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Pour les clients qui utilisent le SDK Media JS, le SDK Web fournit un chemin de 
 
 [!DNL Web SDK] comprend une commande pour récupérer un outil de suivi Media Analytics. Vous pouvez utiliser cette commande pour créer une instance d’objet, puis, en utilisant les mêmes API que celles fournies par la variable [Bibliothèque JS Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), effectuez le suivi des événements multimédia.
 
-Voir [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getMediaAnalyticsTracker) documentation pour obtenir des détails complets sur les méthodes prises en charge.
+Voir [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) documentation pour obtenir des détails complets sur les méthodes prises en charge.
 
 Le fragment de code ci-dessous montre comment récupérer l’instance de suivi multimédia dans Media JS.
 

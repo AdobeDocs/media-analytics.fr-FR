@@ -4,9 +4,9 @@ description: Découvrez comment mettre en oeuvre Adobe Streaming Media avec Expe
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 39869d5eeea02e81c204d995ac158b3e7b7541c7
+source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1862'
 ht-degree: 9%
 
 ---
@@ -315,7 +315,11 @@ Selon le type de données à envoyer à Experience Platform Edge, vous pouvez ut
 
 ### Web : utilisation du SDK Web de Adobe Experience Platform
 
+* [Prise en main](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
+* [Envoi de données web vers Edge avec le SDK web Adobe Experience Platform](/help/implementation/edge/edge-web-sdk.md)
+
+* [Migration vers Adobe Streaming Media pour l’extension Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Mobile : utilisation du SDK Mobile Adobe Experience Platform
 
