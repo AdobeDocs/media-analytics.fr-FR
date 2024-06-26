@@ -1,27 +1,27 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Adobe Analytics for Streaming Media
-breadcrumb-title: Guide de Media Analytics
-user-guide-description: Implémentation d’Adobe Analytics for Streaming Media. Inclut le SDK Media et l’API Media Collection.
+user-guide-title: Module complémentaire Collection de médias en flux continu
+breadcrumb-title: Guide de la collection de médias en flux continu
+user-guide-description: Mise en oeuvre de médias en flux continu. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: e23369e276d2e851be84a29fd7dde43eafbb2060
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '900'
-ht-degree: 98%
+source-wordcount: '895'
+ht-degree: 94%
 
 ---
 
 
-# Adobe Analytics for Streaming Media {#using}
+# Module complémentaire Collection de médias en flux continu {#using}
 
-+ [Guide d’analyse des médias en flux continu](media-overview.md)
++ [Guide de la collection de médias en flux continu](media-overview.md)
 + Notes de mise à jour {#release-notes}
-   + [Notes de mise à jour des médias en flux continu](additional-resources/release-notes.md)
+   + [Notes de mise à jour de Streaming Media Collection](additional-resources/release-notes.md)
 + Prise en main {#getting-started}
    + [Conditions préalables](getting-started/prereqs.md)
    + [Appareils pris en charge](getting-started/supported-devices.md)
-   + [Documentation sur les médias en flux continu](getting-started/implementation-documentation.md)
+   + [Documentation de mise en oeuvre de la collecte de médias en flux continu](getting-started/implementation-documentation.md)
    + [SDK, bibliothèques et extensions](getting-started/download-sdks.md)
    + Fin de la prise en charge {#end-of-support}
       + [Fin de la prise en charge du SDK Media Analytics Mobile](additional-resources/end-of-support-faqs.md)
@@ -172,7 +172,7 @@ ht-degree: 98%
       + Configuration de JavaScript {#setup-javascript}
          + [Configuration de JavaScript 2.x](legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
    + [À propos de la mesure de pulsation](legacy/heartbeat-measurement.md)
-   + [Adobe Primetime et l’analyse des médias en flux continu](legacy/intro-to-ava/implementation-paths/primetime-path.md)
+   + [Adobe Primetime](legacy/intro-to-ava/implementation-paths/primetime-path.md)
    + [Activation de Adobe Audience Management](legacy/intro-to-ava/am-enablement.md)
    + [Mise en œuvre d’un lien personnalisé](legacy/measurement-options/cl-in-aa/cl-impl-guide.md)
    + Suivi du jalon hérité {#legacy-milestone-tracking}

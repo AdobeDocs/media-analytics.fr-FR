@@ -4,25 +4,25 @@ description: Découvrez comment les pulsations servent à collecter des mesures 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: a7d897c6f6fbc6ed0d5b71f5801ab18ee21f0411
-workflow-type: ht
-source-wordcount: '311'
-ht-degree: 100%
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 86%
 
 ---
 
 # À propos de la mesure de pulsation
 
-Adobe Analytics utilise des « pulsations » pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Adobe Analytics for Streaming Media mesure les pulsations à l’aide d’Adobe Launch avec l’extension Media Analytics, le SDK Media et l’API Media Collection. Les composants `AppMeasurement` et `VisitorID` sont utilisés pour recevoir des données vidéo.
+Le module complémentaire Adobe Streaming Media Collection utilise des &quot;pulsations&quot; pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Les médias en flux continu mesurent les pulsations à l’aide d’Adobe Launch avec l’extension Media Analytics, le SDK Media et l’API Media Collection. Les composants `AppMeasurement` et `VisitorID` sont utilisés pour recevoir des données vidéo.
 
-L’utilisation de pulsations Adobe Analytics pour les médias en flux continu présente les avantages suivants :
+L’utilisation des pulsations dans le module complémentaire Collection de médias en flux continu offre les avantages suivants :
 
 | Fonctionnalité | Description |
 |---|---|
 | Événements de médias | Des événements détaillés et personnalisés sont envoyés toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. |
-| Mesures et dimensions | Des mesures, dimensions et benchmarks standardisés et clairs pour tous les fournisseurs. Grâce à une solution standardisée sur toutes les plateformes, vous pouvez utiliser des variables uniformes sur l’ensemble de vos médias et plateformes pour permettre une comparaison plus efficace entre les campagnes, les périphériques et les fournisseurs. |
+| Mesures et dimensions | Des mesures, dimensions et benchmarks standardisés et clairs pour tous les fournisseurs. Grâce à une solution standardisée sur toutes les plateformes, vous pouvez utiliser des variables uniformes sur l’ensemble de vos médias et plateformes pour permettre une comparaison plus efficace entre les campagnes, les appareils et les fournisseurs. |
 | Intégrations | L’ID Experience Cloud est lié à Adobe Experience Cloud pour une analyse croisée plus facile. Grâce à l’intégration automatique d’Adobe Experience Cloud, vous pouvez segmenter les audiences de vos médias, les cibler et faire des recommandations de médias en fonction de leurs préférences. |
 | Tarifs | Suivi transparent par diffusion média (unique) |
 | Mise en œuvre et support | Configuration rationalisée avec mises à jour et améliorations constants. Grâce à un processus d’implémentation rationalisé, vous pouvez rapidement mapper des variables à l’aide de l’API du lecteur et valider les implémentations à l’aide de l’outil de débogage Adobe pour vous assurer que toutes les variables nécessaires sont suivies avec précision. |
 | Partage de partenaires | Federated Analytics et Certified Metrics. Grâce aux données partagées par le biais de Federated Analytics, vous pouvez tirer parti de nos fonctionnalités de partage de médias leaders du secteur afin d’évaluer de manière holistique les données de l’ensemble de vos partenaires de distribution de médias (opérateurs, programmeurs et distributeurs). |
-| Suivi avancé | Suivi du contenu téléchargé, suivi de la récupération des erreurs et observateurs simultanés. Vous pouvez effectuer le suivi du contenu multimédia en streaming téléchargé et lu sur un périphérique, quelle que soit sa connectivité. |
+| Suivi avancé | Suivi du contenu téléchargé, suivi de la récupération des erreurs et observateurs simultanés. Vous pouvez effectuer le suivi du contenu multimédia en streaming téléchargé et lu sur un appareil, quelle que soit sa connectivité. |

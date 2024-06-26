@@ -4,22 +4,22 @@ description: Découvrez comment implémenter Adobe Streaming Media pour les ap
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: 1e4babe0df218342fc4836155139d908ba113510
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 95%
+source-wordcount: '198'
+ht-degree: 81%
 
 ---
 
 # Installer les SDK mobiles {#install-mobile-sdks}
 
-Pour implémenter des médias en streaming pour les applications mobiles sur Android ou iOS, installez et configurez les éléments suivants :
+Pour mettre en oeuvre le module complémentaire de collecte de médias en flux continu pour les applications mobiles sur Android ou iOS, installez et configurez les éléments suivants :
 
 * **SDK Mobile Adobe Experience Platform**
 
   Pour collecter des données, utilisez l’une des méthodes suivantes :
    * Balises dans Adobe Experience Platform. Les balises dans Adobe Experience Platform représentent une solution de gestion des balises qui vous permet de déployer le code Analytics parallèlement à d’autres exigences de balisage.
-   * Adobe Experience Platform Edge
+   * Adobe Experience Platform Edge
 
 * **SDK Media pour Android** ou **SDK Media pour iOS**
 

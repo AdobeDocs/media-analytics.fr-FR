@@ -5,10 +5,10 @@ uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '668'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 93%
 
 ---
 
@@ -16,10 +16,10 @@ ht-degree: 100%
 
 ## Conditions préalables {#roku-prerequisites}
 
-* **Obtenir des paramètres de configuration valides pour Media Analytics**
+* **Obtention de paramètres de configuration valides pour le module complémentaire Collection de médias en flux continu**
 
-   Vous pouvez obtenir ces paramètres auprès d’un représentant Adobe une fois votre compte Media Analytics configuré.
-* **Inclure les API suivantes dans votre lecteur multimédia**
+  Vous pouvez obtenir ces paramètres auprès d’un représentant d’Adobe après avoir configuré votre compte de module complémentaire de collecte de médias en flux continu Adobe.
+* **Incluez les API suivantes dans votre lecteur multimédia**
 
    * _Une API pour vous abonner aux événements du lecteur_ - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
    * _Une API qui fournit des informations au lecteur_ - Ces informations incluent des éléments tels que le nom du média et la position de la tête de lecture.
@@ -35,13 +35,14 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesure
       * `adbmobile.brs` : Ce fichier de bibliothèque sera inclus dans le dossier source de votre application Roku.
 
       * `ADBMobileConfig.json` : Ce fichier de configuration SDK est personnalisé pour votre application.
+
    1. Ajoutez le fichier de bibliothèque et le fichier de configuration JSON à la source de votre projet.
 
-      Le fichier JSON utilisé pour configurer Adobe Mobile comporte une clé exclusive pour Media Analytics appelée `mediaHeartbeat`. C’est à cet endroit que se trouvent les paramètres de configuration de Media Analytics.
+      Le fichier JSON utilisé pour configurer Adobe Mobile comporte une clé exclusive pour Media Analytics appelée `mediaHeartbeat`. C’est à cet emplacement que les paramètres de configuration de Media Analytics appartiennent.
 
       >[!TIP]
       >
-      >Un exemple de fichier JSON `ADBMobileConfig` est fourni avec le module. Contactez vos représentants Adobe au sujet des paramètres.
+      >Un exemple de fichier JSON `ADBMobileConfig` est fourni avec le package. Contactez vos représentants Adobe au sujet des paramètres.
 
       Par exemple :
 
@@ -88,7 +89,7 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesure
 
       | Paramètre de configuration | Description     |
       | --- | --- |
-      | `server` | Chaîne représentant l’URL du point de terminaison de suivi sur le serveur principal. |
+      | `server` | Chaîne représentant l’URL du point d’entrée de suivi sur le serveur principal. |
       | `publisher` | Chaîne représentant l’identifiant unique de l’éditeur de contenu. |
       | `channel` | Chaîne représentant le nom du canal de distribution du contenu. |
       | `ssl` | Valeur booléenne qui indique si SSL doit être utilisé pour le suivi des appels. |
@@ -99,7 +100,6 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesure
       >[!IMPORTANT]
       >
       >Si `mediaHeartbeat` n’est pas correctement configuré, le module multimédia (VHL) entre dans un état d’erreur et arrête l’envoi des appels de suivi.
-
 
 1. Configurez l’identifiant visiteur Experience Cloud.
 

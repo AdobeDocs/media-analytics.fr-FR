@@ -4,10 +4,10 @@ description: « Découvrez comment mettre en œuvre le suivi de la qualité de l
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre sur t
 >
 >Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK.](/help/getting-started/download-sdks.md)
 
-## Implémentation de QOE
+## Mise en oeuvre de l’assouplissement quantitatif
 
 1. Identifiez le moment où le débit binaire change pendant la lecture du média et créez l’instance `qoeObject` à l’aide des informations QoE.
 

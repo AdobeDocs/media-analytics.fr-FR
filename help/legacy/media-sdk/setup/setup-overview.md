@@ -5,10 +5,10 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+workflow-type: tm+mt
 source-wordcount: '618'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -19,7 +19,7 @@ Après avoir téléchargé le SDK Media pour votre application ou lecteur vidéo
 
 ## Instructions générales de mise en œuvre {#general-implementation-guidelines}
 
-Trois composants principaux du SDK sont utilisés dans le suivi d’Adobe Streaming Media :
+Il existe trois composants principaux du SDK utilisés dans le suivi avec le module complémentaire Collection de médias en flux continu :
 * Media Heartbeat Config : le `MediaHeartbeatConfig` contient les paramètres de base de la création de rapports.
 * Media Heartbeat Delegate : le `MediaHeartbeatDelegate` contrôle la durée de lecture et l’objet QoS.
 * Media Heartbeat : le `MediaHeartbeat` correspond à la bibliothèque principale qui contient les membres et les méthodes.
@@ -119,11 +119,11 @@ Les mises en œuvre de suivi Media Analytics génèrent deux types d’appels de
 
 * **Serveur Adobe Analytics (AppMeasurement)** Pour plus d’informations sur les options du serveur de suivi, voir [Remplissage correct des variables trackingServer et trackingServerSecure.](https://helpx.adobe.com/fr/analytics/kb/determining-data-center.html)
 
-   >[!IMPORTANT]
-   >
-   >Un serveur de suivi RDC ou CNAME se résolvant sur un serveur RDC est requis pour le service d’identifiant visiteur Experience Cloud.
+  >[!IMPORTANT]
+  >
+  >Un serveur de suivi RDC ou CNAME se résolvant sur un serveur RDC est requis pour le service d’identifiant visiteur Experience Cloud.
 
-   Le serveur de suivi des analyses doit se terminer par « `.sc.omtrdc.net` » ou être un serveur CNAME.
+  Le serveur de suivi des analyses doit se terminer par « `.sc.omtrdc.net` » ou être un serveur CNAME.
 
 * ** Serveur Media Analytics (Heartbeats)**
 Ceci a toujours le format « `[your_namespace].hb.omtrdc.net` ». La valeur de « `[your_namespace]` » indique votre société et est fournie par Adobe.

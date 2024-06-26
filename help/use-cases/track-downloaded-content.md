@@ -1,14 +1,14 @@
 ---
-title: Comment effectuer le suivi du contenu téléchargé hors ligne dans Adobe Streaming Media
+title: Comment effectuer le suivi du contenu téléchargé hors ligne dans le module complémentaire Collection de médias en flux continu
 description: Découvrez comment utiliser la fonction Contenu téléchargé pour effectuer le suivi de la consommation multimédia lorsquʼun utilisateur est hors ligne.
 uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 100%
+source-wordcount: '697'
+ht-degree: 98%
 
 ---
 
@@ -22,15 +22,15 @@ Comparez les deux approches :
 
 * En ligne
 
-   Avec l’approche en temps réel, le lecteur multimédia envoie des données de suivi pour chaque événement du lecteur et envoie des pings réseau toutes les dix secondes (toutes les secondes pour les publicités) au serveur principal.
+  Avec l’approche en temps réel, le lecteur multimédia envoie des données de suivi pour chaque événement du lecteur et envoie des pings réseau toutes les dix secondes (toutes les secondes pour les publicités) au serveur principal.
 
 * Hors ligne (fonctionnalité Contenu téléchargé)
 
-   Avec cette approche de traitement par lot, les mêmes événements de session doivent être générés, mais ils sont stockés sur l’appareil jusqu’à ce qu’ils soient envoyés au serveur principal en tant que session unique (voir l’exemple ci-dessous).
+  Avec cette approche de traitement par lot, les mêmes événements de session doivent être générés, mais ils sont stockés sur l’appareil jusqu’à ce qu’ils soient envoyés au serveur principal en tant que session unique (voir l’exemple ci-dessous).
 
 Chaque approche a ses avantages et ses inconvénients :
 * Le scénario en ligne est suivi en temps réel ; cela nécessite une vérification de la connectivité avant chaque appel réseau.
-* Le scénario hors ligne (fonctionnalité Contenu téléchargé) ne nécessite qu’une vérification de la connectivité réseau, mais il requiert également une plus grande empreinte mémoire sur le périphérique.
+* Le scénario hors ligne (fonctionnalité Contenu téléchargé) ne nécessite qu’une vérification de la connectivité réseau, mais il requiert également une plus grande empreinte mémoire sur l’appareil.
 
 ## Mise en œuvre {#implementation}
 

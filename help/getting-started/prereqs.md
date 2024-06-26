@@ -1,29 +1,29 @@
 ---
-title: En savoir plus sur les conditions préalables requises pour les médias en flux continu.
-description: Prise en main d’Adobe Analytics for Streaming Media. Découvrez ce dont vous avez besoin pour implémenter Adobe Analytics for Streaming Media.
+title: En savoir plus sur les conditions préalables pour le module complémentaire Collection de médias en flux continu Adobe
+description: Prise en main du module complémentaire Collection de médias en flux continu. Découvrez ce dont vous avez besoin pour la mise en oeuvre.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: "Media Analytics, System Requirements"
 role: User, Admin, Data Engineer
-source-git-commit: b12e6547ef32bfad7e8d6787a26d6467bcfeb23c
-workflow-type: ht
-source-wordcount: '442'
-ht-degree: 100%
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+workflow-type: tm+mt
+source-wordcount: '435'
+ht-degree: 62%
 
 ---
 
-# Conditions préalables  {#prerequisites}
+# Conditions préalables {#prerequisites}
 
-Avant de commencer à implémenter les médias en streaming, effectuez les tâches suivantes :
+Avant de commencer la mise en oeuvre du module complémentaire Adobe de la collecte de médias en flux continu, effectuez les tâches suivantes :
 
-1. **Consulter la vue d’ensemble des médias en streaming**<br>
-Avant de commencer à implémenter les médias en streaming, consultez la [vue d’ensemble des médias en streaming](/help/media-overview.md) pour vous assurer que les médias en streaming répondent à vos besoins.
+1. **Présentation du module complémentaire Collection de médias en flux continu**<br>
+Avant de commencer à mettre en oeuvre le module complémentaire Collection de médias en flux continu, passez en revue les [Présentation du module complémentaire Collection de médias en flux continu](/help/media-overview.md) pour vous assurer qu’il répond à vos besoins.
 
-1. **Confirmer votre modèle de tarification des médias en streaming**<br>
-Le modèle de tarification actuel est basé sur les flux vidéo. Si nécessaire, contactez votre représentant ou représentante commercial(e) ou votre équipe Adobe chargée des comptes, dans la mesure où les médias en streaming sont vendus séparément, en tant que module complémentaire d’Adobe Analytics.<!--update when media SKUs are added to other AEP apps -->
+1. **Confirmation de votre modèle de tarification**<br>
+Le modèle de tarification actuel pour le module complémentaire Adobe Streaming Media Collection est basé sur les diffusions vidéo. Si nécessaire, contactez votre représentant commercial ou votre équipe de compte d’Adobe, car le module complémentaire est vendu séparément pour Adobe Analytics et Adobe Experience Platform.
 
-1. **Activer les rapports Adobe Analytics**<br>
-Pour activer les rapports dans Analytics et afficher le contenu et les données de publicité que vous collectez, vous devez activer les rapports dans Analytics. Voir [Activation des rapports multimédia](/help/reporting/media-reports-enable.md).
+1. **Activation des rapports Adobe Analytics**<br>
+Pour activer les rapports dans Analytics ou Customer Journey Analytics et afficher le contenu et les données de publicité que vous collectez, vous devez activer les rapports. Voir [Activation des rapports multimédia](/help/reporting/media-reports-enable.md).
 
 1. **Implémenter le service d’identité d’Adobe Experience Platform dans Experience Cloud**
 
@@ -41,7 +41,7 @@ Pour activer les rapports dans Analytics et afficher le contenu et les données 
 
 1. **Afficher les conditions préalables supplémentaires pour votre méthode d’implémentation**
 
-   Selon la manière dont vous prévoyez d’implémenter les médias en streaming, affichez les conditions préalables de l’une des méthodes d’implémentation :
+   Selon la manière dont vous prévoyez de mettre en oeuvre le module complémentaire de collecte de médias en flux continu, consultez les conditions préalables à l’une des méthodes de mise en oeuvre suivantes :
 
    * [Conditions préalables pour les implémentations Adobe Analytics uniquement](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
 

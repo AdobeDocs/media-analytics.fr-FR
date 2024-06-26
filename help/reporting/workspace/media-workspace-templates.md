@@ -5,7 +5,7 @@ uuid: 0024b06a-eaf5-4d2e-be45-aeda9d0554c1
 exl-id: a835f86a-a93a-4a56-91f4-14628cf48214
 feature: "Media Analytics, Workspace Basics"
 role: User, Admin
-source-git-commit: 7eeee7f035e5d9e7e327e60910c78bbdf02abff8
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 9%
@@ -16,15 +16,15 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->*Rapports* dans Workspace étaient auparavant connues sous le nom *templates*.
+>*Rapports* dans Workspace étaient auparavant appelées *templates*.
 
 Analysis Workspace propose un ensemble de rapports prédéfinis, disponibles par défaut, que vous pouvez utiliser pour analyser les données. Pour plus d’informations sur tous les rapports par défaut disponibles, voir [Affichage des rapports](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).
 
-Certains de ces rapports sont particulièrement utiles pour l’analyse des données de médias en flux continu, comme décrit dans les sections suivantes.
+Certains de ces rapports sont particulièrement utiles pour l’analyse des données multimédia en flux continu, comme décrit dans les sections suivantes.
 
 ## Présentation des rapports multimédia par défaut
 
-Voici une liste des rapports par défaut qui sont utiles pour analyser les données de médias en flux continu :
+Vous trouverez ci-dessous une liste des rapports par défaut qui sont utiles pour analyser les données multimédia en flux continu :
 
 * [!UICONTROL **Consommation de contenu multimédia**]: crée un rapport qui indique quel contenu est le plus consommé et attire le plus d’utilisateurs.
 

@@ -4,18 +4,18 @@ description: Cette rubrique comprend des questions fréquentes concernant l’ab
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
+source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 79%
+source-wordcount: '601'
+ht-degree: 74%
 
 ---
 
-# Media Analytics FAQ sur la fin de la prise en charge du SDK Mobile
+# FAQ sur l’abandon de la prise en charge du SDK Mobile Media Analytics
 
 Avec la fin de la prise en charge des SDK mobiles version 4 le 31 août 2021, Adobe a également arrêté la prise en charge des SDK mobiles Media Analytics pour iOS et Android. (Cela n’inclut pas le SDK Media Analytics pour les plateformes web (JS) et OTT telles que Chromecast et Roku, qui sont toujours prises en charge.)
 
-Cela signifie qu’Adobe ne fournit plus de correctifs, de mises à jour liées au système d’exploitation ou de prise en charge du SDK Mobile Media Analytics. Lors de la migration vers les nouveaux SDK Experience Platform, notez que la variable [Extensions Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) doit être mis en oeuvre pour activer Adobe Analytics pour les médias en streaming.
+Cela signifie qu’Adobe ne fournit plus de correctifs, de mises à jour liées au système d’exploitation ou de prise en charge du SDK Mobile Media Analytics. Lors de la migration vers les nouveaux SDK Experience Platform, notez que la variable [Extensions Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) doit être mis en oeuvre pour activer le module complémentaire Collection de médias en flux continu Adobe.
 
 
 ## 5 choses à savoir

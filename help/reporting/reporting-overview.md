@@ -5,10 +5,10 @@ uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '915'
-ht-degree: 100%
+source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+workflow-type: tm+mt
+source-wordcount: '914'
+ht-degree: 98%
 
 ---
 
@@ -18,7 +18,7 @@ Chaque suite de rapports qui collecte des mesures multimédia doit être configu
 
 >[!TIP]
 >
->Pour tirer parti des nouvelles capacités, les clients Media Analytics existants doivent réactiver le suivi multimédia de leurs RSID.
+>Pour tirer parti des nouvelles fonctionnalités, les clients de médias en flux continu existants doivent réactiver le suivi multimédia de leurs RSID.
 
 1. Dans [Adobe Analytics](https://experience.adobe.com), cliquez sur **[!UICONTROL Administration > Suites de rapports].**
 1. Sélectionnez la ou les suite(s) de rapports à l’emplacement où vous effectuez la collecte de données multimédia, puis cliquez sur **[!UICONTROL Modifier les paramètres > Gestion des médias > Création de rapports multimédia].**
@@ -31,27 +31,28 @@ Chaque suite de rapports qui collecte des mesures multimédia doit être configu
 
    * **Noyau multimédia**
 
-      La mesure des médias principaux est utilisée pour le contenu multimédia. Celle-ci utilise des eVars de solution (ou personnalisées) pour suivre le contenu, le type de contenu, le nom du lecteur de contenu et le canal de contenu. Les événements de solution (ou personnalisés) serviront pour les démarrages de média, les démarrages et les fins de contenu et le temps passé sur le contenu.
+     La mesure des médias principaux est utilisée pour le contenu multimédia. Celle-ci utilise des eVars de solution (ou personnalisées) pour suivre le contenu, le type de contenu, le nom du lecteur de contenu et le canal de contenu. Les événements de solution (ou personnalisés) serviront pour les démarrages de média, les démarrages et les fins de contenu et le temps passé sur le contenu.
 
    * **Publicités du contenu multimédia**
 
-      La mesure Publicités multimédia est utilisée pour la mesure des publicités dans le contenu multimédia. Elle utilise les eVars de solution pour mesurer la publicité, le nom du lecteur de publicités, la capsule et la position de la publicité dans la capsule. Les événements de solution serviront pour les démarrages et les fins de publicités, ainsi que le temps passé sur la publicité et la vidéo.
+     La mesure Publicités multimédia est utilisée pour la mesure des publicités dans le contenu multimédia. Elle utilise les eVars de solution pour mesurer la publicité, le nom du lecteur de publicités, la capsule et la position de la publicité dans la capsule. Les événements de solution serviront pour les démarrages et les fins de publicités, ainsi que le temps passé sur la publicité et la vidéo.
 
    * **Chapitres du contenu multimédia**
 
-      La mesure Chapitres multimédia sert à mesurer les chapitres. Un chapitre est une sous-section de contenu dans un média. Cette mesure utilise une eVar de solution pour stocker l’identifiant de chapitre. Les événements de solution seront utilisés pour les démarrages de chapitres, les chapitres terminés et le temps passé par chapitre. Les métadonnées de chapitre supplémentaires, de nom et de position seront fournies comme des classifications de l’identifiant de chapitre.
+     La mesure Chapitres multimédia sert à mesurer les chapitres. Un chapitre est une sous-section de contenu dans un média. Cette mesure utilise une eVar de solution pour stocker l’identifiant de chapitre. Les événements de solution seront utilisés pour les démarrages de chapitres, les chapitres terminés et le temps passé par chapitre. Les métadonnées de chapitre supplémentaires, de nom et de position seront fournies comme des classifications de l’identifiant de chapitre.
 
    * **Qualité du contenu multimédia**
 
-      La mesure Qualité vidéo sert à mesurer la qualité de lecture du contenu. Elle utilise les eVars de solution pour stocker le temps jusqu’au début, les événements de mémoire tampon, la durée totale de la mémoire tampon, les permutations de débit, le débit moyen, les erreurs et les pertes d’images. Les événements de solution seront utilisés pour le temps jusqu’au début, les pertes avant le début, les diffusions touchées par la mémoire tampon, les événements de mémoire tampon, la durée totale de la mémoire tampon, les diffusions touchées par les changements de débit, les changements de débit, le débit moyen, les diffusions touchées par les erreurs, les événements d’erreur, les diffusions touchées par les images perdues et les pertes d’images.
+     La mesure Qualité vidéo sert à mesurer la qualité de lecture du contenu. Elle utilise les eVars de solution pour stocker le temps jusqu’au début, les événements de mémoire tampon, la durée totale de la mémoire tampon, les permutations de débit, le débit moyen, les erreurs et les pertes d’images. Les événements de solution seront utilisés pour le temps jusqu’au début, les pertes avant le début, les diffusions touchées par la mémoire tampon, les événements de mémoire tampon, la durée totale de la mémoire tampon, les diffusions touchées par les changements de débit, les changements de débit, le débit moyen, les diffusions touchées par les erreurs, les événements d’erreur, les diffusions touchées par les images perdues et les pertes d’images.
 
    * **Métadonnées vidéo et de publicité vidéo**
 
-      Des métadonnées peuvent être liées à un média et/ou une publicité pour apporter des détails supplémentaires et attribuer une catégorie à ce média ou cette publicité. Des métadonnées normalisées et des métadonnées de publicité sont collectées à l’aide de classifications et de variables de solution. Les valeurs comprennent : Programme, Saison, Épisode, ID de ressource, Genre, Date de première diffusion, Date de première distribution numérique, Évaluation du contenu, Émetteur, Réseau, Type de programme, Chargements de publicité, MVPD, Autorisé, Partie de la journée, ID de session multimédia, Annonceur, ID de campagne et ID d’élément créatif.
+     Des métadonnées peuvent être liées à un média et/ou une publicité pour apporter des détails supplémentaires et attribuer une catégorie à ce média ou cette publicité. Des métadonnées normalisées et des métadonnées de publicité sont collectées à l’aide de classifications et de variables de solution. Les valeurs comprennent : Programme, Saison, Épisode, ID de ressource, Genre, Date de première diffusion, Date de première distribution numérique, Évaluation du contenu, Émetteur, Réseau, Type de programme, Chargements de publicité, MVPD, Autorisé, Partie de la journée, ID de session multimédia, Annonceur, ID de campagne et ID d’élément créatif.
 
    * **Métadonnées de contenu audio et de publicité audio**
 
-      Des métadonnées peuvent être associées à un contenu audio et/ou à une publicité pour la décrire et la classer. Les métadonnées normalisées de contenu audio et de publicité seront collectées par le biais des classifications et des variables de solution. Les valeurs à inclure sont les suivantes : Artiste, Album, Libellé, Auteur, Éditeur, Station, Programme, Saison, Épisode, ID de ressource, Genre, Première date de diffusion, Première date numérique, Évaluation du contenu, Émetteur, Type de programme, Chargements de publicité, Partie de la journée, ID de session multimédia, Annonceur, ID de campagne et ID d’élément créatif.
+     Des métadonnées peuvent être associées à un contenu audio et/ou à une publicité pour la décrire et la classer. Les métadonnées normalisées de contenu audio et de publicité seront collectées par le biais des classifications et des variables de solution. Les valeurs à inclure sont les suivantes : Artiste, Album, Libellé, Auteur, Éditeur, Station, Programme, Saison, Épisode, ID de ressource, Genre, Première date de diffusion, Première date numérique, Évaluation du contenu, Émetteur, Type de programme, Chargements de publicité, Partie de la journée, ID de session multimédia, Annonceur, ID de campagne et ID d’élément créatif.
+
    L’activation de chaque module réserve une série de variables et crée une nouvelle série de rapports. À l’exception de la qualité, les rapports ne contiendront aucune donnée, à moins que la mise en œuvre correspondante n’ait été effectuée. La mise en œuvre du module Core met également en œuvre le module de qualité si vous l’activez.
 
    Si vous n’effectuez pas encore de suivi de publicités, de chapitres ou de qualité de lecture, vous pouvez activer des options supplémentaires à tout moment.

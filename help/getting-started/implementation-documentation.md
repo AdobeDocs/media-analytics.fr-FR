@@ -5,31 +5,31 @@ uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: c37aeea2-7c8f-4815-ae28-634ae691e84f
-source-git-commit: ad40260d29bd5b739184cb551f084565d05e65a7
+source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 67%
+source-wordcount: '259'
+ht-degree: 45%
 
 ---
 
-# Documentation d’implémentation de Streaming Media {#streaming-media-documentation}
+# Documentation de mise en oeuvre du module complémentaire de collecte de médias en flux continu {#streaming-media-documentation}
 
-La documentation d’Adobe Analytics for Streaming Media se trouve sur plusieurs sites Web de produits. Selon la manière dont vous implémentez Streaming Media Analytics, vous devrez peut-être consulter un ou plusieurs jeux de documentation.
+La documentation du module complémentaire de collecte de médias en flux continu se trouve sur plusieurs sites Web de produits. Selon la manière dont vous mettez en oeuvre la collecte de médias en flux continu, vous devrez peut-être référencer un ou plusieurs jeux de documentation.
 
 Utilisez les informations du tableau suivant pour trouver la documentation de la méthode d’implémentation que vous avez choisie.
 
-## Documentation d’implémentation de Streaming Media {#media-documentation}
+## Documentation de mise en oeuvre {#media-documentation}
 
 | Implémentation | Documentation |
 |:-----------------------:|----------------|
-| **Web** | * [Envoi de données web vers Edge avec le SDK web Adobe Experience Platform](/help/implementation/edge/edge-web-sdk.md) <br> * [Mise en oeuvre web pour les médias en flux continu](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Mise en oeuvre web avec l’extension Adobe Medium Analytics for Audio and Video](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr) |
-| **Mobile** | * [Envoi de données mobiles vers Edge avec le SDK mobile Adobe Experience Platform](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Guide du SDK Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/) <br> *[Extension Adobe Medium Analytics for Audio and Video](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Versions actuelles du SDK Mobile](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mise en oeuvre mobile pour les médias en flux continu](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
+| **Web** | * [Envoi de données Web à Edge avec le SDK Web de Adobe Experience Platform](/help/implementation/edge/edge-web-sdk.md) <br> * [Mise en oeuvre web pour les médias en flux continu](/help/implementation/media-sdk/setup/web-implementation.md) <br>* [Mise en oeuvre web avec l’extension Adobe Medium Analytics for Audio and Video](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr) |
+| **Mobile** | * [Envoi de données mobiles à Edge avec le SDK mobile Adobe Experience Platform](/help/implementation/edge/edge-mobile-sdk.md) <br> *[Guide du SDK Adobe Experience Platform Mobile](https://developer.adobe.com/client-sdks/documentation/) <br> *[Extension Adobe Medium Analytics for Audio and Video](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br> *[Versions actuelles du SDK Mobile](https://developer.adobe.com/client-sdks/documentation/current-sdk-versions/) <br> *[Mise en oeuvre mobile pour les médias en flux continu](/help/implementation/media-sdk/setup/mobile-implementation.md) | |  |
 | **OTT** | *[SDK Chromecast 3.0 pour solutions Adobe Marketing Cloud](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/)<br> *[Configuration de Chromecast](/help/implementation/media-sdk/setup/set-up-chromecast.md)<br> * [SDK Adobe Experience Platform Roku](/help/implementation/edge/implementation-edge.md) <br> *[Configuration de Roku](/help/implementation/media-sdk/setup/set-up-roku.md) |
 | **API Adobe Experience Platform** | *[API Media Collection](/help/implementation/media-collection-api/mc-api-overview.md) |
 
 ## Documentation supplémentaire {#additional-documentation}
 
-Le tableau ci-dessous répertorie la documentation sur les produits Adobe utilisés avec Streaming Media Analytics.
+Le tableau ci-dessous répertorie la documentation sur les produits Adobe utilisés avec le module complémentaire Collection de médias en flux continu.
 
 | Produit | Documentation |
 |:-----------------------:|----------------|
