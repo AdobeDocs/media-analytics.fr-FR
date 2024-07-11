@@ -1,21 +1,21 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Module complémentaire Collection de médias en flux continu
-breadcrumb-title: Guide de la collection de médias en flux continu
-user-guide-description: Mise en oeuvre de médias en flux continu. Inclut le SDK Media et l’API Media Collection.
+user-guide-title: Module complémentaire Collection de médias en streaming
+breadcrumb-title: Guide de collection des médias en streaming
+user-guide-description: Mettez en œuvre de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
 source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 94%
+ht-degree: 97%
 
 ---
 
 
-# Module complémentaire Collection de médias en flux continu {#using}
+# Module complémentaire Collection de médias en streaming {#using}
 
-+ [Guide de la collection de médias en flux continu](media-overview.md)
++ [Guide de collection des médias en streaming](media-overview.md)
 + Notes de mise à jour {#release-notes}
    + [Notes de mise à jour de Streaming Media Collection](additional-resources/release-notes.md)
 + Prise en main {#getting-started}
