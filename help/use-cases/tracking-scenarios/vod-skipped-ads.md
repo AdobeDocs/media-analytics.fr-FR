@@ -6,9 +6,9 @@ exl-id: 034b5c1f-7dd9-431f-a51b-925e407a7b36
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 100%
+ht-degree: 94%
 
 ---
 
@@ -24,14 +24,14 @@ Il s’agit du même scénario que [Lecture VOD avec publicités preroll](/help/
 
 | Déclencheur   | Méthode Heartbeat  | Appels réseau   | Remarques   |
 | --- | --- | --- | --- |
-| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario  [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
-| La publicité démarre. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start |  |
+| L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart()` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont toujours exactement identiques au scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md) . |
+| La publicité démarre. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start | |
 | La première image de la publicité s’affiche. | `trackPlay()` | Heartbeat Ad Play | Lorsque le contenu de la publicité est lu avant le contenu principal, les pulsations commencent lorsque la publicité commence à être lue. |
-| La publicité est lue. |  | Ad Heartbeats |  |
-| La publicité est ignorée. | `trackEvent:trackAdSkip` |  | Il n’y a pas d’appel réseau ad complete. |
-| Le contenu est lu. |  | Content Heartbeats | Il s’agit des mêmes appels réseau que le scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
+| La publicité est lue. | | Ad Heartbeats | |
+| La publicité est ignorée. | `trackEvent:trackAdSkip` | | Il n’y a pas d’appel réseau ad complete. |
+| Le contenu est lu. | | Content Heartbeats | Il s’agit des mêmes appels réseau que le scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | La lecture du contenu est terminée. | `trackComplete()` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
-| La session est terminée. | `trackSessionEnd()` |  | `SessionEnd` |
+| La session est terminée. | `trackSessionEnd()` | | `SessionEnd` |
 
 ## Paramètres {#parameters}
 

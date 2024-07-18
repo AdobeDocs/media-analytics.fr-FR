@@ -81,7 +81,7 @@ Signale la survenue d’une erreur.
 
 Permet d’indiquer au serveur principal Media Analytics de fermer immédiatement la session lorsque l’utilisateur a arrêté de regarder le contenu et ne reviendra probablement pas.
 
-Si une `sessionEnd` n’est pas envoyé, une session abandonnée sera [délai d’expiration normalement](../mc-api-impl/mc-api-timeout.md) (soit qu’aucun événement n’est reçu pendant 10 minutes, soit qu’aucun mouvement du curseur de lecture ne se produit pendant 30 minutes). De plus, tous les appels de médias ultérieurs effectués avec cet ID de session seront ignorés.
+Si un `sessionEnd` n’est pas envoyé, une session abandonnée [expire normalement](../mc-api-impl/mc-api-timeout.md) (soit après qu’aucun événement ne soit reçu pendant 10 minutes, soit lorsqu’aucun mouvement du curseur de lecture ne se produit pendant 30 minutes). De plus, tous les appels de médias ultérieurs effectués avec cet ID de session seront ignorés.
 
 ## sessionComplete
 

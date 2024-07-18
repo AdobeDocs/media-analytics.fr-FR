@@ -16,9 +16,9 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->*Rapports* dans Workspace étaient auparavant appelées *templates*.
+>*Les rapports* dans Workspace étaient auparavant appelés *modèles*.
 
-Analysis Workspace propose un ensemble de rapports prédéfinis, disponibles par défaut, que vous pouvez utiliser pour analyser les données. Pour plus d’informations sur tous les rapports par défaut disponibles, voir [Affichage des rapports](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) in [Page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).
+Analysis Workspace propose un ensemble de rapports prédéfinis, disponibles par défaut, que vous pouvez utiliser pour analyser les données. Pour plus d’informations sur tous les rapports par défaut disponibles, voir [Affichage des rapports](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) sur la [page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).
 
 Certains de ces rapports sont particulièrement utiles pour l’analyse des données multimédia en flux continu, comme décrit dans les sections suivantes.
 
@@ -26,20 +26,21 @@ Certains de ces rapports sont particulièrement utiles pour l’analyse des donn
 
 Vous trouverez ci-dessous une liste des rapports par défaut qui sont utiles pour analyser les données multimédia en flux continu :
 
-* [!UICONTROL **Consommation de contenu multimédia**]: crée un rapport qui indique quel contenu est le plus consommé et attire le plus d’utilisateurs.
+* [!UICONTROL **Consommation de contenu multimédia**] : crée un rapport qui indique quel contenu est le plus consommé et attire le plus d’utilisateurs.
 
-* [!UICONTROL **Consommation des médias en flux continu**]: crée un rapport avec un tableau de bord, comme illustré dans l’exemple ci-dessous.
+* [!UICONTROL **Consommation de médias en flux continu**] : crée un rapport avec un tableau de bord, comme illustré dans l’exemple ci-dessous.
 
-* [!UICONTROL **Récence, fréquence et fidélité des médias**]: crée un rapport qui affiche la récence (nombre de jours depuis la dernière visite), la fréquence (nombre de visites par visiteur) et la fidélité (fréquence à laquelle les cohortes d’utilisateurs reviennent sur le site).
+* [!UICONTROL **Récence, fréquence et fidélité du média**] : crée un rapport qui indique la récence (nombre de jours depuis la dernière visite), la fréquence (nombre de visites par visiteur) et la fidélité (fréquence à laquelle les cohortes d’utilisateurs reviennent sur le site)
 
-Par exemple, si vous choisissez la variable  [!UICONTROL **Consommation des médias en flux continu**] , un projet avec le tableau de bord suivant s’affiche :
+Par exemple, si vous choisissez le rapport [!UICONTROL **Consommation de médias en flux continu**], un projet avec le tableau de bord suivant s’affiche :
 
 ![](/help/reporting/assets/aa-workspace.png)
 
 ## Utilisation des rapports multimédia par défaut
 
-Vous pouvez utiliser les rapports multimédia par défaut comme suit : lors de la création d’un projet. Vous pouvez également effectuer ou lors de la modification d’un projet existant.
+Vous pouvez utiliser les rapports multimédia par défaut comme suit :
+lors de la création d’un projet. Vous pouvez également effectuer ou lors de la modification d’un projet existant.
 
-* **Lors de la création d’un projet :** Pour plus d’informations sur la création d’un projet à partir d’un rapport par défaut, voir [Créer un projet à partir d’un projet vierge ou d’un rapport](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) in [Création de projets dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+* **Lors de la création d’un projet :** Pour plus d’informations sur la création d’un projet à partir d’un rapport par défaut, voir [Création d’un projet à partir d’un projet vide ou d’un rapport](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) dans [Création de projets dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
 
-* **Lors de la création d’un rapport d’entreprise personnalisé :** Pour plus d’informations sur la création d’un rapport d’entreprise personnalisé, voir [Création d’un rapport d’entreprise personnalisé](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) in [Page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).
+* **Lors de la création d’un rapport d’entreprise personnalisé :** Pour plus d’informations sur la création d’un rapport d’entreprise personnalisé, voir [Créer un rapport d’entreprise personnalisé](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) sur la [page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).

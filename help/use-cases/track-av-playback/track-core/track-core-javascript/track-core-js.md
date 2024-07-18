@@ -6,8 +6,8 @@ exl-id: d8af37a0-9048-4e6b-8cba-809386cbed5f
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '689'
+workflow-type: tm+mt
+source-wordcount: '681'
 ht-degree: 100%
 
 ---
@@ -66,28 +66,28 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre sur l
 
    * **Métadonnées standard**
 
-      [Mise en œuvre de métadonnées standard sur JavaScript](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
+     [Mise en œuvre de métadonnées standard sur JavaScript](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-md-js/impl-std-metadata-js.md)
 
-      >[!NOTE]
-      >
-      >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
+     >[!NOTE]
+     >
+     >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
 
       * Référence à l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
 
-         Consultez la liste complète des métadonnées disponibles dans la rubrique [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md).
+        Consultez la liste complète des métadonnées disponibles dans la rubrique [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md).
+
    * **Métadonnées personnalisées**
 
-      Créez un objet de variable pour les variables personnalisées et renseignez les données de ce média. Par exemple :
+     Créez un objet de variable pour les variables personnalisées et renseignez les données de ce média. Par exemple :
 
-      ```js
-      /* Set custom context data */
-      var customVideoMetadata = {
-          isUserLoggedIn: "false",
-          tvStation: "Sample TV station",
-          programmer: "Sample programmer"
-      };
-      ```
-
+     ```js
+     /* Set custom context data */
+     var customVideoMetadata = {
+         isUserLoggedIn: "false",
+         tvStation: "Sample TV station",
+         programmer: "Sample programmer"
+     };
+     ```
 
 1. **Suivi de l’intention de démarrer la lecture**
 

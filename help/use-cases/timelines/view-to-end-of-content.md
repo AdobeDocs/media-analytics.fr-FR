@@ -6,8 +6,8 @@ exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1074'
+workflow-type: tm+mt
+source-wordcount: '1130'
 ht-degree: 100%
 
 ---
@@ -65,7 +65,7 @@ Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Ana
 
 | Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’application démarre le minuteur d’événement de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
+| L’application démarre le minuteur d’événement de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
 
 Démarrez le minuteur de ping de votre application. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
 
@@ -389,7 +389,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 | --- | :---: | :---: | --- |
 | Le suivi de la coupure publicitaire mid-roll commence | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Annonce publicitaire mid-roll d’une durée de 8 secondes : envoyez `adBreakStart`.
+Annonce publicitaire mid-roll d’une durée de 8 secondes : envoyez `adBreakStart` 
 
 ```json
 {

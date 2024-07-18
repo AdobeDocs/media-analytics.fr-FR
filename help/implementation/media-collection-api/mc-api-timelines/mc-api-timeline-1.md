@@ -6,9 +6,9 @@ exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1064'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '1120'
+ht-degree: 98%
 
 ---
 
@@ -34,7 +34,7 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo.
 
 Il renvoie un ID de session (`{sid}`) au client, utilisé pour identifier tous les appels de suivi suivants dans la session. L’état du lecteur n’est pas encore « en cours de lecture », mais à la place, « en cours de démarrage ».
 
-Les [paramètres de session obligatoires](../mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.
+[Les paramètres de session obligatoires](../mc-api-ref/mc-api-sessions-req.md) doivent être inclus dans la carte `params` du corps de la requête.
 
 Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Analytics.
 
@@ -65,7 +65,7 @@ Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Ana
 
 | Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’application démarre le minuteur d’événement de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` |  |
+| L’application démarre le minuteur d’événement de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
 
 Démarrez le minuteur de ping de votre application. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
 

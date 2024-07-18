@@ -6,9 +6,9 @@ exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '313'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -22,7 +22,7 @@ Il s’agit du même scénario que la lecture [VOD avec un chapitre](/help/use-c
 
 | Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques |
 |---|---|---|---|
-| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario  [Lecture sans interruptions dans un scénario iOS](vod-no-intrs-details.md). |
+| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario [Lecture sans interruption dans iOS](vod-no-intrs-details.md) . |
 | Le chapitre démarre. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Chapter Play | Lorsque le contenu d’un chapitre est lu avant le contenu principal, nous voulons commencer les pulsations lorsque le chapitre commence. |
 | Le chapitre est lu. |  | Chapter Heartbeats |  |
@@ -35,7 +35,7 @@ Il s’agit du même scénario que la lecture [VOD avec un chapitre](/help/use-c
 
 ## Paramètres {#parameters}
 
-Les paramètres utilisés pendant la lecture de ce chapitre sont identiques à ceux du scénario  [Lecture VOD avec un chapitre](/help/use-cases/tracking-scenarios/vod-one-chapter.md), mais il n’est pas question d’appel réseau de fin du chapitre.
+Les paramètres utilisés pendant la lecture du chapitre sont identiques aux paramètres du scénario [Lecture VOD avec un chapitre](/help/use-cases/tracking-scenarios/vod-one-chapter.md), sauf qu’il n’existe aucun appel réseau de fin du chapitre.
 
 ## Exemple de code {#sample-code}
 

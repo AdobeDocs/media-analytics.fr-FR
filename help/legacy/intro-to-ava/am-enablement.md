@@ -5,8 +5,8 @@ exl-id: c0d73bc2-4713-498a-8882-ff66c7f3dd50
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '402'
+workflow-type: tm+mt
+source-wordcount: '397'
 ht-degree: 100%
 
 ---
@@ -33,84 +33,84 @@ Vous pouvez utiliser ces méthodes pour envoyer des signaux et récupérer des s
 
 * `getVisitorProfile() -`
 
-   Renvoie le dernier profil du visiteur obtenu. Renvoie un objet vide si aucun signal n’a encore été envoyé.
+  Renvoie le dernier profil du visiteur obtenu. Renvoie un objet vide si aucun signal n’a encore été envoyé.
 
-   ```js
-   ADBMobile.audienceManager.getVisitorProfile();
-   ```
+  ```js
+  ADBMobile.audienceManager.getVisitorProfile();
+  ```
 
 * `getDpid() -`
 
-   Renvoie le dernier profil du visiteur obtenu. Renvoie un objet vide si aucun signal n’a encore été envoyé.
+  Renvoie le dernier profil du visiteur obtenu. Renvoie un objet vide si aucun signal n’a encore été envoyé.
 
-   ```js
-   ADBMobile.audienceManager.getDpid();
-   ```
+  ```js
+  ADBMobile.audienceManager.getDpid();
+  ```
 
 * `getDpuuid() -`
 
-   Renvoie le DPUUID en cours.
+  Renvoie le DPUUID en cours.
 
-   ```js
-   ADBMobile.audienceManager.getDpuuid();
-   ```
+  ```js
+  ADBMobile.audienceManager.getDpuuid();
+  ```
 
 * `setDpidAndDpuuid() -`
 
-   Définit les DPID et DPUUID. Si les DPID et DPUUID sont définis, ils seront envoyés avec chaque signal.
+  Définit les DPID et DPUUID. Si les DPID et DPUUID sont définis, ils seront envoyés avec chaque signal.
 
-   ```js
-   ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
-   ```
+  ```js
+  ADBMobile.audienceManager.setDpidAndDpuuid("myDpid", "myDpuuid");
+  ```
 
 * `submitSignal() -`
 
-   Envoie à la gestion de l’audience par un signal avec des caractéristiques.
+  Envoie à la gestion de l’audience par un signal avec des caractéristiques.
 
-   ```js
-   ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
-   ```
+  ```js
+  ADBMobile.audienceManager.submitSignal({"sampleTrait":"sampleValue"});
+  ```
 
 ### Roku {#am-roku}
 
 * `audienceVisitorProfile -`
 
-   Renvoie le dernier profil du visiteur obtenu. Renvoie un objet vide si aucun signal n’a encore été envoyé.
+  Renvoie le dernier profil du visiteur obtenu. Renvoie un objet vide si aucun signal n’a encore été envoyé.
 
-   ```js
-   ADBMobile().audienceVisitorProfile()
-   ```
+  ```js
+  ADBMobile().audienceVisitorProfile()
+  ```
 
 * `audienceDpid -`
 
-   Renvoie le dernier profil du visiteur obtenu. Renvoie un objet vide à si aucun signal n’a encore été envoyé.
+  Renvoie le dernier profil du visiteur obtenu. Renvoie un objet vide à si aucun signal n’a encore été envoyé.
 
-   ```js
-   ADBMobile().audienceDpid()
-   ```
+  ```js
+  ADBMobile().audienceDpid()
+  ```
 
 * `audienceDpuuid -`
 
-   Renvoie le DPUUID en cours.
+  Renvoie le DPUUID en cours.
 
-   ```js
-   ADBMobile().audienceDpuuid()
-   ```
+  ```js
+  ADBMobile().audienceDpuuid()
+  ```
 
 * `audienceSetDpidAndDpuuid -`
 
-   Définit les DPID et DPUUID. Si les DPID et DPUUID sont définis, ils seront envoyés avec chaque signal.
+  Définit les DPID et DPUUID. Si les DPID et DPUUID sont définis, ils seront envoyés avec chaque signal.
 
-   ```js
-   ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
-   ```
+  ```js
+  ADBMobile().audienceSetDpidAndDpuuid("myDpid", "myDpuuid")
+  ```
 
 * `audienceSubmitSignal -`
 
-   Envoie à la gestion de l’audience par un signal avec des caractéristiques.
+  Envoie à la gestion de l’audience par un signal avec des caractéristiques.
 
-   ```js
-   traitData = {}
-   traitData["sampleTrait"] = "sampleValue"
-   ADBMobile().audienceSubmitSignal(traitData)
-   ```
+  ```js
+  traitData = {}
+  traitData["sampleTrait"] = "sampleValue"
+  ADBMobile().audienceSubmitSignal(traitData)
+  ```

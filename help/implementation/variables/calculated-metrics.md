@@ -26,7 +26,7 @@ Pour plus dʼinformations sur les mesures calculées Adobe Analytics, voir [Mesu
 |---|---|---|
 | Nombre moyen de publicités par flux de média | Démarrages de publicité par démarrages de média | `Ad Starts / Media Starts` |
 | Nombre moyen de chapitres par flux de média | Démarrages de chapitre par démarrages de média | `Chapter Start / Media Starts` |
-| Temps moyen passé sur le média | Durée totale de la visite par démarrage de média (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
+| Temps moyen passé sur le média | Durée totale passée par démarrage de média (`HH:MM:SS`) | `Media Time Spent / Media Starts` |
 | Temps moyen Temps passé sur le contenu | Temps passé sur le contenu par démarrage de contenu (`HH:MM:SS`) | `Content Time Spent / Content Start` |
 | Temps moyen passé sur la publicité | Temps passé sur la publicité par démarrage de publicité (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
 | Temps moyen Passé sur le chapitre | Temps passé par chapitre par démarrage de chapitre (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |

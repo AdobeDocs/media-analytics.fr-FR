@@ -16,7 +16,7 @@ ht-degree: 93%
 
 ## Conditions préalables {#roku-prerequisites}
 
-* **Obtention de paramètres de configuration valides pour le module complémentaire Collection de médias en flux continu**
+* **Obtenez des paramètres de configuration valides pour le module complémentaire Collection de médias en flux continu**
 
   Vous pouvez obtenir ces paramètres auprès d’un représentant d’Adobe après avoir configuré votre compte de module complémentaire de collecte de médias en flux continu Adobe.
 * **Incluez les API suivantes dans votre lecteur multimédia**

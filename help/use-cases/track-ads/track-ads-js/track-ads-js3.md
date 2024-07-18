@@ -6,7 +6,7 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '398'
 ht-degree: 88%
 
 ---
@@ -135,7 +135,7 @@ Consultez le scénario de suivi [Lecture VOD avec publicités preroll](/help/use
 
 L’intervalle de ping de publicité par défaut est `10 seconds`.
 
-Vous pouvez configurer un suivi des publicités granulaires pour activer `1 second` suivi des publicités.
+Vous pouvez configurer un suivi des publicités granulaires pour activer le suivi des publicités `1 second`.
 
 >[!IMPORTANT]
 >

@@ -6,7 +6,7 @@ exl-id: 08bb5873-f69a-4fdd-8f27-69649b4acb17
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 100%
 
@@ -55,7 +55,7 @@ ht-degree: 100%
    >
    >Vous devez utiliser les types de données corrects dans le corps de la requête JSON. Par exemple, `analytics.enableSSL` nécessite une valeur booléenne, `media.length` est une valeur numérique, etc. Vous pouvez comparer les types de paramètre obligatoires aux conditions facultatives en vérifiant les [schémas de validation JSON.](mc-api-validate-reqs.md)
 
-1. Envoyez des requêtes sessions au point de terminaison d’API MA Collection. Si la charge utile de votre requête n’est pas valide, identifiez le problème et réessayez jusqu’à obtention d’une réponse `201 Created`. Dans cet exemple `curl`, le corps de la requête JSON se trouve dans un fichier nommé `sample_data_session` :
+1. Envoyez des requêtes sessions au point d’entrée d’API MA Collection. Si la charge utile de votre requête n’est pas valide, identifiez le problème et réessayez jusqu’à obtention d’une réponse `201 Created`. Dans cet exemple `curl`, le corps de la requête JSON se trouve dans un fichier nommé `sample_data_session` :
 
    ```sh
    $ curl -i -d \

@@ -6,8 +6,8 @@ exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '838'
+workflow-type: tm+mt
+source-wordcount: '847'
 ht-degree: 100%
 
 ---
@@ -43,41 +43,40 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 
    * **Appel de démarrage d’Adobe Analytics**
 
-      | Paramètre | Valeur (exemple) |
-      |---|---|
-      | `pev2` | ms_s |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | Paramètre | Valeur (exemple) |
+     |---|---|
+     | `pev2` | ms_s |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Appel de page de site Web**
 
-      | Paramètre | Valeur (exemple) |
-      |---|---|
-      | `mid` | 30250035503789876473484580554595324209 |
+     | Paramètre | Valeur (exemple) |
+     |---|---|
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Appel de cycle de vie**
 
-      | Paramètre | Valeur (exemple) |
-      |---|---|
-      | `pev2` | ADBINTERNAL:Lifecycle |
-      | `mid` | 30250035503789876473484580554595324209 |
+     | Paramètre | Valeur (exemple) |
+     |---|---|
+     | `pev2` | ADBINTERNAL:Lifecycle |
+     | `mid` | 30250035503789876473484580554595324209 |
 
    * **Appel de démarrage de Media Analytics**
 
-      | Paramètre | Valeur (exemple) |
-      |---|---|
-      | `s:event:type` | start |
+     | Paramètre | Valeur (exemple) |
+     |---|---|
+     | `s:event:type` | start |
 
-      >[!NOTE]
-      >
-      >Sur les appels de démarrage Media Analytics (`s:event:type=start`), les valeurs `mid` peuvent ne pas être présentes. Ceci est normal. Il se peut qu’elles n’apparaissent pas avant les appels de lecture de Media Analytics (`s:event:type=play`).
+     >[!NOTE]
+     >
+     >Sur les appels de démarrage Media Analytics (`s:event:type=start`), les valeurs `mid` peuvent ne pas être présentes. Ceci est normal. Il se peut qu’elles n’apparaissent pas avant les appels de lecture de Media Analytics (`s:event:type=play`).
 
    * **Appel de lecture de Media Analytics**
 
-      | Paramètre | Valeur (exemple) |
-      |---|---|
-      | `s:event:type` | play |
-      | `s:user:mid` | 30250035503789876473484580554595324209 |
-
+     | Paramètre | Valeur (exemple) |
+     |---|---|
+     | `s:event:type` | play |
+     | `s:user:mid` | 30250035503789876473484580554595324209 |
 
 1. **Démarrage du lecteur multimédia**
 
@@ -107,13 +106,11 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 
    * **Lecture de la publicité**
 
-      Pendant la lecture de la publicité, le SDK Media Analytics envoie des événements de lecture de type « publicité » au serveur Media Analytics toutes les secondes.
+     Pendant la lecture de la publicité, le SDK Media Analytics envoie des événements de lecture de type « publicité » au serveur Media Analytics toutes les secondes.
 
    * **Fin de la publicité**
 
-      Au point 100 % sur une publicité, un appel de fin de Media Analytics doit être envoyé.
-
-
+     Au point 100 % sur une publicité, un appel de fin de Media Analytics doit être envoyé.
 
 1. **Suspendre la lecture de la publicité pendant 30 secondes si possible.** **Pause de la publicité**
 
@@ -134,7 +131,7 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
    * La position du curseur de lecteur doit augmenter de 10 à chaque appel de lecture.
    * La valeur `l:event:duration` représente le nombre de millisecondes qui se sont écoulées depuis le dernier appel de suivi, et doit être plus ou moins constante pour chaque appel de 10 secondes.
 
-      Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/legacy/validation/test-call-details.md#play-main-content)
+     Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/legacy/validation/test-call-details.md#play-main-content)
 
 1. **Suspendre la lecture pendant au moins 30 secondes.** Lors de la mise en pause du lecteur multimédia, les appels d’événement de pause sont envoyés par le SDK au serveur Media Analytics toutes les 10 secondes. Après la pause, les événements de lecture reprennent normalement.
 

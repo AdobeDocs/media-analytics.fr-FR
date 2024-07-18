@@ -25,7 +25,7 @@ Pour les périphériques qui ne sont pas actuellement compatibles avec des SDK, 
 
 Le tableau ci-dessous liste les appareils actuellement pris en charge. Si un appareil n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son état.
 
-Pour plus d’informations sur l’implémentation de Media sur Edge, voir [Installation du module complémentaire Collection de médias en flux continu avec Edge Experience Platform](/help/implementation/edge/implementation-edge.md).
+Pour plus d’informations sur l’implémentation de Media sur Edge, voir [Installation du module complémentaire de collecte de médias en flux continu avec Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Plateformes et appareils de streaming | | SDK/Extension pour Media pour réseau Edge | API Media Edge | Extension Media avec balises ou SDK AEP Mobile | SDK Media | API Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

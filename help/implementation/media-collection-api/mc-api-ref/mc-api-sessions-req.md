@@ -6,8 +6,8 @@ exl-id: f55f5838-610f-4f82-b3c5-72165ea2c86b
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '130'
+workflow-type: tm+mt
+source-wordcount: '133'
 ht-degree: 100%
 
 ---
@@ -66,7 +66,7 @@ Le corps de requête doit être JSON et doit avoir la même structure que le co
    * `ts` - Date et heure ; doit être en millisecondes ; Temps universel coordonné (UTC).
 * `eventType` (Obligatoire)
 
-   **Valeur valide :** `sessionStart`
+  **Valeur valide :** `sessionStart`
 * `params` (Obligatoire)
 * `customMetadata` (Facultatif)
 * `qoeData` (Facultatif)

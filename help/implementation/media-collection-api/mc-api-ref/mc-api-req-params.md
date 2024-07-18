@@ -6,8 +6,8 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1329'
+workflow-type: tm+mt
+source-wordcount: '1337'
 ht-degree: 100%
 
 ---
@@ -149,17 +149,17 @@ En plus d’être nécessaire à la génération du MCID lorsqu’il n’est pas
 
 * **analytics.aid :**
 
-   La valeur de cette clé doit être une chaîne représentant l’identifiant utilisateur Analytics existant
+  La valeur de cette clé doit être une chaîne représentant l’identifiant utilisateur Analytics existant
 * **visitor.customerIDs :**
 
-   La valeur de cette clé doit être un objet au format suivant :
+  La valeur de cette clé doit être un objet au format suivant :
 
-   ```js
-   "<<insert your ID name here>>": {  
-     "id": " <<insert your id here>>",  
-      "authState": <<insert one of 0, 1, 2>>
-   }
-   ```
+  ```js
+  "<<insert your ID name here>>": {  
+    "id": " <<insert your id here>>",  
+     "authState": <<insert one of 0, 1, 2>>
+  }
+  ```
 
 Notez que la valeur `visitor.customerIDs` peut avoir un nombre quelconque d’objets au format présenté.
 

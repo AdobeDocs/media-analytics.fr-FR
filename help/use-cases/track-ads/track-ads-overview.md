@@ -6,8 +6,8 @@ exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '506'
+workflow-type: tm+mt
+source-wordcount: '510'
 ht-degree: 100%
 
 ---
@@ -72,7 +72,7 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
 
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
-   | `name` | Nom de la coupure publicitaire tel que preroll, mid-roll et post-roll. | Oui |
+   | `name` | Nom de la coupure publicitaire tel que pre-roll, mid-roll et post-roll. | Oui |
    | `position` | Position du numéro de la coupure publicitaire dans le contenu, en commençant par 1. | Oui |
    | `startTime` | Valeur du curseur de lecture au début de la coupure publicitaire. | Oui |
 

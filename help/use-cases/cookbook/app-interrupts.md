@@ -21,7 +21,7 @@ La lecture dans une application multimédia peut être interrompue de différent
 
 >[!NOTE]
 >
->Appel `trackSessionStart` lorsque l’application revient de l’arrière-plan, la lecture peut se terminer jusqu’à ce moment-là sans tenir compte de la durée totale de lecture, sans compter la perte des marqueurs de progression, des segments, etc. précédents. À la place, appelez `trackPlay` lorsque l’application revient au premier plan et/ou que la lecture du média reprend.
+>L’appel de `trackSessionStart` lorsque l’application revient de l’arrière-plan peut entraîner la lecture jusqu’à ce stade de non-prise en compte de la durée totale de lecture, ainsi que la perte des marqueurs de progression, des segments, etc. À la place, appelez `trackPlay` lorsque l’application revient au premier plan et/ou que la lecture du média reprend.
 
 ## FAQ sur la gestion des interruptions de l’application : {#faq-about-handling-application-interrupts}
 

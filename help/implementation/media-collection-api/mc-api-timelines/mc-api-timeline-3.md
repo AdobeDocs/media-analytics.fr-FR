@@ -6,8 +6,8 @@ exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1092'
+workflow-type: tm+mt
+source-wordcount: '1145'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renv
 
 | Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’application démarre le minuteur d’événement de ping | 0 | 0 |  |
+| L’application démarre le minuteur d’événement de ping | 0 | 0 | |
 
 Démarrez votre minuteur de ping. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
 

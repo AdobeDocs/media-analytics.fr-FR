@@ -23,7 +23,7 @@ Pour activer cette fonction pour un rapport spécifique, réactivez la configura
 
 >[!NOTE]
 >
->Les mesures multimédia sont les suivantes : _not_ disponible en dehors du suivi multimédia, car la plupart d’entre elles sont calculées par le module complémentaire Collection de médias en flux continu en fonction des événements de pulsation. En outre, il est important que les mesures multimédia ne soient pas gonflées par des implémentations différentes.
+>Les mesures multimédia sont _et non_ disponibles pour une utilisation en dehors du suivi multimédia, car la plupart d’entre elles sont calculées par le module complémentaire Collection de médias en flux continu en fonction des événements de pulsation. En outre, il est important que les mesures multimédia ne soient pas gonflées par des implémentations différentes.
 
 ## Utiliser l’attribution des diffusions multimédia
 

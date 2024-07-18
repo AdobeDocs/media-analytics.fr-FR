@@ -6,8 +6,8 @@ exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '448'
+workflow-type: tm+mt
+source-wordcount: '450'
 ht-degree: 100%
 
 ---
@@ -52,9 +52,9 @@ Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour 
 
 * **Appelez`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Appelez cette méthode uniquement si la publicité précédente n’était pas complète. Pensez à une valeur booléenne pour conserver l’état &quot;`isinAd`&quot; de la publicité précédente.
+  >[!NOTE]
+  >
+  >Appelez cette méthode uniquement si la publicité précédente n’était pas complète. Pensez à une valeur booléenne pour conserver l’état &quot;`isinAd`&quot; de la publicité précédente.
 
 * Créez l’instance d’objet publicitaire pour la ressource publicitaire : par exemple, `adObject`.
 * Renseignez les métadonnées de publicité, `adCustomMetadata`.
@@ -65,9 +65,9 @@ Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour 
 
 * **Ne pas effectuer d’appel**
 
-   >[!NOTE]
-   >
-   >Si l’application sait qu’il s’agit de la dernière publicité dans la coupure publicitaire, appelez `trackEvent:AdComplete` ici et ne définissez pas `trackEvent:AdComplete` dans `trackEvent:AdBreakComplete`.
+  >[!NOTE]
+  >
+  >Si l’application sait qu’il s’agit de la dernière publicité dans la coupure publicitaire, appelez `trackEvent:AdComplete` ici et ne définissez pas `trackEvent:AdComplete` dans `trackEvent:AdBreakComplete`.
 
 **Lorsque la publicité est ignorée :**
 
@@ -77,8 +77,8 @@ Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour 
 
 * **Appelez`trackEvent(MediaHeartbeat.Event.AdComplete);`**
 
-   >[!NOTE]
-   >
-   >Si cette étape est déjà effectuée ci-dessus dans le cadre du dernier appel `trackEvent:AdComplete`, elle peut être ignorée.
+  >[!NOTE]
+  >
+  >Si cette étape est déjà effectuée ci-dessus dans le cadre du dernier appel `trackEvent:AdComplete`, elle peut être ignorée.
 
 * L’appel `trackEvent(MediaHeartbeat.Event.AdBreakComplete);`.

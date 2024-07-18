@@ -17,12 +17,12 @@ ht-degree: 62%
 Avant de commencer la mise en oeuvre du module complémentaire Adobe de la collecte de médias en flux continu, effectuez les tâches suivantes :
 
 1. **Présentation du module complémentaire Collection de médias en flux continu**<br>
-Avant de commencer à mettre en oeuvre le module complémentaire Collection de médias en flux continu, passez en revue les [Présentation du module complémentaire Collection de médias en flux continu](/help/media-overview.md) pour vous assurer qu’il répond à vos besoins.
+Avant de commencer à mettre en oeuvre le module complémentaire Collection de médias en flux continu, passez en revue la [présentation du module complémentaire Collection de médias en flux continu](/help/media-overview.md) pour vous assurer qu’il répond à vos besoins.
 
-1. **Confirmation de votre modèle de tarification**<br>
+1. **Confirmer votre modèle de tarification**<br>
 Le modèle de tarification actuel pour le module complémentaire Adobe Streaming Media Collection est basé sur les diffusions vidéo. Si nécessaire, contactez votre représentant commercial ou votre équipe de compte d’Adobe, car le module complémentaire est vendu séparément pour Adobe Analytics et Adobe Experience Platform.
 
-1. **Activation des rapports Adobe Analytics**<br>
+1. **Activer les rapports Adobe Analytics**<br>
 Pour activer les rapports dans Analytics ou Customer Journey Analytics et afficher le contenu et les données de publicité que vous collectez, vous devez activer les rapports. Voir [Activation des rapports multimédia](/help/reporting/media-reports-enable.md).
 
 1. **Implémenter le service d’identité d’Adobe Experience Platform dans Experience Cloud**

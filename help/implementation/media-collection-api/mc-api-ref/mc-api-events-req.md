@@ -1,13 +1,13 @@
 ---
 title: API Streaming Media Collection ‐ Point dʼentrée de la requête events
-description: « Quels sont les paramètres et les réponses du point dʼentrée de la requête events de lʼAPI Media Collection ? »
+description: « Quels sont les paramètres et les réponses du point dʼentrée de la requête events de lʼAPI Media Collection ? »
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '261'
+workflow-type: tm+mt
+source-wordcount: '262'
 ht-degree: 100%
 
 ---

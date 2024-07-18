@@ -6,9 +6,9 @@ exl-id: 687dbaa5-4723-4b3f-ab1e-4d5bf447cddf
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '470'
-ht-degree: 100%
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 98%
 
 ---
 
@@ -76,7 +76,7 @@ Vous pouvez utiliser les constantes suivantes pour suivre les événements de m�
 | --- | --- |
 | `MEDIA_STANDARD_MEDIA_METADATA` | Constante permettant de définir des métadonnées sur le `MediaInfo` `trackLoad` |
 | `MEDIA_STANDARD_AD_METADATA` | Constante permettant de définir les métadonnées publicitaires sur le `EventData` `trackEvent` |
-| `MEDIA_RESUMED` | Constante pour envoyer un heartbeat repris par vidéo. Pour reprendre le suivi vidéo du contenu précédemment arrêté, vous devez définir la propriété `MEDIA_RESUMED` sur l’objet `mediaInfo` lorsque vous appelez `mediaTrackLoad`. (`MEDIA_RESUMED` n’est pas un événement que vous pouvez suivre à l’aide de l’API `mediaTrackEvent`.) La propriété `MEDIA_RESUMED` doit être définie sur true lorsqu’une application souhaite continuer à suivre le contenu que l’utilisateur a arrêté de regarder mais qu’il désire continuer à regarder. <br/><br/>Par exemple, supposons qu’un utilisateur regarde 30 % du contenu, puis ferme l’application. La session est alors terminée. Par la suite, si le même utilisateur revient au même contenu et que l’application permet à l’utilisateur de reprendre à partir de l’endroit où il s’est arrêté, l’application doit définir `MEDIA_RESUMED` sur « true » lors de l’appel de l’API `mediaTrackLoad`. Il en résulte que ces deux sessions multimédia distinctes correspondant au même contenu vidéo peuvent être liées. Exemple :  <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Cette opération crée une nouvelle session pour la vidéo, mais elle provoque également l’envoi par le kit SDK d’une demande de pulsation avec le type d’événement « resume », qui peut être utilisé dans les rapports pour relier deux sessions multimédia différentes. |
+| `MEDIA_RESUMED` | Constante pour envoyer un heartbeat repris par vidéo. Pour reprendre le suivi vidéo du contenu précédemment arrêté, vous devez définir la propriété `MEDIA_RESUMED` sur l’objet `mediaInfo` lorsque vous appelez `mediaTrackLoad`. (`MEDIA_RESUMED` n’est pas un événement que vous pouvez suivre à l’aide de l’API `mediaTrackEvent`.) La propriété `MEDIA_RESUMED` doit être définie sur true lorsqu’une application souhaite continuer à suivre le contenu que l’utilisateur a arrêté de regarder mais qu’il désire continuer à regarder. <br/><br/>Par exemple, supposons qu’un utilisateur regarde 30 % du contenu, puis ferme l’application. La session est alors terminée. Par la suite, si le même utilisateur revient au même contenu et que l’application permet à l’utilisateur de reprendre à partir de l’endroit où il s’est arrêté, l’application doit définir `MEDIA_RESUMED` sur « true » lors de l’appel de l’API `mediaTrackLoad`. Il en résulte que ces deux sessions multimédia distinctes correspondant au même contenu vidéo peuvent être liées. Voici l’exemple de mise en oeuvre : <br/><br/> `mediaInfo =` <br/>   `adb_media_init_mediainfo(` <br/>     `"test_media_name",` <br/>     `"test_media_id",`<br/>      `10,` <br/>     `"vod"` <br/> `)` <br/> `mediaInfo[ADBMobile().MEDIA_RESUMED] = true` <br/> `mediaContextData = {}` <br/>  `ADBMobile().mediaTrackLoad(mediaInfo, mediaContextData)` <br/><br/>Cette opération crée une nouvelle session pour la vidéo, mais elle provoque également l’envoi par le kit SDK d’une demande de pulsation avec le type d’événement « resume », qui peut être utilisé dans les rapports pour relier deux sessions multimédia différentes. |
 
 ### Constantes de type de contenu
 

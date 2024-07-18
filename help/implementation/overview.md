@@ -20,13 +20,13 @@ Il existe plusieurs façons de mettre en oeuvre le module complémentaire Collec
 
 Il est recommandé d’utiliser Edge lors de la mise en oeuvre du module complémentaire de collecte de médias en flux continu pour tous les nouveaux clients Adobe Analytics ou Customer Journey Analytics.
 
-* **Media for Edge Network SDK / Extension :** Collecte des données à partir d’appareils Web, iOS et Android ou Roku et les envoie à l’Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
+* **Media for Edge Network SDK / Extension :** collecte des données à partir des appareils web, iOS et Android ou Roku et les envoie à l’Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 
-  Pour plus d’informations sur le SDK/l’extension Media for Edge Network, voir [Mise en oeuvre du module complémentaire Collection de médias en flux continu à l’aide de l’Edge Network](/help/implementation/edge/implementation-edge.md).
+  Pour plus d’informations sur le SDK/l’extension Media for Edge Network, voir [Mise en oeuvre du module complémentaire de collecte de médias en flux continu à l’aide de l’Edge Network](/help/implementation/edge/implementation-edge.md).
 
-* **API Media Edge :** Peut être personnalisé pour collecter des données à partir de n’importe quel appareil ou format (y compris les appareils mobiles, web et de bureau) et envoyer des données à l’Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
+* **API Media Edge :** peut être personnalisé pour collecter des données à partir de n’importe quel appareil ou format (y compris les appareils mobiles, web et de bureau) et envoyer des données à l’Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 
-  Pour plus d’informations sur l’API Media Edge, voir [Présentation de l’API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
+  Pour plus d’informations sur l’API Media Edge, consultez la [présentation de l’API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
 ![Workflow CJA](assets/streaming-media-edge.png)
 

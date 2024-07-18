@@ -6,7 +6,7 @@ exl-id: d77aa717-5dcb-4429-8dce-1914434f2b32
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '275'
 ht-degree: 100%
 
@@ -24,11 +24,11 @@ Il s’agit du même scénario que le scénario [Lecture VOD sans publicité](/h
 | --- | --- | --- | --- |
 | L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Étant donné que la bibliothèque de mesures ignore la présence d’une publicité preroll, ces appels réseau sont identiques au scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | La première image du contenu s’affiche. | `trackPlay` | Heartbeat Content Play | Lorsque le contenu du chapitre est lu avant le contenu principal, le Heartbeats commence lorsque le chapitre commence. |
-| Le contenu est lu |  | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
-| L’utilisateur commence l’opération de recherche sur le contenu | `trackSeekStart` |  | Aucune pulsation n’est transmise avant la fin de la recherche, par exemple, `trackSeekComplete` |
-| Fin de la recherche | `trackSeekComplete` |  | La transmission des pulsations commence puisque la recherche est terminée.  Conseil : la valeur du curseur de lecture doit correspondre au nouveau curseur de lecture après la recherche. |
+| Le contenu est lu | | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
+| L’utilisateur commence l’opération de recherche sur le contenu | `trackSeekStart` | | Aucune pulsation n’est transmise avant la fin de la recherche, par exemple, `trackSeekComplete` |
+| Fin de la recherche | `trackSeekComplete` | | La transmission des pulsations commence puisque la recherche est terminée.  Conseil : la valeur du curseur de lecture doit correspondre au nouveau curseur de lecture après la recherche. |
 | Contenu terminé | `trackComplete` | Heartbeat Content Complete | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
-| Fin de la session | `trackSessionEnd` |  | `SessionEnd` |
+| Fin de la session | `trackSessionEnd` | | `SessionEnd` |
 
 ## Exemple de code {#sample-code}
 

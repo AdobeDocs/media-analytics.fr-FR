@@ -15,14 +15,14 @@ ht-degree: 43%
 
 Les conditions préalables décrites dans cette section sont spécifiques à la mise en oeuvre du module complémentaire Collection de médias en flux continu avec les mises en oeuvre d’Adobe uniquement Analytics (si vous n’utilisez pas Edge).
 
-1. **Remplir les conditions préalables générales**<br>
-Que vous mettiez en oeuvre le module complémentaire de collecte de médias en flux continu pour les implémentations d’Adobe Analytics uniquement ou pour les implémentations d’Edge, assurez-vous que vous répondez aux [conditions préalables générales](/help/getting-started/prereqs.md).
+1. **: remplir les conditions préalables générales**<br>
+Que vous mettiez en oeuvre le module complémentaire de collecte de médias en flux continu pour les implémentations d’Adobe Analytics uniquement ou pour les implémentations d’Edge, assurez-vous de respecter les [conditions préalables générales](/help/getting-started/prereqs.md).
 
-1. **Confirmation que vous disposez d’une mise en oeuvre Adobe Analytics**<br>
+1. **Confirmez que vous disposez d’une implémentation Adobe Analytics**<br>
 Lors de la mise en oeuvre du module complémentaire Collection de médias en flux continu avec une mise en oeuvre Analytics uniquement, une mise en oeuvre de base Adobe Analytics est également requise. Pour plus d’informations, voir [Implémentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).
 
 1. **Obtenir l’URL du serveur de suivi multimédia**<br>
-Demandez à votre représentant Adobe Analytics de vous fournir l’URL du serveur de suivi multimédia. Il s’agit de la variable `collection-api-server` URL du SDK Mobile, du SDK JavaScript et du serveur de suivi non-collection-api pour Roku. Les noms de domaine pour l’implémentation de l’API sont les suivants : `[your_namespace].hb-api.omtrdc.net`.
+Demandez à votre représentant Adobe Analytics de vous fournir l’URL du serveur de suivi multimédia. Il s’agit de l’URL `collection-api-server` du SDK Mobile, du SDK JavaScript et du serveur de suivi non-collection-api pour Roku. Les noms de domaine pour l’implémentation de l’API sont les suivants : `[your_namespace].hb-api.omtrdc.net`.
 
 1. **Télécharger le SDK Media actuel ou mettre en œuvre les extensions requises**<br>
 Selon le chemin d’implémentation, [téléchargez le SDK actuel](/help/getting-started/download-sdks.md) pour les plateformes web, mobiles ou de type OTT. Les extensions requises doivent être mises en oeuvre pour activer les chemins d’accès des extensions du module complémentaire Collection de médias en flux continu.

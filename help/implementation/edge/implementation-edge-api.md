@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Mise en oeuvre du module complémentaire Collection de médias en flux continu à l’aide de l’API Edge Network
 
-Si vous ne pouvez pas utiliser la variable [SDK Adobe Experience Platform Mobile](/help/implementation/edge/implementation-edge.md), vous pouvez envoyer des données à l’Edge Network Adobe Experience Platform directement via une API.
+Si vous ne pouvez pas utiliser le [SDK Adobe Experience Platform Mobile](/help/implementation/edge/implementation-edge.md), vous pouvez envoyer des données à l’Edge Network Adobe Experience Platform directement via une API.
 
 Pour plus d’informations sur l’implémentation personnalisée des API Edge, utilisez les ressources suivantes :
 
@@ -23,4 +23,4 @@ Pour plus d’informations sur l’implémentation personnalisée des API Edge, 
 
 * [Guide de dépannage de l’API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [Utilisation du fichier Open API Specification pour les API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/swagger/)
+* [Utilisation du fichier de spécification d’API Open pour les API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/swagger/)

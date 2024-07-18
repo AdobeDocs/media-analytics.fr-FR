@@ -6,8 +6,8 @@ exl-id: 0c6a89f4-7949-4623-8ed9-ce1d1547bdfa
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '590'
+workflow-type: tm+mt
+source-wordcount: '616'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renv
 
 | Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’application démarre le minuteur d’événement de ping | 0 | 0 |  |
+| L’application démarre le minuteur d’événement de ping | 0 | 0 | |
 
 Démarrez le minuteur de ping de votre application. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
 
@@ -289,7 +289,7 @@ Envoyez un ping au serveur principal toutes les 10 secondes.
 | --- | :---: | :---: | --- |
 | Le suivi de la coupure publicitaire mid-roll commence | 45 | 33 | `/api/v1/sessions/{sid}/events` |
 
-Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart`.
+Annonce publicitaire mid-roll d’une durée de 8 secondes : envoyez `adBreakStart`.
 
 ```json
 {

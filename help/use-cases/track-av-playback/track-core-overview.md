@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 0d53e62069a65b252e004e21943ecdbd011a3658
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 100%
+source-wordcount: '875'
+ht-degree: 99%
 
 ---
 
@@ -53,7 +53,7 @@ Le suivi de la lecture principale comprend le suivi du chargement du média, du 
 
 ### À la fin du défilement
 
-* Appelez `trackEvent(SeekComplete)`
+* Appel `trackEvent(SeekComplete)`
 Annuler les modifications
 
 ### Au début de la mise en mémoire tampon

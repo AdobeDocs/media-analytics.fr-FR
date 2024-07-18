@@ -6,9 +6,9 @@ exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: 9ba64b68efec5dd8b52010ac1a13afd7703448d0
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -34,7 +34,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables du module média
 
-| Milestone | Syntaxe de Milestone | Lien personnalisé | Lien personnalisé  du lien personnalisé |
+| Milestone | Syntaxe de Milestone | Lien personnalisé | Syntaxe des liens personnalisés |
 | --- | --- | --- | --- |
 | Media.trackUsingContextData | `s.Media.trackUsingContextData` <br> `  = true;` | linkTrackVars | `s.linkTrackVars` <br> `  = 'events,` <br> `  contextData.video.name’;` <br> `  s.contextData["video.name"]` <br> `  = mediaName;` |
 | Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `  "a.media.segment":"eVar3",` <br> `  "a.contentType":"eVar1",` <br> `  "a.media.timePlayed":"event3",` <br> `  "a.media.view":"event1",` <br> `  "a.media.segmentView":"event2",` <br> `  "a.media.complete":"event7",` <br> `  "a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | S.O. | Le mappage de données contextuelles à des eVar, des props et des événements s’effectue désormais par le biais de règles de traitement. |
@@ -43,7 +43,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables facultatives
 
-| Milestone | Syntaxe de Milestone | Lien personnalisé | Lien personnalisé  du lien personnalisé |
+| Milestone | Syntaxe de Milestone | Lien personnalisé | Syntaxe des liens personnalisés |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | S.O. | Non disponible. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | S.O. | Non disponible. |
@@ -58,7 +58,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables de suivi des publicités
 
-| Milestone | Syntaxe de Milestone | Lien personnalisé | Lien personnalisé  du lien personnalisé |
+| Milestone | Syntaxe de Milestone | Lien personnalisé | Syntaxe des liens personnalisés |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | S.O. | Non disponible. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | S.O. | Non disponible. |
@@ -68,7 +68,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Méthodes du module média
 
-| Milestone | Syntaxe de Milestone | Lien personnalisé | Lien personnalisé  du lien personnalisé |
+| Milestone | Syntaxe de Milestone | Lien personnalisé | Syntaxe des liens personnalisés |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | `s.tl()` | `s.linkTrackVars` <br> `  = 'events,` <br> `     prop10,` <br> `     eVar10,` <br> `     eVar12,` <br> `     eVar15,` <br> `     contextData.video.name,` <br> `     contextData.video.view';` <br> `s.linkTrackEvents ` <br> `  = 'event2';` <br> `s.prop10` <br> `   = mediaName;` <br> `s.eVar10` <br> `  = mediaName;` <br> `s.eVar12` <br> `  = "video";` <br> `s.eVar15` <br> `  = mediaPlayerName;` <br> `s.events` <br> `  = 'event2';` <br> `s.contextData['video.name']` <br> `  = mediaName;` <br> `s.contextData['video.view']` <br> `  = 'true';` <br> `s.tl(this,'o','Video Start');` |
 | mediaName | `mediaName` : (obligatoire) nom de la vidéo tel que vous souhaitez le voir apparaître dans les rapports vidéo. | Définissez une eVar ou une variable de données contextuelles dans l’appel de lien. | `s.prop10 = mediaName;` <br> `s.eVar10 = mediaName;` <br> `s.contextData['video.name']` <br> `  = mediaName;` |

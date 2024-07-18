@@ -7,8 +7,8 @@ feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: c00c9850d5ea924cef6b4842ecb770df1e78eb21
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 97%
+source-wordcount: '346'
+ht-degree: 94%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil spécifique :
 
 * **Applications mobiles –** Les extensions Media respectent les paramètres de confidentialité de la collecte de données. Pour exclure le suivi, vous devez configurer la confidentialité sur [Exclusion dans les balises](https://developer.adobe.com/client-sdks/documentation/getting-started/create-a-mobile-property/#create-a-mobile-property) ou [Mise à jour du statut de confidentialité dans le SDK Mobile](https://developer.adobe.com/client-sdks/resources/privacy-and-gdpr/#getprivacystatus).
-* **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. Pour plus d’informations sur l’exclusion et la confidentialité, consultez la rubrique [Service identité Adobe Experience Platform](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr).
+* **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. Pour plus d’informations sur l’exclusion et la confidentialité, voir [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr).
 * **Applications OTT (Chromecast, Roku) -** Les SDK OTT fournissent des API conformes au Règlement général sur la protection des données (RGPD) qui vous permettent de définir des indicateurs d’état `opt` pour la collecte et la transmission de données, ainsi que de récupérer des identités stockées localement.
 
   >[!NOTE]

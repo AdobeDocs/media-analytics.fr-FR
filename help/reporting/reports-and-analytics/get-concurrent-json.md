@@ -3,8 +3,8 @@ title: Obtention des données du rapport JSON sur les visionneuses simultanées
 description: Obtention des données du rapport JSON sur les visionneuses simultanées
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '164'
+workflow-type: tm+mt
+source-wordcount: '156'
 ht-degree: 100%
 
 ---

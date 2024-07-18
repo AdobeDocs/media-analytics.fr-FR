@@ -6,7 +6,7 @@ exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 100%
 
@@ -27,6 +27,6 @@ Voici les différences principales entre les versions 1.x et 2.x :
 * Toutes les configurations sont désormais consolidées dans la classe `MediaHeartbeatConfig`.
 * Vous n’avez plus besoin d’instancier des configurations pour les modules complémentaires Analytics, VideoPlayer et Heartbeat. Il vous suffit d’instancier la classe `MediaHeartbeat` avec les instances `MediaHeartbeatDelegate` et `MediaHeartbeatConfig`. Il s’agit de la seule mise en œuvre nécessaire pour initialiser Media Analytics.
 
-   Suite à l’initialisation de `MediaHeartbeat`, vous pouvez supprimer la mise en œuvre des modules Analytics, VideoPlayer et Heartbeat en toute sécurité. Supprimez également la mise en œuvre existante pour l’initialisation qui utilise divers modules en tant qu’entrée. Vous pouvez afficher des comparaisons côte à côte des mises en œuvre 1.x et 2.x dans la rubrique [Comparaison de code : 1.x vers 2.x](./code-comparison-1x-2x.md)..
+  Suite à l’initialisation de `MediaHeartbeat`, vous pouvez supprimer la mise en œuvre des modules Analytics, VideoPlayer et Heartbeat en toute sécurité. Supprimez également la mise en œuvre existante pour l’initialisation qui utilise divers modules en tant qu’entrée. Vous pouvez afficher des comparaisons côte à côte des mises en œuvre 1.x et 2.x dans la rubrique [Comparaison de code : 1.x vers 2.x](./code-comparison-1x-2x.md)..
 
 Les nouvelles API de la version 2.x sont décrites en détail ici : [Conversion 1.x vers 2.x de l’API.](./1x-2x-api-change.md)

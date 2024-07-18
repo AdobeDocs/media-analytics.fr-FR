@@ -14,7 +14,7 @@ ht-degree: 50%
 
 # Envoi d’événements ping{#sending-ping-events}
 
-**Vous devez déclencher des événements ping toutes les 10 secondes, en commençant après 10 secondes de lecture, indépendamment des autres événements API que vous avez envoyés. Cela s’applique au contenu principal et au suivi des publicités.**
+**Vous devez déclencher des événements ping toutes les 10 secondes, en commençant après 10 secondes de lecture, indépendamment des autres événements API que vous avez envoyés. Cela s&#39;applique à la fois au contenu principal et au suivi des publicités.**
 
 Les événements ping sont la &quot;pulsation&quot; du module complémentaire Collection de médias en flux continu. Les seuls paramètres requis pour un appel ping sont `eventType: ping` avec l’objet `playerTime` (position du curseur de lecture et horodatage).
 

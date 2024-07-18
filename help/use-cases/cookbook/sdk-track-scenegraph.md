@@ -6,8 +6,8 @@ exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1169'
+workflow-type: tm+mt
+source-wordcount: '1152'
 ht-degree: 100%
 
 ---
@@ -59,42 +59,42 @@ Le pont de connecteur est conçu pour fonctionner comme suit :
 
 | Catégorie | Nom de la méthode | Description |
 |---|---|---|
-| **Constantes** |  |  |
+| **Constantes** | |  |
 |  | `sceneGraphConstants` | Renvoie un objet contenant `SceneGraphConstants`. Reportez-vous au tableau ci-dessus pour plus de détails. |
-|  |  |  |
-| **Journalisation de débogage** |  |  |
+|  | | |
+| **Journalisation de débogage** | | |
 |  | `setDebugLogging` | API SceneGraph permettant de définir la journalisation de débogage sur le kit SDK ADBMobile. |
 |  | `getDebugLogging` | API SceneGraph permettant d’obtenir la journalisation de débogage du kit SDK ADBMobile. |
-|  | Pour plus d’informations, reportez-vous à la section Journalisation de débogage du kit SDK hérité. |  |
-|  |  |  |
-| **État de désinscription/confidentialité** |  |  |
+|  | Pour plus d’informations, reportez-vous à la section Journalisation de débogage du kit SDK hérité. | |
+|  | | |
+| **État de désinscription/confidentialité** | | |
 |  | `setPrivacyStatus` | API SceneGraph permettant de définir l’état de confidentialité sur le kit SDK ADBMobile. |
 |  | `getPrivacyStatus` | API SceneGraph permettant d’obtenir l’état de confidentialité du kit SDK ADBMobile. |
-|  | Pour plus d’informations, reportez-vous à la section État de désinscription/confidentialité du kit SDK hérité. |  |
-|  |  |  |
-| **Analytics** |  |  |
+|  | Pour plus d’informations, reportez-vous à la section État de désinscription/confidentialité du kit SDK hérité. | |
+|  | | |
+| **Analytics** | | |
 |  | `trackState` | API SceneGraph permettant de suivre l’état sur le kit SDK ADBMobile. |
 |  | `trackAction` | API SceneGraph permettant de suivre l’action sur le kit SDK ADBMobile. |
 |  | `trackingIdentifier` | API SceneGraph permettant d’obtenir un identifiant de suivi à partir du kit SDK ADBMobile. |
 |  | `userIdentifier` | API SceneGraph permettant d’obtenir un identifiant d’utilisateur du kit SDK ADBMobile. |
 |  | `setUserIdentifier` | API SceneGraph permettant de définir l’identifiant d’utilisateur sur le kit SDK ADBMobile. |
 |  | `getAllIdentifiers` | L’API SceneGraph récupère toutes les identités d’utilisateur connues et conservées par le kit SDK Roku. |
-|  | Pour plus d’informations, reportez-vous à la section Analytics du kit SDK hérité. |  |
-|  |  |  |
-| **Experience Cloud** |  |  |
+|  | Pour plus d’informations, reportez-vous à la section Analytics du kit SDK hérité. | |
+|  | | |
+| **Experience Cloud** | | |
 |  | `visitorSyncIdentifiers` | API SceneGraph permettant de synchroniser les identifiants Experience Cloud sur le kit SDK ADBMobile. |
 |  | `visitorMarketingCloudID` | API SceneGraph permettant d’obtenir l’Experience Cloud ID de visiteur depuis le kit SDK ADBMobile. |
-|  | Pour plus d’informations, reportez-vous à la section Experience Cloud du kit SDK hérité. |  |
-|  |  |  |
-| **Audience Manager** |  |  |
+|  | Pour plus d’informations, reportez-vous à la section Experience Cloud du kit SDK hérité. | |
+|  | | |
+| **Audience Manager** | | |
 |  | `audienceSubmitSignal` | API SceneGraph permettant d’envoyer un signal de gestion de l’audience avec caractéristique. |
 |  | `audienceVisitorProfile` | API SceneGraph permettant d’obtenir un profil de visiteur Audience Manager du kit SDK ADBMobile. |
 |  | `audienceDpid` | API SceneGraph permettant d’obtenir un DPID d’audience du kit SDK ADBMobile. |
 |  | `audienceDpuuid` | API SceneGraph permettant d’obtenir un DPUUID d’audience du kit SDK ADBMobile. |
 |  | `audienceSetDpidAndDpuuid` | API SceneGraph permettant de définir le DPID et le DPUUID d’audience sur le kit SDK ADBMobile. |
-|  | Pour plus d’informations, reportez-vous à la section Audience Manager du kit SDK hérité. |  |
-|  |  |  |
-| **MediaHeartbeat** |  |  |
+|  | Pour plus d’informations, reportez-vous à la section Audience Manager du kit SDK hérité. | |
+|  | | |
+| **MediaHeartbeat** | | |
 |  | `mediaTrackLoad` | API SceneGraph permettant de charger le contenu vidéo pour le suivi MediaHeartbeat. |
 |  | mediaTrackStart | API SceneGraph pour commencer la session de suivi vidéo à l’aide de MediaHeartbeat. |
 |  | `mediaTrackUnload` | API SceneGraph permettant de décharger le contenu vidéo depuis le suivi MediaHeartbeat. |
@@ -105,7 +105,7 @@ Le pont de connecteur est conçu pour fonctionner comme suit :
 |  | mediaTrackEvent | API SceneGraph permettant de suivre les événements de lecture pendant le suivi. Par exemple : Publicités, Chapitres. |
 |  | `mediaUpdatePlayhead` | API SceneGraph permettant d’envoyer des mises à jour playhead à MediaHeartbeat pendant le suivi vidéo. |
 |  | `mediaUpdateQoS` | API SceneGraph permettant d’envoyer des mises à jour QoS à MediaHeartbeat pendant le suivi vidéo. |
-|  | Pour plus d’informations, reportez-vous à la section MediaHeartbeat du kit SDK hérité. |  |
+|  | Pour plus d’informations, reportez-vous à la section MediaHeartbeat du kit SDK hérité. | |
 
 ### SceneGraphConstants
 
@@ -193,7 +193,7 @@ Type de retour : `SceneGraphConstants`
 |---|---|---|
 | Contrôle de version | `version` | Constante permettant de récupérer les informations de version d’AdobeMobileLibrary |
 | Confidentialité/désinscription | `PRIVACY_STATUS_OPT_IN` | Constante pour l’état de confidentialité choisi |
-|  | `PRIVACY_STATUS_OPT_OUT` | Constante pour l’état de confidentialité refusé |
+|   | `PRIVACY_STATUS_OPT_OUT` | Constante pour l’état de confidentialité refusé |
 | Accéder aux constantes MediaHeartbeat | Consultez les constantes de cette page : <br/><br/>[Méthodes Media Heartbeat.](/help/use-cases/track-av-playback/track-core/track-core-roku.md) | Utilisation de ces constantes avec les API MediaHeartbeat |
 | Métadonnées standard | Reportez-vous aux constantes de cette page : <br/><br/>[Paramètres de métadonnées standard.](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md) | Utilisez ces constantes pour joindre des métadonnées de type vidéo/publicitaire standard dans des API MediaHeartbeat |
 

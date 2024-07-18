@@ -6,8 +6,8 @@ exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '355'
+workflow-type: tm+mt
+source-wordcount: '359'
 ht-degree: 100%
 
 ---
@@ -83,14 +83,14 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
    * [Mise en œuvre de métadonnées de publicité standard sur JavaScript](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js.md)
    * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la publicité actuelle :
 
-      ```js
-      /* Set custom context data */
-      var adCustomMetadata = {
-          affiliate: "Sample affiliate",
-          campaign: "Sample ad campaign",
-          creative: "Sample creative"
-      };
-      ```
+     ```js
+     /* Set custom context data */
+     var adCustomMetadata = {
+         affiliate: "Sample affiliate",
+         campaign: "Sample ad campaign",
+         creative: "Sample creative"
+     };
+     ```
 
 1. Appelez `trackEvent()` avec l’événement `AdStart` dans l’instance `MediaHeartbeat` pour commencer le suivi de la lecture de publicité.
 

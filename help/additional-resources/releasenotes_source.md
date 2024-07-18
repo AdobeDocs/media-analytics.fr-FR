@@ -1,7 +1,7 @@
 ---
 source-git-commit: e534d44f9d03b99153fde23b2c587f8607ceea72
-workflow-type: ht
-source-wordcount: '677'
+workflow-type: tm+mt
+source-wordcount: '612'
 ht-degree: 100%
 
 ---
@@ -87,7 +87,7 @@ Nouvelles fonctionnalités de Media Analytics
 
 | Fonctionnalité | Disponibilité générale | Description |
 | -------- | -------------------- | ----------- |
-| [Périphériques et plateformes pris en charge](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html?lang=fr) | 18 juin 2020 | L’extension Media Launch avec SDK AEP prend désormais en charge les appareils OTT suivants : <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Système d’exploitation Fire)</li><li>Android TV</li></ul></div> |
+| [Appareils et plateformes pris en charge](https://experienceleague.adobe.com/docs/media-analytics/using/supported-devices.html?lang=fr) | 18 juin 2020 | L’extension Media Launch avec SDK AEP prend désormais en charge les appareils OTT suivants : <div><ul><li>Apple TV (tvOS)</li><li>Fire TV (Système d’exploitation Fire)</li><li>Android TV</li></ul></div> |
 
 
 

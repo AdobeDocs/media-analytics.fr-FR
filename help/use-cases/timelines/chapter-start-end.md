@@ -6,8 +6,8 @@ exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Media Analytics
 role: User, Admin, Data Engineer
 source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
-workflow-type: ht
-source-wordcount: '1106'
+workflow-type: tm+mt
+source-wordcount: '1159'
 ht-degree: 100%
 
 ---
@@ -60,7 +60,7 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renv
 
 | Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’application démarre le minuteur d’événement de ping | 0 | 0 |  |
+| L’application démarre le minuteur d’événement de ping | 0 | 0 | |
 
 Démarrez votre minuteur de ping. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
 
@@ -250,7 +250,7 @@ La coupure publicitaire est terminée. Tout au long de la coupure publicitaire, 
 | --- | :---: | :---: | --- |
 | Suivi de l’événement de lecture | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Après l’événement `adBreakComplete`, placez le lecteur à l’état « lecture » à l’aide de l’événement `play`.
+Après l’événement `adBreakComplete`, placez le lecteur à l’état « en cours de lecture » à l’aide de l’événement `play`.
 
 ```json
 {
@@ -380,7 +380,7 @@ Le premier chapitre se termine, juste avant la seconde coupure publicitaire.
 | --- | :---: | :---: | --- |
 | Le suivi de la coupure publicitaire mid-roll commence | 46 | 21 | `/api/v1/sessions/{sid}/events` |
 
-Publicité mid-roll d’une durée de 8 secondes : envoyez `adBreakStart`.
+Annonce publicitaire mid-roll d’une durée de 8 secondes : envoyez `adBreakStart`.
 
 ```json
 {
@@ -618,7 +618,7 @@ Effectuez le suivi de la fin du second et dernier chapitre.
 | --- | :---: | :---: | --- |
 | L’utilisateur termine de regarder le contenu jusqu’à la fin. | 88 | 45 | `/api/v1/sessions/{sid}/events` |
 
-Envoyez `sessionComplete` au serveur principal pour indiquer que l’utilisateur ou l’utilisatrice a fini de regarder le contenu entier.
+Envoyez `sessionComplete` au serveur principal pour indiquer que l’utilisateur a fini de regarder le contenu entier.
 
 ```json
 {

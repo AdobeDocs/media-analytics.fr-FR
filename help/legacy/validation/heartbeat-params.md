@@ -26,7 +26,7 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 | `l:event:duration` | SDK Media | (Obligatoire)<br/><br/>Cette valeur est définie en interne (en millisecondes) par le SDK Media et non par le lecteur. Elle permet de calculer les mesures de temps passé sur le serveur principal. Par exemple, a.media.totalTimePlayed est calculé en tant que somme de la durée de toutes les pulsations Play (type=play) générées. <br/>*Remarque :* ce paramètre est défini sur 0 pour certains événements, car il s’agit d’« événements de changement d’état » (par exemple, type=complete, type=chapter_complete ou type=bitrate_change). |
 | `l:event:playhead` | VideoInfo | (Obligatoire)<br/><br/>Curseur de lecture présent dans la ressource active (principale ou publicité) lorsque l’événement a été enregistré. |
 | `s:event:sid` | SDK Media | (Obligatoire)<br/><br/>ID de session (chaîne générée de manière aléatoire). Tous les événements d’une même session (vidéo + publicités) doivent être identiques. |
-| `l:asset:duration` / `l:asset:length` <br/>(Renommé à partir de la durée) | VideoInfo | (Obligatoire)<br/><br/>Durée de la ressource vidéo de la ressource principale. |
+| `l:asset:duration` / `l:asset:length` <br/> (renommé à partir de la durée) | VideoInfo | (Obligatoire)<br/><br/>Durée de la ressource vidéo de la ressource principale. |
 | `s:asset:publisher` | MediaHeartbeatConfig | (Obligatoire)<br/><br/>Éditeur de la ressource. |
 | `s:asset:video_id` | VideoInfo | (Obligatoire)<br/><br/>Identifiant qui identifie de manière unique la vidéo dans le catalogue de l’éditeur. |
 | `s:asset:type` | SDK Media | (Obligatoire)<br/><br/>Type de ressource (principale ou publicité). |
