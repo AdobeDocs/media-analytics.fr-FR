@@ -4,10 +4,10 @@ description: Découvrez comment le module complémentaire de collecte de médias
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
 workflow-type: tm+mt
-source-wordcount: '1883'
-ht-degree: 9%
+source-wordcount: '2154'
+ht-degree: 8%
 
 ---
 
@@ -111,6 +111,30 @@ Pour créer et configurer un schéma :
 
    1. Sélectionnez [!UICONTROL **Confirmer**] > [!UICONTROL **Enregistrer**] pour enregistrer vos modifications.
 
++++
+
+1. (Facultatif) Vous pouvez ajouter des métadonnées personnalisées à votre schéma. Vous pouvez ainsi inclure des métadonnées supplémentaires définies par l’utilisateur qui peuvent être personnalisées en fonction de besoins ou de contextes spécifiques. Cette flexibilité est utile dans les cas où les schémas existants ne couvrent pas les points de données souhaités. (Vous pouvez également utiliser des métadonnées personnalisées avec les API Media Edge. Pour plus d’informations, voir [ Création de métadonnées personnalisées avec les API Media Edge ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
+
++++ Développez ici pour afficher des instructions sur l’ajout de métadonnées personnalisées à votre schéma.
+
+   1. Recherchez le nom du client de l’organisation en sélectionnant [!UICONTROL **Informations sur le compte**] > [!UICONTROL **Organisations affectées**] > [!UICONTROL _**nom de l’organisation**_] > [!UICONTROL **tenant**].
+
+      Ces champs personnalisés seront reçus par ce chemin d’accès. (Par exemple, le nom du client : _dcbl → myCustomField path: _dcbl.myCustomField.)
+
+   1. Ajoutez un groupe de champs personnalisé à votre schéma multimédia défini.
+
+      ![add-custom-metadata](assets/add-custom-metadata-fieldgroup.png)
+
+   1. Ajoutez les champs personnalisés dont vous souhaitez effectuer le suivi au groupe de champs.
+
+      ![add-custom-metadata](assets/add-custom-fields.png)
+
+   1. [Utilisez le chemin généré](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans le payload de votre requête.
+
+      ![add-custom-metadata](assets/custom-fields-path.png)
+
++++
+
 1. Poursuivez en [créant un jeu de données dans Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
 ## Création d’un jeu de données dans Adobe Experience Platform
@@ -135,8 +159,8 @@ Pour créer et configurer un schéma :
 
      >[!IMPORTANT]
      >
-         >     Ne sélectionnez pas [!UICONTROL **Save and Add Mapping**], car cela entraînera des erreurs de mappage pour le champ Timestamp.
-     
+     >Ne sélectionnez pas [!UICONTROL **Enregistrer et ajouter le mappage**], car cela entraînera des erreurs de mappage pour le champ Horodatage.
+
      ![Créer un flux de données et sélectionner un schéma](assets/datastream-create-schema.png)
 
    * Ajoutez l’un des services suivants au flux de données, selon que vous utilisez Adobe Analytics ou Customer Journey Analytics :
@@ -151,7 +175,7 @@ Pour créer et configurer un schéma :
 
      ![Ajout du service Adobe Analytics](assets/datastream-add-service.png)
 
-   * Développez [!UICONTROL **Options avancées**], puis activez l’option [!UICONTROL **Media Analytics**].
+      * Développez [!UICONTROL **Options avancées**], puis activez l’option [!UICONTROL **Media Analytics**].
 
      ![Option Media Analytics](assets/datastream-media-check.png)
 
@@ -164,7 +188,6 @@ Pour créer et configurer un schéma :
 >[!NOTE]
 >
 >La procédure suivante n’est requise que si vous utilisez Customer Journey Analytics.
-
 
 1. Veillez à créer un flux de données comme décrit dans [Configuration d’un flux de données dans Customer Journey Analytics](#configure-a-datastream-in-adobe-experience-platform).
 
@@ -301,11 +324,22 @@ Pour créer et configurer un schéma :
 
    ![Durée de lecture du média dans le panneau](assets/media-playback-time-spent-panels.png)
 
+1. (Conditionnel) Si vous avez ajouté des métadonnées personnalisées à votre schéma, comme décrit à l’étape 8 de [Configuration du schéma dans Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform), vous devez définir la persistance des champs personnalisés, comme décrit dans la section [Paramètres du composant de persistance](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) du guide du Customer Journey Analytics.
+
+   Lorsque des données arrivent dans Customer Journey Analytics, la dimension Identifiant utilisateur personnalisé est disponible.
+
+   ![setup-custom-metadata](assets/custom-metadata-dimension.png)
+
+   >[!NOTE]
+   >
+   >Si vous configurez Adobe Analytics en amont pour votre flux de données, les métadonnées personnalisées sont également présentes dans ContextData, avec le nom que vous avez défini dans le schéma (sans le préfixe du client, par exemple myCustomField). Cela permet d’utiliser toutes les fonctionnalités Adobe Analytics disponibles pour ContextData, telles que la [création d’une règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
+
 1. Partagez le projet comme décrit dans [Partager les projets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
    >   Si les utilisateurs avec lesquels vous souhaitez partager du contenu ne sont pas disponibles, assurez-vous qu’ils disposent d’un accès utilisateur et administrateur à Customer Journey Analytics dans Adobe Admin Console.
+
 
 1. Passez à [Envoyer des données à Edge Experience Platform](#send-data-to-experience-platform-edge).
 
