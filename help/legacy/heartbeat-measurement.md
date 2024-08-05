@@ -4,10 +4,10 @@ description: Découvrez comment les pulsations servent à collecter des mesures 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 86%
+ht-degree: 75%
 
 ---
 
@@ -24,5 +24,5 @@ L’utilisation des pulsations dans le module complémentaire Collection de méd
 | Intégrations | L’ID Experience Cloud est lié à Adobe Experience Cloud pour une analyse croisée plus facile. Grâce à l’intégration automatique d’Adobe Experience Cloud, vous pouvez segmenter les audiences de vos médias, les cibler et faire des recommandations de médias en fonction de leurs préférences. |
 | Tarifs | Suivi transparent par diffusion média (unique) |
 | Mise en œuvre et support | Configuration rationalisée avec mises à jour et améliorations constants. Grâce à un processus d’implémentation rationalisé, vous pouvez rapidement mapper des variables à l’aide de l’API du lecteur et valider les implémentations à l’aide de l’outil de débogage Adobe pour vous assurer que toutes les variables nécessaires sont suivies avec précision. |
-| Partage de partenaires | Federated Analytics et Certified Metrics. Grâce aux données partagées par le biais de Federated Analytics, vous pouvez tirer parti de nos fonctionnalités de partage de médias leaders du secteur afin d’évaluer de manière holistique les données de l’ensemble de vos partenaires de distribution de médias (opérateurs, programmeurs et distributeurs). |
+| Partage de partenaires | Médias fédérés et mesures certifiées. Grâce aux données partagées par le biais de Federated Media, vous pouvez capitaliser sur nos fonctionnalités de partage vidéo leaders du secteur, afin d’évaluer les données de manière holistique pour l’ensemble de vos partenaires de distribution multimédia (opérateurs, programmeurs et distributeurs). |
 | Suivi avancé | Suivi du contenu téléchargé, suivi de la récupération des erreurs et observateurs simultanés. Vous pouvez effectuer le suivi du contenu multimédia en streaming téléchargé et lu sur un appareil, quelle que soit sa connectivité. |

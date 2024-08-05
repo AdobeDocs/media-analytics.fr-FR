@@ -5,10 +5,10 @@ user-guide-title: Module complémentaire Collection de médias en streaming
 breadcrumb-title: Guide de collection des médias en streaming
 user-guide-description: Mettez en œuvre de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 240fa48bdc738425e04cd29c27625c7dd612ff18
+source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
 workflow-type: tm+mt
 source-wordcount: '895'
-ht-degree: 97%
+ht-degree: 96%
 
 ---
 
@@ -100,7 +100,7 @@ ht-degree: 97%
       + [Suivi de plusieurs états du lecteur](use-cases/player-state-tracking/multiple-player-states.md)
       + [Exemples de suivi de l’état du lecteur](use-cases/player-state-tracking/player-state-examples.md)
    + [Suivi du contenu téléchargé ](use-cases/track-downloaded-content.md)
-   + [Federated Analytics ](use-cases/federated-analytics.md)
+   + [Federated Media](use-cases/federated-media.md)
    + [Gestion des interruptions de l’application lors de la lecture](use-cases/cookbook/app-interrupts.md)
    + [Attribution des diffusions multimédia](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Reprise des sessions inactives](use-cases/cookbook/resuming-inactive.md)
