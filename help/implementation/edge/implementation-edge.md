@@ -4,7 +4,7 @@ description: Découvrez comment le module complémentaire de collecte de médias
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 3963cd62b7c190464fe5314198107f273a225503
+source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
 workflow-type: tm+mt
 source-wordcount: '2154'
 ht-degree: 8%
@@ -387,4 +387,4 @@ Pour plus d’informations sur l’API Media Edge, voir les ressources suivantes
 
 * [Guide de dépannage de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
-* [Utilisation du fichier de spécification d’API Open pour les API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/swagger.html)
+* [Utilisation du fichier de spécification d’API Open pour les API Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

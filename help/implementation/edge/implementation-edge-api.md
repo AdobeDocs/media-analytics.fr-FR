@@ -4,7 +4,7 @@ description: Ressources relatives à l’installation de Media Analytics avec l�
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 380d3ea192162226816d2e269e5cca20f981ac0f
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -23,4 +23,4 @@ Pour plus d’informations sur l’implémentation personnalisée des API Edge, 
 
 * [Guide de dépannage de l’API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
-* [Utilisation du fichier de spécification d’API Open pour les API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/swagger/)
+* [Utilisation du fichier de spécification d’API Open pour les API Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
