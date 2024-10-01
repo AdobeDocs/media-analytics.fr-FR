@@ -5,10 +5,10 @@ uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a1c3bdbec223ab0141d922dce07ba2128b52e794
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 100%
+source-wordcount: '1120'
+ht-degree: 99%
 
 ---
 
@@ -283,7 +283,7 @@ Effectuez le suivi de la fin de la seconde publicité preroll.
 | --- | :---: | :---: | --- |
 | Le suivi de la coupure publicitaire preroll est terminé | 22 | 0 | `/api/v1/sessions/{sid}/events` |
 
-La coupure publicitaire est terminée. Tout au long de la coupure publicitaire, l’état de lecture est resté sur « lecture ».
+La coupure publicitaire est terminée.
 
 ```json
 {
