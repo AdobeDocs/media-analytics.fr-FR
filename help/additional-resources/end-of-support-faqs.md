@@ -4,31 +4,31 @@ description: Cette rubrique comprend des questions fréquentes concernant l’ab
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 74%
+source-wordcount: '600'
+ht-degree: 75%
 
 ---
 
-# FAQ sur l’abandon de la prise en charge du SDK Mobile Media Analytics
+# FAQ sur l’abandon de la prise en charge de Media Analytics Mobile SDK
 
-Avec la fin de la prise en charge des SDK mobiles version 4 le 31 août 2021, Adobe a également arrêté la prise en charge des SDK mobiles Media Analytics pour iOS et Android. (Cela n’inclut pas le SDK Media Analytics pour les plateformes web (JS) et OTT telles que Chromecast et Roku, qui sont toujours prises en charge.)
+Avec l’abandon de la prise en charge des SDK mobiles version 4 le 31 août 2021, Adobe a également arrêté la prise en charge des SDK Media Analytics Mobile pour iOS et Android. (Cela n’inclut pas les plateformes SDK for web (JS) et OTT de Media Analytics telles que Chromecast et Roku, qui sont toujours prises en charge.)
 
-Cela signifie qu’Adobe ne fournit plus de correctifs, de mises à jour liées au système d’exploitation ou de prise en charge du SDK Mobile Media Analytics. Lors de la migration vers les nouveaux SDK Experience Platform, sachez que les [extensions Media Analytics](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) doivent être mises en oeuvre pour activer le module complémentaire Adobe Streaming Media Collection.
+Cela signifie qu’Adobe ne fournit plus de correctifs, de mises à jour liées au système d’exploitation ou de prise en charge de Media Analytics Mobile SDK. Lors de la migration vers les nouveaux SDK Experience Platform, sachez que les [ extensions Media Analytics ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) doivent être mises en œuvre pour activer la collecte de médias en flux continu Adobe.
 
 
 ## 5 choses à savoir
 
-1. Les SDK mobiles v4 ne sont plus pris en charge à compter du 31 août 2021. Vous devez migrer vers les SDK mobiles Adobe Experience Platform (AEP) pour iOS et Android.
+1. Les SDK Mobile v4 ne sont plus pris en charge à compter du 31 août 2021. Vous devez migrer vers les SDK mobiles Adobe Experience Platform (AEP) pour iOS et Android.
 
-1. La mise en œuvre d’Analytics for Streaming Media requiert le SDK mobile AEP ainsi que l’utilisation des extensions Analytics et Media Analytics. À compter du 1er septembre 2021, vous devrez utiliser les nouveaux SDK et extensions AEP Mobile.  Les extensions Media Analytics sont configurées à l’aide des balises Adobe (collecte de données). Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
+1. La mise en œuvre d’Analytics for Streaming Media requiert le SDK mobile AEP ainsi que l’utilisation des extensions Analytics et Media Analytics. Depuis le 1er septembre 2021, vous devez utiliser les nouveaux SDK et extensions AEP Mobile.  Les extensions Media Analytics sont configurées à l’aide des balises Adobe (collecte de données). Pour plus d’informations, voir [Migration du SDK Media autonome vers Adobe Launch](/help/legacy/sdk-to-launch/sdk-to-launch-migration.md).
 
 1. Le développement des fonctionnalités des SDK Media Analytics pour iOS et Android est terminé. Les nouvelles fonctionnalités introduites à partir de l’automne 2019 sont activées à l’aide des extensions Media Analytics et de l’API Media Collection.
 
 1. Les SDK Roku et Chromecast restent disponibles pour les clients d’Analytics for Streaming Media. Les SDK Roku et Chromecast continueront d’être améliorés et pris en charge en tant que SDK autonomes. Si vous utilisez le SDK JS pour Media Analytics, vous pouvez continuer à utiliser le SDK autonome ou activer l’extension Media Analytics à l’aide d’Adobe Data Collection (autrefois Adobe Launch).
 
-Contactez votre équipe de compte d’Adobe si vous avez des questions.
+Pour toute question, veuillez contacter l’équipe chargée de votre compte Adobe.
 
 ## Questions fréquentes
 

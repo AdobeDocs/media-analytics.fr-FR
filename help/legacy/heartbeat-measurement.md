@@ -4,18 +4,18 @@ description: Découvrez comment les pulsations servent à collecter des mesures 
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '313'
 ht-degree: 75%
 
 ---
 
 # À propos de la mesure de pulsation
 
-Le module complémentaire Adobe Streaming Media Collection utilise des &quot;pulsations&quot; pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Les médias en flux continu mesurent les pulsations à l’aide d’Adobe Launch avec l’extension Media Analytics, le SDK Media et l’API Media Collection. Les composants `AppMeasurement` et `VisitorID` sont utilisés pour recevoir des données vidéo.
+La collection Streaming Media d’Adobe utilise des « pulsations » pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Les médias en flux continu mesurent les pulsations à l’aide d’Adobe Launch avec l’extension Media Analytics, Media SDK et l’API Media Collection. Les composants `AppMeasurement` et `VisitorID` sont utilisés pour recevoir des données vidéo.
 
-L’utilisation des pulsations dans le module complémentaire Collection de médias en flux continu offre les avantages suivants :
+L’utilisation des pulsations dans la collection de médias en flux continu offre les avantages suivants :
 
 | Fonctionnalité | Description |
 |---|---|
@@ -24,5 +24,5 @@ L’utilisation des pulsations dans le module complémentaire Collection de méd
 | Intégrations | L’ID Experience Cloud est lié à Adobe Experience Cloud pour une analyse croisée plus facile. Grâce à l’intégration automatique d’Adobe Experience Cloud, vous pouvez segmenter les audiences de vos médias, les cibler et faire des recommandations de médias en fonction de leurs préférences. |
 | Tarifs | Suivi transparent par diffusion média (unique) |
 | Mise en œuvre et support | Configuration rationalisée avec mises à jour et améliorations constants. Grâce à un processus d’implémentation rationalisé, vous pouvez rapidement mapper des variables à l’aide de l’API du lecteur et valider les implémentations à l’aide de l’outil de débogage Adobe pour vous assurer que toutes les variables nécessaires sont suivies avec précision. |
-| Partage de partenaires | Médias fédérés et mesures certifiées. Grâce aux données partagées par le biais de Federated Media, vous pouvez capitaliser sur nos fonctionnalités de partage vidéo leaders du secteur, afin d’évaluer les données de manière holistique pour l’ensemble de vos partenaires de distribution multimédia (opérateurs, programmeurs et distributeurs). |
+| Partage de partenaires | Federated Media et Certified Metrics. Grâce aux données partagées via Federated Media, vous pouvez tirer parti de nos fonctionnalités de partage de médias leaders du secteur afin d’évaluer de manière holistique les données de tous vos partenaires de distribution de médias (opérateurs, programmeurs et distributeurs). |
 | Suivi avancé | Suivi du contenu téléchargé, suivi de la récupération des erreurs et observateurs simultanés. Vous pouvez effectuer le suivi du contenu multimédia en streaming téléchargé et lu sur un appareil, quelle que soit sa connectivité. |

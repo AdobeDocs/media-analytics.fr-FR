@@ -4,18 +4,18 @@ description: Découvrez comment implémenter Adobe Streaming Media pour les appl
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: aed561d0-defc-4be5-87d3-0f331cdfab34
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '441'
 ht-degree: 92%
 
 ---
 
-# Installation du SDK Media à l’aide de JavaScript {#install-web-sdks}
+# Installation de Media SDK à l’aide de JavaScript {#install-web-sdks}
 
 Les informations de cette page décrivent comment installer le SDK autonome web et configurer JavaScript.
 
-Vous pouvez également utiliser l’extension Adobe Medium Analytics pour mettre en oeuvre le module complémentaire de collecte de médias en flux continu Adobe, comme décrit dans la section [Mise en oeuvre d’Analytics à l’aide de l’extension Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
+Vous pouvez également utiliser l’extension Adobe Medium Analytics pour implémenter la collection de médias en flux continu Adobe, comme décrit dans la section [Implémentation d’Analytics à l’aide de l’extension Media Analytics](/help/implementation/media-sdk/setup/web-implementation-tags.md).
 
 ## Conditions préalables {#prerequesites}
 

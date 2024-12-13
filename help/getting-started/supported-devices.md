@@ -1,19 +1,19 @@
 ---
 title: En savoir plus sur les appareils et plateformes pris en charge
-description: "Découvrez les principaux appareils tels qu’iOS, Android, les appareils OTT et les navigateurs JavaScript pris en charge par le module complémentaire de collecte de médias en flux continu."
+description: Découvrez les principaux appareils tels qu’iOS, Android, les appareils OTT et les navigateurs JavaScript pris en charge par la collection Streaming Media.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Media Analytics
 role: User, Admin
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '313'
-ht-degree: 76%
+source-wordcount: '309'
+ht-degree: 77%
 
 ---
 
 # Appareils et plateformes pris en charge {#devices-supported}
 
-Le module complémentaire Adobe Streaming Media Collection prend en charge tous les appareils principaux, notamment :
+La collection Streaming Media d’Adobe prend en charge tous les appareils principaux, notamment :
 
 * Smartphones et tablettes iOS et Android
 * Appareils OTT pour ROKU, Fire TV et Android TV
@@ -21,11 +21,11 @@ Le module complémentaire Adobe Streaming Media Collection prend en charge tous 
 
 Les SDK sont régulièrement mis à jour lorsque de nouvelles versions de périphériques sont publiées. Vous pouvez également utiliser les SDK pour intégrer les lecteurs natifs de chaque plateforme ou de tout autre lecteur multimédia disponible.
 
-Pour les périphériques qui ne sont pas actuellement compatibles avec des SDK, ou dans les cas où vous devrez personnaliser votre implémentation, vous pouvez utiliser l’API Media Collection ou Media Edge. Ces API vous permettent d’effectuer des appels d’API RESTful directement d’un appareil au serveur principal du module complémentaire de collecte de médias en flux continu.
+Pour les périphériques qui ne sont pas actuellement compatibles avec des SDK, ou dans les cas où vous devrez personnaliser votre implémentation, vous pouvez utiliser l’API Media Collection ou Media Edge. Ces API vous permettent d’effectuer des appels API RESTful directement depuis un appareil vers le serveur principal de la collection de médias en flux continu.
 
 Le tableau ci-dessous liste les appareils actuellement pris en charge. Si un appareil n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son état.
 
-Pour plus d’informations sur l’implémentation de Media sur Edge, voir [Installation du module complémentaire de collecte de médias en flux continu avec Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
+Pour plus d’informations sur l’implémentation de Media sur Edge, consultez [Installation de Streaming Media Collection avec Edge Experience Platform ](/help/implementation/edge/implementation-edge.md).
 
 | Plateformes et appareils de streaming | | SDK/Extension pour Media pour réseau Edge | API Media Edge | Extension Media avec balises ou SDK AEP Mobile | SDK Media | API Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

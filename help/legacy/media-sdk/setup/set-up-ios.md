@@ -5,16 +5,16 @@ uuid: a1c6be79-a6dc-47b6-93b3-ac7b42f1f3eb
 exl-id: fe7662b5-1700-4bd6-b542-66aa8493459d
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: '755'
 ht-degree: 94%
 
 ---
 
 # Configuration d’iOS{#set-up-ios}
 
-Découvrez comment configurer le module complémentaire Collection de médias en flux continu pour les appareils iOS.
+Découvrez comment configurer la collection Streaming Media pour les appareils iOS.
 
 >[!IMPORTANT]
 >
@@ -167,7 +167,7 @@ Effectuez les étapes suivantes dans votre projet Xcode. Ce guide est rédigé e
 
 1. Faites glisser le fichier de bibliothèque `VideoHeartbeat_TV.a` dans le dossier `lib` de votre projet.
 
-1. Dans l’onglet **[!UICONTROL Créer les phases]** de la cible de votre application tvOS, développez la section **[!UICONTROL Lier le fichier binaire avec les bibliothèques]** et ajoutez les bibliothèques suivantes :
+1. Dans l’onglet **[!UICONTROL Phases de création]** de la cible de votre application tvOS, développez la section **[!UICONTROL Lier le fichier binaire aux bibliothèques]** et ajoutez les bibliothèques suivantes :
 
    * `MediaSDK_TV.a`
    * `AdobeMobileLibrary_TV.a`

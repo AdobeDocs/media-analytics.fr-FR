@@ -5,16 +5,16 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '442'
 ht-degree: 97%
 
 ---
 
 # Configuration d’Android{#set-up-android}
 
-Découvrez comment configurer le module complémentaire Collection de médias en flux continu pour les appareils Android.
+Découvrez comment configurer la collection Streaming Media pour les appareils Android.
 
 >[!IMPORTANT]
 >

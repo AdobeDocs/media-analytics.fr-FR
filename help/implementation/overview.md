@@ -1,32 +1,32 @@
 ---
-title: Mise en oeuvre du module complémentaire Collection de médias en flux continu
-description: Découvrez les chemins de mise en oeuvre du module complémentaire Collection de médias en flux continu.
+title: Implémentation de la collection de médias en flux continu
+description: Découvrez les chemins d’implémentation de Streaming Media Collection.
 uuid: null
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 4ed604cb1969212421fecd40996d7b25af50a2b2
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '453'
 ht-degree: 69%
 
 ---
 
-# Mise en oeuvre du module complémentaire Collection de médias en flux continu
+# Implémentation de la collection de médias en flux continu
 
-Il existe plusieurs façons de mettre en oeuvre le module complémentaire Collection de médias en flux continu Adobe. Pour une comparaison détaillée des appareils et plateformes pris en charge pour les méthodes d’implémentation décrites sur cette page, consultez [Appareils et plateformes pris en charge](/help/getting-started/supported-devices.md).
+Il existe différentes manières de mettre en œuvre la collection Streaming Media d’Adobe. Pour une comparaison détaillée des appareils et plateformes pris en charge pour les méthodes d’implémentation décrites sur cette page, consultez [Appareils et plateformes pris en charge](/help/getting-started/supported-devices.md).
 
 ## Méthodes d’implémentation Edge
 
-Il est recommandé d’utiliser Edge lors de la mise en oeuvre du module complémentaire de collecte de médias en flux continu pour tous les nouveaux clients Adobe Analytics ou Customer Journey Analytics.
+Nous vous recommandons d’utiliser Edge lors de l’implémentation de Streaming Media Collection pour tous les nouveaux clients Adobe Analytics ou Customer Journey Analytics.
 
-* **Media for Edge Network SDK / Extension :** collecte des données à partir des appareils web, iOS et Android ou Roku et les envoie à l’Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
+* **Media pour SDK Edge Network/Extension :** collecte des données à partir d’appareils Web, iOS et Android, ou d’appareils Roku, et les envoie à Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 
-  Pour plus d’informations sur le SDK/l’extension Media for Edge Network, voir [Mise en oeuvre du module complémentaire de collecte de médias en flux continu à l’aide de l’Edge Network](/help/implementation/edge/implementation-edge.md).
+  Pour plus d’informations sur l’extension/le SDK Media pour Edge Network, voir [ Implémentation de la collection Streaming Media à l’aide de l’Edge Network ](/help/implementation/edge/implementation-edge.md).
 
-* **API Media Edge :** peut être personnalisé pour collecter des données à partir de n’importe quel appareil ou format (y compris les appareils mobiles, web et de bureau) et envoyer des données à l’Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
+* **API Media Edge :** peut être personnalisé pour collecter des données à partir de n’importe quel appareil ou format (y compris, mobile, web et appareils par contournement) et envoyer des données à l’Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 
-  Pour plus d’informations sur l’API Media Edge, consultez la [présentation de l’API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
+  Pour plus d’informations sur l’API Media Edge, voir [Présentation de l’API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/).
 
 ![Workflow CJA](assets/streaming-media-edge.png)
 

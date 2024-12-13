@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Module complémentaire Collection de médias en streaming
+user-guide-title: Streaming Media Collection
 breadcrumb-title: Guide de collection des médias en streaming
 user-guide-description: Mettez en œuvre de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '893'
 ht-degree: 96%
 
 ---
 
 
-# Module complémentaire Collection de médias en streaming {#using}
+# Streaming Media Collection {#using}
 
 + [Guide de collection des médias en streaming](media-overview.md)
 + Notes de mise à jour {#release-notes}
@@ -21,7 +21,7 @@ ht-degree: 96%
 + Prise en main {#getting-started}
    + [Conditions préalables](getting-started/prereqs.md)
    + [Appareils pris en charge](getting-started/supported-devices.md)
-   + [Documentation de mise en oeuvre de la collecte de médias en flux continu](getting-started/implementation-documentation.md)
+   + [Documentation d’implémentation de Streaming Media Collection](getting-started/implementation-documentation.md)
    + [SDK, bibliothèques et extensions](getting-started/download-sdks.md)
    + Fin de la prise en charge {#end-of-support}
       + [Fin de la prise en charge du SDK Media Analytics Mobile](additional-resources/end-of-support-faqs.md)
@@ -105,7 +105,7 @@ ht-degree: 96%
    + [Attribution des diffusions multimédia](use-cases/media-analytics-cookbook/media-dimensions.md)
    + [Reprise des sessions inactives](use-cases/cookbook/resuming-inactive.md)
    + [Suivi Roku dans SceneGraph](use-cases/cookbook/sdk-track-scenegraph.md)
-   + [Gestion des écarts entre les publicités](use-cases/cookbook/fix-ad-play-ad.md)
+   + [Gérer les écarts entre les publicités](use-cases/cookbook/fix-ad-play-ad.md)
    + Chronologies {#timelines}
       + [Début et fin du chapitre](use-cases/timelines/chapter-start-end.md)
       + [Affichage à la fin du contenu](use-cases/timelines/view-to-end-of-content.md)
