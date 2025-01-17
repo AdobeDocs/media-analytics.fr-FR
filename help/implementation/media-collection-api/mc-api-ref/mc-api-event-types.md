@@ -1,14 +1,14 @@
 ---
 title: Types et descriptions d’événements de streaming multimédia
-description: « Quels sont les types et descriptions d’événements Media Collection ? "
+description: 'Quels sont les types et descriptions d’événements Media Collection ? '
 uuid: bc4f75a7-ea22-47eb-a50d-5f41274c6d41
 exl-id: f2919e69-8b03-45b4-b9cd-365222a061e0
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: 06f24e828fb7795d55599ea1fa7913182dd357e6
+source-git-commit: 98722998606af3761652e282c31338bb966eb654
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 88%
+source-wordcount: '394'
+ht-degree: 79%
 
 ---
 
@@ -81,7 +81,7 @@ Signale la survenue d’une erreur.
 
 Permet d’indiquer au serveur principal Media Analytics de fermer immédiatement la session lorsque l’utilisateur a arrêté de regarder le contenu et ne reviendra probablement pas.
 
-Si un `sessionEnd` n’est pas envoyé, une session abandonnée [expire normalement](../mc-api-impl/mc-api-timeout.md) (soit après qu’aucun événement ne soit reçu pendant 10 minutes, soit lorsqu’aucun mouvement du curseur de lecture ne se produit pendant 30 minutes). De plus, tous les appels de médias ultérieurs effectués avec cet ID de session seront ignorés.
+Si aucune `sessionEnd` n’est envoyée, une session abandonnée [expire normalement](../mc-api-impl/mc-api-timeout.md) (soit après qu’aucun événement n’a été reçu pendant 10 minutes, soit lorsqu’aucun mouvement du curseur de lecture ne se produit pendant 30 minutes). En outre, tous les appels multimédia suivants effectués avec cet ID de session seront ignorés.
 
 ## sessionComplete
 
@@ -90,3 +90,15 @@ Envoyé lorsque la fin du contenu principal est atteinte.
 >[!IMPORTANT]
 >
 >Vous devez vous référer aux [schémas de validation JSON](mc-api-json-validation.md) pour chaque type d’événement afin de vérifier les types et les exigences de paramètre corrects.
+
+## stateStart
+
+Indique le début du suivi de l’état du lecteur.
+
+Pour plus d’informations, voir [Implémentation et création de rapports](/help/use-cases/player-state-tracking/implementation-and-reporting.md).
+
+## stateEnd
+
+Indique la fin du suivi de l’état du lecteur.
+
+Pour plus d’informations, voir [Implémentation et création de rapports](/help/use-cases/player-state-tracking/implementation-and-reporting.md).

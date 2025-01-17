@@ -4,25 +4,25 @@ description: Découvrez comment mettre en œuvre la fonction de suivi de lʼéta
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
 feature: Media Analytics
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 100%
+source-wordcount: '328'
+ht-degree: 78%
 
 ---
 
 # Mise en œuvre et création de rapports
 
-Au cours d’une session de lecture, chaque occurrence d’état (du début à la fin de la lecture) doit faire l’objet d’un suivi individuel. Pour ce faire, le SDK Media et l’API Media Collection fournissent de nouvelles méthodes de suivi.
+Au cours d’une session de lecture, chaque occurrence d’état (du début à la fin de la lecture) doit faire l’objet d’un suivi individuel. Media SDK et l’API Media Collection fournissent des méthodes de suivi pour cette fonctionnalité.
 
-Le SDK Media comprend deux nouvelles méthodes pour le suivi d’état personnalisé :
+Media SDK comprend deux méthodes de suivi d’état personnalisé :
 
 `trackStateStart("state_name")`
 
 `trackStateClose("state_name")`
 
 
-L’API Media Collection comprend deux nouveaux événements dont le paramètre requis est `media.stateName` :
+L’API Media Collection comprend deux événements qui ont `media.stateName` comme paramètre obligatoire :
 
 `stateStart` et `stateEnd`
 
@@ -91,11 +91,11 @@ Les mesures fournies pour chaque état individuel sont calculées et transmises 
 
 ## Création de rapports
 
-Toutes les mesures d’état du lecteur peuvent être utilisées pour toutes les visualisations de rapports disponibles dans Analysis Workspace ou un composant (segment, mesures calculées) une fois qu’une suite de rapports est activée pour le suivi de l’état du lecteur. Les nouvelles mesures peuvent être activées à partir d’Admin Console pour chaque rapport individuel en configurant la création de rapports multimédia (Modifier les paramètres > Gestion des médias > Création de rapports multimédia).
+Toutes les mesures d’état du lecteur peuvent être utilisées pour toutes les visualisations de rapports disponibles dans Analysis Workspace ou un composant (segment, mesures calculées) une fois qu’une suite de rapports est activée pour le suivi de l’état du lecteur. Ces mesures peuvent être activées à partir de l’Admin Console pour chaque rapport individuel à l’aide de la configuration des rapports multimédia (Modifier les paramètres > Gestion des médias > Rapports multimédia).
 
 ![](assets/report-setup.png)
 
-Dans Analytics Workspace, toutes les nouvelles propriétés se trouvent dans le panneau des mesures. Par exemple, vous pouvez rechercher par `full screen` pour consulter les données portant sur le passage en plein écran dans le panneau des mesures.
+Dans Analysis Workspace, toutes les nouvelles propriétés se trouvent dans le panneau des mesures. Par exemple, vous pouvez rechercher par `full screen` pour consulter les données portant sur le passage en plein écran dans le panneau des mesures.
 
 ![](assets/full-screen-report.png)
 
