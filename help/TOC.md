@@ -1,7 +1,7 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Streaming Media Collection
+user-guide-title: Streaming Media Collection
 breadcrumb-title: Guide de collection des médias en streaming
 user-guide-description: Mettez en œuvre de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
@@ -13,7 +13,7 @@ ht-degree: 96%
 ---
 
 
-# Streaming Media Collection {#using}
+# Streaming Media Collection {#using}
 
 + [Guide de collection des médias en streaming](media-overview.md)
 + Notes de mise à jour {#release-notes}
