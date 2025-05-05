@@ -18,7 +18,7 @@ ht-degree: 9%
 >
 >*Les rapports* dans Workspace étaient auparavant appelés *modèles*.
 
-Analysis Workspace propose un ensemble de rapports prédéfinis, disponibles par défaut, que vous pouvez utiliser pour analyser les données. Pour plus d’informations sur tous les rapports par défaut disponibles, voir [Affichage des rapports](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#menus) sur la [page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).
+Analysis Workspace propose un ensemble de rapports prédéfinis, disponibles par défaut, que vous pouvez utiliser pour analyser les données. Pour plus d’informations sur tous les rapports par défaut disponibles, voir [Affichage des rapports](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr#menus) sur la [page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).
 
 Certains de ces rapports sont particulièrement utiles pour l’analyse des données multimédia en flux continu, comme décrit dans les sections suivantes.
 
@@ -41,6 +41,6 @@ Par exemple, si vous choisissez le rapport [!UICONTROL **Consommation de médias
 Vous pouvez utiliser les rapports multimédia par défaut comme suit :
 lors de la création d’un projet. Vous pouvez également effectuer ou lors de la modification d’un projet existant.
 
-* **Lors de la création d’un projet :** Pour plus d’informations sur la création d’un projet à partir d’un rapport par défaut, voir [Création d’un projet à partir d’un projet vide ou d’un rapport](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report) dans [Création de projets dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=en#create-a-project-from-a-blank-project-or-a-report).
+* **Lors de la création d’un projet :** Pour plus d’informations sur la création d’un projet à partir d’un rapport par défaut, voir [Création d’un projet à partir d’un projet vide ou d’un rapport](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=fr#create-a-project-from-a-blank-project-or-a-report) dans [Création de projets dans Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/build-workspace-project/create-projects.html?lang=fr#create-a-project-from-a-blank-project-or-a-report).
 
-* **Lors de la création d’un rapport d’entreprise personnalisé :** Pour plus d’informations sur la création d’un rapport d’entreprise personnalisé, voir [Créer un rapport d’entreprise personnalisé](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=en#company-report) sur la [page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).
+* **Lors de la création d’un rapport d’entreprise personnalisé :** Pour plus d’informations sur la création d’un rapport d’entreprise personnalisé, voir [Créer un rapport d’entreprise personnalisé](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr#company-report) sur la [page d’entrée Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/landing.html?lang=fr).
