@@ -1,25 +1,25 @@
 ---
-title: Implémenter Streaming Media Collection à l’aide de l’Edge Network
-description: Découvrez comment la collection de médias en flux continu peut être implémentée avec Edge Experience Platform.
+title: Implémenter Streaming Media Collection à l’aide d’Edge Network
+description: Découvrez comment la collection de médias en flux continu peut être implémentée avec Experience Platform Edge.
 feature: Media Analytics
 role: User, Admin, Data Engineer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: c7e9b7ca9dedbd0389240cb045d274ee6995ecbe
 workflow-type: tm+mt
 source-wordcount: '2146'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 
-# Implémenter Streaming Media Collection à l’aide de l’Edge Network
+# Implémenter Streaming Media Collection à l’aide d’Edge Network
 
 Le réseau Edge d&#39;Adobe Experience Platform vous permet d’envoyer des données destinées à plusieurs produits vers un emplacement centralisé. Experience Edge transfère les informations appropriées aux produits souhaités. Ce concept vous permet de consolider les efforts de mise en œuvre, en particulier sur plusieurs solutions de données.
 
-L’illustration suivante montre comment la collecte de médias en flux continu Adobe peut être mise en œuvre pour utiliser Edge Experience Platform afin de rendre les données disponibles dans Analysis Workspace, dans Adobe Analytics ou Customer Journey Analytics :
+L’illustration suivante montre comment la collecte de médias en flux continu Adobe peut être mise en œuvre pour utiliser Experience Platform Edge afin de rendre les données disponibles dans Analysis Workspace, dans Adobe Analytics ou Customer Journey Analytics :
 
 ![Workflow CJA](assets/streaming-media-edge.png)
 
-Pour obtenir un aperçu de toutes les options d’implémentation, y compris des méthodes d’implémentation qui n’utilisent pas Edge Experience Platform, consultez [ Implémentation de la collection de médias en flux continu ](/help/implementation/overview.md).
+Pour obtenir un aperçu de toutes les options d’implémentation, y compris des méthodes d’implémentation qui n’utilisent pas Experience Platform Edge, consultez [ Implémentation de la collection de médias en flux continu ](/help/implementation/overview.md).
 
 Que vous utilisiez Adobe Experience Platform Web SDK, Adobe Experience Platform Mobile SDK, Adobe Experience Platform Roku SDK ou l’API pour implémenter la collection de médias en flux continu avec Experience Edge, vous devez d’abord remplir les sections suivantes :
 
@@ -29,7 +29,7 @@ Pour normaliser la collecte de données à utiliser dans les applications qui ut
 
 Pour créer et configurer un schéma :
 
-1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr).
+1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
 1. Sur la page Détails du schéma lors de la création du schéma, choisissez [!UICONTROL **Événement d’expérience**] lors du choix de la classe de base du schéma.
 
@@ -40,7 +40,7 @@ Pour créer et configurer un schéma :
 1. Spécifiez un nom d’affichage et une description de schéma, puis sélectionnez [!UICONTROL **Terminer**].
 
 1. Dans la zone [!UICONTROL **Composition**], dans la section [!UICONTROL **Groupes de champs**], sélectionnez [!UICONTROL **Ajouter**], puis recherchez et ajoutez les nouveaux groupes de champs suivants au schéma :
-   * `Adobe Analytics ExperienceEvent Template`
+   * `End User ID Details`
    * `Implementation Details`
    * `MediaAnalytics Interaction Details`
 
@@ -129,7 +129,7 @@ Pour créer et configurer un schéma :
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
+   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -137,7 +137,7 @@ Pour créer et configurer un schéma :
 
 1. Continuez avec [Création d’un jeu de données dans Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
-## Création d’un jeu de données dans Adobe Experience Platform
+## Créer un jeu de données dans Adobe Experience Platform
 
 1. Veillez à configurer un schéma comme décrit dans la section [Configuration du schéma dans Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
@@ -167,11 +167,11 @@ Pour créer et configurer un schéma :
 
       * [!UICONTROL **Adobe Analytics**] (si vous utilisez Adobe Analytics)
 
-        Si vous utilisez Adobe Analytics, veillez à définir une suite de rapports, comme décrit dans la section [Création d’une suite de rapports](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        Si vous utilisez Adobe Analytics, veillez à définir une suite de rapports, comme décrit dans la section [Création d’une suite de rapports](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (si vous utilisez Customer Journey Analytics)
 
-     Pour plus d’informations sur l’ajout d’un service à un flux de données, consultez la section « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr#view-details).
+     Pour plus d’informations sur l’ajout d’un service à un flux de données, consultez la section « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
      ![Ajouter le service Adobe Analytics](assets/datastream-add-service.png)
 
@@ -199,9 +199,9 @@ Pour créer et configurer un schéma :
 
    1. Assurez-vous que le paramètre [!UICONTROL **Importer toutes les nouvelles données**] est activé.
 
-1. Continuez avec [Créer une vue de données dans Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+1. Continuez avec [Création d’une vue de données dans Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
-## Création d’une vue de données dans Customer Journey Analytics
+## Créer une vue de données dans Customer Journey Analytics
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ Pour créer et configurer un schéma :
 
    1. Mettez à jour les libellés (dans le menu déroulant [!UICONTROL **Libellés de contexte**]) des composants dans le tableau suivant. Recherchez et faites glisser dans le panneau tous les composants qui ne figurent pas encore dans le panneau mesures .
 
-      | Nom du composant | Libellé de contexte |
+      | Nom du composant | Étiquette de contexte |
       |---------|----------|
       | Délai d’expiration du serveur de session multimédia | Média : secondes depuis le dernier appel |
       | Passé sur le média | Média : temps passé sur le média |
@@ -281,7 +281,7 @@ Pour créer et configurer un schéma :
       | Temps jusqu’au début | Média : Heure De Début |
       | Durée totale de pause | Média : durée totale de pause |
 
-   1. Pour ajouter des répartitions à votre projet de Customer Journey Analytics, ajoutez les dimensions suivantes au panneau [!UICONTROL **Dimensions**] :
+   1. Pour ajouter des répartitions à votre projet Customer Journey Analytics, ajoutez les dimensions suivantes au panneau [!UICONTROL **Dimensions**] :
 
       | Chemin XDM | Nom du composant |
       |---------|----------|
@@ -296,7 +296,7 @@ Pour créer et configurer un schéma :
 
 ## Création et configuration d’un projet dans Customer Journey Analytics
 
-1. Assurez-vous d’avoir créé une vue de données dans Customer Journey Analytics, comme décrit dans la section [Créer une vue de données dans Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
+1. Assurez-vous d’avoir créé une vue de données dans Customer Journey Analytics, comme décrit dans la section [Création d’une vue de données dans Customer Journey Analytics](#create-a-new-data-view-in-customer-journey-analytics).
 
 1. Dans Customer Journey Analytics, dans l’onglet [!UICONTROL **Workspace**], dans la zone [!UICONTROL **Projets**], sélectionnez [!UICONTROL **Créer un projet**].
 
@@ -324,28 +324,28 @@ Pour créer et configurer un schéma :
 
    ![Panneau Temps de lecture de média](assets/media-playback-time-spent-panels.png)
 
-1. (Conditionnel) Si vous avez ajouté des métadonnées personnalisées à votre schéma, comme décrit à l’étape 8 de [Configuration du schéma dans Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform), vous devez définir la persistance des champs personnalisés, comme décrit dans [Paramètres des composants de persistance](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) dans le guide du Customer Journey Analytics.
+1. (Conditionnel) Si vous avez ajouté des métadonnées personnalisées à votre schéma, comme décrit à l’étape 8 de [Configuration du schéma dans Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform), vous devez définir la persistance des champs personnalisés, comme décrit dans [Paramètres des composants de persistance](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) dans le guide Customer Journey Analytics.
 
-   Lorsque les données arrivent en Customer Journey Analytics, la dimension ID d’utilisateur personnalisé est disponible.
+   Lorsque les données arrivent dans Customer Journey Analytics, la dimension ID d’utilisateur personnalisé est disponible.
 
    ![setup-custom-metadata](assets/custom-metadata-dimension.png)
 
    >[!NOTE]
    >
-   >Si vous configurez Adobe Analytics en tant qu’élément en amont de votre flux de données, les métadonnées personnalisées sont également présentes dans ContextData, avec le nom que vous avez défini dans le schéma (sans le préfixe client, par exemple myCustomField). Cela permet d’utiliser toutes les fonctionnalités d’Adobe Analytics disponibles pour ContextData, telles que [création d’une règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
+   >Si vous configurez Adobe Analytics en tant qu’élément en amont de votre flux de données, les métadonnées personnalisées sont également présentes dans ContextData, avec le nom que vous avez défini dans le schéma (sans le préfixe client, par exemple myCustomField). Cela permet d’utiliser toutes les fonctionnalités d’Adobe Analytics disponibles pour ContextData, telles que [création d’une règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
 
-1. Partagez le projet comme décrit dans la section [Partager des projets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=fr).
+1. Partagez le projet comme décrit dans la section [Partager des projets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
-   >   Si les utilisateurs avec lesquels vous souhaitez partager ne sont pas disponibles, assurez-vous qu’ils disposent d’un accès utilisateur et administrateur à Customer Journey Analytics dans le Adobe Admin Console.
+   >   Si les utilisateurs avec lesquels vous souhaitez partager ne sont pas disponibles, assurez-vous qu’ils disposent d’un accès utilisateur et administrateur à Customer Journey Analytics dans Adobe Admin Console.
 
 
-1. Continuez avec [Envoi de données à Edge Experience Platform ](#send-data-to-experience-platform-edge).
+1. Continuez avec [Envoi de données à Experience Platform Edge](#send-data-to-experience-platform-edge).
 
-## Envoi de données à Edge Experience Platform
+## Envoi de données à Experience Platform Edge
 
-Selon le type de données que vous souhaitez envoyer à Edge Experience Platform, vous pouvez utiliser l’une des méthodes suivantes :
+Selon le type de données que vous souhaitez envoyer à Experience Platform Edge, vous pouvez utiliser l’une des méthodes suivantes :
 
 ### Web : utiliser le SDK Web Adobe Experience Platform
 
@@ -353,7 +353,7 @@ Selon le type de données que vous souhaitez envoyer à Edge Experience Platform
 
 * [Envoyer des données web à Edge avec Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md)
 
-* [Migration vers l’extension Adobe Streaming Media for Edge Network ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Extension Migration vers Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Mobile : utiliser le SDK mobile Adobe Experience Platform
 
@@ -363,7 +363,7 @@ Utilisez les ressources de documentation suivantes pour terminer la mise en œuv
 
 * [Référence d’API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Migration vers l’extension Adobe Streaming Media for Edge Network ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Extension Migration vers Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Roku : Adobe Experience Platform Roku SDK
 
@@ -375,16 +375,16 @@ Utilisez les ressources de documentation suivantes pour terminer la mise en œuv
 
 ### API : Web et autre
 
-L’API est actuellement le seul moyen pris en charge pour envoyer des données web à Edge Experience Platform.
+L’API est actuellement le seul moyen pris en charge pour envoyer des données web à Experience Platform Edge.
 
 L’API est également disponible si vous souhaitez utiliser une implémentation personnalisée des API d’Edge.
 
 Pour plus d’informations sur l’API Media Edge, consultez les ressources suivantes :
 
-* [Présentation de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html?lang=fr)
+* [Présentation de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/overview.html)
 
-* [Prise en main de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html?lang=fr)
+* [Prise en main de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Guide de dépannage de l’API Media Edge ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html?lang=fr)
+* [Guide de dépannage de l’API Media Edge ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
 * [Utilisation du fichier de spécification Open API pour les API Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)
