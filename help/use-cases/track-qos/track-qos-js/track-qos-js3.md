@@ -1,13 +1,13 @@
 ---
 title: Découvrez comment effectuer le suivi de la qualité de lʼexpérience à lʼaide de JavaScript 3.x
-description: « Découvrez comment mettre en œuvre le suivi de la qualité de lʼexpérience (QoE, QoS) à lʼaide du SDK Media dans les applications de navigateur avec JavaScript 3x. »
+description: Découvrez l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide de Media SDK dans les applications de navigateur utilisant JavaScript 3x.
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '224'
-ht-degree: 99%
+ht-degree: 90%
 
 ---
 
@@ -19,7 +19,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre sur t
 >
 >Si vous mettez en œuvre une version précédente du kit SDK, vous pouvez télécharger les Guides du développeur dans la rubrique [Téléchargement des SDK.](/help/getting-started/download-sdks.md)
 
-## Mise en oeuvre de l’assouplissement quantitatif
+## Implémenter QOE
 
 1. Identifiez le moment où le débit binaire change pendant la lecture du média et créez l’instance `qoeObject` à l’aide des informations QoE.
 

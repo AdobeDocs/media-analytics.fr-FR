@@ -3,9 +3,9 @@ title: Descriptions des paramètres Heartbeat
 description: Explorez les paramètres Heartbeat qu’Adobe collecte et traite sur le serveur Media Analytics (heartbeats).
 uuid: e9ddda32-0952-43d0-a702-49f5b1bfd8cf
 exl-id: ffa67b5e-ee54-4a5b-8064-decd108f944b
-feature: "Media Analytics, Variables"
+feature: "Streaming Media, Variables"
 role: User, Admin, Data Engineer
-source-git-commit: 917c87d759a43f124dfb3e3ac7f6a441c65fde94
+source-git-commit: 70900e305c3ed7a2be4069c6f296d56f1f6e0966
 workflow-type: tm+mt
 source-wordcount: '669'
 ht-degree: 99%
@@ -26,7 +26,7 @@ Liste des paramètres Media Analytics collectés et traités par Adobe sur le se
 | `l:event:duration` | SDK Media | (Obligatoire)<br/><br/>Cette valeur est définie en interne (en millisecondes) par le SDK Media et non par le lecteur. Elle permet de calculer les mesures de temps passé sur le serveur principal. Par exemple, a.media.totalTimePlayed est calculé en tant que somme de la durée de toutes les pulsations Play (type=play) générées. <br/>*Remarque :* ce paramètre est défini sur 0 pour certains événements, car il s’agit d’« événements de changement d’état » (par exemple, type=complete, type=chapter_complete ou type=bitrate_change). |
 | `l:event:playhead` | VideoInfo | (Obligatoire)<br/><br/>Curseur de lecture présent dans la ressource active (principale ou publicité) lorsque l’événement a été enregistré. |
 | `s:event:sid` | SDK Media | (Obligatoire)<br/><br/>ID de session (chaîne générée de manière aléatoire). Tous les événements d’une même session (vidéo + publicités) doivent être identiques. |
-| `l:asset:duration` / `l:asset:length` <br/> (renommé à partir de la durée) | VideoInfo | (Obligatoire)<br/><br/>Durée de la ressource vidéo de la ressource principale. |
+| `l:asset:duration` / `l:asset:length` <br/> (renommé depuis la durée ) | VideoInfo | (Obligatoire)<br/><br/>Durée de la ressource vidéo de la ressource principale. |
 | `s:asset:publisher` | MediaHeartbeatConfig | (Obligatoire)<br/><br/>Éditeur de la ressource. |
 | `s:asset:video_id` | VideoInfo | (Obligatoire)<br/><br/>Identifiant qui identifie de manière unique la vidéo dans le catalogue de l’éditeur. |
 | `s:asset:type` | SDK Media | (Obligatoire)<br/><br/>Type de ressource (principale ou publicité). |

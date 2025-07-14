@@ -3,9 +3,9 @@ title: 'Paramètres de publicité '
 description: Découvrez les paramètres de publicité, y compris les variables d’implémentation, de réseau et de création de rapports pour les données de vidéo publicitaire.
 uuid: 92cd7f97-bb5a-4de6-8946-453d30271d0f
 exl-id: 949e86cb-d265-4836-8825-a06b87203b15
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '2036'
 ht-degree: 89%
@@ -37,13 +37,13 @@ Description des données de tableau :
 >[!IMPORTANT]
 >
 >Ne modifiez pas les noms de classification des variables répertoriées ci-dessous qui sont
->décrits sous Variable de création de rapports/réservée comme « classification ».
->Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour les médias.
->Suivi. De temps à autre, Adobe ajoute de nouvelles propriétés et, dans ce cas,
->les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés
->du média. Au cours du processus de mise à jour, Adobe détermine si les
->classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque,
->Adobe l’ajoute à nouveau.
+>>décrits sous Variable de création de rapports/réservée comme « classification ».
+>>Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour les médias.
+>>Suivi. De temps à autre, Adobe ajoute de nouvelles propriétés et, dans ce cas,
+>>les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés
+>>du média. Au cours du processus de mise à jour, Adobe détermine si les
+>>classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque,
+>>Adobe l’ajoute à nouveau.
 
 ## Données de publicité vidéo {#ad-video-data}
 

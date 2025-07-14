@@ -3,9 +3,9 @@ title: Lecture VOD avec saut de chapitre
 description: Affichez un exemple de suivi du contenu VOD dans lequel l’utilisateur a ignoré un chapitre à l’aide du SDK Media.
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 85%
@@ -22,7 +22,7 @@ Il s’agit du même scénario que la lecture [VOD avec un chapitre](/help/use-c
 
 | Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques |
 |---|---|---|---|
-| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont identiques à ceux du scénario [Lecture sans interruption dans iOS](vod-no-intrs-details.md) . |
+| L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont exactement les mêmes que [Lecture sans interruptions dans le scénario iOS](vod-no-intrs-details.md). |
 | Le chapitre démarre. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |
 | La première image du chapitre s’affiche. | `trackPlay` | Heartbeat Chapter Play | Lorsque le contenu d’un chapitre est lu avant le contenu principal, nous voulons commencer les pulsations lorsque le chapitre commence. |
 | Le chapitre est lu. |  | Chapter Heartbeats |  |
@@ -35,7 +35,7 @@ Il s’agit du même scénario que la lecture [VOD avec un chapitre](/help/use-c
 
 ## Paramètres {#parameters}
 
-Les paramètres utilisés pendant la lecture du chapitre sont identiques aux paramètres du scénario [Lecture VOD avec un chapitre](/help/use-cases/tracking-scenarios/vod-one-chapter.md), sauf qu’il n’existe aucun appel réseau de fin du chapitre.
+Les paramètres utilisés pendant la lecture de chapitre sont identiques à ceux du scénario [Lecture VOD avec un chapitre](/help/use-cases/tracking-scenarios/vod-one-chapter.md), sauf qu&#39;il n&#39;y a pas d&#39;appel réseau de fin de chapitre.
 
 ## Exemple de code {#sample-code}
 

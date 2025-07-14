@@ -2,9 +2,9 @@
 title: À propos des états standards et personnalisés
 description: Cette rubrique décrit la fonctionnalité de suivi de l’état du lecteur, y compris les exigences et les instructions relatives à la mise en œuvre et à la création de rapports portant sur les états du lecteur standards et personnalisés.
 exl-id: 3c492055-d471-4147-aa78-b058d6b931f4
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: cdc5ea361829c749dfbb457288ac5ba51a530961
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 99%

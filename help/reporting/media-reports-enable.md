@@ -1,11 +1,11 @@
 ---
-title: Activation des rapports multimédia
+title: 'Activation des rapports multimédia '
 description: Découvrez la suite de rapports multimédia qui collecte les mesures multimédia.  Pour configurer les rapports multimédia avant l’envoi des données multimédia, procédez comme suit.
 uuid: d306068d-a308-4b6e-8a72-742dda0de428
 exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 98%
@@ -20,7 +20,7 @@ Les clients expérimentés peuvent utiliser les panneaux de médias dans Analysi
 
 >[!TIP]
 >
->Pour tirer parti des nouvelles fonctionnalités, les clients de médias en flux continu existants doivent réactiver le suivi multimédia de leurs RSID.
+>Pour tirer parti des nouvelles fonctionnalités, les clients de médias en flux continu existants doivent réactiver le suivi multimédia pour leurs RSID.
 
 1. Dans [Reports &amp; Analytics](https://my.omniture.com/login/) cliquez sur **[!UICONTROL Administration > Suites de rapports].**
 1. Sélectionnez la ou les suite(s) de rapports à l’emplacement où vous effectuez la collecte de données multimédia, puis cliquez sur **[!UICONTROL Modifier les paramètres > Gestion des médias > Création de rapports multimédia].**

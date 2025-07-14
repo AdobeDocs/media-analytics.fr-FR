@@ -3,12 +3,12 @@ title: Comparaison de code v1.x vers v2.x
 description: Découvrez la différence entre le code des versions 1.x et 2.x du SDK Media.
 uuid: 9f0a1660-2100-446d-ab75-afdf966478b3
 exl-id: c2324c6a-329f-44e2-bea0-9d43ef9c6ef7
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '544'
-ht-degree: 100%
+ht-degree: 74%
 
 ---
 
@@ -46,7 +46,7 @@ Les sections suivantes fournissent des comparaisons de code entre les versions 
 | `AdobeAnalyticsPlugin()` | |
 | `HeartbeatPlugin()` | |
 
-#### Initialisation du module du lecteur vidéo (1.x) {#plugin-init-1.x}
+#### Initialisation du plug-in du lecteur vidéo (1.x) {#plugin-init-1.x}
 
 ```js
 this._playerPlugin = new VideoPlayerPlugin( new SampleVideoPlayerPluginDelegate(this._player));
@@ -75,7 +75,7 @@ configData.debugLogging = true;
 this._heartbeat.configure(configData);
 ```
 
-#### Initialisation de Media Heartbeat (2.x) {#mh-init-2.x}
+#### Initialisation Media Heartbeat (2.x) {#mh-init-2.x}
 
 ```js
 var mediaConfig = new MediaHeartbeatConfig();
@@ -185,7 +185,7 @@ this._mediaHeartbeat = new MediaHeartbeat(new SampleMediaHeartbeatDelegate(this.
 | `VideoPlayerPluginDelegate.trackVideoLoad()` | `MediaHeartbeat.createMediaObject()` |
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 
-#### Démarrage de la session (1.x) {#session-start-1.x}
+#### Début de session (1.x) {#session-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -202,7 +202,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Démarrage de la session (2.x) {#session-start-2.x}
+#### Début de session (2.x) {#session-start-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {
@@ -372,7 +372,7 @@ VideoAnalyticsProvider.prototype._onSeekComplete = function() {
 };
 ```
 
-#### Recherche (2.x) {#seek-2.x}
+#### Recherche en cours (2.x) {#seek-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onSeekComplete = function() {
@@ -411,7 +411,7 @@ VideoAnalyticsProvider.prototype._onBufferStart = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBufferComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BufferComplete)` |
 
-#### Fin de la mémoire tampon (1.x) {#buffer-complete-1.x}
+#### Fin de la mise en mémoire tampon (1.x) {#buffer-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() {
@@ -420,7 +420,7 @@ VideoAnalyticsProvider.prototype._onBufferComplete = function() {
 };
 ```
 
-#### Fin de la mémoire tampon (2.x) {#buffer-complete-2.x}
+#### Fin de la mise en mémoire tampon (2.x) {#buffer-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBufferComplete = function() {
@@ -466,7 +466,7 @@ VideoAnalyticsProvider.prototype._onComplete = function() {
 | `VideoPlayerPluginDelegate.getAdInfo()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakStart)` |
 | | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdStart)` |
 
-#### Démarrage de la publicité (1.x) {#ad-start-1.x}
+#### Démarrage publicitaire (1.x) {#ad-start-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -507,7 +507,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdMetadataKeys()` | `MediaHeartbeat.createAdObject()` |
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.trackAdStart()` |
 
-#### Métadonnées de publicité standard (1.x) {#ad-meta-1.x}
+#### Métadonnées publicitaires standard (1.x) {#ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -526,7 +526,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Métadonnées de publicité standard (2.x) {#ad-meta-2.x}
+#### Métadonnées publicitaires standard (2.x) {#ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -561,7 +561,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 | | `MediaHeartbeat.trackAdStart()` |
 
-#### Métadonnées de publicité personnalisées (1.x) {#custom-ad-meta-1.x}
+#### Métadonnées publicitaires personnalisées (1.x) {#custom-ad-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -580,7 +580,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 };
 ```
 
-#### Métadonnées de publicité personnalisées (2.x) {#custom-ad-meta-2.x}
+#### Métadonnées publicitaires personnalisées (2.x) {#custom-ad-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdStart = function() {
@@ -612,7 +612,7 @@ VideoAnalyticsProvider.prototype._onAdStart = function() {
 | `AdobeAnalyticsPlugin.setAdMetadata()` | `MediaHeartbeat.createAdObject()` |
 | | `MediaHeartbeat.trackAdStart()` |
 
-#### Saut de publicité (1.x) {#ad-skip-1.x}
+#### Annonce publicitaire ignorée (1.x) {#ad-skip-1.x}
 
 ```js
 SampleVideoPlayerPluginDelegate.prototype.getAdInfo = function() {
@@ -639,7 +639,7 @@ VideoAnalyticsProvider.prototype._onAdSkip = function() {
 | `VideoPlayerPlugin.trackAdComplete()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdComplete)` |
 | | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.AdBreakComplete)` |
 
-#### Fin de la publicité (1.x) {#ad-complete-1.x}
+#### Publicité terminée (1.x) {#ad-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onAdComplete = function() {
@@ -728,7 +728,7 @@ VideoAnalyticsProvider.prototype._onChapterSkip = function() {
 | `VideoPlayerPlugin.trackChapterStart()` | `MediaHeartbeat.createChapterObject()` |
 | `AdobeAnalyticsPlugin.setChapterMetadata()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.ChapterStart)` |
 
-#### Métadonnées personnalisées du chapitre (1.x) {#chap-cust-meta-1.x}
+#### Métadonnées personnalisées de chapitre (1.x) {#chap-cust-meta-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() {
@@ -740,7 +740,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 };
 ```
 
-#### Métadonnées personnalisées du chapitre (2.x) {#chap-cust-meta-2.x}
+#### Métadonnées personnalisées de chapitre (2.x) {#chap-cust-meta-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterStart = function() {
@@ -762,7 +762,7 @@ VideoAnalyticsProvider.prototype._onChapterStart = function() {
 | --- | --- |
 | `trackChapterComplete()` | `trackEvent(MediaHeartbeat.Event.ChapterComplete)` |
 
-#### Fin du chapitre (1.x) {#chap-complete-1.x}
+#### Chapitre complet (1.x) {#chap-complete-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() {
@@ -771,7 +771,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 };
 ```
 
-#### Fin du chapitre (2.x) {#chap-complete-2.x}
+#### Chapitre complet (2.x) {#chap-complete-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onChapterComplete = function() {
@@ -788,7 +788,7 @@ VideoAnalyticsProvider.prototype._onChapterComplete = function() {
 | --- | --- |
 | `VideoPlayerPlugin.trackBitrateChange()` | `MediaHeartbeat.trackEvent(`<br/><br/>  `MediaHeartbeat.Event.BitrateChange)` |
 
-#### Changement de débit binaire (1.x) {#bitrate-chg-1.x}
+#### Changement de débit (1.x) {#bitrate-chg-1.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() {
@@ -799,7 +799,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 };
 ```
 
-#### Changement de débit binaire (2.x) {#bitrate-chg-2.x}
+#### Changement de débit (2.x) {#bitrate-chg-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onBitrateChange = function() {
@@ -818,7 +818,7 @@ VideoAnalyticsProvider.prototype._onBitrateChange = function() {
 | `VideoPlayerPluginDelegate.getVideoInfo()` | `MediaHeartbeat.trackSessionStart()` |
 | `VideoPlayerPlugin.trackVideoLoad()` | |
 
-#### Reprise de la vidéo (1.x) {#video-resume-1.x}
+#### Reprise vidéo (1.x) {#video-resume-1.x}
 
 ```js
 this._videoInfo.resumed=true;
@@ -831,7 +831,7 @@ VideoPlayer.prototype.getVideoInfo = function() {
 };
 ```
 
-#### Reprise de la vidéo (2.x) {#video-resume-2.x}
+#### Reprise vidéo (2.x) {#video-resume-2.x}
 
 ```js
 VideoAnalyticsProvider.prototype._onLoad = function() {

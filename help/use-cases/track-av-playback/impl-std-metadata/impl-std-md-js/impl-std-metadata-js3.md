@@ -2,9 +2,9 @@
 title: Découvrez comment mettre en œuvre des métadonnées standard à lʼaide de JavaScript 3.x
 description: Découvrez comment définir des métadonnées vidéo et publicitaires standard à envoyer avec les appels de suivi dans les applications de navigateur (JS 3.x).
 exl-id: 228ba000-10e2-4906-8417-265a03367a9b
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '48'
 ht-degree: 100%

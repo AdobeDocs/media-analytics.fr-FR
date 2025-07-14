@@ -3,9 +3,9 @@ title: Federated Media
 description: Le service Federated Media fournit un système de partage de données multimédia en flux continu entre deux partenaires.
 uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '571'
 ht-degree: 61%
@@ -44,7 +44,7 @@ Federated Media rend les mesures audio et vidéo plus efficaces, rationalisées 
 * **Contrat de diffusion média :** le destinataire et l’expéditeur doivent disposer d’un contrat Adobe Analytics pour les diffusions multimédia avant d’accéder aux données audio et vidéo dans Adobe Analytics. Pour plus d’informations, contactez l’équipe chargée de votre compte.
 * **Federated Addendum :** chaque expéditeur et chaque destinataire doit avoir signé un addendum avec Adobe avant d’envoyer ou de recevoir des données. Un addendum par client est requis, et non un addendum par partenariat. Pour plus d’informations, contactez l’équipe chargée de votre compte.
 
-* **Implémentation de la collecte de médias en flux continu :** l’expéditeur doit mettre en œuvre la collecte de médias en flux continu sur tous les lecteurs qui feront partie du jeu de données fédéré. Seules les données de médias en flux continu sont disponibles pour la fédération. Pour plus d’informations, voir Présentation de la collection Streaming Media d’Adobe [&#128279;](/help/media-overview.md).
+* **Implémentation de la collecte de médias en flux continu :** l’expéditeur doit mettre en œuvre la collecte de médias en flux continu sur tous les lecteurs qui feront partie du jeu de données fédéré. Seules les données de médias en flux continu sont disponibles pour la fédération. Pour plus d’informations, consultez [Présentation de la collection Streaming Media d’Adobe](/help/media-overview.md).
 
 * **Contrat de conseil Adobe :** Pour la configuration initiale des règles fédérées entre le récepteur et l’expéditeur, il est recommandé de travailler avec des services de conseil pour examiner les données et créer l’accord de partage de données.
 
@@ -55,10 +55,10 @@ Pour participer à Federated Media, téléchargez et remplissez le formulaire [A
 ## Processus {#process}
 
 1. L’expéditeur et le récepteur collaborent ensemble pour remplir le formulaire d’accord des règles de fédération. Ce formulaire contient des champs spéciaux pour notre équipe d’ingénieurs et doit UNIQUEMENT être modifié avec Adobe Acrobat. [Téléchargez gratuitement Acrobat.](https://get.adobe.com/fr/reader/)
-1. Les services de conseil fournissent au destinataire un fichier de données échantillon comportant les données des lecteurs de l’expéditeur afin de confirmer que des règles de partage de données correctes sont définies, à condition que des fichiers de données soient disponibles.
+1. Les services de conseil fournissent au destinataire un exemple de fichier de données comportant les données des lecteurs de l’expéditeur afin de confirmer que des règles de partage de données correctes sont définies, à condition que des fichiers de données soient disponibles.
 1. L’expéditeur et le destinataire s’assurent que l’accord de partage des données répondra à toutes les exigences contractuelles entre les deux parties.
 1. Les services de conseil envoient le formulaire complété au service Adobe Engineering pour configurer les règles de partage de données.
 1. Les données sont partagées avec la suite de rapports de développement Adobe Analytics ou le flux de données Adobe Experience Platform, où le récepteur examine et valide les données.
-1. Une fois que le récepteur confirme que les données sont correctes, l’ingénierie d’Adobe met à jour les règles pour pointer vers une suite de rapports Analytics de production ou un flux de données Adobe Experience Platform.
+1. Une fois que le récepteur confirme que les données sont correctes, l’ingénierie Adobe met à jour les règles pour pointer vers une suite de rapports Analytics de production ou un flux de données Adobe Experience Platform.
 1. Le destinataire examine et valide les données de la suite de rapports Analytics de production ou du flux de données Adobe Experience Platform.
 1. Si des modifications sont par la suite apportées à l’ensemble de données, l’expéditeur ou le destinataire peut envoyer un ticket à l’assistance clientèle pour obtenir de l’aide.

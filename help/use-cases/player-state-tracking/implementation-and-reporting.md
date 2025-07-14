@@ -2,9 +2,9 @@
 title: Mise en œuvre et création de rapports
 description: Découvrez comment mettre en œuvre la fonction de suivi de lʼétat du lecteur, y compris.
 exl-id: 19a97c9b-14d1-4f11-bb0a-3a1ad6f949da
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 15cc123fb44654083b6501042bdd9d4e07128b59
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 78%
@@ -91,7 +91,7 @@ Les mesures fournies pour chaque état individuel sont calculées et transmises 
 
 ## Création de rapports
 
-Toutes les mesures d’état du lecteur peuvent être utilisées pour toutes les visualisations de rapports disponibles dans Analysis Workspace ou un composant (segment, mesures calculées) une fois qu’une suite de rapports est activée pour le suivi de l’état du lecteur. Ces mesures peuvent être activées à partir de l’Admin Console pour chaque rapport individuel à l’aide de la configuration des rapports multimédia (Modifier les paramètres > Gestion des médias > Rapports multimédia).
+Toutes les mesures d’état du lecteur peuvent être utilisées pour toutes les visualisations de rapports disponibles dans Analysis Workspace ou un composant (segment, mesures calculées) une fois qu’une suite de rapports est activée pour le suivi de l’état du lecteur. Ces mesures peuvent être activées à partir d’Admin Console pour chaque rapport individuel à l’aide de la Configuration du reporting multimédia (Modifier les paramètres > Gestion des médias > Reporting multimédia).
 
 ![](assets/report-setup.png)
 

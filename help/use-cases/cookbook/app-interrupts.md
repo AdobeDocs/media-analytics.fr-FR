@@ -3,9 +3,9 @@ title: Gestion des interruptions de l’application lors de la lecture
 description: Découvrez comment gérer les interruptions du suivi pendant la lecture du média.
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '355'
 ht-degree: 90%
@@ -21,7 +21,7 @@ La lecture dans une application multimédia peut être interrompue de différent
 
 >[!NOTE]
 >
->L’appel de `trackSessionStart` lorsque l’application revient de l’arrière-plan peut entraîner la lecture jusqu’à ce stade de non-prise en compte de la durée totale de lecture, ainsi que la perte des marqueurs de progression, des segments, etc. À la place, appelez `trackPlay` lorsque l’application revient au premier plan et/ou que la lecture du média reprend.
+>L’appel de `trackSessionStart` lorsque l’application revient de l’arrière-plan peut entraîner le non-comptage de la lecture jusqu’à ce point par rapport au temps de lecture total, ainsi que la perte des marques de progression antérieures, des segments, etc. À la place, appelez `trackPlay` lorsque l’application revient au premier plan et/ou que la lecture du média reprend.
 
 ## FAQ sur la gestion des interruptions de l’application : {#faq-about-handling-application-interrupts}
 

@@ -3,9 +3,9 @@ title: Découvrez comment effectuer le suivi des chapitres et des segments prés
 description: Comment mettre en œuvre le suivi des chapitres et des segments avec le SDK Media.
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 100%

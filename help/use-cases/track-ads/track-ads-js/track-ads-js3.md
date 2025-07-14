@@ -2,9 +2,9 @@
 title: Découvrez comment effectuer le suivi des publicités à lʼaide de JavaScript 3.x
 description: Mettez en œuvre le suivi des publicités dans les applications de navigateur (JS) à l’aide du SDK Media.
 exl-id: 6b34b2c0-5e50-471a-b52c-b9c760fa3169
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 88%
@@ -77,7 +77,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
                                    <LENGTH>);
    ```
 
-1. (Facultatif) Associez des métadonnées standard et/ou publicitaires à la session de suivi multimédia par le biais de variables de données contextuelles.
+1. (Facultatif) Joignez des métadonnées standard et/ou publicitaires à la session de suivi multimédia par le biais de variables de données contextuelles.
 
    * [Mise en œuvre de métadonnées de publicité standard sur JavaScript](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
    * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la publicité actuelle :
@@ -131,15 +131,15 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
 Consultez le scénario de suivi [Lecture VOD avec publicités preroll](/help/use-cases/tracking-scenarios/vod-preroll-ads.md) pour en savoir plus.
 
-## Suivi des publicités granulaire
+## Suivi granulaire des publicités
 
-L’intervalle de ping de publicité par défaut est `10 seconds`.
+L’intervalle de ping des annonces par défaut est `10 seconds`.
 
-Vous pouvez configurer un suivi des publicités granulaires pour activer le suivi des publicités `1 second`.
+Vous pouvez configurer le suivi granulaire des publicités pour activer le suivi des publicités `1 second`.
 
 >[!IMPORTANT]
 >
->Ces informations doivent être fournies lors du démarrage d’une session de suivi.
+>Ces informations doivent être fournies lors du démarrage d&#39;une session de tracking.
 
 
 

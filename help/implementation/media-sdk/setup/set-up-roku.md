@@ -3,9 +3,9 @@ title: Comment configurer le SDK Media pour Roku
 description: Suivez les étapes suivantes pour configurer lʼapplication du SDK Media sur Roku.
 uuid: 904dfda0-4782-41da-b4ab-212e81156633
 exl-id: b8de88d0-3a93-4776-b372-736bf979ee26
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '664'
 ht-degree: 94%
@@ -18,7 +18,7 @@ ht-degree: 94%
 
 * **Obtenir des paramètres de configuration valides pour la collection Streaming Media**
 
-  Ces paramètres peuvent être obtenus auprès d’un représentant Adobe une fois que vous avez configuré votre compte de collection Streaming Media Adobe.
+  Ces paramètres peuvent être obtenus auprès d’un représentant Adobe une fois que vous avez configuré votre compte de collection de médias en flux continu Adobe.
 * **Incluez les API suivantes dans votre lecteur multimédia**
 
    * _Une API pour vous abonner aux événements du lecteur_ - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.
@@ -171,4 +171,4 @@ Le kit SDK Roku 2.x pour les solutions Experience Cloud vous permet de mesure
    | `processMediaMessages` | Responsable de la transmission des événements Media au SDK à gérer. <br/><br/>`ADBMobile().processMediaMessages()` |
 
 
-<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html?lang=fr) -->
+<!--    **Postbacks -** For more information about configuring postbacks, see [Configure Postbacks.](https://experienceleague.adobe.com/docs/mobile-services/using/manage-app-settings-ug/configuring-app/signals.html) -->

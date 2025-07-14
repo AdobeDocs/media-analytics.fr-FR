@@ -3,9 +3,9 @@ title: En savoir plus sur les conditions préalables requises pour la collection
 description: Prise en main de la collection Streaming Media. Découvrez ce dont vous avez besoin pour la mise en œuvre.
 uuid: 4c0b37f3-8615-4cc0-b9c9-eeb029067064
 exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
-feature: "Media Analytics, System Requirements"
+feature: "Streaming Media, Workspace Basics"
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: 0b0b4a373b15191dcb37dc436413f68cdc70768e
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 64%
@@ -14,13 +14,13 @@ ht-degree: 64%
 
 # Conditions préalables {#prerequisites}
 
-Avant de commencer l’implémentation de la collection Streaming Media d’Adobe, effectuez les tâches suivantes :
+Avant de commencer l’implémentation de la collection de médias en flux continu Adobe, effectuez les tâches suivantes :
 
 1. **Consultez la présentation de Streaming Media Collection**<br>
 Avant de commencer la mise en œuvre de la collection de médias en flux continu, consultez la présentation de la [collection de médias en flux continu](/help/media-overview.md) pour vous assurer qu’elle répond à vos besoins.
 
 1. **Confirmer votre modèle de tarification**<br>
-Le modèle de tarification actuel pour le module complémentaire Adobe Streaming Media Collection repose sur les diffusions vidéo. Si nécessaire, contactez votre représentant commercial ou l’équipe chargée du compte Adobe, car le module complémentaire est vendu séparément pour Adobe Analytics et Adobe Experience Platform.
+Le modèle de tarification actuel pour le module complémentaire de collection de médias en flux continu Adobe est basé sur les flux vidéo. Si nécessaire, contactez votre représentant commercial ou l’équipe chargée du compte Adobe, car le module complémentaire est vendu séparément pour Adobe Analytics et Adobe Experience Platform.
 
 1. **Activer les rapports Adobe Analytics**<br>
 Pour activer les rapports dans Analytics ou Customer Journey Analytics et afficher le contenu et les données de publicité que vous collectez, vous devez activer les rapports. Voir [Activation des rapports multimédia](/help/reporting/media-reports-enable.md).

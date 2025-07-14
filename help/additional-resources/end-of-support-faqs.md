@@ -2,9 +2,9 @@
 title: En savoir plus sur les FAQ relatives à l’abandon de la prise en charge du SDK Media Analytics
 description: Cette rubrique comprend des questions fréquentes concernant l’abandon de la prise en charge des SDK Media Analytics.
 exl-id: 9601ec17-8421-49d0-9d81-1cfa5e8f37cf
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '600'
 ht-degree: 75%
@@ -13,9 +13,9 @@ ht-degree: 75%
 
 # FAQ sur l’abandon de la prise en charge de Media Analytics Mobile SDK
 
-Avec l’abandon de la prise en charge des SDK mobiles version 4 le 31 août 2021, Adobe a également arrêté la prise en charge des SDK Media Analytics Mobile pour iOS et Android. (Cela n’inclut pas les plateformes SDK for web (JS) et OTT de Media Analytics telles que Chromecast et Roku, qui sont toujours prises en charge.)
+Avec la fin de la prise en charge des SDK mobiles version 4 le 31 août 2021, Adobe a également arrêté la prise en charge des SDK Media Analytics Mobile pour iOS et Android. (Cela n’inclut pas les plateformes SDK for web (JS) et OTT de Media Analytics telles que Chromecast et Roku, qui sont toujours prises en charge.)
 
-Cela signifie qu’Adobe ne fournit plus de correctifs, de mises à jour liées au système d’exploitation ou de prise en charge de Media Analytics Mobile SDK. Lors de la migration vers les nouveaux SDK Experience Platform, sachez que les [ extensions Media Analytics ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) doivent être mises en œuvre pour activer la collecte de médias en flux continu Adobe.
+Cela signifie qu’Adobe ne fournit plus de correctifs, de mises à jour liées au système d’exploitation ni de prise en charge de Media Analytics Mobile SDK. Lors de la migration vers les nouveaux SDK Experience Platform, sachez que les [ extensions Media Analytics ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) doivent être mises en œuvre pour activer la collecte de médias en flux continu Adobe.
 
 
 ## 5 choses à savoir

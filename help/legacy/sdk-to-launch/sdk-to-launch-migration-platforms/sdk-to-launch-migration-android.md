@@ -1,13 +1,13 @@
 ---
-title: '« Migration du SDK Media autonome vers Adobe Launch : Android »'
+title: Migration de Media SDK autonome vers Adobe Launch - Android
 description: Découvrez comment migrer du SDK Media vers Launch pour Android.
 exl-id: 26764835-4781-417b-a6c0-ea6ae78d76ae
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: fb09280ae6fb9f0ab7e67bd6ae134e6e26f88ec8
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '382'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 

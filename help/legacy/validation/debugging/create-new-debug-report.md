@@ -3,9 +3,9 @@ title: Création d’un nouveau rapport de débogage
 description: Découvrez comment créer un nouveau rapport de débogage.
 uuid: 438fde3d-98f9-46d1-9672-75d204361568
 exl-id: 047acf35-8c1c-4493-9ee7-e2bad47c351e
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '203'
 ht-degree: 84%
@@ -30,7 +30,7 @@ Pour créer un nouveau rapport de débogage :
         L’accès peut s’effectuer de l’une des manières suivantes :
 
          * [!UICONTROL Analytics > Admin > Paramètres de la société > Services Web]
-         * [!UICONTROL Analytics > Admin > Gestion utilisateur > Utilisateurs > Paramètres utilisateur individuels] Pour créer des informations d’identification d’API de services Web pour un nouvel utilisateur, dans [!UICONTROL Gestion utilisateur], ajoutez l’utilisateur au groupe d’utilisateurs **Accès au service Web**.
+         * [!UICONTROL Analytics > Admin > Gestion des utilisateurs > Utilisateurs > Paramètres d’utilisateur individuels] Pour créer des informations d’identification d’API de services web pour un nouvel utilisateur, dans [!UICONTROL Gestion des utilisateurs], ajoutez l’utilisateur au groupe d’utilisateurs **Accès au service web**.
 
       * [!UICONTROL Point d’entrée par défaut] - Les données de ce champ sont fournies par Adobe et ne peuvent pas être modifiées.
       * [!UICONTROL Point d’entrée supplémentaire] - Ajoutez `CNAMES`, si vous les utilisez, pour le suivi de serveur comme `metrics.companyname.com`

@@ -1,14 +1,14 @@
 ---
-title: Nouveautés des médias en flux continu
-description: Découvrez les nouveautés des médias en flux continu.
+title: Nouveautés de Streaming Media
+description: Découvrez les nouveautés de Streaming Media.
 uuid: 1f3e48df-83b6-418c-8cf7-d79466481f79
 index: y
 internal: n
 snippet: y
 exl-id: 881a94f4-d248-4668-a2d1-4e50d3f9135a
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 8eeb4a157d9756318582bc485769c5704f54c515
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '17'
 ht-degree: 35%

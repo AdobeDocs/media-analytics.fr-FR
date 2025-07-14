@@ -1,10 +1,10 @@
 ---
 title: À propos de la mesure de pulsation
 description: Découvrez comment les pulsations servent à collecter des mesures vidéo.
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 75%
@@ -13,7 +13,7 @@ ht-degree: 75%
 
 # À propos de la mesure de pulsation
 
-La collection Streaming Media d’Adobe utilise des « pulsations » pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Les médias en flux continu mesurent les pulsations à l’aide d’Adobe Launch avec l’extension Media Analytics, Media SDK et l’API Media Collection. Les composants `AppMeasurement` et `VisitorID` sont utilisés pour recevoir des données vidéo.
+La collection de médias en flux continu Adobe utilise des « pulsations » pour collecter des mesures vidéo. Pendant la lecture vidéo, les pulsations sont envoyées au serveur de suivi de pulsation pour mesurer la durée de lecture. Les appels de pulsation sont envoyés toutes les dix secondes. Les pulsations génèrent des mesures d’engagement vidéo granulaires et des rapports d’abandons vidéo plus précis. Les médias en flux continu mesurent les pulsations à l’aide d’Adobe Launch avec l’extension Media Analytics, Media SDK et l’API Media Collection. Les composants `AppMeasurement` et `VisitorID` sont utilisés pour recevoir des données vidéo.
 
 L’utilisation des pulsations dans la collection de médias en flux continu offre les avantages suivants :
 

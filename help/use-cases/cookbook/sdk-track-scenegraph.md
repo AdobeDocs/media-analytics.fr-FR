@@ -3,9 +3,9 @@ title: Suivi dans SceneGraph (Roku)
 description: Découvrez comment effectuer le suivi des médias avec le framework de programmation XML SceneGraph de Roku.
 uuid: fa85e546-c79b-4df4-8c03-d6593fa296d5
 exl-id: e428d3cd-dbc7-48bb-82ff-61b6b892884c
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 100%

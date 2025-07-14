@@ -3,9 +3,9 @@ title: Découvrez comment effectuer le suivre la recherche sur Roku
 description: Découvrez comment effectuer le suivi des événements Début de la recherche et Fin de la recherche à lʼaide du SDK Media sur Roku.
 uuid: 0572252b-397f-4aa2-b4b5-c5346b75244a
 exl-id: cb0581f7-3ced-4d46-ac6a-a309a179c21e
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 100%

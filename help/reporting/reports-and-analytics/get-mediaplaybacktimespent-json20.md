@@ -1,10 +1,10 @@
 ---
 title: Obtention des données de rapport JSON sur le temps de lecture de média avec les API Analytics 2.0
 description: Découvrez comment obtenir des données de rapport sur le temps de lecture de média à l’aide des API Analytics 2.0. Affichez un exemple de requête et de réponse.
-feature: Media Analytics, Reports & Analytics Basics
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Data Engineer
 exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
 workflow-type: tm+mt
 source-wordcount: '205'
 ht-degree: 100%
@@ -129,7 +129,7 @@ You can extract the Media Playback Time Spent report data using the Experience C
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=fr)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 

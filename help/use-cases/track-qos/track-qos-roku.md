@@ -1,14 +1,14 @@
 ---
 title: Découvrez comment effectuer le suivi de la qualité de l’expérience sur Roku
-description: « Découvrez l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide du SDK Media sur Roku. »
+description: Découvrez l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide de Media SDK sur Roku.
 uuid: a8b242ab-da3c-4297-9eef-f0b9684ef56a
 exl-id: cd84c26d-ad91-4179-9532-83408030ff3e
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '197'
-ht-degree: 98%
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre sur t
 >
 >Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/getting-started/download-sdks.md)
 
-## Mise en oeuvre de QOS
+## Implémenter QOS
 
 1. Déterminez le moment où le débit binaire change lors de la lecture multimédia et utilisez l’`mediaUpdateQoS`API pour mettre à jour les informations QoS sur le SDK Media.
 

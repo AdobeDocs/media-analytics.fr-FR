@@ -1,22 +1,22 @@
 ---
-title: Présentation de la collection Adobe Streaming Media
-description: Utilisez la collection de médias en flux continu pour obtenir de puissantes informations sur le contenu, l’audio et les publicités.
+title: Présentation de la collection de médias en flux continu Adobe
+description: Utilisez la collection de médias en flux continu pour obtenir un insight puissant pour le contenu, l’audio et les publicités.
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '590'
 ht-degree: 65%
 
 ---
 
-# Présentation de la collection Adobe Streaming Media
+# Présentation de la collection de médias en flux continu Adobe
 
 ![Bannière](./assets/media_analytics_banner.png)
 
-La collection de médias en flux continu d’Adobe fournit de puissants outils de collecte, de mesure et de personnalisation pour le contenu multimédia en flux continu, tel que l’audio, la vidéo et la publicité pour les fournisseurs de médias en flux continu. Vous pouvez combiner des mesures de médias en flux continu avec des fonctionnalités telles qu’Analytics sur l’Audience Analytics, Mobile ou sur l’ensemble des appareils.
+La collection de médias en flux continu Adobe fournit de puissants outils de collecte, de mesure et de personnalisation pour le contenu multimédia en flux continu, tel que l’audio, la vidéo et la publicité pour les fournisseurs de médias en flux continu. Vous pouvez combiner des mesures de médias en flux continu avec des fonctionnalités telles qu’Audience Analytics, Mobile ou Analytics sur l’ensemble des appareils.
 
 Les données de streaming multimédia s’intègrent facilement aux produits Adobe Experience Platform suivants :
 
@@ -30,7 +30,7 @@ Les données de streaming multimédia s’intègrent facilement aux produits Ado
 
 >[!IMPORTANT]
 >
->Adobe Pour implémenter Streaming Media Collection, contactez votre représentant commercial ou l’équipe du compte d’Adobe pour vous assurer que le module complémentaire Streaming Media Collection fait partie de votre portefeuille de produits.
+>Pour implémenter Streaming Media Collection, contactez votre représentant commercial Adobe ou l’équipe du compte Adobe pour vous assurer que le module complémentaire Streaming Media Collection fait partie de votre portefeuille de produits.
 
 ## Principales fonctionnalités
 

@@ -3,9 +3,9 @@ title: Paramètres audio et vidéo
 description: Découvrez les variables des données principales du streaming multimédia, notamment les données de contenu audio et vidéo ainsi que les valeurs des données contextuelles.
 uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: e7f17c6e8ea6e54a55f59e4e817fba07a7851496
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '7067'
 ht-degree: 91%

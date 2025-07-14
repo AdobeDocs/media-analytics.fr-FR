@@ -1,14 +1,14 @@
 ---
 title: Découvrez comment effectuer le suivi de la Qualité de lʼexpérience sur iOS
-description: « Découvrez la mise en œuvre du suivi de la qualité de lʼexpérience (QoE, QoS) à lʼaide du SDK Media sur iOS. »
+description: Découvrez l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide de Media SDK sur iOS.
 uuid: cae2c142-ed39-4234-a711-765dcabc5415
 exl-id: 7f01e6eb-95bd-4e3d-93d0-8a2e68323313
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 2ce09eafeb8def909ae2a8ae7cc09a88b2f663af
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 
@@ -20,7 +20,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre sur t
 >
 >Si vous mettez en œuvre une version 1.x du kit SDK, vous pouvez télécharger les Guides du développeur 1.x dans la rubrique [Téléchargement des SDK.](/help/getting-started/download-sdks.md)
 
-## Mise en oeuvre de QOS
+## Implémenter QOS
 
 1. Identifiez le moment où le débit binaire change pendant la lecture multimédia et créez l’instance `MediaObject` à l’aide des informations QoS.
 

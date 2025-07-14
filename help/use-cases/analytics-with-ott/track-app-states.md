@@ -3,9 +3,9 @@ title: Suivi des états de l’application
 description: Les états correspondent aux différents écrans ou affichages dans votre application. Découvrez comment effectuer le suivi de l’état de l’application dans votre application à l’aide de l’appel trackState.
 uuid: 2f98fb43-c362-4a9b-8732-fa7e963da729
 exl-id: bb1e0eee-7c59-40b4-9359-a7441b9686b8
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a73ba98e025e0a915a5136bb9e0d5bcbde875b0a
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 100%

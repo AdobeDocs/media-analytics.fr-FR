@@ -3,9 +3,9 @@ title: Découvrez comment effectuer le suivi de la lecture principale sur Androi
 description: Découvrez comment implémenter le suivi principal à l’aide du SDK Media sur Android.
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 100%

@@ -2,16 +2,16 @@
 title: Aperçu des cas d’utilisation du SDK Media
 description: En savoir plus sur les cas d’utilisation des médias en flux continu
 exl-id: 68230d3f-d1fd-4be3-ba67-689965d85771
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0079116bcf39bb6d20b4fd5f14bd3c19137c46e3
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '78'
 ht-degree: 92%
 
 ---
 
-# Cas d’utilisation du SDK Media {#media-sdk-use-cases}
+# Cas d’utilisation de Media SDK {#media-sdk-use-cases}
 
 * [Suivi de l’état du lecteur](/help/use-cases/player-state-tracking/player-state-overview.md)
 * [Effectuer le suivi du contenu téléchargé hors ligne](/help/use-cases/track-downloaded-content.md)

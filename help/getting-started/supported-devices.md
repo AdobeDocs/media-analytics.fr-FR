@@ -2,9 +2,9 @@
 title: En savoir plus sur les appareils et plateformes pris en charge
 description: Découvrez les principaux appareils tels qu’iOS, Android, les appareils OTT et les navigateurs JavaScript pris en charge par la collection Streaming Media.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin
-source-git-commit: 0088d41f557b1dc49ac2b3b6d0a812f22d8849e9
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 77%
@@ -25,7 +25,7 @@ Pour les périphériques qui ne sont pas actuellement compatibles avec des SDK, 
 
 Le tableau ci-dessous liste les appareils actuellement pris en charge. Si un appareil n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son état.
 
-Pour plus d’informations sur l’implémentation de Media sur Edge, consultez [Installation de Streaming Media Collection avec Edge Experience Platform ](/help/implementation/edge/implementation-edge.md).
+Pour plus d’informations sur l’implémentation de Media sur Edge, consultez [Installation de Streaming Media Collection avec Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
 | Plateformes et appareils de streaming | | SDK/Extension pour Media pour réseau Edge | API Media Edge | Extension Media avec balises ou SDK AEP Mobile | SDK Media | API Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|

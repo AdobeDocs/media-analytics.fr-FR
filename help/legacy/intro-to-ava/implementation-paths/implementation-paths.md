@@ -2,9 +2,9 @@
 title: Quels chemins d’implémentation des médias en flux continu sont disponibles ?
 description: Découvrez les chemins d’implémentation des médias en flux continu Adobe, y compris la collecte de données Adobe Experience Platform.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 0c1382c9c4f1488fba81575097d154301a9b8e70
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 92%
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 **CE CONTENU A ÉTÉ DÉPLACÉ VERS LE FICHIER DE CHEMINS D’IMPLÉMENTATION ACTUEL.**
 
-Pour chaque chemin de mise en oeuvre, les clients doivent contacter leur représentant commercial/équipe de compte d’Adobe pour signer une nouvelle commande de ventes, car l’analyse des médias en flux continu comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions vidéo.
+Pour chaque chemin d’implémentation, les clients doivent contacter leur représentant commercial/équipe du compte Adobe pour signer une nouvelle commande, car Media Analytics en flux continu comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions vidéo.
 
 ## Collecte de données Adobe Experience Platform avec l’extension Adobe Media Analytics
 
@@ -33,7 +33,7 @@ L’extension Adobe Media Analytics (MA) ajoute le noyau JavaScript Media SD
 
 La collecte de données Adobe avec l’extension Media Analytics nécessite les éléments suivants :
 * Vous devez être un client Adobe Experience Cloud.
-* Vous devez déployer la collecte de données ou le code DTM incorporé sur vos pages web.
+* Vous devez déployer la collecte de données ou le code intégré DTM sur vos pages web.
 * [Extension Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=fr)
 * [Extension Experience Cloud ID](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=fr)
 

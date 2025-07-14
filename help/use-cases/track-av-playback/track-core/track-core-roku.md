@@ -1,11 +1,11 @@
 ---
-title: Découvrez comment effectuer le suivi de la lecture principale sur Roku
+title: 'Découvrez comment effectuer le suivi de la lecture principale sur Roku '
 description: Cette rubrique décrit la mise en œuvre du suivi de base à l’aide du SDK Media sur Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: c308dba2d7cf07b89bf124bd6e5f972c253c9f18
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 88%
@@ -150,7 +150,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 1. **Mise à jour de la valeur de la tête de lecture**
 
-   Lorsque le curseur de lecture multimédia change, informez le SDK en appelant l’API `mediaUpdatePlayhead`. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en continu en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes depuis minuit UTC de cette journée.
+   Lorsque le curseur de lecture du média change, avertissez le SDK en appelant l’API `mediaUpdatePlayhead`. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
@@ -158,9 +158,9 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
    >[!NOTE]
    >
-   >Tenez compte de ce qui suit lors de l’appel de l’API `mediaUpdatePlayhead` :
-   >* Lors de l’utilisation de marqueurs de progression, la durée du contenu est requise et le curseur de lecture doit être mis à jour en tant que nombre de secondes à partir du début de l’élément multimédia, en commençant par 0.
-   >* Lors de l’utilisation des SDK Media, vous devez appeler l’API `mediaUpdatePlayhead` au moins une fois par seconde.
+   >Tenez compte des points suivants lors de l’appel de l’API `mediaUpdatePlayhead` :
+   >* Lors de l’utilisation de marques de progression, la durée du contenu est une donnée obligatoire et le curseur de lecture doit être mis à jour en tant que nombre de secondes écoulées depuis le début de l’élément média, en commençant par 0.
+   >* Lors de l’utilisation de SDK Media, vous devez appeler l’API `mediaUpdatePlayhead` au moins une fois par seconde.
 
 
 1. **Suivi de la fin de la lecture**

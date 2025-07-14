@@ -3,9 +3,9 @@ title: En savoir plus sur les étapes du suivi de médias
 description: Explorez plus en détail la chronologie de la tête de lecture et les actions de l’utilisateur correspondantes. Découvrez les détails de chaque action et des demandes qui l’accompagnent.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
-feature: Media Analytics
+feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a1c3bdbec223ab0141d922dce07ba2128b52e794
+source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 99%
@@ -179,7 +179,7 @@ Envoyez un ping au serveur principal toutes les secondes pendant dans une annon
 >[!NOTE]
 >
 >Les publicités suivantes dans la chronologie ne montrent pas la série de pings d’une seconde
->par souci de concision...
+>>par souci de concision...
 
 ```json
 {
