@@ -28,7 +28,7 @@ Pour utiliser le composant `streamingMedia` de Web SDK, les conditions préalabl
 * Vous devez utiliser Web SDK version 2.20.0 ou ultérieure. Voir la [présentation de l’installation de Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview) pour savoir comment installer la dernière version.
 * Activez l’option **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure)** pour le flux de données que vous utilisez.
 * Assurez-vous que le schéma utilisé par votre flux de données comprend les champs de schéma Media Collection.
-* Configurez les services de médias en flux continu dans la configuration de Web SDK, comme illustré sur cette page, soit par le biais de l’extension de balise [tag](#tag-extension), soit par le biais de la bibliothèque JavaScript [](#library).
+* Configurez les services de médias en flux continu dans la configuration de Web SDK, comme illustré sur cette page, soit par le biais de l’extension de balise [tag](#tag-extension), soit par le biais de la bibliothèque JavaScript [&#128279;](#library).
 
 Suivez les étapes décrites dans cette page pour migrer votre mise en œuvre de services de streaming multimédia de Media JS vers Web SDK.
 
