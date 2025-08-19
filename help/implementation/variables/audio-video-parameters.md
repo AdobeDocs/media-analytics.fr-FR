@@ -5,7 +5,7 @@ uuid: fdacfb8b-db3e-46fb-b9ad-c3a749555b2a
 exl-id: 9dc84377-6eca-482f-89e7-c4008d1c0f07
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '7067'
 ht-degree: 91%
@@ -40,7 +40,7 @@ Description des données de tableau :
    * *Expiration* : indique si les données expirent après chaque accès ou après chaque visite.
    * *Nom du rapport* : nom du rapport Adobe Analytics pour la variable.
    * *Données contextuelles* : nom des données contextuelles Adobe Analytics transmises au serveur de reporting et utilisées dans les règles de traitement.
-   * *Flux de données* : nom de colonne de la variable trouvée dans les flux de données du parcours de navigation ou du flux de données en direct.
+   * *Flux de données* : nom de colonne de la variable trouvée dans les flux de données du flux de clics ou Live Stream
    * *Audience Manager* : nom de caractéristique trouvé dans Adobe Audience Manager.
 
 >[!IMPORTANT]
@@ -110,7 +110,7 @@ public static MediaObject createMediaObject(java.lang.String name,
 
 |   Mise en œuvre   | Paramètres réseau | Création de rapports |
 | --- | --- |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <ul> <li> **Clé SDK :**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **Clé API :**<br/> media.contentType </li> <li> **Obligatoire :**<br/> Oui </li> <li> **Type :**<br/> Chaîne limitée </li> <li> **Envoyé avec :**<br/> Démarrage du média, Fermeture du média </li> <li> **Version Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> « vod » </li> <li> **Description :**<br/> valeurs disponibles selon le **type de diffusion** : <br/> _Audio :_ « song », « podcast », « audiobook », « radio » <br/> _Vidéo :_ « VoD », « Live », « Linéaire », « UGC », « DVoD »<br/> Les clients peuvent fournir des valeurs personnalisées pour ce paramètre. Cette valeur est égale à `s:stream:type.`. Si elle n’est pas définie, elle est égale à `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics :**<br/> (a.contentType) </li> <li> **Heartbeats:**<br/> (<code>s:stream:type</code>) </li> </ul> | <ul> <li> **Disponible :**<br/> Oui </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Type de contenu </li> <li> **Données contextuelles :**<br/> (a.contentType) </li> <li> **Flux de données :**<br/> videocontenttype </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.contentType) </li> <li> **Chemin d’accès du champ XDM :** (obsolète)<br/>media.mediaTimed.primaryAssetViewDetails.<br/>broadcastContentType</li> <li> **Chemin d’accès du champ XDM de collecte :**<br/> mediaCollection.sessionDetails.contentType </li> <li> **Chemin d’accès du champ XDM de création de rapports :**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
+| <ul> <li> **Clé SDK :**<br/>  [streamType](./audio-video-parameters.md#create-media-object) </li> <li> **Clé API :**<br/> media.contentType </li> <li> **Obligatoire :**<br/> Oui </li> <li> **Type :**<br/> Chaîne limitée </li> <li> **Envoyé avec :**<br/> Démarrage du média, Fermeture du média </li> <li> **Version Version SDK min. :** Quelconque </li> <li> **Exemple de valeur :**<br/> « vod » </li> <li> **Description :**<br/> valeurs disponibles par **Type de flux** : <br/> _Audio :_« song », « podcast », « audiobook », « radio » <br/> _Video:_ « VoD », « Live », « Linear », « UGC », « DVoD » <br/> Les clients peuvent fournir des valeurs personnalisées pour ce paramètre. Cette valeur est égale à `s:stream:type.`. Si elle n’est pas définie, elle est égale à `missing_content_type.` </li></ul> | <ul> <li> **Adobe Analytics :**<br/> (a.contentType) </li> <li> **Heartbeats:**<br/> (<code>s:stream:type</code>) </li> </ul> | <ul> <li> **Disponible :**<br/> Oui </li> <li> **Variable réservée :**<br/> eVar </li> <li> **Expiration :**<br/>&#x200B;À l’ACCÈS </li> <li> **Nom du rapport :**<br/> Type de contenu </li> <li> **Données contextuelles :**<br/> (a.contentType) </li> <li> **Flux de données :**<br/> videocontenttype </li> <li> **Audience Manager :**<br/> (c_contextdata.<br/>a.contentType) </li> <li> **Chemin d’accès du champ XDM :** (obsolète)<br/>media.mediaTimed.primaryAssetViewDetails.<br/>broadcastContentType</li> <li> **Chemin d’accès du champ XDM de collecte :**<br/> mediaCollection.sessionDetails.contentType </li> <li> **Chemin d’accès du champ XDM de création de rapports :**<br/> mediaReporting.sessionDetails.contentType </li> </ul> |
 
 ```
 public static MediaObject createMediaObject(java.lang.String name,

@@ -1,20 +1,20 @@
 ---
 title: Mesures calculées
-description: Découvrez les mesures calculées et les formules de mesure dans la Collection de médias en flux continu.
+description: Découvrez les mesures calculées et les formules de mesure dans les services de médias en flux continu.
 uuid: 9dd35155-58aa-4f05-896e-c5cbc4b13d59
 exl-id: 253f6c61-70b5-4bdf-8e79-840545aeca0e
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '242'
 ht-degree: 72%
 
 ---
 
 # Mesures calculées{#calculated-metrics}
 
-Les mesures calculées pour la collecte de médias en flux continu Adobe sont des mesures personnalisées qui vous permettent d’obtenir des données de médias en flux continu ciblées telles que le temps de publicité moyen passé ou les publicités moyennes par flux de médias.
+Les mesures calculées pour les services de médias en flux continu Adobe sont des mesures personnalisées qui vous permettent d’obtenir des données de médias en flux continu ciblées, telles que le temps moyen passé sur la publicité ou les publicités moyennes par flux de médias.
 
 Pour plus dʼinformations sur les mesures calculées Adobe Analytics, voir [Mesures calculées (dérivées) et mesures calculées avancées](https://experienceleague.adobe.com/docs/analytics/components/calculated-metrics/cm-overview.html?lang=fr) dans le guide des composants Adobe Analytics.
 

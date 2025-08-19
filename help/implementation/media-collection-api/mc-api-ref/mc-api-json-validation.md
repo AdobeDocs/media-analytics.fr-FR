@@ -1,11 +1,11 @@
 ---
-title: Schémas de validation JSON de la collection de médias en flux continu
+title: Schémas de validation JSON des services de streaming multimédia
 description: Que sont les schémas de validation JSON de streaming multimédia et comment sont-ils utilisés pour déterminer les paramètres corrects du corps de la requête pour chaque type d’événement ?
 uuid: 7c9d5ce4-f5d2-4129-900e-4d02800907d1
 exl-id: 2931715d-2e7d-4c15-8569-da63b43d6006
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '83'
 ht-degree: 72%

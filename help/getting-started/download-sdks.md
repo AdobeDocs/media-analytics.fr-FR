@@ -5,9 +5,9 @@ uuid: a619fbb8-693e-4583-8dad-0ff875e715f8
 exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '429'
 ht-degree: 81%
 
 ---
@@ -22,7 +22,7 @@ Les balises dans Adobe Experience Platform constituent la nouvelle génération 
 >[!NOTE]
 >
 >Pour plus d’informations sur le téléchargement des SDK hérités, voir [Hérité - Téléchargement de SDK](/help/legacy/legacy-download-sdks.md).<br>
->&#x200B;>Pour obtenir des informations importantes sur la fin de la prise en charge, voir les [FAQ sur la fin de la prise en charge](/help/additional-resources/end-of-support-faqs.md).
+>>Pour obtenir des informations importantes sur la fin de la prise en charge, voir les [FAQ sur la fin de la prise en charge](/help/additional-resources/end-of-support-faqs.md).
 
 ## SDK Media et bibliothèques mobiles {#media-sdks-libraries}
 
@@ -32,7 +32,7 @@ Les balises dans Adobe Experience Platform constituent la nouvelle génération 
 |:---:|---|---|---|---| ---| ---|
 | ![Icône JavaScript ](assets/javascript-icon.png)</br>**API JavaScript** | Adobe Analytics | Analytics uniquement | Web - [SDK Media pour JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Référence de l’API JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/index.html) | [Installation de Media SDK à l’aide de JavaScript](/help/implementation/media-sdk/setup/web-implementation.md) | [Exemple de SDK Media pour JS v3.0.2](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | ![Icône JavaScript ](assets/javascript-icon.png)</br>**API JavaScript** | Adobe Analytics | Analytics uniquement | Web - Extension Media |  | [Extension Adobe Media Analytics (SDK 3.x) for Audio and Video - à l’aide des balises (collecte de données)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr) | [Exemple d’extension Adobe Media Analytics (SDK 3.x) for Audio and Video](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
-| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web - Experience Platform Edge |  | [Implémenter Streaming Media Collection à l’aide d’Edge Network](/help/implementation/edge/implementation-edge.md) <p>et</p><p>[Envoi de données web vers Edge avec Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md)</p> | |
+| </br>**Web** | Adobe Analytics<p>Customer Journey Analytics</p><p>Adobe Journey Optimizer</p><p>Real-Time CDP</p> | Edge | Web - Experience Platform Edge |  | [Implémenter la collection de médias en flux continu Customer Journey Analytics à l’aide d’Edge Network](/help/implementation/edge/implementation-edge.md) <p>et</p><p>[Envoi de données web vers Edge avec Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md)</p> | |
 
 ### Implémentation mobile {#get-mobile-extension}
 

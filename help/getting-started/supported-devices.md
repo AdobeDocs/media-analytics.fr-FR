@@ -1,19 +1,19 @@
 ---
 title: En savoir plus sur les appareils et plateformes pris en charge
-description: Découvrez les principaux appareils tels qu’iOS, Android, les appareils OTT et les navigateurs JavaScript pris en charge par la collection Streaming Media.
+description: Découvrez les principaux appareils tels qu’iOS, Android, les appareils OTT et les navigateurs JavaScript pris en charge par les services de streaming multimédia d’Adobe.
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 77%
+source-wordcount: '308'
+ht-degree: 75%
 
 ---
 
 # Appareils et plateformes pris en charge {#devices-supported}
 
-La collection Streaming Media d’Adobe prend en charge tous les appareils principaux, notamment :
+Les services de streaming multimédia d’Adobe prennent en charge tous les appareils principaux, notamment :
 
 * Smartphones et tablettes iOS et Android
 * Appareils OTT pour ROKU, Fire TV et Android TV
@@ -21,7 +21,7 @@ La collection Streaming Media d’Adobe prend en charge tous les appareils princ
 
 Les SDK sont régulièrement mis à jour lorsque de nouvelles versions de périphériques sont publiées. Vous pouvez également utiliser les SDK pour intégrer les lecteurs natifs de chaque plateforme ou de tout autre lecteur multimédia disponible.
 
-Pour les périphériques qui ne sont pas actuellement compatibles avec des SDK, ou dans les cas où vous devrez personnaliser votre implémentation, vous pouvez utiliser l’API Media Collection ou Media Edge. Ces API vous permettent d’effectuer des appels API RESTful directement depuis un appareil vers le serveur principal de la collection de médias en flux continu.
+Pour les périphériques qui ne sont pas actuellement compatibles avec des SDK, ou dans les cas où vous devrez personnaliser votre implémentation, vous pouvez utiliser l’API Media Collection ou Media Edge. Ces API vous permettent d’effectuer des appels API RESTful directement depuis un appareil vers le serveur principal des services de streaming multimédia d’Adobe.
 
 Le tableau ci-dessous liste les appareils actuellement pris en charge. Si un appareil n’est pas répertorié, contactez l’assistance clientèle ou le consultant en solution pour connaître son état.
 

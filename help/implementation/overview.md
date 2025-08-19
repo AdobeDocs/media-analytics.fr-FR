@@ -1,24 +1,26 @@
 ---
-title: Implémentation de la collection de médias en flux continu
-description: Découvrez les chemins d’implémentation de Streaming Media Collection.
+title: Mise en œuvre de services de streaming multimédia pour Adobe Analytics ou Customer Journey Analytics
+description: Découvrez les chemins d’implémentation des services de streaming multimédia d’Adobe.
 uuid: null
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 69%
+source-wordcount: '484'
+ht-degree: 65%
 
 ---
 
-# Implémentation de la collection de médias en flux continu
+# Mise en œuvre de services de streaming multimédia pour Adobe Analytics ou Customer Journey Analytics
 
-Vous pouvez implémenter la collection Streaming Media d’Adobe de différentes manières. Pour une comparaison détaillée des appareils et plateformes pris en charge pour les méthodes d’implémentation décrites sur cette page, consultez [Appareils et plateformes pris en charge](/help/getting-started/supported-devices.md).
+Il existe différentes manières de mettre en œuvre les services de streaming multimédia d’Adobe. Pour une comparaison détaillée des appareils et plateformes pris en charge pour les méthodes d’implémentation décrites sur cette page, consultez [Appareils et plateformes pris en charge](/help/getting-started/supported-devices.md).
 
 ## Méthodes d’implémentation Edge
 
-Nous vous recommandons d’utiliser Edge lors de l’implémentation de Streaming Media Collection pour tous les nouveaux clients Adobe Analytics ou Customer Journey Analytics.
+Nous vous recommandons d’utiliser Edge lors de la mise en œuvre des services de médias en flux continu pour tous les nouveaux clients Adobe Analytics ou Customer Journey Analytics.
+
+Les méthodes d’implémentation d’Edge utilisent le module complémentaire Streaming Media Collection.
 
 * **Media pour Edge Network SDK/Extension :** collecte des données à partir d’appareils web, iOS et Android, ou d’appareils Roku, et les envoie à Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 
@@ -35,6 +37,8 @@ Nous vous recommandons d’utiliser Edge lors de l’implémentation de Streamin
 Les méthodes d’implémentation Edge décrites ci-dessus sont recommandées pour Customer Journey Analytics et Adobe Analytics, en particulier pour les nouvelles implémentations.
 
 Outre les méthodes d’implémentation Edge, d’autres sont disponibles. Ces méthodes d’implémentation ont été conçues pour être utilisées avec Adobe Analytics. Cependant, la clientèle existante qui dispose de l’une des méthodes d’implémentation suivantes peut toujours rendre les données disponibles dans Customer Journey Analytics en créant une [connexion source Analytics](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=fr).
+
+Les méthodes d’implémentation réservées à Adobe Analytics utilisent le module complémentaire Adobe Analytics for Streaming Media.
 
 * **Extension Media avec des balises :** l’extension Adobe Media Analytics for Audio and Video permet d’ajouter l’instance de suivi Media à un site ou à un projet prenant en charge les balises. Les données sont envoyées à Adobe Analytics.
 

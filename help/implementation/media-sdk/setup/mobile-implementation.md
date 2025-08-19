@@ -1,19 +1,19 @@
 ---
-title: Configuration d’un SDK mobile à l’aide de balises pour Streaming Media
-description: Découvrez comment implémenter Adobe Streaming Media pour les applications mobiles.
+title: Configuration d’un SDK mobile à l’aide de balises pour les services de streaming multimédia
+description: Découvrez comment mettre en œuvre les services de streaming multimédia d’Adobe pour les applications mobiles.
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: b4944b5f-cbae-4efc-9ef7-962d3f342240
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 82%
+source-wordcount: '199'
+ht-degree: 70%
 
 ---
 
 # Installer les SDK mobiles {#install-mobile-sdks}
 
-Pour implémenter Streaming Media Collection pour les applications mobiles sur Android ou iOS, installez et configurez les éléments suivants :
+Pour mettre en œuvre les services de streaming multimédia d’Adobe pour les applications mobiles sur Android ou iOS, installez et configurez les éléments suivants :
 
 * **SDK Mobile Adobe Experience Platform**
 

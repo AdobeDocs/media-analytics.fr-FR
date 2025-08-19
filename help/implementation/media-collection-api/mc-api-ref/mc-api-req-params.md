@@ -1,14 +1,14 @@
 ---
-title: API Streaming Media Collection ‐ Paramètres des requêtes
+title: Paramètres de requête � de l’API Streaming Media Services
 description: Quels sont les paramètres de requête de l’API Media Collection, les clés de requête et les descriptions ?
 uuid: f83e9ef1-803d-4152-a6c7-acaa325036b9
 exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '1337'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 99%
 | `media.length` | O | number | `sessionStart` | Durée du contenu (secondes) |
 | `media.contentType` | O | string | `sessionStart` | Format de la diffusion (peut correspondre à n’importe quelle chaîne ; quelques valeurs recommandées sont &quot;live&quot;, &quot;VOD&quot; ou &quot;Linear&quot;) |
 | `media.playerName` | O | string | `sessionStart` | Nom du lecteur responsable du rendu du contenu |
-| `media.channel` | O | string | `sessionStart` | Chaîne de distribution du contenu. Il peut s’agir du nom d’une application, d’un site web, d’un nom de propriété, etc. |
+| `media.channel` | O | string | `sessionStart` | Canal de distribution du contenu. Il peut s’agir du nom d’une application, d’un site web, d’un nom de propriété, etc. |
 | `media.resume` | N | booléen | `sessionStart` | Indique si un utilisateur reprend ou non une session précédente (au lieu de commencer une nouvelle session). |
 | `media.sdkVersion` | N | string | `sessionStart` | Version SDK utilisée par le lecteur |
 

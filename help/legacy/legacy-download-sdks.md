@@ -4,10 +4,10 @@ description: Liens vers les téléchargements des SDK hérités pour les platefo
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: d1066f05-f46f-46fa-897f-039657704d05
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '267'
-ht-degree: 73%
+ht-degree: 70%
 
 ---
 
@@ -19,7 +19,7 @@ Pour plus d’informations sur le téléchargement des SDK **actuels**, consulte
 
 Pour obtenir des informations importantes sur la fin de la prise en charge, voir les [question fréquentes sur la fin de la prise en charge](/help/additional-resources/end-of-support-faqs.md).
 
-## Streaming Media et l’extension Adobe Media Analytics
+## Streaming de médias et l’extension Adobe Media Analytics
 
 L’extension Adobe Media Analytics ajoute le SDK Media JavaScript principal (SDK Media 2.x) pour l’audio et la vidéo. Cette extension fournit la fonctionnalité permettant d’ajouter l’instance de suivi `MediaHeartbeat` à un site ou un projet de collecte de données.
 
@@ -27,7 +27,7 @@ La collecte de données Adobe avec l’extension Media Analytics requiert les �
 * Vous devez être un client Adobe Experience Cloud.
 * Vous devez déployer la collecte de données ou le code intégré DTM sur vos pages web.
 * Vous devez configurer l’[extension Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=fr).
-* Vous devez configurer l’extension [ Adobe Media Analytics for Audio and Video ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=fr).
+* Vous devez configurer l’extension [ Adobe Media Analytics for Audio and Video ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * Vous devez configurer l’[extension d’ID Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=fr).
 
 ## Téléchargement des kits SDK Media 2.x {#download-2x-sdks}

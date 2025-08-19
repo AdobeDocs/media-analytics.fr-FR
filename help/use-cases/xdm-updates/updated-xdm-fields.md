@@ -1,16 +1,17 @@
 ---
-title: Migration d’une implémentation du connecteur source Analytics vers les champs XDM Streaming Media mis à jour
+title: Mettre à jour une implémentation du connecteur source Analytics vers de nouveaux champs XDM pour les services de médias en flux continu
 description: Découvrez comment migrer une implémentation du connecteur source Analytics vers des champs XDM Streaming Media mis à jour
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a0a357c3fe7e958b0b6491c84f17f26a806ea205
+exl-id: d239b203-71ce-4307-884f-9d11cc623d04
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
 
-# Mettre à jour une implémentation du connecteur source Analytics vers de nouveaux champs XDM pour les médias en flux continu
+# Mettre à jour une implémentation du connecteur source Analytics vers de nouveaux champs XDM pour les services de médias en flux continu
 
 >[!NOTE]
 >
@@ -18,7 +19,7 @@ ht-degree: 0%
 >
 >Les modifications n’ont aucune incidence sur Adobe Analytics en tant qu’application autonome, y compris la collecte, le traitement et la création de rapports de données. Les outils tels que les flux de données et les règles de traitement ne sont pas affectés. Aucune mise à jour de l’implémentation d’Analytics n’est donc requise.
 
-Une nouvelle implémentation de la collecte de données Adobe (connecteur source Analytics) pour le service Streaming Media est désormais disponible. Elle migre d’un ensemble de champs XDM à un autre.
+Une nouvelle implémentation de la collecte de données Adobe (connecteur source Analytics) pour le service de médias en flux continu est désormais disponible, qui migre d’un ensemble de champs XDM à un autre.
 
 ## Nouveau chemin du champ XDM
 
@@ -58,15 +59,15 @@ Les rapports CJA peuvent être migrés de deux manières :
 
   Pour afficher la liste des mappages, voir [Mappage des paramètres Media Analytics pour Adobe Experience Platform et Customer Journey Analytics](/help/use-cases/xdm-updates/parameters-mapping.md).
 
-* **Si des données historiques ne sont pas requises** : il suffit d’utiliser le chemin du champ XDM de création de rapports au moment de la création de rapports. Pour plus d’informations, voir [Migrer Customer Journey Analytics pour utiliser les nouveaux champs Streaming Media](/help/use-cases/xdm-updates/migrate-cja-setup.md).
+* **Si des données historiques ne sont pas requises** : il suffit d’utiliser le chemin du champ XDM de création de rapports au moment de la création de rapports. Pour plus d’informations, voir [Migrer Customer Journey Analytics pour utiliser les nouveaux champs de médias en flux continu](/help/use-cases/xdm-updates/migrate-cja-setup.md).
 
 ### Real-Time CDP
 
-Toutes les audiences et tous les profils doivent être basés sur des `mediaReporting`. Pour plus d’informations, voir [Migration des profils vers les nouveaux champs Streaming Media](/help/use-cases/xdm-updates/migrate-profiles.md).
+Toutes les audiences et tous les profils doivent être basés sur des `mediaReporting`. Pour plus d’informations, voir [Migration des profils vers les nouveaux champs de médias en flux continu](/help/use-cases/xdm-updates/migrate-profiles.md).
 
 ### Flux de données et collecte de données
 
-Les configurations dynamiques et le mappage de données doivent utiliser `mediaReporting`. Pour plus d’informations, voir [Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs Streaming Media](/help/use-cases/xdm-updates/migrate-dataprep.md).
+Les configurations dynamiques et le mappage de données doivent utiliser `mediaReporting`. Pour plus d’informations, voir [Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs de médias en flux continu](/help/use-cases/xdm-updates/migrate-dataprep.md).
 
 ### Autres services qui doivent être migrés
 
@@ -87,4 +88,3 @@ N’oubliez pas que tout autre flux qui repose sur des champs `media.mediaTimed`
 Tous les clients qui utilisent la collecte de données Adobe pour les médias en flux continu doivent effectuer leur migration au cours de la période de transition désignée.
 
 Pour toute question ou besoin d’assistance, n’hésitez pas à contacter l’équipe d’assistance d’Adobe.
-

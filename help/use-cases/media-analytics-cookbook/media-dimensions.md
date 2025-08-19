@@ -4,7 +4,7 @@ description: Apprenez à lier les actions d’application aux données de suivi 
 exl-id: 75cc9088-776d-4b10-b358-9fff956a7eb7
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 88%
@@ -23,7 +23,7 @@ Pour activer cette fonction pour un rapport spécifique, réactivez la configura
 
 >[!NOTE]
 >
->Les mesures multimédia ne sont _pas_ disponibles en dehors du suivi multimédia, car la plupart d’entre elles sont calculées par la collection de médias en flux continu en fonction des événements Heartbeat. En outre, il est important que les mesures multimédia ne soient pas gonflées par des implémentations différentes.
+>Les mesures multimédia ne sont _pas_ disponibles en dehors du suivi multimédia, car la plupart d’entre elles sont calculées par les services de médias en flux continu en fonction des événements Heartbeat. En outre, il est important que les mesures multimédia ne soient pas gonflées par des implémentations différentes.
 
 ## Utiliser l’attribution des diffusions multimédia
 

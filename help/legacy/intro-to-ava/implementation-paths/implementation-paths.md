@@ -4,10 +4,10 @@ description: Découvrez les chemins d’implémentation des médias en flux cont
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 92%
+source-wordcount: '630'
+ht-degree: 90%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 92%
 
 **CE CONTENU A ÉTÉ DÉPLACÉ VERS LE FICHIER DE CHEMINS D’IMPLÉMENTATION ACTUEL.**
 
-Pour chaque chemin d’implémentation, les clients doivent contacter leur représentant commercial/équipe du compte Adobe pour signer une nouvelle commande, car Media Analytics en flux continu comporte un SKU unique et passe d’un modèle de tarification basé sur les appels de serveur à un modèle basé sur les diffusions vidéo.
+Pour chaque chemin d’implémentation, les clients doivent contacter leur représentant commercial ou l’équipe du compte Adobe pour signer une nouvelle commande, car la collection de médias en flux continu Customer Journey Analytics et Adobe Analytics for Streaming Media disposent d’un SKU unique et passent d’un modèle de tarification basé sur les appels au serveur à un modèle basé sur les diffusions vidéo.
 
 ## Collecte de données Adobe Experience Platform avec l’extension Adobe Media Analytics
 

@@ -5,18 +5,26 @@ uuid: a82ace81-c2f6-4799-9a62-4c6a737a7dab
 exl-id: 81970370-663c-49d5-b13c-628d294be178
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '571'
-ht-degree: 61%
+source-wordcount: '593'
+ht-degree: 58%
 
 ---
 
 # Federated Media{#federated-media}
 
-Le service Federated Media fournit un système de partage de données multimédia en flux continu (audio et vidéo) entre deux partenaires.
-Les données de mesure normalisées créées par la collection de médias en flux continu sont la caractéristique de Federated Media, car elles permettent aux mêmes données de se retrouver dans un seul rapport à partir de plusieurs sources.
+>[!AVAILABILITY]
+>
+>Le service Federated Analytics est disponible uniquement lors de l’utilisation de fonctionnalités de streaming multimédia avec Adobe Analytics. Federated Analytics n’est pas disponible dans Customer Journey Analytics.
+
+
+Le service Federated Analytics fournit un système de partage de données multimédia en flux continu (audio et vidéo) entre deux partenaires.
+
+Les données de mesure normalisées créées par les services de médias en flux continu sont la caractéristique de Federated Media, car elles permettent aux mêmes données de circuler dans un seul rapport à partir de plusieurs sources.
+
 Grâce aux règles et à la logique qui régissent Federated Media, les données sont facilement contrôlées et individualisées pour répondre aux besoins de chaque partenariat.
+
 Federated Media rend les mesures audio et vidéo plus efficaces, rationalisées et exploitables.
 
 
@@ -44,7 +52,7 @@ Federated Media rend les mesures audio et vidéo plus efficaces, rationalisées 
 * **Contrat de diffusion média :** le destinataire et l’expéditeur doivent disposer d’un contrat Adobe Analytics pour les diffusions multimédia avant d’accéder aux données audio et vidéo dans Adobe Analytics. Pour plus d’informations, contactez l’équipe chargée de votre compte.
 * **Federated Addendum :** chaque expéditeur et chaque destinataire doit avoir signé un addendum avec Adobe avant d’envoyer ou de recevoir des données. Un addendum par client est requis, et non un addendum par partenariat. Pour plus d’informations, contactez l’équipe chargée de votre compte.
 
-* **Implémentation de la collecte de médias en flux continu :** l’expéditeur doit mettre en œuvre la collecte de médias en flux continu sur tous les lecteurs qui feront partie du jeu de données fédéré. Seules les données de médias en flux continu sont disponibles pour la fédération. Pour plus d’informations, consultez [Présentation de la collection Streaming Media d’Adobe](/help/media-overview.md).
+* **Implémentation de la collecte de médias en flux continu :** l’expéditeur doit disposer de services de médias en flux continu implémentés sur tous les lecteurs qui feront partie du jeu de données fédéré. Seules les données de médias en flux continu sont disponibles pour la fédération. Pour plus d’informations, voir [Présentation des services de streaming multimédia Adobe](/help/media-overview.md).
 
 * **Contrat de conseil Adobe :** Pour la configuration initiale des règles fédérées entre le récepteur et l’expéditeur, il est recommandé de travailler avec des services de conseil pour examiner les données et créer l’accord de partage de données.
 

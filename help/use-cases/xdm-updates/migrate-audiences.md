@@ -3,24 +3,25 @@ title: Migration des audiences vers le nouveau type de données Adobe Analytics 
 description: Découvrez comment migrer des audiences vers le nouveau type de données Adobe Analytics for Streaming Media
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 19e729c7d87b4e81b6952c7ebcb8b122043d516d
+exl-id: 5664bf56-b228-430a-944c-faaab55fa108
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 2%
 
 ---
 
-# Migrer les audiences vers les nouveaux champs Streaming Media
+# Migrer les audiences vers les nouveaux champs de streaming multimédia
 
-Ce document décrit comment une audience qui utilise des champs du type de données Collection de médias en flux continu Adobe appelé « Média » doit être migrée pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) ».
+Ce document décrit comment une audience qui utilise des champs du type de données de services de streaming multimédia d’Adobe appelé « Media » doit être migrée pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) ».
 
 ## Migration d’une audience
 
-Pour migrer une audience de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails des rapports sur les médias](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier l’audience et, dans chaque règle, remplacer l’ancien champ du type de données obsolète par le nouveau champ correspondant du nouveau type de données :
+Pour migrer une audience de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails des rapports sur les médias](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier l’audience et, dans chaque règle, remplacer l’ancien champ du type de données obsolète par le nouveau champ correspondant du nouveau type de données :
 
 1. Recherchez les règles contenant des champs du type de données « Média » obsolète. Il s’agit de tous les champs qui commencent par le chemin, `media.mediaTimed`.
 
-1. Dupliquez ces règles à l’aide des champs du nouveau type de données « [Détails des rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) ».
+1. Dupliquez ces règles à l’aide des champs du nouveau type de données « [Détails des rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) ».
 
 1. Gardez les deux règles en place jusqu’à ce que vous validiez que les audiences fonctionnent comme prévu.
 
@@ -28,7 +29,7 @@ Pour migrer une audience de l’ancien type de données appelé « Media » vers
 
 1. Vérifiez que les audiences fonctionnent toujours comme prévu.
 
-Pour mapper les anciens champs aux nouveaux champs, reportez-vous au paramètre [Content ID](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) sur la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters). L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
+Pour mapper les anciens champs aux nouveaux champs, reportez-vous au paramètre [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) sur la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters). L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
 
 ![Anciens et nouveaux chemins d’accès aux champs XDM](assets/field-paths-updated.jpeg)
 
@@ -56,7 +57,7 @@ Pour suivre plus facilement les directives de migration, prenons l’exemple sui
 
    ![Modifier l’audience](assets/audience-edit5.jpeg)
 
-1. Reportez-vous à la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters) pour mapper entre les anciens champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ». Par exemple, pour le paramètre [Media Starts](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), le correspondant pour `media.mediaTimed.impressions.value` est `mediaReporting.sessionDetails.isViewed`.
+1. Reportez-vous à la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters) pour mapper entre les anciens champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ». Par exemple, pour le paramètre [Media Starts](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), le correspondant pour `media.mediaTimed.impressions.value` est `mediaReporting.sessionDetails.isViewed`.
 
    ![ Chemin XDM mis à jour ](assets/updated-xdm-path.jpeg)
 

@@ -1,13 +1,13 @@
 ---
-source-git-commit: e534d44f9d03b99153fde23b2c587f8607ceea72
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '612'
-ht-degree: 100%
+source-wordcount: '613'
+ht-degree: 98%
 
 ---
 # Notes de mise à jour sur les médias en flux continu - Texte source
 
-Le contenu suivant a été copié à partir des notes de mise à jour d’Experience Cloud. Il sera déplacé vers les nouvelles notes de mise à jour des médias en flux continu.
+Le contenu suivant a été copié à partir des notes de mise à jour d’Experience Cloud. Elle sera déplacée vers les nouvelles notes de mise à jour des services de médias en flux continu.
 
 
 Découvrez les dernières mises à jour de versions des [produits Adobe Experience Cloud](https://business.adobe.com/fr/products/adobe-experience-cloud-products.html). Obtenez les derniers cours, tutoriels et documentation d’aide autonome sur Experience League.

@@ -5,9 +5,9 @@ uuid: 06fefedb-b0c8-4f7d-90c8-e374cdde1695
 exl-id: a175332e-0bdc-44aa-82cb-b3f879e7abfc
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '616'
 ht-degree: 94%
 
 ---
@@ -19,7 +19,7 @@ Après avoir téléchargé le SDK Media pour votre application ou lecteur vidéo
 
 ## Instructions générales de mise en œuvre {#general-implementation-guidelines}
 
-Trois composants principaux de SDK sont utilisés dans le suivi avec la collection Streaming Media :
+Trois composants principaux de SDK sont utilisés dans le suivi avec les services de streaming multimédia :
 * Media Heartbeat Config : le `MediaHeartbeatConfig` contient les paramètres de base de la création de rapports.
 * Media Heartbeat Delegate : le `MediaHeartbeatDelegate` contrôle la durée de lecture et l’objet QoS.
 * Media Heartbeat : le `MediaHeartbeat` correspond à la bibliothèque principale qui contient les membres et les méthodes.
@@ -125,7 +125,7 @@ Les mises en œuvre de suivi Media Analytics génèrent deux types d’appels de
 
   Le serveur de suivi des analyses doit se terminer par « `.sc.omtrdc.net` » ou être un serveur CNAME.
 
-* **&#x200B; Serveur Media Analytics (Heartbeats)**
+* ** Serveur Media Analytics (Heartbeats)**
 Ceci a toujours le format « `[your_namespace].hb.omtrdc.net` ». La valeur de « `[your_namespace]` » indique votre société et est fournie par Adobe.
 
 Le suivi multimédia fonctionne de la même manière sur toutes les plateformes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plateformes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :

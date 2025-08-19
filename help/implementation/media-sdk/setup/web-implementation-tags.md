@@ -4,16 +4,16 @@ description: Découvrez comment implémenter Adobe Streaming Media pour les appl
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 78%
+source-wordcount: '115'
+ht-degree: 80%
 
 ---
 
-# Installez Streaming Media Collection à l’aide de l’extension Media Analytics
+# Installer des services de médias en flux continu à l’aide de l’extension Media Analytics
 
-Vous pouvez utiliser l’extension Adobe Media Analytics pour implémenter la collection de médias en flux continu Adobe. L’extension Media Analytics ajoute le SDK principal JavaScript Media (SDK Media 3.x). Cette extension fournit la fonctionnalité permettant d’ajouter l’instance de suivi Media à un site ou à un projet acceptant les balises.
+Vous pouvez utiliser l’extension Adobe Media Analytics pour implémenter les services de médias en flux continu Adobe. L’extension Media Analytics ajoute le SDK principal JavaScript Media (SDK Media 3.x). Cette extension fournit la fonctionnalité permettant d’ajouter l’instance de suivi Media à un site ou à un projet acceptant les balises.
 
 Pour plus d’informations sur l’installation et l’utilisation de l’extension, voir [Extension Adobe Media Analytics (SDK 3.x) for Audio and Video — à l’aide de balises (collecte de données)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr).
 

@@ -3,24 +3,25 @@ title: Migrer les profils vers les nouveaux champs Streaming Media
 description: Découvrez comment migrer les profils vers les nouveaux champs Streaming Media
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 19e729c7d87b4e81b6952c7ebcb8b122043d516d
+exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
 
 ---
 
-# Migrer les profils vers les nouveaux champs Streaming Media
+# Migrer les profils vers les nouveaux champs de streaming multimédia
 
-Ce document décrit le processus de migration du service de filtrage de profil qui existe en plus des flux de collecte de données Adobe activés pour Adobe Analytics for Streaming Media. La migration convertit le service de filtrage de profil de l’utilisation du type de données Collection de médias en flux continu Adobe appelé « Média » vers l’utilisation du nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) ».
+Ce document décrit le processus de migration du service de filtrage de profil qui existe en plus des flux de collecte de données Adobe activés pour Adobe Analytics pour les données de médias en flux continu. La migration convertit le service de filtrage de profil de l’utilisation du type de données des services de streaming multimédia d’Adobe appelé « Media » vers l’utilisation du nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) ».
 
 ## Migration de profils
 
-Pour migrer le filtrage de profil de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails des rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier les règles de filtrage de profil existantes :
+Pour migrer le filtrage de profil de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails des rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier les règles de filtrage de profil existantes :
 
 1. Dans Adobe Experience Platform, dans la section [!UICONTROL **Sources**], accédez à l’onglet [!UICONTROL **Flux de données**].
 
-1. Recherchez le flux de données responsable de l’importation des données Streaming Media d’Adobe Analytics vers Adobe Experience Platform via la collecte de données Adobe.
+1. Recherchez le flux de données responsable de l’importation des données de médias en flux continu d’Adobe Analytics vers Adobe Experience Platform via la collecte de données Adobe.
 
 1. Sélectionnez [!UICONTROL **Mettre à jour le flux de données**] pour modifier la configuration du filtrage de profil en remplaçant chaque règle personnalisée qui contient un champ obsolète par le nouveau champ correspondant du nouvel objet XDM.
 
@@ -32,7 +33,7 @@ Pour migrer le filtrage de profil de l’ancien type de données appelé « Medi
 
 1. Vérifiez que les profils fonctionnent toujours comme prévu.
 
-Pour mapper les anciens champs aux nouveaux champs, reportez-vous au paramètre [Content ID](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) sur la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters). L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
+Pour mapper les anciens champs aux nouveaux champs, reportez-vous au paramètre [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) sur la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters). L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
 
 ## Exemple
 
@@ -40,7 +41,7 @@ Pour suivre plus facilement les instructions de migration, considérez l’exemp
 
 1. Dans Adobe Experience Platform, dans la section [!UICONTROL **Sources**], accédez à l’onglet [!UICONTROL **Flux de données**].
 
-&#x200B;1. Recherchez le flux de données responsable de l’importation des données Streaming Media d’Adobe Analytics vers Adobe Experience Platform via Adobe Analytics.
+&#x200B;1. Recherchez le flux de données responsable de l’importation des données de médias en flux continu d’Adobe Analytics vers Adobe Experience Platform via Adobe Analytics.
 
 1. Sélectionnez **[!UICONTROL Mettre à jour le flux de données]** pour accéder à l’interface utilisateur de modification, comme illustré dans l’image ci-dessous.
 
@@ -55,7 +56,7 @@ Pour suivre plus facilement les instructions de migration, considérez l’exemp
    ![règles de filtrage des flux de données AEP](assets/dataflow-filtering-rules-profile.jpeg)
 
 
-   Pour chaque filtre qui utilise l’objet media.mediaTimed, recherchez son correspondant dans l’objet `mediaReporting` à l’aide de la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters) pour mapper les anciens champs aux nouveaux champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ». Par exemple, pour [Media Starts](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), le correspondant pour `media.mediaTimed.impressions.value` est `mediaReporting.sessionDetails.isViewed`.
+   Pour chaque filtre qui utilise l’objet media.mediaTimed, recherchez son correspondant dans l’objet `mediaReporting` à l’aide de la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters) pour mapper les anciens champs aux nouveaux champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ». Par exemple, pour [Media Starts](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), le correspondant pour `media.mediaTimed.impressions.value` est `mediaReporting.sessionDetails.isViewed`.
 
    ![Nouveaux et anciens champs XDM](assets/xdm-fields-new-and-old.jpeg)
 

@@ -3,20 +3,21 @@ title: Migrer la préparation des données pour les champs personnalisés vers l
 description: Découvrez comment migrer le type de données Préparation des données pour les champs personnalisés vers les nouveaux champs Streaming Media
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 4e8bc7ba60c681510cb570c43a0f8193d4b39e11
+exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
+source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
 
 ---
 
-# Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs Streaming Media
+# Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs de médias en flux continu
 
-Ce document décrit le processus de migration du service de préparation des données qui existe en plus des flux de collecte de données Adobe activés pour les données de collecte de médias en flux continu Adobe. La migration convertit un mappage de préparation de données à partir du type de données de collecte de médias en flux continu Adobe appelé « Média » pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) ».
+Ce document décrit le processus de migration du service de préparation des données qui existe en plus des flux de collecte de données Adobe activés pour les données de collecte de médias en flux continu Adobe. La migration convertit un mappage de préparation de données à partir du type de données de collecte de médias en flux continu Adobe appelé « Média » pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) ».
 
 ## Migrer la préparation des données pour les champs personnalisés
 
-Pour migrer les mappages de la préparation des données de l’ancien type de données appelé « Média » vers le nouveau type de données appelé « [Détails des rapports sur les médias](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier les mappages de la préparation des données :
+Pour migrer les mappages de la préparation des données de l’ancien type de données appelé « Média » vers le nouveau type de données appelé « [Détails des rapports sur les médias](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier les mappages de la préparation des données :
 
 >[!IMPORTANT]
 >
@@ -24,7 +25,7 @@ Pour migrer les mappages de la préparation des données de l’ancien type de d
 
 1. Dans Adobe Experience Platform, dans la section [!UICONTROL **Sources**], accédez à l’onglet [!UICONTROL **Flux de données**].
 
-1. Recherchez le flux de données responsable de l’importation des données Streaming Media d’Adobe Analytics vers Adobe Experience Platform via la collecte de données Adobe.
+1. Recherchez le flux de données responsable de l’importation des données de médias en flux continu d’Adobe Analytics vers Adobe Experience Platform via la collecte de données Adobe.
 
 1. Sélectionnez [!UICONTROL **Mettre à jour le flux de données**] pour modifier la configuration de la préparation des données en remplaçant chaque mappage source personnalisé contenant un champ obsolète par le nouveau champ correspondant du nouvel objet XDM.
 
@@ -34,7 +35,7 @@ Pour migrer les mappages de la préparation des données de l’ancien type de d
 
 1. Vérifiez que les mappages fonctionnent toujours comme prévu.
 
-Pour mapper les anciens champs aux nouveaux champs, reportez-vous au paramètre [Content ID](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) sur la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters). L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
+Pour mapper les anciens champs aux nouveaux champs, reportez-vous au paramètre [Content ID](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) sur la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters). L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
 
 ## Exemple
 
@@ -42,7 +43,7 @@ Pour suivre plus facilement les instructions de migration, considérez l’exemp
 
 1. Dans Adobe Experience Platform, dans la section [!UICONTROL **Sources**], accédez à l’onglet [!UICONTROL **Flux de données**].
 
-1. Recherchez le flux de données responsable de l’importation des données Streaming Media d’Adobe Analytics vers Adobe Experience Platform via la collecte de données Adobe.
+1. Recherchez le flux de données responsable de l’importation des données de médias en flux continu d’Adobe Analytics vers Adobe Experience Platform via la collecte de données Adobe.
 
 1. Sélectionnez **[!UICONTROL Mettre à jour le flux de données]** pour accéder à l’interface utilisateur de modification, comme illustré dans l’image ci-dessous.
 
@@ -76,7 +77,7 @@ Pour suivre plus facilement les instructions de migration, considérez l’exemp
 
 Dans l’exemple ci-dessus, tous les types de données impliqués étaient des chaînes. Le remplacement du mappage était donc direct.
 
-Si le type de données du champ source est différent du type de données du champ cible, vous devez suivre les instructions des sections [Guide de dépannage de la préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/troubleshooting-guide), [Gestion des formats de données avec la préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/data-handling) et [Fonctions de mappage de la préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/data-handling).
+Si le type de données du champ source est différent du type de données du champ cible, vous devez suivre les instructions des sections [Guide de dépannage de la préparation des données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide), [Gestion des formats de données avec la préparation des données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) et [Fonctions de mappage de la préparation des données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling).
 
 Par exemple, si le type source est une chaîne et que le type cible est une valeur booléenne, la préparation de données peut automatiquement analyser la valeur et convertir la valeur source en valeur booléenne.
 
@@ -89,5 +90,3 @@ Mappage avec `media.mediaTimed` à un champ personnalisé.
 Mappage avec `mediaReporting` au même champ personnalisé :
 
 ![Flux de données AEP poursuivi](assets/aep-dataflow7.jpeg)
-
-
