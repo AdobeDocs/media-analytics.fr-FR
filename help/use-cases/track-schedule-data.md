@@ -140,7 +140,7 @@ Après avoir [créé un jeu de données de planning de programme](#create-a-prog
 
    1. Envoyez le fichier .json contenant les enregistrements de données de planning du programme à l’aide de l’ID de lot.
 
-      Pour transmettre les informations de planification par push, vous devez utiliser les API Batch d’AEP, comme décrit dans la section [Présentation de l’API Batch Ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
+      Pour transmettre les informations de planification par push, vous devez utiliser les API Batch d’AEP, comme décrit dans la section [Présentation de l’API Batch Ingestion](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/batch/overview).
 
       Prenons l’exemple suivant d’utilisation de cURL pour transmettre un fichier avec les enregistrements de planning :
 
@@ -300,9 +300,9 @@ L’exemple suivant illustre un fichier .json planifié avec deux enregistrement
 
    Examinons les exemples de dimensions suivants que vous pouvez créer et sur lesquels vous pouvez créer des rapports dans Customer Journey Analytics :
 
-   * **[»_Nom de l’épisode_ »](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)** : cette dimension peut vous aider à identifier les épisodes d’une série particulière qui ont les meilleures performances.
+   * **[»_Nom de l’épisode_ »](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)** : cette dimension peut vous aider à identifier les épisodes d’une série particulière qui ont les meilleures performances.
 
-   * **[ID de ressource](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[ID de ressource](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. Continuez avec [ Analyser les données dans Customer Journey Analytics ](#analyze-data-in-customer-journey-analytics).
 
