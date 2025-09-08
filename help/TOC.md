@@ -1,19 +1,19 @@
 ---
 product: adobe analytics
 audience: end-user
-user-guide-title: Guide des services de streaming multimédia
-breadcrumb-title: Guide des services de streaming multimédia
-user-guide-description: Implémentez les services de médias en flux continu. Inclut le SDK Media et l’API Media Collection.
+user-guide-title: Guide des services des médias en streaming
+breadcrumb-title: Guide des services des médias en streaming
+user-guide-description: Implémentez des services de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
 source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
 workflow-type: tm+mt
 source-wordcount: '926'
-ht-degree: 79%
+ht-degree: 81%
 
 ---
 
 
-# Guide des services de streaming multimédia {#using}
+# Guide des services des médias en streaming {#using}
 
 + [guide d’Adobe streaming media services](media-overview.md)
 + Notes de mise à jour {#release-notes}
