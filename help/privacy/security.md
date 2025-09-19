@@ -4,10 +4,10 @@ description: En savoir plus sur la sécurité liée aux services de streaming mu
 feature: Streaming Media
 role: User, Admin, Data Engineer
 exl-id: a301612f-5019-40c3-af40-d608cd320e16
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: c26f841118fd792958ab2bdfc26e776472b95956
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 95%
+source-wordcount: '118'
+ht-degree: 70%
 
 ---
 
@@ -18,8 +18,5 @@ Chez Adobe, nous prenons à cœur la sécurité de vos ressources numériques. D
 
 ## Transport Layer Security (sécurité de la couche de transport) {#transport-layer-security}
 
-**Remarque à propos de TLS (Transport Layer Security)**- Adobe applique des normes de conformité de sécurité qui exigent la fin de vie des anciens protocoles de sécurité. Pour continuer à répondre aux normes de protocole de sécurité en constante évolution, Adobe se dirige vers l’utilisation de TLS (Transport Layer Security) 1.2, afin d’avoir la version la plus récente et la plus sécurisée en usage. A partir du 20 février 2019, Adobe ne prendra en charge que TLS 1.1 ou version ultérieure. Avec cette modification, Adobe ne collectera plus de données provenant d’utilisateurs finaux disposant d’anciens appareils ou navigateurs web qui déploient TLS 1.0. La migration vers TLS 1.2 améliore la sécurité. Il est important que vous passiez en revue les détails et que vous planifiiez les changements pour une transition en douceur.
+**Transport Layer Security Notice : les normes de conformité** sécurité d’Adobe exigent la fin de vie des anciens protocoles de sécurité. Adobe prend en charge TLS (Transport Layer Security) 1.2 et 1.3.
 
->[!NOTE]
->
->TLS est actuellement le protocole de sécurité le plus répandu, utilisé pour les navigateurs web et autres applications exigeant que les données soient échangées en toute sécurité sur un réseau.
