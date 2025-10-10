@@ -16,7 +16,7 @@ ht-degree: 43%
 Les conditions préalables décrites dans cette section sont spécifiques à l’implémentation du module complémentaire Adobe Analytics for Streaming Media pour les implémentations Adobe-Analytics uniquement (lorsque vous n’utilisez pas Edge).
 
 1. **Remplir les conditions préalables générales**<br>
-Que vous implémentiez des services de médias en flux continu pour des implémentations Adobe Analytics uniquement ou pour des implémentations Edge, assurez-vous de respecter les [ conditions préalables générales ](/help/getting-started/prereqs.md).
+Que vous implémentiez des services de médias en flux continu pour des implémentations Adobe Analytics uniquement ou pour des implémentations Edge, assurez-vous de respecter les [&#x200B; conditions préalables générales &#x200B;](/help/getting-started/prereqs.md).
 
 1. **Confirmez que vous disposez d’une implémentation d’Adobe Analytics**<br>
 Lors de l’implémentation du module complémentaire Adobe Analytics for Streaming Media pour une implémentation Analytics uniquement, une implémentation de base d’Adobe Analytics est également requise. Pour plus d’informations, voir [Implémentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).

@@ -125,7 +125,7 @@ Les mises en œuvre de suivi Media Analytics génèrent deux types d’appels de
 
   Le serveur de suivi des analyses doit se terminer par « `.sc.omtrdc.net` » ou être un serveur CNAME.
 
-* ** Serveur Media Analytics (Heartbeats)**
+* **&#x200B; Serveur Media Analytics (Heartbeats)**
 Ceci a toujours le format « `[your_namespace].hb.omtrdc.net` ». La valeur de « `[your_namespace]` » indique votre société et est fournie par Adobe.
 
 Le suivi multimédia fonctionne de la même manière sur toutes les plateformes, de poste de travail comme mobiles. Le suivi audio fonctionne actuellement sur les plateformes mobiles. Pour tous les appels de suivi, quelques variables universelles clés doivent être validées :

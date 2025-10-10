@@ -61,7 +61,7 @@ Pour suivre plus facilement les instructions de migration, considérez l’exemp
 
    Par exemple, pour Network, le correspondant de `media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork est `mediaReporting.sessionDetails.network`.
 
-   ![ Chemin du champ XDM mis à jour ](assets/xdm-field-path-old-and-new.jpeg)
+   ![&#x200B; Chemin du champ XDM mis à jour &#x200B;](assets/xdm-field-path-old-and-new.jpeg)
 
 1. Dans le champ **[!UICONTROL Source]** , remplacez le chemin `media.mediaTimed` par le chemin `mediaReporting`. Le champ cible reste inchangé.
 

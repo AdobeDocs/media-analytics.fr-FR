@@ -37,13 +37,13 @@ Description des données de tableau :
 >[!IMPORTANT]
 >
 >Ne modifiez pas les noms de classification des variables répertoriées ci-dessous qui sont
->>décrits sous Variable de création de rapports/réservée comme « classification ».
->>Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour les médias.
->>Suivi. De temps à autre, Adobe ajoute de nouvelles propriétés et, dans ce cas,
->>les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés
->>du média. Au cours du processus de mise à jour, Adobe détermine si les
->>classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque,
->>Adobe l’ajoute à nouveau.
+>&#x200B;>décrits sous Variable de création de rapports/réservée comme « classification ».
+>&#x200B;>Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour les médias.
+>&#x200B;>Suivi. De temps à autre, Adobe ajoute de nouvelles propriétés et, dans ce cas,
+>&#x200B;>les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés
+>&#x200B;>du média. Au cours du processus de mise à jour, Adobe détermine si les
+>&#x200B;>classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque,
+>&#x200B;>Adobe l’ajoute à nouveau.
 
 ## Données de publicité vidéo {#ad-video-data}
 
