@@ -31,9 +31,9 @@ Pour plus dʼinformations sur les mesures calculées Adobe Analytics, voir [Mesu
 | Temps moyen passé sur la publicité | Temps passé sur la publicité par démarrage de publicité (`HH:MM:SS`) | `Ad Time Spent / Ad Start` |
 | Temps moyen Passé sur le chapitre | Durée du chapitre par démarrage de chapitre (`HH:MM:SS`) | `Chapter Time Spent / Chapter Start` |
 | Taux d’achèvement du média | Taux de contenu terminé par rapport au média initié (%) | `Content Completes/ Media Starts` |
-| Taux de contenus terminés | Taux de contenus terminés par rapport aux démarrages de contenu (%) | `Content Completes / Content Starts` |
+| Taux d’achèvement du contenu | Taux de contenus terminés par rapport aux démarrages de contenu (%) | `Content Completes / Content Starts` |
 | Taux d’achèvement de la publicité | Taux de publicités terminées par rapport aux démarrages de publicité (%) | `Ad Completes / Ad Starts` |
-| Taux de chapitres terminés | Taux de chapitres terminés par rapport aux démarrages de chapitre (%) | `Chapter Completes / Chapter Starts` |
+| Taux d’achèvement du chapitre | Taux de chapitres terminés par rapport aux démarrages de chapitre (%) | `Chapter Completes / Chapter Starts` |
 | Taux d’abandon avant le démarrage | Taux de pertes avant le début par rapport aux démarrages de contenu multimédia (%) | `Drops before Starts / Media Starts` |
 | Taux de la durée de mise en pause du contenu | Taux de la durée totale de mise en pause par rapport au temps passé sur le contenu (%) | `Total Pause Duration / Content Time Spent` |
 | Taux de la durée de la mémoire tampon du contenu | Taux de la durée totale de la mémoire tampon par rapport au temps passé sur le contenu (%) | `Total Buffer Duration / Content Time Spent` |

@@ -7,22 +7,22 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 88%
+source-wordcount: '124'
+ht-degree: 62%
 
 ---
 
 # Prise en charge des métadonnées personnalisées{#custom-metadata-support}
 
-Vous pouvez fournir des paires clé-valeur personnalisées sur les événements `sessionStart`, `chapterStart` et `adStart`. Ces informations doivent être fournies dans la clé JSON, `customMetadata`, positionnées à côté de la clé `params`.
+Vous pouvez fournir des paires de clés:value des paires personnalisées sur les événements `sessionStart`, `chapterStart` et `adStart`. Ces informations doivent être fournies dans la clé JSON, `customMetadata`, positionnées à côté de la clé `params`.
 
-La clé JSON `customMetadata` doit contenir un objet de paires clé-valeur. La clé ne doit contenir que des caractères alphanumériques, un caractère de soulignement et un point.
+La clé JSON `customMetadata` doit contenir un objet de paires clé:value. La clé ne doit contenir que des caractères alphanumériques, un caractère de soulignement et un point.
 
 [Événements d’API MA Collection](../mc-api-ref/mc-api-events-req.md)
 
 ## Exemple
 
-Actuellement, vous pouvez envoyer un événement `sessionStart` avec la paire clé-valeur suivante :
+Actuellement, vous pouvez envoyer un événement `sessionStart` avec la paire de clés :value :
 
 ```
 params: { "media.channel": "channel-1" },

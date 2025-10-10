@@ -7,8 +7,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 100%
+source-wordcount: '588'
+ht-degree: 98%
 
 ---
 
@@ -65,7 +65,7 @@ Pour les flux en direct, vous devez définir la valeur du curseur de lecture com
 
 Pour les flux en direct, lorsquʼun utilisateur commence la lecture du flux, vous devez définir `l:event:playhead` sur le nombre de secondes écoulées depuis minuit UTC ce jour-là. Contrairement à VOD, où vous définissez le curseur de lecture sur « 0 ». Remarque : lors de l’utilisation de marques de progression, la durée du contenu est une donnée obligatoire et le curseur de lecture doit être mis à jour en tant que nombre de secondes écoulées depuis le début de l’élément média, en commençant par 0.
 
-Par exemple, supposons qu’un événement de diffusion LIVE commence à minuit et dure 24 heures (`a.media.length=86400` ; `l:asset:length=86400`). Supposons ensuite qu’un utilisateur commence à lire ce flux en direct à 12h00. Dans ce scénario, vous devez définir `l:event:playhead` sur 43200 (12 heures écoulées depuis minuit UTC ce jour-là, en secondes).
+Par exemple, supposons qu’un événement de diffusion LIVE commence à minuit et dure 24 heures (`a.media.length=86400` ; `l:asset:length=86400`). Supposons ensuite qu’un utilisateur commence à lire ce flux en DIRECT à 12 :00pm. Dans ce scénario, vous devez définir `l:event:playhead` sur 43200 (12 heures écoulées depuis minuit UTC ce jour-là, en secondes).
 
 ### En pause
 

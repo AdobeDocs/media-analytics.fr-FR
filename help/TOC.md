@@ -125,7 +125,7 @@ ht-degree: 81%
       + [OTT et Audience Manager](use-cases/analytics-with-ott/ott-am.md)
       + [OTT et Experience Cloud](use-cases/analytics-with-ott/ott-experience-cloud.md)
 + Tracking {#tracking}
-   + [Présentation](use-cases/track-av-playback/track-core-overview.md)
+   + [Vue d’ensemble](use-cases/track-av-playback/track-core-overview.md)
    + Suivi de la lecture principale des médias en flux continu {#track-core}
       + [Suivi de la lecture principale sur JavaScript 3.x](use-cases/track-av-playback/track-core/track-core-javascript/track-core-js3.md)
       + [Suivre la lecture principale sur Chromecast](use-cases/track-av-playback/track-core/track-core-chromecast.md)
@@ -145,7 +145,7 @@ ht-degree: 81%
       + [Mise en œuvre de métadonnées standard sur Roku](use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
       + [Paramètres des métadonnées standard - Roku](use-cases/track-av-playback/impl-std-metadata/roku-metadata.md)
    + Suivi des publicités {#track-ads}
-      + [Présentation](use-cases/track-ads/track-ads-overview.md)
+      + [Vue d’ensemble](use-cases/track-ads/track-ads-overview.md)
       + [Suivi des publicités sur JavaScript 3.x](use-cases/track-ads/track-ads-js/track-ads-js3.md)
       + [Suivre les publicités sur Chromecast](use-cases/track-ads/track-ads-chromecast.md)
       + [Effectuer le suivi des publicités sur Roku](use-cases/track-ads/track-ads-roku.md)
@@ -153,17 +153,17 @@ ht-degree: 81%
          + [Mise en œuvre de métadonnées de publicité standard sur JavaScript 3.x](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-md-js/impl-std-ad-metadata-js3.md)
          + [Mise en œuvre de métadonnées de publicité standard sur Roku](use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    + Suivi des chapitres et des segments {#track-chapters}
-      + [Présentation](use-cases/track-chapters/track-chapters-overview.md)
+      + [Vue d’ensemble](use-cases/track-chapters/track-chapters-overview.md)
       + [Suivi des chapitres et des segments sur JavaScript 3.x](use-cases/track-chapters/track-chapters-js/track-chapters-js3.md)
       + [Effectuer le suivi des chapitres et des segments sur Chromecast](use-cases/track-chapters/track-chapters-chromecast.md)
       + [Suivi des chapitres et des segments sur Roku](use-cases/track-chapters/track-chapters-roku.md)
    + Suivi de la qualité de l’expérience {#track-qos}
-      + [Présentation](use-cases/track-qos/track-qos-overview.md)
+      + [Vue d’ensemble](use-cases/track-qos/track-qos-overview.md)
       + [Suivi de la qualité de l’expérience sur JavaScript 3.x](use-cases/track-qos/track-qos-js/track-qos-js3.md)
       + [Suivre la qualité de l’expérience sur Chromecast](use-cases/track-qos/track-qos-chromecast.md)
       + [Effectuer le suivi de la qualité de l’expérience sur Roku](use-cases/track-qos/track-qos-roku.md)
    + Erreurs de suivi {#track-errors}
-      + [Présentation](use-cases/track-errors/track-errors-overview.md)
+      + [Vue d’ensemble](use-cases/track-errors/track-errors-overview.md)
       + [Erreurs de suivi sur JavaScript 3.x](use-cases/track-errors/track-errors-js/track-errors-js3.md)
       + [Erreurs de suivi sur Chromecast](use-cases/track-errors/track-errors-chromecast.md)
       + [Erreurs de suivi sur Roku](use-cases/track-errors/track-errors-roku.md)

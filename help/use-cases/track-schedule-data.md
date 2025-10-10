@@ -5,7 +5,8 @@ feature: Streaming Media
 role: User, Admin, Data Engineer
 hide: true
 hidefromtoc: true
-source-git-commit: e38a83853e85418611e17015b661d8592a7c95a1
+exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
+source-git-commit: b947a1d64c7fa58e784712397b0167d4186d00c3
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 2%
@@ -140,7 +141,7 @@ Après avoir [créé un jeu de données de planning de programme](#create-a-prog
 
    1. Envoyez le fichier .json contenant les enregistrements de données de planning du programme à l’aide de l’ID de lot.
 
-      Pour transmettre les informations de planification par push, vous devez utiliser les API Batch d’AEP, comme décrit dans la section [Présentation de l’API Batch Ingestion](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/batch/overview).
+      Pour transmettre les informations de planification par push, vous devez utiliser les API Batch d’AEP, comme décrit dans la section [Présentation de l’API Batch Ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
 
       Prenons l’exemple suivant d’utilisation de cURL pour transmettre un fichier avec les enregistrements de planning :
 
@@ -300,9 +301,9 @@ L’exemple suivant illustre un fichier .json planifié avec deux enregistrement
 
    Examinons les exemples de dimensions suivants que vous pouvez créer et sur lesquels vous pouvez créer des rapports dans Customer Journey Analytics :
 
-   * **[»_Nom de l’épisode_ »](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)** : cette dimension peut vous aider à identifier les épisodes d’une série particulière qui ont les meilleures performances.
+   * **[»_Nom de l’épisode_ »](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#episode)** : cette dimension peut vous aider à identifier les épisodes d’une série particulière qui ont les meilleures performances.
 
-   * **[ID de ressource](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
+   * **[ID de ressource](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
 1. Continuez avec [ Analyser les données dans Customer Journey Analytics ](#analyze-data-in-customer-journey-analytics).
 

@@ -3,7 +3,8 @@ title: Migration des audiences vers le nouveau type de données Adobe Analytics 
 description: Découvrez comment migrer des audiences vers le nouveau type de données Adobe Analytics for Streaming Media
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: 3056a384535b3f5f2a9bc2d950bd5ee3410ec0a5
+exl-id: 79203a2f-8158-44f2-83b2-146179be9180
+source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
 workflow-type: tm+mt
 source-wordcount: '1346'
 ht-degree: 47%
@@ -12,7 +13,7 @@ ht-degree: 47%
 
 # Mappage des paramètres Media Analytics pour Adobe Experience Platform et Customer Journey Analytics
 
-Ce document fournit une liste complète de tous les paramètres Media Analytics utilisés dans Adobe Experience Platform et Customer Journey Analytics. Il est destiné à prendre en charge l’intégration des données importées d’Adobe Analytics vers Platform via le [ Connecteur Source Analytics ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) ou le [ Connecteur Source Analytics pour les classifications ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/classifications), en mappant chaque paramètre à son chemin d’accès au champ XDM correspondant.
+Ce document fournit une liste complète de tous les paramètres Media Analytics utilisés dans Adobe Experience Platform et Customer Journey Analytics. Il est destiné à prendre en charge l’intégration des données importées d’Adobe Analytics vers Platform via le [ Connecteur Source Analytics ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) ou le [ Connecteur Source Analytics pour les classifications ](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/adobe-applications/classifications), en mappant chaque paramètre à son chemin d’accès au champ XDM correspondant.
 
 ## Variables réservées à Media Analytics
 
@@ -237,9 +238,3 @@ Dans les deux cas, la `<number>` correspond à l’événement spécifique ou au
 | Durée totale de blocage | `_experience.analytics.event<x>to<y>.event<number>.value` | Mesure |
 
 {style="table-layout:auto"}
-
-
-
-
-
-

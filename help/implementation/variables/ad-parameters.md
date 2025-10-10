@@ -31,19 +31,19 @@ Description des données de tableau :
    * *Variable réservée* : indique si les données sont capturées sous la forme d’un événement, d’une eVar, d’une prop ou d’une classification dans une variable réservée.
    * *Nom du rapport* : nom du rapport Adobe Analytics pour la variable.
    * *Données contextuelles* : nom des données contextuelles Adobe Analytics transmises au serveur de reporting et utilisées dans les règles de traitement.
-   * *Flux de données* : nom de colonne de la variable trouvée dans les flux de données du parcours de navigation ou du flux de données en direct.
+   * *Flux de données* : nom de colonne de la variable trouvée dans les flux de données du flux de clics ou Live Stream
    * *Audience Manager* : nom de caractéristique trouvé dans Adobe Audience Manager.
 
 >[!IMPORTANT]
 >
 >Ne modifiez pas les noms de classification des variables répertoriées ci-dessous qui sont
->&#x200B;>décrits sous Variable de création de rapports/réservée comme « classification ».
->&#x200B;>Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour les médias.
->&#x200B;>Suivi. De temps à autre, Adobe ajoute de nouvelles propriétés et, dans ce cas,
->&#x200B;>les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés
->&#x200B;>du média. Au cours du processus de mise à jour, Adobe détermine si les
->&#x200B;>classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque,
->&#x200B;>Adobe l’ajoute à nouveau.
+>>décrits sous Variable de création de rapports/réservée comme « classification ».
+>>Les classifications des médias sont définies lorsqu’une suite de rapports est activée pour les médias.
+>>Suivi. De temps à autre, Adobe ajoute de nouvelles propriétés et, dans ce cas,
+>>les clients doivent réactiver leurs suites de rapports pour accéder aux nouvelles propriétés
+>>du média. Au cours du processus de mise à jour, Adobe détermine si les
+>>classifications sont activées en vérifiant les noms des variables. Si l’un d’eux manque,
+>>Adobe l’ajoute à nouveau.
 
 ## Données de publicité vidéo {#ad-video-data}
 

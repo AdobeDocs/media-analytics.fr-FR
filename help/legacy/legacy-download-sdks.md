@@ -27,7 +27,7 @@ La collecte de données Adobe avec l’extension Media Analytics requiert les �
 * Vous devez être un client Adobe Experience Cloud.
 * Vous devez déployer la collecte de données ou le code intégré DTM sur vos pages web.
 * Vous devez configurer l’[extension Analytics](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=fr).
-* Vous devez configurer l’extension [ Adobe Media Analytics for Audio and Video ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=fr).
+* Vous devez configurer l’extension [ Adobe Media Analytics for Audio and Video ](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html).
 * Vous devez configurer l’[extension d’ID Experience Cloud](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=fr).
 
 ## Téléchargement des kits SDK Media 2.x {#download-2x-sdks}

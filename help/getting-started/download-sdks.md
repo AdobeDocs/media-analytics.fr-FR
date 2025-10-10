@@ -22,7 +22,7 @@ Les balises dans Adobe Experience Platform constituent la nouvelle génération 
 >[!NOTE]
 >
 >Pour plus d’informations sur le téléchargement des SDK hérités, voir [Hérité - Téléchargement de SDK](/help/legacy/legacy-download-sdks.md).<br>
->&#x200B;>Pour obtenir des informations importantes sur la fin de la prise en charge, voir les [FAQ sur la fin de la prise en charge](/help/additional-resources/end-of-support-faqs.md).
+>>Pour obtenir des informations importantes sur la fin de la prise en charge, voir les [FAQ sur la fin de la prise en charge](/help/additional-resources/end-of-support-faqs.md).
 
 ## SDK Media et bibliothèques mobiles {#media-sdks-libraries}
 

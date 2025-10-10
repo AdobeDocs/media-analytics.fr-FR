@@ -179,7 +179,7 @@ Envoyez un ping au serveur principal toutes les secondes pendant dans une annon
 >[!NOTE]
 >
 >Les publicités suivantes dans la chronologie ne montrent pas la série de pings d’une seconde
->&#x200B;>par souci de concision...
+>>par souci de concision...
 
 ```json
 {

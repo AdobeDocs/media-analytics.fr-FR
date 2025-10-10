@@ -31,7 +31,7 @@ Description des données de tableau :
    * *Variable réservée* : indique si les données sont capturées sous la forme d’un événement, d’une eVar, d’une prop ou d’une classification dans une variable réservée.
    * *Nom du rapport* : nom du rapport Adobe Analytics pour la variable.
    * *Données contextuelles* : nom des données contextuelles Adobe Analytics transmises au serveur de reporting et utilisées dans les règles de traitement.
-   * *Flux de données* : nom de colonne de la variable trouvée dans les flux de données du parcours de navigation ou du flux de données en direct.
+   * *Flux de données* : nom de colonne de la variable trouvée dans les flux de données du flux de clics ou Live Stream
    * *Audience Manager* : nom de caractéristique trouvé dans Adobe Audience Manager.
 
 ## Métadonnées de qualité {#quality-metadata}
