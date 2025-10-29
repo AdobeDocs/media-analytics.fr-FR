@@ -307,7 +307,7 @@ L’exemple suivant illustre un fichier .json planifié avec deux enregistrement
 
    * **[ID de ressource](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
-1. Continuez avec [ Analyser les données dans Customer Journey Analytics ](#analyze-data-in-customer-journey-analytics).
+1. Continuez avec [&#x200B; Analyser les données dans Customer Journey Analytics &#x200B;](#analyze-data-in-customer-journey-analytics).
 
 ## Analyse des données dans Customer Journey Analytics
 
