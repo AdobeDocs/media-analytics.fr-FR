@@ -4,8 +4,8 @@ description: Exemple de suivi du contenu en direct à l’aide du SDK Media.
 uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 98%
@@ -21,7 +21,7 @@ Dans ce scénario, il existe une ressource en direct sans publicité lue pendant
 | Déclencheur | Méthode Heartbeat | Appels réseau | Remarques   |
 |---|---|---|---|
 | L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur **[!UICONTROL Lecture]** ou d’un événement de lecture automatique. |
-| La première image du média s’affiche. | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur. Les pulsations sont envoyées toutes les 10 secondes tant que la lecture se poursuit. |
+| La première image du média s’affiche. | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le retardateur. Les pulsations sont envoyées toutes les 10 secondes tant que la lecture se poursuit. |
 | Le contenu est lu. |  | Content Heartbeats |  |
 | La session est terminée. | `trackSessionEnd` |  | `SessionEnd` correspond à la fin d’une session de visionnage. Cette API doit être appelée même si l’utilisateur n’utilise pas le média jusqu’à la fin. |
 
@@ -31,7 +31,7 @@ Un grand nombre de ces valeurs que vous pouvez voir dans les appels Adobe Analyt
 
 ### Heartbeat Content Start
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:sc:rsid` | &lt;Identifiant de votre suite de rapports Adobe> |  |
 | `s:sc:tracking_serve` | &lt;URL de votre serveur de suivi Analytics> |  |
@@ -44,11 +44,11 @@ Un grand nombre de ces valeurs que vous pouvez voir dans les appels Adobe Analyt
 
 ## Content Heartbeats {#content-heartbeats}
 
-Pendant la lecture du média, un minuteur envoie une ou plusieurs pulsations toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiendront des informations sur la lecture, les publicités, la mise en mémoire tampon, etc. Le contenu exact de chaque pulsation dépasse la portée de ce document. La chose essentielle à valider est que les pulsations sont déclenchées de manière cohérente pendant la lecture.
+Pendant la lecture du média, un retardateur envoie une ou plusieurs pulsations toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiendront des informations sur la lecture, les publicités, la mise en mémoire tampon, etc. Le contenu exact de chaque pulsation dépasse la portée de ce document. La chose essentielle à valider est que les pulsations sont déclenchées de manière cohérente pendant la lecture.
 
 Dans les pulsations de contenu, recherchez quelques éléments spécifiques :
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | &quot;play&quot; |  |
 | `l:event:playhead` | &lt;position du curseur de lecture> par exemple, 50, 60, 70 | Ceci doit indiquer la position actuelle du curseur de lecture. |

@@ -4,8 +4,8 @@ description: Affichez un exemple de suivi du contenu VOD dans lequel l’utilisa
 uuid: 19fb020c-eb7a-4942-9212-94f4d47195b9
 exl-id: 5ab981bf-1195-4197-a7c0-051fa4aa11b8
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 85%
@@ -20,7 +20,7 @@ Dans ce scénario, l’utilisateur saute un chapitre dans le contenu principal.
 
 Il s’agit du même scénario que la lecture [VOD avec un chapitre](/help/use-cases/tracking-scenarios/vod-one-chapter.md), sauf que l’utilisateur dans ce cas a l’intention de rechercher un élément du chapitre, le sautant ainsi pour accéder au contenu principal.
 
-| Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques |
+| Déclencheur | Méthode Heartbeat | Appels réseau   | Notes |
 |---|---|---|---|
 | L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | La bibliothèque de mesures ignore l’existence d’une publicité preroll. Ces appels réseau sont exactement les mêmes que [Lecture sans interruptions dans le scénario iOS](vod-no-intrs-details.md). |
 | Le chapitre démarre. | `trackEvent:ChapterStart` | Heartbeat Chapter Start |  |

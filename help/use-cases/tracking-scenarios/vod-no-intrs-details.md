@@ -4,8 +4,8 @@ description: Consultez un exemple de suivi de la lecture VOD qui ne contient auc
 uuid: ee2a1b79-2c2f-42e1-8e81-b62bbdd0d8cb
 exl-id: 9e2240f0-da8d-4dcc-9d44-0f121c60d924
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '370'
 ht-degree: 100%
@@ -21,13 +21,13 @@ Ce scénario comporte une ressource VOD, sans publicité, qui est lue une fois d
 | Déclencheur | Méthode Heartbeat | Appels réseau | Remarques   |
 |---|---|---|---|
 | L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur Lecture ou d’un événement de lecture automatique. |
-| Première image du média | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur. À partir de ce moment, des pulsations sont envoyées toutes les 10 secondes pendant la durée de la lecture. |
+| Première image du média | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le retardateur. À partir de ce moment, des pulsations sont envoyées toutes les 10 secondes pendant la durée de la lecture. |
 | Le contenu est lu |  | Content Heartbeats |  |
 | Contenu terminé | `trackComplete` | Heartbeat Content Complete | *Complete* signifie que le curseur de lecture a atteint la fin de sa course. |
 
 ## Paramètres {#parameters}
 
-Un grand nombre de ces valeurs que vous pouvez voir dans les appels Heartbeat est également présent dans les appels `Content Start`Content Start d’Adobe Analytics. Adobe utilise de nombreux paramètres pour remplir les différents rapports multimédia, mais seuls les plus importants sont présents dans la liste ci-dessous :
+Un grand nombre de ces valeurs que vous pouvez voir dans les appels Heartbeat est également présent dans les appels `Content Start`Content Start d’Adobe Analytics. Adobe utilise de nombreux paramètres pour remplir les différents rapports multimédias, mais seuls les plus importants sont présents dans le tableau ci-dessous :
 
 ### Heartbeat Content Start
 
@@ -52,7 +52,7 @@ Ces paramètres semblent en tout point identiques à l’appel `Heartbeat Conten
 
 ## Content Heartbeats {#content-heartbeats}
 
-Lors de la lecture du média, un minuteur envoie au moins une pulsation toutes les 10 secondes. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
+Lors de la lecture du média, un retardateur envoie au moins une pulsation toutes les 10 secondes. Ces pulsations contiennent des informations concernant entre autres la lecture, les publicités et la mise en mémoire tampon. Le présent document ne traite pas du contenu exact de chaque pulsation, mais il faut retenir ici que celles-ci sont déclenchées de façon continue au fil de la lecture.
 
 Dans les pulsations du contenu, recherchez les paramètres suivants :
 

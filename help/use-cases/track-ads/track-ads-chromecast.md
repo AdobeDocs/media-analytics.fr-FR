@@ -4,11 +4,11 @@ description: Mettez en œuvre le suivi des publicités dans les applications Chr
 uuid: 7b1f584a-3472-416c-944c-5f5ea0ee5529
 exl-id: 57465c42-b349-439d-b8d7-083b299a8c83
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -56,7 +56,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
 1. Vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi multimédia par le biais de variables de données contextuelles.
 
-   * **Métadonnées de publicité standard -** Pour les métadonnées de publicité standard, créez un dictionnaire de paires clé-valeur de métadonnées de publicité standard à l’aide des clés pour votre plate-forme :
+   * **Métadonnées de publicité standard -** Pour les métadonnées de publicité standard, créez un dictionnaire de paires de valeurs de clé de métadonnées de publicité standard à l’aide des clés de votre plateforme :
    * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la ressource de publicité actuelle :
 
 1. Appelez `trackEvent()` avec l’événement `AdStart` pour commencer le suivi de la lecture de publicité.

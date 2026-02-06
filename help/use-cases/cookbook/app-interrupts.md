@@ -4,11 +4,11 @@ description: Découvrez comment gérer les interruptions du suivi pendant la lec
 uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 90%
+ht-degree: 63%
 
 ---
 
@@ -25,14 +25,14 @@ La lecture dans une application multimédia peut être interrompue de différent
 
 ## FAQ sur la gestion des interruptions de l’application : {#faq-about-handling-application-interrupts}
 
-* _Pendant combien de temps une application doit-elle être placée en arrière-plan avant que la session ne se ferme ?_
+* _Pendant combien de temps une application doit-elle être mise en arrière-plan avant la fermeture de la session ?_
 
-  Si l’application permet la lecture en arrière-plan, elle peut continuer le suivi en appelant nos API. Nous enverrons alors tous nos pings de suivi habituels. Peu d’applications vidéo autorisent la lecture en arrière-plan, à l’exception de YouTube Red. Toutefois, toutes les applications audio le permettent. Si l’application ne permet pas la lecture en arrière-plan, il est recommandé de rester en état de pause pendant 1 minute, puis de mettre fin à la session de suivi. L’application ne peut pas continuer à envoyer des pings de pause, car dans la plupart des cas, elle n’est pas en mesure de déterminer si l’utilisateur va reprendre le visionnage du contenu média ou s’il va le fermer. Elle ne peut pas non plus continuer à envoyer des pings lorsque l’application se trouve en arrière-plan.
+  Si l’application autorise la lecture en arrière-plan, elle peut continuer à effectuer le suivi en appelant nos API et nous enverrons tous nos pings de suivi réguliers. Peu d’applications vidéo autorisent la lecture en arrière-plan, à l’exception de YouTube Red. Toutefois, toutes les applications audio le permettent. Si l’application ne permet pas la lecture en arrière-plan, il est recommandé de rester en état de pause pendant 1 minute, puis de mettre fin à la session de suivi. L’application ne peut pas continuer à envoyer des pings de pause, car dans la plupart des cas, elle n’est pas en mesure de déterminer si l’utilisateur va reprendre le visionnage du contenu média ou s’il va le fermer. Il est également déconseillé de continuer à envoyer des pings en arrière-plan.
 
-* _Comment gérer le redémarrage du suivi après que l’application a été placée en arrière-plan pendant longtemps ?_
+* _Quelle est la bonne façon de gérer le redémarrage du suivi après que l’application a été en arrière-plan pendant longtemps ?_
 
-  L’application doit appeler `trackSessionEnd` pour mettre fin à la session de suivi. À compter de la version 2.1, le kit SDK envoie un ping de fin pour informer le serveur principal de la fermeture de la session de suivi.
+  L’application doit appeler `trackSessionEnd` pour mettre fin à la session de suivi. À partir de la version 2.1, le SDK envoie un ping « de fin » pour informer le serveur principal de la fermeture de la session de suivi.
 
-* _Comment redémarrer la même session ?_
+* _Que diriez-vous de redémarrer la même session ?_
 
-  Pour plus d’informations sur la reprise d’une session de suivi, voir la section [Reprise des sessions inactives](resuming-inactive.md).Le SDK envoie un ping de reprise pour informer le serveur principal que l’utilisateur(utilisatrice) reprend manuellement la session.
+  Pour plus d’informations sur la reprise d’une session de suivi, voir la section [Reprise des sessions inactives](resuming-inactive.md). Le SDK envoie un ping de reprise pour informer le serveur principal que l’utilisateur(utilisatrice) reprend manuellement la session.

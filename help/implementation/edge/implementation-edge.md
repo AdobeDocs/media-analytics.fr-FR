@@ -2,9 +2,9 @@
 title: Mise en œuvre des services de streaming multimédia d’Adobe à l’aide d’Edge Network
 description: Découvrez comment les services de streaming multimédia d’Adobe peuvent être mis en œuvre avec Experience Platform Edge.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '2152'
 ht-degree: 9%
@@ -29,7 +29,7 @@ Pour normaliser la collecte de données à utiliser dans les applications qui ut
 
 Pour créer et configurer un schéma :
 
-1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr).
+1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
 1. Sur la page Détails du schéma lors de la création du schéma, choisissez [!UICONTROL **Événement d’expérience**] lors du choix de la classe de base du schéma.
 
@@ -129,7 +129,7 @@ Pour créer et configurer un schéma :
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
+   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -167,11 +167,11 @@ Pour créer et configurer un schéma :
 
       * [!UICONTROL **Adobe Analytics**] (si vous utilisez Adobe Analytics)
 
-        Si vous utilisez Adobe Analytics, veillez à définir une suite de rapports, comme décrit dans la section [Création d’une suite de rapports](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        Si vous utilisez Adobe Analytics, veillez à définir une suite de rapports, comme décrit dans la section [Création d’une suite de rapports](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * [!UICONTROL **Adobe Experience Platform**] (si vous utilisez Customer Journey Analytics)
 
-     Pour plus d’informations sur l’ajout d’un service à un flux de données, consultez la section « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr#view-details).
+     Pour plus d’informations sur l’ajout d’un service à un flux de données, consultez la section « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
      ![Ajouter le service Adobe Analytics](assets/datastream-add-service.png)
 
@@ -332,9 +332,9 @@ Pour créer et configurer un schéma :
 
    >[!NOTE]
    >
-   >Si vous configurez Adobe Analytics en tant qu’élément en amont de votre flux de données, les métadonnées personnalisées sont également présentes dans ContextData, avec le nom que vous avez défini dans le schéma (sans le préfixe client, par exemple myCustomField). Cela permet d’utiliser toutes les fonctionnalités d’Adobe Analytics disponibles pour ContextData, telles que [création d’une règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
+   >Si vous configurez Adobe Analytics en tant qu’élément en amont de votre flux de données, les métadonnées personnalisées sont également présentes dans ContextData, avec le nom que vous avez défini dans le schéma (sans le préfixe client, par exemple myCustomField). Cela permet d’utiliser toutes les fonctionnalités d’Adobe Analytics disponibles pour ContextData, telles que [création d’une règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules).
 
-1. Partagez le projet comme décrit dans la section [Partager des projets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=fr).
+1. Partagez le projet comme décrit dans la section [Partager des projets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
 
    >[!NOTE]
    >
@@ -371,7 +371,7 @@ Utilisez les ressources de documentation suivantes pour terminer la mise en œuv
 
 * [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
 
-* [Migration vers l’extension Adobe Streaming Media for Edge Network &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+* [Migration vers l’extension Adobe Streaming Media for Edge Network ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
 
 ### API : Web et autre
 
@@ -385,6 +385,6 @@ Pour plus d’informations sur l’API Media Edge, consultez les ressources suiv
 
 * [Prise en main de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Guide de dépannage de l’API Media Edge &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+* [Guide de dépannage de l’API Media Edge ](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
 * [Utilisation du fichier de spécification Open API pour les API Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

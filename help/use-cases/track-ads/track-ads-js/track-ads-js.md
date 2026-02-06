@@ -4,11 +4,11 @@ description: Mettez en œuvre le suivi des publicités dans les applications de 
 uuid: 4d81d29c-c55d-4d48-b505-3260922712ff
 exl-id: 4404d3a6-ab98-40f0-9573-ee32f480f650
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 94%
 
 ---
 
@@ -65,7 +65,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
    | --- | --- | :---: |
    | `name` | Nom convivial de la publicité. | Oui |
    | `adId` | Identifiant unique de la publicité. | Oui |
-   | `position` | Position du numéro de la publicité dans la coupure publicitaire, en commençant par 1. | Oui |
+   | `position` | Position du nombre de l’annonce publicitaire dans la coupure publicitaire, en commençant par 1. | Oui |
    | `length` | Longueur de la publicité | Oui |
 
    Création d’objet publicitaire :

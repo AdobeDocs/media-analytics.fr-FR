@@ -2,9 +2,9 @@
 title: Chargement des données de planning pour suivre le contenu en direct
 description: Découvrez comment charger des données de planning pour suivre le contenu en direct.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
-source-git-commit: 65cd7987acb677b4f4c863b42dc809b5a23c2ed1
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 5%
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->La fonctionnalité décrite dans cet article se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication, consultez [Versions des fonctionnalités de Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/releases/releases).
+>La fonctionnalité décrite dans cet article se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication, consultez [Versions des fonctionnalités de Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
 
 Vous pouvez charger les données de planning du contenu multimédia en direct précédent pour suivre plus facilement et plus précisément l’audience du contenu en direct. Vous pouvez effectuer le suivi de l’audience pour des programmes individuels et même des sujets ou des segments de programme spécifiques.
 
@@ -143,7 +143,7 @@ Après avoir [créé un jeu de données de planning de programme](#create-a-prog
 
    1. Envoyez le fichier .json contenant les enregistrements de données de planning du programme à l’aide de l’ID de lot.
 
-      Pour transmettre les informations de planification par push, vous devez utiliser les API Batch d’AEP, comme décrit dans la section [Présentation de l’API Batch Ingestion](https://experienceleague.adobe.com/fr/docs/experience-platform/ingestion/batch/overview).
+      Pour transmettre les informations de planification par push, vous devez utiliser les API Batch d’AEP, comme décrit dans la section [Présentation de l’API Batch Ingestion](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/batch/overview).
 
       Prenons l’exemple suivant d’utilisation de cURL pour transmettre un fichier avec les enregistrements de planning :
 
@@ -307,7 +307,7 @@ L’exemple suivant illustre un fichier .json planifié avec deux enregistrement
 
    * **[ID de ressource](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#asset-id)**
 
-1. Continuez avec [&#x200B; Analyser les données dans Customer Journey Analytics &#x200B;](#analyze-data-in-customer-journey-analytics).
+1. Continuez avec [ Analyser les données dans Customer Journey Analytics ](#analyze-data-in-customer-journey-analytics).
 
 ## Analyse des données dans Customer Journey Analytics
 

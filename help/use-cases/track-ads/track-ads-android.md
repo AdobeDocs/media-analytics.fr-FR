@@ -4,11 +4,11 @@ description: Mettez en oeuvre le suivi des publicités dans les applications And
 uuid: 4a4249fb-dc39-4947-a14d-a51d972f32d4
 exl-id: 1f96dde9-c924-4fce-8b14-7dec7137f265
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '364'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -39,7 +39,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
    | `name` | Nom de la coupure publicitaire tel que pre-roll, mid-roll et post-roll. | Oui |
-   | `position` | Position du numéro de la coupure publicitaire dans le contenu, en commençant par 1. | Oui |
+   | `position` | Position du nombre de la coupure publicitaire dans le contenu, en commençant par 1. | Oui |
    | `startTime` | Valeur du curseur de lecture au début de la coupure publicitaire. | Oui |
 
    Création d’objet de coupure publicitaire :
@@ -69,7 +69,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
    | --- | --- | :---: |
    | `name` | Nom convivial de la publicité. | Oui |
    | `adId` | Identifiant unique de la publicité. | Oui |
-   | `position` | Position du numéro de la publicité dans la coupure publicitaire, en commençant par 1. | Oui |
+   | `position` | Position du nombre de l’annonce publicitaire dans la coupure publicitaire, en commençant par 1. | Oui |
    | `length` | Longueur de la publicité | Oui |
 
    Création d’objet publicitaire :

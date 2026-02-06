@@ -4,11 +4,11 @@ description: Découvrez comment implémenter le suivi principal à l’aide du S
 uuid: ab5fab95-76ed-4ae6-aedb-2e66eece7607
 exl-id: d5f5a3f0-f1e0-4d68-af7f-88a30faed0db
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '689'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -69,7 +69,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
      >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
 
       * Référence de l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * Consultez la liste complète des métadonnées vidéo disponibles dans la rubrique [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md).
+      * Consultez l’ensemble complet des métadonnées vidéo disponibles ici : [ Paramètres audio et vidéo ](/help/implementation/variables/audio-video-parameters.md)
 
    * **Métadonnées personnalisées**
 
@@ -174,7 +174,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
    >
    >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture du média.
 
-Consultez les ressources suivantes pour en savoir plus sur le suivi de la lecture principale :
+Pour plus d’informations sur le suivi de la lecture principale, consultez les sections suivantes :
 
 * Scénarios de suivi : [lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Exemple de lecteur inclus dans le SDK Android pour un exemple de suivi complet
+* Exemple de lecteur inclus dans le SDK Android pour un exemple de suivi complet.

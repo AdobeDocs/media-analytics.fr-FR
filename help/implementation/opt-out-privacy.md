@@ -4,11 +4,11 @@ description: Découvrez comment gérer lʼinscription, la désinscription et la 
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 100%
+source-wordcount: '347'
+ht-degree: 92%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 100%
 
 Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil spécifique :
 
-* **Applications mobiles -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de la bibliothèque `AdobeMobile`. Pour exclure le suivi, vous devez utiliser la bibliothèque `AdobeMobile`. Pour en savoir plus sur les paramètres d’exclusion et de confidentialité de la bibliothèque `AdobeMobile`, consultez la rubrique [Paramètres d’exclusion et de confidentialité](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=fr).
+* **Applications mobiles -** La bibliothèque VA respecte les paramètres de confidentialité et d&#39;opt-out de la bibliothèque `AdobeMobile`. Pour exclure le suivi, vous devez utiliser la bibliothèque `AdobeMobile`. Pour plus d’informations sur les paramètres d’exclusion et de confidentialité de la bibliothèque de `AdobeMobile`, voir [Paramètres d’exclusion et de confidentialité](https://experienceleague.adobe.com/docs/mobile-services/android/gdpr-privacy-android/privacy.html?lang=fr).
 * **Applications JavaScript/de navigateur -** La bibliothèque VA respecte les paramètres de confidentialité et d’exclusion de `VisitorAPI`. Pour exclure le suivi, assurez-vous de procéder à l’exclusion depuis le service Visitor API. Pour plus d’informations sur l’exclusion et la confidentialité, consultez la rubrique [Service identité Adobe Experience Platform.](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr).
 * **Applications OTT (Chromecast, Roku) -** Les SDK OTT fournissent des API conformes au Règlement général sur la protection des données (RGPD) qui vous permettent de définir des indicateurs d’état `opt` pour la collecte et la transmission de données, ainsi que de récupérer des identités stockées localement.
 
@@ -36,16 +36,16 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
 
          * **Chromecast :**
 
-               ```
-               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
-               ```
-           
+           ```
+           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_OUT)
+           ```
+
          * **Roku :**
 
-               ```
-               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
-               ```
-           
+           ```
+           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_OUT)
+           ```
+
            >[!IMPORTANT]
            >
            >Lorsqu’un utilisateur exclut le suivi, tous les identifiants et données d’appareil conservés sont purgés jusqu’à ce que l’utilisateur procède à nouveau à l’inclusion.
@@ -54,30 +54,30 @@ Vous pouvez décider d’autoriser ou non l’activité de suivi sur un appareil
 
          * **Chromecast :**
 
-               ```
-               ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
-               ```
-           
+           ```
+           ADBMobile.config.setPrivacyStatus(ADBMobile.config.PRIVACY_STATUS_OPT_IN)
+           ```
+
          * **Roku :**
 
-               ```
-               ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
-               ```
-           
+           ```
+           ADBMobile().setPrivacyStatus(ADBMobile().PRIVACY_STATUS_OPT_IN)
+           ```
+
       * **Renvoyer le paramètre actuel :**
 
          * **Chromecast :**
 
-               ```
-               ADBMobile.config.getPrivacyStatus()
-               ```
-           
+           ```
+           ADBMobile.config.getPrivacyStatus()
+           ```
+
          * **Roku :**
 
-               ```
-               ADBMobile().getPrivacyStatus()
-               ```
-           
+           ```
+           ADBMobile().getPrivacyStatus()
+           ```
+
   Une fois le paramètre de confidentialité modifié à l’aide de `setPrivacyStatus`, le changement est permanent jusqu’à ce qu’il soit modifié à nouveau en utilisant cette méthode, ou jusqu’à la désinstallation et la réinstallation de l’application.
 
 ## Récupération des identifiants stockés (applications OTT) {#retrieving-stored-identifiers-ott-apps}

@@ -4,11 +4,11 @@ description: Découvrez comment effectuer la reprise dʼune session inactive.
 uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '159'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 100%
 Le SDK Media surveille automatiquement la durée de la lecture multimédia dans l’un des états inactifs suivants :
 
 * En pause
-* Recherche
+* Recherche en cours
 * Bloqué
 * Mise en mémoire tampon
 
-Si une session de suivi multimédia inactive pendant plus de 30 minutes, celle-ci se fermera automatiquement. Si l’utilisateur reprend une session de suivi vidéo précédemment inactive (`trackPlay`), Media Heartbeat crée automatiquement une nouvelle session vidéo à l’aide des informations et des métadonnées précédentes et envoie une reprise d’événement de pulsation. Pour plus d’informations, voir [Paramètres audio et vidéo.](/help/implementation/variables/audio-video-parameters.md)
+Si une session de suivi multimédia reste inactive pendant plus de 30 minutes, celle-ci se fermera automatiquement. Si l’utilisateur ou l’utilisatrice reprend une session de suivi vidéo précédemment inactive (`trackPlay`), Media Heartbeat crée automatiquement une nouvelle session vidéo à l’aide des informations et des métadonnées précédentes et envoie une reprise d’événement de pulsation. Pour plus d’informations, voir [Paramètres audio et vidéo.](/help/implementation/variables/audio-video-parameters.md)
 
 
 ## Reprise manuelle d’une session précédemment fermée

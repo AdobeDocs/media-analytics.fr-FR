@@ -4,11 +4,11 @@ description: Cette rubrique décrit la mise en œuvre du suivi principal à l’
 uuid: bdc0e05c-4fe5-430e-aee2-f331bc59ac6b
 exl-id: 5c6b36b3-a421-45a4-a65e-4eb57513ca4a
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '704'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
@@ -163,7 +163,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
    * L’utilisateur appuie délibérément sur pause dans l’application.
    * Le lecteur se met en pause.
    * (*Applications mobiles*) : l’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application conserve la session ouverte.
-   * (*Applications mobiles*) : tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre la vidéo à partir du point d’interruption.
+   * (*Applications mobiles*) : tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, si l’utilisateur reçoit un appel ou si un pop-up se produit depuis une autre application, mais que vous souhaitez que l’application maintienne la session active, l’utilisateur a la possibilité de reprendre la vidéo à partir du point d’interruption.
 
 1. Identifiez l’événement du lecteur correspondant à la lecture vidéo et/ou à la reprise vidéo après une interruption et appelez `trackPlay` :
 
@@ -177,7 +177,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
    >
    >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture vidéo.
 
-Consultez les ressources suivantes pour en savoir plus sur le suivi de la lecture principale :
+Pour plus d’informations sur le suivi de la lecture principale, consultez les sections suivantes :
 
 * Scénarios de suivi : [lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Exemple de lecteur inclus dans le SDK iOS pour un exemple de suivi complet
+* Exemple de lecteur inclus dans le SDK iOS pour un exemple de suivi complet.

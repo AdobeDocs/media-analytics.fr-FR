@@ -4,11 +4,11 @@ description: Comment mettre en œuvre le suivi des chapitres et des segments ave
 uuid: 3fe32425-5e2a-4886-8fea-d91d15671bb0
 exl-id: d213b633-be3b-4eb8-be71-0ef55e78a570
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -54,7 +54,7 @@ Le suivi des chapitres comprend les démarrages de chapitre, les fins de chapitr
    | --- | --- | :---: |
    | `name` | Nom du chapitre | Oui |
    | `position` | Position du chapitre | Oui |
-   | `length` | Durée du chapitre | Oui |
+   | `length` | Longueur du chapitre | Oui |
    | `startTime` | Heure de début du chapitre | Oui |
 
 1. Si vous incluez des métadonnées personnalisées pour le chapitre, créez les variables de données contextuelles pour les métadonnées.

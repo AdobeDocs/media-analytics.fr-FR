@@ -2,9 +2,9 @@
 title: À propos de la mesure de pulsation
 description: Découvrez comment les pulsations servent à collecter des mesures vidéo.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 180dd9b1-877a-4ec1-8e81-c293800069c0
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 75%

@@ -4,8 +4,8 @@ description: Exemple de suivi du contenu en direct avec suivi séquentiel à l�
 uuid: b03477b6-9be8-4b67-a5a0-4cef3cf262ab
 exl-id: 277a72b8-453b-41e5-b640-65c43587baf8
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 98%
@@ -27,7 +27,7 @@ Il s’agit du même scénario que le scénario [Lecture VOD sans publicité](/h
 | Le contenu est lu | | Content Heartbeats | Il s’agit du même appel réseau que le scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | Fin de la session (fin de l’épisode 1) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete signifie que la session 1 du 1er épisode a été atteinte et visionnée complètement. Avant de commencer la session pour le prochain épisode, cette session doit être terminée. |
 | Démarrage de l’épisode 2 (démarrage de la session 2) | trackSessionStart | Analytics Content Start Heartbeat Content Start | Cela se produit lorsqu’un utilisateur a visionné un premier épisode suivi d’un autre épisode. |
-| 1re image du média | trackPlay | Heartbeat Content Play | Cette méthode déclenche le minuteur et, à partir de ce moment, les pulsations sont envoyées toutes les 10 secondes tant que la lecture se poursuit. |
+| 1re image du média | trackPlay | Heartbeat Content Play | Cette méthode déclenche le retardateur et, à partir de ce moment, les pulsations sont envoyées toutes les 10 secondes tant que la lecture se poursuit. |
 | Le contenu est lu | | Content Heartbeats | |
 | Fin de la session (fin de l’épisode 2) | trackComplete / trackSessionEnd | Heartbeat Content Complete | Complete signifie que la session 2 du 2e épisode a été atteinte et visionnée complètement. Avant de commencer la session pour le prochain épisode, cette session doit être terminée. |
 
@@ -35,7 +35,7 @@ Il s’agit du même scénario que le scénario [Lecture VOD sans publicité](/h
 
 ### Heartbeat Content Start
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:sc:rsid` | &lt;Identifiant de votre suite de rapports Adobe> |  |
 | `s:sc:tracking_serve` | &lt;URL de votre serveur de suivi Analytics> |  |
@@ -50,18 +50,18 @@ Il s’agit du même scénario que le scénario [Lecture VOD sans publicité](/h
 
 Cela devrait ressembler presque exactement à l’appel Heartbeat Content Start, mais avec une différence majeure dans le paramètre « s:event:type ». Tous les paramètres devraient toujours être en place ici.
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
 | `s:asset:type` | `"main"` |  |
 
 ## Content Heartbeats {#content-heartbeats}
 
-Pendant la lecture du média, un minuteur envoie une ou plusieurs pulsations toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiendront des informations sur la lecture, les publicités, la mise en mémoire tampon, etc. Le contenu exact de chaque pulsation dépasse la portée de ce document. La chose essentielle à valider est que les pulsations sont déclenchées de manière cohérente pendant la lecture.
+Pendant la lecture du média, un retardateur envoie une ou plusieurs pulsations toutes les 10 secondes pour le contenu principal et toutes les secondes pour les publicités. Ces pulsations contiendront des informations sur la lecture, les publicités, la mise en mémoire tampon, etc. Le contenu exact de chaque pulsation dépasse la portée de ce document. La chose essentielle à valider est que les pulsations sont déclenchées de manière cohérente pendant la lecture.
 
 Dans les pulsations de contenu, recherchez quelques éléments spécifiques :
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | `"play"` |  |
 | `l:event:playhead` | &lt;position du curseur de lecture> par exemple, 50, 60, 70 | Ceci doit indiquer la position actuelle du curseur de lecture. |
@@ -70,7 +70,7 @@ Dans les pulsations de contenu, recherchez quelques éléments spécifiques :
 
 Une fois la lecture d’un épisode donné terminée (le curseur de lecture franchit la limite de l’épisode), un appel Heartbeat Content Complete est envoyé. Cela ressemble aux autres appels Heartbeat, avec tout de même quelques éléments spécifiques :
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | `"complete"` |  |
 | `s:asset:type` | `"main"` |  |

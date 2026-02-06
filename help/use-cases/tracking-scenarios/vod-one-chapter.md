@@ -4,8 +4,8 @@ description: Voir un exemple de suivi de la lecture VOD contenant un chapitre.
 uuid: 1566a6f5-cf22-42e7-8e1a-6976c6c4e649
 exl-id: a8394fd3-16a2-4f5d-b6e1-6e9acb4c7afd
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 100%
@@ -33,13 +33,13 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 
 ## Paramètres {#parameters}
 
-Lorsque la lecture du chapitre démarre, un appel `Heartbeat Chapter Start` est envoyé. Si le début du chapitre ne correspond pas au minuteur de 10 secondes, l’appel `Heartbeat Chapter Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant.
+Lorsque la lecture du chapitre démarre, un appel `Heartbeat Chapter Start` est envoyé. Si le début du chapitre ne correspond pas au retardateur de 10 secondes, l’appel `Heartbeat Chapter Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant.
 
 Dans ce cas, un appel `Content Heartbeat` est envoyé au cours de ce même intervalle. Vous pouvez différencier les deux en examinant le type d’événement et de ressource :
 
 ### Heartbeat Chapter Start
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | `"chapter_start"` |  |
 | `s:asset:type` | `"main"` |  |

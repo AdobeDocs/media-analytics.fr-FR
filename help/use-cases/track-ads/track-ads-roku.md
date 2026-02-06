@@ -4,8 +4,8 @@ description: Mettez en œuvre le suivi des publicités dans les applications Rok
 uuid: b1567265-7043-4efa-a313-aaaa91c4bb01
 exl-id: aaed828d-1aba-486e-83e3-2ffd092305e2
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -69,7 +69,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
 1. Vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi multimédia par le biais de variables de données contextuelles.
 
-   * [Mise en œuvre de métadonnées de publicité standard sur Roku &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
+   * [Mise en œuvre de métadonnées de publicité standard sur Roku ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-roku.md)
    * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la ressource de publicité actuelle :
 
      ```

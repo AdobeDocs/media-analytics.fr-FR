@@ -4,17 +4,17 @@ description: Découvrez comment utiliser le schéma de validation JSON pour vali
 uuid: 1fc92f21-b510-4c96-8ea2-47e819f4a96e
 exl-id: a78739da-9fc9-42e3-9181-1887fb3dd357
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '121'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
 # Validation des requêtes d’événement{#validating-event-requests}
 
-Le corps de la requête JSON pour chaque type d’événement est validé sur le serveur principal avec les schémas JSON. Le corps de la réponse HTTP est renseigné avec un message d’erreur lorsque la validation échoue pour un appel API.
+Le corps de la requête JSON pour chaque type d’événement est validé sur le serveur principal avec des schémas JSON. Le corps de la réponse HTTP est renseigné avec un message d’erreur lorsque la validation échoue pour un appel API.
 
 Les schémas de validation JSON pour chaque type d’événement sont publiquement accessibles ici : `{uri}/api/v1/schemas/{eventType}` (par ex., `{uri}/api/v1/schemas/sessionEnd`). Ces schémas de validation JSON sont l’autorité absolue pour déterminer les paramètres de corps de requête corrects pour chaque type d’événement.
 

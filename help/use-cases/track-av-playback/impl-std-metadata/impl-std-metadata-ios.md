@@ -4,8 +4,8 @@ description: Découvrez comment définir des métadonnées vidéo et publicitair
 uuid: 75a80f08-4a95-49d4-a27a-8ce531d64d31
 exl-id: e0981346-3d3c-4a0c-82a4-19942634fd03
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 100%
@@ -20,7 +20,7 @@ ht-degree: 100%
 |---|---|
 | `ADBMediaObjectKeyStandardMediaMetadata` | Constante permettant d’associer des métadonnées standard à `MediaInfo ADBMediaObject` |
 
-## Mise en œuvre
+## Implémentation
 
 1. Créez un dictionnaire des paires clé-valeur des métadonnées publicitaires standard à l’aide de `ADBStandardMetadataKeys`.
    [Clés de métadonnées iOS](/help/use-cases/track-av-playback/impl-std-metadata/ios-metadata-keys.md)

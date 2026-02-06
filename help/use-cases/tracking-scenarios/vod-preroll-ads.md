@@ -4,8 +4,8 @@ description: Affichez un exemple de suivi du contenu VOD contenant des publicit�
 uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '531'
 ht-degree: 95%
@@ -32,11 +32,11 @@ Dans ce scénario, des publicités preroll ont été insérées avant le contenu
 
 ## Paramètres {#parameters}
 
-Lorsque la lecture de la publicité démarre, un appel `Heartbeat Ad Start` est envoyé. Si le début de la publicité ne correspond pas au minuteur de 10 secondes, l’appel `Heartbeat Ad Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant. Dans ce cas, un appel `Content Heartbeat` est envoyé dans le même intervalle et vous pouvez distinguer les deux appels en observant le type d’événement et de ressource :
+Lorsque la lecture de la publicité démarre, un appel `Heartbeat Ad Start` est envoyé. Si le début de la publicité ne correspond pas au retardateur de 10 secondes, l’appel `Heartbeat Ad Start` est retardé pendant quelques secondes pour être envoyé lors de l’intervalle de 10 secondes suivant. Dans ce cas, un appel `Content Heartbeat` est envoyé dans le même intervalle et vous pouvez distinguer les deux appels en observant le type d’événement et de ressource :
 
 ### Heartbeat Ad Start
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
@@ -45,7 +45,7 @@ Les publicités suivent le même modèle de base que `Content Heartbeats`. Par c
 
 ### Heartbeat Ad Play Call
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
@@ -54,7 +54,7 @@ Ces paramètres sont identiques à l’appel `Content Heartbeats`, mais l’appe
 
 ### Ad Heartbeats
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
@@ -65,7 +65,7 @@ Tout comme pour les appels `Heartbeat Content Complete`, un appel `Heartbeat Ad 
 
 ### Heartbeat Ad Complete Call
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |

@@ -4,11 +4,11 @@ description: Présentation de l’implémentation du suivi des publicités avec 
 uuid: 1607798b-c6ef-4d60-8e40-e958c345b09c
 exl-id: c714d31f-3d08-4ded-a413-2762d53bec75
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -73,7 +73,7 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
    | Nom de variable | Description | Obligatoire |
    | --- | --- | :---: |
    | `name` | Nom de la coupure publicitaire tel que pre-roll, mid-roll et post-roll. | Oui |
-   | `position` | Position du numéro de la coupure publicitaire dans le contenu, en commençant par 1. | Oui |
+   | `position` | Position du nombre de la coupure publicitaire dans le contenu, en commençant par 1. | Oui |
    | `startTime` | Valeur du curseur de lecture au début de la coupure publicitaire. | Oui |
 
 1. Appelez `trackEvent()` avec `AdBreakStart` dans l’instance `MediaHeartbeat` pour commencer le suivi de coupure publicitaire.
@@ -86,13 +86,13 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
    | --- | --- | :---: |
    | `name` | Nom convivial de la publicité. | Oui |
    | `adId` | Identifiant unique de la publicité. | Oui |
-   | `position` | Position du numéro de la publicité dans la coupure publicitaire, en commençant par 1. | Oui |
+   | `position` | Position du nombre de l’annonce publicitaire dans la coupure publicitaire, en commençant par 1. | Oui |
    | `length` | Longueur de la publicité | Oui |
 
-1. Vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi par le biais de variables de données contextuelles.
+1. Vous pouvez éventuellement joindre des métadonnées standard et/ou publicitaires à la session de suivi via des variables de données contextuelles.
 
-   * **Métadonnées de publicité standard -** Pour les métadonnées de publicité standard, créez un dictionnaire de paires clé-valeur de métadonnées de publicité standard à l’aide des clés pour votre plate-forme.
-   * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la publicité actuelle.
+   * **Métadonnées de publicité standard -** Pour les métadonnées de publicité standard, créez un dictionnaire de paires de valeurs de clé de métadonnées de publicité standard à l’aide des clés de votre plateforme.
+   * **Métadonnées de publicité personnalisées -** pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la publicité actuelle.
 
 1. Appelez `trackEvent()` avec l’événement `AdStart` dans l’instance `MediaHeartbeat` pour commencer le suivi de la lecture de publicité.
 

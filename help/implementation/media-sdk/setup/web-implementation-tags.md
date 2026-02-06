@@ -2,9 +2,9 @@
 title: Comment configurer l’implémentation web pour Analytics for Streaming Media
 description: Découvrez comment implémenter Adobe Streaming Media pour les applications web.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 05c68b0a-f387-4bcc-8792-f6b1caa40706
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 80%

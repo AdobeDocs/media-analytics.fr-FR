@@ -4,11 +4,11 @@ description: Explorez les appels que vous devez effectuer pour valider votre imp
 uuid: d3a0e62f-2fc3-413d-ac56-adbbc9b3e983
 exl-id: 5e167714-3f0c-4afa-b171-7d51cff6522e
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '608'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 100%
 **Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
-* La durée des diffusions linéaires doit être définie sur la meilleure estimation pour le programme actuel.
+* La longueur des flux linéaires doit être définie sur la meilleure estimation pour l&#39;affichage actuel.
 
 ### Métadonnées standard dans l’appel de démarrage d’Adobe Analytics (AppMeasurement) {#std-metadata-aa}
 
@@ -79,7 +79,7 @@ ht-degree: 100%
 **Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
-* La position du curseur de lecture pour les diffusions linéaires au démarrage de la vidéo doit être définie sur le nombre de secondes écoulées depuis le démarrage du programme actuel, et non sur 0.
+* La position de la tête de lecture pour les flux linéaires au début de la vidéo doit être définie sur les secondes écoulées depuis le début de l’émission actuelle, et non sur 0.
 
 ### Métadonnées standard dans l’appel de démarrage de Media Analytics (pulsations) {#std-metadata-ma}
 
@@ -148,7 +148,7 @@ ht-degree: 100%
 **Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
-* La durée de la publicité doit être définie sur -1 si elle n’est pas disponible au démarrage de la publicité.
+* La longueur de l’annonce publicitaire peut être définie sur -1 si elle n’est pas disponible au démarrage de l’annonce.
 
 ### Métadonnées standard dans l’appel de démarrage de la publicité d’Adobe Analytics (AppMeasurement) {#std-metadata-aa-ad-start}
 
@@ -193,7 +193,7 @@ ht-degree: 100%
 **Remarques :**
 
 * D’autres variables de données contextuelles doivent être présentes et contenir des métadonnées. Voir les détails des métadonnées ci-dessous.
-* La durée de la publicité doit être définie sur -1 si elle n’est pas disponible au démarrage de la publicité.
+* La longueur de l’annonce publicitaire peut être définie sur -1 si elle n’est pas disponible au démarrage de l’annonce.
 
 ### Métadonnées standard dans l’appel de démarrage de la publicité de Media Analytics (pulsations) {#std-metadata-ma-ad-start}
 

@@ -3,11 +3,11 @@ title: Quels chemins d’implémentation des médias en flux continu sont dispon
 description: Découvrez les chemins d’implémentation des médias en flux continu Adobe, y compris la collecte de données Adobe Experience Platform.
 exl-id: eee70e62-ba45-440a-8ce1-e151b66d2c1f
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 90%
+ht-degree: 88%
 
 ---
 
@@ -57,7 +57,7 @@ Primetime élimine la complexité liée à l’atteinte, la monétisation et l�
 * Prise en charge de la mesure des coupures publicitaires avec (ou sans) insertion de publicités dynamiques.
 * Le modèle d’insertion de publicités transparent de TVSDK permet d’analyser directement la lecture de la publicité, ce qui augmente la précision.
 * Ensemble d’événements et de métadonnées performant permettant de garantir la précision dans les problèmes de mise en mémoire tampon QoS ou d’interruption de connectivité mobile et les interactions d’utilisateur final (par exemple, recherche, mise en pause et mise en arrière-plan sur appareil mobile).
-* Prise en charge intégrée de Nielsen DTVR (linéaire) avec métadonnées ID3 et de DCR avec métadonnées CMS.
+* Prise en charge intégrée du Nielsen DTVR (linéaire) avec métadonnées ID3 et du DCR avec métadonnées CMS.
 
 
 TVSDK est déjà intégré au SDK Media Analytics (Heartbeats), ce qui rend l’implémentation beaucoup plus facile et rapide sur chaque plateforme prise en charge. Pour tirer parti de Primetime, suivez les mêmes directives et conditions préalables que celles qui figurent dans [Côté client](/help/legacy/intro-to-ava/implementation-paths/client-side-path.md), ainsi que les documents suivants pour vos plateformes : [Guide de l’utilisateur Primetime.](https://helpx.adobe.com/fr/support/primetime.html)

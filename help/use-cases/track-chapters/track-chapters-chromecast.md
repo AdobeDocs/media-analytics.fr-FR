@@ -4,11 +4,11 @@ description: Découvrez la mise en œuvre du suivi des chapitres et des segments
 uuid: 5ea562b9-0e07-4fbb-9a3b-213d746304f5
 exl-id: 26b71e4d-ced7-49cb-a838-2b1c8d4ee4de
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '198'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
    | --- | --- | :---: |
    | `name` | Nom du chapitre | Oui |
    | `position` | Position du chapitre | Oui |
-   | `length` | Durée du chapitre | Oui |
+   | `length` | Longueur du chapitre | Oui |
    | `startTime` | Heure de début du chapitre | Oui |
 
    Objet de chapitre :[ createChapterObject](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.createChapterObject)

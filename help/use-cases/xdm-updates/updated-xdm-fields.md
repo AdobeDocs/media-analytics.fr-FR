@@ -2,9 +2,9 @@
 title: Mettre à jour une implémentation du connecteur source Analytics vers de nouveaux champs XDM pour les services de médias en flux continu
 description: Découvrez comment migrer une implémentation du connecteur source Analytics vers des champs XDM Streaming Media mis à jour
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: d239b203-71ce-4307-884f-9d11cc623d04
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs Streaming Media
 description: Découvrez comment migrer le type de données Préparation des données pour les champs personnalisés vers les nouveaux champs Streaming Media
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 7294b147-2bef-463f-bada-cb67c16d01b0
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs de médias en flux continu
 
-Ce document décrit le processus de migration du service de préparation des données qui existe en plus des flux de collecte de données Adobe activés pour les données de collecte de médias en flux continu Adobe. La migration convertit un mappage de préparation de données à partir du type de données de collecte de médias en flux continu Adobe appelé « Média » pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) ».
+Ce document décrit le processus de migration du service de préparation des données qui existe en plus des flux de collecte de données Adobe activés pour les données de collecte de médias en flux continu Adobe. La migration convertit un mappage de préparation de données à partir du type de données de collecte de médias en flux continu Adobe appelé « Média » pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) ».
 
 ## Migrer la préparation des données pour les champs personnalisés
 
-Pour migrer les mappages de la préparation des données de l’ancien type de données appelé « Média » vers le nouveau type de données appelé « [Détails des rapports sur les médias](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier les mappages de la préparation des données :
+Pour migrer les mappages de la préparation des données de l’ancien type de données appelé « Média » vers le nouveau type de données appelé « [Détails des rapports sur les médias](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier les mappages de la préparation des données :
 
 >[!IMPORTANT]
 >
@@ -61,7 +61,7 @@ Pour suivre plus facilement les instructions de migration, considérez l’exemp
 
    Par exemple, pour Network, le correspondant de `media.mediaTimed.primaryAssetViewDetails`.broadcastNetwork est `mediaReporting.sessionDetails.network`.
 
-   ![&#x200B; Chemin du champ XDM mis à jour &#x200B;](assets/xdm-field-path-old-and-new.jpeg)
+   ![ Chemin du champ XDM mis à jour ](assets/xdm-field-path-old-and-new.jpeg)
 
 1. Dans le champ **[!UICONTROL Source]** , remplacez le chemin `media.mediaTimed` par le chemin `mediaReporting`. Le champ cible reste inchangé.
 
@@ -77,7 +77,7 @@ Pour suivre plus facilement les instructions de migration, considérez l’exemp
 
 Dans l’exemple ci-dessus, tous les types de données impliqués étaient des chaînes. Le remplacement du mappage était donc direct.
 
-Si le type de données du champ source est différent du type de données du champ cible, vous devez suivre les instructions des sections [Guide de dépannage de la préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/troubleshooting-guide), [Gestion des formats de données avec la préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/data-handling) et [Fonctions de mappage de la préparation des données](https://experienceleague.adobe.com/fr/docs/experience-platform/data-prep/data-handling).
+Si le type de données du champ source est différent du type de données du champ cible, vous devez suivre les instructions des sections [Guide de dépannage de la préparation des données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/troubleshooting-guide), [Gestion des formats de données avec la préparation des données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) et [Fonctions de mappage de la préparation des données](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling).
 
 Par exemple, si le type source est une chaîne et que le type cible est une valeur booléenne, la préparation de données peut automatiquement analyser la valeur et convertir la valeur source en valeur booléenne.
 

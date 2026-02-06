@@ -2,9 +2,9 @@
 title: Migrer les profils vers les nouveaux champs Streaming Media
 description: Découvrez comment migrer les profils vers les nouveaux champs Streaming Media
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '505'
 ht-degree: 0%
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Migrer les profils vers les nouveaux champs de streaming multimédia
 
-Ce document décrit le processus de migration du service de filtrage de profil qui existe en plus des flux de collecte de données Adobe activés pour Adobe Analytics pour les données de médias en flux continu. La migration convertit le service de filtrage de profil de l’utilisation du type de données des services de streaming multimédia d’Adobe appelé « Media » vers l’utilisation du nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) ».
+Ce document décrit le processus de migration du service de filtrage de profil qui existe en plus des flux de collecte de données Adobe activés pour Adobe Analytics pour les données de médias en flux continu. La migration convertit le service de filtrage de profil de l’utilisation du type de données des services de streaming multimédia d’Adobe appelé « Media » vers l’utilisation du nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) ».
 
 ## Migration de profils
 
-Pour migrer le filtrage de profil de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails des rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier les règles de filtrage de profil existantes :
+Pour migrer le filtrage de profil de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails des rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier les règles de filtrage de profil existantes :
 
 1. Dans Adobe Experience Platform, dans la section [!UICONTROL **Sources**], accédez à l’onglet [!UICONTROL **Flux de données**].
 

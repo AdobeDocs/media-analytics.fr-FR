@@ -4,11 +4,11 @@ description: Découvrez comment implémenter le suivi principal à l’aide du S
 uuid: a9fc59d8-a2f4-4889-bdec-55c42a835d06
 exl-id: 9812d06d-9efd-460c-a626-6a15f61a4c35
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 88%
+ht-degree: 81%
 
 ---
 
@@ -138,7 +138,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
    * L’utilisateur appuie délibérément sur pause dans l’application.
    * Le lecteur se met en pause.
    * (*Applications mobiles*) : l’utilisateur place l’application en arrière-plan, mais vous souhaitez que l’application conserve la session ouverte.
-   * (*Applications mobiles*) : tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, l’utilisateur reçoit un appel ou une fenêtre contextuelle d’une autre application apparaît, mais vous souhaitez que l’application maintienne la session active afin que l’utilisateur ait l’opportunité de reprendre la vidéo à partir du point d’interruption.
+   * (*Applications mobiles*) : tout type d’interruption système qui entraîne la mise en arrière-plan d’une application. Par exemple, si l’utilisateur reçoit un appel ou si un pop-up se produit depuis une autre application, mais que vous souhaitez que l’application maintienne la session active, l’utilisateur a la possibilité de reprendre la vidéo à partir du point d’interruption.
 
 1. Identifiez l’événement du lecteur correspondant à la lecture vidéo et/ou à la reprise vidéo après une interruption et appelez [trackPlay](https://adobe-marketing-cloud.github.io/media-sdks/reference/chromecast/ADBMobile.media.html#.trackComplete) :
 
@@ -151,4 +151,4 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
    >Il peut s’agir de la même source d’événement utilisée à l’étape 4. Assurez-vous que chaque appel de l’API `trackPause()` est suivi d’un appel de l’API `trackPlay()` à la reprise de la lecture vidéo.
 
 * Scénarios de suivi : [lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md)
-* Exemple de lecteur inclus dans le SDK Chromecast pour un exemple de suivi complet
+* Exemple de lecteur inclus dans le SDK Chromecast pour un exemple de suivi complet.

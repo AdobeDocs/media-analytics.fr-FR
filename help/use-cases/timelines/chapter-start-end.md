@@ -4,8 +4,8 @@ description: Découvrez la chronologie du curseur de lecture et le moment où un
 uuid: 41b52072-e1cd-4dda-9253-31f3408924f6
 exl-id: e3f5bbdb-7007-435b-920c-566d163e57ad
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 100%
@@ -56,13 +56,13 @@ Cet appel signale _l’intention de l’utilisateur de lire_ une vidéo. Il renv
 }
 ```
 
-### Action 2 - Démarrage du minuteur de ping {#Action-2}
+### Action 2 - Démarrage du retardateur de ping {#Action-2}
 
 | Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’application démarre le minuteur d’événement de ping | 0 | 0 | |
+| L’application démarre le retardateur d’événement de ping | 0 | 0 | |
 
-Démarrez votre minuteur de ping. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
+Démarrez votre retardateur de ping. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
 
 ### Action 3 - Début de la coupure publicitaire {#Action-3}
 

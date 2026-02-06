@@ -4,8 +4,8 @@ description: Consultez un exemple de suivi du contenu VOD à lʼaide du SDK Medi
 uuid: 958f7692-7193-40fb-a8e7-2ff4fa805330
 exl-id: 3a8f913f-cb51-45ae-ac1d-862ea1e7c994
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 100%
@@ -23,7 +23,7 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 | Déclencheur   | Méthode Heartbeat   | Appels réseau   | Remarques   |
 |---|---|---|---|
 | L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur **[!UICONTROL Lecture]** ou d’un événement de lecture automatique. |
-| La première image de la vidéo s’affiche. | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le minuteur. Les pulsations sont envoyées toutes les 10 secondes tant que la lecture se poursuit. |
+| La première image de la vidéo s’affiche. | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le retardateur. Les pulsations sont envoyées toutes les 10 secondes tant que la lecture se poursuit. |
 | Le contenu est lu. |  | Content Heartbeats |  |
 | La mise en mémoire tampon commence. | `trackEvent:BufferStart` | Heartbeat Buffer |  |
 | Le contenu est mis en mémoire tampon. |  | Content Heartbeats |  |
@@ -36,7 +36,7 @@ Sauf indication contraire, les appels réseau dans ce scénario sont identiques 
 
 ### Heartbeat Buffer
 
-| Paramètre | Valeur | Remarques |
+| Paramètre | Valeur | Notes |
 |---|---|---|
 | `s:event:type` | `"buffer"` |  |
 

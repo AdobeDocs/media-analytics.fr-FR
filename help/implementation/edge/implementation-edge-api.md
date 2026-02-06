@@ -2,9 +2,9 @@
 title: Mettre en œuvre les services de streaming multimédia d’Adobe à l’aide de l’API Edge Network
 description: Ressources sur l’installation de Media Analytics avec l’API Experience Platform Edge.
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 762abfd4-dc84-40dc-9142-fbebbb892e15
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 0%
@@ -21,6 +21,6 @@ Pour plus d’informations sur la manière d’effectuer une implémentation per
 
 * [Prise en main de l’API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
-* [Guide de dépannage de l’API Media Edge &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
+* [Guide de dépannage de l’API Media Edge ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
 * [Utilisation du fichier de spécification Open API pour les API Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

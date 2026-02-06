@@ -4,8 +4,8 @@ description: Utilisez les solutions de streaming multimédia d’Adobe pour bén
 uuid: b3cbe240-b94d-42b8-a99c-0280334aaa14
 exl-id: 826530f7-2c39-41ef-b3b4-d3f44b46858f
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 59%
@@ -68,4 +68,4 @@ Une fois la session de lecture terminée, les données de suivi calculées sont 
 >Avec les implémentations de Customer Journey Analytics, les données peuvent être envoyées à Customer Journey Analytics à l’aide d’Experience Edge ou d’Analytics Data Connector (ADC).
 
 
-Pour plus d’informations sur les différentes méthodes d’implémentation, voir [&#x200B; Implémentation des services de streaming multimédia pour Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
+Pour plus d’informations sur les différentes méthodes d’implémentation, voir [ Implémentation des services de streaming multimédia pour Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).

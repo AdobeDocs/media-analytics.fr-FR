@@ -4,11 +4,11 @@ description: Découvrez comment modifier les variables Milestone en liens person
 uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '596'
-ht-degree: 97%
+ht-degree: 79%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 97%
 
 ## Aperçu  {#overview}
 
-Les concepts principaux de la mesure vidéo sont les mêmes pour Milestone et le suivi des liens personnalisés, qui prend les événements du lecteur vidéo et les associe aux méthodes d’analyse, tout en récupérant les métadonnées et les valeurs du lecteur et en les associant aux variables d’analyse. L’approche des liens personnalisés doit être considérée comme une simplification de la mise en œuvre et des données collectées. Avec la solution des liens personnalisés, aucune variable ni méthode n’est prédéfinie pour la mesure vidéo. Une configuration personnalisée complète est requise. Il devrait être possible de mettre à jour le code des événements du lecteur afin qu’il pointe vers les appels de suivi des liens personnalisés pour les événements de lecteur de base tels que start et complete. Pour plus d’informations, voir le [Guide de mise en oeuvre des liens personnalisés](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md).
+Les concepts de base de la mesure vidéo sont les mêmes pour le suivi des liens jalonnés et personnalisés, qui prend des événements de lecteur vidéo et les mappe aux méthodes d’analyse, tout en saisissant les métadonnées et les valeurs du lecteur et en les mappant aux variables d’analyse. L’approche Lien personnalisé doit être considérée comme une réduction et une simplification de l’implémentation et des données collectées. Avec la solution Lien personnalisé, aucune variable ou méthode n’est prédéfinie pour la mesure vidéo, elle nécessite une configuration personnalisée complète. Il devrait être possible de mettre à jour le code d’événement du lecteur pour qu’il pointe vers les appels de suivi des liens personnalisés pour les événements de lecteur de base tels que le début et la fin. Pour plus d’informations, voir le [Guide de mise en oeuvre des liens personnalisés](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md).
 
 Les tableaux suivants fournissent des correspondances entre la solution Milestone et la solution des liens personnalisés.
 

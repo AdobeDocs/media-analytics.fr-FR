@@ -3,8 +3,8 @@ title: Découvrez comment effectuer le suivi de la qualité de lʼexpérience à
 description: Découvrez l’implémentation du suivi de la qualité de l’expérience (QoE, QoS) à l’aide de Media SDK dans les applications de navigateur utilisant JavaScript 3x.
 exl-id: b5570e9c-8fb1-4458-bd1a-86ff6fce7813
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: bdd92c855a490cae397b633a638c51c5d001a672
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '224'
 ht-degree: 90%

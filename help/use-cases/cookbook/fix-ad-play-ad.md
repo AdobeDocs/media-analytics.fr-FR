@@ -4,11 +4,11 @@ description: Découvrez comment gérer les appels main:play inattendus entre les
 uuid: 228b4812-c23e-40c8-ae2b-e15ca69b0bc2
 exl-id: f27ce2ba-7584-4601-8837-d8316c641708
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '450'
-ht-degree: 97%
+ht-degree: 75%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 97%
 
 Dans certains scénarios de suivi des publicités, vous pouvez rencontrer des appels `main:play` qui se produisent inopinément entre la fin d’une publicité et le début de la publicité suivante. Si le délai entre l’appel de fin de publicité et l’appel de démarrage de la publicité suivante est supérieur à 250 millisecondes, le SDK Media retourne à l’envoi d’appels `main:play`. Si ce retour à `main:play` survient au cours d’une coupure publicitaire preroll, la mesure de début du contenu peut être définie de façon précoce.
 
-Un écart entre les publicités tel que décrit ci-dessus est interprété par le kit SDK Media comme du contenu principal, car il n’y a à ce niveau aucun chevauchement avec un contenu publicitaire. Le SDK Media ne contient aucune information de publicité définie, et le lecteur est à l’état de lecture. S’il n’y a aucune information de publicité et que le lecteur est à l’état de lecture, le kit SDK Media crédite la durée de l’écart en faveur du contenu principal par défaut. Il ne peut pas créditer la durée de l’écart en faveur d’informations de publicité nulles.
+Un écart entre les publicités telles que décrites ci-dessus est interprété par le SDK des médias comme du contenu principal, car il n’y a aucun chevauchement avec du contenu publicitaire. Aucune information publicitaire n’est définie sur le SDK Media et le lecteur est en cours de lecture. S’il n’existe aucune information sur l’annonce publicitaire et que l’état du lecteur est en cours de lecture, Media SDK crédite la durée de l’écart par rapport au contenu principal par défaut. Il ne peut pas créditer la durée de l’écart en faveur d’informations de publicité nulles.
 
 ## IDENTIFICATION
 
@@ -40,9 +40,9 @@ Pendant que vous utilisez Adobe Debug ou un renifleur de paquets réseau tel que
 
 ***Retardez le déclenchement de l’appel de fin de publicité.***
 
-Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour la première publicité, suivi immédiatement de `trackEvent:AdStart` pour la deuxième publicité. L’application doit attendre d’appeler l’événement `AdComplete` après la fin de la première publicité. Assurez-vous d’appeler `trackEvent:AdComplete` pour la dernière publicité dans la coupure publicitaire. Si le lecteur peut identifier que la ressource publicitaire actuelle est la dernière dans la coupure publicitaire, appelez `trackEvent:AdComplete` immédiatement. Cette résolution aura pour résultat moins de 1 seconde de temps publicitaire supplémentaire passé attribué à l’unité de publicité précédente.
+Gérez l’écart à partir du lecteur en appelant `trackEvent:AdComplete` pour la première publicité, suivi immédiatement de `trackEvent:AdStart` pour la deuxième publicité. L’application doit attendre d’appeler l’événement `AdComplete` après la fin de la première publicité. Assurez-vous d’appeler `trackEvent:AdComplete` pour la dernière publicité dans la coupure publicitaire. Si le lecteur peut identifier que la ressource publicitaire actuelle est la dernière dans la coupure publicitaire, appelez `trackEvent:AdComplete` immédiatement. Cette résolution entraîne l’attribution de moins d’une seconde de temps publicitaire supplémentaire à l’entité publicitaire précédente.
 
-**Au démarrage de la coupure publicitaire, y compris preroll :**
+**Au début de la coupure publicitaire, y compris le preroll :**
 
 * Créez l’instance d’objet `adBreak` pour la coupure publicitaire ; par exemple, `adBreakObject`.
 

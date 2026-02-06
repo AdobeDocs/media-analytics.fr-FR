@@ -4,8 +4,8 @@ description: Découvrez comment modifier les variables Milestone en mesures Medi
 uuid: fdc96146-af63-48ce-b938-c0ca70729277
 exl-id: 655841ed-3a02-4e33-bbc9-46fb14302194
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '707'
 ht-degree: 96%
@@ -35,7 +35,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables du module média
 
-| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.trackUsingContextData | `s.Media.trackUsingContextData` <br> `  = true;` | S.O. | Toutes les données Media Analytics sont envoyées uniquement à l’aide de données contextuelles. |
 | Media.contextDataMapping | `s.Media.contextDataMapping = {` <br> `  "a.media.name":"eVar2,prop2",` <br> `  "a.media.segment":"eVar3",` <br> `  "a.contentType":"eVar1",` <br> `  "a.media.timePlayed":"event3",` <br> `  "a.media.view":"event1",` <br> `  "a.media.segmentView":"event2",` <br> `  "a.media.complete":"event7",` <br> `  "a.media.milestones": {` <br> `    25:"event4",` <br> `    50:"event5",` <br> `    75:"event6"` <br> `  }` <br> `};` | S.O. | Les données contextuelles Media Analytics sont automatiquement renseignées dans des variables réservées. Le mappage à des eVar, des props et des événements n’est plus nécessaire dans le code de mise en œuvre. Les clients peuvent associer des données contextuelles à des variables à l’aide de règles de traitement. |
@@ -44,7 +44,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables facultatives
 
-| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.autoTrack | `s.Media.autoTrack` <br> `  = true;` | S.O. | Nous ne fournissons plus de mappages de lecteur préconfigurés. |
 | Media.autoTrackNetStreams | `s.Media.` <br> `  autoTrackNetStreams` <br> `  = true` | S.O. | Nous ne fournissons plus de mappages de lecteur préconfigurés. |
@@ -59,7 +59,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Variables de suivi des publicités
 
-| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.adTrackSeconds | `s.Media.` <br> `  adTrackSeconds` <br> `  = 15` | S.O. | Media Analytics est défini sur 10 secondes pour le contenu et 1 seconde pour les publicités. Aucune autre option n’est disponible. |
 | Media.adTrackMilestones | `s.Media.` <br> `  adTrackMilestones` <br> `  = "25,50,75";` | S.O. | Les marqueurs de progression ne sont pas fournis par défaut pour les publicités. Utilisez des mesures calculées pour créer des marqueurs de progression des publicités. |
@@ -69,7 +69,7 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 
 ### Méthodes du module média
 
-| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
+| Milestone | Syntaxe de Milestone | Media Analytics | Syntaxe Media Analytics |
 | --- | --- | --- | --- |
 | Media.open | `s.Media.open(` <br> `  mediaName,` <br> `  mediaLength,` <br> `  mediaPlayerName)` | trackSessionStart | `trackSessionStart(` <br> `  mediaObject,` <br> `  contextData)` |
 | mediaName | `mediaName` : (obligatoire) nom de la vidéo tel que vous souhaitez le voir apparaître dans les rapports vidéo. | nom | `createMediaObject(` <br> `  name,` <br> `  mediaId,` <br> `  length,` <br> `  streamType)` |

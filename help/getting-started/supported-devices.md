@@ -4,7 +4,7 @@ description: Découvrez les principaux appareils tels qu’iOS, Android, les app
 exl-id: 169ff7b9-e577-45b7-8927-74bdcccc0a77
 feature: Streaming Media
 role: User, Admin
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 75%
@@ -27,12 +27,12 @@ Le tableau ci-dessous liste les appareils actuellement pris en charge. Si un app
 
 Pour plus d’informations sur l’implémentation de Media sur Edge, consultez [Installation de Streaming Media Collection avec Experience Platform Edge](/help/implementation/edge/implementation-edge.md).
 
-| Plateformes et appareils de streaming | | SDK/Extension pour Media pour réseau Edge | API Media Edge | Extension Media avec balises ou SDK AEP Mobile | SDK Media | API Media Collection |
+| Plateformes et appareils de streaming |  | SDK/Extension pour Media pour réseau Edge | API Media Edge | Extension Media avec balises ou SDK AEP Mobile | SDK Media | API Media Collection |
 |:---|:---|:---:|:---:|:---:|:---:|:---:|
-| Web/Mobile Web | | | | | |
+| Web/Mobile Web | | | | | | |
 | | Navigateurs JavaScript | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) |
-| Application mobile | | | | | |
-| | Appareils iOS | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png) | |
+| Application mobile | | | | | | |
+| | Appareils iOS | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png) |
 | | Appareils Android | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | ![Pris en charge](/help/assets/icon-blue-check.png) | | ![Pris en charge](/help/assets/icon-blue-check.png) |
 | | Appareils Windows | | ![Pris en charge](/help/assets/icon-blue-check.png) | | | ![Pris en charge](/help/assets/icon-blue-check.png) |
 | OTT | | | | | | |

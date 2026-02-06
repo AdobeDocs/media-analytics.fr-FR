@@ -4,11 +4,11 @@ description: Découvrez comment migrer des versions 1.x vers les versions 2.x du
 uuid: d84f55bc-fa90-45c1-b97d-cb5fe58e80c0
 exl-id: b3b8b9f8-a6e9-4ed1-85c1-80e61460e8a0
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '216'
-ht-degree: 100%
+ht-degree: 87%
 
 ---
 
@@ -18,8 +18,8 @@ La migration de VHL 1.x vers VHL 2.x est simple grâce à la nouvelle version 
 
 Voici les différences principales entre les versions 1.x et 2.x :
 
-* **Modules complémentaires, délégués** : Vous n’avez plus besoin de mettre en œuvre des modules externes et des délégués pour Analytics, VideoPlayer et Heartbeat.
-* **Configuration** : Vous n’avez plus besoin d’instancier des configurations pour les modules complémentaires 1.x.
+* **Modules externes, délégués -** vous n’avez plus besoin d’implémenter de modules externes et de délégués pour Analytics, VideoPlayer et Heartbeat.
+* **Configuration -** Vous n’avez plus besoin d’instancier les configurations pour les modules externes 1.x.
 
 ## Avantages de la version 2.x {#benefits-of-two-x}
 

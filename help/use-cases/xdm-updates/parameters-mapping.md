@@ -2,18 +2,18 @@
 title: Migration des audiences vers le nouveau type de données Adobe Analytics for Streaming Media
 description: Découvrez comment migrer des audiences vers le nouveau type de données Adobe Analytics for Streaming Media
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
-source-git-commit: 61e5279e6d53b18955424e76d05d440b83dae07e
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '1346'
-ht-degree: 47%
+ht-degree: 46%
 
 ---
 
 # Mappage des paramètres Media Analytics pour Adobe Experience Platform et Customer Journey Analytics
 
-Ce document fournit une liste complète de tous les paramètres Media Analytics utilisés dans Adobe Experience Platform et Customer Journey Analytics. Il est destiné à prendre en charge l’intégration des données importées d’Adobe Analytics vers Platform via le [&#x200B; Connecteur Source Analytics &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) ou le [&#x200B; Connecteur Source Analytics pour les classifications &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/classifications), en mappant chaque paramètre à son chemin d’accès au champ XDM correspondant.
+Ce document fournit une liste complète de tous les paramètres Media Analytics utilisés dans Adobe Experience Platform et Customer Journey Analytics. Il est destiné à prendre en charge l’intégration des données importées d’Adobe Analytics vers Platform via le [ Connecteur Source Analytics ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) ou le [ Connecteur Source Analytics pour les classifications ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/classifications), en mappant chaque paramètre à son chemin d’accès au champ XDM correspondant.
 
 ## Variables réservées à Media Analytics
 
@@ -116,13 +116,13 @@ Comme les équipes Media Analytics et ADC travaillent actuellement sur une migra
 
 | Nom du champ | Chemin d’accès au champ XDM actuel (obsolète) | Chemin d’accès du champ XDM de création de rapports | Type de données | Champs dérivés | Notes |
 |------------------------|--------------------------------------------------------------|------------------------------------------------|-----------|----------------|-----------|
-| Débit moyen | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | Les variables | Débit moyen |           |
-| Temps jusqu’au début | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | Les variables | Temps jusqu’au début |           |
-| Perte d’images | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames | Les variables | Perte d’images |           |
-| Événements de mémoire tampon | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount | Les variables | Événements de mémoire tampon |           |
-| Durée totale de la mémoire tampon | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | Les variables | Durée totale de la mémoire tampon |     |
-| Changements de débit | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | Les variables | Changements de débit |         |
-| Erreurs / Événements d’erreur | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | Les variables | Erreurs / Événements d’erreur |  |
+| Débit moyen | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateAverage.value | mediaReporting.qoeDataDetails.bitrateAverage | Les deux | Débit moyen |           |
+| Temps jusqu’au début | media.mediaTimed.primaryAssetViewDetails.qoe.timeToStart.value | mediaReporting.qoeDataDetails.timeToStart | Les deux | Temps jusqu’au début |           |
+| Perte d’images | media.mediaTimed.primaryAssetViewDetails.qoe.droppedFrames.value | mediaReporting.qoeDataDetails.droppedFrames | Les deux | Perte d’images |           |
+| Événements de mémoire tampon | media.mediaTimed.primaryAssetViewDetails.qoe.buffers.value | mediaReporting.qoeDataDetails.bufferCount | Les deux | Événements de mémoire tampon |           |
+| Durée totale de la mémoire tampon | media.mediaTimed.primaryAssetViewDetails.qoe.bufferTime.value | mediaReporting.qoeDataDetails.bufferTime | Les deux | Durée totale de la mémoire tampon |     |
+| Changements de débit | media.mediaTimed.primaryAssetViewDetails.qoe.bitrateChanges.value | mediaReporting.qoeDataDetails.bitrateChangeCount | Les deux | Changements de débit |         |
+| Erreurs / Événements d’erreur | media.mediaTimed.primaryAssetViewDetails.qoe.errors.value | mediaReporting.qoeDataDetails.errorCount | Les deux | Erreurs / Événements d’erreur |  |
 | ID d’erreur du SDK du lecteur | media.mediaTimed.primaryAssetViewDetails.qoe.playerSdkErrors | mediaReporting.qoeDataDetails.playerSdkErrors | Dimension | non pris en charge | utiliser le champ mediaReporting |
 | ID d’erreur externes | media.mediaTimed.primaryAssetViewDetails.qoe.externalSdkErrors | mediaReporting.qoeDataDetails.externalErrors | Dimension | non pris en charge | utiliser le champ mediaReporting |
 | Pertes avant le début | media.mediaTimed.dropBeforeStarts.value | mediaReporting.qoeDataDetails.isDroppedBeforeStart | Mesure | Pertes avant le début |     |
@@ -223,7 +223,7 @@ Dans les deux cas, la `<number>` correspond à l’événement spécifique ou au
 | Format de diffusion | `_experience.analytics.customDimensions.eVars.eVar<number>` | Dimension |
 | Date de première diffusion | `_experience.analytics.customDimensions.eVars.eVar<number>` | Dimension |
 | Date de première distribution numérique | `_experience.analytics.customDimensions.eVars.eVar<number>` | Dimension |
-| Données fédérées | `_experience.analytics.customDimensions.eVars.eVar<number>` et `_experience.analytics.event<x>to<y>.event<number>.value` | Les variables |
+| Données fédérées | `_experience.analytics.customDimensions.eVars.eVar<number>` et `_experience.analytics.event<x>to<y>.event<number>.value` | Les deux |
 | Diffusions estimées | `_experience.analytics.event<x>to<y>.event<number>.value` | Mesure |
 | Nombre de publicités | `_experience.analytics.event<x>to<y>.event<number>.value` | Mesure |
 | Nombre de chapitres | `_experience.analytics.event<x>to<y>.event<number>.value` | Mesure |
@@ -231,7 +231,7 @@ Dans les deux cas, la `<number>` correspond à l’événement spécifique ou au
 | ID du site | `_experience.analytics.customDimensions.eVars.eVar<number>` | Dimension |
 | URL de l’élément créatif | `_experience.analytics.customDimensions.eVars.eVar<number>` | Dimension |
 | Identifiant de référencement | `_experience.analytics.customDimensions.eVars.eVar<number>` | Dimension |
-| Images par seconde | `_experience.analytics.customDimensions.eVars.eVar<number>` et `_experience.analytics.event<x>to<y>.event<number>.value` | Les variables |
+| Images par seconde | `_experience.analytics.customDimensions.eVars.eVar<number>` et `_experience.analytics.event<x>to<y>.event<number>.value` | Les deux |
 | ID d’erreur du SDK Media | `_experience.analytics.event<x>to<y>.event<number>.value` | Mesure |
 | Flux touchés par un blocage | `_experience.analytics.event<x>to<y>.event<number>.value` | Mesure |
 | Événements de blocage | `_experience.analytics.event<x>to<y>.event<number>.value` | Mesure |

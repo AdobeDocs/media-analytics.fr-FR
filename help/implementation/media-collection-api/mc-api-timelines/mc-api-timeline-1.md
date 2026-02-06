@@ -1,11 +1,11 @@
 ---
-title: En savoir plus sur les étapes du suivi de médias
+title: En savoir plus sur la chronologie du suivi de médias
 description: Explorez plus en détail la chronologie de la tête de lecture et les actions de l’utilisateur correspondantes. Découvrez les détails de chaque action et des demandes qui l’accompagnent.
 uuid: 0ff591d3-fa99-4123-9e09-c4e71ea1060b
 exl-id: 16b15e03-5581-471f-ab0c-077189dd32d6
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: 83c64e35a52921532697063d3fdf987e889b2854
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 98%
@@ -61,13 +61,13 @@ Sur le serveur principal, cet appel génère un appel de lancement d’Adobe Ana
 }
 ```
 
-### Action 2 - Démarrage du minuteur de ping {#Action-2}
+### Action 2 - Démarrage du retardateur de ping {#Action-2}
 
 | Action | Chronologie des actions (secondes) | Position du curseur de lecture (secondes) | Demande client |
 | --- | :---: | :---: | --- |
-| L’application démarre le minuteur d’événement de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` | |
+| L’application démarre le retardateur d’événement de ping | 0 | 0 | `/api/v1/sessions/{sid}/events` |
 
-Démarrez le minuteur de ping de votre application. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
+Démarrez le retardateur de ping de votre application. Le premier événement ping doit alors se déclencher après 1 seconde en cas de publicités preroll ou après 10 secondes dans le cas contraire.
 
 ### Action 3 - Début de la coupure publicitaire {#Action-3}
 
@@ -179,7 +179,7 @@ Envoyez un ping au serveur principal toutes les secondes pendant dans une annon
 >[!NOTE]
 >
 >Les publicités suivantes dans la chronologie ne montrent pas la série de pings d’une seconde
->&#x200B;>par souci de concision...
+>par souci de concision...
 
 ```json
 {

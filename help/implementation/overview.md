@@ -3,9 +3,9 @@ title: Mise en œuvre de services de streaming multimédia pour Adobe Analytics 
 description: Découvrez les chemins d’implémentation des services de streaming multimédia d’Adobe.
 uuid: null
 feature: Streaming Media
-role: User, Admin, Data Engineer
+role: User, Admin, Developer
 exl-id: ed9297b1-6487-4099-bc62-0c3a40572255
-source-git-commit: 0083869ae4248134dea18a87b9d4ce563eeed1a4
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '484'
 ht-degree: 65%
@@ -24,7 +24,7 @@ Les méthodes d’implémentation d’Edge utilisent le module complémentaire S
 
 * **Media pour Edge Network SDK/Extension :** collecte des données à partir d’appareils web, iOS et Android, ou d’appareils Roku, et les envoie à Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 
-  Pour plus d’informations sur l’extension Media for Edge Network SDK, voir [&#x200B; Implémentation de la collection Streaming Media à l’aide d’Edge Network](/help/implementation/edge/implementation-edge.md).
+  Pour plus d’informations sur l’extension Media for Edge Network SDK, voir [ Implémentation de la collection Streaming Media à l’aide d’Edge Network](/help/implementation/edge/implementation-edge.md).
 
 * **API Media Edge :** peut être personnalisé pour collecter des données à partir de n’importe quel appareil ou format (y compris, mobile, web et appareils par contournement) et envoyer des données à Edge Network. Les données peuvent ensuite être envoyées à Customer Journey Analytics ou à Adobe Analytics.
 

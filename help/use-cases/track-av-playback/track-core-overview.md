@@ -4,8 +4,8 @@ description: 'Découvrez le suivi de la lecture principale, y compris le suivi d
 uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
-role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+role: User, Admin, Developer
+source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 97%
@@ -22,7 +22,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 ## Événements du lecteur
 
-Le suivi de la lecture principale comprend le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. Bien que non obligatoire, la mise en mémoire tampon du suivi et la recherche sont également des composants essentiels du suivi de la lecture du contenu. Dans l’API de votre lecteur multimédia, identifiez les événements du lecteur correspondant aux appels de suivi du SDK Media, et codez vos gestionnaires d’événements pour appeler les API de suivi et renseigner les variables obligatoires et facultatives.
+Le suivi de la lecture principale comprend le suivi du chargement du média, du démarrage du média, de la mise en pause du média et de la fin du média. Bien que non obligatoire, la mise en mémoire tampon du suivi et la recherche sont également des composants principaux du suivi de la lecture du contenu. Dans l’API de votre lecteur multimédia, identifiez les événements du lecteur correspondant aux appels de suivi du SDK Media, et codez vos gestionnaires d’événements pour appeler les API de suivi et renseigner les variables obligatoires et facultatives.
 
 ### Au chargement du média
 
