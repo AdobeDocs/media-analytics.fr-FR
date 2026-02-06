@@ -5,20 +5,20 @@ uuid: c446ad41-51b8-46d6-9bc1-abfae866023f
 exl-id: ccc717ae-d846-4349-8282-5e3511ddeb9b
 feature: Streaming Media
 role: User, Admin, Data Engineer
-source-git-commit: a6a9d550cbdf511b93eea132445607102a557823
+source-git-commit: 9b2d64e856af6a975b371d7c794197a5541997f1
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '139'
+ht-degree: 55%
 
 ---
 
 # Clés de métadonnées Chromecast{#chromecast-metadata-keys}
 
-Les métadonnées de vidéo et de publicité standard peuvent être définies respectivement sur les objets info de multimédia et de publicité. À l’aide des clés constantes des métadonnées vidéo/de publicité, définissez le dictionnaire contenant les métadonnées standard sur l’objet info avant d’appeler les API de suivi. Consultez les tableaux ci-dessous pour obtenir la liste complète des constantes de métadonnées standard, suivies d’un exemple.
+Les métadonnées vidéo et publicitaires standard peuvent être définies sur les objets d’informations sur les médias et les publicités, respectivement. À l’aide des clés de constantes pour les métadonnées de vidéo/publicité, définissez le dictionnaire contenant les métadonnées standard sur l’objet d’informations avant d’appeler les API de suivi. Consultez les tableaux ci-dessous pour obtenir la liste complète des constantes de métadonnées standard, suivies d’un exemple.
 
 ## Constantes de métadonnées {#video-metadata-constants}
 
-| Nom de métadonnées | Clé de données contextuelles | Nom de constante |
+| Nom des métadonnées | Clé de données contextuelles | Nom de constante |
 | --- | --- | --- |
 | Programme | `a.media.show` | `ADBMobile.media.VideoMetadataKeys.SHOW` |
 | Saison | `a.media.season` | `ADBMobile.media.VideoMetadataKeys.SEASON` |
@@ -40,7 +40,7 @@ Les métadonnées de vidéo et de publicité standard peuvent être définies re
 
 ## Constantes de métadonnées de publicité {#ad-metadata-constants}
 
-| Nom de métadonnées | Clé de données contextuelles | Nom de constante |
+| Nom des métadonnées | Clé de données contextuelles | Nom de constante |
 | --- | --- | --- |
 | Annonceur | `a.media.ad.advertiser` | `ADBMobile.media.AdMetadataKeys.ADVERTISER` |
 | ID de campagne | `a.media.ad.campaign` | `ADBMobile.media.AdMetadataKeys.CAMPAIGN_ID` |
