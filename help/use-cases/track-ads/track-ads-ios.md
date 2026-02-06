@@ -82,7 +82,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
 1. Vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi multimédia par le biais de variables de données contextuelles.
 
-   * [Mise en œuvre de métadonnées de publicité standard sur iOS ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
+   * [Mise en œuvre de métadonnées de publicité standard sur iOS &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-ios.md)
    * **Métadonnées de publicité personnalisées -** Pour les métadonnées personnalisées, créez un objet de variable pour les variables de données personnalisées et renseignez les données de la publicité actuelle :
 
      ```

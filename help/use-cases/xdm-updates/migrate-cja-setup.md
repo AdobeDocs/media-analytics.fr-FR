@@ -83,9 +83,9 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
 1. Renseignez la clause [!UICONTROL **If**] à l’aide de la valeur du paramètre **Chemin d’accès au champ XDM de la création de rapports**, comme indiqué dans le paramètre [Nom du chapitre](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) sur la page [Paramètres de chapitre](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/chapter-parameters).
 
-   ![ Nom du chapitre ](assets/chapter-name.jpeg)
+   ![&#x200B; Nom du chapitre &#x200B;](assets/chapter-name.jpeg)
 
-   ![ Nom du chapitre ](assets/chapter-name2.jpeg)
+   ![&#x200B; Nom du chapitre &#x200B;](assets/chapter-name2.jpeg)
 
    ![Condition de champ dérivé](assets/derived-field-condition.jpeg)
 
@@ -93,9 +93,9 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
 1. Renseignez la valeur de secours à l’aide de l’ancien champ du type de données « Média » obsolète.
 
-   ![ Valeur de secours ](assets/fallback-value.jpeg)
+   ![&#x200B; Valeur de secours &#x200B;](assets/fallback-value.jpeg)
 
-   ![ Valeur de secours ](assets/fallback-value2.jpeg)
+   ![&#x200B; Valeur de secours &#x200B;](assets/fallback-value2.jpeg)
 
    Il s’agit de la définition finale du champ dérivé.
 
@@ -103,7 +103,7 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
 1. Pour mettre à jour les champs dérivés, recherchez un champ dérivé qui utilise les anciens champs obsolètes (chemin commençant par `media.mediaTimed`).
 
-   ![champ dérivé ](assets/old-derived-field.jpeg)
+   ![champ dérivé &#x200B;](assets/old-derived-field.jpeg)
 
 1. Placez le pointeur de la souris sur le champ dérivé à mettre à jour, puis cliquez sur l’icône [!UICONTROL **Modifier**].
 
@@ -111,7 +111,7 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
    ![Localiser le champ avec l’ancien type de données](assets/locate-fields-with-old-datatype.jpeg)
 
-1. Vérifiez le nouveau champ correspondant dans la section [ Nom du contenu (variable)](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) de l’article [Paramètres de streaming multimédia](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable).
+1. Vérifiez le nouveau champ correspondant dans la section [&#x200B; Nom du contenu (variable)](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) de l’article [Paramètres de streaming multimédia](https://experienceleague.adobe.com/en/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable).
 
 1. Remplacez l’ancien champ par le nouveau.
 

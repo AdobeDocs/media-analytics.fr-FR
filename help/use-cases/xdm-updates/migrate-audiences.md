@@ -59,7 +59,7 @@ Pour suivre plus facilement les directives de migration, prenons l’exemple sui
 
 1. Reportez-vous à la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters) pour mapper entre les anciens champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ». Par exemple, pour le paramètre [Media Starts](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#media-starts), le correspondant pour `media.mediaTimed.impressions.value` est `mediaReporting.sessionDetails.isViewed`.
 
-   ![ Chemin XDM mis à jour ](assets/updated-xdm-path.jpeg)
+   ![&#x200B; Chemin XDM mis à jour &#x200B;](assets/updated-xdm-path.jpeg)
 
 1. Ajoutez la même règle que la règle existante à l’aide du nouveau champ.
 

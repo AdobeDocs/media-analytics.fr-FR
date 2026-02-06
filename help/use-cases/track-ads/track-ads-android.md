@@ -84,7 +84,7 @@ Les instructions suivantes fournissent des conseils pour la mise en œuvre à l�
 
 1. Vous pouvez joindre des métadonnées standard et/ou de publicité à la session de suivi multimédia par le biais de variables de données contextuelles.
 
-   * [Mise en œuvre de métadonnées de publicité standard sur Android ](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
+   * [Mise en œuvre de métadonnées de publicité standard sur Android &#x200B;](/help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md)
 
    help/use-cases/track-ads/impl-std-ad-metadata/impl-std-ad-metadata-android.md
 

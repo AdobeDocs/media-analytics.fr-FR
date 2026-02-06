@@ -21,6 +21,6 @@ Pour plus d’informations sur la manière d’effectuer une implémentation per
 
 * [Prise en main de l’API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/getting-started/)
 
-* [Guide de dépannage de l’API Media Edge ](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
+* [Guide de dépannage de l’API Media Edge &#x200B;](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/troubleshooting/)
 
 * [Utilisation du fichier de spécification Open API pour les API Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

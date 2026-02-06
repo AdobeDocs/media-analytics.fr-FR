@@ -16,7 +16,7 @@ ht-degree: 10%
 Les conditions préalables décrites dans cette section sont spécifiques à l’implémentation d’Adobe Streaming Media Collection avec les implémentations Edge.
 
 1. **Remplir les conditions préalables générales**<br>
-Que vous implémentiez Streaming Media Collection pour des implémentations Adobe Analytics uniquement ou pour des implémentations Edge, assurez-vous de respecter les [ conditions préalables générales ](/help/getting-started/prereqs.md).
+Que vous implémentiez Streaming Media Collection pour des implémentations Adobe Analytics uniquement ou pour des implémentations Edge, assurez-vous de respecter les [&#x200B; conditions préalables générales &#x200B;](/help/getting-started/prereqs.md).
 
 1. **Confirmez que vous mettez en œuvre une solution Adobe compatible avec Edge Network et la collection Streaming Media**<br>
 Lors de l’implémentation de Streaming Media Collection avec Edge, vous devez également disposer d’une implémentation Customer Journey Analytics, Adobe Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform fonctionnelle. Consultez les ressources de documentation suivantes pour plus d’informations :

@@ -69,7 +69,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
      >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
 
       * Référence de l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - Android](https://adobe-marketing-cloud.github.io/media-sdks/reference/android/com/adobe/primetime/va/simple/MediaHeartbeat.VideoMetadataKeys.html)
-      * Consultez l’ensemble complet des métadonnées vidéo disponibles ici : [ Paramètres audio et vidéo ](/help/implementation/variables/audio-video-parameters.md)
+      * Consultez l’ensemble complet des métadonnées vidéo disponibles ici : [&#x200B; Paramètres audio et vidéo &#x200B;](/help/implementation/variables/audio-video-parameters.md)
 
    * **Métadonnées personnalisées**
 

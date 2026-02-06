@@ -68,4 +68,4 @@ Une fois la session de lecture terminée, les données de suivi calculées sont 
 >Avec les implémentations de Customer Journey Analytics, les données peuvent être envoyées à Customer Journey Analytics à l’aide d’Experience Edge ou d’Analytics Data Connector (ADC).
 
 
-Pour plus d’informations sur les différentes méthodes d’implémentation, voir [ Implémentation des services de streaming multimédia pour Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
+Pour plus d’informations sur les différentes méthodes d’implémentation, voir [&#x200B; Implémentation des services de streaming multimédia pour Adobe Analytics ou Customer Journey Analytics](/help/implementation/overview.md).
