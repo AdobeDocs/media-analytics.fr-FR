@@ -4,10 +4,10 @@ description: Découvrez comment utiliser le panneau Temps de lecture de média p
 feature: Streaming Media, Workspace Basics
 role: User, Admin
 exl-id: 958b4968-0f52-464c-81e0-5ab9b84aaa9c
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+source-git-commit: 528a82a4299370c2ef5a366b1f3fab9fd21b164f
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 91%
+source-wordcount: '232'
+ht-degree: 83%
 
 ---
 
@@ -20,8 +20,10 @@ L’analyse du temps de lecture permet de déterminer où s’est produit le pic
 Dans Analysis Workspace, le temps de lecture est la durée de visionnage de votre ou vos flux multimédias à un moment donné. Cela comprend la mise en pause, la mise en mémoire tampon et le temps de démarrage. Grâce au temps de lecture de média, vous pouvez fractionner la durée de lecture en différents intervalles de temps, par exemple 5 minutes, 15 minutes, 30 minutes ou 1 heure.
 
 
-Le temps de lecture de média permet d’analyser la lecture au fil du temps, avec des détails sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Temps de lecture de média, naviguez vers une suite de rapports dans laquelle les composants de médias en flux continu sont activés. Cliquez ensuite sur l’icône du panneau située à l’extrémité gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=fr)
+Le temps de lecture de média permet d’analyser la lecture au fil du temps, avec des détails sur le pic d’accès simultanés et la possibilité de ventiler et de comparer. Pour accéder au panneau Temps de lecture de média, naviguez vers une suite de rapports dans laquelle les composants de médias en flux continu sont activés. Cliquez ensuite sur l’icône du panneau située à l’extrême gauche et faites glisser le panneau dans votre projet Analysis Workspace. [En savoir plus...](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/panels/media-playback-timespent/media-playback-time-spent.html?lang=fr)
 
-<!-- ## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
+<!--
+## DOES THIS APPLY Get Concurrent Viewers via Analytics Reporting API
 
-REVISE You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md). -->
+REVISE You can also get concurrent viewer data for up to 1-month at a time at minute-level granularity using the Analytics Reporting API 2.0.  The reporting API uses the same definition of concurrent viewers as Analysis Workspace.  For more information see [_*Get concurrent viewers JSON report data with Analytics 2.0 APIs*_](/help/reporting/reports-and-analytics/get-concurrent-json20.md). 
+-->
