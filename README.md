@@ -21,7 +21,7 @@ Votre contribution dépend de qui vous êtes et du type de modifications auxquel
 
 ### Modifications mineures
 
-Si vous apportez des modifications mineures de bon cœur, lisez l’article et cliquez sur le lien **Modifier** de l’article, qui renvoie à la source GitHub de l’article. Ensuite, utilisez simplement l’interface utilisateur GitHub pour effectuer vos mises à jour. Consultez le Guide du contributeur aux [documents ](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr) pour plus d’informations.
+Si vous apportez des modifications mineures de bon cœur, lisez l’article et cliquez sur le lien **Modifier** de l’article, qui renvoie à la source GitHub de l’article. Ensuite, utilisez simplement l’interface utilisateur GitHub pour effectuer vos mises à jour. Consultez le Guide du contributeur aux [documents &#x200B;](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html?lang=fr) pour plus d’informations.
 
 Les corrections mineures ou les clarifications que vous envoyez à titre d’exemple de documentation et de code dans ce référentiel sont couvertes par les conditions d’utilisation d’Adobe.
 
