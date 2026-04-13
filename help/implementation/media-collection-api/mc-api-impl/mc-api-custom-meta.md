@@ -5,44 +5,174 @@ uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 3cebd16d47a0dceb66e7fe1faf312cef14638a3e
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 62%
+source-wordcount: '449'
+ht-degree: 7%
 
 ---
 
 # Prise en charge des métadonnées personnalisées{#custom-metadata-support}
 
-Vous pouvez fournir des paires de clés:value des paires personnalisées sur les événements `sessionStart`, `chapterStart` et `adStart`. Ces informations doivent être fournies dans la clé JSON, `customMetadata`, positionnées à côté de la clé `params`.
+L’API Media Collection vous permet d’envoyer des paires clé-valeur personnalisées avec des paramètres standard dans les événements `sessionStart`, `adStart` et `chapterStart`. Les métadonnées personnalisées sont transférées vers **&#x200B;**&#x200B;avec les événements de fermeture de média correspondants.
 
-La clé JSON `customMetadata` doit contenir un objet de paires clé:value. La clé ne doit contenir que des caractères alphanumériques, un caractère de soulignement et un point.
+Pour rendre ces données disponibles dans Analysis Workspace, les clients doivent définir des eVars personnalisées et configurer des règles de traitement pour les remplir en fonction de leur cas d’utilisation. Une fois mappées à des eVars ou des props, les données sont également disponibles dans Adobe Experience Platform par le biais des chemins eVar correspondants, à condition que le [&#x200B; connecteur source Analytics &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) soit configuré.
 
-[Événements d’API MA Collection](../mc-api-ref/mc-api-events-req.md)
+Pour les implémentations basées sur XDM utilisant Experience Edge, consultez [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/implementation-edge-custom-metadata.md).
 
-## Exemple
+## Vue d’ensemble
 
-Actuellement, vous pouvez envoyer un événement `sessionStart` avec la paire de clés :value :
+Les métadonnées personnalisées sont incluses dans le corps de la requête sous la forme d’un objet `customMetadata`, positionné à côté de la clé `params`. Elle s’applique à trois types d’événements :
 
+| Événement | Les Métadonnées S’Appliquent À |
+|-------|-------------------|
+| `sessionStart` | Contenu principal (session entière) |
+| `adStart` | Publicité individuelle |
+| `chapterStart` | Chapitre ou segment de contenu |
+
+## Structure
+
+Les métadonnées personnalisées sont un **objet** plat (paires clé-valeur) au niveau de l’événement, avec la clé `params` :
+
+```json
+{
+  "playerTime": {
+    "playhead": 0,
+    "ts": 1646938800000
+  },
+  "eventType": "sessionStart",
+  "params": {
+    "analytics.trackingServer": "example.sc.omtrdc.net",
+    "analytics.reportSuite": "example-rsid",
+    "visitor.marketingCloudOrgId": "0123456789@AdobeOrg",
+    "media.id": "sample-video-id",
+    "media.length": 3600,
+    "media.contentType": "vod",
+    "media.playerName": "HTML5 Player",
+    "media.channel": "Sports"
+  },
+  "customMetadata": {
+    "field": "value"
+  }
+}
 ```
-params: { "media.channel": "channel-1" },
-  customMetadata: { "a.media.channel": "channel-2" }
+
+### Paramètres obligatoires par type d’événement
+
+| Événement | `params` requis |
+|-------|-------------------|
+| `sessionStart` | `analytics.trackingServer`, `analytics.reportSuite`, `visitor.marketingCloudOrgId`, `media.id`, `media.length`, `media.contentType`, `media.playerName`, `media.channel` |
+| `adStart` | `media.ad.id`, `media.ad.length`, `media.ad.podPosition`, `media.ad.playerName` |
+| `chapterStart` | `media.chapter.length`, `media.chapter.offset`, `media.chapter.index` |
+
+### Principales exigences en matière de dénomination
+
+- Évitez d’utiliser le préfixe `media.` dans les clés de métadonnées personnalisées : il correspond aux champs de média standard et peut les remplacer dans les rapports Analytics
+- Le préfixe `a.` est réservé aux métadonnées Adobe standard et ne doit pas être utilisé
+
+## Métadonnées personnalisées du contenu principal
+
+Envoyé avec `sessionStart`. S’applique au média principal faisant l’objet d’un suivi et reste disponible tout au long des appels de publicité et de chapitre. Toutes les métadonnées personnalisées définies ici seront automatiquement fusionnées par le serveur principal du média lors des appels de fermeture correspondants. Elle est incluse avec toute métadonnée personnalisée spécifique définie pour les annonces publicitaires et les chapitres.
+
+```sh
+curl -X POST "https://{uri}/api/v1/sessions" \
+--header 'Content-Type: application/json' \
+--data '{
+  "playerTime": {
+    "playhead": 0,
+    "ts": 1646938800000
+  },
+  "eventType": "sessionStart",
+  "params": {
+    "analytics.trackingServer": "example.sc.omtrdc.net",
+    "analytics.reportSuite": "example-rsid",
+    "analytics.visitorId": "visitor123",
+    "visitor.marketingCloudOrgId": "0123456789@AdobeOrg",
+    "media.id": "sample-video-id",
+    "media.name": "Sample Video",
+    "media.length": 3600,
+    "media.contentType": "vod",
+    "media.playerName": "HTML5 Player",
+    "media.channel": "Sports"
+  },
+  "customMetadata": {
+    "contentCategory": "Live Sports",
+    "leagueType": "Professional",
+    "broadcastRights": "Premium"
+  }
+}'
 ```
 
-Pour la configuration ci-dessus, les données de rapport envoyées à Analytics sont les suivantes :
+## Ajout de métadonnées personnalisées
 
-`c.a.media.channel=channel-2`
+Envoyé avec `adStart`. Spécifique à chaque publicité individuelle. Les métadonnées personnalisées d’`sessionStart` sont également automatiquement fusionnées par le serveur principal du média lors de l’appel de fermeture de l’annonce publicitaire avec toutes les métadonnées personnalisées spécifiques à l’annonce définies ici.
 
-### Recommandation
-
-Nous vous recommandons d’utiliser un espace de noms distinct pour les métadonnées personnalisées. Par exemple :
-
+```sh
+curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
+--header 'Content-Type: application/json' \
+--data '{
+  "playerTime": {
+    "playhead": 30,
+    "ts": 1646938830000
+  },
+  "eventType": "adStart",
+  "params": {
+    "media.ad.id": "summer-sale-2026",
+    "media.ad.name": "Summer Sale Ad",
+    "media.ad.length": 30,
+    "media.ad.playerName": "HTML5 Player",
+    "media.ad.podPosition": 1
+  },
+  "customMetadata": {
+    "campaignId": "SUMMER2026",
+    "targetAudience": "18-34",
+    "adFormat": "skippable"
+  }
+}'
 ```
-params: { "media.channel": "channel-1" },
-  customMetadata: { "clientnamespace.media.channel": "channel-2" }
+
+## Métadonnées personnalisées de chapitre
+
+Envoyé avec `chapterStart`. Spécifique à chaque chapitre ou segment de contenu. Les métadonnées personnalisées de `sessionStart` sont également automatiquement fusionnées par le serveur principal de médias lors de l’appel de fermeture du chapitre avec toutes les métadonnées personnalisées spécifiques au chapitre définies ici.
+
+```sh
+curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
+--header 'Content-Type: application/json' \
+--data '{
+  "playerTime": {
+    "playhead": 600,
+    "ts": 1646938200000
+  },
+  "eventType": "chapterStart",
+  "params": {
+    "media.chapter.friendlyName": "Introduction",
+    "media.chapter.length": 300,
+    "media.chapter.index": 1,
+    "media.chapter.offset": 600
+  },
+  "customMetadata": {
+    "chapterType": "tutorial",
+    "difficulty": "beginner",
+    "instructor": "Jane Smith"
+  }
+}'
 ```
 
-Dans l’exemple recommandé, les données de rapport pour les métadonnées personnalisées envoyées à Analytics sont les suivantes :
+## Comportement
 
-`c.a.media.channel=channel-1`
-`c.clientnamespace.media.channel=channel-2`
+- Toutes les valeurs de métadonnées personnalisées doivent être des **chaînes**. Convertissez les nombres et les booléens avant l’envoi.
+- Les métadonnées personnalisées s’affichent dans Analytics avec un préfixe `c.` (par exemple, `contentCategory` → `c.contentCategory`)
+- Mapper des métadonnées personnalisées à des eVars, des props ou des variables de données contextuelles via des règles de traitement Analytics
+- `sessionStart` métadonnées sont conservées pendant toute la session ; les mises à jour nécessitent une nouvelle session
+- Chaque événement `adStart` et `chapterStart` peut comporter différentes métadonnées personnalisées
+
+## Documentation connexe
+
+- [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/implementation-edge-custom-metadata.md) — Envoyez des métadonnées personnalisées via Experience Edge à Analytics et à AEP
+- [Connecteur source Adobe Analytics pour les données de suite de rapports &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importer les données Analytics dans Adobe Experience Platform
+
+<!--
+- [Session endpoints](sessions.md) — Session lifecycle management
+- [Ad endpoints](ads.md) — Track advertising impressions
+- [Chapter endpoints](chapters.md) — Segment content into chapters
+-->
