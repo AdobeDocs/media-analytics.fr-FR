@@ -165,11 +165,11 @@ Pour créer et configurer un schéma :
 
    * Ajoutez l’un des services suivants au flux de données, selon que vous utilisez Adobe Analytics ou Customer Journey Analytics :
 
-      * [!UICONTROL ****] (si vous utilisez Adobe Analytics)
+      * [!UICONTROL **&#x200B;**] (si vous utilisez Adobe Analytics)
 
         Si vous utilisez Adobe Analytics, veillez à définir une suite de rapports, comme décrit dans la section [Création d’une suite de rapports](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
-      * [!UICONTROL ****] (si vous utilisez Customer Journey Analytics)
+      * [!UICONTROL **&#x200B;**] (si vous utilisez Customer Journey Analytics)
 
      Pour plus d’informations sur l’ajout d’un service à un flux de données, consultez la section « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
@@ -371,7 +371,7 @@ Utilisez les ressources de documentation suivantes pour terminer la mise en œuv
 
 * [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
 
-* [Migration vers l’extension Adobe Streaming Media for Edge Network ](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
+* [Migration vers l’extension Adobe Streaming Media for Edge Network &#x200B;](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/) <!-- is the information here also applicable for Roku? -->
 
 ### API : Web et autre
 
