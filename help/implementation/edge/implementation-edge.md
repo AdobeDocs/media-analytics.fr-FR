@@ -4,10 +4,10 @@ description: Découvrez comment les services de streaming multimédia d’Adobe 
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: dfdb1415-105e-4c41-bedc-ecb85ed1b1d9
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 9%
+source-wordcount: '2413'
+ht-degree: 10%
 
 ---
 
@@ -113,7 +113,7 @@ Pour créer et configurer un schéma :
 
    +++
 
-1. (Facultatif) Vous pouvez ajouter des métadonnées personnalisées à votre schéma. Vous pouvez ainsi inclure d’autres métadonnées définies par l’utilisateur ou l’utilisatrice qui peuvent être personnalisées selon des besoins ou des contextes spécifiques. Cette flexibilité est utile dans les scénarios où les schémas existants ne couvrent pas les points de données souhaités. (Vous pouvez également utiliser des métadonnées personnalisées avec les API Media Edge. Pour plus d’informations, voir [Création de métadonnées personnalisées avec les API Media Edge](https://developer.adobe.com/cja-apis/docs/endpoints/media-edge/custom-metadata/).)
+1. (Facultatif) Vous pouvez ajouter des métadonnées personnalisées à votre schéma. Vous pouvez ainsi inclure d’autres métadonnées définies par l’utilisateur ou l’utilisatrice qui peuvent être personnalisées selon des besoins ou des contextes spécifiques. Cette flexibilité est utile dans les scénarios où les schémas existants ne couvrent pas les points de données souhaités. (Vous pouvez également utiliser des métadonnées personnalisées avec les API Media Edge. Pour plus d’informations, voir [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/implementation-edge-custom-metadata.md).
 
    +++ Développez ici pour afficher les instructions sur la manière d’ajouter des métadonnées personnalisées à votre schéma.
 
@@ -165,11 +165,11 @@ Pour créer et configurer un schéma :
 
    * Ajoutez l’un des services suivants au flux de données, selon que vous utilisez Adobe Analytics ou Customer Journey Analytics :
 
-      * [!UICONTROL **Adobe Analytics**] (si vous utilisez Adobe Analytics)
+      * [!UICONTROL **&#x200B;**] (si vous utilisez Adobe Analytics)
 
         Si vous utilisez Adobe Analytics, veillez à définir une suite de rapports, comme décrit dans la section [Création d’une suite de rapports](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
-      * [!UICONTROL **Adobe Experience Platform**] (si vous utilisez Customer Journey Analytics)
+      * [!UICONTROL **&#x200B;**] (si vous utilisez Customer Journey Analytics)
 
      Pour plus d’informations sur l’ajout d’un service à un flux de données, consultez la section « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr#view-details).
 
@@ -226,7 +226,7 @@ Pour créer et configurer un schéma :
       | Démarrage du contenu multimédia | mediaReporting.sessionDetails.isViewed |
       | Vues de segments du fichier multimédia | mediaReporting.sessionDetails.hasSegmentView |
       | Démarrages de contenu | mediaReporting.sessionDetails.isPlayed |
-      | Content Completes | mediaReporting.sessionDetails.isCompleted |
+      | Le contenu se termine | mediaReporting.sessionDetails.isCompleted |
       | Temps passé sur le contenu | mediaReporting.sessionDetails.timePlayed |
       | Passé sur le média | mediaReporting.sessionDetails.totalTimePlayed |
       | Durée de lecture unique | mediaReporting.sessionDetails.uniqueTimePlayed |
@@ -349,25 +349,25 @@ Selon le type de données que vous souhaitez envoyer à Experience Platform Edge
 
 ### Web : utiliser le SDK Web Adobe Experience Platform
 
-* [Prise en main](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+* [Commencer](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [Envoyer des données web à Edge avec Adobe Experience Platform Web SDK](/help/implementation/edge/edge-web-sdk.md)
 
-* [Extension Migration vers Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migration vers l’extension Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Mobile : utiliser le SDK mobile Adobe Experience Platform
 
 Utilisez les ressources de documentation suivantes pour terminer la mise en œuvre pour iOS et Android :
 
-* [Prise en main](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+* [Commencer](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [Référence d’API](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/api-reference/)
 
-* [Extension Migration vers Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
+* [Migration vers l’extension Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/migration-guide/)
 
 ### Roku : Adobe Experience Platform Roku SDK
 
-* [Prise en main](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
+* [Commencer](https://developer.adobe.com/client-sdks/documentation/media-for-edge-network/)
 
 * [Adobe Experience Platform Roku SDK](https://github.com/adobe/aepsdk-roku/tree/main)
 
@@ -385,6 +385,6 @@ Pour plus d’informations sur l’API Media Edge, consultez les ressources suiv
 
 * [Prise en main de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/getting-started.html)
 
-* [Guide de dépannage de l’API Media Edge &#x200B;](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
+* [Guide de dépannage de l’API Media Edge](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/media-edge-apis/troubleshooting.html)
 
 * [Utilisation du fichier de spécification Open API pour les API Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge/)

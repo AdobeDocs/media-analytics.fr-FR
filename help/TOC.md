@@ -5,9 +5,9 @@ user-guide-title: Guide des services des médias en streaming
 breadcrumb-title: Guide des services des médias en streaming
 user-guide-description: Implémentez des services de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: efe4605d59be2629c931e3f0faca839ccb56c495
+source-git-commit: 847ea3e86c25a4aec3b12ad097d89941a5474aa3
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '958'
 ht-degree: 79%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 79%
          + [SDK Web Media Edge](/help/implementation/edge/edge-web-sdk.md)
          + [SDK Media Edge Mobile](/help/implementation/edge/edge-mobile-sdk.md)
       + [API Media Edge](/help/implementation/edge/implementation-edge-api.md)
+      + [Prise en charge des métadonnées personnalisées](/help/implementation/edge/implementation-edge-custom-metadata.md)
    + Implémentations Adobe Analytics uniquement {#analytics-only}
       + [Conditions préalables](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + SDK/extension Media {#media-sdk}
@@ -100,7 +101,7 @@ ht-degree: 79%
       + [Suivi de plusieurs états du lecteur](use-cases/player-state-tracking/multiple-player-states.md)
       + [Exemples de suivi de l’état du lecteur](use-cases/player-state-tracking/player-state-examples.md)
    + [Suivi des données de planning](/help/use-cases/track-schedule-data.md)
-   + [Suivi du contenu téléchargé &#x200B;](use-cases/track-downloaded-content.md)
+   + [Suivi du contenu téléchargé](use-cases/track-downloaded-content.md)
    + [Federated Media](use-cases/federated-media.md)
    + [Gestion des interruptions de l’application lors de la lecture](use-cases/cookbook/app-interrupts.md)
    + [Attribution des diffusions multimédia](use-cases/media-analytics-cookbook/media-dimensions.md)
@@ -251,5 +252,5 @@ ht-degree: 79%
          + [Lecture VOD avec mise en mémoire tampon](use-cases/tracking-scenarios/vod-buffering.md)
          + [Plusieurs dispositifs de suivi VOD en parallèle](use-cases/tracking-scenarios/vod-multi-trackers.md)
          + [Un dispositif de suivi VOD pour plusieurs sessions](use-cases/tracking-scenarios/vod-multi-track-one-session.md)
-         + [Contenu principal en direct &#x200B;](use-cases/tracking-scenarios/live-main-content.md)
+         + [Contenu principal en direct](use-cases/tracking-scenarios/live-main-content.md)
          + [Contenu principal en direct avec suivi séquentiel](use-cases/tracking-scenarios/live-sequential.md)
