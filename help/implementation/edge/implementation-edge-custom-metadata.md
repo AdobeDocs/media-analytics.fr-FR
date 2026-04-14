@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Prise en charge des métadonnées personnalisées - Format XDM
 
-L’API Experience Edge vous permet d’envoyer des métadonnées personnalisées de média avec des champs XDM standard dans des événements d’API `sessionStart`, `adStart` et `chapterStart`. Les métadonnées personnalisées de média envoyées via le format XDM peuvent être transférées vers **** et **Adobe Experience Platform**.
+L’API Experience Edge vous permet d’envoyer des métadonnées personnalisées de média avec des champs XDM standard dans des événements d’API `sessionStart`, `adStart` et `chapterStart`. Les métadonnées personnalisées de média envoyées via le format XDM peuvent être transférées vers **&#x200B;**&#x200B;et **Adobe Experience Platform**.
 
 Pour les implémentations de l’API Media Collection, voir [Prise en charge des métadonnées personnalisées](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md).
 
@@ -55,7 +55,7 @@ Les métadonnées personnalisées sont un **tableau d’objets nom-valeur** à l
 }
 ```
 
-<InlineAlert variant="warning" slots="text" />
+&lt;InlineAlert variant="warning" slots="text" />
 
 `customMetadata` doit être un **tableau** à l’intérieur du `mediaCollection`, et non au niveau racine `xdm`.
 
@@ -252,7 +252,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 Utilisez l’objet `_data` lorsque vous avez besoin de métadonnées dans Adobe Analytics qui ne doivent **pas** être stockées dans des jeux de données AEP (par exemple, des indicateurs temporaires, des variables de débogage ou des indications de traitement spécifiques à Analytics).
 
-<InlineAlert variant="warning" slots="text" />
+&lt;InlineAlert variant="warning" slots="text" />
 
 Les données envoyées via `_data` ne sont pas stockées dans Adobe Experience Platform et ne sont pas disponibles pour Real-Time CDP, Journey Orchestration ou d’autres services AEP.
 
@@ -308,7 +308,7 @@ Dans cet exemple :
 
 ## Emplacement des données en aval
 
-<InlineAlert variant="info" slots="text" />
+&lt;InlineAlert variant="info" slots="text" />
 
 `xdm.mediaCollection.customMetadata` est le **chemin d’API entrant** utilisé pour envoyer des métadonnées personnalisées avec des événements. Après traitement, les données sont transférées vers Adobe Analytics en tant que variables de données contextuelles et stockées dans Adobe Experience Platform sous `mediaReporting.customMetadata` et en tant que champs aplatis de niveau supérieur.
 
@@ -336,9 +336,9 @@ Dans cet exemple :
 
 ## Documentation connexe
 
-- [ Prise en charge des métadonnées personnalisées ](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — API MC (format JSON)
-- [Type de données Détails de la collecte de médias ](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — Référence du schéma XDM
-- [ Mappage des variables de données pour Adobe Experience Platform Edge Network ](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) — Mappage des données contextuelles Analytics pour les champs XDM
+- [&#x200B; Prise en charge des métadonnées personnalisées &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — API MC (format JSON)
+- [Type de données Détails de la collecte de médias &#x200B;](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) — Référence du schéma XDM
+- [&#x200B; Mappage des variables de données pour Adobe Experience Platform Edge Network &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping) — Mappage des données contextuelles Analytics pour les champs XDM
 
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management
