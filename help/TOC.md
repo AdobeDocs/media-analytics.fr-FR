@@ -1,17 +1,18 @@
 ---
+source-git-commit: c9c4287b4b330ebc1a1ec8b7197b42ee45f7ff48
+workflow-type: tm+mt
+source-wordcount: '1345'
+ht-degree: 61%
+
+---
+﻿---
 product: adobe analytics
 audience: end-user
 user-guide-title: Guide des services des médias en streaming
 breadcrumb-title: Guide des services des médias en streaming
 user-guide-description: Implémentez des services de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
-workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 79%
-
 ---
-
 
 # Guide des services des médias en streaming {#using}
 
@@ -32,6 +33,71 @@ ht-degree: 79%
          + [JavaScript - SDK Media vers Launch](legacy/sdk-to-launch/sdk-to-launch-migration-platforms/sdk-to-launch-migration-js.md)
 + Implémentation {#implementation}
    + [Présentation de l’implémentation](implementation/overview.md)
+   + Variables {#variables}
+      + Base {#core}
+         + [Canal de contenu](implementation/variables/core/content-channel.md)
+         + [Identifiant de contenu](implementation/variables/core/content-id.md)
+         + [Durée du contenu](implementation/variables/core/content-length.md)
+         + [Nom du contenu](implementation/variables/core/content-name.md)
+         + [Nom du lecteur de contenu](implementation/variables/core/content-player-name.md)
+         + [Reprises du contenu](implementation/variables/core/content-resumes.md)
+         + [Type de contenu](implementation/variables/core/content-type.md)
+         + [Indicateur de média téléchargé](implementation/variables/core/media-downloaded-flag.md)
+         + [Type de diffusion](implementation/variables/core/stream-type.md)
+      + Métadonnées standard {#metadata}
+         + [Album](implementation/variables/standard-metadata/album.md)
+         + [Artiste](implementation/variables/standard-metadata/artist.md)
+         + [ID de ressource](implementation/variables/standard-metadata/asset-id.md)
+         + [Auteur](implementation/variables/standard-metadata/author.md)
+         + [Autorisé](implementation/variables/standard-metadata/authorized.md)
+         + [Classement du contenu](implementation/variables/standard-metadata/content-rating.md)
+         + [Tranche horaire](implementation/variables/standard-metadata/day-part.md)
+         + [Épisode](implementation/variables/standard-metadata/episode.md)
+         + [Date de première diffusion](implementation/variables/standard-metadata/first-air-date.md)
+         + [Première date numérique](implementation/variables/standard-metadata/first-digital-date.md)
+         + [Genre](implementation/variables/standard-metadata/genre.md)
+         + [Étiquette](implementation/variables/standard-metadata/label.md)
+         + [Type de flux multimédia](implementation/variables/standard-metadata/media-feed-type.md)
+         + [MVPD](implementation/variables/standard-metadata/mvpd.md)
+         + [Réseau](implementation/variables/standard-metadata/network.md)
+         + [Créateur](implementation/variables/standard-metadata/originator.md)
+         + [Éditeur](implementation/variables/standard-metadata/publisher.md)
+         + [Saison](implementation/variables/standard-metadata/season.md)
+         + [Programme](implementation/variables/standard-metadata/show.md)
+         + [Type d’affichage](implementation/variables/standard-metadata/show-type.md)
+         + [Station](implementation/variables/standard-metadata/station.md)
+         + [Format du flux](implementation/variables/standard-metadata/stream-format.md)
+      + Publicités {#ads}
+         + [Nom de la coupure publicitaire](implementation/variables/ads/ad-break-name.md)
+         + [Heure de début de la coupure publicitaire](implementation/variables/ads/ad-break-start-time.md)
+         + [Identifiant de publicité](implementation/variables/ads/ad-id.md)
+         + [Position de l’annonce publicitaire dans la capsule](implementation/variables/ads/ad-in-pod-position.md)
+         + [Longueur de la publicité](implementation/variables/ads/ad-length.md)
+         + [Nom de la publicité](implementation/variables/ads/ad-name.md)
+         + [Nom du lecteur publicitaire](implementation/variables/ads/ad-player-name.md)
+         + [Annonceur](implementation/variables/ads/advertiser.md)
+         + [ID de campagne](implementation/variables/ads/campaign-id.md)
+         + [ID d’élément créatif](implementation/variables/ads/creative-id.md)
+         + [URL de l’élément créatif](implementation/variables/ads/creative-url.md)
+         + [Identifiant de référencement](implementation/variables/ads/placement-id.md)
+         + [ID du site](implementation/variables/ads/site-id.md)
+      + Chapitres {#chapters}
+         + [Longueur du chapitre](implementation/variables/chapters/chapter-length.md)
+         + [Nom du chapitre](implementation/variables/chapters/chapter-name.md)
+         + [Décalage de chapitre](implementation/variables/chapters/chapter-offset.md)
+         + [Position du chapitre](implementation/variables/chapters/chapter-position.md)
+      + Qualité {#quality}
+         + [Débit binaire](implementation/variables/quality/bitrate.md)
+         + [Changement de débit](implementation/variables/quality/bitrate-change.md)
+         + [Images perdues](implementation/variables/quality/dropped-frames.md)
+         + [Images par seconde](implementation/variables/quality/frames-per-second.md)
+         + [Heure de début](implementation/variables/quality/time-to-start.md)
+      + États du lecteur {#player-state}
+         + [Sous-titrage](implementation/variables/player-state/closed-captioning.md)
+         + [Plein écran](implementation/variables/player-state/full-screen.md)
+         + [Dans le focus](implementation/variables/player-state/in-focus.md)
+         + [Mode muet](implementation/variables/player-state/mute.md)
+         + [Image dans l’image](implementation/variables/player-state/picture-in-picture.md)
    + Implémentations d’Edge (recommandé) {#edge-recommended}
       + [Conditions préalables](/help/implementation/edge/prerequisites-edge.md)
       + SDK/extension Media Edge {#media-edge-sdk}
@@ -68,14 +134,121 @@ ht-degree: 79%
             + [Conditions d’expiration](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Contrôle de l’ordre des événements](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Événements de mise en file d’attente lorsque la réponse des sessions est lente](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + Variables {#variables}
-      + [Paramètres des médias en flux continu](implementation/variables/audio-video-parameters.md)
-      + [Paramètres de publicité](implementation/variables/ad-parameters.md)
-      + [Paramètres de chapitre](implementation/variables/chapter-parameters.md)
-      + [Paramètres d’état du lecteur](implementation/variables/player-state-parameters.md)
-      + [Paramètres de qualité](implementation/variables/quality-parameters.md)
-      + [Mesures calculées](implementation/variables/calculated-metrics.md)
-+ Création de rapports {#media-reports}
++ Création de rapports {#reporting}
+   + Dimensions {#dimensions}
+      + [Publicité](reporting/dimensions/ad.md)
+      + [Position de l’annonce publicitaire dans la capsule](reporting/dimensions/ad-in-pod-position.md)
+      + [Longueur de la publicité](reporting/dimensions/ad-length.md)
+      + [Nom de la publicité](reporting/dimensions/ad-name.md)
+      + [Nom du lecteur publicitaire](reporting/dimensions/ad-player-name.md)
+      + [Capsule publicitaire](reporting/dimensions/ad-pod.md)
+      + [Annonceur](reporting/dimensions/advertiser.md)
+      + [Album](reporting/dimensions/album.md)
+      + [Artiste](reporting/dimensions/artist.md)
+      + [ID de ressource](reporting/dimensions/asset-id.md)
+      + [Auteur](reporting/dimensions/author.md)
+      + [Débit moyen (dimension)](reporting/dimensions/average-bitrate.md)
+      + [Changements de débit (dimension)](reporting/dimensions/bitrate-changes.md)
+      + [Événements de mémoire tampon (dimension)](reporting/dimensions/buffer-events.md)
+      + [ID de campagne](reporting/dimensions/campaign-id.md)
+      + [Chapitre](reporting/dimensions/chapter.md)
+      + [Longueur du chapitre](reporting/dimensions/chapter-length.md)
+      + [Nom du chapitre](reporting/dimensions/chapter-name.md)
+      + [Décalage de chapitre](reporting/dimensions/chapter-offset.md)
+      + [Position du chapitre](reporting/dimensions/chapter-position.md)
+      + [Contenu](reporting/dimensions/content.md)
+      + [Canal de contenu](reporting/dimensions/content-channel.md)
+      + [Durée du contenu](reporting/dimensions/content-length.md)
+      + [Nom du contenu](reporting/dimensions/content-name.md)
+      + [Nom du lecteur de contenu](reporting/dimensions/content-player-name.md)
+      + [Classement du contenu](reporting/dimensions/content-rating.md)
+      + [Segment de contenu](reporting/dimensions/content-segment.md)
+      + [Type de contenu](reporting/dimensions/content-type.md)
+      + [ID d’élément créatif](reporting/dimensions/creative-id.md)
+      + [URL de l’élément créatif](reporting/dimensions/creative-url.md)
+      + [Tranche horaire](reporting/dimensions/day-part.md)
+      + [Images perdues (dimension)](reporting/dimensions/dropped-frames.md)
+      + [Épisode](reporting/dimensions/episode.md)
+      + [Erreurs](reporting/dimensions/errors.md)
+      + [ID d&#39;erreurs externes](reporting/dimensions/external-error-ids.md)
+      + [Date de première diffusion](reporting/dimensions/first-air-date.md)
+      + [Première date numérique](reporting/dimensions/first-digital-date.md)
+      + [Genre](reporting/dimensions/genre.md)
+      + [Étiquette](reporting/dimensions/label.md)
+      + [Média téléchargé](reporting/dimensions/media-downloaded-flag.md)
+      + [Type de flux multimédia](reporting/dimensions/media-feed-type.md)
+      + [Chemin du média](reporting/dimensions/media-path.md)
+      + [ID de session multimédia](reporting/dimensions/media-session-id.md)
+      + [MVPD](reporting/dimensions/mvpd.md)
+      + [Réseau](reporting/dimensions/network.md)
+      + [Créateur](reporting/dimensions/originator.md)
+      + [Identifiant de référencement](reporting/dimensions/placement-id.md)
+      + [ID d’erreur du SDK du lecteur](reporting/dimensions/player-sdk-error-ids.md)
+      + [Nom de la capsule](reporting/dimensions/pod-name.md)
+      + [Position de la capsule](reporting/dimensions/pod-position.md)
+      + [Éditeur](reporting/dimensions/publisher.md)
+      + [Saison](reporting/dimensions/season.md)
+      + [Programme](reporting/dimensions/show.md)
+      + [Type d’affichage](reporting/dimensions/show-type.md)
+      + [ID du site](reporting/dimensions/site-id.md)
+      + [Station](reporting/dimensions/station.md)
+      + [Format du flux](reporting/dimensions/stream-format.md)
+      + [Type de diffusion](reporting/dimensions/stream-type.md)
+      + [Heure de début (dimension)](reporting/dimensions/time-to-start.md)
+      + [Durée totale du buffer (dimension)](reporting/dimensions/total-buffer-duration.md)
+   + Mesures {#metrics}
+      + [Fin de la publicité](reporting/metrics/ad-completes.md)
+      + [Nombre d’annonces](reporting/metrics/ad-count.md)
+      + [Annonces démarrées](reporting/metrics/ad-starts.md)
+      + [Temps passé sur la publicité](reporting/metrics/ad-time-spent.md)
+      + [Autorisé](reporting/metrics/authorized.md)
+      + [Débit moyen (mesure)](reporting/metrics/average-bitrate.md)
+      + [Audience moyenne par minute](reporting/metrics/average-minute-audience.md)
+      + [Flux impactés par le changement de débit](reporting/metrics/bitrate-change-impacted-streams.md)
+      + [Modifications du débit (mesure)](reporting/metrics/bitrate-changes.md)
+      + [Événements de mémoire tampon (mesure)](reporting/metrics/buffer-events.md)
+      + [Flux impactés par la mémoire tampon](reporting/metrics/buffer-impacted-streams.md)
+      + [Lectures complètes du chapitre](reporting/metrics/chapter-completes.md)
+      + [Nombre de chapitres](reporting/metrics/chapter-count.md)
+      + [Démarrages du chapitre](reporting/metrics/chapter-starts.md)
+      + [Temps passé sur le chapitre](reporting/metrics/chapter-time-spent.md)
+      + [Nombre de sous-titres](reporting/metrics/closed-captioning-count.md)
+      + [Durée totale du sous-titrage](reporting/metrics/closed-captioning-total-duration.md)
+      + [Content completes](reporting/metrics/content-completes.md)
+      + [Reprises du contenu](reporting/metrics/content-resumes.md)
+      + [Vues de segment de contenu](reporting/metrics/content-segment-views.md)
+      + [Le contenu démarre](reporting/metrics/content-starts.md)
+      + [Durée du contenu](reporting/metrics/content-time-spent.md)
+      + [Flux impactés par l’image perdue](reporting/metrics/dropped-frame-impacted-streams.md)
+      + [Images perdues (mesure)](reporting/metrics/dropped-frames.md)
+      + [Pertes avant le démarrage](reporting/metrics/drops-before-start.md)
+      + [Événements d’erreur](reporting/metrics/error-events.md)
+      + [Flux impactés par l’erreur](reporting/metrics/error-impacted-streams.md)
+      + [Flux estimés](reporting/metrics/estimated-streams.md)
+      + [Données fédérées](reporting/metrics/federated-data.md)
+      + [Nombre de pages plein écran](reporting/metrics/full-screen-count.md)
+      + [Durée totale en plein écran](reporting/metrics/full-screen-total-duration.md)
+      + [Nombre d’éléments ciblés](reporting/metrics/in-focus-count.md)
+      + [Durée totale du focus](reporting/metrics/in-focus-total-duration.md)
+      + [Démarrages du média](reporting/metrics/media-starts.md)
+      + [Temps passé sur le média](reporting/metrics/media-time-spent.md)
+      + [Nombre de mises en sourdine](reporting/metrics/mute-count.md)
+      + [Durée totale du son muet](reporting/metrics/mute-total-duration.md)
+      + [Événements Pause](reporting/metrics/pause-events.md)
+      + [Flux impactés en pause](reporting/metrics/paused-impacted-streams.md)
+      + [Image dans le nombre d’images](reporting/metrics/picture-in-picture-count.md)
+      + [Durée totale de l&#39;image dans l&#39;image](reporting/metrics/picture-in-picture-total-duration.md)
+      + [Marqueurs de progression](reporting/metrics/progress-markers.md)
+      + [Flux affectés par le sous-titrage](reporting/metrics/closed-captioning-streams-impacted.md)
+      + [Flux impactés par le plein écran](reporting/metrics/full-screen-streams-impacted.md)
+      + [Flux impactés par dans le focus](reporting/metrics/in-focus-streams-impacted.md)
+      + [Flux impactés par le mode silencieux](reporting/metrics/mute-streams-impacted.md)
+      + [Flux impactés par l’image dans l’image](reporting/metrics/picture-in-picture-streams-impacted.md)
+      + [Heure de début (mesure)](reporting/metrics/time-to-start.md)
+      + [Durée totale de la mémoire tampon (mesure)](reporting/metrics/total-buffer-duration.md)
+      + [Durée totale de la pause](reporting/metrics/total-pause-duration.md)
+      + [Durée de lecture unique](reporting/metrics/unique-time-played.md)
+   + [Mesures calculées](reporting/calculated-metrics.md)
    + [Activation des rapports sur les médias](reporting/media-reports-enable.md)
    + Panneaux multimédias dans Workspace {#media-workspace-panels}
       + [Panneau Audience moyenne par minute de média](reporting/workspace/average-minute-audience.md)
@@ -91,7 +264,7 @@ ht-degree: 79%
       + [Rapport sur les visionneuses simultanées de médias](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
    + API Media {#media-api}
       + [Obtenir les données des visionneuses simultanées](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [Obtenir les données de temps de lecture de médias](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
+      + [Obtention des données de temps de lecture de média](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Cas d’utilisation {#media-use-cases}
    + [Cas d’utilisation du SDK Media](use-cases/cookbook/sdk-cookbook-overview.md)
    + Suivi de l’état du lecteur {#player-state-tracking}
