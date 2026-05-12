@@ -24,7 +24,7 @@ La variable originator correspond au studio de création ou de production du con
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.originator` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Début et fin de la session |
 

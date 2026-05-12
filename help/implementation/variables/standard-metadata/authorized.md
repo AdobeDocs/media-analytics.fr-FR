@@ -24,7 +24,7 @@ La variable autorisée marque une session dont l’utilisateur a été autorisé
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.pass.auth` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.authorized`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Début et fin de la session |
 

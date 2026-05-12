@@ -24,7 +24,7 @@ La variable de format du flux identifie le niveau de qualité du flux (général
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.format` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Début et fin de la session |
 

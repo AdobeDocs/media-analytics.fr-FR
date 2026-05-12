@@ -24,7 +24,7 @@ La variable artist est le nom de l’artiste interprète pour le contenu audio (
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.artist` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.artist`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Début et fin de la session |
 

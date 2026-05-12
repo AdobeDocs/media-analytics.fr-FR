@@ -24,7 +24,7 @@ La variable de longueur du chapitre correspond à la durée du chapitre, exprim�
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.chapter.length` |
-| **champ de collection XDM** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Obligatoire** | Non (Mobile SDK) ; Oui (Edge, API Media Collection) |
 | **Envoyé avec** | Début et fin du chapitre |
 

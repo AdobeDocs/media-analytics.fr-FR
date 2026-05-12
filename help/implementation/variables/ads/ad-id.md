@@ -24,7 +24,7 @@ La variable d’ID d’annonce publicitaire identifie de manière unique chaque 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.name` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | Démarrage et fermeture de la publicité |
 

@@ -24,7 +24,7 @@ La variable station est le nom ou l’identifiant de la station radio qui diffus
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.station` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.station`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Début et fin de la session |
 

@@ -24,7 +24,7 @@ La variable de position de l’annonce publicitaire dans la capsule correspond �
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.podPosition` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | Démarrage et fermeture de la publicité |
 

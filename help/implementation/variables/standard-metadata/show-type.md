@@ -31,7 +31,7 @@ Utilisez-le pour séparer l’affichage du programme complet du contenu court, t
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.type` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Début et fin de la session |
 

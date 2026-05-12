@@ -24,7 +24,7 @@ La variable images perdues correspond au nombre d’images perdues par le lecteu
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.qoe.droppedFrameCount` |
-| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Événements de qualité, fermeture de session |
 

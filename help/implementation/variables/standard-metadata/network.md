@@ -24,7 +24,7 @@ La variable réseau est le nom du réseau ou du canal de diffusion (par exemple,
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.network` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.network`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.network`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Début et fin de la session |
 

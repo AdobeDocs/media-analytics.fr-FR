@@ -28,7 +28,7 @@ La variable genre correspond au genre de contenu tel que défini par le producte
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.genre` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Début et fin de la session |
 

@@ -24,7 +24,7 @@ La variable de position du chapitre est l’index du chapitre à l’intérieur 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.chapter.position` |
-| **champ de collection XDM** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.chapterDetails.index`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Obligatoire** | Non (Mobile SDK) ; Oui (Edge, API Media Collection) |
 | **Envoyé avec** | Début et fin du chapitre |
 

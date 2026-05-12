@@ -24,7 +24,7 @@ La variable de débit est le débit de lecture actuel, en kilobits par seconde. 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.qoe.bitrateAverageBucket` |
-| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Événements de qualité (changement de débit, mémoire tampon, erreur), fermeture de session |
 

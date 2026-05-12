@@ -24,7 +24,7 @@ La variable d’ID de contenu identifie de manière unique chaque élément de c
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.name` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | Début et fin de la session |
 

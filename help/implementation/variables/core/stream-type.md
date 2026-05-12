@@ -26,7 +26,7 @@ La définition correcte du type de flux est fondamentale pour la création de ra
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.streamType` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | Début et fin de la session |
 

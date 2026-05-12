@@ -24,7 +24,7 @@ La variable de nom du lecteur d’annonces identifie le lecteur qui a rendu chaq
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.playerName` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | Démarrage et fermeture de la publicité |
 

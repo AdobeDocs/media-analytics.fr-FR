@@ -24,7 +24,7 @@ La variable de temps de début de coupure publicitaire correspond au décalage d
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.podSecond` |
-| **champ de collection XDM** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingPodDetails.offset`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | Démarrage et fermeture de la publicité |
 

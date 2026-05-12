@@ -24,7 +24,7 @@ La variable URL de création est l’URL de la création publicitaire. Utilisez 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.creativeURL` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Démarrage et fermeture de la publicité |
 
