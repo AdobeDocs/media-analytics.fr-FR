@@ -27,9 +27,9 @@ La position de la capsule est définie à partir de la valeur [Heure de début d
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.podSecond` à un eVar. |
+| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.podSecond` à un eVar. |
 | Adobe Analytics (classification) | Classification de la dimension [capsule publicitaire](ad-pod.md) : Adobe crée automatiquement cette classification lorsque **[[!UICONTROL Annonces publicitaires]](/help/reporting/media-reports-enable.md)** est activé pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.offset`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Flux de données (règle de traitement) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (l’eVar à laquelle votre règle de traitement `a.media.ad.podSecond` mappée) |
 | Flux de données (classification) | S.O. — Les flux de données ne prennent pas en charge les classifications. |
 
@@ -45,7 +45,7 @@ Cette approche fournit une relation 1:1 garantie entre chaque ID de capsule publ
 
 ## Approche des règles de traitement
 
-Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.podSecond` à un eVar. Cette approche capture la position de la capsule en tant que valeur par accès sans nécessiter de maintenance de la classification.
+Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.podSecond` à un eVar. Cette approche capture la position de la capsule en tant que valeur par accès sans nécessiter de maintenance de la classification.
 
 Le compromis est que vous perdez la relation 1:1 garantie entre la position de la capsule et la dimension parent [capsule publicitaire](ad-pod.md). Si votre implémentation envoie des valeurs incohérentes pour le même ID de capsule entre les événements, plusieurs positions peuvent apparaître sous la même capsule publicitaire. La mise à jour d’une valeur s’applique uniquement aux données dans le futur.
 

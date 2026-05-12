@@ -27,9 +27,9 @@ La position du chapitre est définie par le lecteur à chaque événement `media
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.chapter.position` à un eVar. |
+| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.chapter.position` à un eVar. |
 | Adobe Analytics (classification) | Classification de la dimension [Chapitres](chapter.md) : Adobe crée automatiquement cette classification lorsque l’option **[[!UICONTROL Chapitres de médias]](/help/reporting/media-reports-enable.md)** est activée pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.index`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.index`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Flux de données (règle de traitement) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (l’eVar à laquelle votre règle de traitement `a.media.chapter.position` mappée) |
 | Flux de données (classification) | S.O. — Les flux de données ne prennent pas en charge les classifications. |
 
@@ -45,7 +45,7 @@ Cette approche fournit une relation 1:1 garantie entre chaque ID de chapitre et 
 
 ## Approche des règles de traitement
 
-Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.chapter.position` à un eVar. Cette approche capture la position du chapitre sous la forme d’une valeur par accès sans nécessiter de maintenance de la classification.
+Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.chapter.position` à un eVar. Cette approche capture la position du chapitre sous la forme d’une valeur par accès sans nécessiter de maintenance de la classification.
 
 Le compromis est que vous perdez la relation 1:1 garantie entre la position du chapitre et la dimension [Chapitre](chapter.md) parente. Si votre implémentation envoie des valeurs incohérentes pour le même ID de chapitre à travers les événements, plusieurs positions peuvent apparaître sous le même chapitre. La mise à jour d’une valeur s’applique uniquement aux données dans le futur.
 
