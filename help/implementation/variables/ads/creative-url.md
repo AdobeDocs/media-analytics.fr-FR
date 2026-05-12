@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*Cette page traite de la collecte de données pour la variable **URL Creative**. Voir [URL ](/help/reporting/dimensions/creative-url.md) pour la dimension de reporting correspondante.*
+*Cette page traite de la collecte de données pour la variable **URL Creative**. Voir [URL &#x200B;](/help/reporting/dimensions/creative-url.md) pour la dimension de reporting correspondante.*
 
 >[!ENDSHADEBOX]
 
