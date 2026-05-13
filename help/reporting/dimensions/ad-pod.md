@@ -22,7 +22,7 @@ L’ID de capsule publicitaire est généré automatiquement par le SDK lors du 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.pod` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Flux de données | `videoadpod, post_videoadpod` |
 
 ## Éléments de dimension
