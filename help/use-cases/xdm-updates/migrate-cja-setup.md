@@ -5,10 +5,18 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
 TQID: https://experienceleague.adobe.com/Y-Y-xWKm-zOzaQm8kMbgGx8r6BTNLl-Q5AltlF5v7aA
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
 source-wordcount: 759
@@ -88,9 +96,9 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
 1. Renseignez la clause [!UICONTROL **If**] à l’aide de la valeur du **chemin d’accès au champ XDM de la création de rapports**, comme indiqué sur la page [nom du chapitre](/help/reporting/dimensions/chapter-name.md).
 
-   ![ Nom du chapitre ](assets/chapter-name.jpeg)
+   ![&#x200B; Nom du chapitre &#x200B;](assets/chapter-name.jpeg)
 
-   ![ Nom du chapitre ](assets/chapter-name2.jpeg)
+   ![&#x200B; Nom du chapitre &#x200B;](assets/chapter-name2.jpeg)
 
    ![Condition de champ dérivé](assets/derived-field-condition.jpeg)
 
@@ -98,9 +106,9 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
 1. Renseignez la valeur de secours à l’aide de l’ancien champ du type de données « Média » obsolète.
 
-   ![ Valeur de secours ](assets/fallback-value.jpeg)
+   ![&#x200B; Valeur de secours &#x200B;](assets/fallback-value.jpeg)
 
-   ![ Valeur de secours ](assets/fallback-value2.jpeg)
+   ![&#x200B; Valeur de secours &#x200B;](assets/fallback-value2.jpeg)
 
    Il s’agit de la définition finale du champ dérivé.
 
@@ -108,7 +116,7 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
 1. Pour mettre à jour les champs dérivés, recherchez un champ dérivé qui utilise les anciens champs obsolètes (chemin commençant par `media.mediaTimed`).
 
-   ![champ dérivé ](assets/old-derived-field.jpeg)
+   ![champ dérivé &#x200B;](assets/old-derived-field.jpeg)
 
 1. Placez le pointeur de la souris sur le champ dérivé à mettre à jour, puis cliquez sur l’icône [!UICONTROL **Modifier**].
 
