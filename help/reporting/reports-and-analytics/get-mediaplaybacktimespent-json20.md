@@ -4,10 +4,15 @@ description: Découvrez comment obtenir des données de rapport sur le temps de 
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/WYVf65R-G8v-x23nNMM4q14ZrBNZhrr8gls3HfO3XO8
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 100%
+source-wordcount: 210
+ht-degree: 90%
 
 ---
 
@@ -20,7 +25,7 @@ Vous pouvez obtenir des données de rapport sur le temps de lecture de média à
 1. Demandez une quantité suffisante de données.
 
    * La plage de données que vous spécifiez dans le rapport rassemble toutes les données d’observateurs simultanés _au moment de la fin de la session vidéo._
-Vous devez donc tenir compte des sessions qui commencent un jour et se terminent après minuit, c’est-à-dire le lendemain.
+Vous devez tenir compte des sessions qui commencent un jour et se terminent après minuit, soit le lendemain.
 
    * Demandez un jour de données supplémentaire à la période prévue dans votre requête, mais dans votre analyse _*utilisez uniquement les données prévues.*_
 
@@ -129,7 +134,7 @@ You can extract the Media Playback Time Spent report data using the Experience C
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=fr)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 

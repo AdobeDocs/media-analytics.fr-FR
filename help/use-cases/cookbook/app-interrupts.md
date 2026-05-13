@@ -5,10 +5,14 @@ uuid: 1ccb4507-bda6-462d-bf67-e22978a4db3d
 exl-id: a84af6ad-dd4f-4f0d-93dd-66f2f84ddc0e
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/BlL-c1rf5d3juDKHybex9vrPvQsBIiNXVO2ug9LKl0g
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 63%
+source-wordcount: 358
+ht-degree: 55%
 
 ---
 
@@ -35,4 +39,4 @@ La lecture dans une application multimédia peut être interrompue de différent
 
 * _Que diriez-vous de redémarrer la même session ?_
 
-  Pour plus d’informations sur la reprise d’une session de suivi, voir la section [Reprise des sessions inactives](resuming-inactive.md). Le SDK envoie un ping de reprise pour informer le serveur principal que l’utilisateur(utilisatrice) reprend manuellement la session.
+  Pour plus d’informations sur la reprise d’une session de suivi, voir [Reprise des sessions inactives](resuming-inactive.md).Le SDK envoie un ping de reprise pour informer le serveur principal que l’utilisateur(utilisatrice) reprend manuellement la session.

@@ -5,9 +5,14 @@ uuid: 3ff1205d-7bbe-4016-9bd7-6e34b7862c4c
 exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/KT7NfrYlagrMwAjsrbSNR8YUbj5d-ihU8AfJ6wcbgOA
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: 151
 ht-degree: 98%
 
 ---
@@ -23,8 +28,7 @@ Le SDK Media surveille automatiquement la durée de la lecture multimédia dans 
 * Bloqué
 * Mise en mémoire tampon
 
-Si une session de suivi multimédia reste inactive pendant plus de 30 minutes, celle-ci se fermera automatiquement. Si l’utilisateur ou l’utilisatrice reprend une session de suivi vidéo précédemment inactive (`trackPlay`), Media Heartbeat crée automatiquement une nouvelle session vidéo à l’aide des informations et des métadonnées précédentes et envoie une reprise d’événement de pulsation. Pour plus d’informations, voir [Paramètres audio et vidéo.](/help/implementation/variables/audio-video-parameters.md)
-
+Si une session de suivi multimédia reste inactive pendant plus de 30 minutes, celle-ci se fermera automatiquement. Si l’utilisateur ou l’utilisatrice reprend une session de suivi vidéo précédemment inactive (`trackPlay`), Media Heartbeat crée automatiquement une nouvelle session vidéo à l’aide des informations et des métadonnées précédentes et envoie une reprise d’événement de pulsation.
 
 ## Reprise manuelle d’une session précédemment fermée
 

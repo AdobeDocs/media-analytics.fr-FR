@@ -4,10 +4,16 @@ description: Découvrez comment mettre en œuvre le suivi principal à lʼaide d
 exl-id: f3145450-82ba-4790-91a4-9d2cc97bbaa5
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/bIOfr94Q7wJLH9LfRg9VLIEJuS6JPvcgSWS62YCVguc
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '747'
-ht-degree: 87%
+source-wordcount: 759
+ht-degree: 85%
 
 ---
 
@@ -66,8 +72,6 @@ Cette documentation aborde le suivi dans la version 3.x du SDK.
      >Il est facultatif de joindre les métadonnées standard.
 
       * Référence à l’API des clés de métadonnées multimédia - [Clés de métadonnées standard - JavaScript](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript)
-
-        Consultez la liste complète des métadonnées disponibles dans la rubrique [Paramètres audio et vidéo](/help/implementation/variables/audio-video-parameters.md).
 
    * **Métadonnées personnalisées**
 
@@ -128,7 +132,7 @@ Cette documentation aborde le suivi dans la version 3.x du SDK.
 
 1. **Mettre à jour la valeur du curseur de lecture**
 
-   Lorsque le curseur de lecture du média change, avertissez le SDK en appelant l’API `mediaUpdatePlayhead`. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour.
+   Lorsque le curseur de lecture du média change, avertissez le SDK en appelant l’API `mediaUpdatePlayhead`. <br /> Pour la vidéo à la demande (VOD), la valeur est spécifiée en secondes à partir du début de l’élément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour.
 
    ```
    tracker.updatePlayhead(position)

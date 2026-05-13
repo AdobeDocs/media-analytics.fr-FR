@@ -3,15 +3,19 @@ title: Obtenir les données de rapport JSON sur les observateurs simultanés ave
 description: Découvrez comment obtenir les données de rapport sur les visionneuses simultanées à l’aide des API Analytics 2.0. Affichez un exemple de requête et de réponse.
 uuid: 9168f114-2459-4951-a06c-57b735d09dc0
 exl-id: f84f63d3-b0d0-45fe-95a7-159f22d60660
-feature: "Streaming Media, Workspace Basics"
+feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/rXu8Om0i6ELI2TGRANqhn9GTqq1DM1Obo7ZbCC1Ox4E
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 100%
+source-wordcount: 190
+ht-degree: 90%
 
 ---
-
 
 # Obtenir les données de rapport JSON sur les observateurs simultanés avec les API Analytics 2.0{#get-concurrent-viewers-json-report-data}
 
@@ -22,7 +26,7 @@ Vous pouvez obtenir des données de rapport sur les observateurs simultanés à 
 1. Demandez une quantité suffisante de données.
 
    * La plage de données que vous spécifiez dans le rapport rassemble toutes les données d’observateurs simultanés _au moment de la fin de la session vidéo._
-Vous devez donc tenir compte des sessions qui commencent un jour et se terminent après minuit, c’est-à-dire le lendemain.
+Vous devez tenir compte des sessions qui commencent un jour et se terminent après minuit, soit le lendemain.
 
    * Demandez un jour de données supplémentaire à la période prévue dans votre requête, mais dans votre analyse _*utilisez uniquement les données prévues.*_
 
@@ -131,7 +135,7 @@ You can extract the concurrent viewers report data using the Experience Cloud AP
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=fr)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 

@@ -4,10 +4,15 @@ description: Découvrez comment envoyer des données de médias en flux continu 
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: de40ebd9-46be-4a52-866f-7bb2589fce28
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/yr1qlonZDoevoT-vFo-WknObsb-CegTihWEFZN5TdAE
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 1%
+source-wordcount: 584
+ht-degree: 8%
 
 ---
 
@@ -28,7 +33,7 @@ Pour utiliser le composant `streamingMedia` de Web SDK, les conditions préalabl
 * Vous devez utiliser Web SDK version 2.20.0 ou ultérieure. Voir la [présentation de l’installation de Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview) pour savoir comment installer la dernière version.
 * Activez l’option **[[!UICONTROL Media Analytics]](https://experienceleague.adobe.com/fr/docs/experience-platform/datastreams/configure)** pour le flux de données que vous utilisez.
 * Assurez-vous que le schéma utilisé par votre flux de données comprend les champs de schéma Media Collection.
-* Configurez les services de médias en flux continu dans la configuration de Web SDK, comme illustré sur cette page, soit par le biais de l’extension de balise [tag](#tag-extension), soit par le biais de la bibliothèque JavaScript [&#128279;](#library).
+* Configurez les services de médias en flux continu dans la configuration de Web SDK, comme illustré sur cette page, soit par le biais de l’extension de balise [tag](#tag-extension), soit par le biais de la bibliothèque JavaScript [](#library).
 
 Suivez les étapes décrites dans cette page pour migrer votre mise en œuvre de services de streaming multimédia de Media JS vers Web SDK.
 
@@ -68,7 +73,7 @@ alloy("configure", {
 });
 ```
 
-Consultez le composant `streamingMedia` de Web SDK [documentation](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/streamingmedia) pour obtenir des informations complètes sur sa configuration.
+Consultez le composant `streamingMedia` de Web SDK [documentation](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) pour obtenir des informations complètes sur sa configuration.
 
 ### Étape 3 : obtenir l’instance de suivi multimédia lors de la migration depuis Media JS SDK
 
@@ -76,7 +81,7 @@ Pour les clients qui utilisent le SDK Media JS, Web SDK fournit un chemin de mig
 
 [!DNL Web SDK] comprend une commande permettant de récupérer un dispositif de suivi Media Analytics. Vous pouvez utiliser cette commande pour créer une instance d’objet, puis, à l’aide des mêmes API que celles fournies par la [bibliothèque JS Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), effectuer le suivi des événements multimédia.
 
-Consultez la documentation [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) pour plus d’informations sur les méthodes prises en charge.
+Consultez la documentation [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) pour plus d’informations sur les méthodes prises en charge.
 
 Le fragment de code ci-dessous indique comment récupérer l’instance de suivi multimédia dans Media JS.
 

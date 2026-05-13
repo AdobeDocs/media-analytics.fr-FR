@@ -4,20 +4,25 @@ description: Découvrez comment migrer des audiences vers le nouveau type de don
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 67e67a4b-bd61-4247-93b7-261bd348d29b
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Y-Y-xWKm-zOzaQm8kMbgGx8r6BTNLl-Q5AltlF5v7aA
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '756'
+source-wordcount: 759
 ht-degree: 1%
 
 ---
 
 # Migrer le Customer Journey Analytics pour utiliser les nouveaux champs de médias en flux continu
 
-Ce document décrit comment une configuration Customer Journey Analytics qui utilise le type de données Adobe Streaming Media Services appelé « Media » doit être mise à jour pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) ».
+Ce document décrit comment une configuration Customer Journey Analytics qui utilise le type de données Adobe Streaming Media Services appelé « Media » doit être mise à jour pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) ».
 
 ## Migration de Customer Journey Analytics
 
-Pour migrer une configuration Customer Journey Analytics de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails sur les rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez mettre à jour les configurations suivantes qui utilisent l’ancien type de données :
+Pour migrer une configuration Customer Journey Analytics de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails sur les rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez mettre à jour les configurations suivantes qui utilisent l’ancien type de données :
 
 * Vues des données
 
@@ -43,7 +48,7 @@ Pour migrer des champs dérivés vers le nouveau type de données :
 
 1. Remplacez tous les anciens champs du champ dérivé par le nouveau champ correspondant de « Détails sur les rapports multimédia ».
 
-Pour mapper les anciens champs aux nouveaux champs, reportez-vous au paramètre [Content ID](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-id) sur la page [Paramètres audio et vidéo](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters). L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
+Consultez le paramètre [ID de contenu](/help/reporting/dimensions/content.md) et le reste des variables de médias en flux continu documentés sous [Services de médias en flux continu](/help/media-overview.md) pour mapper les anciens champs aux nouveaux champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
 
 ![Anciens et nouveaux chemins d’accès aux champs XDM](assets/field-paths-updated.jpeg)
 
@@ -61,7 +66,7 @@ Vous pouvez utiliser l’une des options suivantes pour mettre à jour la vue de
 
    ![Ancien chemin du champ dans la vue de données](assets/old-field-data-view.jpeg)
 
-1. Vérifiez le nouveau champ correspondant dans la section [Décalage de chapitre](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-offset) de l’article [Paramètres de chapitre](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/chapter-parameters).
+1. Vérifiez le nouveau champ correspondant dans l’article [Décalage de chapitre](/help/reporting/dimensions/chapter-offset.md).
 
 1. Recherchez le nouveau champ correspondant dans la vue de données.
 
@@ -81,11 +86,11 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
    ![Personnaliser le nouveau champ pour créer une vue de données](assets/create-derived-field2.jpeg)
 
-1. Renseignez la clause [!UICONTROL **If**] à l’aide de la valeur du paramètre **Chemin d’accès au champ XDM de la création de rapports**, comme indiqué dans le paramètre [Nom du chapitre](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/chapter-parameters#chapter-name) sur la page [Paramètres de chapitre](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/chapter-parameters).
+1. Renseignez la clause [!UICONTROL **If**] à l’aide de la valeur du **chemin d’accès au champ XDM de la création de rapports**, comme indiqué sur la page [nom du chapitre](/help/reporting/dimensions/chapter-name.md).
 
-   ![&#x200B; Nom du chapitre &#x200B;](assets/chapter-name.jpeg)
+   ![ Nom du chapitre ](assets/chapter-name.jpeg)
 
-   ![&#x200B; Nom du chapitre &#x200B;](assets/chapter-name2.jpeg)
+   ![ Nom du chapitre ](assets/chapter-name2.jpeg)
 
    ![Condition de champ dérivé](assets/derived-field-condition.jpeg)
 
@@ -93,9 +98,9 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
 1. Renseignez la valeur de secours à l’aide de l’ancien champ du type de données « Média » obsolète.
 
-   ![&#x200B; Valeur de secours &#x200B;](assets/fallback-value.jpeg)
+   ![ Valeur de secours ](assets/fallback-value.jpeg)
 
-   ![&#x200B; Valeur de secours &#x200B;](assets/fallback-value2.jpeg)
+   ![ Valeur de secours ](assets/fallback-value2.jpeg)
 
    Il s’agit de la définition finale du champ dérivé.
 
@@ -103,7 +108,7 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
 1. Pour mettre à jour les champs dérivés, recherchez un champ dérivé qui utilise les anciens champs obsolètes (chemin commençant par `media.mediaTimed`).
 
-   ![champ dérivé &#x200B;](assets/old-derived-field.jpeg)
+   ![champ dérivé ](assets/old-derived-field.jpeg)
 
 1. Placez le pointeur de la souris sur le champ dérivé à mettre à jour, puis cliquez sur l’icône [!UICONTROL **Modifier**].
 
@@ -111,7 +116,7 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
    ![Localiser le champ avec l’ancien type de données](assets/locate-fields-with-old-datatype.jpeg)
 
-1. Vérifiez le nouveau champ correspondant dans la section [&#x200B; Nom du contenu (variable)](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable) de l’article [Paramètres de streaming multimédia](https://experienceleague.adobe.com/fr/docs/media-analytics/using/implementation/variables/audio-video-parameters#content-name-variable).
+1. Vérifiez le nouveau champ correspondant dans l’article [Nom du contenu](/help/reporting/dimensions/content-name.md).
 
 1. Remplacez l’ancien champ par le nouveau.
 

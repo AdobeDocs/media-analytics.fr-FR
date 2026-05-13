@@ -5,16 +5,22 @@ uuid: 0718689d-9602-4e3f-833c-8297aae1d909
 exl-id: 82d3e5d7-4f88-425c-8bdb-e9101fc1db92
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/rtLBRcyLB8D8HPBj-Qw5LD824Fu8KeUDsLokJCn2Wfc
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 98%
+source-wordcount: 721
+ht-degree: 93%
 
 ---
 
-# Suivi du contenu téléchargé {#track-downloaded-content}
+# Suivi du contenu téléchargé{#track-downloaded-content}
 
-## Aperçu  {#overview}
+## Aperçu {#overview}
 
 La fonctionnalité Contenu téléchargé permet d’effectuer le suivi de la consommation multimédia lorsqu’un utilisateur est hors ligne. Par exemple, un utilisateur télécharge et installe une application sur un appareil mobile, puis l’utilise pour télécharger du contenu dans le stockage local de l’appareil. Pour effectuer le suivi des données téléchargées, Adobe a développé la fonctionnalité Contenu téléchargé. Grâce à cette fonction, lorsque l’utilisateur lit du contenu stocké localement sur un appareil, les données de suivi sont elles aussi stockées sur l’appareil, indépendamment de la connectivité de celui-ci. Lorsque l’utilisateur met fin à la session de lecture et que l’appareil est à nouveau en ligne, les informations de suivi stockées sont envoyées au serveur principal de l’API Media Collection au sein d’une seule payload. Les informations de suivi stockées sont ensuite traitées et déclarées comme d’habitude dans l’API Media Collection.
 
@@ -57,7 +63,7 @@ La fonctionnalité Contenu téléchargé est la version hors ligne de l’API Me
 
 ## Intégration avec Adobe Analytics {#integration-with-adobe-analtyics}
 
-Lors du calcul des appels de début/fin Analytics pour le scénario de contenu téléchargé, le serveur principal définit un champ Analytics supplémentaire appelé `ts.` Ceux-ci sont des horodatages pour les premier et dernier événements reçus (début et fin). Ce mécanisme permet de placer une session multimédia terminée au bon moment (c’est-à-dire que même si l’utilisateur ne revient pas en ligne pendant plusieurs jours, la session multimédia est indiquée comme ayant eu lieu au moment où le contenu a été visionné). Vous devez activer ce mécanisme du côté Adobe Analytics en créant une _suite de rapports facultative horodatée._ Pour activer une suite de rapports facultative horodatée, consultez [Horodatages facultatifs.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=fr)
+Lors du calcul des appels de début/fin Analytics pour le scénario de contenu téléchargé, le serveur principal définit un champ Analytics supplémentaire appelé `ts.` Ceux-ci sont des horodatages pour les premier et dernier événements reçus (début et fin). Ce mécanisme permet de placer une session multimédia terminée au bon moment (c’est-à-dire que même si l’utilisateur ne revient pas en ligne pendant plusieurs jours, la session multimédia est indiquée comme ayant eu lieu au moment où le contenu a été visionné). Vous devez activer ce mécanisme côté Adobe Analytics en créant une suite de rapports _horodatage facultatif_. Pour activer une suite de rapports avec horodatage facultatif, voir [Horodatages facultatifs.](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/timestamp-optional.html?lang=fr)
 
 ## Comparaison d’exemples de sessions {#sample-session-comparison}
 

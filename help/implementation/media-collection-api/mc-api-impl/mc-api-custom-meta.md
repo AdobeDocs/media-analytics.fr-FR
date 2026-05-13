@@ -5,18 +5,23 @@ uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 3cebd16d47a0dceb66e7fe1faf312cef14638a3e
+TQID: https://experienceleague.adobe.com/sEVJa-FPqZiSc4Hdr7lQfNbECS2lxckBmqAYhGHmx2w
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: 449
 ht-degree: 7%
 
 ---
 
 # Prise en charge des métadonnées personnalisées{#custom-metadata-support}
 
-L’API Media Collection vous permet d’envoyer des paires clé-valeur personnalisées avec des paramètres standard dans les événements `sessionStart`, `adStart` et `chapterStart`. Les métadonnées personnalisées sont transférées vers **&#x200B;**&#x200B;avec les événements de fermeture de média correspondants.
+L’API Media Collection vous permet d’envoyer des paires clé-valeur personnalisées avec des paramètres standard dans les événements `sessionStart`, `adStart` et `chapterStart`. Les métadonnées personnalisées sont transférées vers **** avec les événements de fermeture de média correspondants.
 
-Pour rendre ces données disponibles dans Analysis Workspace, les clients doivent définir des eVars personnalisées et configurer des règles de traitement pour les remplir en fonction de leur cas d’utilisation. Une fois mappées à des eVars ou des props, les données sont également disponibles dans Adobe Experience Platform par le biais des chemins eVar correspondants, à condition que le [&#x200B; connecteur source Analytics &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) soit configuré.
+Pour rendre ces données disponibles dans Analysis Workspace, les clients doivent définir des eVars personnalisées et configurer des règles de traitement pour les remplir en fonction de leur cas d’utilisation. Une fois mappées à des eVars ou des props, les données sont également disponibles dans Adobe Experience Platform par le biais des chemins eVar correspondants, à condition que le [ connecteur source Analytics ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) soit configuré.
 
 Pour les implémentations basées sur XDM utilisant Experience Edge, consultez [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/implementation-edge-custom-metadata.md).
 
@@ -169,7 +174,7 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 ## Documentation connexe
 
 - [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/implementation-edge-custom-metadata.md) — Envoyez des métadonnées personnalisées via Experience Edge à Analytics et à AEP
-- [Connecteur source Adobe Analytics pour les données de suite de rapports &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importer les données Analytics dans Adobe Experience Platform
+- [Connecteur source Adobe Analytics pour les données de suite de rapports ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importer les données Analytics dans Adobe Experience Platform
 
 <!--
 - [Session endpoints](sessions.md) — Session lifecycle management

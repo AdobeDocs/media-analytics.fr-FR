@@ -5,10 +5,16 @@ uuid: c4b3fead-1b27-484b-ab6a-39f1ae0f03f2
 exl-id: 3781f0f7-be75-43e5-a40b-a34956dce36e
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/ChiE4jNDe-8GnbzNp8f9epCCFi6Hq9FkwrLzZEbcxcU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: e7d92df1-c5ba-4e93-85df-f83171b889beid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 99%
+source-wordcount: 854
+ht-degree: 84%
 
 ---
 
@@ -133,14 +139,14 @@ Exécutez et enregistrez les actions suivantes (dans l’ordre) :
 
      Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/legacy/validation/test-call-details.md#play-main-content)
 
-1. **Suspendre la lecture pendant au moins 30 secondes.** Lors de la mise en pause du lecteur multimédia, les appels d’événement de pause sont envoyés par le SDK au serveur Media Analytics toutes les 10 secondes. Après la pause, les événements de lecture reprennent normalement.
+1. **Mettre en pause pendant la lecture pendant au moins 30 secondes.** Lors de la mise en pause du lecteur multimédia, les appels d’événement de mise en pause sont envoyés par le SDK au serveur Media Analytics toutes les 10 secondes. Après la pause, les événements de lecture reprennent normalement.
 
    Pour les paramètres d’appel et les métadonnées, voir [Test des détails d’appel.](/help/legacy/validation/test-call-details.md#pause-main-content)
 
-1. **Rechercher/faire défiler le média.** Lors du défilement du curseur de lecture multimédia, aucun appel de suivi spécial n’est envoyé. Toutefois, lorsque la lecture multimédia reprend après le défilement, la valeur du curseur de lecture doit refléter la nouvelle position dans le contenu principal.
+1. **Média de recherche/nettoyage.** Lors du nettoyage de la tête de lecture du média, aucun appel de suivi spécial n’est envoyé. Cependant, lorsque la lecture du média reprend après le nettoyage, la valeur de la tête de lecture doit refléter la nouvelle position dans le contenu principal.
 
-1. **Lecture du média (VOD uniquement).** Lorsque le média est relu, un nouvel ensemble d’appels de démarrage du contenu multimédia doit être envoyé (comme s’il s’agissait d’un nouveau départ).
+1. **Média de relecture (VOD uniquement).** Lorsque le fichier multimédia est relu, un nouvel ensemble d’appels Media Start doit être envoyé (comme s’il s’agissait d’un nouveau démarrage).
 
-1. **Afficher le média suivant dans la liste de lecture** Au démarrage du média suivant dans une liste de lecture, un nouvel ensemble d’appels de démarrage du contenu multimédia doit être envoyé.
+1. **Afficher les médias suivants dans la liste de lecture.** Lors du démarrage du média pour le média suivant dans une liste de lecture, un nouvel ensemble d’appels de démarrage du média doit être envoyé.
 
-1. **Changement de média ou de flux.** Lors du changement de diffusion en direct, un appel de fin Media Analytics pour la première diffusion ne doit pas être envoyé. Les appels de démarrage et de lecture du contenu multimédia doivent commencer par le nouveau nom d’affichage et de diffusion et avec les valeurs du curseur de lecture et de durée correctes pour le nouvel affichage.
+1. **Changer de média ou de flux.** Lors du changement de flux en direct, un appel de fin Media Analytics pour le premier flux ne doit pas être envoyé. Les appels de démarrage et de lecture du contenu multimédia doivent commencer par le nouveau nom d’affichage et de diffusion et avec les valeurs du curseur de lecture et de durée correctes pour le nouvel affichage.

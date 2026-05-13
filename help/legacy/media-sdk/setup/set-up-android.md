@@ -5,10 +5,16 @@ uuid: 3ffe3276-a104-4182-9220-038729e9f3d5
 exl-id: 261445bf-3c8b-4658-891d-9a878e0b26ea
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/re7nZLD9IwvufJGicWLArSwdIi6h518q3ZMDf6oqaCI
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 97%
+source-wordcount: 459
+ht-degree: 86%
 
 ---
 
@@ -23,8 +29,10 @@ Découvrez comment configurer des services de streaming multimédia pour les app
 
 ## Conditions préalables
 
-* **Obtention de paramètres de configuration valides pour le SDK Media** Vous pouvez vous procurer ces paramètres auprès d’un représentant Adobe après avoir configuré votre compte Analytics.
-* **Mise en œuvre d’ADBMobile pour Android dans votre application** Pour plus d’informations sur la documentation du kit SDK Adobe Mobile, reportezvous à la rubrique [Kit SDK Android 4.x pour les solutions Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=fr)
+* **Obtention de paramètres de configuration valides pour Media SDK**
+Ces paramètres peuvent être obtenus auprès d’un représentant Adobe une fois votre compte d’analyse configuré.
+* **Implémenter ADBMobile pour Android dans votre application**
+Pour plus d’informations sur la documentation d’Adobe Mobile SDK, voir [Android SDK 4.x pour les solutions Experience Cloud.](https://experienceleague.adobe.com/docs/mobile-services/android/overview.html?lang=fr)
 
 * **Fournissez les informations suivantes à votre lecteur multimédia :**
    * *Une API pour vous abonner aux événements du lecteur* - Le SDK Media exige d’appeler un ensemble d’API simples lorsque des événements se produisent dans votre lecteur.

@@ -5,20 +5,26 @@ uuid: e92e99f4-c395-48aa-8a30-cbdd2f5fc07c
 exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/oOshJZEQmXqgNh5l10-qhLMO8dmph6Tz9mpH0a4FePU
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: 590
 ht-degree: 98%
 
 ---
 
-# Contenu principal en direct {#live-main-content}
+# Contenu principal en direct{#live-main-content}
 
 ## Scénario {#scenario}
 
 Dans ce scénario, il existe une ressource en direct sans publicité lue pendant 40 secondes après avoir rejoint la diffusion en direct.
 
-| Déclencheur | Méthode Heartbeat | Appels réseau | Remarques   |
+| Déclencheur | Méthode Heartbeat | Appels réseau | Notes   |
 |---|---|---|---|
 | L’utilisateur clique sur **[!UICONTROL Lecture]**. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Il peut s’agir d’un utilisateur qui clique sur **[!UICONTROL Lecture]** ou d’un événement de lecture automatique. |
 | La première image du média s’affiche. | `trackPlay` | Heartbeat Content Play | Cette méthode déclenche le retardateur. Les pulsations sont envoyées toutes les 10 secondes tant que la lecture se poursuit. |
@@ -31,7 +37,7 @@ Un grand nombre de ces valeurs que vous pouvez voir dans les appels Adobe Analyt
 
 ### Heartbeat Content Start
 
-| Paramètre | Valeur | Notes |
+| Paramètre | Valeur | Remarques |
 |---|---|---|
 | `s:sc:rsid` | &lt;Identifiant de votre suite de rapports Adobe> |  |
 | `s:sc:tracking_serve` | &lt;URL de votre serveur de suivi Analytics> |  |
@@ -48,7 +54,7 @@ Pendant la lecture du média, un retardateur envoie une ou plusieurs pulsations 
 
 Dans les pulsations de contenu, recherchez quelques éléments spécifiques :
 
-| Paramètre | Valeur | Notes |
+| Paramètre | Valeur | Remarques |
 |---|---|---|
 | `s:event:type` | &quot;play&quot; |  |
 | `l:event:playhead` | &lt;position du curseur de lecture> par exemple, 50, 60, 70 | Ceci doit indiquer la position actuelle du curseur de lecture. |

@@ -3,18 +3,23 @@ title: Présentation multimédia
 description: Utilisez le tableau de bord Aperçu des médias pour afficher des mesures agrégées. Découvrez comment consulter rapidement les performances des médias.
 uuid: bdbd998f-9b5e-40c9-a8ea-12dfa5acd35c
 exl-id: 4fe91372-da41-44c5-bea9-2bba762512ef
-feature: "Streaming Media, Workspace Basics"
+feature: Streaming Media, Workspace Basics
 role: User, Admin
-source-git-commit: 67f1fa8194fa58b2c513e3136d2bc7880f9cb06b
+TQID: https://experienceleague.adobe.com/engzFFk1A-g6oRqo-MnlNfEmVGUmR316Po152Wajm8c
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: 109
+ht-degree: 51%
 
 ---
 
 # Présentation multimédia{#media-overview}
 
-Le tableau de bord Présentation multimédia est conçu pour vous permettre de contrôler les médias sur votre site. L’affichage Présentation multimédia montre plusieurs mesures consolidées afin de vérifier rapidement que les médias fonctionnent comme prévu. Un graphique affiche les démarrages de contenu en regard des démarrages de publicités pour vous donner un aperçu rapide de ces mesures pour chaque élément multimédia.
+Le tableau de bord Présentation des médias est conçu pour vous permettre de surveiller les médias sur l’ensemble de votre site. L’affichage Présentation des médias présente plusieurs mesures agrégées afin que vous puissiez rapidement vérifier que les médias s’exécutent comme prévu. Un graphique affiche les démarrages de contenu en regard des démarrages d’annonce publicitaire afin de vous permettre d’afficher rapidement ces mesures pour chaque élément de média.
 
 ![](assets/media_overview.png)
 

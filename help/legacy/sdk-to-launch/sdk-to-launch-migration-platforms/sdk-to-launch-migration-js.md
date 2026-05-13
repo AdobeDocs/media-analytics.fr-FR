@@ -4,10 +4,16 @@ description: Découvrez comment migrer du SDK Media vers Launch pour JS.
 exl-id: 19b506b2-3070-4a5e-9732-a5cd0867afde
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/N4Fcbg3R9tT9cjUcaw-kcUm6h-QT8TYwatdCe1IdsaM
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c069c44e-5426-4c1a-accc-8028662f2fdeid: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2id: d3cdead0-685a-4489-9250-4bb709942f66
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '415'
-ht-degree: 97%
+source-wordcount: 466
+ht-degree: 77%
 
 ---
 
@@ -25,8 +31,8 @@ ht-degree: 97%
 
 ### SDK Media autonome
 
-Dans le SDK Media autonome, vous configurez le suivi dans l’application avant de le transmettre
-au SDK lorsque vous créez le dispositif de suivi.
+Dans Media SDK autonome, vous configurez le suivi dans l’application
+et transmettez-le au SDK lors de la création du dispositif de suivi.
 
 ```javascript
 //Media Heartbeat initialization
@@ -40,22 +46,22 @@ mediaConfig.ssl = true;
 mediaConfig.debugLogging = true;
 ```
 
-En plus de la configuration `MediaHeartbeat`, la page doit configurer et transmettre
-l’instance `AppMeasurement` et l’instance pour le suivi multimédia `VisitorAPI` afin 
-de fonctionner correctement.
+Outre la configuration `MediaHeartbeat`, la page doit configurer et transmettre .
+l’instance `AppMeasurement` et l’instance `VisitorAPI` pour le suivi multimédia dans l’ordre
+pour fonctionner correctement.
 
 ### Extension de Launch
 
-1. Dans Experience Platform Launch, cliquez sur l’onglet [!UICONTROL Extensions] pour votre 
-propriété Web.
-1. Dans l’onglet [!UICONTROL Catalogue], recherchez l’extension Adobe Media Analytics for Audio and
-Video, puis cliquez sur [!UICONTROL Installer].
+1. Dans Experience Platform Launch, cliquez sur l’onglet [!UICONTROL Extensions] de votre
+propriété web.
+1. Dans l’onglet [!UICONTROL  Catalogue ], recherchez Adobe Media Analytics for Audio et
+Extension vidéo, puis cliquez sur [!UICONTROL  Installer ].
 1. Dans la page des paramètres d’extension, configurez les paramètres de suivi.
 L’extension Media utilisera les paramètres configurés pour le suivi.
 
    ![](assets/launch_config_js.png)
 
-[Guide de l’utilisateur de Launch : installation et configuration de l’extension média](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=fr#install-and-configure-the-ma-extension)
+[Guide de l’utilisateur de Launch - Installation et configuration de l’extension Media](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics/overview.html?lang=fr#install-and-configure-the-ma-extension)
 
 ## Différences dans la création du dispositif de suivi
 
@@ -120,7 +126,7 @@ Transmettez un objet délégué à `get-instance` qui expose les fonctions `getQ
 ### SDK Media
 
 * [Configuration de JavaScript 2.x](/help/legacy/media-sdk/setup/setup-javascript/set-up-js-2.md)
-* [API JS pour SDK Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
+* [API JS Media SDK](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript/MediaHeartbeat.html)
 
 ### Launch
 
