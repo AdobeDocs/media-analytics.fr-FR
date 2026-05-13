@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # Temps passé sur le média
 
-La mesure **Temps passé sur le média** indique le nombre total de secondes de lecture active par session, y compris le contenu principal et les publicités, mais sans les pauses, la mise en mémoire tampon et les blocages. Utilisez-la pour mesurer le temps total pendant lequel la visionneuse a été activement engagée avec le lecteur. Pour le contenu principal uniquement, utilisez [ Temps passé sur le contenu ](content-time-spent.md).
+La mesure **Temps passé sur le média** indique le nombre total de secondes de lecture active par session, y compris le contenu principal et les publicités, mais sans les pauses, la mise en mémoire tampon et les blocages. Utilisez-la pour mesurer le temps total pendant lequel la visionneuse a été activement engagée avec le lecteur. Pour le contenu principal uniquement, utilisez [&#x200B; Temps passé sur le contenu &#x200B;](content-time-spent.md).
 
 ## Méthode de calcul de cette mesure
 

@@ -33,4 +33,4 @@ Le serveur principal du média incrémente le décompte de chaque événement `m
 
 ## Éléments de dimension
 
-Chaque élément est la valeur littérale change-count signalée lors de l&#39;appel de fermeture. Pour les rapports booléens au niveau de la session (si la session a subi un changement de débit), utilisez [ Flux impactés par le changement de débit ](/help/reporting/metrics/bitrate-change-impacted-streams.md).
+Chaque élément est la valeur littérale change-count signalée lors de l&#39;appel de fermeture. Pour les rapports booléens au niveau de la session (si la session a subi un changement de débit), utilisez [&#x200B; Flux impactés par le changement de débit &#x200B;](/help/reporting/metrics/bitrate-change-impacted-streams.md).

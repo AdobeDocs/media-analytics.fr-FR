@@ -15,7 +15,7 @@ ht-degree: 7%
 
 >[!BEGINSHADEBOX]
 
-*Cette page couvre la mesure de reporting **Nombre d’images**Image dans . Voir [Image dans l’image](/help/implementation/variables/player-state/picture-in-picture.md) pour savoir comment collecter cette variable.*
+*Cette page couvre la mesure de reporting **Nombre d’images**&#x200B;Image dans . Voir [Image dans l’image](/help/implementation/variables/player-state/picture-in-picture.md) pour savoir comment collecter cette variable.*
 
 >[!ENDSHADEBOX]
 
