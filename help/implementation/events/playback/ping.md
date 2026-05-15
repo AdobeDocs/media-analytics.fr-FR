@@ -3,17 +3,17 @@ title: Ping
 description: Envoyez une pulsation pour maintenir la session multimédia active et suivre la progression de la lecture à intervalles réguliers.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 6%
+source-wordcount: '218'
+ht-degree: 5%
 
 ---
 
 
 # Ping
 
-L’événement ping est une pulsation qui maintient la session active et suit la progression de la lecture. Envoyez-le sur un minuteur pendant la lecture.
+L’événement ping est une pulsation qui maintient la session active et suit la progression de la lecture. Envoyez-le sur un minuteur pendant la lecture. Sur les SDK mobiles, les pings sont envoyés automatiquement. Sur toutes les autres plateformes, ils doivent être envoyés manuellement selon l’intervalle spécifié.
 
 * **Contenu principal** : première commande ping 10 secondes après le début de la lecture, puis toutes les 10 secondes par la suite
 * **Contenu publicitaire** : toutes les secondes pendant le suivi des publicités

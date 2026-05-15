@@ -3,17 +3,17 @@ title: Début du chapitre
 description: Signalez le début d’un segment de chapitre dans le contenu.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 17%
+source-wordcount: '149'
+ht-degree: 15%
 
 ---
 
 
 # Début du chapitre
 
-L’événement de début de chapitre signale le début d’un chapitre dans le contenu. Le suivi des chapitres est facultatif et n’est pas obligatoire pour le suivi des médias principaux.
+L’événement de début de chapitre signale le début d’un chapitre dans le contenu. Le suivi des chapitres est facultatif et n’est pas obligatoire pour le suivi des médias principaux. Les chapitres ne peuvent pas se chevaucher ; envoyez [Chapitre terminé](chapter-complete.md) ou [Saut de chapitre](chapter-skip.md) pour fermer le chapitre actuel avant d’en démarrer un nouveau.
 
 * **Conditions préalables** : [début de session](../session/session-start.md)
 * **Mesure associée** : [Le chapitre commence](/help/reporting/metrics/chapter-starts.md)

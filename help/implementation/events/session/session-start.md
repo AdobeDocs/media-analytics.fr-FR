@@ -3,10 +3,10 @@ title: Début de la session
 description: Signalez le début d’une session multimédia et obtenez l’identifiant de session requis pour tous les événements suivants.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
 workflow-type: tm+mt
-source-wordcount: '183'
-ht-degree: 12%
+source-wordcount: '221'
+ht-degree: 10%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 12%
 # Début de la session
 
 L’événement de début de session ouvre une session de suivi multimédia. Il doit s’agir du premier événement envoyé pour toute lecture. La réponse renvoie un ID de session que tous les événements suivants d’une même session doivent inclure.
+
+Une session expire automatiquement si **aucun événement n’est reçu pendant 10 minutes** ou s’il n’y a **aucun mouvement du curseur de lecture pendant 30 minutes**. Si une session expire, vous devez appeler à nouveau le démarrage de la session pour obtenir un nouvel ID de session.
 
 * **Conditions préalables** : aucun ; toujours le premier événement
 * **Mesure associée** : [Le média commence](/help/reporting/metrics/media-starts.md)
