@@ -49,20 +49,20 @@ Une session expire automatiquement si l’une des conditions suivantes est rempl
 | [Fin de session](session/session-end.md) | Session | — |
 | [Lecture](playback/play.md) | Lecture | [Le contenu démarre](/help/reporting/metrics/content-starts.md) |
 | [Démarrer la pause](playback/pause-start.md) | Lecture | [Événements Pause](/help/reporting/metrics/pause-events.md) |
-| [ Début de la mémoire tampon ](playback/buffer-start.md) | Lecture | [Événements de mémoire tampon](/help/reporting/metrics/buffer-events.md) |
+| [&#x200B; Début de la mémoire tampon &#x200B;](playback/buffer-start.md) | Lecture | [Événements de mémoire tampon](/help/reporting/metrics/buffer-events.md) |
 | [Changement de débit](playback/bitrate-change.md) | Lecture | [Modifications de débit](/help/reporting/metrics/bitrate-changes.md) |
-| [ Ping ](playback/ping.md) | Lecture | — |
+| [&#x200B; Ping &#x200B;](playback/ping.md) | Lecture | — |
 | [Début de la coupure publicitaire](ads/ad-break-start.md) | Publicités | — |
 | [Début de la publicité](ads/ad-start.md) | Publicités | [La publicité commence](/help/reporting/metrics/ad-starts.md) |
 | [Publicité terminée](ads/ad-complete.md) | Publicités | [Fin de la publicité](/help/reporting/metrics/ad-completes.md) |
 | [Saut d’annonce publicitaire](ads/ad-skip.md) | Publicités | — |
 | [Coupure publicitaire terminée](ads/ad-break-complete.md) | Publicités | — |
-| [ Début du chapitre ](chapters/chapter-start.md) | Chapitres | [Démarrage du chapitre](/help/reporting/metrics/chapter-starts.md) |
+| [&#x200B; Début du chapitre &#x200B;](chapters/chapter-start.md) | Chapitres | [Démarrage du chapitre](/help/reporting/metrics/chapter-starts.md) |
 | [Chapitre terminé](chapters/chapter-complete.md) | Chapitres | [Fin du chapitre](/help/reporting/metrics/chapter-completes.md) |
 | [Saut de chapitre](chapters/chapter-skip.md) | Chapitres | — |
 | [Début état](player-state/state-start.md) | État du lecteur | Varie selon l’état |
 | [Fin de l’état](player-state/state-end.md) | État du lecteur | Varie selon l’état |
-| [Erreur](error.md) | Qualité | [ Flux impactés par l’erreur ](/help/reporting/metrics/error-impacted-streams.md) |
+| [Erreur](error.md) | Qualité | [&#x200B; Flux impactés par l’erreur &#x200B;](/help/reporting/metrics/error-impacted-streams.md) |
 
 >[!MORELIKETHIS]
 >

@@ -32,4 +32,4 @@ Le serveur principal du média incrémente le décompte à chaque événement [c
 | Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 
-Pour les rapports booléens au niveau de la session (si la session a subi un changement de débit), utilisez [ Flux impactés par le changement de débit ](bitrate-change-impacted-streams.md).
+Pour les rapports booléens au niveau de la session (si la session a subi un changement de débit), utilisez [&#x200B; Flux impactés par le changement de débit &#x200B;](bitrate-change-impacted-streams.md).

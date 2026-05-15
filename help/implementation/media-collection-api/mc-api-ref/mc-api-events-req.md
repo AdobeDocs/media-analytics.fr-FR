@@ -6,10 +6,17 @@ exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/yFHQhj33PM209WycWdPZsV-Yi8qN1DN-DC0KyyqFK1I
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
 source-wordcount: 263
@@ -54,7 +61,7 @@ Pour obtenir une liste des types d’événements valides et des exemples d’im
 
 >[!IMPORTANT]
 >
->***Suivi des annonces publicitaires -**vous pouvez uniquement effectuer le suivi des annonces publicitaires dans un`adBreak`*.
+>***Suivi des annonces publicitaires -**&#x200B;vous pouvez uniquement effectuer le suivi des annonces publicitaires dans un`adBreak`*.
 >
 >En l’absence de `adBreakStart` et `adBreakComplete` « fins de livre » autour des publicités, les événements `adStart` et `adComplete` seront simplement ignorés et la durée de la publicité correspondante sera suivie en tant que durée du contenu principal. Cela pourrait avoir un impact significatif sur les données agrégées qui seront disponibles dans Adobe Analytics.
 
@@ -76,7 +83,7 @@ Access-Control-Expose-Headers Location
 | Code de réponse HTTP | Description | Éléments d&#39;action client |
 |---|---|---|
 | **204** | **Pas de contenu.** <br/><br/>L’appel Heartbeat a réussi. | S.O. |
-| 400 **** | **Requête incorrecte.** <br/><br/>Le format de la demande n’était pas correct. | Vérifiez le [Schémas de validation JSON](mc-api-json-validation.md) pour le type de requête. |
-| 404 **** | **Introuvable.** <br/><br/>L’ID de session de la session multimédia est introuvable dans le service principal. | L’application cliente doit utiliser l’API [Sessions request](mc-api-sessions-req.md) pour créer une autre session multimédia et effectuer le suivi sur celle-ci dans des rapports. |
-| 410 **** | **Parti.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus y signaler d’activité. | L’application cliente doit utiliser l’API [Sessions request](mc-api-sessions-req.md) pour créer une autre session multimédia et effectuer le suivi sur celle-ci dans des rapports. |
-| 500 **** | **Erreur du serveur** | S.O. |
+| 400 **&#x200B;**&#x200B;| **Requête incorrecte.** <br/><br/>Le format de la demande n’était pas correct. | Vérifiez le [Schémas de validation JSON](mc-api-json-validation.md) pour le type de requête. |
+| 404 **&#x200B;**&#x200B;| **Introuvable.** <br/><br/>L’ID de session de la session multimédia est introuvable dans le service principal. | L’application cliente doit utiliser l’API [Sessions request](mc-api-sessions-req.md) pour créer une autre session multimédia et effectuer le suivi sur celle-ci dans des rapports. |
+| 410 **&#x200B;**&#x200B;| **Parti.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus y signaler d’activité. | L’application cliente doit utiliser l’API [Sessions request](mc-api-sessions-req.md) pour créer une autre session multimédia et effectuer le suivi sur celle-ci dans des rapports. |
+| 500 **&#x200B;**&#x200B;| **Erreur du serveur** | S.O. |

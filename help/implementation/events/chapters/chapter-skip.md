@@ -67,7 +67,7 @@ m.aepSdk.sendMediaEvent({
 
 ## API Media Edge
 
-Appelez le point d’entrée [ chapterSkip ](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterskip) :
+Appelez le point d’entrée [&#x200B; chapterSkip &#x200B;](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterskip) :
 
 ```sh
 curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterSkip?configId={datastreamID}" \
