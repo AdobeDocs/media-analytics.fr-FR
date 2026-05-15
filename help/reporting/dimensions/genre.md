@@ -3,10 +3,10 @@ title: Genre
 description: Genre du contenu des rapports. Le contenu multigenre est fractionné sur plusieurs éléments de ligne, chacun recevant un poids de mesure égal.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '177'
-ht-degree: 6%
+source-wordcount: '179'
+ht-degree: 7%
 
 ---
 
@@ -28,8 +28,9 @@ Le genre est défini par le lecteur au début de la session.
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.genre` de données contextuelles (stockées sous forme de variable de liste) lorsque [[!UICONTROL Métadonnées vidéo]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) ou [`mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) (hérité) |
-| Flux de données | `videogenre, post_videogenre` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) ou [`mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) (hérité) |
+| Flux de données | `videogenre`, `post_videogenre` |
+| Audience Manager | `c_contextdata.a.media.genre` |
 
 ## Éléments de dimension
 

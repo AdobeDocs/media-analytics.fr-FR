@@ -3,10 +3,10 @@ title: Chemin du média
 description: Capture l’identifiant du contenu en tant que variable de trafic pour l’analyse des chemins.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 4%
+source-wordcount: '229'
+ht-degree: 5%
 
 ---
 
@@ -23,7 +23,12 @@ Le chemin d’accès au média est automatiquement dérivé de l’identifiant d
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des données contextuelles `a.media.name` en tant que variable de trafic (prop) lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
 | Customer Journey Analytics | N/A — utiliser [Contenu](content.md) pour l&#39;analyse des chemins |
-| Flux de données | `videopath, post_videopath` |
+| Flux de données | `videopath`, `post_videopath` |
+| Audience Manager | `c_contextdata.a.media.name` |
+
+>[!NOTE]
+>
+>Les props Adobe Analytics sont limitées à 100 octets. Les valeurs de plus de 100 octets sont tronquées.
 
 >[!IMPORTANT]
 >

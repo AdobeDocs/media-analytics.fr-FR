@@ -3,9 +3,9 @@ title: Heure de début
 description: Définissez l’heure de démarrage du lecteur, en millisecondes, de sorte que le serveur principal puisse signaler la qualité du délai de première image.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '216'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ La variable time to start correspond au temps écoulé, en millisecondes, entre 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.qoe.timeToStart` |
-| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

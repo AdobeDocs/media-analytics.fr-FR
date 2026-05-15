@@ -3,10 +3,10 @@ title: Événements de mémoire tampon (dimension)
 description: Indique le nombre d’événements de mise en mémoire tampon par session.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 5%
+source-wordcount: '173'
+ht-degree: 6%
 
 ---
 
@@ -28,8 +28,9 @@ Le serveur principal du média incrémente le nombre chaque fois que le lecteur 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.bufferCount` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/media-reports-enable.md) est activée. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Flux de données | `videoqoebuffercountevar, post_videoqoebuffercountevar` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Flux de données | `videoqoebuffercountevar`, `post_videoqoebuffercountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.bufferCount` |
 
 ## Éléments de dimension
 

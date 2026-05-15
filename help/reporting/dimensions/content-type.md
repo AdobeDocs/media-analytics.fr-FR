@@ -3,10 +3,10 @@ title: Type de contenu
 description: Indique le format du flux (VOD, Live, Linéaire, podcast, chanson, etc.).
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 8%
+source-wordcount: '199'
+ht-degree: 9%
 
 ---
 
@@ -28,8 +28,9 @@ Le type de contenu est défini par le lecteur au début de la session et transmi
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.contentType` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.contentType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `videocontenttype, post_videocontenttype` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `videocontenttype`, `post_videocontenttype` |
+| Audience Manager | `c_contextdata.a.contentType` |
 
 >[!IMPORTANT]
 >
@@ -48,6 +49,6 @@ Les valeurs définies par Adobe renseignent les segments et les rapports intégr
 
 | Segment | Composants de |
 | --- | --- |
-| [!UICONTROL Contenu &#x200B;] | Type de contenu = `vod` |
+| [!UICONTROL Contenu ] | Type de contenu = `vod` |
 | [!UICONTROL Contenu en direct] | Type de contenu = `live` |
 | [!UICONTROL Contenu linéaire] | Type de contenu = `linear` |

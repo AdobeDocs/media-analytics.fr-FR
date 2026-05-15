@@ -3,9 +3,9 @@ title: Type d’affichage
 description: Identifiez le format du contenu (épisode complet, aperçu, clip ou autre) à l’aide d’un code entier de chaîne.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '194'
+source-wordcount: '197'
 ht-degree: 13%
 
 ---
@@ -31,9 +31,10 @@ Utilisez-le pour séparer l’affichage du programme complet du contenu court, t
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.type` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.type` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

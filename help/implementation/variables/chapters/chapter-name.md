@@ -3,10 +3,10 @@ title: Nom du chapitre
 description: Définissez le nom convivial de chaque chapitre afin que le rapport au niveau du chapitre puisse être divisé par titre de chapitre.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 14%
+source-wordcount: '187'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +24,14 @@ La variable de nom du chapitre est le titre lisible d’un chapitre (par exemple
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.chapter.friendlyName` |
-| **champ de collection XDM** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.chapter.friendlyName` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin du chapitre |
+| **Envoyé avec** | [Début du chapitre](/help/implementation/events/chapters/chapter-start.md), fermeture du chapitre |
 
-## SDK web
+## SDK Web
 
-`friendlyName` à l’intérieur des `mediaCollection.chapterDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+`friendlyName` à l’intérieur des `mediaCollection.chapterDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -50,7 +51,7 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+## SDK Mobile
 
 Transmettez le nom du chapitre en tant que premier argument (`name`) à `createChapterObject`.
 
@@ -97,7 +98,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+## API Media Edge
 
 Appelez le point d’entrée [chapterStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterstart) avec `friendlyName` à l’intérieur du `mediaCollection.chapterDetails` :
 
@@ -121,7 +122,7 @@ Appelez le point d’entrée [chapterStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK Media
+## Media SDK
 
 Transmettez le nom du chapitre comme premier argument à `ADB.Media.createChapterObject` :
 

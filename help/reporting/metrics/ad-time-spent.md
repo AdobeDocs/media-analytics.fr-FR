@@ -3,17 +3,17 @@ title: Temps passé sur la publicité
 description: Indique le nombre total de secondes de lecture de publicité active par session.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '160'
-ht-degree: 8%
+source-wordcount: '162'
+ht-degree: 9%
 
 ---
 
 
 # Temps passé sur la publicité
 
-La mesure **Temps passé sur l’annonce publicitaire** indique le nombre total de secondes de lecture active de l’annonce publicitaire par session, à l’exclusion des pauses, de la mise en mémoire tampon et des blocages. Associez-le à [&#x200B; Temps passé sur le contenu &#x200B;](/help/reporting/metrics/content-time-spent.md) pour comparer la charge publicitaire à l’engagement sur le contenu.
+La mesure **Temps passé sur l’annonce publicitaire** indique le nombre total de secondes de lecture active de l’annonce publicitaire par session, à l’exclusion des pauses, de la mise en mémoire tampon et des blocages. Associez-le à [ Temps passé sur le contenu ](/help/reporting/metrics/content-time-spent.md) pour comparer la charge publicitaire à l’engagement sur le contenu.
 
 ## Méthode de calcul de cette mesure
 
@@ -22,5 +22,6 @@ Le serveur principal du média additionne le temps d’horloge murale écoulé e
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.timePlayed` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.timePlayed`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.timePlayed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Audience Manager | `c_contextdata.a.media.ad.timePlayed` |

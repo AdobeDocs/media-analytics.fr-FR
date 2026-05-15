@@ -3,10 +3,10 @@ title: Genre
 description: Définissez le genre du contenu sous la forme d’une chaîne délimitée par des virgules. Le contenu multigenre est fractionné sur plusieurs éléments de ligne dans les rapports.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 13%
+source-wordcount: '226'
+ht-degree: 12%
 
 ---
 
@@ -28,9 +28,10 @@ La variable genre correspond au genre de contenu tel que défini par le producte
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.genre` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.genre` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

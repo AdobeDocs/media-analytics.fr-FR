@@ -3,10 +3,10 @@ title: ID d'erreurs externes
 description: Signale les identifiants d’erreur uniques provenant de sources externes telles que les erreurs CDN.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 6%
+source-wordcount: '155'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ La dimension **ID d’erreur externes** signale des identifiants d’erreur uniq
 
 ## Mode de remplissage de cette dimension
 
-Le lecteur transmet des identifiants d’erreur externes au dispositif de suivi lors d’événements `media.error`. Le serveur principal collecte des identifiants uniques tout au long de la session et les signale lors de l’appel de fermeture.
+Le lecteur transmet les identifiants d’erreur externes au dispositif de suivi lors des événements [error](/help/implementation/events/error.md). Le serveur principal collecte des identifiants uniques tout au long de la session et les signale lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.externalErrors` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/media-reports-enable.md) est activée. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.externalErrors`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.externalErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Flux de données | `videoqoeextneralerrors` |
+| Audience Manager | `c_contextdata.a.media.qoe.externalErrors` |
 
 ## Éléments de dimension
 

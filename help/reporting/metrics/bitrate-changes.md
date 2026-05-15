@@ -3,10 +3,10 @@ title: Modifications du débit (mesure)
 description: Comptabilise les événements de changement de débit pour les sommes et les moyennes entre les sessions.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '204'
-ht-degree: 6%
+source-wordcount: '208'
+ht-degree: 7%
 
 ---
 
@@ -23,12 +23,13 @@ La mesure **Changements de débit** comptabilise les événements de changement 
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média incrémente le décompte de chaque événement `media.bitrateChange` reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média incrémente le décompte à chaque événement [changement de débit](/help/implementation/events/playback/bitrate-change.md) reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.bitrateChangeCount` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/media-reports-enable.md) est activée. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bitrateChangeCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Audience Manager | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 
-Pour les rapports booléens au niveau de la session (si la session a subi un changement de débit), utilisez [&#x200B; Flux impactés par le changement de débit &#x200B;](bitrate-change-impacted-streams.md).
+Pour les rapports booléens au niveau de la session (si la session a subi un changement de débit), utilisez [ Flux impactés par le changement de débit ](bitrate-change-impacted-streams.md).

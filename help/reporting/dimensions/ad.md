@@ -3,10 +3,10 @@ title: Publicité
 description: Indique chaque publicité lue, indexée par l’ID de publicité.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 6%
+source-wordcount: '186'
+ht-degree: 7%
 
 ---
 
@@ -19,17 +19,18 @@ ht-degree: 6%
 
 >[!ENDSHADEBOX]
 
-La dimension **Annonce** signale chaque annonce publicitaire unique lue, indexée par l’ID d’annonce publicitaire défini sur `media.adStart`. La dimension est la répartition principale pour les rapports sur les publicités et la clé de jointure pour les classifications au niveau des publicités, telles que le nom de la publicité, la longueur de la publicité et l’identifiant Creative.
+La dimension **Annonce** signale chaque annonce publicitaire unique lue, indexée par l’ID d’annonce publicitaire défini au [début de l’annonce](/help/implementation/events/ads/ad-start.md). La dimension est la répartition principale pour les rapports sur les publicités et la clé de jointure pour les classifications au niveau des publicités, telles que le nom de la publicité, la longueur de la publicité et l’identifiant Creative.
 
 ## Mode de remplissage de cette dimension
 
-La publicité est définie par le lecteur sur chaque événement `media.adStart` comme identifiant stable de la publicité.
+La publicité est définie par le lecteur à chaque événement [début de la publicité](/help/implementation/events/ads/ad-start.md) comme identifiant stable de la publicité.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.name` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) est activé. Persiste pendant la durée de la visite. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.name`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Flux de données | `videoad, post_videoad` |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Flux de données | `videoad`, `post_videoad` |
+| Audience Manager | `c_contextdata.a.media.ad.name` |
 
 >[!IMPORTANT]
 >
@@ -37,4 +38,4 @@ La publicité est définie par le lecteur sur chaque événement `media.adStart`
 
 ## Éléments de dimension
 
-Chaque élément est un ID d’annonce publicitaire unique signalé sur `media.adStart`. Utilisez un identifiant stable par contenu publicitaire afin que la même annonce publicitaire s’affiche sur une seule ligne entre les sessions.
+Chaque élément est un ID d’annonce publicitaire unique signalé au [début de l’annonce](/help/implementation/events/ads/ad-start.md). Utilisez un identifiant stable par contenu publicitaire afin que la même annonce publicitaire s’affiche sur une seule ligne entre les sessions.

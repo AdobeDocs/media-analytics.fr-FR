@@ -3,10 +3,10 @@ title: ID de ressource
 description: Définissez l’ID de ressource, un identifiant de secteur stable pour la ressource multimédia, tel qu’un EIDR ou un ID TMS/Gracenote.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 13%
+source-wordcount: '239'
+ht-degree: 12%
 
 ---
 
@@ -28,9 +28,10 @@ La variable d’ID de ressource est l’identifiant unique de la ressource de m�
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.asset` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.assetID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.asset` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

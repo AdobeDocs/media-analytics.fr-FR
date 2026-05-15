@@ -3,10 +3,10 @@ title: Chapitre
 description: Indique chaque chapitre lu unique, indexé par un identifiant de chapitre généré automatiquement.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 6%
+source-wordcount: '194'
+ht-degree: 8%
 
 ---
 
@@ -17,13 +17,14 @@ La dimension **Chapitre** signale chaque chapitre lu unique, indexé par un iden
 
 ## Mode de remplissage de cette dimension
 
-L’identifiant du chapitre est généré automatiquement lors du déclenchement de l’`media.chapterStart`. La valeur n’est pas définie directement ; elle est dérivée de la position du chapitre, du décalage et de l’identifiant du contenu.
+L’identifiant de chapitre est généré automatiquement lorsqu’un événement [début de chapitre](/help/implementation/events/chapters/chapter-start.md) se déclenche. La valeur n’est pas définie directement ; elle est dérivée de la position du chapitre, du décalage et de l’identifiant du contenu.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.chapter.name` de données contextuelles lorsque l’option [[!UICONTROL Chapitres de médias]](/help/reporting/media-reports-enable.md) est activée. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
-| Flux de données | `videochapter, post_videochapter` |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Flux de données | `videochapter`, `post_videochapter` |
+| Audience Manager | S.O. |
 
 ## Éléments de dimension
 

@@ -3,10 +3,10 @@ title: Type de contenu
 description: Définissez le type de contenu pour identifier le format du flux (VOD, Live, Linéaire, podcast, chanson, etc.).
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 10%
+source-wordcount: '261'
+ht-degree: 9%
 
 ---
 
@@ -29,9 +29,10 @@ Valeurs recommandées :
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.contentType` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.contentType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.contentType` |
 | **Obligatoire** | Oui |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

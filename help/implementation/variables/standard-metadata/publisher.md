@@ -3,9 +3,9 @@ title: Éditeur
 description: Définissez l’éditeur de contenu audio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '174'
 ht-degree: 16%
 
 ---
@@ -24,9 +24,10 @@ La variable publisher est le nom de l&#39;éditeur de contenu audio (par exemple
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.publisher` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.publisher` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

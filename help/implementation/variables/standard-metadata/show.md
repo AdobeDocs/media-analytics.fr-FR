@@ -3,9 +3,9 @@ title: Programme
 description: Définissez le nom de l’émission pour le contenu vidéo qui fait partie d’une série, de sorte que les épisodes soient regroupés dans un seul programme dans les rapports.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '221'
 ht-degree: 13%
 
 ---
@@ -24,9 +24,10 @@ La variable show est le nom du programme ou de la série (par exemple, `"Blindin
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.show` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.show`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.show` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

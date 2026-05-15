@@ -3,9 +3,9 @@ title: Type de flux multimédia
 description: Identifiez le type de flux de diffusion (par exemple, East-HD ou West-SD) pour le contenu qui varie selon la région ou la qualité.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '203'
 ht-degree: 13%
 
 ---
@@ -24,9 +24,10 @@ La variable de type de flux multimédia identifie le flux de diffusion (par exem
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.feed` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.feed` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

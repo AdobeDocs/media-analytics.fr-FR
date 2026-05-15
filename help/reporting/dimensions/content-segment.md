@@ -3,10 +3,10 @@ title: Segment de contenu
 description: Indique la plage de têtes de lecture vue au cours d’une session, en minutes.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 5%
+source-wordcount: '200'
+ht-degree: 6%
 
 ---
 
@@ -22,8 +22,9 @@ Le segment de contenu est calculé par le serveur principal du média à partir 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.segment` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `videosegment, post_videosegment` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.segment`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `videosegment`, `post_videosegment` |
+| Audience Manager | `c_contextdata.a.media.segment` |
 
 >[!IMPORTANT]
 >

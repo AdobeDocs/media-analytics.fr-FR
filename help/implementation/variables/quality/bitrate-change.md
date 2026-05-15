@@ -3,7 +3,7 @@ title: Changement de débit
 description: Déclenchez un événement de changement de débit dès que le lecteur passe à un autre débit.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 11%
@@ -25,8 +25,9 @@ L’événement de changement de débit indique que le lecteur est passé à un 
 | --- | --- |
 | **Variable de données contextuelles** | (aucun : comptabilisé par le serveur principal) |
 | **Type d’événement XDM** | `media.bitrateChange` |
+| **Caractéristique** | `c_contextdata.a.media.qoe.bitrateChangeCount` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Lorsque le lecteur change de débit |
+| **Envoyé avec** | [Changement de débit](/help/implementation/events/playback/bitrate-change.md) |
 
 ## SDK web
 

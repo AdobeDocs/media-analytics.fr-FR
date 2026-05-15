@@ -3,10 +3,10 @@ title: Format du flux
 description: Définissez le format du flux pour identifier le niveau de qualité (HD, SD ou autre libellé utilisé par votre pipeline de diffusion).
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 13%
+source-wordcount: '200'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +24,14 @@ La variable de format du flux identifie le niveau de qualité du flux (général
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.format` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.format` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
-## SDK web
+## SDK Web
 
-`streamFormat` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+`streamFormat` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -46,7 +47,7 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+## SDK Mobile
 
 Transmettez le format de flux en tant que clé de métadonnées dans l’argument HashMap à `trackSessionStart`. Utilisez `MediaConstants.VideoMetadataKeys.STREAM_FORMAT`.
 
@@ -86,7 +87,7 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API Media Edge
+## API Media Edge
 
 Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `streamFormat` à l’intérieur du `mediaCollection.sessionDetails` :
 
@@ -111,7 +112,7 @@ Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK Media
+## Media SDK
 
 Transmettez le format de flux dans l’objet `contextData` à l’aide de `ADB.Media.VideoMetadataKeys.StreamFormat` :
 

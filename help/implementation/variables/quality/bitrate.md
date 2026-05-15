@@ -3,9 +3,9 @@ title: Débit binaire
 description: Définissez le débit de lecture actuel (en Kbits/s) sur l’objet QoE afin que le serveur principal puisse calculer les mesures de débit.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '247'
 ht-degree: 10%
 
 ---
@@ -24,9 +24,10 @@ La variable de débit est le débit de lecture actuel, en kilobits par seconde. 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.qoe.bitrateAverageBucket` |
-| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.bitrate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.qoe.bitrateAverageBucket` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Événements de qualité (changement de débit, mémoire tampon, erreur), fermeture de session |
+| **Envoyé avec** | Événements de qualité ([changement de débit](/help/implementation/events/playback/bitrate-change.md), [début de la mémoire tampon](/help/implementation/events/playback/buffer-start.md), [erreur](/help/implementation/events/error.md)), fermeture de la session |
 
 ## SDK web
 

@@ -3,9 +3,9 @@ title: Identifiant de référencement
 description: Définissez l’identifiant d’emplacement pour chaque publicité afin d’activer les répartitions par emplacement publicitaire.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '178'
 ht-degree: 17%
 
 ---
@@ -24,9 +24,10 @@ La variable d’identifiant d’emplacement identifie l’emplacement publicitai
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.placement` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.ad.placement` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Démarrage et fermeture de la publicité |
+| **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |
 
 ## SDK web
 

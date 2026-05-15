@@ -3,10 +3,10 @@ title: Décalage de chapitre
 description: Indique le décalage de chaque chapitre dans le contenu.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 415d20722965d510458d3c09004b6991b05ac264
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '368'
-ht-degree: 1%
+source-wordcount: '374'
+ht-degree: 2%
 
 ---
 
@@ -23,15 +23,16 @@ La dimension **Décalage du chapitre** indique le décalage de chaque chapitre �
 
 ## Mode de remplissage de cette dimension
 
-Le décalage de chapitre est défini par le lecteur à chaque événement `media.chapterStart`.
+Le décalage de chapitre est défini par le lecteur à chaque événement [début du chapitre](/help/implementation/events/chapters/chapter-start.md).
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.chapter.offset` à un eVar. |
+| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.chapter.offset` à un eVar. |
 | Adobe Analytics (classification) | Classification de la dimension [Chapitres](chapter.md) : Adobe crée automatiquement cette classification lorsque l’option **[[!UICONTROL Chapitres de médias]](/help/reporting/media-reports-enable.md)** est activée pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
-| Customer Journey Analytics | [`mediaReporting.chapterDetails.offset`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Flux de données (règle de traitement) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (l’eVar à laquelle votre règle de traitement `a.media.chapter.offset` mappée) |
 | Flux de données (classification) | S.O. — Les flux de données ne prennent pas en charge les classifications. |
+| Audience Manager | `c_contextdata.a.media.chapter.offset` |
 
 ## Approche de classification
 
@@ -45,10 +46,10 @@ Cette approche fournit une relation 1:1 garantie entre chaque ID de chapitre et 
 
 ## Approche des règles de traitement
 
-Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.chapter.offset` à un eVar. Cette approche capture le décalage de chapitre en tant que valeur par accès sans nécessiter de maintenance de la classification.
+Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.chapter.offset` à un eVar. Cette approche capture le décalage de chapitre en tant que valeur par accès sans nécessiter de maintenance de la classification.
 
 Le compromis est que vous perdez la relation 1:1 garantie entre le décalage de chapitre et la dimension [Chapitre](chapter.md) parente. Si votre implémentation envoie des valeurs incohérentes pour le même identifiant de chapitre à travers les événements, plusieurs décalages peuvent apparaître sous le même chapitre. La mise à jour d’une valeur s’applique uniquement aux données dans le futur.
 
 ## Éléments de dimension
 
-Chaque élément correspond à la valeur de décalage entière, en secondes, signalée sur `media.chapterStart`.
+Chaque élément correspond à la valeur de décalage entière, en secondes, indiquée au [début du chapitre](/help/implementation/events/chapters/chapter-start.md).

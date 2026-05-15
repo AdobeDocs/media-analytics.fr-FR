@@ -3,9 +3,9 @@ title: Décalage de chapitre
 description: Définissez le décalage du chapitre à l’intérieur du contenu, en secondes à partir du début.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ La variable de décalage de chapitre est le décalage du chapitre à l’intéri
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.chapter.offset` |
-| **champ de collection XDM** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.chapter.offset` |
 | **Obligatoire** | Non (Mobile SDK) ; Oui (Edge, API Media Collection) |
-| **Envoyé avec** | Début et fin du chapitre |
+| **Envoyé avec** | [Début du chapitre](/help/implementation/events/chapters/chapter-start.md), fermeture du chapitre |
 
 ## SDK web
 

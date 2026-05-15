@@ -3,9 +3,9 @@ title: Identifiant de publicité
 description: Identifiez de manière unique une publicité.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '180'
+source-wordcount: '183'
 ht-degree: 16%
 
 ---
@@ -24,9 +24,10 @@ La variable d’ID d’annonce publicitaire identifie de manière unique chaque 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.name` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.ad.name` |
 | **Obligatoire** | Oui |
-| **Envoyé avec** | Démarrage et fermeture de la publicité |
+| **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |
 
 ## SDK web
 

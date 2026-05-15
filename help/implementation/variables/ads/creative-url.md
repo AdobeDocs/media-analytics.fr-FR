@@ -3,9 +3,9 @@ title: URL de l’élément créatif
 description: Définissez l’URL du contenu publicitaire de chaque publicité.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '193'
 ht-degree: 16%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 16%
 
 >[!BEGINSHADEBOX]
 
-*Cette page traite de la collecte de données pour la variable **URL Creative**. Voir [URL &#x200B;](/help/reporting/dimensions/creative-url.md) pour la dimension de reporting correspondante.*
+*Cette page traite de la collecte de données pour la variable **URL Creative**. Voir [URL ](/help/reporting/dimensions/creative-url.md) pour la dimension de reporting correspondante.*
 
 >[!ENDSHADEBOX]
 
@@ -24,9 +24,10 @@ La variable URL de création est l’URL de la création publicitaire. Utilisez 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.creativeURL` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.creativeURL`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.ad.creativeURL` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Démarrage et fermeture de la publicité |
+| **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |
 
 ## SDK web
 

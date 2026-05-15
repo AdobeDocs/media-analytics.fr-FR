@@ -3,10 +3,10 @@ title: Épisode
 description: Définissez le numéro d’épisode pour le contenu épisodique afin que les épisodes individuels puissent être signalés séparément.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 16%
+source-wordcount: '182'
+ht-degree: 15%
 
 ---
 
@@ -24,9 +24,10 @@ La variable d’épisode correspond au nombre d’épisodes au cours de la saiso
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.episode` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.episode` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

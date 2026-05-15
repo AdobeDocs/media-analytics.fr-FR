@@ -3,10 +3,10 @@ title: Vues de segment de contenu
 description: Comptabilise les segments dans lesquels la lecture du contenu principal actif a eu lieu.
 feature: Metrics
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 7%
+source-wordcount: '183'
+ht-degree: 9%
 
 ---
 
@@ -17,10 +17,11 @@ La mesure **Vues des segments de contenu** comptabilise les segments de contenu 
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média définit les `mediaReporting.sessionDetails.hasSegmentView = true` pour tout appel de fermeture qui couvre un segment dans lequel au moins un événement de `media.play` pour le contenu principal a été reçu. La mesure est signalée lors de l’appel de fermeture. Sur le chemin d’accès de l’API Media Edge, les vues de segment se déclenchent dans la même condition que les démarrages de contenu. Les deux nécessitent une `media.play` sur le contenu principal.
+Le serveur principal du média définit les `mediaReporting.sessionDetails.hasSegmentView = true` pour tout appel de fermeture qui couvre un segment dans lequel au moins un événement [play](/help/implementation/events/playback/play.md) pour le contenu principal a été reçu. La mesure est signalée lors de l’appel de fermeture. Sur le chemin d’accès de l’API Media Edge, les vues de segment se déclenchent dans la même condition que les démarrages de contenu. Les deux nécessitent un événement [play](/help/implementation/events/playback/play.md) sur le contenu principal.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.segmentView` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasSegmentView`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasSegmentView`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Audience Manager | S.O. |

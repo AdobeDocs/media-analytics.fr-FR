@@ -3,10 +3,10 @@ title: Nom du lecteur publicitaire
 description: Indique le lecteur qui a rendu chaque publicité.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '126'
-ht-degree: 7%
+source-wordcount: '132'
+ht-degree: 9%
 
 ---
 
@@ -23,14 +23,15 @@ La dimension **Nom du lecteur d’annonces** indique le lecteur qui a rendu chaq
 
 ## Mode de remplissage de cette dimension
 
-Le nom du lecteur d’annonces est défini par le lecteur à chaque événement `media.adStart`.
+Le nom du lecteur de publicités est défini par le lecteur à chaque événement [début de la publicité](/help/implementation/events/ads/ad-start.md).
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.playerName` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.playerName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Flux de données | `videoadplayername, post_videoadplayername` |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Flux de données | `videoadplayername`, `post_videoadplayername` |
+| Audience Manager | `c_contextdata.a.media.ad.playerName` |
 
 ## Éléments de dimension
 
-Chaque élément correspond au nom littéral du lecteur d’annonces publicitaires signalé sur `media.adStart`.
+Chaque élément correspond au nom littéral du lecteur d’annonces publicitaires signalé au [début de l’annonce](/help/implementation/events/ads/ad-start.md).

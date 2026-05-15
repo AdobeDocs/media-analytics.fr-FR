@@ -3,10 +3,10 @@ title: Nom du lecteur de contenu
 description: Définissez le nom du lecteur pour identifier le lecteur qui a rendu le contenu.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 11%
+source-wordcount: '223'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +24,14 @@ La variable de nom du lecteur de contenu identifie le lecteur qui a rendu le con
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.playerName` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.playerName` |
 | **Obligatoire** | Oui |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
-## SDK web
+## SDK Web
 
-`playerName` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+`playerName` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -51,7 +52,7 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+## SDK Mobile
 
 Définissez le nom du lecteur via la configuration du dispositif de suivi lors de la création du dispositif de suivi, à l’aide de `MediaConstants.TrackerConfig.PLAYER_NAME`. Le nom du lecteur ne fait pas partie de l’objet média.
 
@@ -100,7 +101,7 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API Media Edge
+## API Media Edge
 
 Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `playerName` à l’intérieur du `mediaCollection.sessionDetails` :
 
@@ -124,7 +125,7 @@ Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK Media
+## Media SDK
 
 Définissez le nom du lecteur sur `ADB.MediaConfig` avant de créer le dispositif de suivi :
 

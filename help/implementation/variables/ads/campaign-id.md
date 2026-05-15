@@ -3,9 +3,9 @@ title: ID de campagne
 description: Définissez l’identifiant de campagne pour chaque publicité afin que l’engagement puisse être agrégé par campagne.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '200'
 ht-degree: 15%
 
 ---
@@ -24,9 +24,10 @@ La variable d’identifiant de campagne identifie la campagne publicitaire à la
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.campaign` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.ad.campaign` |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Démarrage et fermeture de la publicité |
+| **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |
 
 ## SDK web
 

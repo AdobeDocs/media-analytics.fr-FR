@@ -3,10 +3,10 @@ title: Annonceur
 description: Indique la société ou la marque apparaissant dans chaque publicité.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '109'
-ht-degree: 11%
+source-wordcount: '115'
+ht-degree: 12%
 
 ---
 
@@ -23,14 +23,15 @@ La dimension **Annonceur** indique la société ou la marque présentée dans ch
 
 ## Mode de remplissage de cette dimension
 
-L’annonceur est défini par le lecteur à chaque événement `media.adStart`.
+L’annonceur est défini par le lecteur à chaque événement [début de la publicité](/help/implementation/events/ads/ad-start.md).
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.advertiser` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.advertiser`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Flux de données | `videoadvertiser, post_videoadvertiser` |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Flux de données | `videoadvertiser`, `post_videoadvertiser` |
+| Audience Manager | `c_contextdata.a.media.ad.advertiser` |
 
 ## Éléments de dimension
 
-Chaque élément correspond au nom littéral de l’annonceur signalé sur `media.adStart`.
+Chaque élément correspond au nom littéral de l’annonceur indiqué au [début de la publicité](/help/implementation/events/ads/ad-start.md).

@@ -3,10 +3,10 @@ title: ID d’erreur du SDK du lecteur
 description: Indique les identifiants d’erreur uniques générés par le lecteur de contenu SDK.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '154'
-ht-degree: 6%
+source-wordcount: '157'
+ht-degree: 7%
 
 ---
 
@@ -17,13 +17,14 @@ La dimension **ID d’erreur du lecteur SDK** signale des identifiants d’erreu
 
 ## Mode de remplissage de cette dimension
 
-Le lecteur transmet les identifiants d’erreur player-SDK au dispositif de suivi lors des événements `media.error`. Le serveur principal collecte des identifiants uniques tout au long de la session et les signale lors de l’appel de fermeture.
+Le lecteur transmet les identifiants d’erreur player-SDK au dispositif de suivi lors des événements [error](/help/implementation/events/error.md). Le serveur principal collecte des identifiants uniques tout au long de la session et les signale lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.playerSdkErrors` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/media-reports-enable.md) est activée. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Flux de données | `videoqoeplayersdkerrors, post_videoqoeplayersdkerrors` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.playerSdkErrors`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Flux de données | `videoqoeplayersdkerrors`, `post_videoqoeplayersdkerrors` |
+| Audience Manager | `c_contextdata.a.media.qoe.playerSdkErrors` |
 
 ## Éléments de dimension
 

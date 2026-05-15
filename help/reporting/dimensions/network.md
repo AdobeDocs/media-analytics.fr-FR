@@ -3,10 +3,10 @@ title: Réseau
 description: Indique le nom du réseau ou du canal de diffusion.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '123'
-ht-degree: 9%
+source-wordcount: '125'
+ht-degree: 11%
 
 ---
 
@@ -27,9 +27,10 @@ Le réseau est défini par le lecteur au démarrage de la session.
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Collecté automatiquement à partir des `a.media.network` de données contextuelles lorsque [[!UICONTROL &#x200B; Métadonnées vidéo &#x200B;]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.network`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `videonetwork, post_videonetwork` |
+| Adobe Analytics | Collecté automatiquement à partir des `a.media.network` de données contextuelles lorsque [[!UICONTROL  Métadonnées vidéo ]](/help/reporting/media-reports-enable.md) est activé. |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.network`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `videonetwork`, `post_videonetwork` |
+| Audience Manager | `c_contextdata.a.media.network` |
 
 ## Éléments de dimension
 

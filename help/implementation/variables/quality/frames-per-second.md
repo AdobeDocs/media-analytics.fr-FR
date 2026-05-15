@@ -3,9 +3,9 @@ title: Images par seconde
 description: Définissez la fréquence d’image actuelle sur l’objet QoE afin que le serveur principal dispose d’un contexte de fréquence d’image pour les rapports de qualité.
 feature: Streaming Media
 role: Developer
-source-git-commit: 0e6b5a8ef5738191276976ed31125016774c043d
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '225'
 ht-degree: 12%
 
 ---
@@ -18,9 +18,10 @@ La variable images par seconde est la fréquence d’images actuelle du flux. D�
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | Aucune (Adobe Analytics n’attribue pas de clé de données contextuelles réservée pour la fréquence d’image) |
-| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **Caractéristique** | S.O. |
 | **Obligatoire** | Non |
-| **Envoyé avec** | Événements de qualité, fermeture de session |
+| **Envoyé avec** | Événements de qualité ([changement de débit](/help/implementation/events/playback/bitrate-change.md), [début de la mémoire tampon](/help/implementation/events/playback/buffer-start.md), [erreur](/help/implementation/events/error.md)), fermeture de la session |
 
 ## SDK web
 

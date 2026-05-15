@@ -3,10 +3,10 @@ title: Images perdues (dimension)
 description: Indique le nombre cumulé d’images perdues par session.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 5%
+source-wordcount: '181'
+ht-degree: 6%
 
 ---
 
@@ -28,8 +28,9 @@ Le lecteur met à jour la valeur `droppedFrames` de l’objet QoE au fur et à m
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.droppedFrameCount` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/media-reports-enable.md) est activée. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Flux de données | `videoqoedroppedframecountevar, post_videoqoedroppedframecountevar` |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Flux de données | `videoqoedroppedframecountevar`, `post_videoqoedroppedframecountevar` |
+| Audience Manager | `c_contextdata.a.media.qoe.droppedFrameCount` |
 
 ## Éléments de dimension
 

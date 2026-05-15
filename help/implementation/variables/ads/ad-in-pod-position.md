@@ -3,9 +3,9 @@ title: Position de l’annonce publicitaire dans la capsule
 description: Définissez la position d’index de l’annonce publicitaire dans sa coupure publicitaire parente. La première publicité a un index de 0.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '213'
 ht-degree: 12%
 
 ---
@@ -24,9 +24,10 @@ La variable de position de l’annonce publicitaire dans la capsule correspond �
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.podPosition` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.podPosition`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.ad.podPosition` |
 | **Obligatoire** | Oui |
-| **Envoyé avec** | Démarrage et fermeture de la publicité |
+| **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |
 
 ## SDK web
 

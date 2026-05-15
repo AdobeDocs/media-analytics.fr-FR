@@ -3,10 +3,10 @@ title: Nom de la coupure publicitaire
 description: Définissez le nom convivial de la coupure publicitaire parent.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 12%
+source-wordcount: '209'
+ht-degree: 11%
 
 ---
 
@@ -24,9 +24,10 @@ La variable de nom de coupure publicitaire est le nom convivial de la coupure pu
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.podFriendlyName` |
-| **champ de collection XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Obligatoire** | Oui (Mobile SDK) ; Non (Edge, API Media Collection) |
-| **Envoyé avec** | Démarrage et fermeture de la publicité |
+| **Envoyé avec** | [Début de la coupure publicitaire](/help/implementation/events/ads/ad-break-start.md), fin de la publicité |
 
 ## SDK web
 

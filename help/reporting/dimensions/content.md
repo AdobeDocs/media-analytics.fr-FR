@@ -3,10 +3,10 @@ title: Contenu
 description: Indique chaque élément multimédia lu unique, indexé par l’identifiant du contenu.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 186437a8669d2375caa9056dadd367ad7135f652
+source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 5%
+source-wordcount: '249'
+ht-degree: 6%
 
 ---
 
@@ -28,8 +28,9 @@ Le contenu est défini par le lecteur au début de la session en tant qu’ident
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.name` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. Persiste pendant la durée de la visite. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `video, post_video` |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `video`, `post_video` |
+| Audience Manager | `c_contextdata.a.media.name` |
 
 >[!IMPORTANT]
 >

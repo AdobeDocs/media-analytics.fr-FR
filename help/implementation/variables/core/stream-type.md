@@ -3,9 +3,9 @@ title: Type de diffusion
 description: Définissez le type de flux pour identifier si un flux multimédia est du contenu audio ou vidéo.
 feature: Streaming Media
 role: Developer
-source-git-commit: 97cae4771558fc3f4d9719074b2fcf3ba661f1cc
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '276'
 ht-degree: 10%
 
 ---
@@ -26,9 +26,10 @@ La définition correcte du type de flux est fondamentale pour la création de ra
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.streamType` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **Caractéristique** | `c_contextdata.a.media.streamType` |
 | **Obligatoire** | Oui |
-| **Envoyé avec** | Début et fin de la session |
+| **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK web
 

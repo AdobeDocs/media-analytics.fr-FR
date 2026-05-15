@@ -3,9 +3,9 @@ title: Nom de la capsule
 description: Indique le nom convivial de chaque coupure publicitaire. Collectez-les dans Adobe Analytics à l’aide d’une classification ou d’une règle de traitement personnalisée.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 415d20722965d510458d3c09004b6991b05ac264
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '431'
 ht-degree: 1%
 
 ---
@@ -23,15 +23,16 @@ La dimension **Nom de la capsule** indique le nom convivial de chaque coupure pu
 
 ## Mode de remplissage de cette dimension
 
-Le nom du pod provient de la valeur [Nom de la coupure publicitaire](/help/implementation/variables/ads/ad-break-name.md) que le lecteur définit sur `media.adBreakStart`.
+Le nom du pod provient de la valeur [Nom de la coupure publicitaire](/help/implementation/variables/ads/ad-break-name.md) que le lecteur définit sur [Début de la coupure publicitaire](/help/implementation/events/ads/ad-break-start.md).
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.podFriendlyName` à un eVar. |
+| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.podFriendlyName` à un eVar. |
 | Adobe Analytics (classification) | Classification de la dimension Capsule : Adobe crée automatiquement cette classification lorsque la **[[!UICONTROL Publicités médias]](/help/reporting/media-reports-enable.md)** est activée pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Flux de données (règle de traitement) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (l’eVar à laquelle votre règle de traitement `a.media.ad.podFriendlyName` mappée) |
 | Flux de données (classification) | S.O. — Les flux de données ne prennent pas en charge les classifications. |
+| Audience Manager | `c_contextdata.a.media.ad.podFriendlyName` |
 
 ## Approche de classification
 
@@ -45,10 +46,10 @@ Cette approche offre une relation 1:1 garantie entre chaque identifiant de capsu
 
 ## Approche des règles de traitement
 
-Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.podFriendlyName` à un eVar. Cette approche capture le nom convivial sous la forme d’une valeur par accès sans nécessiter de maintenance de la classification.
+Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.podFriendlyName` à un eVar. Cette approche capture le nom convivial sous la forme d’une valeur par accès sans nécessiter de maintenance de la classification.
 
 Le compromis est que vous perdez la relation 1:1 garantie entre le nom de la capsule et la dimension parent [capsule publicitaire](ad-pod.md). Si votre implémentation envoie des valeurs incohérentes pour le même identifiant de capsule sur plusieurs événements, plusieurs noms peuvent apparaître sous la même capsule publicitaire. La mise à jour d’une valeur s’applique uniquement aux données dans le futur.
 
 ## Éléments de dimension
 
-Chaque élément correspond au nom littéral de la coupure publicitaire indiqué sur `media.adBreakStart`.
+Chaque élément correspond au nom littéral de la coupure publicitaire indiqué au [début de la coupure publicitaire](/help/implementation/events/ads/ad-break-start.md).
