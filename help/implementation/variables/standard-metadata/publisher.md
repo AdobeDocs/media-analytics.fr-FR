@@ -24,7 +24,7 @@ La variable publisher est le nom de l&#39;éditeur de contenu audio (par exemple
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.publisher` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.publisher`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.publisher` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |

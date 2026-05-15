@@ -24,7 +24,7 @@ La variable de l’annonceur correspond à la société ou à la marque présent
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.advertiser` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.ad.advertiser` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |

@@ -24,7 +24,7 @@ La variable de nom de coupure publicitaire est le nom convivial de la coupure pu
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.podFriendlyName` |
-| **champ de collection XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingPodDetails.friendlyName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-pod-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.ad.podFriendlyName` |
 | **Obligatoire** | Oui (Mobile SDK) ; Non (Edge, API Media Collection) |
 | **Envoyé avec** | [Début de la coupure publicitaire](/help/implementation/events/ads/ad-break-start.md), fin de la publicité |

@@ -24,7 +24,7 @@ La variable de reprise du contenu marque une session qui reprend une lecture pr�
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.resume` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.hasResume`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | S.O. |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de la session](/help/implementation/events/session/session-start.md) |

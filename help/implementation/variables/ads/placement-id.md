@@ -24,7 +24,7 @@ La variable d’identifiant d’emplacement identifie l’emplacement publicitai
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.placement` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.ad.placement` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |

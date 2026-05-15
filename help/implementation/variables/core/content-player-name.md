@@ -24,14 +24,14 @@ La variable de nom du lecteur de contenu identifie le lecteur qui a rendu le con
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.playerName` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.playerName` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
 ## SDK Web
 
-`playerName` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/sendevent/overview) :
+`playerName` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {

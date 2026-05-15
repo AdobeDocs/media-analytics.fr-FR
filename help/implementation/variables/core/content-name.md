@@ -24,7 +24,7 @@ La variable de nom du contenu est le titre du contenu lisible par l’utilisateu
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.friendlyName` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.sessionDetails.friendlyName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.friendlyName` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
