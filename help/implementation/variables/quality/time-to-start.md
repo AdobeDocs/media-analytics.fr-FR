@@ -3,10 +3,10 @@ title: Heure de début
 description: Définissez l’heure de démarrage du lecteur, en millisecondes, de sorte que le serveur principal puisse signaler la qualité du délai de première image.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -21,10 +21,14 @@ ht-degree: 12%
 
 La variable time to start correspond au temps écoulé, en millisecondes, entre le lancement de la lecture par le lecteur et le premier rendu d’image. Définissez-le sur l’objet QoE avant que l’événement de début de session ne se déclenche. Adobe stocke et signale la valeur en secondes ; transmettez les millisecondes et Adobe convertit au moment de l’ingestion.
 
+>[!IMPORTANT]
+>
+>Une fois que le lecteur commence à effectuer le rendu des images de contenu, arrêtez la mise à jour `timeToStart`. Cette valeur peut augmenter au cours de la phase de mise en mémoire tampon ou de chargement initiale, mais doit être considérée comme fixe dès le début de la lecture. Si vous continuez à la mettre à jour après le rendu de la première image, une mesure [Heure de début](/help/reporting/metrics/time-to-start.md) exagérée ou incorrecte est générée.
+
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.qoe.timeToStart` |
-| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |

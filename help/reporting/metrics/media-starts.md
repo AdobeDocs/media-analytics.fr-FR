@@ -3,10 +3,10 @@ title: Démarrages du média
 description: Compte chaque session multimédia qui a commencé, y compris les sessions qui se sont terminées par des publicités preroll ou une mise en mémoire tampon.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '184'
-ht-degree: 8%
+source-wordcount: '228'
+ht-degree: 6%
 
 ---
 
@@ -17,11 +17,11 @@ La mesure **Démarrages des médias** comptabilise chaque session de médias qui
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.sessionDetails.isViewed = true` lorsqu’un événement [début de session](/help/implementation/events/session/session-start.md) est reçu. La mesure signalée est `1` par session. Les démarrages de média sont signalés lors de l’appel de démarrage et non lors de l’appel de fermeture. Il s’agit de la seule mesure de phase 1 qui n’attend pas la fermeture de la session.
+Le serveur principal du média définit cet indicateur lorsqu’un événement [début de session](/help/implementation/events/session/session-start.md) est reçu. La mesure signalée est `1` par session. Les démarrages de média sont signalés lors de l’appel de démarrage et non lors de l’appel de fermeture ; il s’agit de la seule mesure qui n’attend pas la fermeture de la session. Toutes les autres mesures multimédia, y compris [Débuts du contenu](/help/reporting/metrics/content-starts.md), [Temps passé sur le contenu](/help/reporting/metrics/content-time-spent.md) et [Marqueurs de progression](/help/reporting/metrics/progress-markers.md), sont signalées lors de l’appel de fermeture et ne sont pas disponibles en temps réel pendant la lecture. [Les démarrages d’annonce publicitaire](/help/reporting/metrics/ad-starts.md) est la mesure supplémentaire signalée sur son événement déclencheur plutôt qu’à la fermeture.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.view` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isViewed`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isViewed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.view` |

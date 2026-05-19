@@ -3,9 +3,9 @@ title: Flux impactés en pause
 description: Compte les sessions pendant lesquelles la visionneuse s’est arrêtée au moins une fois.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '152'
 ht-degree: 11%
 
 ---
@@ -17,11 +17,11 @@ La mesure **Flux impactés en pause** comptabilise les sessions au cours desquel
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal de média définit `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` la première fois qu’un événement [pause start](/help/implementation/events/playback/pause-start.md) est reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur la première fois qu’un événement [pause start](/help/implementation/events/playback/pause-start.md) est reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.pause` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasPauseImpactedStreams`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasPauseImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | S.O. |

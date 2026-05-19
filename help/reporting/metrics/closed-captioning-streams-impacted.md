@@ -3,7 +3,7 @@ title: Flux affectés par le sous-titrage
 description: Comptabilise les sessions dans lesquelles la visionneuse a activé les légendes au moins une fois.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -23,11 +23,11 @@ La mesure **Flux affectés par le sous-titrage** comptabilise les sessions dans 
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média définit l’indicateur de `isSet` dans `mediaReporting.states[]` pour que l’entrée `closedCaptioning` `true` la première fois qu’un événement de `media.statesUpdate` avec `closedCaptioning` dans `statesStart` est reçu. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur la première fois qu’un événement de début d’état d’activation des sous-titres est reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.states.closedcaptioning.set` de données contextuelles lorsque le [[!UICONTROL suivi de l’état du lecteur]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) l’entrée où `name = "closedCaptioning"`, champ `isSet` |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) l’entrée où `name = "closedCaptioning"`, champ `isSet` |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.states.closedcaptioning.set` |

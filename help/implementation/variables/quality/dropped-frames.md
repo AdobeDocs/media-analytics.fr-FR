@@ -3,10 +3,10 @@ title: Images perdues
 description: Définissez le nombre d’images perdues en cours d’exécution sur l’objet QoE afin que le serveur principal puisse signaler la qualité de la perte d’images.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 12%
+source-wordcount: '265'
+ht-degree: 9%
 
 ---
 
@@ -21,10 +21,14 @@ ht-degree: 12%
 
 La variable images perdues correspond au nombre d’images perdues par le lecteur au cours de la session. Définissez-le sur l’objet QoE et mettez à jour la valeur à chaque fois que le lecteur signale de nouveaux abandons. Le serveur principal signale la dernière valeur à la fermeture de la session.
 
+>[!NOTE]
+>
+>Transmettez toujours le **total cumulé** d’images perdues pour l’ensemble de la session jusqu’à ce point, et non un delta par intervalle. Si vous réinitialisez la valeur sur `0` entre les mises à jour, le serveur principal reçoit la `0` comme valeur finale et signale aucune image perdue pour la session, quelle que soit ce qui a été effectivement perdu précédemment.
+
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.qoe.droppedFrameCount` |
-| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.qoe.droppedFrameCount` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Événements de qualité ([changement de débit](/help/implementation/events/playback/bitrate-change.md), [début de la mémoire tampon](/help/implementation/events/playback/buffer-start.md), [erreur](/help/implementation/events/error.md)), fermeture de la session |

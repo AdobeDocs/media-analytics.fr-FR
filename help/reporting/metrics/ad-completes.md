@@ -3,9 +3,9 @@ title: Fin de la publicité
 description: Comptabilise chaque publicité lue jusqu’à la fin.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,11 +17,11 @@ La mesure **Publicité terminée** comptabilise chaque publicité lue jusqu’à
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.advertisingDetails.isCompleted = true` lorsqu’un événement [ad complete](/help/implementation/events/ads/ad-complete.md) est reçu. La mesure est signalée lors de l’appel de fermeture de la publicité. Les publicités ignorées ou abandonnées ne sont pas considérées comme terminées.
+Le serveur principal du média définit cet indicateur lorsqu’un événement [fin de la publicité](/help/implementation/events/ads/ad-complete.md) est reçu. La mesure est signalée lors de l’appel de fermeture de la publicité. Les publicités ignorées ou abandonnées ne sont pas considérées comme terminées.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.complete` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.isCompleted`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.advertisingDetails.isCompleted`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.ad.complete` |

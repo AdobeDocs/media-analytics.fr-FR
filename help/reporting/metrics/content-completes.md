@@ -3,9 +3,9 @@ title: Content completes
 description: Comptabilise les sessions dont le curseur de lecture a atteint la fin du contenu.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '142'
 ht-degree: 10%
 
 ---
@@ -17,11 +17,11 @@ La mesure **Contenu terminé** comptabilise les sessions dont le curseur de lect
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.sessionDetails.isCompleted = true` lorsqu’un événement [session terminée](/help/implementation/events/session/session-complete.md) est reçu. La mesure est signalée lors de l’appel de fermeture. Une session qui expire sans `sessionComplete` explicite n’est pas comptabilisée comme une fin de session.
+Le serveur principal du média définit cet indicateur lorsqu’un événement [session terminée](/help/implementation/events/session/session-complete.md) est reçu. La mesure est signalée lors de l’appel de fermeture. Une session qui expire sans `sessionComplete` explicite n’est pas comptabilisée comme une fin de session.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.complete` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isCompleted`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.sessionDetails.isCompleted`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.complete` |

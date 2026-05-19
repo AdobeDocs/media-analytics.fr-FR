@@ -3,9 +3,9 @@ title: Flux impactés par la mémoire tampon
 description: Comptabilise les sessions dans lesquelles le lecteur est entré en état de mémoire tampon au moins une fois.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '147'
 ht-degree: 10%
 
 ---
@@ -17,11 +17,11 @@ La mesure **Flux impactés par la mémoire tampon** comptabilise les sessions da
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal de média se `mediaReporting.qoeDataDetails.hasBufferImpactedStreams = true` la première fois qu’un événement [début de la mémoire tampon](/help/implementation/events/playback/buffer-start.md) est reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur la première fois qu’un événement [début de la mémoire tampon](/help/implementation/events/playback/buffer-start.md) est reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.buffer` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/media-reports-enable.md) est activée. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasBufferImpactedStreams`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.hasBufferImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.qoe.buffer` |

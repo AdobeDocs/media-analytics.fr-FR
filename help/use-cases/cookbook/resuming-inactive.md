@@ -6,21 +6,14 @@ exl-id: ee4cf7f5-5788-4d35-a04d-4ed714ccd663
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/KT7NfrYlagrMwAjsrbSNR8YUbj5d-ihU8AfJ6wcbgOA
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 151
-ht-degree: 98%
+source-wordcount: 398
+ht-degree: 38%
 
 ---
 
@@ -36,6 +29,18 @@ Le SDK Media surveille automatiquement la durée de la lecture multimédia dans 
 * Mise en mémoire tampon
 
 Si une session de suivi multimédia reste inactive pendant plus de 30 minutes, celle-ci se fermera automatiquement. Si l’utilisateur ou l’utilisatrice reprend une session de suivi vidéo précédemment inactive (`trackPlay`), Media Heartbeat crée automatiquement une nouvelle session vidéo à l’aide des informations et des métadonnées précédentes et envoie une reprise d’événement de pulsation.
+
+## Transfert entre appareils à l’aide de l’indicateur de reprise
+
+Le même mécanisme de reprise qui gère la continuation de session sur une seule application s’applique également lorsqu’un spectateur transfère la lecture entre appareils (par exemple, la diffusion d’une vidéo à partir d’un téléphone mobile vers un téléviseur ou un récepteur Chromecast). Comme chaque appareil exécute sa propre instance Media SDK, le transfert crée plusieurs sessions par défaut. Utilisez l’indicateur de reprise pour les regrouper en une suite logique, de sorte qu’Analytics signale l’affichage combiné comme un élément unique de l’engagement plutôt que comme des démarrages de média distincts.
+
+**Mise en œuvre :**
+
+1. Sur l’**appareil source** (par exemple, le téléphone), appelez `trackSessionEnd` lorsque la visionneuse lance le cast. Ne pas appeler `trackComplete` — le contenu n&#39;est pas terminé, il est déplacé vers un autre appareil.
+2. Sur l’appareil **de destination** (par exemple, le Chromecast), appelez le `trackSessionStart` avec l’indicateur de reprise défini sur `true` et les mêmes métadonnées de contenu (nom, ID, longueur) utilisées sur l’appareil source. Transmettez la position de la tête de lecture à l’endroit où la visionneuse s’est arrêtée sur l’appareil source.
+3. Si la visionneuse renvoie ultérieurement la lecture à l’appareil source, répétez le même modèle : `trackSessionEnd` sur la destination et `trackSessionStart` avec l’indicateur de reprise sur la source.
+
+La définition de l’indicateur de reprise entraîne l’incrémentation d’Adobe Analytics [Reprises du contenu](/help/reporting/metrics/content-resumes.md) plutôt que [Débuts du média](/help/reporting/metrics/media-starts.md) pour la deuxième étape et les étapes suivantes du transfert. Comme il n’existe aucun mécanisme intégré pour partager l’ID de session entre les instances SDK, l’indicateur de reprise est une déclaration côté client que vous transmettez en fonction de la logique de votre application lorsque vous savez que la visionneuse poursuit une session précédente.
 
 ## Reprise manuelle d’une session précédemment fermée
 

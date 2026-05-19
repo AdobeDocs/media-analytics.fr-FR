@@ -6,26 +6,15 @@ exl-id: f6a00ffd-da6a-4d62-92df-15d119cfc426
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/oOshJZEQmXqgNh5l10-qhLMO8dmph6Tz9mpH0a4FePU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 98%
+source-wordcount: 749
+ht-degree: 77%
 
 ---
 
@@ -87,6 +76,17 @@ Par exemple, supposons qu’un événement de diffusion LIVE commence à minuit 
 ### En pause
 
 La même logique de « curseur de lecture en direct » appliquée au début de la lecture doit être appliquée lorsqu’un utilisateur interrompt la lecture. Lorsque lʼutilisateur revient pour lire le flux en direct, vous devez définir la valeur `l:event:playhead` par rapport au nouveau nombre de secondes écoulées depuis minuit UTC, _pas_ au point où lʼutilisateur a interrompu le flux en direct.
+
+## Suivi des modifications du programme dans un flux en direct {#live-program-changes}
+
+Lorsqu’une diffusion en direct passe d’un programme ou d’une émission à un autre (un modèle commun pour les propriétés de diffusion et de câble), chaque programme doit être suivi comme une session distincte. Vous pouvez ainsi générer des rapports sur l’engagement et le temps passé par titre individuel plutôt que d’attribuer tout le visionnage à un seul flux continu.
+
+**Approche recommandée :**
+
+1. Lorsque le programme en cours se termine (ou lorsque le lecteur signale un événement de changement de programme), appelez `trackSessionEnd` pour fermer la session en cours.
+2. Lorsque le nouveau programme démarre, appelez `trackSessionStart` avec les métadonnées du nouveau programme (nom, ID, type de contenu, etc.).
+
+Le suivi de chaque programme comme de sa propre session conserve [Temps passé sur le contenu](/help/reporting/metrics/content-time-spent.md), [Marqueurs de progression](/help/reporting/metrics/progress-markers.md) et mesures d’achèvement limitées au programme individuel, et permet d’obtenir des rapports précis sur l’audience par titre. Utilisez `trackSessionEnd` plutôt que `trackComplete` pour la transition : `trackComplete` signale au spectateur qu&#39;il a regardé intentionnellement jusqu&#39;à la fin d&#39;un élément de contenu distinct, alors que `trackSessionEnd` est correct ici parce que le flux se poursuit avec une programmation différente plutôt que de se terminer.
 
 ## Exemple de code {#sample-code}
 
