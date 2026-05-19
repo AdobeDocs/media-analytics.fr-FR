@@ -5,10 +5,26 @@ uuid: 7b8e2f76-bc4e-4721-8933-3e4453b01788
 exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '875'
-ht-degree: 97%
+source-wordcount: 882
+ht-degree: 96%
 
 ---
 
@@ -53,7 +69,7 @@ Le suivi de la lecture principale comprend le suivi du chargement du média, du 
 
 ### À la fin du défilement
 
-* `trackEvent(SeekComplete)` d’appel
+* L’appel `trackEvent(SeekComplete)`
 Annuler les modifications
 
 ### Au début de la mise en mémoire tampon
@@ -108,8 +124,6 @@ Annuler les modifications
      >Il est facultatif de joindre un objet de métadonnées standard à l’objet multimédia.
 
      Instanciez un objet de métadonnées standard, renseignez les variables désirées et définissez l’objet de métadonnées sur l’objet Media Heartbeat.
-
-     Consultez la liste complète des métadonnées dans la rubrique [Paramètres audio et vidéo](../../implementation/variables/audio-video-parameters.md).
 
    * **Métadonnées personnalisées -** Créez un objet de variable pour les variables personnalisées et renseignez les données de ce contenu.
 
@@ -239,3 +253,12 @@ if (e.type == "buffered") {
 ## Validation {#validate}
 
 Pour plus d’informations sur la validation de votre implémentation *héritée*, voir la section [Validation héritée.](/help/legacy/validation/validation-overview.md)
+
+>[!MORELIKETHIS]
+>
+>* [Début de la session](/help/implementation/events/session/session-start.md)
+>* [Lecture](/help/implementation/events/playback/play.md)
+>* [Démarrer la pause](/help/implementation/events/playback/pause-start.md)
+>* [&#x200B; Début de la mémoire tampon &#x200B;](/help/implementation/events/playback/buffer-start.md)
+>* [Fin de la session](/help/implementation/events/session/session-complete.md)
+>* [Fin de session](/help/implementation/events/session/session-end.md)

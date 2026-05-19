@@ -5,9 +5,25 @@ uuid: 5d1022a8-88cb-40aa-919c-60dd592a639e
 exl-id: c77f6457-ac3b-4d7a-8eed-e7ebd357a6a5
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/Yw1UIjZr5ZKx6AWU4anAo5kux5EoVtnQMoFLs5T2nas
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: 544
 ht-degree: 95%
 
 ---
@@ -16,7 +32,7 @@ ht-degree: 95%
 
 Dans ce scénario, des publicités preroll ont été insérées avant le contenu principal. Sauf indication contraire, les appels réseau sont identiques à ceux du scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). L’appel réseau se produit simultanément, mais la charge utile est différente.
 
-| Déclencheur | Méthode Heartbeat | Appels réseau   | Remarques   |
+| Déclencheur | Méthode Heartbeat | Appels réseau   | Notes   |
 | --- | --- | --- | --- |
 | L’utilisateur clique sur [!UICONTROL Lecture]. | `trackSessionStart` | Analytics Content Start, Heartbeat Content Start | Étant donné que la bibliothèque de mesures ignore la présence d’une publicité preroll, ces appels réseau sont toujours identiques au scénario [Lecture VOD sans publicité](/help/use-cases/tracking-scenarios/vod-no-intrs-details.md). |
 | La publicité démarre. | <ul> <li> `trackEvent:AdBreakStart` </li> <li> `trackEvent:AdStart` </li> </ul> | Analytics Ad Start, Heartbeat Ad Start | |
@@ -36,7 +52,7 @@ Lorsque la lecture de la publicité démarre, un appel `Heartbeat Ad Start` est 
 
 ### Heartbeat Ad Start
 
-| Paramètre | Valeur | Notes |
+| Paramètre | Valeur | Remarques |
 |---|---|---|
 | `s:event:type` | `start` |  |
 | `s:asset:type` | `ad` |  |
@@ -45,7 +61,7 @@ Les publicités suivent le même modèle de base que `Content Heartbeats`. Par c
 
 ### Heartbeat Ad Play Call
 
-| Paramètre | Valeur | Notes |
+| Paramètre | Valeur | Remarques |
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
@@ -54,7 +70,7 @@ Ces paramètres sont identiques à l’appel `Content Heartbeats`, mais l’appe
 
 ### Ad Heartbeats
 
-| Paramètre | Valeur | Notes |
+| Paramètre | Valeur | Remarques |
 |---|---|---|
 | `s:event:type` | `play` |  |
 | `s:asset:type` | `ad` |  |
@@ -65,7 +81,7 @@ Tout comme pour les appels `Heartbeat Content Complete`, un appel `Heartbeat Ad 
 
 ### Heartbeat Ad Complete Call
 
-| Paramètre | Valeur | Notes |
+| Paramètre | Valeur | Remarques |
 |---|---|---|
 | `s:event:type` | `complete` |  |
 | `s:asset:type` | `ad` |  |

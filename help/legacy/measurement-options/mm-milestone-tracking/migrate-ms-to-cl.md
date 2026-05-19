@@ -5,16 +5,36 @@ uuid: 1c8edde5-0ef1-4bc0-a62d-1747f4907f09
 exl-id: 732079f4-3eb8-4b9a-892b-25a1c9332be4
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/VrVa44XnAVGI2kNPEFfTB2S840O8jQdvI-PuGX5Y3nM
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+  - id: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: 598
 ht-degree: 79%
 
 ---
 
 # Migration de Milestone vers les liens personnalisés{#migrating-from-milestone-to-custom-link}
 
-## Aperçu  {#overview}
+## Aperçu {#overview}
 
 Les concepts de base de la mesure vidéo sont les mêmes pour le suivi des liens jalonnés et personnalisés, qui prend des événements de lecteur vidéo et les mappe aux méthodes d’analyse, tout en saisissant les métadonnées et les valeurs du lecteur et en les mappant aux variables d’analyse. L’approche Lien personnalisé doit être considérée comme une réduction et une simplification de l’implémentation et des données collectées. Avec la solution Lien personnalisé, aucune variable ou méthode n’est prédéfinie pour la mesure vidéo, elle nécessite une configuration personnalisée complète. Il devrait être possible de mettre à jour le code d’événement du lecteur pour qu’il pointe vers les appels de suivi des liens personnalisés pour les événements de lecteur de base tels que le début et la fin. Pour plus d’informations, voir le [Guide de mise en oeuvre des liens personnalisés](/help/legacy/measurement-options/cl-in-aa/cl-impl-guide.md).
 
@@ -28,9 +48,9 @@ Les tableaux suivants fournissent des correspondances entre la solution Mileston
 | --- | --- | --- |
 | Contenu | eVar <br>Délai d’expiration par défaut : Visite | Définissez votre propre eVar. |
 | Type de contenu | eVar <br>Délai d’expiration par défaut : page vue | Définissez votre propre eVar. |
-| Temps passé sur le contenu | Type <br> d’événement : Compteur | Définissez votre propre événement. |
-| Démarrages de vidéo | Type <br> d’événement : Compteur | Définissez votre propre événement. |
-| La vidéo se termine | Type <br> d’événement : Compteur | Définissez votre propre événement. |
+| Temps passé sur le contenu | Type <br> d’événement : Compteur | Définissez votre propre événement. |
+| Démarrages de vidéo | Type <br> d’événement : Compteur | Définissez votre propre événement. |
+| La vidéo se termine | Type <br> d’événement : Compteur | Définissez votre propre événement. |
 
 ### Variables du module média
 

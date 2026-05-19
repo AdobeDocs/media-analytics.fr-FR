@@ -4,10 +4,22 @@ description: Cette rubrique décrit la fonctionnalité de tracking de plusieurs 
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 7a512a81-a6d1-4d0c-a4fe-91e9b11419db
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/fKpr-TULVqDnK7j07e66gd-kiFLYzf7D2GmoGtP8Aqg
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '186'
-ht-degree: 100%
+source-wordcount: 186
+ht-degree: 81%
 
 ---
 
@@ -25,9 +37,9 @@ L’implémentation actuelle permet les deux scénarios :
 - `stateStart(fullScreen)` - t1
 - `stateEnd(fullScreen)` - t2
 
-Toutefois, cette implémentation nécessite que vous émettiez plusieurs événements `stateStart` et `stateEnd` pour signaler plusieurs changements d’état simultanés. Afin
-d’optimiser ce comportement commun, un nouveau type d’événement `statesUpdate` a été implémenté. Celui-ci met fin à une liste d’états
-tout en démarrant une liste de nouveaux états.
+Toutefois, cette implémentation nécessite que vous émettiez plusieurs événements `stateStart` et `stateEnd` pour signaler plusieurs changements d’état simultanés. Dans
+afin d’optimiser ce comportement commun, un nouveau type d’événement `statesUpdate` a été implémenté. celui-ci met fin à une liste d’états
+et lance une liste de nouveaux états.
 
 Grâce au nouvel événement `statesUpdate`, la liste ci-dessus devient :
 - `statesUpdate(statesEnd=[], statesStart=[pictureInPicture, mute])` - t0
@@ -35,7 +47,7 @@ Grâce au nouvel événement `statesUpdate`, la liste ci-dessus devient :
 - `statesUpdate(statesEnd=[fullScreen], statesStart=[])` - t2
 
 Le nombre d’appels de mises à jour d’état a été réduit de six à trois pour le même comportement. Le dernier événement
-aurait également pu être un simple `stateEnd(fullScreen)`.
+aurait pu être une simple `stateEnd(fullScreen)`.
 
 ## Implémentation de l’API Media Collection {#mpst-api}
 

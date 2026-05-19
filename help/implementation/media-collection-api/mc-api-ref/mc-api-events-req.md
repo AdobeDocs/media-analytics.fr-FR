@@ -1,14 +1,26 @@
 ---
-title: API Streaming Media Collection ‐ Point dʼentrée de la requête events
+title: Point d’entrée de requête d’événement de � de l’API Streaming Media Collection
 description: Quels sont les paramètres et les réponses des points d’entrée des requêtes d’événements de l’API Media Collection ?
 uuid: b237f0a0-dc29-418b-89ee-04c596a27f39
 exl-id: ee0dd8a6-1529-4258-af12-0e2f5948ec38
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/yFHQhj33PM209WycWdPZsV-Yi8qN1DN-DC0KyyqFK1I
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 95%
+source-wordcount: 263
+ht-degree: 0%
 
 ---
 
@@ -16,13 +28,13 @@ ht-degree: 95%
 
 `POST https://{uri}/api/v1/sessions/{sid}/events`
 
-## Paramètre URI
+## Paramètre URI
 
-`sid` : ID de session renvoyé à partir d’une [requête Sessions](mc-api-sessions-req.md).
+`sid` : ID de session renvoyé à partir d’une [requête Sessions](mc-api-sessions-req.md).
 
-## Corps de requête
+## Corps de la requête
 
-Le corps de requête doit être JSON et doit avoir la même structure que le corps de cet exemple de corps de requête :
+Le corps de la requête doit être JSON et doit avoir la même structure que cet exemple de corps de requête :
 
 ```json
 { 
@@ -37,21 +49,21 @@ Le corps de requête doit être JSON et doit avoir la même structure que le co
 }
 ```
 
-* `playerTime` (Obligatoire)
-   * `playhead` : Doit être spécifié en secondes, mais peut être une valeur flottante.
-   * `ts` : Horodatage ; doit être spécifié en millisecondes.
-* `eventType` (Obligatoire)
-* `params` (Facultatif)
-* `customMetadata` (Facultatif ; envoyer uniquement avec les types d’événements `adStart` et `chapterStart`)
-* `qoeData` (Facultatif)
+* `playerTime` (obligatoire)
+   * `playhead` - Doit être en secondes, mais il peut s’agir d’un flottant.
+   * `ts` - Date et heure ; doit être en millisecondes.
+* `eventType` (obligatoire)
+* `params` (facultatif)
+* `customMetadata` (facultatif ; envoyer uniquement avec les types d’événements `adStart` et `chapterStart`)
+* `qoeData` (facultatif)
 
-Pour obtenir la liste des types d’événement valides pour cette version, reportez-vous à la rubrique [Types et descriptions d’événement.](mc-api-event-types.md)
+Pour obtenir une liste des types d’événements valides et des exemples d’implémentation par SDK, voir [Présentation des événements](/help/implementation/events/overview.md).
 
 >[!IMPORTANT]
 >
->***Suivi des publicités -** Vous pouvez uniquement suivre les publicités dans un`adBreak`*.
+>***Suivi des annonces publicitaires -**&#x200B;vous pouvez uniquement effectuer le suivi des annonces publicitaires dans un`adBreak`*.
 >
->En l’absence des « serre-livres » `adBreakStart` et `adBreakComplete` autour des publicités, les événements `adStart` et `adComplete` sont simplement ignorés, et la durée de publicité correspondante est suivie en tant que durée de contenu principal. Cela pourrait avoir un impact significatif sur les données agrégées qui seront disponibles dans Adobe Analytics.
+>En l’absence de `adBreakStart` et `adBreakComplete` « fins de livre » autour des publicités, les événements `adStart` et `adComplete` seront simplement ignorés et la durée de la publicité correspondante sera suivie en tant que durée du contenu principal. Cela pourrait avoir un impact significatif sur les données agrégées qui seront disponibles dans Adobe Analytics.
 
 ## Réponse
 
@@ -68,10 +80,10 @@ Access-Control-Expose-Headers Location
 
 ## Codes de réponse HTTP
 
-| Code de réponse HTTP | Description | Éléments d’action client |
+| Code de réponse HTTP | Description | Éléments d&#39;action client |
 |---|---|---|
-| **204** | **Aucun contenu.** <br/><br/>L’appel Heartbeat a réussi. | S.O. |
-| **400** | **Requête incorrecte.**<br/><br/>Le format de la requête est incorrect. | Recherchez les [schémas de validation JSON](mc-api-json-validation.md) pour le type de requête. |
-| **404** | **Non trouvé.** <br/><br/>L’ID de session pour la session multimédia n’a pas été trouvé dans le service principal. | L’application client doit utiliser l’API de [demande Sessions](mc-api-sessions-req.md) pour créer une autre session multimédia et en effectuer le suivi dans les rapports. |
-| **410** | **Parti.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus générer de rapports d’activité sur celle-ci. | L’application client doit utiliser l’API de [demande Sessions](mc-api-sessions-req.md) pour créer une autre session multimédia et en effectuer le suivi dans les rapports. |
-| **500** | **Erreur du serveur** | S.O. |
+| **204** | **Pas de contenu.** <br/><br/>L’appel Heartbeat a réussi. | S.O. |
+| 400 **&#x200B;**&#x200B;| **Requête incorrecte.** <br/><br/>Le format de la demande n’était pas correct. | Vérifiez le [Schémas de validation JSON](mc-api-json-validation.md) pour le type de requête. |
+| 404 **&#x200B;**&#x200B;| **Introuvable.** <br/><br/>L’ID de session de la session multimédia est introuvable dans le service principal. | L’application cliente doit utiliser l’API [Sessions request](mc-api-sessions-req.md) pour créer une autre session multimédia et effectuer le suivi sur celle-ci dans des rapports. |
+| 410 **&#x200B;**&#x200B;| **Parti.** <br/><br/>La session multimédia a été trouvée dans le service principal, mais le client ne peut plus y signaler d’activité. | L’application cliente doit utiliser l’API [Sessions request](mc-api-sessions-req.md) pour créer une autre session multimédia et effectuer le suivi sur celle-ci dans des rapports. |
+| 500 **&#x200B;**&#x200B;| **Erreur du serveur** | S.O. |

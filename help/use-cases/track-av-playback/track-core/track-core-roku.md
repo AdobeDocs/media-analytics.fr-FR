@@ -1,18 +1,33 @@
 ---
-title: 'Découvrez comment effectuer le suivi de la lecture principale sur Roku '
+title: Découvrez comment effectuer le suivi de la lecture principale sur Roku
 description: Cette rubrique décrit la mise en œuvre du suivi de base à l’aide du SDK Media sur Roku.
 uuid: a8aa7b3c-2d39-44d7-8ebc-b101d130101f
 exl-id: 5272c0ce-4e3d-48c6-bfa6-94066ccbf9ac
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
+TQID: https://experienceleague.adobe.com/n-ox7dhsEPOQCJqHFm8ZLG-7puJ7kfn1ZE7GEg-KFas
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 81%
+source-wordcount: 802
+ht-degree: 79%
 
 ---
 
-# Suivi de la lecture principale sur Roku {#track-core-playback-on-roku}
+# Suivi de la lecture principale sur Roku{#track-core-playback-on-roku}
 
 Cette documentation aborde le suivi dans la version 2.x du SDK.
 
@@ -104,7 +119,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
    * **Métadonnées standard**
 
-[Mise en œuvre de métadonnées standard sur Roku &#x200B;](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
+     [Mise en œuvre de métadonnées standard sur Roku](/help/use-cases/track-av-playback/impl-std-metadata/impl-std-metadata-roku.md)
 
      >[!NOTE]
      >
@@ -150,7 +165,7 @@ Cette documentation aborde le suivi dans la version 2.x du SDK.
 
 1. **Mise à jour de la valeur de la tête de lecture**
 
-   Lorsque le curseur de lecture du média change, avertissez le SDK en appelant l’API `mediaUpdatePlayhead`. <br /> Pour les vidéos à la demande (VOD), la valeur est indiquée en secondes à partir du début de lʼélément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour.
+   Lorsque le curseur de lecture du média change, avertissez le SDK en appelant l’API `mediaUpdatePlayhead`. <br /> Pour la vidéo à la demande (VOD), la valeur est spécifiée en secondes à partir du début de l’élément média. <br /> Pour la diffusion en direct, si le lecteur ne fournit pas d’informations sur la durée du contenu, la valeur peut être spécifiée comme le nombre de secondes écoulées depuis minuit UTC de ce jour.
 
    ```
    ADBMobile().mediaUpdatePlayhead(position)
