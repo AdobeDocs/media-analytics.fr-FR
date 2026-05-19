@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # Temps passé sur la publicité
 
-La mesure **Temps passé sur l’annonce publicitaire** indique le nombre total de secondes de lecture active de l’annonce publicitaire par session, à l’exclusion des pauses, de la mise en mémoire tampon et des blocages. Associez-le à [ Temps passé sur le contenu ](/help/reporting/metrics/content-time-spent.md) pour comparer la charge publicitaire à l’engagement sur le contenu.
+La mesure **Temps passé sur l’annonce publicitaire** indique le nombre total de secondes de lecture active de l’annonce publicitaire par session, à l’exclusion des pauses, de la mise en mémoire tampon et des blocages. Associez-le à [&#x200B; Temps passé sur le contenu &#x200B;](/help/reporting/metrics/content-time-spent.md) pour comparer la charge publicitaire à l’engagement sur le contenu.
 
 ## Méthode de calcul de cette mesure
 
