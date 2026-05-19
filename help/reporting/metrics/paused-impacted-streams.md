@@ -3,9 +3,9 @@ title: Flux impactés en pause
 description: Compte les sessions pendant lesquelles la visionneuse s’est arrêtée au moins une fois.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '150'
+source-wordcount: '152'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ La mesure **Flux impactés en pause** comptabilise les sessions au cours desquel
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal de média définit `mediaReporting.sessionDetails.hasPauseImpactedStreams = true` la première fois qu’un événement [pause start](/help/implementation/events/playback/pause-start.md) est reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur la première fois qu’un événement [pause start](/help/implementation/events/playback/pause-start.md) est reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |

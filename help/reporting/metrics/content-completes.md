@@ -3,9 +3,9 @@ title: Content completes
 description: Comptabilise les sessions dont le curseur de lecture a atteint la fin du contenu.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '140'
+source-wordcount: '142'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ La mesure **Contenu terminé** comptabilise les sessions dont le curseur de lect
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.sessionDetails.isCompleted = true` lorsqu’un événement [session terminée](/help/implementation/events/session/session-complete.md) est reçu. La mesure est signalée lors de l’appel de fermeture. Une session qui expire sans `sessionComplete` explicite n’est pas comptabilisée comme une fin de session.
+Le serveur principal du média définit cet indicateur lorsqu’un événement [session terminée](/help/implementation/events/session/session-complete.md) est reçu. La mesure est signalée lors de l’appel de fermeture. Une session qui expire sans `sessionComplete` explicite n’est pas comptabilisée comme une fin de session.
 
 | Système de reporting | Source |
 | --- | --- |

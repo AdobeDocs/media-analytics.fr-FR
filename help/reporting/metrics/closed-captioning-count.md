@@ -3,9 +3,9 @@ title: Nombre de sous-titres
 description: Indique le nombre de fois où la visionneuse a activé les sous-titres au cours d’une session.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '171'
+source-wordcount: '167'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ La mesure **Nombre de sous-titres codés** indique le nombre de fois que la visi
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média incrémente le champ `count` dans l’entrée `closedCaptioning` de `mediaReporting.states[]` sur chaque événement de début d’état activé pour les sous-titres. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média incrémente ce nombre à chaque événement de début d’état activé pour les légendes. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |

@@ -22,10 +22,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 590
-ht-degree: 98%
+source-wordcount: 749
+ht-degree: 77%
 
 ---
 
@@ -87,6 +87,17 @@ Par exemple, supposons qu’un événement de diffusion LIVE commence à minuit 
 ### En pause
 
 La même logique de « curseur de lecture en direct » appliquée au début de la lecture doit être appliquée lorsqu’un utilisateur interrompt la lecture. Lorsque lʼutilisateur revient pour lire le flux en direct, vous devez définir la valeur `l:event:playhead` par rapport au nouveau nombre de secondes écoulées depuis minuit UTC, _pas_ au point où lʼutilisateur a interrompu le flux en direct.
+
+## Suivi des modifications du programme dans un flux en direct {#live-program-changes}
+
+Lorsqu’une diffusion en direct passe d’un programme ou d’une émission à un autre (un modèle commun pour les propriétés de diffusion et de câble), chaque programme doit être suivi comme une session distincte. Vous pouvez ainsi générer des rapports sur l’engagement et le temps passé par titre individuel plutôt que d’attribuer tout le visionnage à un seul flux continu.
+
+**Approche recommandée :**
+
+1. Lorsque le programme en cours se termine (ou lorsque le lecteur signale un événement de changement de programme), appelez `trackSessionEnd` pour fermer la session en cours.
+2. Lorsque le nouveau programme démarre, appelez `trackSessionStart` avec les métadonnées du nouveau programme (nom, ID, type de contenu, etc.).
+
+Le suivi de chaque programme comme de sa propre session conserve [Temps passé sur le contenu](/help/reporting/metrics/content-time-spent.md), [Marqueurs de progression](/help/reporting/metrics/progress-markers.md) et mesures d’achèvement limitées au programme individuel, et permet d’obtenir des rapports précis sur l’audience par titre. Utilisez `trackSessionEnd` plutôt que `trackComplete` pour la transition : `trackComplete` signale au spectateur qu&#39;il a regardé intentionnellement jusqu&#39;à la fin d&#39;un élément de contenu distinct, alors que `trackSessionEnd` est correct ici parce que le flux se poursuit avec une programmation différente plutôt que de se terminer.
 
 ## Exemple de code {#sample-code}
 

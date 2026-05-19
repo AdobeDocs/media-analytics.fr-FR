@@ -3,9 +3,9 @@ title: Nombre d’annonces
 description: Indique le nombre de publicités lancées au cours d’une session.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '174'
+source-wordcount: '176'
 ht-degree: 9%
 
 ---
@@ -17,7 +17,7 @@ La mesure **Nombre d’annonces** indique le nombre d’annonces publicitaires l
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média est incrémenté `mediaReporting.sessionDetails.adCount` chaque événement [début de publicité](/help/implementation/events/ads/ad-start.md) reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média incrémente ce nombre à chaque événement [début de la publicité](/help/implementation/events/ads/ad-start.md) reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |

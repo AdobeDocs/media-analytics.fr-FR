@@ -3,9 +3,9 @@ title: Bloquer les flux impactés
 description: Comptabilise les sessions au cours desquelles au moins un blocage s’est produit lors de la lecture.
 feature: Metrics
 role: User, Admin
-source-git-commit: 1278355e0bfc67c635250c426edaf865fb658c37
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '176'
+source-wordcount: '178'
 ht-degree: 8%
 
 ---
@@ -17,7 +17,7 @@ La mesure **Blocage des flux impactés** comptabilise les sessions dans lesquell
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.qoeDataDetails.hasStallImpactedStreams = true` lorsqu’aucun mouvement de tête de lecture n’est enregistré sur le contenu principal pendant au moins trois événements consécutifs au cours de la session. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur lorsqu’aucun mouvement de tête de lecture n’est enregistré sur le contenu principal pendant au moins trois événements consécutifs au cours de la session. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |

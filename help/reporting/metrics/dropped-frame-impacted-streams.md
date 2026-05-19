@@ -3,9 +3,9 @@ title: Flux impactés par l’image perdue
 description: Comptabilise les sessions dans lesquelles au moins une image a été supprimée.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '133'
+source-wordcount: '135'
 ht-degree: 11%
 
 ---
@@ -17,7 +17,7 @@ L’image **supprimée a eu un impact sur les flux** compte les sessions au cour
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média définit `mediaReporting.qoeDataDetails.hasDroppedFrameImpactedStreams = true` si la valeur de `droppedFrames` de l’objet QoE est supérieure à zéro à la fermeture de la session.
+Le serveur principal du média définit cet indicateur si la valeur `droppedFrames` de l’objet QoE est supérieure à zéro à la fermeture de la session.
 
 | Système de reporting | Source |
 | --- | --- |

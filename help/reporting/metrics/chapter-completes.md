@@ -3,9 +3,9 @@ title: Lectures complètes du chapitre
 description: Compte chaque chapitre lu jusqu’à la fin.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '121'
+source-wordcount: '123'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ La mesure **Chapitre terminé** comptabilise chaque chapitre lu jusqu’à la fi
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.chapterDetails.isCompleted = true` lorsqu’un événement [chapitre terminé](/help/implementation/events/chapters/chapter-complete.md) est reçu. La mesure est signalée lors de l’appel de fermeture du chapitre. Les chapitres ignorés ou abandonnés pendant la lecture ne sont pas considérés comme terminés.
+Le serveur principal du média définit cet indicateur lorsqu’un événement [chapitre terminé](/help/implementation/events/chapters/chapter-complete.md) est reçu. La mesure est signalée lors de l’appel de fermeture du chapitre. Les chapitres ignorés ou abandonnés pendant la lecture ne sont pas considérés comme terminés.
 
 | Système de reporting | Source |
 | --- | --- |

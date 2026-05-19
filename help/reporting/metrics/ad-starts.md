@@ -3,10 +3,10 @@ title: Annonces démarrées
 description: Comptabilise chaque publicité ayant commencé à être lue au cours d’une session.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '124'
-ht-degree: 12%
+source-wordcount: '126'
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ La mesure **Publicités démarrées** comptabilise chaque publicité qui a comme
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.advertisingDetails.isStarted = true` lorsqu’un événement [début de la publicité](/help/implementation/events/ads/ad-start.md) est reçu. La mesure est signalée lors de l’appel de démarrage de la publicité.
+Le serveur principal du média définit cet indicateur lorsqu’un événement [début de la publicité](/help/implementation/events/ads/ad-start.md) est reçu. La mesure est signalée lors de l’appel de démarrage de la publicité.
 
 | Système de reporting | Source |
 | --- | --- |

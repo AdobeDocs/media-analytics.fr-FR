@@ -20,10 +20,10 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: 522
-ht-degree: 79%
+source-wordcount: 641
+ht-degree: 60%
 
 ---
 
@@ -110,7 +110,7 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
 
 1. Appelez `trackEvent()` avec l’événement `AdStart` dans l’instance `MediaHeartbeat` pour commencer le suivi de la lecture de publicité.
 
-   Incluez une référence à votre variable de métadonnées personnalisées (ou un objet vide) comme troisième paramètre dans l’appel d’événement.
+   Incluez une référence à votre variable de métadonnées personnalisées (ou un objet vide) comme troisième paramètre dans l’appel d’événement. Pendant la lecture de la publicité, gardez le curseur de lecture du contenu (`l:event:playhead`) fixe à l’emplacement où la coupure publicitaire a commencé ; sa progression pendant la lecture de la publicité est exagérée [Temps passé sur le contenu](/help/reporting/metrics/content-time-spent.md).
 
 1. Lorsque la lecture de la publicité atteint la fin de la publicité, appelez `trackEvent()` avec l’événement `AdComplete`.
 
@@ -120,7 +120,11 @@ La lecture de publicité inclut le suivi des coupures publicitaires, des démarr
 
 >[!IMPORTANT]
 >
->Veillez à NE PAS augmenter le curseur de lecture du lecteur de contenu (`l:event:playhead`) pendant la lecture de la publicité (`s:asset:type=ad`). Si vous le faites, les mesures de Temps passé sur le contenu seront affectées.
+>**Annonces preroll : ne pas appeler `trackPlay` avant `AdBreakStart` et `AdStart`.** Le premier ping de `play` sur les incréments de contenu principaux [Le contenu démarre](/help/reporting/metrics/content-starts.md). Si `trackPlay` est appelé avant le déclenchement des événements de publicité preroll et que la visionneuse abandonne pendant la publicité, les démarrages de contenu sont incrémentés même si aucun contenu principal n’a jamais été lu. Pour les scénarios de preroll, retardez le `trackPlay` jusqu’à ce que les `AdBreakStart` et `AdStart` aient été envoyés.
+
+>[!NOTE]
+>
+>La valeur du curseur de lecture signalée pendant la lecture de la publicité représente la position de la visionneuse dans le **contenu principal**, et non dans la publicité. Pour une publicité preroll précédant une vidéo de 10 minutes, le curseur de lecture est `0` tout au long de la publicité. Pour une publicité mid-roll qui démarre à 5 minutes, le curseur de lecture reste à `300` (secondes) pendant la durée de la publicité.
 
 L’exemple de code suivant utilise le kit SDK JavaScript 2.x pour un lecteur multimédia HTML5.
 

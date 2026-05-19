@@ -3,10 +3,10 @@ title: Fin de la session
 description: Fermez immédiatement une session multimédia lorsque la personne qui la visionne abandonne le contenu.
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 11%
+source-wordcount: '273'
+ht-degree: 8%
 
 ---
 
@@ -16,6 +16,10 @@ ht-degree: 11%
 L’événement de fin de session ferme immédiatement et de manière irréversible une session de suivi multimédia. La session se termine par une fermeture définitive : une fois envoyée, la session se termine et aucun autre événement ne peut être suivi en dessous. N’utilisez la fin de session que lorsque vous êtes certain qu’aucun événement supplémentaire ne se produira, par exemple lorsque le lecteur est détruit ou que la page est déchargée. Dans la plupart des cas, il est plus sûr de laisser la session expirer naturellement plutôt que de risquer d’interrompre les événements qui pourraient encore arriver. Si la visionneuse termine le contenu, appelez plutôt [Fin de la session](session-complete.md).
 
 Sans fin de session explicite, une session se ferme automatiquement après 10 minutes d’absence d’événement ou 30 minutes d’absence de mouvement du curseur de lecture.
+
+>[!NOTE]
+>
+>Vous pouvez appeler en toute sécurité la fin de session plusieurs fois pour la même session. Le serveur principal ferme la session sur le premier événement et supprime silencieusement tous les événements suivants pour cet ID de session, y compris une seconde fin de session. Vous n’avez pas besoin de vous prémunir contre les appels en double dans des conditions de concurrence, telles qu’un délai d’expiration de 30 minutes expirant au moment où la visionneuse ferme le lecteur.
 
 * **Conditions préalables** : [début de session](session-start.md)
 * **Mesure associée** : aucune

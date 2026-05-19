@@ -3,10 +3,10 @@ title: Temps passé sur la publicité
 description: Indique le nombre total de secondes de lecture de publicité active par session.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '162'
-ht-degree: 9%
+source-wordcount: '174'
+ht-degree: 8%
 
 ---
 
@@ -17,7 +17,7 @@ La mesure **Temps passé sur l’annonce publicitaire** indique le nombre total 
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média additionne le temps d’horloge murale écoulé entre les événements pendant que le lecteur est à l’état `play` sur une publicité. Le temps pendant les pauses et la mise en mémoire tampon est exclu. La mesure est signalée lors de l’appel de fermeture de la publicité. La valeur s’affiche sous la forme `HH:MM:SS` dans Analysis Workspace et en secondes dans les flux de données, Data Warehouse et les API de création de rapports.
+Le serveur principal du média additionne le temps d’horloge murale écoulé entre les événements pendant que le lecteur est à l’état `play` sur une publicité. Le temps pendant les pauses, la mise en mémoire tampon et les recherches est exclu, conformément à la manière dont le [temps passé sur le contenu](/help/reporting/metrics/content-time-spent.md) est calculé pour le contenu principal. La mesure est signalée lors de l’appel de fermeture de la publicité. La valeur s’affiche sous la forme `HH:MM:SS` dans Analysis Workspace et en secondes dans les flux de données, Data Warehouse et les API de création de rapports.
 
 | Système de reporting | Source |
 | --- | --- |

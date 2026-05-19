@@ -3,10 +3,10 @@ title: Reprises du contenu
 description: Compte les sessions qui ont repris une lecture précédemment interrompue.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 10%
+source-wordcount: '171'
+ht-degree: 9%
 
 ---
 
@@ -23,7 +23,7 @@ La mesure **Reprises du contenu** comptabilise les sessions qui ont repris une l
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média définit `mediaReporting.sessionDetails.hasResume = true` lorsqu’`mediaCollection.sessionDetails.hasResume` est `true` sur l’événement [début de session](/help/implementation/events/session/session-start.md). Le lecteur doit explicitement marquer la session comme reprise. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur lorsque `mediaCollection.sessionDetails.hasResume` est `true` sur l’événement [début de session](/help/implementation/events/session/session-start.md). Le lecteur doit explicitement marquer la session comme reprise. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |

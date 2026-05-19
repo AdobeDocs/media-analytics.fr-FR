@@ -3,10 +3,10 @@ title: Démarrages du chapitre
 description: Compte chaque chapitre qui a commencé à être lu au cours d’une session.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '114'
-ht-degree: 13%
+source-wordcount: '116'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +17,7 @@ La mesure **Début du chapitre** comptabilise chaque chapitre qui a commencé à
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.chapterDetails.isStarted = true` lorsqu’un événement [début de chapitre](/help/implementation/events/chapters/chapter-start.md) est reçu. La mesure est signalée lors de l’appel de fermeture du chapitre.
+Le serveur principal du média définit cet indicateur lorsqu’un événement [début du chapitre](/help/implementation/events/chapters/chapter-start.md) est reçu. La mesure est signalée lors de l’appel de fermeture du chapitre.
 
 | Système de reporting | Source |
 | --- | --- |

@@ -3,10 +3,10 @@ title: Pertes avant le démarrage
 description: Comptabilise les sessions pour lesquelles la visionneuse s’est arrêtée avant le rendu du contenu principal.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 9%
+source-wordcount: '211'
+ht-degree: 7%
 
 ---
 
@@ -17,7 +17,7 @@ La mesure **Pertes avant démarrage** comptabilise les sessions pendant lesquell
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média définit les `mediaReporting.qoeDataDetails.isDroppedBeforeStart = true` pour les sessions qui se ferment sans jamais produire d’événement [play](/help/implementation/events/playback/play.md) sur le contenu principal. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur pour les sessions qui se ferment sans jamais produire d’événement [play](/help/implementation/events/playback/play.md) sur le contenu principal. La mesure est signalée lors de l’appel de fermeture. Les scénarios courants sont les suivants : la visionneuse se ferme lors d’une publicité preroll, le lecteur se bloque indéfiniment dans la phase de mise en mémoire tampon initiale ou une erreur se déclenche avant le premier événement de lecture du contenu principal. Dans tous ces cas, la session enregistre un [Début média](/help/reporting/metrics/media-starts.md) mais aucun [Début contenu](/help/reporting/metrics/content-starts.md) ni aucun [Marqueur de progression](/help/reporting/metrics/progress-markers.md) n’est enregistré.
 
 | Système de reporting | Source |
 | --- | --- |

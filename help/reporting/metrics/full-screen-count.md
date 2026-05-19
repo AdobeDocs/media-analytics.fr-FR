@@ -3,9 +3,9 @@ title: Nombre de pages plein écran
 description: Indique le nombre de fois où la visionneuse est entrée en plein écran au cours d’une session.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 4c4f1cc9e1c49044474e4ff34207796b2a814553
 workflow-type: tm+mt
-source-wordcount: '173'
+source-wordcount: '169'
 ht-degree: 8%
 
 ---
@@ -23,7 +23,7 @@ La mesure **Nombre de visionneuses en plein écran** indique le nombre de fois q
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média incrémente le champ `count` dans l’entrée `fullscreen` de `mediaReporting.states[]` sur chaque événement de démarrage d’état en plein écran. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média incrémente ce nombre à chaque événement de démarrage d’état en plein écran. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |

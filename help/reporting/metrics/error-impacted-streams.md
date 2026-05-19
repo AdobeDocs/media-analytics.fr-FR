@@ -3,9 +3,9 @@ title: Flux impactés par l’erreur
 description: Comptabilise les sessions dans lesquelles au moins une erreur s’est produite.
 feature: Metrics
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '143'
 ht-degree: 10%
 
 ---
@@ -17,7 +17,7 @@ La mesure **Erreur impactée par les flux** comptabilise les sessions dans lesqu
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.qoeDataDetails.hasErrorImpactedStreams = true` la première fois qu’un événement [error](/help/implementation/events/error.md) est reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur la première fois qu’un événement [error](/help/implementation/events/error.md) est reçu au cours de la session. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |

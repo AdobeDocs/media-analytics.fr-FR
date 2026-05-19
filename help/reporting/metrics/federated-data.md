@@ -3,9 +3,9 @@ title: Données fédérées
 description: Comptabilise les sessions reçues par le biais d’un partage de données fédéré plutôt que la propre mise en œuvre d’un client.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '220'
 ht-degree: 6%
 
 ---
@@ -27,7 +27,7 @@ Voir le cas d’utilisation [Federated Media](/help/use-cases/federated-media.md
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média se `mediaReporting.sessionDetails.isFederated = true` lorsque la session arrive sur un canal fédéré. La mesure est incrémentée une fois par session de qualification et est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur lorsque la session arrive sur un canal fédéré. La mesure est incrémentée une fois par session de qualification et est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |
