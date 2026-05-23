@@ -3,19 +3,18 @@ title: Mesures calculées
 description: Mesures calculées personnalisées pour les rapports de médias en flux continu dans Adobe Analytics et Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: ea740a32bbd5e640cd437cd8c5c4f48071a0d02c
+source-git-commit: 1251b66173158b8fea92516197b3b9f444bfaaf7
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 5%
 
 ---
 
-
 # Mesures calculées
 
 Les mesures calculées pour les services de médias en flux continu Adobe sont des mesures personnalisées créées à partir des mesures de médias en flux continu standard. Vous pouvez ainsi obtenir des ratios tels que le temps de publicité moyen ou le taux d’achèvement des médias sans modifier votre implémentation.
 
-Pour créer ces mesures calculées dans Analysis Workspace, consultez la présentation des mesures calculées respectives dans [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/components/calculated-metrics/cm-overview) ou [Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
+Pour créer ces mesures calculées dans Analysis Workspace, consultez la présentation des mesures calculées respectives dans [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview) ou [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
 
 | Mesure calculée | Description | Formule |
 | --- | --- | --- |
@@ -34,3 +33,4 @@ Pour créer ces mesures calculées dans Analysis Workspace, consultez la présen
 | Taux de durée du tampon de contenu | Taux de la durée totale de la mémoire tampon par rapport au temps passé sur le contenu | [`Total Buffer Duration`](/help/reporting/metrics/total-buffer-duration.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Taux de temps de démarrage du contenu | Taux du temps de démarrage par rapport au temps passé sur le contenu | [`Time to Start`](/help/reporting/metrics/time-to-start.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
 | Taux de temps passé sur la publicité | Taux du temps passé sur la publicité par rapport au temps passé sur le contenu | [`Ad Time Spent`](/help/reporting/metrics/ad-time-spent.md) / [`Content Time Spent`](/help/reporting/metrics/content-time-spent.md) |
+
