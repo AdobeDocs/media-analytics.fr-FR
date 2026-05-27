@@ -7,12 +7,12 @@ feature: Streaming Media
 role: User, Admin, Developer
 source-git-commit: afc22870fc69d8319acbff91aafc66b66ec9bdf9
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 94%
+source-wordcount: '656'
+ht-degree: 92%
 
 ---
 
-# Configuration d’Adobe Debug {#configure-adobe-debug}
+# Configuration d’Adobe Debug{#configure-adobe-debug}
 
 ## Accès à Adobe Debug {#accessing-adobe-debug}
 
@@ -72,7 +72,7 @@ Téléchargez et installez le certificat SSL :
    **Windows**
    1. Procédez de l’une des manières suivantes :
 
-      * [Ajout de certificats au magasin des autorités de certification racine approuvées pour un ordinateur local](https://technet.microsoft.com/fr-fr/library/cc754841.aspx#BKMK_addlocal)
+      * [Ajout de certificats au magasin d&#39;autorités de certification racine de confiance pour un ordinateur local](https://technet.microsoft.com/fr-fr/library/cc754841.aspx#BKMK_addlocal)
 
    1. Pour Firefox, exécutez la procédure décrite dans [Installation d’un certificat racine dans Mozilla Firefox](https://wiki.wmtransfer.com/projects/webmoney/wiki/Installing_root_certificate_in_Mozilla_Firefox).
 
