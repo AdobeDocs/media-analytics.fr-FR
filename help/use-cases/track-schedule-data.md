@@ -18,9 +18,9 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1425
+source-wordcount: 1424
 ht-degree: 5%
 
 ---
@@ -81,7 +81,7 @@ La fonctionnalité de planification des données pour Streaming Media fonctionne
 
 Pour charger les données de planning du contenu actif précédent, votre environnement Streaming Media doit respecter les conditions préalables suivantes :
 
-* La collecte de médias en flux continu doit être activée pour le suivi du contenu pour lequel vous souhaitez charger des données de planning, comme décrit dans la section [Présentation du suivi](/help/use-cases/track-av-playback/track-core-overview.md). <!--specifics??? -->
+* La collecte de médias en flux continu doit être activée pour le suivi du contenu pour lequel vous souhaitez charger des données de planning, comme décrit dans la section [Présentation du suivi](/help/implementation/events/session/overview.md). <!--specifics??? -->
 
 * Utilisez Streaming Media Collection avec Customer Journey Analytics. Adobe Analytics ne permet pas de charger des données de planning.
 
@@ -317,9 +317,9 @@ L’exemple suivant illustre un fichier .json planifié avec deux enregistrement
 
    Examinons les exemples de dimensions suivants que vous pouvez créer et sur lesquels vous pouvez créer des rapports dans Customer Journey Analytics :
 
-   * **[« _Nom de l’épisode_«](/help/reporting/dimensions/episode.md)** : cette dimension peut vous aider à identifier les épisodes d’une série particulière qui ont les meilleures performances.
+   * **[[!UICONTROL Épisode]](/help/reporting/dimensions/episode.md)** : cette dimension peut vous aider à déterminer les épisodes d’une série particulière qui ont les meilleures performances.
 
-   * **[ID de ressource](/help/reporting/dimensions/asset-id.md)**
+   * **[[!UICONTROL ID de ressource]](/help/reporting/dimensions/asset-id.md)**
 
 1. Continuez avec [&#x200B; Analyser les données dans Customer Journey Analytics &#x200B;](#analyze-data-in-customer-journey-analytics).
 

@@ -3,7 +3,7 @@ title: Capsule publicitaire
 description: Indique chaque coupure publicitaire unique, indexée par un identifiant de capsule généré automatiquement.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -22,7 +22,7 @@ L’ID de capsule publicitaire est généré automatiquement par le SDK lorsqu�
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.pod` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingPodDetails.ID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-pod-details-reporting) |
 | Flux de données | `videoadpod`, `post_videoadpod` |
 | Audience Manager | S.O. |
 

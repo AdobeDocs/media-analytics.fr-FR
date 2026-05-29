@@ -3,10 +3,10 @@ title: Créateur
 description: Définissez le créateur ou le studio de production du contenu.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '173'
-ht-degree: 16%
+source-wordcount: '207'
+ht-degree: 10%
 
 ---
 
@@ -24,14 +24,18 @@ La variable originator correspond au studio de création ou de production du con
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.originator` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.originator`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.originator` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
-## SDK web
+## Types d’implémentation recommandés
 
-`originator` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
+
+`originator` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Transmettez l’original en tant que clé de métadonnées dans l’argument HashMap à `trackSessionStart`. Utilisez `MediaConstants.VideoMetadataKeys.ORIGINATOR`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -60,7 +62,9 @@ metadata[MediaConstants.VideoMetadataKeys.ORIGINATOR] = "Warner Brothers"
 tracker.trackSessionStart(info: mediaObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Transmettez l’original en tant que clé de métadonnées dans l’argument HashMap à `trackSessionStart`. Utilisez `MediaConstants.VideoMetadataKeys.ORIGINATOR`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -69,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.ORIGINATOR] = "Warner Brothers"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Utilisez `createMediaSession` pour définir des `originator` dans `sessionDetails` :
 
@@ -87,9 +91,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
-Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `originator` à l’intérieur du `mediaCollection.sessionDetails` :
+Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `originator` à l’intérieur du `xdm.mediaCollection.sessionDetails` :
 
 ```json
 {
@@ -112,7 +116,13 @@ Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Transmettez l’initiateur dans l’objet `contextData` à l’aide de `ADB.Media.VideoMetadataKeys.Originator` :
 
@@ -123,7 +133,20 @@ contextData[ADB.Media.VideoMetadataKeys.Originator] = "Warner Brothers";
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Utilisez `ADBMobile.media.VideoMetadataKeys.ORIGINATOR` pour définir l’auteur dans la propriété `StandardMediaMetadata` de l’objet média avant d’appeler `trackSessionStart` :
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var standardMetadata = {};
+standardMetadata[ADBMobile.media.VideoMetadataKeys.ORIGINATOR] = "Warner Brothers";
+mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB  API Media Collection ]
 
 Incluez `media.originator` dans l’objet `params` :
 
@@ -138,3 +161,5 @@ Incluez `media.originator` dans l’objet `params` :
 ```
 
 Consultez la [référence des sessions de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

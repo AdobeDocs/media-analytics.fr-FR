@@ -3,7 +3,7 @@ title: Média téléchargé
 description: Indique les sessions qui ont lu du contenu hors ligne téléchargé.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '195'
 ht-degree: 7%
@@ -28,7 +28,7 @@ L’indicateur téléchargé est défini par le lecteur de l’une des trois fa�
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.downloaded` à un eVar. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données | `evar1`-`evar250`, `post_evar1`-`post_evar250` (l’eVar à laquelle votre règle de traitement `a.media.downloaded` mappée) |
 | Audience Manager | `c_contextdata.a.media.downloaded` |
 

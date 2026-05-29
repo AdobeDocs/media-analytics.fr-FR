@@ -3,10 +3,10 @@ title: Identifiant de référencement
 description: Définissez l’identifiant d’emplacement pour chaque publicité afin d’activer les répartitions par emplacement publicitaire.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '178'
-ht-degree: 17%
+source-wordcount: '210'
+ht-degree: 11%
 
 ---
 
@@ -24,14 +24,18 @@ La variable d’identifiant d’emplacement identifie l’emplacement publicitai
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.placement` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.advertisingDetails.placementID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.ad.placement` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |
 
-## SDK web
+## Types d’implémentation recommandés
 
-`placementID` à l’intérieur des `mediaCollection.advertisingDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
+
+`placementID` à l’intérieur des `xdm.mediaCollection.advertisingDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Transmettez l’identifiant d’emplacement en tant que clé de métadonnées dans l’argument HashMap à `trackEvent(AdStart)`. Utilisez `MediaConstants.AdMetadataKeys.PLACEMENT_ID`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -62,7 +64,9 @@ metadata[MediaConstants.AdMetadataKeys.PLACEMENT_ID] = "placement-12"
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Transmettez l’identifiant d’emplacement en tant que clé de métadonnées dans l’argument HashMap à `trackEvent(AdStart)`. Utilisez `MediaConstants.AdMetadataKeys.PLACEMENT_ID`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -71,9 +75,9 @@ metadata[MediaConstants.AdMetadataKeys.PLACEMENT_ID] = "placement-12"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-`placementID` à l’intérieur des `mediaCollection.advertisingDetails` lors de l’appel de `sendMediaEvent` pour `media.adStart` :
+`placementID` à l’intérieur des `xdm.mediaCollection.advertisingDetails` lors de l’appel de `sendMediaEvent` pour `media.adStart` :
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -90,9 +94,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
-Appelez le point d’entrée [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) avec `placementID` à l’intérieur du `mediaCollection.advertisingDetails` :
+Appelez le point d’entrée [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) avec `placementID` à l’intérieur du `xdm.mediaCollection.advertisingDetails` :
 
 ```json
 {
@@ -115,7 +119,13 @@ Appelez le point d’entrée [adStart](https://developer.adobe.com/data-collecti
 }
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Transmettez l’identifiant d’emplacement dans l’objet `contextData` à l’aide de `ADB.Media.AdMetadataKeys.PlacementId` :
 
@@ -126,7 +136,19 @@ contextData[ADB.Media.AdMetadataKeys.PlacementId] = "placement-12";
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Définissez l’ID d’emplacement à l’aide de `ADBMobile.media.AdMetadataKeys.PLACEMENT_ID` dans l’objet de métadonnées publicitaire standard :
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
+var standardAdMetadata = {};
+standardAdMetadata[ADBMobile.media.AdMetadataKeys.PLACEMENT_ID] = "placement-12";
+adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB  API Media Collection ]
 
 Incluez `media.ad.placementId` dans l’objet `params` :
 
@@ -141,3 +163,5 @@ Incluez `media.ad.placementId` dans l’objet `params` :
 ```
 
 Consultez la [référence des événements de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

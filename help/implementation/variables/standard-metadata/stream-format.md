@@ -3,10 +3,10 @@ title: Format du flux
 description: Définissez le format du flux pour identifier le niveau de qualité (HD, SD ou autre libellé utilisé par votre pipeline de diffusion).
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 0%
+source-wordcount: '236'
+ht-degree: 8%
 
 ---
 
@@ -24,14 +24,18 @@ La variable de format du flux identifie le niveau de qualité du flux (général
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.format` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.streamFormat`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.format` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
-## SDK Web
+## Types d’implémentation recommandés
 
-`streamFormat` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
+
+`streamFormat` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -47,11 +51,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK Mobile
+>[!TAB iOS]
 
 Transmettez le format de flux en tant que clé de métadonnées dans l’argument HashMap à `trackSessionStart`. Utilisez `MediaConstants.VideoMetadataKeys.STREAM_FORMAT`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -60,7 +62,9 @@ metadata[MediaConstants.VideoMetadataKeys.STREAM_FORMAT] = "HD"
 tracker.trackSessionStart(info: mediaObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Transmettez le format de flux en tant que clé de métadonnées dans l’argument HashMap à `trackSessionStart`. Utilisez `MediaConstants.VideoMetadataKeys.STREAM_FORMAT`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -69,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.STREAM_FORMAT] = "HD"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Utilisez `createMediaSession` pour définir des `streamFormat` dans `sessionDetails` :
 
@@ -87,9 +91,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
-Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `streamFormat` à l’intérieur du `mediaCollection.sessionDetails` :
+Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `streamFormat` à l’intérieur du `xdm.mediaCollection.sessionDetails` :
 
 ```json
 {
@@ -112,7 +116,13 @@ Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## Media SDK
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Transmettez le format de flux dans l’objet `contextData` à l’aide de `ADB.Media.VideoMetadataKeys.StreamFormat` :
 
@@ -123,7 +133,20 @@ contextData[ADB.Media.VideoMetadataKeys.StreamFormat] = "HD";
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Utilisez `ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT` pour définir le format de flux dans la propriété `StandardMediaMetadata` de l’objet média avant d’appeler `trackSessionStart` :
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var standardMetadata = {};
+standardMetadata[ADBMobile.media.VideoMetadataKeys.STREAM_FORMAT] = "HD";
+mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB  API Media Collection ]
 
 Incluez `media.streamFormat` dans l’objet `params` de votre `sessionStart` requête POST :
 
@@ -138,3 +161,5 @@ Incluez `media.streamFormat` dans l’objet `params` de votre `sessionStart` req
 ```
 
 Consultez la [référence des sessions de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

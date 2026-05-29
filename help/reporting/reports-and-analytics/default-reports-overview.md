@@ -22,10 +22,10 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 355
-ht-degree: 92%
+source-wordcount: 358
+ht-degree: 50%
 
 ---
 
@@ -33,14 +33,14 @@ ht-degree: 92%
 
 Adobe Analytics fournit plusieurs rapports et mesures pour effectuer le suivi des performances multimédia sur votre site web.
 
-Outre les mesures et les dimensions disponibles lorsque vous activez chaque module, il existe trois rapports sous forme de tableaux de bord, qui deviennent accessibles lorsque vous activez le module Media Core. L’activation du module Publicités modifie également l’aspect de certains de ces rapports sous forme de tableaux de bord en y intégrant d’autres mesures et filtres.
+Outre les mesures et dimensions disponibles lorsque vous activez chacun des modules, trois autres rapports de type tableau de bord sont disponibles lorsque vous activez le module [!UICONTROL Media Core]. L’activation du module [!UICONTROL Ads] modifie également l’aspect de certains de ces rapports de style tableau de bord en ajoutant des mesures et des filtres supplémentaires.
 
 Les rapports multimédia sont répertoriés dans l’onglet **[!UICONTROL Rapports]**. Accédez à > **[!UICONTROL Média]** > **[!UICONTROL Engagement multimédia]** et faites votre choix parmi les options suivantes :
 
 | Rapport multimédia | Description     | Informations commerciales courantes       |
 | --- | --- | --- |
-| [Présentation multimédia &#x200B;](media-reports-overview.md) | Affiche plusieurs mesures consolidées pour surveiller rapidement que le média fonctionne comme prévu. Un graphique montre les démarrages de média par rapport aux impressions publicitaires afin que vous puissiez rapidement visualiser et comparer ces mesures. | <ul> <li>Totaux pour les principales mesures, notamment les démarrages de contenu, le taux d’achèvement, le temps moyen passé sur le flux et le nombre moyen d’éléments multimédia par visite.  </li> <li>Total des démarrages de contenu et de publicités des médias, filtré par type d’appareil ou par pays.  </li> </ul> |
-| [Détails du média &#x200B;](media-reports-detail.md) | Affiche des mesures détaillées pour tous les éléments multimédia, notamment les démarrages, les visionneuses simultanées, le taux d’achèvement, le pourcentage de lecture et les impressions publicitaires. | <ul> <li>Totaux pour les principales mesures, notamment les démarrages de média, les démarrages de contenu et de publicités, et le nombre moyen de contenus par visite.  </li> <li>Total des démarrages de contenu et de publicités des médias, filtré par type d’appareil ou par pays.  </li> </ul> |
-| [Tranche horaire du média &#x200B;](media-reports-daypart.md) | Affiche les démarrages de contenu par tranche horaire afin de vous permettre de déterminer le moment où votre audience est engagée. | <ul> <li>Engagement de l’audience par tranche horaire.  </li> <li>Engagement de l’audience par rapport à des périodes précédentes.  </li> </ul> |
+| [Présentation multimédia &#x200B;](media-reports-overview.md) | Affiche plusieurs mesures consolidées pour surveiller rapidement que le média fonctionne comme prévu. Un graphique affiche [[!UICONTROL démarrages de média]](/help/reporting/metrics/media-starts.md) à côté des impressions d’annonce publicitaire afin de vous permettre d’afficher et de comparer rapidement ces mesures. | <ul> <li>Totaux des mesures principales, y compris [[!UICONTROL Débuts de contenu]](/help/reporting/metrics/content-starts.md), taux d’achèvement, durée moyenne de diffusion et nombre moyen d’éléments multimédias par visite.  </li> <li>Total [[!UICONTROL démarrages de contenu]](/help/reporting/metrics/content-starts.md) et [[!UICONTROL démarrages d’annonce]](/help/reporting/metrics/ad-starts.md) pour les médias filtrés par type d’appareil ou par pays.  </li> </ul> |
+| [Détails du média &#x200B;](media-reports-detail.md) | Affiche des mesures détaillées pour tous les éléments multimédia, notamment les démarrages, les visionneuses simultanées, le taux d’achèvement, le pourcentage de lecture et les impressions publicitaires. | <ul> <li>Totaux des mesures principales, y compris [[!UICONTROL démarrages de médias]](/help/reporting/metrics/media-starts.md), [[!UICONTROL démarrages de contenu]](/help/reporting/metrics/content-starts.md) et [[!UICONTROL démarrages d’annonces]](/help/reporting/metrics/ad-starts.md), et contenu moyen par visite.  </li> <li>Total [[!UICONTROL démarrages de contenu]](/help/reporting/metrics/content-starts.md) et [[!UICONTROL démarrages d’annonce]](/help/reporting/metrics/ad-starts.md) pour les médias filtrés par type d’appareil ou par pays.  </li> </ul> |
+| [Tranche horaire du média &#x200B;](media-reports-daypart.md) | Affiche [[!UICONTROL Le contenu démarre]](/help/reporting/metrics/content-starts.md) en fonction de l’heure de la journée afin de vous permettre de déterminer rapidement le moment où votre audience est engagée. | <ul> <li>Engagement de l’audience par tranche horaire.  </li> <li>Engagement de l’audience par rapport à des périodes précédentes.  </li> </ul> |
 | [Visionneuses simultanées de médias &#x200B;](media-concurrent-viewers-reports.md) | Affiche les visionneuses simultanées sur une journée. Les données peuvent être filtrées par contenu, type d’appareil ou pays. | <ul> <li>Engagement de l’audience par minute sur un intervalle de 24 heures.  </li> </ul> |
 | Événements et variables de médias | Des rapports supplémentaires sont disponibles. Les mesures et dimensions du média sont des variables Analytics standard permettant de générer directement des rapports et qui peuvent être ajoutées à d’autres rapports Analytics. | <ul> <li>Conversion multimédia (événements ayant lieu après l’affichage du média) en générant un rapport de visites comprenant un type de contenu de média.  </li> <li>Flux multimédia suivant/précédent utilisant le nom du média (prop).  </li> </ul> |

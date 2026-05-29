@@ -3,10 +3,10 @@ title: Plein écran
 description: Effectuez le suivi lorsque la visionneuse entre et quitte la lecture plein écran afin que le serveur principal puisse signaler l’engagement en plein écran.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 10%
+source-wordcount: '308'
+ht-degree: 7%
 
 ---
 
@@ -24,12 +24,16 @@ L’état du lecteur plein écran effectue le suivi lorsque la visionneuse entre
 | Propriété | Valeur |
 | --- | --- |
 | **Variables de données contextuelles** | `a.media.states.fullscreen.set`, `a.media.states.fullscreen.count`, `a.media.states.fullscreen.time` |
-| **champ de collection XDM** | [`mediaCollection.statesStart[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) et [`mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) (entrées avec `name: "fullscreen"`) |
+| **champ de collection XDM** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) et [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) (entrées avec `name: "fullscreen"`) |
 | **caractéristiques** | `c_contextdata.a.media.states.fullscreen.set`, `c_contextdata.a.media.states.fullscreen.count`, `c_contextdata.a.media.states.fullscreen.time` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de l’état](/help/implementation/events/player-state/state-start.md), [fin de l’état](/help/implementation/events/player-state/state-end.md) |
 
-## SDK web
+## Types d’implémentation recommandés
+
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
 
 Utilisez [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) pour envoyer un événement `media.statesUpdate` avec l’état ajouté à `statesStart` :
 
@@ -61,11 +65,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Utilisez `tracker.trackPlayerStateStart()` et `tracker.trackPlayerStateEnd()` avec la constante `MediaConstants.PlayerState.FULLSCREEN` .
-
-**iOS (Swift)**
 
 ```swift
 let stateObject = Media.createStateObjectWith(stateName: MediaConstants.PlayerState.FULLSCREEN)
@@ -75,7 +77,9 @@ tracker.trackPlayerStateStart(info: stateObject)
 tracker.trackPlayerStateEnd(info: stateObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Utilisez `tracker.trackPlayerStateStart()` et `tracker.trackPlayerStateEnd()` avec la constante `MediaConstants.PlayerState.FULLSCREEN` .
 
 ```kotlin
 val stateObject = Media.createStateObject(MediaConstants.PlayerState.FULLSCREEN)
@@ -85,7 +89,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Utilisez `sendMediaEvent` pour envoyer un événement `media.statesUpdate` avec l’état ajouté à `statesStart` :
 
@@ -115,7 +119,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
 Appelez le point d’entrée [statesUpdate](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/statesupdate/) avec le `fullscreen` en `statesStart` (ou `statesEnd` lorsque la visionneuse se ferme) :
 
@@ -134,7 +138,13 @@ Appelez le point d’entrée [statesUpdate](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Utilisez `ADB.Media.createStateObject` et la constante `ADB.Media.PlayerState.FullScreen` :
 
@@ -146,7 +156,18 @@ tracker.trackPlayerStateStart(stateObject);
 tracker.trackPlayerStateEnd(stateObject);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Utilisez `ADBMobile.media.createStateObject` avec la chaîne `"fullscreen"` directement, car Chromecast ne dispose pas de constantes `PlayerState` nommées :
+
+```javascript
+var stateObject = ADBMobile.media.createStateObject("fullscreen");
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
+// When the user exits full-screen:
+ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
+```
+
+>[!TAB  API Media Collection ]
 
 Envoyez une requête POST `stateStart` lorsque la visionneuse passe en mode plein écran et une requête POST `stateEnd` lorsqu’elle se ferme :
 
@@ -171,3 +192,5 @@ Envoyez une requête POST `stateStart` lorsque la visionneuse passe en mode plei
 ```
 
 Consultez la [référence des événements de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

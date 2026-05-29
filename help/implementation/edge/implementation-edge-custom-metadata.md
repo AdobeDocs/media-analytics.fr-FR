@@ -3,7 +3,7 @@ title: Prise en charge des métadonnées personnalisées - Format XDM
 description: Découvrez comment envoyer des métadonnées personnalisées avec des événements de suivi multimédia à l’aide du format XDM Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 80caffab1630b138724b310e3bdcc58f682a2f8b
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 2%
@@ -310,7 +310,7 @@ Dans cet exemple :
 
 &lt;InlineAlert variant="info" slots="text" />
 
-`xdm.mediaCollection.customMetadata` est le **chemin d’API entrant** utilisé pour envoyer des métadonnées personnalisées avec des événements. Après traitement, les données sont transférées vers Adobe Analytics en tant que variables de données contextuelles et stockées dans Adobe Experience Platform sous `mediaReporting.customMetadata` et en tant que champs aplatis de niveau supérieur.
+`xdm.mediaCollection.customMetadata` est le **chemin d’API entrant** utilisé pour envoyer des métadonnées personnalisées avec des événements. Après traitement, les données sont transférées vers Adobe Analytics en tant que variables de données contextuelles et stockées dans Adobe Experience Platform sous `xdm.mediaReporting.customMetadata` et en tant que champs aplatis de niveau supérieur.
 
 **Adobe Analytics :**
 
@@ -323,7 +323,7 @@ Dans cet exemple :
 - Les champs de métadonnées personnalisés doivent être définis comme des champs personnalisés dans votre schéma XDM (par exemple, `_mycompany`) et ils peuvent être stockés et interrogés dans AEP sous la forme de champs aplatis
 
   ![Définition d’un champ personnalisé dans un schéma XDM](assets/custom_metadata.png)
-- Pour les rapports et les requêtes, les métadonnées personnalisées sont disponibles sous `mediaReporting.customMetadata` ainsi que sous la forme de champs aplatis de niveau supérieur. Utilisez la solution la plus adaptée à votre cas d’utilisation.
+- Pour les rapports et les requêtes, les métadonnées personnalisées sont disponibles sous `xdm.mediaReporting.customMetadata` ainsi que sous la forme de champs aplatis de niveau supérieur. Utilisez la solution la plus adaptée à votre cas d’utilisation.
 - Accessible pour la segmentation, Journey Orchestration et l’activation de Real-Time CDP
 
 ## Comportement

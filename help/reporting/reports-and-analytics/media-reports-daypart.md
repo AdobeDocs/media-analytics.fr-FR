@@ -16,13 +16,13 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 45
-ht-degree: 100%
+ht-degree: 53%
 
 ---
 
 # Tranche horaire du média{#media-daypart}
 
-Le tableau de bord Tranche horaire du média affiche les démarrages de contenu par tranche horaire afin de vous permettre de déterminer le moment où votre audience est engagée. ![](assets/video-daypart-report.png)
+Le tableau de bord Tranche horaire du média affiche [[!UICONTROL démarrages de contenu]](/help/reporting/metrics/content-starts.md) par tranche horaire afin de vous permettre de déterminer rapidement le moment où votre audience est engagée.  ![](assets/video-daypart-report.png)

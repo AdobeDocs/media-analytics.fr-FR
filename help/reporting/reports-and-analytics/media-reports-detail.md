@@ -17,15 +17,15 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 50
-ht-degree: 56%
+ht-degree: 8%
 
 ---
 
 # Détails du média{#media-detail}
 
-Le tableau de bord Détails du média affiche des mesures détaillées pour tout le contenu, notamment les observateur ou les auditeurs simultanés, les démarrages de contenu, le taux d’achèvement, la durée de consommation et les démarrages de publicités.
+Le tableau de bord Détails du média affiche des mesures détaillées pour tout le contenu, y compris les observateurs ou les auditeurs simultanés, les [[!UICONTROL démarrages de contenu]](/help/reporting/metrics/content-starts.md), le taux d’achèvement, la durée de consultation et les [[!UICONTROL démarrages d’annonce publicitaire]](/help/reporting/metrics/ad-starts.md).
 
 ![](assets/media_detail.png)

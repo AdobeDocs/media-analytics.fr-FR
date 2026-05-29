@@ -3,9 +3,9 @@ title: Présentation des événements multimédia en flux continu
 description: Découvrez les types d’événements multimédia et l’ordre dans lequel ils doivent être envoyés.
 feature: Streaming Media
 role: Developer
-source-git-commit: 6534e4c76dcb4113bbbb99aed2a0e350f9256b15
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -69,10 +69,3 @@ Les cinq états traçables sont les suivants : `fullscreen`, `mute`, `closedCapt
 ## Événements d’erreur
 
 L’événement [Error](error.md) enregistre un échec de lecture au cours d’une session : une requête de flux ayant échoué, une erreur de codec ou un échec de diffusion externe. Envoyez-le chaque fois qu’une erreur significative se produit. Un événement d’erreur ne ferme pas la session ; la lecture peut continuer et les événements suivants sont suivis sous la même session. Si l’erreur est irrécupérable, suivez-la avec Fin de session pour fermer explicitement la session.
-
->[!MORELIKETHIS]
->
->* [Schémas de validation JSON](/help/implementation/media-collection-api/mc-api-ref/mc-api-json-validation.md) : vérification de la structure de la payload de requête pour chaque type d’événement
->* [Point d’entrée de requête events](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) : référence de point d’entrée de l’API Media Collection
->* [Point d’entrée de requête de sessions](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) : créez une session avant d’envoyer des événements
->* [Suivi de l’état du lecteur](/help/use-cases/player-state-tracking/implementation-and-reporting.md) : détails d’implémentation du début et de la fin de l’état

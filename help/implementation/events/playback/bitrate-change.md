@@ -3,22 +3,26 @@ title: Changement de débit
 description: Signale que le débit de lecture a changé.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 14%
+source-wordcount: '200'
+ht-degree: 7%
 
 ---
 
 
 # Changement de débit
 
-L’événement de changement de débit indique que le lecteur a négocié un nouveau débit de lecture. Envoyez-le chaque fois que le débit change pendant la lecture. Incluez la nouvelle valeur de débit dans les données de la QoE afin que le serveur principal puisse calculer [débit moyen](/help/reporting/metrics/average-bitrate.md) et la dimension par débit-intervalle.
+L’événement de changement de débit indique que le lecteur a négocié un nouveau débit de lecture. Envoyez-le chaque fois que le débit change pendant la lecture. Incluez la nouvelle valeur de débit dans les données de la QoE afin que le serveur principal puisse calculer [[!UICONTROL débit moyen]](/help/reporting/metrics/average-bitrate.md) et la dimension par débit-intervalle.
 
 * **Conditions préalables** : [début de session](../session/session-start.md)
-* **Mesure associée** : [modifications de débit](/help/reporting/metrics/bitrate-changes.md)
+* **Mesure associée** : [[!UICONTROL modifications de débit]](/help/reporting/metrics/bitrate-changes.md)
 
-## SDK web
+## Types d’implémentation recommandés
+
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
 
 Appelez [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) avec `eventType: "media.bitrateChange"` et le nouveau débit en `qoeDataDetails` :
 
@@ -40,11 +44,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Créez un objet QoE avec le nouveau débit et mettez à jour le dispositif de suivi avant le déclenchement de l’événement de changement de débit.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -56,7 +58,9 @@ tracker.updateQoEObject(qoe: qoeObject)
 tracker.trackEvent(event: MediaEvent.BitrateChange, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Créez un objet QoE avec le nouveau débit et mettez à jour le dispositif de suivi avant le déclenchement de l’événement de changement de débit.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200, 0, 24, 0)
@@ -65,7 +69,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Appelez `sendMediaEvent` avec `eventType: "media.bitrateChange"` et le nouveau débit en `qoeDataDetails` :
 
@@ -86,7 +90,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
 Appelez le point d’entrée [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/) avec le nouveau débit en `qoeDataDetails` :
 
@@ -110,7 +114,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/bitrateChange?configId={datastre
 }'
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Créez un objet QoE avec le nouveau débit et mettez à jour le dispositif de suivi :
 
@@ -126,7 +136,23 @@ tracker.updateQoEObject(qoeObject);
 tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Mettez à jour l’objet QoS renvoyé par le délégué `getQoSObject`, puis suivez l’événement :
+
+```javascript
+// Update QoS data via the delegate
+this._qosInfo = ADBMobile.media.createQoSObject(
+  3200,  // bitrate (kbps)
+  0,     // dropped frames
+  24,    // fps
+  0      // startup time
+);
+
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB  API Media Collection ]
 
 Envoyez une `bitrateChange` POST au point d’entrée [événements](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) avec le nouveau débit en `qoeData` :
 
@@ -139,3 +165,5 @@ Envoyez une `bitrateChange` POST au point d’entrée [événements](/help/imple
   }
 }
 ```
+
+>[!ENDTABS]

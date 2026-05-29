@@ -15,14 +15,18 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 199
-ht-degree: 70%
+source-wordcount: 220
+ht-degree: 63%
 
 ---
 
 # Installer les SDK mobiles {#install-mobile-sdks}
+
+>[!IMPORTANT]
+>
+>Cette page traite de l’implémentation de Mobile SDK réservée à Analytics. Pour connaître la mise en œuvre recommandée, voir [Implémentation de Streaming Media à l’aide d’Edge Network](/help/implementation/edge/edge-mobile-sdk.md).
 
 Pour mettre en œuvre les services de streaming multimédia d’Adobe pour les applications mobiles sur Android ou iOS, installez et configurez les éléments suivants :
 

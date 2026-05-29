@@ -18,10 +18,10 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 584
-ht-degree: 8%
+source-wordcount: 563
+ht-degree: 6%
 
 ---
 
@@ -88,9 +88,7 @@ Consultez le composant `streamingMedia` de Web SDK [documentation](https://exper
 
 Pour les clients qui utilisent le SDK Media JS, Web SDK fournit un chemin de migration permettant de passer de Media JS SDK à Web SDK, tout en incluant la prise en charge des fonctionnalités Media JS existantes, telles que la gestion des événements multimédia.
 
-[!DNL Web SDK] comprend une commande permettant de récupérer un dispositif de suivi Media Analytics. Vous pouvez utiliser cette commande pour créer une instance d’objet, puis, à l’aide des mêmes API que celles fournies par la [bibliothèque JS Media](https://adobe-marketing-cloud.github.io/media-sdks/reference/javascript_3x/APIReference.html), effectuer le suivi des événements multimédia.
-
-Consultez la documentation [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) pour plus d’informations sur les méthodes prises en charge.
+Web SDK comprend une commande [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) que vous pouvez utiliser pour créer une instance d&#39;objet. Vous pouvez ensuite suivre les événements multimédia à l’aide des mêmes API que celles fournies par le [3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md).
 
 Le fragment de code ci-dessous indique comment récupérer l’instance de suivi multimédia dans Media JS.
 

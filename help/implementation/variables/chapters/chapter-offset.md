@@ -3,10 +3,10 @@ title: Décalage de chapitre
 description: Définissez le décalage du chapitre à l’intérieur du contenu, en secondes à partir du début.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 12%
+source-wordcount: '228'
+ht-degree: 7%
 
 ---
 
@@ -24,14 +24,18 @@ La variable de décalage de chapitre est le décalage du chapitre à l’intéri
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.chapter.offset` |
-| **champ de collection XDM** | [`mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.chapter.offset` |
 | **Obligatoire** | Non (Mobile SDK) ; Oui (Edge, API Media Collection) |
 | **Envoyé avec** | [Début du chapitre](/help/implementation/events/chapters/chapter-start.md), fermeture du chapitre |
 
-## SDK web
+## Types d’implémentation recommandés
 
-`offset` à l’intérieur des `mediaCollection.chapterDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
+
+`offset` à l’intérieur des `xdm.mediaCollection.chapterDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -51,11 +55,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Transmettez le décalage en secondes comme quatrième argument (`startTime`) à `createChapterObject`.
-
-**iOS (Swift)**
 
 ```swift
 let chapterObject = Media.createChapterObjectWith(name: "Act II",
@@ -66,7 +68,9 @@ let chapterObject = Media.createChapterObjectWith(name: "Act II",
 tracker.trackEvent(event: MediaEvent.ChapterStart, info: chapterObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Transmettez le décalage en secondes comme quatrième argument (`startTime`) à `createChapterObject`.
 
 ```kotlin
 val chapterObject = Media.createChapterObject("Act II",
@@ -77,9 +81,9 @@ val chapterObject = Media.createChapterObject("Act II",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-`offset` à l’intérieur des `mediaCollection.chapterDetails` lors de l’appel de `sendMediaEvent` pour `media.chapterStart` :
+`offset` à l’intérieur des `xdm.mediaCollection.chapterDetails` lors de l’appel de `sendMediaEvent` pour `media.chapterStart` :
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -98,9 +102,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
-Appelez le point d’entrée [chapterStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterstart) avec `offset` à l’intérieur du `mediaCollection.chapterDetails` :
+Appelez le point d’entrée [chapterStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/chapters/#chapterstart) avec `offset` à l’intérieur du `xdm.mediaCollection.chapterDetails` :
 
 ```json
 {
@@ -121,7 +125,13 @@ Appelez le point d’entrée [chapterStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Transmettez le décalage comme quatrième argument à `ADB.Media.createChapterObject` :
 
@@ -136,7 +146,21 @@ var chapterInfo = ADB.Media.createChapterObject(
 tracker.trackEvent(ADB.Media.Event.ChapterStart, chapterInfo, contextData);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Transmettez le décalage de chapitre en secondes comme quatrième argument (`startTime`) à `ADBMobile.media.createChapterObject` :
+
+```javascript
+var chapterInfo = ADBMobile.media.createChapterObject(
+  "Pilot Episode - Opening",  // name
+  1,                          // position
+  240,                        // length
+  0                           // startTime (seconds from content start)
+);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB  API Media Collection ]
 
 Incluez `media.chapter.offset` dans l’objet `params` de votre `chapterStart` requête POST :
 
@@ -151,3 +175,5 @@ Incluez `media.chapter.offset` dans l’objet `params` de votre `chapterStart` r
 ```
 
 Consultez la [référence des événements de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

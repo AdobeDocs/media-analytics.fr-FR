@@ -18,7 +18,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 109
 ht-degree: 51%
@@ -27,7 +27,7 @@ ht-degree: 51%
 
 # Présentation multimédia{#media-overview}
 
-Le tableau de bord Présentation des médias est conçu pour vous permettre de surveiller les médias sur l’ensemble de votre site. L’affichage Présentation des médias présente plusieurs mesures agrégées afin que vous puissiez rapidement vérifier que les médias s’exécutent comme prévu. Un graphique affiche les démarrages de contenu en regard des démarrages d’annonce publicitaire afin de vous permettre d’afficher rapidement ces mesures pour chaque élément de média.
+Le tableau de bord Présentation des médias est conçu pour vous permettre de surveiller les médias sur l’ensemble de votre site. L’affichage Présentation des médias présente plusieurs mesures agrégées afin que vous puissiez rapidement vérifier que les médias s’exécutent comme prévu. Un graphique s’affiche [[!UICONTROL démarrages du contenu]](/help/reporting/metrics/content-starts.md) en regard de [[!UICONTROL démarrages des annonces]](/help/reporting/metrics/ad-starts.md) pour vous permettre de visualiser rapidement ces mesures pour chaque élément de média.
 
 ![](assets/media_overview.png)
 

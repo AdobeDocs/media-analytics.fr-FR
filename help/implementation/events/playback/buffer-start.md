@@ -3,10 +3,10 @@ title: Début de la mémoire tampon
 description: Indique que le lecteur multimédia est entré en état de mise en mémoire tampon.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 15%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 15%
 L’événement de début de mémoire tampon signale que le lecteur multimédia est entré en état de mise en mémoire tampon.
 
 * **Conditions préalables** : [début de session](../session/session-start.md)
-* **Mesure associée** : [Événements de mise en mémoire tampon](/help/reporting/metrics/buffer-events.md)
+* **Mesure associée** : [[!UICONTROL Événements de mise en mémoire tampon]](/help/reporting/metrics/buffer-events.md)
 
 >[!NOTE]
 >
@@ -24,7 +24,11 @@ L’événement de début de mémoire tampon signale que le lecteur multimédia 
 >
 >**Mobile SDK :** appelez `trackEvent(BufferComplete)` lorsque le lecteur quitte la mise en mémoire tampon, puis appelez `trackPlay()` pour reprendre la lecture.
 
-## SDK web
+## Types d’implémentation recommandés
+
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
 
 Appelez [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) avec `eventType: "media.bufferStart"` :
 
@@ -40,11 +44,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Appelez `trackEvent` avec `BufferStart` lorsque le lecteur passe en état de mise en mémoire tampon et `BufferComplete` lorsqu’il se ferme.
-
-**iOS (Swift)**
 
 ```swift
 // Buffer starts
@@ -54,7 +56,9 @@ tracker.trackEvent(event: MediaEvent.BufferStart, info: nil, metadata: nil)
 tracker.trackEvent(event: MediaEvent.BufferComplete, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Appelez `trackEvent` avec `BufferStart` lorsque le lecteur passe en état de mise en mémoire tampon et `BufferComplete` lorsqu’il se ferme.
 
 ```kotlin
 // Buffer starts
@@ -64,7 +68,7 @@ tracker.trackEvent(Media.Event.BufferStart, null, null)
 tracker.trackEvent(Media.Event.BufferComplete, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Appelez `sendMediaEvent` avec `eventType: "media.bufferStart"` :
 
@@ -79,7 +83,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
 Appelez le point d’entrée [bufferStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bufferstart/) :
 
@@ -100,7 +104,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/bufferStart?configId={datastream
 }'
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Appelez `trackEvent` avec le type d’événement `BufferStart` :
 
@@ -108,7 +118,19 @@ Appelez `trackEvent` avec le type d’événement `BufferStart` :
 tracker.trackEvent(ADB.Media.Event.BufferStart, null, null);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Appelez `trackEvent` avec `BufferStart` lorsque le lecteur passe en état de mise en mémoire tampon et `BufferComplete` lorsqu’il quitte :
+
+```javascript
+// Buffer starts
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferStart);
+
+// Buffer ends
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BufferComplete);
+```
+
+>[!TAB  API Media Collection ]
 
 Envoyez une `bufferStart` POST au point d’entrée [événements](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) :
 
@@ -118,3 +140,5 @@ Envoyez une `bufferStart` POST au point d’entrée [événements](/help/impleme
   "eventType": "bufferStart"
 }
 ```
+
+>[!ENDTABS]
