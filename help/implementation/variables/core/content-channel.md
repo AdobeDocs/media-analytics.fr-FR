@@ -3,10 +3,10 @@ title: Canal de contenu
 description: Définissez le canal pour identifier la station de distribution, le réseau ou la propriété où le contenu est lu.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 12%
+source-wordcount: '250'
+ht-degree: 7%
 
 ---
 
@@ -24,14 +24,18 @@ La variable de canal de contenu identifie la station de distribution, le réseau
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.channel` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.channel` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
-## SDK web
+## Types d’implémentation recommandés
 
-`channel` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
+
+`channel` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -52,11 +56,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Définissez le canal via la configuration du dispositif de suivi lors de la création du dispositif de suivi, à l’aide de `MediaConstants.TrackerConfig.CHANNEL`. Le canal ne fait pas partie de l’objet média.
-
-**iOS (Swift)**
 
 ```swift
 var config: [String: Any] = [:]
@@ -68,7 +70,9 @@ Media.createTrackerWith(config: config) { tracker in
 }
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Définissez le canal via la configuration du dispositif de suivi lors de la création du dispositif de suivi, à l’aide de `MediaConstants.TrackerConfig.CHANNEL`. Le canal ne fait pas partie de l’objet média.
 
 ```kotlin
 val config = HashMap<String, Any>()
@@ -78,9 +82,9 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-`channel` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de `createMediaSession` :
+`channel` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de `createMediaSession` :
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -101,9 +105,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
-Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `channel` à l’intérieur du `mediaCollection.sessionDetails` :
+Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `channel` à l’intérieur du `xdm.mediaCollection.sessionDetails` :
 
 ```json
 {
@@ -125,7 +129,13 @@ Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Définissez le canal sur `ADB.MediaConfig` avant de créer le dispositif de suivi :
 
@@ -138,7 +148,18 @@ mediaConfig.channel = "Sports";
 var tracker = ADB.Media.getInstance(mediaConfig);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Transmettez `channel` comme clé de métadonnées standard lors de l’appel de `trackSessionStart` :
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
+  ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
+var metadata = { "a.media.channel": "Sports" };
+ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB  API Media Collection ]
 
 Incluez `media.channel` dans l’objet `params` de votre `sessionStart` requête POST :
 
@@ -153,3 +174,5 @@ Incluez `media.channel` dans l’objet `params` de votre `sessionStart` requête
 ```
 
 Consultez la [référence des sessions de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

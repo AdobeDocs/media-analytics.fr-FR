@@ -3,10 +3,10 @@ title: Play
 description: Signalez que le lecteur multimédia est entré en état de lecture.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 17%
+source-wordcount: '165'
+ht-degree: 10%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 17%
 L’événement de lecture signale que le lecteur multimédia a changé d’état pour la lecture. Envoyez-le au début initial du contenu, lors de la lecture automatique et chaque fois que le lecteur reprend après une pause ou une mise en mémoire tampon. Il n’existe pas d’événement de reprise distinct ; un événement de lecture après [Début de pause](pause-start.md) ou [Début de la mémoire tampon](buffer-start.md) sert de reprise.
 
 * **Conditions préalables** : [début de session](../session/session-start.md)
-* **Mesure associée** : [Le contenu commence](/help/reporting/metrics/content-starts.md)
+* **Mesure associée** : [[!UICONTROL Le contenu commence]](/help/reporting/metrics/content-starts.md)
 
-## SDK web
+## Types d’implémentation recommandés
+
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
 
 Appelez [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) avec `eventType: "media.play"` :
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Appelez `trackPlay` lorsque le lecteur multimédia commence ou reprend la lecture.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackPlay()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Appelez `trackPlay` lorsque le lecteur multimédia commence ou reprend la lecture.
 
 ```kotlin
 tracker.trackPlay()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Appelez `sendMediaEvent` avec `eventType: "media.play"` :
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
 Appelez le point d’entrée [play](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/play/) :
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/play?configId={datastreamID}" \
 }'
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Appelez `trackPlay` lorsque le lecteur multimédia commence ou reprend la lecture :
 
@@ -94,7 +104,15 @@ Appelez `trackPlay` lorsque le lecteur multimédia commence ou reprend la lectur
 tracker.trackPlay();
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Appelez `trackPlay` lorsque le lecteur multimédia commence ou reprend la lecture :
+
+```javascript
+ADBMobile.media.trackPlay();
+```
+
+>[!TAB  API Media Collection ]
 
 Envoyez une `play` POST au point d’entrée [événements](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) :
 
@@ -104,3 +122,5 @@ Envoyez une `play` POST au point d’entrée [événements](/help/implementation
   "eventType": "play"
 }
 ```
+
+>[!ENDTABS]

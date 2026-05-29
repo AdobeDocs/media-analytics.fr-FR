@@ -3,10 +3,10 @@ title: Changement de débit
 description: Déclenchez un événement de changement de débit dès que le lecteur passe à un autre débit.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '223'
-ht-degree: 11%
+source-wordcount: '260'
+ht-degree: 6%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 11%
 
 >[!BEGINSHADEBOX]
 
-*Cette page explique comment implémenter des événements de changement de débit. Voir [Modifications de débit (dimension)](/help/reporting/dimensions/bitrate-changes.md) et [Modifications de débit (mesure)](/help/reporting/metrics/bitrate-changes.md) pour les variables de rapports correspondantes.*
+*Cette page explique comment implémenter des événements de changement de débit. Voir [[!UICONTROL Modifications de débit] (dimension)](/help/reporting/dimensions/bitrate-changes.md) et [[!UICONTROL Modifications de débit] (mesure)](/help/reporting/metrics/bitrate-changes.md) pour les variables de rapport correspondantes.*
 
 >[!ENDSHADEBOX]
 
-L’événement de changement de débit indique que le lecteur est passé à un autre débit. Mettez d’abord à jour la valeur [Bitrate](/help/implementation/variables/quality/bitrate.md) sur l’objet QoE, puis déclenchez l’événement de changement de débit. Le serveur principal utilise le nombre de ces événements pour calculer la dimension et la mesure Modifications du débit , et les valeurs de débit obtenues alimentent le débit moyen.
+L’événement de changement de débit indique que le lecteur est passé à un autre débit. Mettez d’abord à jour la valeur [Bitrate](/help/implementation/variables/quality/bitrate.md) sur l’objet QoE, puis déclenchez l’événement de changement de débit. Le serveur principal utilise le nombre de ces événements pour calculer la mesure [[!UICONTROL Changements de débit]](/help/reporting/dimensions/bitrate-changes.md) de dimension et [[!UICONTROL Changements de débit]](/help/reporting/metrics/bitrate-changes.md), ainsi que les valeurs de débit qui en résultent pour alimenter [[!UICONTROL Débit moyen]](/help/reporting/metrics/average-bitrate.md).
 
 | Propriété | Valeur |
 | --- | --- |
@@ -29,7 +29,11 @@ L’événement de changement de débit indique que le lecteur est passé à un 
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Changement de débit](/help/implementation/events/playback/bitrate-change.md) |
 
-## SDK web
+## Types d’implémentation recommandés
+
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
 
 Utilisez [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) pour envoyer un événement `media.bitrateChange` avec le nouveau débit :
 
@@ -51,11 +55,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Mettez à jour l’objet QoE avec le nouveau débit, puis déclenchez l’événement de changement de débit.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 4500,
@@ -66,7 +68,9 @@ tracker.updateQoEObject(qoe: qoeObject)
 tracker.trackEvent(event: MediaEvent.BitrateChange, info: nil, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Mettez à jour l’objet QoE avec le nouveau débit, puis déclenchez l’événement de changement de débit.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(4500L, 0.0, 24.0, 0L)
@@ -74,7 +78,7 @@ tracker.updateQoEObject(qoeObject)
 tracker.trackEvent(Media.Event.BitrateChange, null, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Utilisez `sendMediaEvent` avec `media.bitrateChange` pour signaler un changement de débit. Inclure le nouveau débit dans `qoeDataDetails` :
 
@@ -95,7 +99,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
 Appelez le point d’entrée [bitrateChange](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/bitratechange/#bitratechange) avec le `qoeDataDetails` mis à jour :
 
@@ -116,7 +120,13 @@ Appelez le point d’entrée [bitrateChange](https://developer.adobe.com/data-co
 }
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Mettez à jour l’objet QoE et déclenchez l’événement :
 
@@ -126,7 +136,22 @@ tracker.updateQoEObject(qoeObject);
 tracker.trackEvent(ADB.Media.Event.BitrateChange);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Mettez à jour l’objet QoS avec le nouveau débit, puis déclenchez l’événement de changement de débit :
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  4500,  // bitrate (kbps)
+  0,     // startupTime
+  24,    // fps
+  0      // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+ADBMobile.media.trackEvent(ADBMobile.media.Event.BitrateChange);
+```
+
+>[!TAB  API Media Collection ]
 
 Envoyez une `bitrateChange` requête POST avec le nouveau débit :
 
@@ -141,3 +166,5 @@ Envoyez une `bitrateChange` requête POST avec le nouveau débit :
 ```
 
 Consultez la [référence des événements de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

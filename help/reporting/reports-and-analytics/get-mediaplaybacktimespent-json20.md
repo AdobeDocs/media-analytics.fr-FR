@@ -5,22 +5,14 @@ feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 exl-id: 65e5b67a-26fc-433e-b99b-0ebbc24428ac
 TQID: https://experienceleague.adobe.com/WYVf65R-G8v-x23nNMM4q14ZrBNZhrr8gls3HfO3XO8
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 210
-ht-degree: 90%
+source-wordcount: 191
+ht-degree: 89%
 
 ---
 
@@ -32,7 +24,7 @@ Vous pouvez obtenir des données de rapport sur le temps de lecture de média à
 1. Définissez la balise `elements` -> `id` du corps de la requête sur `metrics/playback_time_spent_seconds` ou `metrics/playback_time_spent_minutes` selon la sortie que vous souhaitez obtenir (en secondes ou en minutes).
 1. Demandez une quantité suffisante de données.
 
-   * La plage de données que vous spécifiez dans le rapport rassemble toutes les données d’observateurs simultanés _au moment de la fin de la session vidéo._
+   * La plage de données que vous spécifiez dans le rapport rassemble toutes les données de visionneuse simultanées _au moment où la session vidéo s’est terminée_.
 Vous devez tenir compte des sessions qui commencent un jour et se terminent après minuit, soit le lendemain.
 
    * Demandez un jour de données supplémentaire à la période prévue dans votre requête, mais dans votre analyse _*utilisez uniquement les données prévues.*_
@@ -132,7 +124,7 @@ Un exemple de payload de requête pour un jour de données ressemble à l’exem
 
 
 <!--
-You can extract the Media Playback Time Spent report data using the Experience Cloud API Explorer as follows.
+You can extract the Media Playback Time Spent report data using the API Explorer as follows.
 
 1. Navigate to: [https://www.adobe.io.](https://www.adobe.io)
 1. Select and enter the following information in the API Explorer form:
@@ -142,7 +134,7 @@ You can extract the Media Playback Time Spent report data using the Experience C
     * **Environment -** Select your data center.
     * Request JSON - Specify the following:
 
-        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html?lang=fr)
+        * `reportSuiteID` - For info on reports suites: [Report Suites](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/report-suites-admin.html)
 
         * `dateTo` - End date of the report.         
 

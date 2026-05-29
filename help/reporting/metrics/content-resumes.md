@@ -3,7 +3,7 @@ title: Reprises du contenu
 description: Compte les sessions qui ont repris une lecture précédemment interrompue.
 feature: Metrics
 role: User, Admin
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 9%
@@ -23,11 +23,11 @@ La mesure **Reprises du contenu** comptabilise les sessions qui ont repris une l
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média définit cet indicateur lorsque `mediaCollection.sessionDetails.hasResume` est `true` sur l’événement [début de session](/help/implementation/events/session/session-start.md). Le lecteur doit explicitement marquer la session comme reprise. La mesure est signalée lors de l’appel de fermeture.
+Le serveur principal du média définit cet indicateur lorsque `xdm.mediaCollection.sessionDetails.hasResume` est `true` sur l’événement [début de session](/help/implementation/events/session/session-start.md). Le lecteur doit explicitement marquer la session comme reprise. La mesure est signalée lors de l’appel de fermeture.
 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.resume` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.hasResume`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | S.O. |

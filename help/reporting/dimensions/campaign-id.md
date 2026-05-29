@@ -3,7 +3,7 @@ title: ID de campagne
 description: Indique la campagne à laquelle appartient chaque annonce publicitaire.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '120'
 ht-degree: 13%
@@ -28,7 +28,7 @@ L’identifiant de campagne est défini par le lecteur à chaque événement [d�
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.campaign` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.advertisingDetails.campaignID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.campaignID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Flux de données | `videocampaign`, `post_videocampaign` |
 | Audience Manager | `c_contextdata.a.media.ad.campaign` |
 

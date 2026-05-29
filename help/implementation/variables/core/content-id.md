@@ -3,10 +3,10 @@ title: Identifiant de contenu
 description: Identifiez de manière unique un élément de contenu multimédia.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 15%
+source-wordcount: '221'
+ht-degree: 9%
 
 ---
 
@@ -24,14 +24,18 @@ La variable d’ID de contenu identifie de manière unique chaque élément de c
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.name` |
-| **champ de collection XDM** | [`mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.name`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.name` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
-## SDK web
+## Types d’implémentation recommandés
 
-`name` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
+
+`name` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -53,11 +57,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Transmettez l’ID de contenu comme argument de `mediaId` à `createMediaObject`.
-
-**iOS (Swift)**
 
 ```swift
 let mediaObject = Media.createMediaObjectWith(name: "My Video",
@@ -69,7 +71,9 @@ let mediaObject = Media.createMediaObjectWith(name: "My Video",
 tracker.trackSessionStart(info: mediaObject, metadata: nil)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Transmettez l’ID de contenu comme argument de `mediaId` à `createMediaObject`.
 
 ```kotlin
 var mediaInfo = Media.createMediaObject("My Video",
@@ -81,9 +85,9 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-`name` à l’intérieur des `mediaCollection.sessionDetails` lors de l’appel de `createMediaSession` :
+`name` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de `createMediaSession` :
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -105,9 +109,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
-Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `name` (l’identifiant de contenu) à l’intérieur du `mediaCollection.sessionDetails` :
+Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `name` (l’identifiant de contenu) à l’intérieur du `xdm.mediaCollection.sessionDetails` :
 
 ```json
 {
@@ -129,7 +133,13 @@ Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Transmettez l’ID de contenu comme deuxième argument à `ADB.Media.createMediaObject` :
 
@@ -145,7 +155,22 @@ var mediaInfo = ADB.Media.createMediaObject(
 tracker.trackSessionStart(mediaInfo, contextData);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Transmettez l’ID de contenu comme deuxième argument à `ADBMobile.media.createMediaObject` :
+
+```javascript
+var mediaInfo = ADBMobile.media.createMediaObject(
+  "My Video",
+  "video-123",
+  128,
+  ADBMobile.media.StreamType.VOD,
+  ADBMobile.media.MediaType.Video
+);
+ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB  API Media Collection ]
 
 Incluez `media.id` dans l’objet `params` de votre `sessionStart` requête POST :
 
@@ -160,3 +185,5 @@ Incluez `media.id` dans l’objet `params` de votre `sessionStart` requête POST
 ```
 
 Consultez la [référence des sessions de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

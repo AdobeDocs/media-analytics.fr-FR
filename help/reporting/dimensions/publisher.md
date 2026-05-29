@@ -3,7 +3,7 @@ title: Éditeur
 description: Indique l’éditeur de contenu audio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 12%
@@ -28,9 +28,9 @@ L’éditeur est défini par le lecteur au début de la session pour le contenu 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.publisher` de données contextuelles lorsque [[!UICONTROL Métadonnées audio]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.publisher`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.publisher`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données | `videoaudiopublisher` |
-| Audience Manager | `c_contextdata.a.media.publisher` |
+| Audience Manager | `c_contextdata.a.media.publisher` |
 
 ## Éléments de dimension
 

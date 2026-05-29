@@ -3,7 +3,7 @@ title: Type de diffusion
 description: Capture si chaque session multimédia était du contenu audio ou vidéo.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 6%
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 >[!ENDSHADEBOX]
 
-La dimension **Type de flux** capture si chaque session multimédia était du contenu audio ou vidéo. Elle est disponible dans Adobe Analytics une fois que [Media Core est activé](/help/reporting/media-reports-enable.md) pour la suite de rapports et dans Customer Journey Analytics pour tout jeu de données qui inclut des données de médias en flux continu.
+La dimension **Type de flux** capture si chaque session multimédia était du contenu audio ou vidéo. Elle est disponible dans Adobe Analytics une fois que [Media Core est activé](/help/implementation/media-sdk/setup/media-reports-enable.md) pour la suite de rapports et dans Customer Journey Analytics pour tout jeu de données qui inclut des données de médias en flux continu.
 
 ## Mode de remplissage de cette dimension
 
@@ -28,9 +28,9 @@ Le type de flux est défini par le lecteur au début de la session et transmis j
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.streamType` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données | `videostreamtype` |
-| Audience Manager | `c_contextdata.a.media.streamType` |
+| Audience Manager | `c_contextdata.a.media.streamType` |
 
 >[!IMPORTANT]
 >

@@ -3,10 +3,10 @@ title: Heure de début
 description: Définissez l’heure de démarrage du lecteur, en millisecondes, de sorte que le serveur principal puisse signaler la qualité du délai de première image.
 feature: Streaming Media
 role: Developer
-source-git-commit: a2c91ef63fa9320a0e47f338ce4d53b9b8e977e3
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 9%
+source-wordcount: '294'
+ht-degree: 6%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Cette page traite de la collecte de données pour la variable **Time to start**. Voir [Heure de début](/help/reporting/dimensions/time-to-start.md) pour la dimension et la mesure de reporting correspondantes.*
+*Cette page traite de la collecte de données pour la variable **Time to start**. Voir [[!UICONTROL Heure de début]](/help/reporting/dimensions/time-to-start.md) pour la dimension et la mesure de reporting correspondantes.*
 
 >[!ENDSHADEBOX]
 
@@ -23,19 +23,23 @@ La variable time to start correspond au temps écoulé, en millisecondes, entre 
 
 >[!IMPORTANT]
 >
->Une fois que le lecteur commence à effectuer le rendu des images de contenu, arrêtez la mise à jour `timeToStart`. Cette valeur peut augmenter au cours de la phase de mise en mémoire tampon ou de chargement initiale, mais doit être considérée comme fixe dès le début de la lecture. Si vous continuez à la mettre à jour après le rendu de la première image, une mesure [Heure de début](/help/reporting/metrics/time-to-start.md) exagérée ou incorrecte est générée.
+>Une fois que le lecteur commence à effectuer le rendu des images de contenu, arrêtez la mise à jour `timeToStart`. Cette valeur peut augmenter au cours de la phase de mise en mémoire tampon ou de chargement initiale, mais doit être considérée comme fixe dès le début de la lecture. Si vous continuez à la mettre à jour après le rendu de la première image, une mesure [[!UICONTROL Heure de début]](/help/reporting/metrics/time-to-start.md) exagérée ou incorrecte est générée.
 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.qoe.timeToStart` |
-| **champ de collection XDM** | [`mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
 
-## SDK web
+## Types d’implémentation recommandés
 
-Définissez `timeToStart` à l’intérieur du `mediaCollection.qoeDataDetails` sur `media.sessionStart` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
+
+Définissez `timeToStart` à l’intérieur du `xdm.mediaCollection.qoeDataDetails` sur `media.sessionStart` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -59,11 +63,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Transmettez l’heure de démarrage comme deuxième argument (`startupTime`) à `createQoEObject`.
-
-**iOS (Swift)**
 
 ```swift
 let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
@@ -74,7 +76,9 @@ let qoeObject = Media.createQoEObjectWith(bitrate: 3200,
 tracker.updateQoEObject(qoe: qoeObject)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Transmettez l’heure de démarrage comme deuxième argument (`startupTime`) à `createQoEObject`.
 
 ```kotlin
 val qoeObject = Media.createQoEObject(3200L,
@@ -85,9 +89,9 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-Définissez `timeToStart` à l’intérieur du `mediaCollection.qoeDataDetails` sur `media.sessionStart` lors de l’appel de `createMediaSession` :
+Définissez `timeToStart` à l’intérieur du `xdm.mediaCollection.qoeDataDetails` sur `media.sessionStart` lors de l’appel de `createMediaSession` :
 
 ```brightscript
 m.aepSdk.createMediaSession({
@@ -111,9 +115,9 @@ m.aepSdk.createMediaSession({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
-Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `timeToStart` à l’intérieur du `mediaCollection.qoeDataDetails` :
+Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessionstart) avec `timeToStart` à l’intérieur du `xdm.mediaCollection.qoeDataDetails` :
 
 ```json
 {
@@ -138,7 +142,13 @@ Appelez le point d’entrée [sessionStart](https://developer.adobe.com/data-col
 }
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Transmettez l’heure de début comme deuxième argument à `ADB.Media.createQoEObject` :
 
@@ -147,7 +157,21 @@ var qoeObject = ADB.Media.createQoEObject(3200, 30000, 24, 0);
 tracker.updateQoEObject(qoeObject);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Transmettez l’heure de démarrage en millisecondes comme deuxième argument (`startupTime`) pour `ADBMobile.media.createQoSObject` et mettre à jour le dispositif de suivi :
+
+```javascript
+var qosInfo = ADBMobile.media.createQoSObject(
+  3200,   // bitrate
+  0,      // startupTime (ms)
+  24,     // fps
+  0       // droppedFrames
+);
+ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB  API Media Collection ]
 
 Incluez `media.qoe.timeToStart` dans l’objet `params` sur `sessionStart` :
 
@@ -162,3 +186,5 @@ Incluez `media.qoe.timeToStart` dans l’objet `params` sur `sessionStart` :
 ```
 
 Consultez la [référence des sessions de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

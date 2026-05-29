@@ -3,10 +3,10 @@ title: Session terminée
 description: Signale que la visionneuse a atteint la fin du contenu principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: b75e50f626b85992575961ea267d0f74eda09f0a
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 16%
+source-wordcount: '165'
+ht-degree: 9%
 
 ---
 
@@ -16,9 +16,13 @@ ht-degree: 16%
 L’événement de fin de session indique que la visionneuse a atteint la fin du contenu principal. La session n’est pas fermée immédiatement ; elle reste ouverte jusqu’à ce qu’elle expire naturellement. Si vous souhaitez fermer la session immédiatement, appelez plutôt [Fin de session](session-end.md).
 
 * **Conditions préalables** : [début de session](session-start.md)
-* **Mesure associée** : [Contenu terminé](/help/reporting/metrics/content-completes.md)
+* **Mesure associée** : [[!UICONTROL Contenu terminé]](/help/reporting/metrics/content-completes.md)
 
-## SDK web
+## Types d’implémentation recommandés
+
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
 
 Appelez [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) avec `eventType: "media.sessionComplete"` :
 
@@ -34,23 +38,23 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Appelez `trackComplete` lorsque le lecteur multimédia atteint la fin du contenu.
-
-**iOS (Swift)**
 
 ```swift
 tracker.trackComplete()
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Appelez `trackComplete` lorsque le lecteur multimédia atteint la fin du contenu.
 
 ```kotlin
 tracker.trackComplete()
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
 Appelez `sendMediaEvent` avec `eventType: "media.sessionComplete"` :
 
@@ -65,7 +69,7 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
 Appelez le point d’entrée [sessionComplete](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/sessions/#sessioncomplete) :
 
@@ -86,7 +90,13 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionComplete?configId={datast
 }'
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Appelez `trackComplete` lorsque le lecteur multimédia atteint la fin du contenu :
 
@@ -94,7 +104,15 @@ Appelez `trackComplete` lorsque le lecteur multimédia atteint la fin du contenu
 tracker.trackComplete();
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Appelez `trackComplete` lorsque le lecteur multimédia atteint la fin du contenu :
+
+```javascript
+ADBMobile.media.trackComplete();
+```
+
+>[!TAB  API Media Collection ]
 
 Envoyez une `sessionComplete` POST au point d’entrée [événements](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) :
 
@@ -104,3 +122,5 @@ Envoyez une `sessionComplete` POST au point d’entrée [événements](/help/imp
   "eventType": "sessionComplete"
 }
 ```
+
+>[!ENDTABS]

@@ -3,7 +3,7 @@ title: Temps passé sur le média
 description: Indique le nombre total de secondes de lecture active par session, publicités comprises.
 feature: Metrics
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '182'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # Temps passé sur le média
 
-La mesure **Temps passé sur le média** indique le nombre total de secondes de lecture active par session, y compris le contenu principal et les publicités, mais sans les pauses, la mise en mémoire tampon et les blocages. Utilisez-la pour mesurer le temps total pendant lequel la visionneuse a été activement engagée avec le lecteur. Pour le contenu principal uniquement, utilisez [&#x200B; Temps passé sur le contenu &#x200B;](content-time-spent.md).
+La mesure **Temps passé sur le média** indique le nombre total de secondes de lecture active par session, y compris le contenu principal et les publicités, mais sans les pauses, la mise en mémoire tampon et les blocages. Utilisez-la pour mesurer le temps total pendant lequel la visionneuse a été activement engagée avec le lecteur. Pour le contenu principal uniquement, utilisez [ Temps passé sur le contenu ](content-time-spent.md).
 
 ## Méthode de calcul de cette mesure
 
@@ -22,6 +22,6 @@ Le serveur principal du média additionne le temps d’horloge murale écoulé e
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.totalTimePlayed` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`mediaReporting.sessionDetails.totalTimePlayed`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.totalTimePlayed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.totalTimePlayed` |

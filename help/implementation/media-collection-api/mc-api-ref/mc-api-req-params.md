@@ -6,24 +6,14 @@ exl-id: a70025ec-1418-46f1-b41f-433d09f024e1
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/6SPeRxCbhd8xZE-u0PlNpqXpZ9JWAS5hi41f7mjTBe0
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: 1344
-ht-degree: 98%
+source-wordcount: 1337
+ht-degree: 86%
 
 ---
 
@@ -31,7 +21,7 @@ ht-degree: 98%
 
 ## Données d’Analytics
 
-| Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Clé du type de demande | Activer... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `analytics.trackingServer` | O | string | `sessionStart` | URL de votre serveur Adobe Analytics |
 | `analytics.reportSuite` | O | string | `sessionStart` | ID identifiant vos données de rapport d’Analytics |
@@ -40,16 +30,16 @@ ht-degree: 98%
 
 ## Données du visiteur
 
-| Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Clé du type de demande | Activer... | Description |
 | --- | :---: | :---: | :---: | --- |
-| `visitor.marketingCloudOrgId` | O | string | `sessionStart` | Identifiant d’entreprise Experience Cloud ; identifie votre organisation dans l’écosystème Adobe Experience Cloud |
-| `visitor.marketingCloudUserId` | N | string | `sessionStart` | Il s’agit de l’identifiant utilisateur Experience Cloud (ECID). Dans la plupart des cas, il s’agit de l’identifiant que vous devez utiliser pour identifier un utilisateur. La pulsation `marketingCloudUserId` est égale au `MID` dans Adobe Analytics. Bien que cela ne soit pas techniquement requis, ce paramètre est nécessaire pour accéder à la famille d’applications Experience Cloud. |
+| `visitor.marketingCloudOrgId` | O | string | `sessionStart` | L’identifiant de l’organisation IMS ; identifie votre organisation dans Adobe CX Enterprise |
+| `visitor.marketingCloudUserId` | N | string | `sessionStart` | Identifiant utilisateur Experience Cloud (ECID). Dans la plupart des cas, il s’agit de l’identifiant que vous devez utiliser pour identifier un utilisateur. La pulsation `marketingCloudUserId` est égale au `MID` dans Adobe Analytics. Bien que cela ne soit pas techniquement nécessaire, ce paramètre est nécessaire pour accéder aux applications et services CX Enterprise. |
 | `visitor.aamLocationHint` | N | entier | `sessionStart` | Fournit des données Adobe Audience Manager Edge : si aucune valeur nʼest saisie, la valeur est nulle. |
 | `appInstallationId` | N | string | `sessionStart` | L’ID appInstallationId identifie de manière unique l’application et l’appareil |
 
 ## Données du contenu
 
-| Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Clé du type de demande | Activer... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.id` | O | string | `sessionStart` | Identifiant unique du contenu |
 | `media.name` | N | string | `sessionStart` | Nom du contenu lisible par l’homme |
@@ -62,7 +52,7 @@ ht-degree: 98%
 
 ## Métadonnées standard du contenu
 
-| Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Clé du type de demande | Activer... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.streamFormat` | N | string | `sessionStart` | Format du flux, par exemple « HD » |
 | `media.show` | N | string | `sessionStart` | Nom du programme ou de la série |
@@ -84,7 +74,7 @@ ht-degree: 98%
 
 ## Données de publicité
 
-| Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Clé du type de demande | Activer... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.podFriendlyName` | N | string | `adBreakStart` | Nom convivial de la coupure publicitaire |
 | `media.ad.podIndex` | O | entier | `adBreakStart` | Index de la capsule publicitaire dans la vidéo |
@@ -97,7 +87,7 @@ ht-degree: 98%
 
 ## Métadonnées standard de la publicité
 
-| Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Clé du type de demande | Activer... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.ad.advertiser` | N | string | `adStart` | Entreprise ou marque dont le produit apparaît dans la publicité |
 | `media.ad.campaignId` | N | string | `adStart` | ID de la campagne publicitaire |
@@ -108,7 +98,7 @@ ht-degree: 98%
 
 ## Données du chapitre
 
-| Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Clé du type de demande | Activer... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.chapter.index` | O | entier | `chapterStart` | Identifie la position du chapitre dans le contenu |
 | `media.chapter.offset` | O | number | `chapterStart` | Seconde dans la lecture à laquelle le chapitre commence |
@@ -117,7 +107,7 @@ ht-degree: 98%
 
 ## Données de qualité
 
-| Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Clé du type de demande | Activer... | Description |
 | --- | :---: | :---: | :---: | --- |
 | `media.qoe.bitrate` | N | entier | Tous | Le débit moyen (en bits/s). Ce débit moyen correspond à la valeur moyenne pondérée de toutes les valeurs de débit liées à la durée des lectures au cours d’une session de lecture. |
 | `media.qoe.droppedFrames` | N | entier | Tous | Nombre d’images perdues dans la diffusion |
@@ -126,20 +116,20 @@ ht-degree: 98%
 
 ## Paramètres de la Loi sur la protection du consommateur (CCPA) de Californie {#ccpa-params}
 
-| Clé de requête  | Obligatoire | Clé de type de requête | Définir sur... |  Description  |
+| Clé de requête | Obligatoire | Clé du type de demande | Activer... | Description |
 | --- | :---: | :---: | :---: | --- |
-| `analytics.optOutServerSideForwarding` | N | booléen | `sessionStart` | Définissez cette variable sur « true » lorsque l’utilisateur final a choisi de ne pas partager ses données entre Adobe Analytics et d’autres solutions Experience Cloud (par exemple, Audience Manager). |
+| `analytics.optOutServerSideForwarding` | N | booléen | `sessionStart` | Définissez cette variable sur true lorsque l’utilisateur final a choisi de ne pas partager ses données entre Adobe Analytics et d’autres solutions d’entreprise CX (par exemple, Audience Manager) |
 | `analytics.optOutShare` | N | booléen | `sessionStart` | Définissez cette variable sur « true » lorsque l’utilisateur final a choisi de ne pas utiliser ses données pour la fédération (par exemple, pour d’autres clients Adobe Analytics). |
 
 ## Détails supplémentaires {#additional-details}
 
 ### visitor.marketingCloudUserId
 
-Transmettez l’identifiant utilisateur Experience Cloud (également appelé `MID` ou `MCID`) sur l’appel `sessionStart` en l’incluant dans la carte `params` à l’aide de la clé suivante : **visitor.marketingCloudUserId**. Cette fonctionnalité est utile si vous intégrez déjà d’autres produits Experience Cloud et avez déjà obtenu le MCID.
+Transmettez l’identifiant utilisateur Experience Cloud (également appelé `MID` ou `MCID`) sur l’appel `sessionStart` en l’incluant dans la carte `params` à l’aide de la clé suivante : **visitor.marketingCloudUserId**. Il s&#39;agit d&#39;une fonctionnalité utile si vous intégrez déjà des produits CX Enterprise et que vous avez déjà obtenu le MCID.
 
 >[!NOTE]
 >
->Media Analytics (MA) est intégré à la gamme d’applications Experience Cloud (Adobe Analytics, Audience Manager, Target, etc.). Vous avez besoin d’un Experience Cloud ID pour accéder à ces applications. _L’ECID est ce que vous devez utiliser pour identifier les utilisateurs dans la plupart des scénarios._
+>Media Analytics (MA) est intégré à la famille d’applications CX Enterprise (Adobe Analytics, Audience Manager, Target, etc.). Vous avez besoin d’un Experience Cloud ID pour accéder à ces applications. _L’ECID est ce que vous devez utiliser pour identifier les utilisateurs dans la plupart des scénarios._
 
 ### appInstallationId
 

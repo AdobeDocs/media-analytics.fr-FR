@@ -3,10 +3,10 @@ title: Nom du lecteur publicitaire
 description: Définissez le nom du lecteur qui effectue le rendu des publicités. Le lecteur d’annonces publicitaires peut différer du lecteur de contenu principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: 41cea9e0a166549f2f4b1cfbceb52ba2b16bf543
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 11%
+source-wordcount: '257'
+ht-degree: 7%
 
 ---
 
@@ -24,14 +24,18 @@ La variable de nom du lecteur d’annonces identifie le lecteur qui a rendu chaq
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.playerName` |
-| **champ de collection XDM** | [`mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.ad.playerName` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |
 
-## SDK web
+## Types d’implémentation recommandés
 
-`playerName` à l’intérieur des `mediaCollection.advertisingDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
+>[!BEGINTABS]
+
+>[!TAB SDK Web]
+
+`playerName` à l’intérieur des `xdm.mediaCollection.advertisingDetails` lors de l’appel de [`sendEvent`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/sendevent/overview) :
 
 ```javascript
 alloy("sendEvent", {
@@ -49,11 +53,9 @@ alloy("sendEvent", {
 });
 ```
 
-## SDK mobile
+>[!TAB iOS]
 
 Transmettez le nom du lecteur d’annonces comme clé `MediaConstants.AdMetadataKeys.AD_PLAYER` dans l’argument HashMap des métadonnées à `trackEvent(AdStart)`.
-
-**iOS (Swift)**
 
 ```swift
 var metadata: [String: String] = [:]
@@ -62,7 +64,9 @@ metadata[MediaConstants.AdMetadataKeys.AD_PLAYER] = "Freewheel"
 tracker.trackEvent(event: MediaEvent.AdStart, info: adObject, metadata: metadata)
 ```
 
-**Android (Kotlin)**
+>[!TAB Android]
+
+Transmettez le nom du lecteur d’annonces comme clé `MediaConstants.AdMetadataKeys.AD_PLAYER` dans l’argument HashMap des métadonnées à `trackEvent(AdStart)`.
 
 ```kotlin
 val metadata = HashMap<String, String>()
@@ -71,9 +75,9 @@ metadata[MediaConstants.AdMetadataKeys.AD_PLAYER] = "Freewheel"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
-## Roku (BrightScript)
+>[!TAB Roku]
 
-`playerName` à l’intérieur des `mediaCollection.advertisingDetails` lors de l’appel de `sendMediaEvent` pour `media.adStart` :
+`playerName` à l’intérieur des `xdm.mediaCollection.advertisingDetails` lors de l’appel de `sendMediaEvent` pour `media.adStart` :
 
 ```brightscript
 m.aepSdk.sendMediaEvent({
@@ -92,9 +96,9 @@ m.aepSdk.sendMediaEvent({
 })
 ```
 
-## API Media Edge
+>[!TAB  API Media Edge ]
 
-Appelez le point d’entrée [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) avec `playerName` à l’intérieur du `mediaCollection.advertisingDetails` :
+Appelez le point d’entrée [adStart](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/ads/#adstart) avec `playerName` à l’intérieur du `xdm.mediaCollection.advertisingDetails` :
 
 ```json
 {
@@ -116,7 +120,13 @@ Appelez le point d’entrée [adStart](https://developer.adobe.com/data-collecti
 }
 ```
 
-## SDK Media
+>[!ENDTABS]
+
+## Types d’implémentation hérités (Analytics uniquement)
+
+>[!BEGINTABS]
+
+>[!TAB Media SDK JS 3.x]
 
 Transmettez le nom du lecteur d’annonces publicitaires dans l’objet `contextData` à l’aide de `ADB.Media.AdMetadataKeys.AdPlayer` :
 
@@ -127,7 +137,17 @@ contextData[ADB.Media.AdMetadataKeys.AdPlayer] = "Freewheel";
 tracker.trackEvent(ADB.Media.Event.AdStart, adInfo, contextData);
 ```
 
-## API Media Collection
+>[!TAB  Chromecast ]
+
+Transmettez le nom du lecteur de publicités dans l’objet de métadonnées contextuelles lors du suivi de l’événement de début de la publicité :
+
+```javascript
+var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
+var metadata = { "a.media.ad.playerName": "Chromecast Player" };
+ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, metadata);
+```
+
+>[!TAB  API Media Collection ]
 
 Incluez `media.ad.playerName` dans l’objet `params` de votre `adStart` requête POST :
 
@@ -142,3 +162,5 @@ Incluez `media.ad.playerName` dans l’objet `params` de votre `adStart` requêt
 ```
 
 Consultez la [référence des événements de l’API Media Collection](/help/implementation/media-collection-api/mc-api-ref/mc-api-events-req.md) pour obtenir la structure complète des requêtes.
+
+>[!ENDTABS]

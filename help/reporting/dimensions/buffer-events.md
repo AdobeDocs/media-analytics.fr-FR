@@ -3,7 +3,7 @@ title: Événements de mémoire tampon (dimension)
 description: Indique le nombre d’événements de mise en mémoire tampon par session.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 6%
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 >[!BEGINSHADEBOX]
 
-*Cette page couvre la dimension **Événements de mémoire tampon**. Adobe Analytics renseigne automatiquement une paire [Événements de mémoire tampon (mesure)](/help/reporting/metrics/buffer-events.md) à partir de la même variable de données contextuelles `a.media.qoe.bufferCount`. Customer Journey Analytics expose un seul champ de `mediaReporting.qoeDataDetails.bufferCount` que vous pouvez utiliser comme dimension ou mesure.*
+*Cette page couvre la dimension **Événements de mémoire tampon**. Adobe Analytics renseigne automatiquement une paire [Événements de mémoire tampon (mesure)](/help/reporting/metrics/buffer-events.md) à partir de la même variable de données contextuelles `a.media.qoe.bufferCount`. Customer Journey Analytics expose un seul champ de `xdm.mediaReporting.qoeDataDetails.bufferCount` que vous pouvez utiliser comme dimension ou mesure.*
 
 >[!ENDSHADEBOX]
 
@@ -28,7 +28,7 @@ Le serveur principal du média incrémente le nombre chaque fois que le lecteur 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.bufferCount` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/media-reports-enable.md) est activée. |
-| Customer Journey Analytics | [`mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferCount`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Flux de données | `videoqoebuffercountevar`, `post_videoqoebuffercountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferCount` |
 
