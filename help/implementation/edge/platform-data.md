@@ -1,40 +1,33 @@
 ---
-title: Mappage des données de l’API Media Edge et validation de la plateforme
+title: Schéma de reporting XDM
 description: Découvrez quels événements d’API Media Edge génèrent des événements d’expérience dans Adobe Experience Platform et comment valider votre implémentation à l’aide du schéma XDM mediaReporting.
 feature: Streaming Media
 role: User, Admin, Developer
 exl-id: c3a4d31b-8f9e-4d7a-9b2e-1a5f0e8c7d39
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85eid: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 763
 ht-degree: 4%
 
 ---
 
 
-# Mappage des données de l’API Media Edge et validation de la plateforme
+# Schéma de reporting XDM
 
-Lorsque vous envoyez des événements de suivi multimédia à l’aide de l’API Media Edge ou d’un SDK Media Edge, le serveur principal Media Analytics traite ces événements et écrit les événements d’expérience calculés dans les jeux de données Adobe Experience Platform. Comprendre quels événements atteignent Platform et ce que le serveur principal calcule pour vous permet de valider votre implémentation et de créer des rapports précis dans Customer Journey Analytics ou Adobe Analytics.
+Lorsque vous envoyez des événements de suivi multimédia à l’aide de Adobe Experience Platform Edge Network, le serveur principal Media Analytics traite ces événements et écrit les événements d’expérience calculés dans les jeux de données Platform. Comprendre quels événements atteignent Platform et ce que le serveur principal calcule pour vous permet de valider votre implémentation et de créer des rapports précis dans Customer Journey Analytics ou Adobe Analytics.
 
-Media Edge utilise deux schémas XDM distincts :
+Deux schémas XDM distincts sont utilisés dans différentes parties du pipeline de collecte et de création de rapports :
 
 | Schéma | Espace de noms | Direction | Rôle |
 |---|---|---|---|
-| Media Collection | `xdm.mediaCollection` | Client → Adobe | Ce que votre lecteur envoie pour chaque événement de suivi |
-| Rapports multimédias | `xdm.mediaReporting` | Adobe → Platform | Ce que le serveur principal écrit dans les jeux de données après traitement |
+| Media Collection | `xdm.mediaCollection` | Client → Adobe | Ce que votre lecteur envoie pour chaque événement de suivi. Utilisé par [variables](/help/implementation/variables/). |
+| Rapports multimédias | `xdm.mediaReporting` | Adobe → Platform | Ce que le serveur principal écrit dans les jeux de données après traitement. Utilisé par [dimensions](/help/reporting/dimensions/overview.md) et [mesures](/help/reporting/metrics/overview.md). |
 
-Les champs présents dans `mediaReporting`, mais absents de votre payload `mediaCollection`, sont **calculés par le serveur principal** ; ils sont dérivés de la séquence complète d’événements d’une session. Ces champs ne sont jamais envoyés, ils sont générés par Adobe.
+Les champs présents dans `mediaReporting` mais absents de la payload `mediaCollection` sont dérivés de la séquence complète d’événements d’une session. Ces champs ne sont jamais envoyés, ils sont générés par Adobe.
 
 ## Événements qui écrivent dans les jeux de données Platform
 
@@ -49,8 +42,8 @@ Sur les 12 types d’événements pouvant faire l’objet d’un suivi, seuls ci
 | [Fin de la session](/help/implementation/events/session/session-complete.md) | Oui | Écrit à la fin de la session ; champ calculé le plus riche défini |
 | [Lecture](/help/implementation/events/playback/play.md) | Non | Utilisé pour calculer les `timePlayed` |
 | [Démarrer la pause](/help/implementation/events/playback/pause-start.md) | Non | Utilisé pour calculer les `pauseCount` et les `pauseTime` |
-| [&#x200B; Ping &#x200B;](/help/implementation/events/playback/ping.md) | Non | Heartbeat ; utilisé pour détecter l’inactivité de session |
-| [&#x200B; Début de la mémoire tampon &#x200B;](/help/implementation/events/playback/buffer-start.md) | Non | Utilisé pour calculer les mesures du tampon QoE |
+| [ Ping ](/help/implementation/events/playback/ping.md) | Non | Heartbeat ; utilisé pour détecter l’inactivité de session |
+| [ Début de la mémoire tampon ](/help/implementation/events/playback/buffer-start.md) | Non | Utilisé pour calculer les mesures du tampon QoE |
 | [Changement de débit](/help/implementation/events/playback/bitrate-change.md) | Non | Utilisé pour calculer les mesures de débit QoE |
 | [Début état](/help/implementation/events/player-state/state-start.md) | Non | Utilisé pour calculer les mesures d’état du lecteur |
 | [Erreur](/help/implementation/events/error.md) | Non | Utilisé pour calculer les `errorCount` dans QoE |
