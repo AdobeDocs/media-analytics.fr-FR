@@ -5,10 +5,17 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 79203a2f-8158-44f2-83b2-146179be9180
 TQID: https://experienceleague.adobe.com/ct8mDbIpg15Jzvf1MRaG4XFtuxbq-EUKPe106zyO7zQ
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 1325
@@ -18,7 +25,7 @@ ht-degree: 20%
 
 # Mappage des paramètres Media Analytics pour Adobe Experience Platform et Customer Journey Analytics
 
-Ce document fournit une liste complète de tous les paramètres Media Analytics utilisés dans Adobe Experience Platform et Customer Journey Analytics. Il est destiné à prendre en charge l’intégration des données importées d’Adobe Analytics vers Platform via le [ Connecteur Source Analytics ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) ou le [ Connecteur Source Analytics pour les classifications ](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/classifications), en mappant chaque paramètre à son chemin d’accès au champ XDM correspondant.
+Ce document fournit une liste complète de tous les paramètres Media Analytics utilisés dans Adobe Experience Platform et Customer Journey Analytics. Il est destiné à prendre en charge l’intégration des données importées d’Adobe Analytics vers Platform via le [&#x200B; Connecteur Source Analytics &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) ou le [&#x200B; Connecteur Source Analytics pour les classifications &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/classifications), en mappant chaque paramètre à son chemin d’accès au champ XDM correspondant.
 
 >[!NOTE]
 >
@@ -43,20 +50,20 @@ Grâce au connecteur source Analytics pour les médias en flux continu, les appe
 | [[!UICONTROL Type de flux]](/help/reporting/dimensions/stream-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference.streamType` | `xdm.mediaReporting.`<br>`sessionDetails.streamType` | Dimension | [[!UICONTROL Type de flux]](/help/reporting/dimensions/stream-type.md) | |
 | [[!UICONTROL Identifiant du contenu]](/help/reporting/dimensions/asset-id.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._id` | `xdm.mediaReporting.`<br>`sessionDetails.name` | Dimension | [[!UICONTROL Identifiant du contenu]](/help/reporting/dimensions/asset-id.md) | |
 | [[!UICONTROL Longueur du contenu]](/help/reporting/dimensions/content-length.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._xmpDM.duration` | `xdm.mediaReporting.`<br>`sessionDetails.length` | Dimension | [[!UICONTROL Longueur du contenu]](/help/reporting/dimensions/content-length.md) | |
-| [[!UICONTROL  Type de contenu ]](/help/reporting/dimensions/content-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastContentType` | `xdm.mediaReporting.`<br>`sessionDetails.contentType` | Dimension | [[!UICONTROL  Type de contenu ]](/help/reporting/dimensions/content-type.md) | |
+| [[!UICONTROL &#x200B; Type de contenu &#x200B;]](/help/reporting/dimensions/content-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastContentType` | `xdm.mediaReporting.`<br>`sessionDetails.contentType` | Dimension | [[!UICONTROL &#x200B; Type de contenu &#x200B;]](/help/reporting/dimensions/content-type.md) | |
 | [[!UICONTROL ID de session multimédia]](/help/reporting/dimensions/media-session-id.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails._id` | `xdm.mediaReporting.`<br>`sessionDetails.ID` | Dimension | [[!UICONTROL ID de session multimédia]](/help/reporting/dimensions/media-session-id.md) | |
 | [[!UICONTROL Nom du lecteur de contenu]](/help/reporting/dimensions/content-player-name.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.playerName` | `xdm.mediaReporting.`<br>`sessionDetails.playerName` | Dimension | [[!UICONTROL Nom du lecteur de contenu]](/help/reporting/dimensions/content-player-name.md) | |
-| [[!UICONTROL  Canal de contenu ]](/help/reporting/dimensions/content-channel.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastChannel` | `xdm.mediaReporting.`<br>`sessionDetails.channel` | Dimension | [[!UICONTROL  Canal de contenu ]](/help/reporting/dimensions/content-channel.md) | |
+| [[!UICONTROL &#x200B; Canal de contenu &#x200B;]](/help/reporting/dimensions/content-channel.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastChannel` | `xdm.mediaReporting.`<br>`sessionDetails.channel` | Dimension | [[!UICONTROL &#x200B; Canal de contenu &#x200B;]](/help/reporting/dimensions/content-channel.md) | |
 | [[!UICONTROL Segment de contenu]](/help/reporting/dimensions/content-segment.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.videoSegment` | `xdm.mediaReporting.`<br>`sessionDetails.segment` | Dimension | [[!UICONTROL Segment de contenu]](/help/reporting/dimensions/content-segment.md) | |
 | [[!UICONTROL Nom du contenu]](/help/reporting/dimensions/content-name.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._dc.title` | `xdm.mediaReporting.`<br>`sessionDetails.friendlyName` | Dimension | [[!UICONTROL Nom du contenu]](/help/reporting/dimensions/content-name.md) | |
 | Chemin de la vidéo | *Non utilisé dans AEP/CJA* | | | | Propriété spécifique à Adobe Analytics |
 | [[!UICONTROL Afficher]](/help/reporting/dimensions/show.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Series._iptc4xmpExt.Name` | `xdm.mediaReporting.`<br>`sessionDetails.show` | Dimension | [[!UICONTROL Afficher]](/help/reporting/dimensions/show.md) | |
-| [[!UICONTROL  Saison ]](/help/reporting/dimensions/season.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Season._iptc4xmpExt.Name` | `xdm.mediaReporting.`<br>`sessionDetails.season` | Dimension | [[!UICONTROL  Saison ]](/help/reporting/dimensions/season.md) | |
+| [[!UICONTROL &#x200B; Saison &#x200B;]](/help/reporting/dimensions/season.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Season._iptc4xmpExt.Name` | `xdm.mediaReporting.`<br>`sessionDetails.season` | Dimension | [[!UICONTROL &#x200B; Saison &#x200B;]](/help/reporting/dimensions/season.md) | |
 | [[!UICONTROL Épisode]](/help/reporting/dimensions/episode.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Episode._iptc4xmpExt.Name` | `xdm.mediaReporting.`<br>`sessionDetails.episode` | Dimension | [[!UICONTROL Épisode]](/help/reporting/dimensions/episode.md) | |
 | [[!UICONTROL Genre]](/help/reporting/dimensions/genre.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference._iptc4xmpExt.Genre` | `xdm.mediaReporting.`<br>`sessionDetails.genreList` | Dimension | non pris en charge | Utiliser le champ `mediaReporting` |
 | [[!UICONTROL Réseau]](/help/reporting/dimensions/network.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.broadcastNetwork` | `xdm.mediaReporting.`<br>`sessionDetails.network` | Dimension | [[!UICONTROL Réseau]](/help/reporting/dimensions/network.md) | |
 | [[!UICONTROL Afficher le type]](/help/reporting/dimensions/show-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetReference.showType` | `xdm.mediaReporting.`<br>`sessionDetails.showType` | Dimension | [[!UICONTROL Afficher le type]](/help/reporting/dimensions/show-type.md) | |
-| [](/help/reporting/dimensions/mvpd.md) | `xdm.media.mediaTimed.`<br>`idp` | `xdm.mediaReporting.`<br>`sessionDetails.mvpd` | Dimension | [](/help/reporting/dimensions/mvpd.md) | |
+| [&#128279;](/help/reporting/dimensions/mvpd.md) | `xdm.media.mediaTimed.`<br>`idp` | `xdm.mediaReporting.`<br>`sessionDetails.mvpd` | Dimension | [&#128279;](/help/reporting/dimensions/mvpd.md) | |
 | [[!UICONTROL Autorisé]](/help/reporting/metrics/authorized.md) | Non pris en charge | `xdm.mediaReporting.`<br>`sessionDetails.authorized` | Dimension | [[!UICONTROL Autorisé]](/help/reporting/metrics/authorized.md) | |
 | [[!UICONTROL Jour]](/help/reporting/dimensions/day-part.md) | Non pris en charge | `xdm.mediaReporting.`<br>`sessionDetails.dayPart` | Dimension | [[!UICONTROL Jour]](/help/reporting/dimensions/day-part.md) | |
 | [[!UICONTROL Type de flux multimédia]](/help/reporting/dimensions/media-feed-type.md) | `xdm.media.mediaTimed.`<br>`primaryAssetViewDetails.sourceFeed` | `xdm.mediaReporting.`<br>`sessionDetails.feed` | Dimension | [[!UICONTROL Type de flux multimédia]](/help/reporting/dimensions/media-feed-type.md) | |
@@ -220,7 +227,7 @@ Dans les deux cas, la `<number>` correspond à l’événement spécifique ou au
 
 | Nom du champ | Chemin XDM | Type de données |
 | --- | --- | --- |
-| [[!UICONTROL  Indicateur de média téléchargé ]](/help/reporting/dimensions/media-downloaded-flag.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Mesure |
+| [[!UICONTROL &#x200B; Indicateur de média téléchargé &#x200B;]](/help/reporting/dimensions/media-downloaded-flag.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Mesure |
 | Version du SDK | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
 | Version de Media Library | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
 | [[!UICONTROL Format de flux]](/help/reporting/dimensions/stream-format.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
@@ -232,7 +239,7 @@ Dans les deux cas, la `<number>` correspond à l’événement spécifique ou au
 | [[!UICONTROL Nombre de chapitres]](/help/reporting/metrics/chapter-count.md) | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Mesure |
 | [[!UICONTROL Creative ID]](/help/reporting/dimensions/creative-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
 | [[!UICONTROL Identifiant du site]](/help/reporting/dimensions/site-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
-| [[!UICONTROL URL ]](/help/reporting/dimensions/creative-url.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
+| [[!UICONTROL URL &#x200B;]](/help/reporting/dimensions/creative-url.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
 | [[!UICONTROL ID d’emplacement]](/help/reporting/dimensions/placement-id.md) | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>` | Dimension |
 | Images par seconde | `xdm._experience.analytics.`<br>`customDimensions.eVars.eVar<number>`<br>et<br>`xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Les deux |
 | ID d’erreur du SDK Media | `xdm._experience.analytics.`<br>`event<x>to<y>.event<number>.value` | Mesure |

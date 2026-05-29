@@ -49,6 +49,6 @@ Les valeurs définies par Adobe renseignent les segments et les rapports intégr
 
 | Segment | Composants de |
 | --- | --- |
-| [!UICONTROL Contenu ] | Type de contenu = `vod` |
+| [!UICONTROL Contenu &#x200B;] | Type de contenu = `vod` |
 | [!UICONTROL Contenu en direct] | Type de contenu = `live` |
 | [!UICONTROL Contenu linéaire] | Type de contenu = `linear` |

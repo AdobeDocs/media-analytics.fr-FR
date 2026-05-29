@@ -19,7 +19,7 @@ ht-degree: 9%
 
 >[!ENDSHADEBOX]
 
-La variable autorisée marque une session dont l’utilisateur a été autorisé via Adobe Pass/TV-Everywhere. Définissez-la sur `"TRUE"` lorsqu’une autorisation est confirmée, sans quoi elle sera désactivée. Associez à [](/help/implementation/variables/standard-metadata/mvpd.md) pour ventiler l&#39;authentification par fournisseur.
+La variable autorisée marque une session dont l’utilisateur a été autorisé via Adobe Pass/TV-Everywhere. Définissez-la sur `"TRUE"` lorsqu’une autorisation est confirmée, sans quoi elle sera désactivée. Associez à [&#128279;](/help/implementation/variables/standard-metadata/mvpd.md) pour ventiler l&#39;authentification par fournisseur.
 
 | Propriété | Valeur |
 | --- | --- |

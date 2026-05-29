@@ -6,11 +6,28 @@ exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: c153fd90-23e1-4614-81d3-3cc7571227f7id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559id: e38cbddc-1633-4cd5-bed5-9f289f2a6029id: ef60b66e-5984-4336-ba72-6d978b1b6f87id: f1f1a2d4-0976-4881-b091-c2bb8de7ffacid: f836f655-eebe-4b76-82bc-697955ec1ce3
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c2be0313-b3ae-45e0-b454-d20bf54b23f2
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
+  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
+  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
+  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
+  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
+  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
 source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
 workflow-type: tm+mt
 source-wordcount: 503
@@ -22,10 +39,10 @@ ht-degree: 20%
 
 Chaque suite de rapports qui collecte des mesures multimédia doit être configurée avant que les données multimédia ne soient envoyées.
 
-1. Dans [](https://experience.adobe.com/analytics), accédez à **[!UICONTROL Admin]** → **[!UICONTROL Suites de rapports]**.
+1. Dans [&#128279;](https://experience.adobe.com/analytics), accédez à **[!UICONTROL Admin]** → **[!UICONTROL Suites de rapports]**.
 1. Sélectionnez la ou les suites de rapports qui collectent les données multimédia. Sélectionnez **[!UICONTROL Modifier les paramètres]** → **[!UICONTROL Gestion des médias]** → **[!UICONTROL Rapports multimédia]**.
 
-   ![ Capture d’écran du menu Gestionnaire de suites de rapports ](assets/media-reporting.png)
+   ![&#x200B; Capture d’écran du menu Gestionnaire de suites de rapports &#x200B;](assets/media-reporting.png)
 
 1. Sur la page **[!UICONTROL Création de rapports multimédia]**, activez les composants de médias en flux continu souhaités (voir ci-dessous).
 
@@ -40,12 +57,12 @@ La mesure multimédia inclut les modules suivants :
 * **[!UICONTROL Media Core]** : requis pour tout suivi des médias en flux continu. Il réserve les variables de solution pour la lecture du contenu et les données de session.
    * **Dimensions :**
       * [[!UICONTROL Contenu]](/help/reporting/dimensions/content.md)
-      * [[!UICONTROL  Canal de contenu ]](/help/reporting/dimensions/content-channel.md)
+      * [[!UICONTROL &#x200B; Canal de contenu &#x200B;]](/help/reporting/dimensions/content-channel.md)
       * [[!UICONTROL Longueur du contenu (variable)]](/help/reporting/dimensions/content-length.md)
       * [[!UICONTROL Nom du contenu (variable)]](/help/reporting/dimensions/content-name.md)
-      * [[!UICONTROL  Nom du lecteur de contenu ]](/help/reporting/dimensions/content-player-name.md)
-      * [[!UICONTROL  Segment de contenu ]](/help/reporting/dimensions/content-segment.md)
-      * [[!UICONTROL  Type de contenu ]](/help/reporting/dimensions/content-type.md)
+      * [[!UICONTROL &#x200B; Nom du lecteur de contenu &#x200B;]](/help/reporting/dimensions/content-player-name.md)
+      * [[!UICONTROL &#x200B; Segment de contenu &#x200B;]](/help/reporting/dimensions/content-segment.md)
+      * [[!UICONTROL &#x200B; Type de contenu &#x200B;]](/help/reporting/dimensions/content-type.md)
       * [[!UICONTROL Chemin du média]](/help/reporting/dimensions/media-path.md)
       * [[!UICONTROL ID de session multimédia]](/help/reporting/dimensions/media-session-id.md)
       * [[!UICONTROL Type de flux]](/help/reporting/dimensions/stream-type.md)
@@ -55,10 +72,10 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Reprise du contenu]](/help/reporting/metrics/content-resumes.md)
       * [[!UICONTROL Vues de segment de contenu]](/help/reporting/metrics/content-segment-views.md)
       * [[!UICONTROL Le contenu démarre]](/help/reporting/metrics/content-starts.md)
-      * [[!UICONTROL  Temps passé sur le contenu ]](/help/reporting/metrics/content-time-spent.md)
+      * [[!UICONTROL &#x200B; Temps passé sur le contenu &#x200B;]](/help/reporting/metrics/content-time-spent.md)
       * [[!UICONTROL Démarrage des médias]](/help/reporting/metrics/media-starts.md)
       * [[!UICONTROL Événements Pause]](/help/reporting/metrics/pause-events.md)
-      * [[!UICONTROL  Flux impactés en pause ]](/help/reporting/metrics/paused-impacted-streams.md)
+      * [[!UICONTROL &#x200B; Flux impactés en pause &#x200B;]](/help/reporting/metrics/paused-impacted-streams.md)
       * [[!UICONTROL Marqueurs de progression]](/help/reporting/metrics/progress-markers.md)
       * [[!UICONTROL Durée totale de la pause]](/help/reporting/metrics/total-pause-duration.md)
       * [[!UICONTROL Temps de lecture unique]](/help/reporting/metrics/unique-time-played.md)
@@ -90,7 +107,7 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Chapitre]](/help/reporting/dimensions/chapter.md)
    * **Dimensions de classification :**
       * [[!UICONTROL Longueur du chapitre]](/help/reporting/dimensions/chapter-length.md)
-      * [[!UICONTROL  Nom du chapitre ]](/help/reporting/dimensions/chapter-name.md)
+      * [[!UICONTROL &#x200B; Nom du chapitre &#x200B;]](/help/reporting/dimensions/chapter-name.md)
       * [[!UICONTROL Décalage de chapitre]](/help/reporting/dimensions/chapter-offset.md)
       * [[!UICONTROL Position du chapitre]](/help/reporting/dimensions/chapter-position.md)
       * [[!UICONTROL Originator]](/help/reporting/dimensions/originator.md)
@@ -114,12 +131,12 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Flux affectés par le changement de débit]](/help/reporting/metrics/bitrate-change-impacted-streams.md)
       * [[!UICONTROL Modifications de débit]](/help/reporting/metrics/bitrate-changes.md)
       * [[!UICONTROL Événements de mémoire tampon]](/help/reporting/metrics/buffer-events.md)
-      * [[!UICONTROL  Flux impactés par la mise en mémoire tampon ]](/help/reporting/metrics/buffer-impacted-streams.md)
-      * [[!UICONTROL  Flux impactés par l’image perdue ]](/help/reporting/metrics/dropped-frame-impacted-streams.md)
+      * [[!UICONTROL &#x200B; Flux impactés par la mise en mémoire tampon &#x200B;]](/help/reporting/metrics/buffer-impacted-streams.md)
+      * [[!UICONTROL &#x200B; Flux impactés par l’image perdue &#x200B;]](/help/reporting/metrics/dropped-frame-impacted-streams.md)
       * [[!UICONTROL Images perdues]](/help/reporting/metrics/dropped-frames.md)
       * [[!UICONTROL Pertes avant le démarrage]](/help/reporting/metrics/drops-before-start.md)
       * [[!UICONTROL Événements d’erreur]](/help/reporting/metrics/error-events.md)
-      * [[!UICONTROL  Flux impactés par l’erreur ]](/help/reporting/metrics/error-impacted-streams.md)
+      * [[!UICONTROL &#x200B; Flux impactés par l’erreur &#x200B;]](/help/reporting/metrics/error-impacted-streams.md)
       * [[!UICONTROL Heure de commencer]](/help/reporting/metrics/time-to-start.md)
       * [[!UICONTROL Durée totale du tampon]](/help/reporting/metrics/total-buffer-duration.md)
 * **[!UICONTROL Métadonnées vidéo]** : permet le suivi des attributs de contenu vidéo standard tels que l’émission, la saison et le genre.
@@ -129,9 +146,9 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Épisode]](/help/reporting/dimensions/episode.md)
       * [[!UICONTROL Genre]](/help/reporting/dimensions/genre.md)
       * [[!UICONTROL Type de flux multimédia]](/help/reporting/dimensions/media-feed-type.md)
-      * [](/help/reporting/dimensions/mvpd.md)
+      * [&#128279;](/help/reporting/dimensions/mvpd.md)
       * [[!UICONTROL Réseau]](/help/reporting/dimensions/network.md)
-      * [[!UICONTROL  Saison ]](/help/reporting/dimensions/season.md)
+      * [[!UICONTROL &#x200B; Saison &#x200B;]](/help/reporting/dimensions/season.md)
       * [[!UICONTROL Afficher]](/help/reporting/dimensions/show.md)
       * [[!UICONTROL Afficher le type]](/help/reporting/dimensions/show-type.md)
    * **Mesure :**
