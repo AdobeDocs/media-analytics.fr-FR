@@ -14,7 +14,7 @@ ht-degree: 5%
 
 Les mesures calculées pour les services de médias en flux continu Adobe sont des mesures personnalisées créées à partir des mesures de médias en flux continu standard. Vous pouvez ainsi obtenir des ratios tels que le temps de publicité moyen ou le taux d’achèvement des médias sans modifier votre implémentation.
 
-Pour créer ces mesures calculées dans Analysis Workspace, consultez la présentation des mesures calculées respectives dans [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview) ou [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
+Pour créer ces mesures calculées dans Analysis Workspace, consultez la présentation des mesures calculées respectives dans [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/components/calculated-metrics/cm-overview) ou [Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
 
 | Mesure calculée | Description | Formule |
 | --- | --- | --- |

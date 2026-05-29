@@ -24,7 +24,7 @@ La variable de type de flux multimédia identifie le flux de diffusion (par exem
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.feed` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.feed`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.feed` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |

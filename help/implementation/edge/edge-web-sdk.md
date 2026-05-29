@@ -82,13 +82,13 @@ alloy("configure", {
 });
 ```
 
-Consultez le composant `streamingMedia` de Web SDK [documentation](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/configure/streamingmedia) pour obtenir des informations complètes sur sa configuration.
+Consultez le composant `streamingMedia` de Web SDK [documentation](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/configure/streamingmedia) pour obtenir des informations complètes sur sa configuration.
 
 ### Étape 3 : obtenir l’instance de suivi multimédia lors de la migration depuis Media JS SDK
 
 Pour les clients qui utilisent le SDK Media JS, Web SDK fournit un chemin de migration permettant de passer de Media JS SDK à Web SDK, tout en incluant la prise en charge des fonctionnalités Media JS existantes, telles que la gestion des événements multimédia.
 
-Web SDK comprend une commande [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) que vous pouvez utiliser pour créer une instance d&#39;objet. Vous pouvez ensuite suivre les événements multimédia à l’aide des mêmes API que celles fournies par le [3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md).
+Web SDK comprend une commande [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/getmediaanalyticstracker) que vous pouvez utiliser pour créer une instance d&#39;objet. Vous pouvez ensuite suivre les événements multimédia à l’aide des mêmes API que celles fournies par le [3.x Media SDK](/help/implementation/media-sdk/setup/js-3x-api-reference.md).
 
 Le fragment de code ci-dessous indique comment récupérer l’instance de suivi multimédia dans Media JS.
 

@@ -25,9 +25,9 @@ La dimension **Creative ID** indique l’identifiant de la création publicitair
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.creative` à un eVar. |
+| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.creative` à un eVar. |
 | Adobe Analytics (classification) | Classification de la dimension [Annonce](ad.md) : Adobe crée automatiquement cette classification lorsque **[[!UICONTROL Annonces multimédia]](/help/reporting/media-reports-enable.md)** est activé pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
-| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.creativeID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Flux de données (règle de traitement) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (l’eVar à laquelle votre règle de traitement `a.media.ad.creative` mappée) |
 | Flux de données (classification) | S.O. — Les flux de données ne prennent pas en charge les classifications. |
 | Audience Manager | `c_contextdata.a.media.ad.creative` |
@@ -44,7 +44,7 @@ Cette approche fournit une relation 1:1 garantie entre chaque ID d’annonce pub
 
 ## Approche des règles de traitement
 
-Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.creative` à un eVar. Cette approche capture l’ID de contenu créatif sous la forme d’une valeur par accès sans nécessiter de maintenance de la classification.
+Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.ad.creative` à un eVar. Cette approche capture l’ID de contenu créatif sous la forme d’une valeur par accès sans nécessiter de maintenance de la classification.
 
 Le compromis est que vous perdez la relation 1:1 garantie entre l’ID créatif et la dimension [Annonce](ad.md) parente. Si votre implémentation envoie des valeurs incohérentes pour le même ID d’annonce publicitaire sur plusieurs événements, plusieurs ID de contenu créatif peuvent apparaître sous la même annonce. La mise à jour d’une valeur s’applique uniquement aux données dans le futur.
 
