@@ -5,9 +5,9 @@ user-guide-title: Guide des services des médias en streaming
 breadcrumb-title: Guide des services des médias en streaming
 user-guide-description: Implémentez des services de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '753'
 ht-degree: 36%
 
 ---
@@ -57,6 +57,7 @@ ht-degree: 36%
          + [Fin de l’état](implementation/events/player-state/state-end.md)
       + [Erreur](implementation/events/error.md)
    + Variables {#variables}
+      + [Vue d’ensemble](implementation/variables/overview.md)
       + Base {#core}
          + [Canal de contenu](implementation/variables/core/content-channel.md)
          + [Identifiant de contenu](implementation/variables/core/content-id.md)
@@ -129,7 +130,7 @@ ht-degree: 36%
          + [SDK Media Edge Mobile](/help/implementation/edge/edge-mobile-sdk.md)
       + [API Media Edge](/help/implementation/edge/implementation-edge-api.md)
       + [Prise en charge des métadonnées personnalisées](implementation/edge/implementation-edge-custom-metadata.md)
-      + [Mappage et validation des données AEP](/help/implementation/edge/platform-data.md)
+      + [Schéma de reporting XDM](/help/implementation/edge/platform-data.md)
    + Implémentations Adobe Analytics uniquement {#analytics-only}
       + [Conditions préalables](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
       + [Activation des rapports sur les médias](implementation/media-sdk/setup/media-reports-enable.md)

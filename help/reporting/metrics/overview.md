@@ -3,9 +3,9 @@ title: Présentation des mesures de streaming multimédia
 description: Découvrez comment les mesures de médias en flux continu sont calculées et organisées dans Adobe Analytics et Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,6 @@ Les mesures de médias en flux continu suivent quatre modèles de calcul princip
 
 >[!MORELIKETHIS]
 >
->* [Présentation des dimensions](../dimensions/overview.md) : référence des dimensions de médias en flux continu
->* [Mesures calculées](/help/reporting/calculated-metrics.md) : rapports et mesures dérivées créés à partir des mesures de base ci-dessus
->* [Mappage des paramètres](/help/implementation/parameters-mapping.md) : terminer la référence événement-colonne-vers-XDM
->* [Présentation des événements](/help/implementation/events/overview.md) : événements du lecteur qui pilotent le calcul des mesures
+>* [Présentation des événements](/help/implementation/events/overview.md) : événements du lecteur qui renseignent les mesures
+>* [Présentation des variables](/help/implementation/variables/overview.md) : données que les événements transmettent à Adobe
+>* [Présentation des dimensions](/help/reporting/dimensions/overview.md) : dimensions de rapport renseignées par les variables

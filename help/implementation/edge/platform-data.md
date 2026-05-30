@@ -1,5 +1,5 @@
 ---
-title: Mappage des données de l’API Media Edge et validation de la plateforme
+title: Schéma de reporting XDM
 description: Découvrez quels événements d’API Media Edge génèrent des événements d’expérience dans Adobe Experience Platform et comment valider votre implémentation à l’aide du schéma XDM mediaReporting.
 feature: Streaming Media
 role: User, Admin, Developer
@@ -15,26 +15,26 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 267532dfbe6dc3f7bcff0991536ae3baf6eff053
 workflow-type: tm+mt
-source-wordcount: 764
+source-wordcount: 763
 ht-degree: 4%
 
 ---
 
 
-# Mappage des données de l’API Media Edge et validation de la plateforme
+# Schéma de reporting XDM
 
-Lorsque vous envoyez des événements de suivi multimédia à l’aide de l’API Media Edge ou d’un SDK Media Edge, le serveur principal Media Analytics traite ces événements et écrit les événements d’expérience calculés dans les jeux de données Adobe Experience Platform. Comprendre quels événements atteignent Platform et ce que le serveur principal calcule pour vous permet de valider votre implémentation et de créer des rapports précis dans Customer Journey Analytics ou Adobe Analytics.
+Lorsque vous envoyez des événements de suivi multimédia à l’aide de Adobe Experience Platform Edge Network, le serveur principal Media Analytics traite ces événements et écrit les événements d’expérience calculés dans les jeux de données Platform. Comprendre quels événements atteignent Platform et ce que le serveur principal calcule pour vous permet de valider votre implémentation et de créer des rapports précis dans Customer Journey Analytics ou Adobe Analytics.
 
-Media Edge utilise deux schémas XDM distincts :
+Deux schémas XDM distincts sont utilisés dans différentes parties du pipeline de collecte et de création de rapports :
 
 | Schéma | Espace de noms | Direction | Rôle |
 |---|---|---|---|
-| Media Collection | `xdm.mediaCollection` | Client → Adobe | Ce que votre lecteur envoie pour chaque événement de suivi |
-| Rapports multimédias | `xdm.mediaReporting` | Adobe → Platform | Ce que le serveur principal écrit dans les jeux de données après traitement |
+| Media Collection | `xdm.mediaCollection` | Client → Adobe | Ce que votre lecteur envoie pour chaque événement de suivi. Utilisé par [variables](/help/implementation/variables/). |
+| Rapports multimédias | `xdm.mediaReporting` | Adobe → Platform | Ce que le serveur principal écrit dans les jeux de données après traitement. Utilisé par [dimensions](/help/reporting/dimensions/overview.md) et [mesures](/help/reporting/metrics/overview.md). |
 
-Les champs présents dans `mediaReporting`, mais absents de votre payload `mediaCollection`, sont **calculés par le serveur principal** ; ils sont dérivés de la séquence complète d’événements d’une session. Ces champs ne sont jamais envoyés, ils sont générés par Adobe.
+Les champs présents dans `mediaReporting` mais absents de la payload `mediaCollection` sont dérivés de la séquence complète d’événements d’une session. Ces champs ne sont jamais envoyés, ils sont générés par Adobe.
 
 ## Événements qui écrivent dans les jeux de données Platform
 

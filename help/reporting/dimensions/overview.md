@@ -3,7 +3,7 @@ title: Présentation des dimensions de streaming multimédia
 description: Découvrez comment les dimensions des médias en flux continu sont renseignées et organisées dans Adobe Analytics et Customer Journey Analytics.
 feature: Dimensions
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -36,6 +36,6 @@ Les dimensions Streaming Media suivent trois schémas de population principaux :
 
 >[!MORELIKETHIS]
 >
->* [Présentation des mesures](../metrics/overview.md) : référence sur les mesures des médias en flux continu
->* [Mappage des paramètres](/help/implementation/parameters-mapping.md) : complète référence de variable à colonne à XDM.
->* [Segments de médias](/help/reporting/segments.md) : segments intégrés qui utilisent des dimensions de médias en flux continu
+>* [Présentation des événements](/help/implementation/events/overview.md) : événements du lecteur qui renseignent les dimensions
+>* [Présentation des variables](/help/implementation/variables/overview.md) : données que les événements transmettent à Adobe
+>* [Présentation des mesures](/help/reporting/metrics/overview.md) : mesures de reporting renseignées par les variables
