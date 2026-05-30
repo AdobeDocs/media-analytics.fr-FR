@@ -3,9 +3,9 @@ title: Présentation des événements multimédia en flux continu
 description: Découvrez les types d’événements multimédia et l’ordre dans lequel ils doivent être envoyés.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1065'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Une session expire automatiquement si aucun événement n’est reçu pendant 10
 
 Les événements de lecture effectuent le suivi des transitions d’état dans le lecteur multimédia tout au long d’une session. Ils constituent le cœur du flux d’événements et s’appliquent à tout type de contenu.
 
-L’événement de lecture principal est [&#x200B; Lecture &#x200B;](playback/play.md). Après avoir appelé le début de la session, la lecture signale que la lecture du contenu a commencé, qu’il s’agisse du début initial, d’un déclencheur de lecture automatique ou de tout retour à l’état de lecture. [Démarrer la pause](playback/pause-start.md) indique que l’utilisateur a suspendu la lecture. Il n’existe aucun événement de reprise dédié ; lorsque la visionneuse reprend, envoyez à nouveau la lecture. La lecture fonctionne de la même manière après un blocage de la mise en mémoire tampon : envoyez [Début de la mise en mémoire tampon](playback/buffer-start.md) lorsque le lecteur se bloque en attente de données, puis suivez avec Lecture lorsque la mise en mémoire tampon est résolue.
+L’événement de lecture principal est [ Lecture ](playback/play.md). Après avoir appelé le début de la session, la lecture signale que la lecture du contenu a commencé, qu’il s’agisse du début initial, d’un déclencheur de lecture automatique ou de tout retour à l’état de lecture. [Démarrer la pause](playback/pause-start.md) indique que l’utilisateur a suspendu la lecture. Il n’existe aucun événement de reprise dédié ; lorsque la visionneuse reprend, envoyez à nouveau la lecture. La lecture fonctionne de la même manière après un blocage de la mise en mémoire tampon : envoyez [Début de la mise en mémoire tampon](playback/buffer-start.md) lorsque le lecteur se bloque en attente de données, puis suivez avec Lecture lorsque la mise en mémoire tampon est résolue.
 
 Envoyez [Ping](playback/ping.md) toutes les 10 secondes pendant la lecture du contenu principal et toutes les secondes pendant la lecture des publicités. Ping maintient la session active et enregistre les mouvements du curseur de lecture. Sur les SDK mobiles, les pings sont envoyés automatiquement. Sur toutes les autres plateformes, ils doivent être envoyés manuellement.
 
@@ -69,3 +69,9 @@ Les cinq états traçables sont les suivants : `fullscreen`, `mute`, `closedCapt
 ## Événements d’erreur
 
 L’événement [Error](error.md) enregistre un échec de lecture au cours d’une session : une requête de flux ayant échoué, une erreur de codec ou un échec de diffusion externe. Envoyez-le chaque fois qu’une erreur significative se produit. Un événement d’erreur ne ferme pas la session ; la lecture peut continuer et les événements suivants sont suivis sous la même session. Si l’erreur est irrécupérable, suivez-la avec Fin de session pour fermer explicitement la session.
+
+>[!MORELIKETHIS]
+>
+>* [Présentation des variables](/help/implementation/variables/overview.md) : données que les événements transmettent à Adobe
+>* [Présentation des dimensions](/help/reporting/dimensions/overview.md) : dimensions de création de rapports que les événements renseignent
+>* [Présentation des mesures](/help/reporting/metrics/overview.md) : mesures de reporting que les événements renseignent

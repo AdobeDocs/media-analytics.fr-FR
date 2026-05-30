@@ -3,9 +3,9 @@ title: Présentation des mesures de streaming multimédia
 description: Découvrez comment les mesures de médias en flux continu sont calculées et organisées dans Adobe Analytics et Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
@@ -31,13 +31,12 @@ Les mesures de médias en flux continu suivent quatre modèles de calcul princip
 
 | Système de reporting | Comment les mesures arrivent |
 | --- | --- |
-| Adobe Analytics | Renseigné à l’aide de [Variables de données contextuelles](https://experienceleague.adobe.com/fr/docs/analytics/implementation/vars/page-vars/contextdata). Certaines mesures renseignent automatiquement les événements de solution à l’aide de ces variables de données contextuelles, tandis que d’autres doivent être mappées à un événement personnalisé à l’aide de [règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Les mesures qui renseignent automatiquement les valeurs doivent d’abord activer leur [paramètre de suite de rapports Streaming Media](../../implementation/media-sdk/setup/media-reports-enable.md) respectif. |
-| Customer Journey Analytics | Champs XDM dans les nœuds `xdm.mediaReporting.sessionDetails` et associés, provenant de n’importe quel jeu de données qui inclut des données de médias en flux continu. Vous devez créer chaque mesure avec les paramètres souhaités dans [Paramètres des composants de la vue de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
+| Adobe Analytics | Renseigné à l’aide de [Variables de données contextuelles](https://experienceleague.adobe.com/fr/docs/analytics/implementation/vars/page-vars/contextdata). Certaines mesures renseignent automatiquement les événements de solution à l’aide de ces variables de données contextuelles, tandis que d’autres doivent être mappées à un événement personnalisé à l’aide de [règles de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Les mesures qui renseignent automatiquement les valeurs doivent d’abord activer leur [paramètre de suite de rapports Streaming Media](../../implementation/media-sdk/setup/media-reports-enable.md) respectif. |
+| Customer Journey Analytics | Champs XDM dans les nœuds `xdm.mediaReporting.sessionDetails` et associés, provenant de n’importe quel jeu de données qui inclut des données de médias en flux continu. Vous devez créer chaque mesure avec les paramètres souhaités dans [Paramètres des composants de la vue de données](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
 | Flux de données | Les mesures apparaissent dans les colonnes `event_list` et `post_event_list` sous la forme d’identifiants d’événement. Chaque fichier de flux contient un fichier `events.csv` contenant la recherche de toutes les mesures, y compris les mesures des médias en flux continu. |
 
 >[!MORELIKETHIS]
 >
->* [Présentation des dimensions](../dimensions/overview.md) : référence des dimensions de médias en flux continu
->* [Mesures calculées](/help/reporting/calculated-metrics.md) : rapports et mesures dérivées créés à partir des mesures de base ci-dessus
->* [Mappage des paramètres](/help/implementation/parameters-mapping.md) : terminer la référence événement-colonne-vers-XDM
->* [Présentation des événements](/help/implementation/events/overview.md) : événements du lecteur qui pilotent le calcul des mesures
+>* [Présentation des événements](/help/implementation/events/overview.md) : événements du lecteur qui renseignent les mesures
+>* [Présentation des variables](/help/implementation/variables/overview.md) : données que les événements transmettent à Adobe
+>* [Présentation des dimensions](/help/reporting/dimensions/overview.md) : dimensions de rapport renseignées par les variables
