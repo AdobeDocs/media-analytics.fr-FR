@@ -117,7 +117,7 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
    +++ Développez pour afficher les instructions sur l’ajout de métadonnées personnalisées à votre schéma.
 
-   1. Recherchez le nom du client de l’organisation en sélectionnant **[!UICONTROL Informations sur le compte]** > **[!UICONTROL Organisations affectées]** > [!UICONTROL _**nom de l’organisation**_] > **[!UICONTROL client]**.
+   1. Recherchez le nom du client de l’organisation en sélectionnant **[!UICONTROL Informations sur le compte]** > **[!UICONTROL Organisations affectées]** > [!UICONTROL _&#x200B;**nom de l’organisation**&#x200B;_] > **[!UICONTROL client]**.
 
       Les champs personnalisés sont reçus via ce chemin d’accès. (Par exemple, nom du client : _dcbl → chemin myCustomField : _dcbl.myCustomField.)
 
@@ -165,11 +165,11 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
    * Ajoutez l’un des services suivants au flux de données, selon que vous utilisez Adobe Analytics ou Customer Journey Analytics :
 
-      * **** (si vous utilisez Adobe Analytics)
+      * **&#x200B;**&#x200B;(si vous utilisez Adobe Analytics)
 
-        Si vous utilisez Adobe Analytics, définissez une suite de rapports comme décrit dans la section [ Création d’une suite de rapports ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        Si vous utilisez Adobe Analytics, définissez une suite de rapports comme décrit dans la section [&#x200B; Création d’une suite de rapports &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
-      * **** (si vous utilisez Customer Journey Analytics)
+      * **&#x200B;**&#x200B;(si vous utilisez Customer Journey Analytics)
 
      Pour plus d’informations sur l’ajout d’un service à un flux de données, voir « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
@@ -189,7 +189,7 @@ Une fois le schéma, le jeu de données et le flux de données en place, implém
 | iOS | [iOS](ios.md) | [iOS (Balises)](ios-tags.md) |
 | Android | [Android](android.md) | [Android (Balises)](android-tags.md) |
 | Roku | [Roku](roku.md) | — |
-| API | [ API Media Edge ](media-edge-api.md) | — |
+| API | [&#x200B; API Media Edge &#x200B;](media-edge-api.md) | — |
 
 ## Étape suivante
 
@@ -200,6 +200,6 @@ Après avoir commencé à collecter des données, vous pouvez configurer les rap
 
 >[!MORELIKETHIS]
 >
->* [ Prise en charge des métadonnées personnalisées ](custom-metadata.md)
+>* [&#x200B; Prise en charge des métadonnées personnalisées &#x200B;](custom-metadata.md)
 >* [Schéma de reporting XDM](reporting-schema.md)
 >* [Présentation des événements](/help/implementation/events/overview.md)

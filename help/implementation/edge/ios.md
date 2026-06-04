@@ -15,7 +15,7 @@ ht-degree: 0%
 L’extension Adobe Streaming Media for Edge Network (`AEPEdgeMedia`) collecte les données de session multimédia dans votre application iOS ou tvOS et les envoie à Edge Network. Cette page traite de la configuration dans le code. Pour configurer le SDK par le biais d’une propriété mobile Balises à la place, voir [Configuration d’iOS pour les médias en flux continu avec les balises](ios-tags.md).
 
 * **Conditions préalables** :
-   * Terminez la présentation de l’implémentation d’[](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
+   * Terminez la présentation de l’implémentation d’[&#128279;](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
    * Ajoutez les extensions `AEPCore`, `AEPEdge`, `AEPEdgeIdentity` et `AEPEdgeMedia` à votre application. Voir [Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/) pour l’installation et l’enregistrement.
 
 ## Configuration de médias pour iOS
@@ -41,7 +41,7 @@ Pour les clés de configuration et l’API de suivi complet, consultez la réfé
 
 ## Suivi des événements multimédia
 
-Une fois le dispositif de suivi créé, suivez chaque événement multimédia à l’aide de sa méthode de suivi. Voir l’onglet **** sur chaque page [événement](/help/implementation/events/overview.md) et [variable](/help/implementation/variables/overview.md) pour connaître les appels exacts.
+Une fois le dispositif de suivi créé, suivez chaque événement multimédia à l’aide de sa méthode de suivi. Voir l’onglet **&#x200B;**&#x200B;sur chaque page [événement](/help/implementation/events/overview.md) et [variable](/help/implementation/variables/overview.md) pour connaître les appels exacts.
 
 ## Étape suivante
 

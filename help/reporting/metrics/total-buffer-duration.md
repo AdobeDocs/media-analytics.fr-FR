@@ -23,7 +23,7 @@ La mesure **Durée totale de la mémoire tampon** indique le temps de mémoire t
 
 ## Méthode de calcul de cette mesure
 
-Le serveur principal du média additionne la durée de chaque intervalle de mémoire tampon (du [ début de la mémoire tampon ](/help/implementation/events/playback/buffer-start.md) au changement d&#39;état suivant). La mesure est signalée lors de l’appel de fermeture. Analysis Workspace affiche la valeur en tant que `HH:MM:SS` ; les flux de données, Data Warehouse et les API de création de rapports affichent la valeur en secondes.
+Le serveur principal du média additionne la durée de chaque intervalle de mémoire tampon (du [&#x200B; début de la mémoire tampon &#x200B;](/help/implementation/events/playback/buffer-start.md) au changement d&#39;état suivant). La mesure est signalée lors de l’appel de fermeture. Analysis Workspace affiche la valeur en tant que `HH:MM:SS` ; les flux de données, Data Warehouse et les API de création de rapports affichent la valeur en secondes.
 
 | Système de reporting | Source |
 | --- | --- |

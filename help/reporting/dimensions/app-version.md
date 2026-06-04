@@ -31,7 +31,7 @@ La version de l’application est définie une seule fois lors de l’initialisa
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Collecté automatiquement via le mappage des champs XDM lors de l’utilisation d’implémentations Edge. Pour les implémentations Analytics uniquement, mappez les `media.sdkVersion` de données contextuelles à un eVar personnalisé à l’aide d’une [ règle de traitement ](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md). |
+| Adobe Analytics | Collecté automatiquement via le mappage des champs XDM lors de l’utilisation d’implémentations Edge. Pour les implémentations Analytics uniquement, mappez les `media.sdkVersion` de données contextuelles à un eVar personnalisé à l’aide d’une [&#x200B; règle de traitement &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.md). |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données | Aucune colonne de flux de données dédiée. Pour les implémentations Analytics uniquement, utilisez la colonne de flux de données de l’eVar personnalisée configurée via la règle de traitement. |
 | Audience Manager | `c_contextdata.media.sdkVersion` (implémentations Analytics uniquement) |

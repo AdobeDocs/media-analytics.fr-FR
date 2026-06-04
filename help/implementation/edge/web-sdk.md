@@ -15,7 +15,7 @@ ht-degree: 5%
 Le composant `streamingMedia` de Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) (`alloy.js`, version 2.20.0 ou ultérieure) collecte les données de session multimédia sur votre site Web et les envoie à Edge Network. Cette page traite de la configuration intégrée au code (`alloy.js`). Pour configurer le SDK web via des balises à la place, voir [Configurer l’extension de balise du SDK web pour les médias en flux continu](web-sdk-tags.md).
 
 * **Conditions préalables** :
-   * Terminez la présentation de l’implémentation d’[](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
+   * Terminez la présentation de l’implémentation d’[&#128279;](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
    * Installez Web SDK version 2.20.0 ou ultérieure. Voir [Installation du SDK Web](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/overview).
 
 ## Configuration du composant streamingMedia
@@ -35,7 +35,7 @@ alloy("configure", {
 });
 ```
 
-Pour plus d’informations sur la configuration, voir la commande ](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia).[`streamingMedia`
+Pour plus d’informations sur la configuration, voir la commande [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia).`streamingMedia`
 
 ### Migration à partir de Media JS SDK
 

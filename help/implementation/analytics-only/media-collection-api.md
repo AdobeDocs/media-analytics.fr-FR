@@ -30,6 +30,6 @@ Une fois l’implémentation terminée, vous pouvez [Configurer des rapports pou
 
 >[!MORELIKETHIS]
 >
->* [Référence de l’API Media Collection ](../media-collection-api/mc-api-overview.md)
+>* [Référence de l’API Media Collection &#x200B;](../media-collection-api/mc-api-overview.md)
 >* [Présentation des événements](/help/implementation/events/overview.md)
 >* [Présentation des variables](/help/implementation/variables/overview.md)

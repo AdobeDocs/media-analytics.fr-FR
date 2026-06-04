@@ -27,7 +27,7 @@ Le diaporama est défini par le lecteur au début de la session lorsque le conte
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Collecté automatiquement à partir des `a.media.show` de données contextuelles lorsque [[!UICONTROL  Métadonnées vidéo ]](/help/reporting/setup/analytics-reporting.md) est activé. |
+| Adobe Analytics | Collecté automatiquement à partir des `a.media.show` de données contextuelles lorsque [[!UICONTROL &#x200B; Métadonnées vidéo &#x200B;]](/help/reporting/setup/analytics-reporting.md) est activé. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.show`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données | `videoshow`, `post_videoshow` |
 | Audience Manager | `c_contextdata.a.media.show` |

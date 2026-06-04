@@ -5,10 +5,18 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 0f75e594-5216-4ac1-91bd-fa89ab4b2110
 TQID: https://experienceleague.adobe.com/c1WHnEeZnI3PP6aO40pDHpJCi2Z0ERiNY8lCj4wyMiU
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 533
@@ -50,15 +58,15 @@ Pour suivre plus facilement les instructions de migration, considérez l’exemp
 
 1. Sélectionnez **[!UICONTROL Mettre à jour le flux de données]** pour accéder à l’interface utilisateur de modification, comme illustré dans l’image ci-dessous.
 
-   ![profil de flux de données ](../../assets/aep-dataflow-profile.jpeg)
+   ![profil de flux de données &#x200B;](../../assets/aep-dataflow-profile.jpeg)
 
 1. Sélectionnez **[!UICONTROL Suivant]** pour accéder à l’onglet Filtrage .
 
-   ![Onglet Filtre de flux de données ](../../assets/aep-dataflow-filtering-profile.jpeg)
+   ![Onglet Filtre de flux de données &#x200B;](../../assets/aep-dataflow-filtering-profile.jpeg)
 
 1. Dans l’onglet **[!UICONTROL Filtrage]**, identifiez les règles de filtrage qui reposent sur des champs `media.mediaTimed`.
 
-   ![règles de filtrage des flux de données ](../../assets/dataflow-filtering-rules-profile.jpeg)
+   ![règles de filtrage des flux de données &#x200B;](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
    Pour chaque filtre qui utilise l’objet media.mediaTimed, recherchez son correspondant dans l’objet `mediaReporting` à l’aide des variables de médias en flux continu documentées sous [Services de médias en flux continu](/help/media-overview.md) pour mapper les anciens champs aux nouveaux champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ». Par exemple, pour [Media Starts](/help/reporting/metrics/media-starts.md), le correspondant pour `media.mediaTimed.impressions.value` est `xdm.mediaReporting.sessionDetails.isViewed`.

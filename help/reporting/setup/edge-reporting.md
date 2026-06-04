@@ -18,7 +18,7 @@ Après avoir implémenté la collecte de médias en flux continu via Edge Networ
 >
 >Cette page traite des rapports dans Customer Journey Analytics, la destination recommandée pour les implémentations d’Edge. Si votre flux de données envoie plutôt des données de médias en flux continu à Adobe Analytics, voir [Configurer des rapports pour les implémentations Analytics uniquement](analytics-reporting.md).
 
-* **Conditions préalables** : terminez une implémentation d’Edge et collectez des données. Voir la présentation de l’implémentation d’Edge [](/help/implementation/edge/overview.md) et la méthode d’implémentation choisie.
+* **Conditions préalables** : terminez une implémentation d’Edge et collectez des données. Voir la présentation de l’implémentation d’Edge [&#128279;](/help/implementation/edge/overview.md) et la méthode d’implémentation choisie.
 
 ## Créer une connexion dans Customer Journey Analytics
 

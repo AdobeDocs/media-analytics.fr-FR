@@ -15,7 +15,7 @@ ht-degree: 0%
 Le [SDK Roku Adobe Experience Platform](https://github.com/adobe/aepsdk-roku) (BrightScript) collecte les données de session multimédia dans votre canal Roku et les envoie à Edge Network. Roku est configuré dans le code ; il n’utilise pas de balises.
 
 * **Conditions préalables** :
-   * Terminez la présentation de l’implémentation d’[](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
+   * Terminez la présentation de l’implémentation d’[&#128279;](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
    * Téléchargez le SDK à partir des [versions de GitHub](https://github.com/adobe/aepsdk-roku/releases) et ajoutez-le à votre canal, comme décrit dans le [guide de prise en main](https://github.com/adobe/aepsdk-roku/blob/main/Documentation/getting-started.md).
 
 ## Configuration d’AEP Roku SDK pour les médias

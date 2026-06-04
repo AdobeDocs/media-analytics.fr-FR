@@ -18,7 +18,7 @@ Les implémentations Analytics uniquement utilisent le module complémentaire Ad
 
 1. **Remplir les conditions préalables générales.** Voir les [conditions préalables générales](/help/getting-started/prereqs.md).
 
-1. **Confirmer une implémentation d’Adobe Analytics.** Une implémentation de médias en flux continu uniquement pour Analytics nécessite une implémentation Adobe Analytics de base. Voir [ Implémentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).
+1. **Confirmer une implémentation d’Adobe Analytics.** Une implémentation de médias en flux continu uniquement pour Analytics nécessite une implémentation Adobe Analytics de base. Voir [&#x200B; Implémentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).
 
 1. **Obtenir l’URL du serveur de suivi multimédia.** Demandez à votre représentant Adobe Analytics l’URL du serveur de suivi multimédia (l’URL `collection-api-server`). Le domaine suit généralement le modèle `[your_namespace].hb-api.omtrdc.net`.
 
@@ -30,9 +30,9 @@ Chaque page couvre la configuration spécifique aux médias en flux continu. Le 
 
 | Base de code | In-code | Par Le Biais De Balises |
 |---|---|---|
-| Web (JavaScript) | [JavaScript ](javascript.md) | [Extension de balises Media Analytics](javascript-tags.md) |
-| Chromecast | [ Chromecast ](chromecast.md) | — |
-| API | [ API Media Collection ](media-collection-api.md) | — |
+| Web (JavaScript) | [JavaScript &#x200B;](javascript.md) | [Extension de balises Media Analytics](javascript-tags.md) |
+| Chromecast | [&#x200B; Chromecast &#x200B;](chromecast.md) | — |
+| API | [&#x200B; API Media Collection &#x200B;](media-collection-api.md) | — |
 
 ## Étape suivante
 
