@@ -3,7 +3,7 @@ title: Autorisé
 description: Comptabilise les sessions dont l’utilisateur a été autorisé via Adobe Pass.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 12%
@@ -19,7 +19,7 @@ ht-degree: 12%
 
 >[!ENDSHADEBOX]
 
-La mesure **Autorisé** comptabilise les sessions dont l’utilisateur a été autorisé via Adobe Pass ou TV-Everywhere. Associez à la dimension [&#128279;](/help/reporting/dimensions/mvpd.md) pour ventiler le volume d&#39;authentification par fournisseur.
+La mesure **Autorisé** comptabilise les sessions dont l’utilisateur a été autorisé via Adobe Pass ou TV-Everywhere. Associez à la dimension [](/help/reporting/dimensions/mvpd.md) pour ventiler le volume d&#39;authentification par fournisseur.
 
 ## Méthode de calcul de cette mesure
 
@@ -27,7 +27,7 @@ Le serveur principal du média incrémente le nombre lorsque le lecteur marque l
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Collecté automatiquement à partir des `a.media.pass.auth` de données contextuelles lorsque [[!UICONTROL &#x200B; Métadonnées vidéo &#x200B;]](/help/reporting/media-reports-enable.md) est activé. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.authorized`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Adobe Analytics | Collecté automatiquement à partir des `a.media.pass.auth` de données contextuelles lorsque [[!UICONTROL  Métadonnées vidéo ]](/help/reporting/setup/analytics-reporting.md) est activé. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.authorized`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.pass.auth` |

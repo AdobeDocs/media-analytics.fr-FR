@@ -3,7 +3,7 @@ title: Chemin du média
 description: Capture l’identifiant du contenu en tant que variable de trafic pour l’analyse des chemins.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 034d7736c2f6e15592f4f6a0313c78275c4fea50
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 5%
@@ -21,7 +21,7 @@ Le chemin d’accès au média est automatiquement dérivé de l’identifiant d
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Collecté automatiquement à partir des données contextuelles `a.media.name` en tant que variable de trafic (prop) lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
+| Adobe Analytics | Collecté automatiquement à partir des données contextuelles `a.media.name` en tant que variable de trafic (prop) lorsque [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) est activé. |
 | Customer Journey Analytics | N/A — utiliser [Contenu](content.md) pour l&#39;analyse des chemins |
 | Flux de données | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |

@@ -3,7 +3,7 @@ title: Type d’affichage
 description: Identifiez le format du contenu (épisode complet, aperçu, clip ou autre) à l’aide d’un code entier de chaîne.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 8%
@@ -21,17 +21,17 @@ ht-degree: 8%
 
 La variable show type identifie le format du contenu à l&#39;aide d&#39;un code entier de chaîne :
 
-- `"0"` : épisode complet
-- `"1"` : aperçu ou bande-annonce
-- `"2"` : Clip
-- `"3"` : autre
+* `"0"` : épisode complet
+* `"1"` : aperçu ou bande-annonce
+* `"2"` : Clip
+* `"3"` : autre
 
 Utilisez-le pour séparer l’affichage du programme complet du contenu court, tel que des bandes-annonces et des clips, lors de la mesure de l’engagement.
 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.type` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.showType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.type` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
