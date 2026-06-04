@@ -3,9 +3,9 @@ title: Prise en charge des métadonnées personnalisées - Format XDM
 description: Découvrez comment envoyer des métadonnées personnalisées avec des événements de suivi multimédia à l’aide du format XDM Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: '766'
+source-wordcount: '764'
 ht-degree: 2%
 
 ---
@@ -112,8 +112,8 @@ Contrairement à `xdm.mediaCollection.customMetadata` qui utilise un **tableau d
 
 ### Conventions de dénomination
 
-- **Format XDM :** préfixe avec espace de noms client utilisant un trait de soulignement. Vous pouvez également créer des structures dans votre groupe de champs personnalisés client, telles que `_<tenant>.<struct_name>.<field_name>`.
-- **`_data`format : les champs** sont placés sous `_data.__adobe.analytics.contextData` — aucun préfixe de trait de soulignement n’est requis sur le nom du champ (par exemple, `debugFlag`)
+* **Format XDM :** préfixe avec espace de noms client utilisant un trait de soulignement. Vous pouvez également créer des structures dans votre groupe de champs personnalisés client, telles que `_<tenant>.<struct_name>.<field_name>`.
+* **`_data`format : les champs** sont placés sous `_data.__adobe.analytics.contextData` — aucun préfixe de trait de soulignement n’est requis sur le nom du champ (par exemple, `debugFlag`)
 
 ## Métadonnées personnalisées du contenu principal
 
@@ -302,8 +302,8 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/sessionStart?configId={datastrea
 
 Dans cet exemple :
 
-- `_mycompany.league` → envoyées à Analytics et à AEP
-- `debugMode` et `testFlag` (sous `_data.__adobe.analytics.contextData`) → envoyés à Analytics uniquement
+* `_mycompany.league` → envoyées à Analytics et à AEP
+* `debugMode` et `testFlag` (sous `_data.__adobe.analytics.contextData`) → envoyés à Analytics uniquement
 
 
 ## Emplacement des données en aval
@@ -314,34 +314,33 @@ Dans cet exemple :
 
 **Adobe Analytics :**
 
-- Après traitement, les métadonnées personnalisées sont transférées vers Adobe Analytics en tant que variables de données contextuelles. Le préfixe `_tenant` est automatiquement supprimé. Les règles de traitement ne référencent donc que le chemin du champ après `_tenant` (par exemple, `_mycompany.contentCategory` devient `contentCategory`)
-- Les données envoyées via `_data` sont également transférées vers Adobe Analytics et disponibles via des règles de traitement
-- Utilisez des règles de traitement pour mapper des variables de données contextuelles à des eVars, des props ou d’autres variables Analytics. Pour plus d’informations, consultez [Mappage de variables de données pour Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping).
+* Après traitement, les métadonnées personnalisées sont transférées vers Adobe Analytics en tant que variables de données contextuelles. Le préfixe `_tenant` est automatiquement supprimé. Les règles de traitement ne référencent donc que le chemin du champ après `_tenant` (par exemple, `_mycompany.contentCategory` devient `contentCategory`)
+* Les données envoyées via `_data` sont également transférées vers Adobe Analytics et disponibles via des règles de traitement
+* Utilisez des règles de traitement pour mapper des variables de données contextuelles à des eVars, des props ou d’autres variables Analytics. Pour plus d’informations, consultez [Mappage de variables de données pour Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping).
 
 **Adobe Experience Platform:**
 
-- Les champs de métadonnées personnalisés doivent être définis comme des champs personnalisés dans votre schéma XDM (par exemple, `_mycompany`) et ils peuvent être stockés et interrogés dans AEP sous la forme de champs aplatis
+* Les champs de métadonnées personnalisés doivent être définis comme des champs personnalisés dans votre schéma XDM (par exemple, `_mycompany`) et ils peuvent être stockés et interrogés dans AEP sous la forme de champs aplatis
 
   ![Définition d’un champ personnalisé dans un schéma XDM](assets/custom_metadata.png)
-- Pour les rapports et les requêtes, les métadonnées personnalisées sont disponibles sous `xdm.mediaReporting.customMetadata` ainsi que sous la forme de champs aplatis de niveau supérieur. Utilisez la solution la plus adaptée à votre cas d’utilisation.
-- Accessible pour la segmentation, Journey Orchestration et l’activation de Real-Time CDP
+* Pour les rapports et les requêtes, les métadonnées personnalisées sont disponibles sous `xdm.mediaReporting.customMetadata` ainsi que sous la forme de champs aplatis de niveau supérieur. Utilisez la solution la plus adaptée à votre cas d’utilisation.
+* Accessible pour la segmentation, Journey Orchestration et l’activation de Real-Time CDP
 
 ## Comportement
 
-- Toutes les valeurs de métadonnées personnalisées doivent être des **chaînes**. Convertissez les nombres et les booléens avant l’envoi.
-- `sessionStart` métadonnées sont conservées pendant toute la session ; les mises à jour nécessitent une nouvelle session
-- Chaque événement `adStart` et `chapterStart` peut comporter différentes métadonnées personnalisées
-- Préférez les champs XDM standard (`sessionDetails`, `advertisingDetails`, `chapterDetails`) aux métadonnées personnalisées lorsqu’un champ standard existe
+* Toutes les valeurs de métadonnées personnalisées doivent être des **chaînes**. Convertissez les nombres et les booléens avant l’envoi.
+* `sessionStart` métadonnées sont conservées pendant toute la session ; les mises à jour nécessitent une nouvelle session
+* Chaque événement `adStart` et `chapterStart` peut comporter différentes métadonnées personnalisées
+* Préférez les champs XDM standard (`sessionDetails`, `advertisingDetails`, `chapterDetails`) aux métadonnées personnalisées lorsqu’un champ standard existe
 
-
-## Documentation connexe
-
-- [&#x200B; Prise en charge des métadonnées personnalisées &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — API MC (format JSON)
-- [Type de données Détails de la collecte de médias &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) — Référence du schéma XDM
-- [&#x200B; Mappage des variables de données pour Adobe Experience Platform Edge Network &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping) — Mappage des données contextuelles Analytics pour les champs XDM
+>[!MORELIKETHIS]
+>
+>* [&#x200B; Prise en charge des métadonnées personnalisées &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — API MC (format JSON)
+>* [Type de données Détails de la collecte de médias &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) — Référence du schéma XDM
+>* [&#x200B; Mappage des variables de données pour Adobe Experience Platform Edge Network &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping) — Mappage des données contextuelles Analytics pour les champs XDM
 
 <!--
-- [Session endpoints](sessions.md) — Session lifecycle management
-- [Ad endpoints](ads.md) — Track advertising impressions
-- [Chapter endpoints](chapters.md) — Segment content into chapters
+* [Session endpoints](sessions.md) — Session lifecycle management
+* [Ad endpoints](ads.md) — Track advertising impressions
+* [Chapter endpoints](chapters.md) — Segment content into chapters
 -->

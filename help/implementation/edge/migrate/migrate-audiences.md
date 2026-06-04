@@ -16,7 +16,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 516
 ht-degree: 1%
@@ -43,49 +43,49 @@ Pour migrer une audience de l’ancien type de données appelé « Media » vers
 
 Consultez le paramètre [ID de contenu](/help/reporting/dimensions/content.md) et le reste des variables de médias en flux continu documentés sous [Services de médias en flux continu](/help/media-overview.md) pour mapper les anciens champs aux nouveaux champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
 
-![Anciens et nouveaux chemins d’accès aux champs XDM](assets/field-paths-updated.jpeg)
+![Anciens et nouveaux chemins d’accès aux champs XDM](../../assets/field-paths-updated.jpeg)
 
 ## Exemple
 
 Pour suivre plus facilement les directives de migration, prenons l’exemple suivant qui contient une audience avec une seule règle. Comme l’audience comporte une seule règle, vous ne devez appliquer les directives de migration qu’une seule fois.
 
-1. Sélectionnez le bouton [!UICONTROL **Modifier l’audience**] dans le coin supérieur droit.
+1. Sélectionnez le bouton **[!UICONTROL Modifier l’audience]** dans le coin supérieur droit.
 
 1. Recherchez les règles configurées pour l’audience.
 
-   ![Modifier l’audience](assets/audience-edit.jpeg)
+   ![Modifier l’audience](../../assets/audience-edit.jpeg)
 
-   ![Modifier l’audience](assets/audience-edit2.jpeg)
+   ![Modifier l’audience](../../assets/audience-edit2.jpeg)
 
 1. Sélectionnez la règle pour ouvrir sa configuration.
 
-   ![Modifier l’audience](assets/audience-edit3.jpeg)
+   ![Modifier l’audience](../../assets/audience-edit3.jpeg)
 
 1. (Facultatif) Pour afficher le chemin d’accès du champ utilisé dans la règle, sélectionnez le bouton d’informations à côté du nom du champ.
 
-   ![Modifier l’audience](assets/audience-edit4.jpeg)
+   ![Modifier l’audience](../../assets/audience-edit4.jpeg)
 
 1. Identifiez le nom du champ (dans ce cas « Démarrages du média »).
 
-   ![Modifier l’audience](assets/audience-edit5.jpeg)
+   ![Modifier l’audience](../../assets/audience-edit5.jpeg)
 
 1. Consultez les variables de médias en flux continu documentées sous [Services de médias en flux continu](/help/media-overview.md) pour mapper entre les anciens champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ». Par exemple, pour le paramètre [Media Starts](/help/reporting/metrics/media-starts.md), le correspondant pour `media.mediaTimed.impressions.value` est `xdm.mediaReporting.sessionDetails.isViewed`.
 
-   ![&#x200B; Chemin XDM mis à jour &#x200B;](assets/updated-xdm-path.jpeg)
+   ![&#x200B; Chemin XDM mis à jour &#x200B;](../../assets/updated-xdm-path.jpeg)
 
 1. Ajoutez la même règle que la règle existante à l’aide du nouveau champ.
 
-   ![Ajouter une règle](assets/add-rule.jpeg)
+   ![Ajouter une règle](../../assets/add-rule.jpeg)
 
-   ![Ajouter une règle](assets/add-rule2.jpeg)
+   ![Ajouter une règle](../../assets/add-rule2.jpeg)
 
-   ![Ajouter une règle](assets/add-rule3.jpeg)
+   ![Ajouter une règle](../../assets/add-rule3.jpeg)
 
-1. Sélectionnez [!UICONTROL **Enregistrer**] pour enregistrer l’audience. Vous pouvez conserver cette configuration aussi longtemps que vous devez vérifier que l’audience fonctionne toujours comme prévu.
+1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer l’audience. Vous pouvez conserver cette configuration aussi longtemps que vous devez vérifier que l’audience fonctionne toujours comme prévu.
 
-1. Une fois la validation terminée, supprimez l’ancien champ, puis sélectionnez [!UICONTROL **Enregistrer**] pour enregistrer l’audience.
+1. Une fois la validation terminée, supprimez l’ancien champ, puis sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer l’audience.
 
-   ![Ajouter une règle](assets/add-rule4.jpeg)
+   ![Ajouter une règle](../../assets/add-rule4.jpeg)
 
 1. Validez à nouveau l’audience.
 

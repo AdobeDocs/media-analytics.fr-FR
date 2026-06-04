@@ -17,7 +17,7 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 759
 ht-degree: 1%
@@ -58,7 +58,7 @@ Pour migrer des champs dérivés vers le nouveau type de données :
 
 Consultez le paramètre [ID de contenu](/help/reporting/dimensions/content.md) et le reste des variables de médias en flux continu documentés sous [Services de médias en flux continu](/help/media-overview.md) pour mapper les anciens champs aux nouveaux champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ».
 
-![Anciens et nouveaux chemins d’accès aux champs XDM](assets/field-paths-updated.jpeg)
+![Anciens et nouveaux chemins d’accès aux champs XDM](../../assets/field-paths-updated.jpeg)
 
 ## Exemple
 
@@ -72,13 +72,13 @@ Vous pouvez utiliser l’une des options suivantes pour mettre à jour la vue de
 
 1. Recherchez une mesure ou une dimension qui utilise l’ancien champ à partir du type de données obsolète.
 
-   ![Ancien chemin du champ dans la vue de données](assets/old-field-data-view.jpeg)
+   ![Ancien chemin du champ dans la vue de données](../../assets/old-field-data-view.jpeg)
 
 1. Vérifiez le nouveau champ correspondant dans l’article [Décalage de chapitre](/help/reporting/dimensions/chapter-offset.md).
 
 1. Recherchez le nouveau champ correspondant dans la vue de données.
 
-   ![Nouveau chemin du champ dans la vue de données](assets/new-field-data-view.jpeg)
+   ![Nouveau chemin du champ dans la vue de données](../../assets/new-field-data-view.jpeg)
 
 1. Faites glisser le nouveau champ vers la mesure ou la dimension.
 
@@ -92,43 +92,43 @@ Si vous souhaitez créer un champ dérivé pour le « Nom du chapitre » qui uti
 
 1. Faites glisser une clause « Case When » dans les champs dérivés.
 
-   ![Personnaliser le nouveau champ pour créer une vue de données](assets/create-derived-field2.jpeg)
+   ![Personnaliser le nouveau champ pour créer une vue de données](../../assets/create-derived-field2.jpeg)
 
-1. Renseignez la clause [!UICONTROL **If**] à l’aide de la valeur du **chemin d’accès au champ XDM de la création de rapports**, comme indiqué sur la page [nom du chapitre](/help/reporting/dimensions/chapter-name.md).
+1. Renseignez la clause **[!UICONTROL If]** à l’aide de la valeur du **chemin d’accès au champ XDM de la création de rapports**, comme indiqué sur la page [nom du chapitre](/help/reporting/dimensions/chapter-name.md).
 
-   ![&#x200B; Nom du chapitre &#x200B;](assets/chapter-name.jpeg)
+   ![&#x200B; Nom du chapitre &#x200B;](../../assets/chapter-name.jpeg)
 
-   ![&#x200B; Nom du chapitre &#x200B;](assets/chapter-name2.jpeg)
+   ![&#x200B; Nom du chapitre &#x200B;](../../assets/chapter-name2.jpeg)
 
-   ![Condition de champ dérivé](assets/derived-field-condition.jpeg)
+   ![Condition de champ dérivé](../../assets/derived-field-condition.jpeg)
 
-   ![Nom du chapitre du champ dérivé](assets/derived-field-chapter-name.jpeg)
+   ![Nom du chapitre du champ dérivé](../../assets/derived-field-chapter-name.jpeg)
 
 1. Renseignez la valeur de secours à l’aide de l’ancien champ du type de données « Média » obsolète.
 
-   ![&#x200B; Valeur de secours &#x200B;](assets/fallback-value.jpeg)
+   ![&#x200B; Valeur de secours &#x200B;](../../assets/fallback-value.jpeg)
 
-   ![&#x200B; Valeur de secours &#x200B;](assets/fallback-value2.jpeg)
+   ![&#x200B; Valeur de secours &#x200B;](../../assets/fallback-value2.jpeg)
 
    Il s’agit de la définition finale du champ dérivé.
 
-   ![Champ dérivé terminé](assets/derived-field-complete.jpeg)
+   ![Champ dérivé terminé](../../assets/derived-field-complete.jpeg)
 
 1. Pour mettre à jour les champs dérivés, recherchez un champ dérivé qui utilise les anciens champs obsolètes (chemin commençant par `media.mediaTimed`).
 
-   ![champ dérivé &#x200B;](assets/old-derived-field.jpeg)
+   ![champ dérivé &#x200B;](../../assets/old-derived-field.jpeg)
 
-1. Placez le pointeur de la souris sur le champ dérivé à mettre à jour, puis cliquez sur l’icône [!UICONTROL **Modifier**].
+1. Placez le pointeur de la souris sur le champ dérivé à mettre à jour, puis cliquez sur l’icône **[!UICONTROL Modifier]**.
 
 1. Recherchez tous les champs de l&#39;ancien type de données (chemin commençant par `media.mediaTimed`) et remplacez-les par le nouveau champ correspondant.
 
-   ![Localiser le champ avec l’ancien type de données](assets/locate-fields-with-old-datatype.jpeg)
+   ![Localiser le champ avec l’ancien type de données](../../assets/locate-fields-with-old-datatype.jpeg)
 
 1. Vérifiez le nouveau champ correspondant dans l’article [Nom du contenu](/help/reporting/dimensions/content-name.md).
 
 1. Remplacez l’ancien champ par le nouveau.
 
-   ![Nouveau champ](assets/derived-field-new.jpeg)
+   ![Nouveau champ](../../assets/derived-field-new.jpeg)
 
 1. Répétez ce processus pour tous les champs dérivés utilisant des champs de l’ancien type de données « Média » obsolète.
 

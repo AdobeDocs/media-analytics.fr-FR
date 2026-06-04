@@ -3,7 +3,7 @@ title: Auteur
 description: Indique l’auteur du contenu. Principalement utilisé pour les livres audio.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '119'
 ht-degree: 11%
@@ -27,7 +27,7 @@ L’auteur est défini par le lecteur au début de la session pour le contenu au
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Collecté automatiquement à partir des `a.media.author` de données contextuelles lorsque [[!UICONTROL Métadonnées audio]](/help/reporting/media-reports-enable.md) est activé. |
+| Adobe Analytics | Collecté automatiquement à partir des `a.media.author` de données contextuelles lorsque [[!UICONTROL Métadonnées audio]](/help/reporting/setup/analytics-reporting.md) est activé. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.author`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données | `videoaudioauthor` |
 | Audience Manager | `c_contextdata.a.media.author` |

@@ -19,7 +19,7 @@ role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 369
 ht-degree: 10%
@@ -40,13 +40,13 @@ Certains de ces rapports sont particulièrement utiles pour analyser les donnée
 
 Voici une liste des rapports par défaut qui sont utiles lors de l’analyse des données de médias en flux continu :
 
-* [!UICONTROL **Consommation de contenu multimédia**] : crée un rapport qui indique le contenu le plus consommé et qui intéresse le plus les utilisateurs.
+* **[!UICONTROL Consommation de contenu multimédia]** : crée un rapport qui indique le contenu le plus consommé et qui intéresse le plus les utilisateurs.
 
-* [!UICONTROL **Consommation de médias en flux continu**] : crée un rapport avec un tableau de bord, comme illustré dans l’exemple ci-dessous.
+* **[!UICONTROL Consommation de médias en flux continu]** : crée un rapport avec un tableau de bord, comme illustré dans l’exemple ci-dessous.
 
-* [!UICONTROL **Récence, fréquence et fidélité des médias**] : crée un rapport qui affiche la récence (nombre de jours depuis la dernière visite), la fréquence (nombre de visites par visiteur) et la fidélité (fréquence à laquelle les cohortes d’utilisateurs reviennent sur le site)
+* **[!UICONTROL Récence, fréquence et fidélité des médias]** : crée un rapport qui affiche la récence (nombre de jours depuis la dernière visite), la fréquence (nombre de visites par visiteur) et la fidélité (fréquence à laquelle les cohortes d’utilisateurs reviennent sur le site)
 
-Par exemple, si vous choisissez le rapport [!UICONTROL **Consommation de médias en flux continu**], un projet avec le tableau de bord suivant est présenté :
+Par exemple, si vous choisissez le rapport **[!UICONTROL Consommation de médias en flux continu]**, un projet avec le tableau de bord suivant est présenté :
 
 ![](/help/reporting/assets/aa-workspace.png)
 

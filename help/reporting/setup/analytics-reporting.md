@@ -1,41 +1,22 @@
 ---
-title: Activation des rapports multimédia
-description: Découvrez la suite de rapports multimédia qui collecte les mesures multimédia.  Pour configurer les rapports multimédia avant l’envoi des données multimédia, procédez comme suit.
-uuid: d306068d-a308-4b6e-8a72-742dda0de428
-exl-id: 686d88a5-79b6-4936-ba9e-8f834ef330d1
+title: Configurer des rapports pour les implémentations Analytics uniquement
+description: Activez les modules de suite de rapports multimédia dans Adobe Analytics afin que les données de médias en flux continu puissent être collectées et rapportées.
 feature: Streaming Media
-role: User, Admin, Developer
-TQID: https://experienceleague.adobe.com/2nLLlF-rFJUR3t-OMbcy5iqF42l-O7oLybXFGhdPyhU
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: c153fd90-23e1-4614-81d3-3cc7571227f7
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: c9bb7ea6-c04f-4262-b69c-fbb8d91e3559
-  - id: e38cbddc-1633-4cd5-bed5-9f289f2a6029
-  - id: ef60b66e-5984-4336-ba72-6d978b1b6f87
-  - id: f1f1a2d4-0976-4881-b091-c2bb8de7ffac
-  - id: f836f655-eebe-4b76-82bc-697955ec1ce3
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+role: User, Admin
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 503
-ht-degree: 20%
+source-wordcount: '580'
+ht-degree: 9%
 
 ---
 
-# Activation des rapports multimédia
+# Configurer des rapports pour les implémentations Analytics uniquement
+
+Pour qu’une implémentation Analytics uniquement puisse collecter des données de médias en flux continu, chaque suite de rapports qui reçoit ces données doit être configurée pour activer les modules de médias appropriés. Cette page décrit comment activer ces modules et où trouver les rapports résultants.
+
+* **Conditions préalables** : une implémentation d’Adobe Analytics. Consultez la [présentation de l’implémentation pour Analytics uniquement](/help/implementation/analytics-only/overview.md) et la méthode d’implémentation de votre choix.
+
+## Activation de la création de rapports multimédia sur une suite de rapports
 
 Chaque suite de rapports qui collecte des mesures multimédia doit être configurée avant que les données multimédia ne soient envoyées.
 
@@ -44,11 +25,11 @@ Chaque suite de rapports qui collecte des mesures multimédia doit être configu
 
    ![&#x200B; Capture d’écran du menu Gestionnaire de suites de rapports &#x200B;](assets/media-reporting.png)
 
-1. Sur la page **[!UICONTROL Création de rapports multimédia]**, activez les composants de médias en flux continu souhaités (voir ci-dessous).
+1. Sur la page **[!UICONTROL Rapports multimédia]**, activez les modules de médias en flux continu souhaités (voir ci-dessous).
 
 1. Sélectionnez **[!UICONTROL Enregistrer].**
 
-   Si cette suite de rapports est déjà configurée pour collecter les données multimédia, une fois que vous avez cliqué sur **[!UICONTROL Enregistrer]**, une page de configuration supplémentaire s’affiche. Si la page **[!UICONTROL Mesure Noyau multimédia]** s’affiche, passez à l’étape suivante.
+   Si cette suite de rapports est déjà configurée pour collecter des données multimédia, une page de configuration supplémentaire s’affiche après avoir sélectionné **[!UICONTROL Enregistrer]**. Si la page **[!UICONTROL Mesure Noyau multimédia]** s’affiche, passez à l’étape suivante.
 
 ## Modules de médias en flux continu disponibles
 
@@ -141,7 +122,7 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Durée totale du tampon]](/help/reporting/metrics/total-buffer-duration.md)
 * **[!UICONTROL Métadonnées vidéo]** : permet le suivi des attributs de contenu vidéo standard tels que l’émission, la saison et le genre.
    * **Dimensions :**
-      * [!UICONTROL Chargements d’annonces]
+      * [[!UICONTROL Chargements d’annonces]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL Jour]](/help/reporting/dimensions/day-part.md)
       * [[!UICONTROL Épisode]](/help/reporting/dimensions/episode.md)
       * [[!UICONTROL Genre]](/help/reporting/dimensions/genre.md)
@@ -178,3 +159,9 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Flux affectés par dans le focus]](/help/reporting/metrics/in-focus-streams-impacted.md)
       * [[!UICONTROL Flux affectés par le mode muet]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL Flux affectés par l’image dans l’image]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
+
+>[!MORELIKETHIS]
+>
+>* [Rapports multimédia dans Workspace](/help/reporting/workspace/media-workspace-templates.md)
+>* [Présentation des dimensions](/help/reporting/dimensions/overview.md)
+>* [Présentation des mesures](/help/reporting/metrics/overview.md)

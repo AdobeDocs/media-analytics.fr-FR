@@ -18,7 +18,7 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 10026f71b2092be536340ba4a48d7fd71fbc7d8e
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 449
 ht-degree: 7%
@@ -31,7 +31,7 @@ L’API Media Collection vous permet d’envoyer des paires clé-valeur personna
 
 Pour rendre ces données disponibles dans Analysis Workspace, les clients doivent définir des eVars personnalisées et configurer des règles de traitement pour les remplir en fonction de leur cas d’utilisation. Une fois mappées à des eVars ou des props, les données sont également disponibles dans Adobe Experience Platform par le biais des chemins eVar correspondants, à condition que le [&#x200B; connecteur source Analytics &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) soit configuré.
 
-Pour les implémentations basées sur XDM utilisant Experience Edge, consultez [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/implementation-edge-custom-metadata.md).
+Pour les implémentations basées sur XDM utilisant Experience Edge, consultez [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/custom-metadata.md).
 
 ## Vue d’ensemble
 
@@ -80,8 +80,8 @@ Les métadonnées personnalisées sont un **objet** plat (paires clé-valeur) au
 
 ### Principales exigences en matière de dénomination
 
-- Évitez d’utiliser le préfixe `media.` dans les clés de métadonnées personnalisées : il correspond aux champs de média standard et peut les remplacer dans les rapports Analytics
-- Le préfixe `a.` est réservé aux métadonnées Adobe standard et ne doit pas être utilisé
+* Évitez d’utiliser le préfixe `media.` dans les clés de métadonnées personnalisées : il correspond aux champs de média standard et peut les remplacer dans les rapports Analytics
+* Le préfixe `a.` est réservé aux métadonnées Adobe standard et ne doit pas être utilisé
 
 ## Métadonnées personnalisées du contenu principal
 
@@ -173,19 +173,19 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 
 ## Comportement
 
-- Toutes les valeurs de métadonnées personnalisées doivent être des **chaînes**. Convertissez les nombres et les booléens avant l’envoi.
-- Les métadonnées personnalisées s’affichent dans Analytics avec un préfixe `c.` (par exemple, `contentCategory` → `c.contentCategory`)
-- Mapper des métadonnées personnalisées à des eVars, des props ou des variables de données contextuelles via des règles de traitement Analytics
-- `sessionStart` métadonnées sont conservées pendant toute la session ; les mises à jour nécessitent une nouvelle session
-- Chaque événement `adStart` et `chapterStart` peut comporter différentes métadonnées personnalisées
+* Toutes les valeurs de métadonnées personnalisées doivent être des **chaînes**. Convertissez les nombres et les booléens avant l’envoi.
+* Les métadonnées personnalisées s’affichent dans Analytics avec un préfixe `c.` (par exemple, `contentCategory` → `c.contentCategory`)
+* Mapper des métadonnées personnalisées à des eVars, des props ou des variables de données contextuelles via des règles de traitement Analytics
+* `sessionStart` métadonnées sont conservées pendant toute la session ; les mises à jour nécessitent une nouvelle session
+* Chaque événement `adStart` et `chapterStart` peut comporter différentes métadonnées personnalisées
 
 ## Documentation connexe
 
-- [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/implementation-edge-custom-metadata.md) — Envoyez des métadonnées personnalisées via Experience Edge à Analytics et à AEP
-- [Connecteur source Adobe Analytics pour les données de suite de rapports &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importer les données Analytics dans Adobe Experience Platform
+* [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/custom-metadata.md) — Envoyez des métadonnées personnalisées via Experience Edge à Analytics et à AEP
+* [Connecteur source Adobe Analytics pour les données de suite de rapports &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importer les données Analytics dans Adobe Experience Platform
 
 <!--
-- [Session endpoints](sessions.md) — Session lifecycle management
-- [Ad endpoints](ads.md) — Track advertising impressions
-- [Chapter endpoints](chapters.md) — Segment content into chapters
+* [Session endpoints](sessions.md) — Session lifecycle management
+* [Ad endpoints](ads.md) — Track advertising impressions
+* [Chapter endpoints](chapters.md) — Segment content into chapters
 -->

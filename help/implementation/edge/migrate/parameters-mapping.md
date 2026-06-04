@@ -16,9 +16,9 @@ role_v2:
 topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 1325
+source-wordcount: 1331
 ht-degree: 20%
 
 ---
@@ -33,7 +33,7 @@ Ce document fournit une liste complète de tous les paramètres Media Analytics 
 
 ## Variables réservées à Media Analytics
 
-Depuis octobre 2025, le chemin d’accès au champ XDM `media.mediaTimed` est entièrement obsolète et remplacé par `mediaReporting`. Les données ingérées après octobre 2025 ne comprennent que des champs `mediaReporting`. Les données antérieures restent disponibles sous le chemin du champ hérité, comme indiqué dans les tableaux ci-dessous sous **Champ XDM hérité**.
+Depuis octobre 2025, le chemin d’accès au champ XDM `media.mediaTimed` utilisé par le connecteur source Analytics est entièrement obsolète et remplacé par `mediaReporting`. Les données ingérées après octobre 2025 ne comprennent que des champs `mediaReporting`. Les données antérieures restent disponibles sous le chemin du champ hérité, comme indiqué dans les tableaux ci-dessous sous **Champ XDM hérité**.
 
 ### Comportement des appels KeepAlive
 

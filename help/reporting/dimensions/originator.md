@@ -3,7 +3,7 @@ title: Créateur
 description: Indique le créateur ou le studio de production du contenu.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 2%
@@ -28,7 +28,7 @@ L’initiateur est défini par le lecteur au début de la session.
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.originator` à un eVar. |
-| Adobe Analytics (classification) | Classification de la dimension [Contenu (ID)](content.md) : Adobe crée automatiquement cette classification lorsque **[[!UICONTROL Métadonnées vidéo]](/help/reporting/media-reports-enable.md)** est activé pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
+| Adobe Analytics (classification) | Classification de la dimension [Contenu (ID)](content.md) : Adobe crée automatiquement cette classification lorsque **[[!UICONTROL Métadonnées vidéo]](/help/reporting/setup/analytics-reporting.md)** est activé pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.originator`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données (règle de traitement) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (l’eVar à laquelle votre règle de traitement `a.media.originator` mappée) |
 | Flux de données (classification) | S.O. — Les flux de données ne prennent pas en charge les classifications. |
@@ -36,7 +36,7 @@ L’initiateur est défini par le lecteur au début de la session.
 
 ## Approche de classification
 
-Adobe crée automatiquement la structure de classification d’origine lorsque **[[!UICONTROL Métadonnées vidéo]](/help/reporting/media-reports-enable.md)** est activé pour la suite de rapports. Il vous incombe de renseigner et de gérer la classification à l’aide des [ensembles de classifications](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe crée automatiquement la structure de classification d’origine lorsque **[[!UICONTROL Métadonnées vidéo]](/help/reporting/setup/analytics-reporting.md)** est activé pour la suite de rapports. Il vous incombe de renseigner et de gérer la classification à l’aide des [ensembles de classifications](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Cette approche fournit une relation 1:1 garantie entre chaque ID de contenu et son auteur. Les mises à jour de classification s’appliquent rétroactivement à toutes les données historiques de cet identifiant.
 

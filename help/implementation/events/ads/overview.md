@@ -20,7 +20,7 @@ role_v2:
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 513
 ht-degree: 3%
@@ -72,8 +72,8 @@ Si des appels `main:play` se produisent entre des publicités consécutives, un 
 
 **Résolution :** retardez l’appel AdComplete pour chaque publicité (à l’exception de la dernière) plutôt que de l’appeler immédiatement à la fin de la publicité. Traitez les appels par lots comme suit :
 
-- À chaque **lancement de publicité** : si une publicité précédente existe et n’a pas encore été marquée comme terminée, appelez AdComplete *avant* pour la nouvelle publicité.
-- À chaque **fin de ressource publicitaire** : n’appelez pas AdComplete immédiatement et différez-la.
-- Lors de la **coupure publicitaire terminée** : appelez AdComplete pour la dernière publicité (si elle n’est pas déjà appelée), puis appelez AdBreakComplete.
+* À chaque **lancement de publicité** : si une publicité précédente existe et n’a pas encore été marquée comme terminée, appelez AdComplete *avant* pour la nouvelle publicité.
+* À chaque **fin de ressource publicitaire** : n’appelez pas AdComplete immédiatement et différez-la.
+* Lors de la **coupure publicitaire terminée** : appelez AdComplete pour la dernière publicité (si elle n’est pas déjà appelée), puis appelez AdBreakComplete.
 
 Ce modèle garantit qu’AdComplete et le produit AdStart suivant se déclenchent l’un après l’autre, éliminant ainsi tout écart.

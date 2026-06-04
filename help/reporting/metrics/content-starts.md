@@ -3,7 +3,7 @@ title: Le contenu démarre
 description: Comptabilise les sessions au cours desquelles le contenu principal a réellement commencé à être lu.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '148'
 ht-degree: 10%
@@ -21,7 +21,7 @@ Le serveur principal du média définit cet indicateur la première fois qu’un
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Collecté automatiquement à partir des `a.media.play` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/media-reports-enable.md) est activé. |
+| Adobe Analytics | Collecté automatiquement à partir des `a.media.play` de données contextuelles lorsque [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) est activé. |
 | Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.isPlayed`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.play` |

@@ -18,7 +18,7 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: 750
 ht-degree: 4%
@@ -41,7 +41,7 @@ Les contrôles d’opt-out fonctionnent par appareil ou navigateur. Le respect d
 
 Le SDK Web respecte les préférences de consentement définies à l’aide de la commande `setConsent`. Lorsque le consentement est défini sur `"out"`, Web SDK cesse de transférer tous les événements, y compris les appels de suivi des médias en flux continu, vers Edge Network. L’état de consentement persiste dans l’espace de stockage du navigateur entre les sessions.
 
-Avant d’implémenter la désinscription, assurez-vous que votre SDK web est configurée avec le composant Streaming Media . Pour plus d’informations, voir [Configuration de Web SDK](../implementation/edge/edge-web-sdk.md).
+Avant d’implémenter la désinscription, assurez-vous que votre SDK web est configurée avec le composant Streaming Media . Pour plus d’informations, voir [Configuration de Web SDK](../implementation/edge/web-sdk.md).
 
 Définissez le consentement sur opt-out à l’aide de la norme de consentement Adobe 2.0 :
 

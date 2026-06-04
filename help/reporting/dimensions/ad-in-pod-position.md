@@ -3,7 +3,7 @@ title: Position de l’annonce publicitaire dans la capsule
 description: Indique la position de chaque publicité indexée sur zéro à l’intérieur de sa coupure publicitaire parente.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 7%
@@ -27,7 +27,7 @@ La position de l’annonce publicitaire dans la capsule est définie par le lect
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.podPosition` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/media-reports-enable.md) est activé. |
+| Adobe Analytics | Collecté automatiquement à partir des `a.media.ad.podPosition` de données contextuelles lorsque [[!UICONTROL Media Ads]](/help/reporting/setup/analytics-reporting.md) est activé. |
 | Customer Journey Analytics | [`xdm.mediaReporting.advertisingDetails.podPosition`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-reporting) |
 | Flux de données | `videoadinpod`, `post_videoadinpod` |
 | Audience Manager | `c_contextdata.a.media.ad.podPosition` |

@@ -3,7 +3,7 @@ title: Présentation des dimensions de streaming multimédia
 description: Découvrez comment les dimensions des médias en flux continu sont renseignées et organisées dans Adobe Analytics et Customer Journey Analytics.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 3dbbd5228fcd91cf78c0597dea656c06f367dd40
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 6%
@@ -29,7 +29,7 @@ Les dimensions Streaming Media suivent trois schémas de population principaux :
 
 | Système de reporting | Comment les dimensions arrivent |
 | --- | --- |
-| Adobe Analytics | Renseigné à l’aide de [Variables de données contextuelles](https://experienceleague.adobe.com/fr/docs/analytics/implementation/vars/page-vars/contextdata). Certaines dimensions renseignent automatiquement les dimensions à l’aide de ces variables de données contextuelles, tandis que d’autres doivent être renseignées à l’aide de [Règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Les dimensions qui renseignent automatiquement les valeurs doivent d’abord activer leur [paramètre de suite de rapports Streaming Media](../../implementation/media-sdk/setup/media-reports-enable.md) respectif. |
+| Adobe Analytics | Renseigné à l’aide de [Variables de données contextuelles](https://experienceleague.adobe.com/fr/docs/analytics/implementation/vars/page-vars/contextdata). Certaines dimensions renseignent automatiquement les dimensions à l’aide de ces variables de données contextuelles, tandis que d’autres doivent être renseignées à l’aide de [Règles de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview). Les dimensions qui renseignent automatiquement les valeurs doivent d’abord activer leur [paramètre de suite de rapports Streaming Media](../setup/analytics-reporting.md) respectif. |
 | Customer Journey Analytics | Les champs XDM sont généralement en `xdm.mediaReporting.sessionDetails`, provenant de tout jeu de données qui inclut des données de médias en flux continu. Vous devez créer chaque dimension avec les paramètres souhaités dans [Paramètres des composants de la vue de données](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/overview). |
 | Flux de données | Les dimensions automatiquement renseignées possèdent leurs propres noms de colonne de flux de données (par exemple `videostreamtype`, `videoname` ou `videolength`). Les dimensions qui nécessitent des règles de traitement utilisent des noms de colonne `evar`. |
 | Audience Manager | Données contextuelles transférées depuis Adobe Analytics. Disponible uniquement lorsque le transfert côté serveur d’Analytics vers Audience Manager est configuré. |

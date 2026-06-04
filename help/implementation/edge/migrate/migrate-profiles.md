@@ -17,7 +17,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: 92e1a77339d29b0ef7ec8adc76817b2ac61ee900
 workflow-type: tm+mt
 source-wordcount: 533
 ht-degree: 0%
@@ -32,11 +32,11 @@ Ce document décrit le processus de migration du service de filtrage de profil q
 
 Pour migrer le filtrage de profil de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails des rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez modifier les règles de filtrage de profil existantes :
 
-1. Dans Adobe Experience Platform, dans la section [!UICONTROL **Sources**], accédez à l’onglet [!UICONTROL **Flux de données**].
+1. Dans Adobe Experience Platform, dans la section **[!UICONTROL Sources]**, accédez à l’onglet **[!UICONTROL Flux de données]**.
 
 1. Recherchez le flux de données responsable de l’importation des données de médias en flux continu d’Adobe Analytics vers Adobe Experience Platform via la collecte de données Adobe.
 
-1. Sélectionnez [!UICONTROL **Mettre à jour le flux de données**] pour modifier la configuration du filtrage de profil en remplaçant chaque règle personnalisée qui contient un champ obsolète par le nouveau champ correspondant du nouvel objet XDM.
+1. Sélectionnez **[!UICONTROL Mettre à jour le flux de données]** pour modifier la configuration du filtrage de profil en remplaçant chaque règle personnalisée qui contient un champ obsolète par le nouveau champ correspondant du nouvel objet XDM.
 
 1. Recherchez les filtres contenant les champs de l’objet « Media » obsolète.
 
@@ -52,29 +52,29 @@ Consultez le paramètre [ID de contenu](/help/reporting/dimensions/content.md) e
 
 Pour suivre plus facilement les instructions de migration, considérez l’exemple de flux de données suivant qui contient une seule règle de filtrage de profil. Dans ce cas, comme il n’existe qu’une seule règle, vous ne devez appliquer les directives de migration qu’une seule fois.
 
-1. Dans Adobe Experience Platform, dans la section [!UICONTROL **Sources**], accédez à l’onglet [!UICONTROL **Flux de données**].
+1. Dans Adobe Experience Platform, dans la section **[!UICONTROL Sources]**, accédez à l’onglet **[!UICONTROL Flux de données]**.
 
 &#x200B;1. Recherchez le flux de données responsable de l’importation des données de médias en flux continu d’Adobe Analytics vers Adobe Experience Platform via Adobe Analytics.
 
 1. Sélectionnez **[!UICONTROL Mettre à jour le flux de données]** pour accéder à l’interface utilisateur de modification, comme illustré dans l’image ci-dessous.
 
-   ![profil de flux de données &#x200B;](assets/aep-dataflow-profile.jpeg)
+   ![profil de flux de données &#x200B;](../../assets/aep-dataflow-profile.jpeg)
 
 1. Sélectionnez **[!UICONTROL Suivant]** pour accéder à l’onglet Filtrage .
 
-   ![Onglet Filtre de flux de données &#x200B;](assets/aep-dataflow-filtering-profile.jpeg)
+   ![Onglet Filtre de flux de données &#x200B;](../../assets/aep-dataflow-filtering-profile.jpeg)
 
 1. Dans l’onglet **[!UICONTROL Filtrage]**, identifiez les règles de filtrage qui reposent sur des champs `media.mediaTimed`.
 
-   ![règles de filtrage des flux de données &#x200B;](assets/dataflow-filtering-rules-profile.jpeg)
+   ![règles de filtrage des flux de données &#x200B;](../../assets/dataflow-filtering-rules-profile.jpeg)
 
 
    Pour chaque filtre qui utilise l’objet media.mediaTimed, recherchez son correspondant dans l’objet `mediaReporting` à l’aide des variables de médias en flux continu documentées sous [Services de médias en flux continu](/help/media-overview.md) pour mapper les anciens champs aux nouveaux champs. L’ancien chemin du champ se trouve sous la propriété « Chemin du champ XDM » tandis que le nouveau chemin du champ se trouve sous la propriété « Chemin du champ XDM de création de rapports ». Par exemple, pour [Media Starts](/help/reporting/metrics/media-starts.md), le correspondant pour `media.mediaTimed.impressions.value` est `xdm.mediaReporting.sessionDetails.isViewed`.
 
-   ![Nouveaux et anciens champs XDM](assets/xdm-fields-new-and-old.jpeg)
+   ![Nouveaux et anciens champs XDM](../../assets/xdm-fields-new-and-old.jpeg)
 
 1. Faites glisser le champ de `mediaReporting` approprié vers la règle de filtrage et utilisez l’opérateur OR entre les deux règles. Ajoutez la même règle que la règle existante lors de l’utilisation du nouveau champ.
 
-   ![Ajouter des règles de filtrage](assets/add-filter-rules.jpeg)
+   ![Ajouter des règles de filtrage](../../assets/add-filter-rules.jpeg)
 
 1. Sélectionnez **[!UICONTROL Suivant]** pour enregistrer vos modifications.

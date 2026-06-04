@@ -20,10 +20,10 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: da289f8d425fcbaece42519a9ea7d061f80e4591
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
-source-wordcount: 489
-ht-degree: 46%
+source-wordcount: 490
+ht-degree: 43%
 
 ---
 
@@ -38,7 +38,7 @@ Avant de commencer la mise en œuvre des services de streaming multimédia, cons
 Le modèle de tarification actuel pour le module complémentaire de collecte de médias en flux continu Customer Journey Analytics et le module complémentaire Adobe Analytics pour les médias en flux continu repose sur les flux vidéo. Si nécessaire, contactez votre représentant commercial ou l’équipe chargée du compte Adobe, car le module complémentaire est vendu séparément pour Adobe Analytics et Adobe Experience Platform.
 
 1. **Activer les rapports Adobe Analytics**<br>
-Pour activer les rapports dans Analytics ou Customer Journey Analytics et afficher le contenu et les données de publicité que vous collectez, vous devez activer les rapports. Voir [Activation des rapports multimédia](/help/implementation/media-sdk/setup/media-reports-enable.md).
+Pour activer les rapports dans Analytics ou Customer Journey Analytics et afficher le contenu et les données de publicité que vous collectez, vous devez activer les rapports. Voir [Configurer des rapports pour les implémentations Analytics uniquement](/help/reporting/setup/analytics-reporting.md).
 
 1. **Mise en œuvre du service Adobe Experience Platform Identity dans CX Enterprise**
 
@@ -58,8 +58,8 @@ Pour activer les rapports dans Analytics ou Customer Journey Analytics et affich
 
    Selon la manière dont vous prévoyez d’implémenter les services de médias en flux continu, consultez les conditions préalables requises pour l’une des méthodes d’implémentation suivantes :
 
-   * [Conditions préalables pour les implémentations Adobe Analytics uniquement](/help/implementation/media-sdk/setup/prerequisites-analytics.md)
+   * [Présentation de l’implémentation pour Analytics uniquement](/help/implementation/analytics-only/overview.md)
 
-   * [Conditions préalables pour les implémentations Edge](/help/implementation/edge/prerequisites-edge.md)
+   * [Présentation de l’implémentation d’Edge](/help/implementation/edge/overview.md)
 
    Utilisez la [vue d’ensemble de l’implémentation](/help/implementation/overview.md) pour déterminer la méthode d’implémentation qui vous convient.

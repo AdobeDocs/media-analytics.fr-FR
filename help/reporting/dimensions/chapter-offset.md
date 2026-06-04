@@ -3,7 +3,7 @@ title: Décalage de chapitre
 description: Indique le décalage de chaque chapitre dans le contenu.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Le décalage de chapitre est défini par le lecteur à chaque événement [débu
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.chapter.offset` à un eVar. |
-| Adobe Analytics (classification) | Classification de la dimension [Chapitres](chapter.md) : Adobe crée automatiquement cette classification lorsque l’option **[[!UICONTROL Chapitres de médias]](/help/reporting/media-reports-enable.md)** est activée pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
+| Adobe Analytics (classification) | Classification de la dimension [Chapitres](chapter.md) : Adobe crée automatiquement cette classification lorsque l’option **[[!UICONTROL Chapitres de médias]](/help/reporting/setup/analytics-reporting.md)** est activée pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
 | Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.offset`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Flux de données (règle de traitement) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (l’eVar à laquelle votre règle de traitement `a.media.chapter.offset` mappée) |
 | Flux de données (classification) | S.O. — Les flux de données ne prennent pas en charge les classifications. |
@@ -36,7 +36,7 @@ Le décalage de chapitre est défini par le lecteur à chaque événement [débu
 
 ## Approche de classification
 
-Adobe crée automatiquement la structure de classification Décalage de chapitre lorsque l’option **[[!UICONTROL Chapitres de média]](/help/reporting/media-reports-enable.md)** est activée pour la suite de rapports. Il vous incombe de renseigner et de gérer la classification à l’aide des [ensembles de classifications](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
+Adobe crée automatiquement la structure de classification Décalage de chapitre lorsque l’option **[[!UICONTROL Chapitres de média]](/help/reporting/setup/analytics-reporting.md)** est activée pour la suite de rapports. Il vous incombe de renseigner et de gérer la classification à l’aide des [ensembles de classifications](https://experienceleague.adobe.com/en/docs/analytics/components/classifications/sets/overview.html).
 
 Cette approche fournit une relation 1:1 garantie entre chaque ID de chapitre et son décalage. Les mises à jour de classification s’appliquent rétroactivement à toutes les données historiques de cet identifiant.
 

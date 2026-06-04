@@ -3,7 +3,7 @@ title: Heure de début (dimension)
 description: Indique le temps écoulé avant le rendu de la première image.
 feature: Dimensions
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 6%
@@ -27,7 +27,7 @@ Le lecteur définit le `timeToStart` sur l’objet QoE avant le déclenchement d
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.timeToStart` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/media-reports-enable.md) est activée. |
+| Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.timeToStart` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/setup/analytics-reporting.md) est activée. |
 | Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Flux de données | `videoqoetimetostartevar`, `post_videoqoetimetostartevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.timeToStart` |
