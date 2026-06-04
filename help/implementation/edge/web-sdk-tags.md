@@ -16,7 +16,7 @@ L’extension de balise Adobe Experience Platform Web SDK vous permet de configu
 
 * **Conditions préalables** :
    * Terminez la présentation de l’implémentation d’[&#128279;](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
-   * Installer et configurer l’extension de balise Web SDK Voir la [présentation de l’extension de balise Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview).
+   * Installer et configurer l’extension de balise Web SDK Voir la [présentation de l’extension de balise Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/overview).
 
 ## Configuration des médias en flux continu dans l’extension
 
@@ -39,6 +39,6 @@ Une fois l’implémentation terminée, vous pouvez [Configurer des rapports pou
 
 >[!MORELIKETHIS]
 >
->* [Présentation de l’extension de balise Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/overview)
+>* [Présentation de l’extension de balise Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/extensions/client/web-sdk/overview)
 >* [Configurer le SDK Web pour les médias en flux continu (dans le code)](web-sdk.md)
 >* [Présentation des événements](/help/implementation/events/overview.md)

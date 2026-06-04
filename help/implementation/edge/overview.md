@@ -30,7 +30,7 @@ Quelle que soit la base de code que vous utilisez (Web SDK, Mobile SDK (iOS ou A
 
 Afin de normaliser la collecte de données entre les applications qui utilisent Adobe Experience Platform, Adobe a créé la norme XDM (modèle de données d’expérience) ouverte et documentée publiquement.
 
-1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr).
 
 1. Sur la page Détails du schéma , choisissez **[!UICONTROL Événement d’expérience]** comme classe de base du schéma.
 
@@ -129,7 +129,7 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
+   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -167,11 +167,11 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
       * **&#x200B;**&#x200B;(si vous utilisez Adobe Analytics)
 
-        Si vous utilisez Adobe Analytics, définissez une suite de rapports comme décrit dans la section [&#x200B; Création d’une suite de rapports &#x200B;](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+        Si vous utilisez Adobe Analytics, définissez une suite de rapports comme décrit dans la section [&#x200B; Création d’une suite de rapports &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * **&#x200B;**&#x200B;(si vous utilisez Customer Journey Analytics)
 
-     Pour plus d’informations sur l’ajout d’un service à un flux de données, voir « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+     Pour plus d’informations sur l’ajout d’un service à un flux de données, voir « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr#view-details).
 
      ![Ajouter le service Adobe Analytics](assets/datastream-add-service.png)
 

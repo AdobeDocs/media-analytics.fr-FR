@@ -12,11 +12,11 @@ ht-degree: 5%
 
 # Configurer le SDK web pour les médias en flux continu
 
-Le composant `streamingMedia` de Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview) (`alloy.js`, version 2.20.0 ou ultérieure) collecte les données de session multimédia sur votre site Web et les envoie à Edge Network. Cette page traite de la configuration intégrée au code (`alloy.js`). Pour configurer le SDK web via des balises à la place, voir [Configurer l’extension de balise du SDK web pour les médias en flux continu](web-sdk-tags.md).
+Le composant `streamingMedia` de Adobe Experience Platform [Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/js-overview) (`alloy.js`, version 2.20.0 ou ultérieure) collecte les données de session multimédia sur votre site Web et les envoie à Edge Network. Cette page traite de la configuration intégrée au code (`alloy.js`). Pour configurer le SDK web via des balises à la place, voir [Configurer l’extension de balise du SDK web pour les médias en flux continu](web-sdk-tags.md).
 
 * **Conditions préalables** :
    * Terminez la présentation de l’implémentation d’[&#128279;](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
-   * Installez Web SDK version 2.20.0 ou ultérieure. Voir [Installation du SDK Web](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/install/overview).
+   * Installez Web SDK version 2.20.0 ou ultérieure. Voir [Installation du SDK Web](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/install/overview).
 
 ## Configuration du composant streamingMedia
 
@@ -35,11 +35,11 @@ alloy("configure", {
 });
 ```
 
-Pour plus d’informations sur la configuration, voir la commande [&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia).`streamingMedia`
+Pour plus d’informations sur la configuration, voir la commande [&#128279;](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/configure/streamingmedia).`streamingMedia`
 
 ### Migration à partir de Media JS SDK
 
-Si vous effectuez une migration à partir du SDK Media JS (3.x), la commande [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/getmediaanalyticstracker) de Web SDK renvoie une instance de suivi qui expose les mêmes API que le SDK Media [3.x](/help/implementation/analytics-only/javascript.md), de sorte que vos appels de suivi existants continuent à fonctionner.
+Si vous effectuez une migration à partir du SDK Media JS (3.x), la commande [`getMediaAnalyticsTracker`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/getmediaanalyticstracker) de Web SDK renvoie une instance de suivi qui expose les mêmes API que le SDK Media [3.x](/help/implementation/analytics-only/javascript.md), de sorte que vos appels de suivi existants continuent à fonctionner.
 
 ## Suivi des événements multimédia
 
@@ -51,6 +51,6 @@ Une fois l’implémentation terminée, vous pouvez [Configurer des rapports pou
 
 >[!MORELIKETHIS]
 >
->* [Présentation du SDK web](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/js-overview)
+>* [Présentation du SDK web](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/js-overview)
 >* [Présentation des événements](/help/implementation/events/overview.md)
 >* [Présentation des variables](/help/implementation/variables/overview.md)

@@ -127,7 +127,7 @@ Après avoir implémenté la collecte de médias en flux continu via Edge Networ
 
 1. (Conditionnel) Si vous avez ajouté des métadonnées personnalisées à votre schéma, définissez la persistance des champs personnalisés, comme décrit dans la section [Paramètres du composant de persistance](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) du guide de Customer Journey Analytics.
 
-1. Partagez le projet comme décrit dans la section [Partager des projets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
+1. Partagez le projet comme décrit dans la section [Partager des projets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=fr).
 
    >[!NOTE]
    >

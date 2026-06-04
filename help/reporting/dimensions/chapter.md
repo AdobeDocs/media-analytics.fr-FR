@@ -22,7 +22,7 @@ L’identifiant de chapitre est généré automatiquement lorsqu’un événemen
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.chapter.name` de données contextuelles lorsque l’option [[!UICONTROL Chapitres de médias]](/help/reporting/setup/analytics-reporting.md) est activée. |
-| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.chapterDetails.ID`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-reporting) |
 | Flux de données | `videochapter`, `post_videochapter` |
 | Audience Manager | S.O. |
 

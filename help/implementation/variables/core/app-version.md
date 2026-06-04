@@ -27,7 +27,7 @@ La variable de version d’application identifie la version de votre application
 
 | Propriété | Valeur |
 | --- | --- |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.appVersion`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Paramètre de l’API Media Collection** | `media.sdkVersion` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de la session](/help/implementation/events/session/session-start.md) |
@@ -38,7 +38,7 @@ La variable de version d’application identifie la version de votre application
 
 >[!TAB SDK Web]
 
-Définissez `appVersion` dans l’objet de configuration `streamingMedia` lors de l’appel de [`configure`](https://experienceleague.adobe.com/en/docs/experience-platform/collection/js/commands/configure/streamingmedia) :
+Définissez `appVersion` dans l’objet de configuration `streamingMedia` lors de l’appel de [`configure`](https://experienceleague.adobe.com/fr/docs/experience-platform/collection/js/commands/configure/streamingmedia) :
 
 ```javascript
 alloy("configure", {

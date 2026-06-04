@@ -28,7 +28,7 @@ Le genre est défini par le lecteur au début de la session.
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.genre` de données contextuelles (stockées sous forme de variable de liste) lorsque [[!UICONTROL Métadonnées vidéo]](/help/reporting/setup/analytics-reporting.md) est activé. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) ou [`xdm.mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) (hérité) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.genreList`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) ou [`xdm.mediaReporting.sessionDetails.genre`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) (hérité) |
 | Flux de données | `videogenre`, `post_videogenre` |
 | Audience Manager | `c_contextdata.a.media.genre` |
 

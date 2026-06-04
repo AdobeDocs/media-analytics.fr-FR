@@ -16,7 +16,7 @@ Media SDK for JavaScript (3.x) envoie directement des données de médias en flu
 
 * **Conditions préalables** :
    * Terminez la [présentation de l’implémentation pour Analytics uniquement](overview.md).
-   * Implémentez [&#128279;](https://experienceleague.adobe.com/fr/docs/analytics/implementation/js/overview) et le [service d’identification des visiteurs](https://experienceleague.adobe.com/en/docs/analytics/implementation/id/appmeasurement).
+   * Implémentez [&#128279;](https://experienceleague.adobe.com/fr/docs/analytics/implementation/js/overview) et le [service d’identification des visiteurs](https://experienceleague.adobe.com/fr/docs/analytics/implementation/id/appmeasurement).
    * [Téléchargez Media SDK for JavaScript](/help/getting-started/download-sdks.md).
 
 ## Installation et configuration de SDK

@@ -26,11 +26,11 @@ ht-degree: 1%
 
 # Migrer le Customer Journey Analytics pour utiliser les nouveaux champs de médias en flux continu
 
-Ce document décrit comment une configuration Customer Journey Analytics qui utilise le type de données Adobe Streaming Media Services appelé « Media » doit être mise à jour pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) ».
+Ce document décrit comment une configuration Customer Journey Analytics qui utilise le type de données Adobe Streaming Media Services appelé « Media » doit être mise à jour pour utiliser le nouveau type de données correspondant appelé « [Détails de création de rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) ».
 
 ## Migration de Customer Journey Analytics
 
-Pour migrer une configuration Customer Journey Analytics de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails sur les rapports multimédia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez mettre à jour les configurations suivantes qui utilisent l’ancien type de données :
+Pour migrer une configuration Customer Journey Analytics de l’ancien type de données appelé « Media » vers le nouveau type de données appelé « [Détails sur les rapports multimédia](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) », vous devez mettre à jour les configurations suivantes qui utilisent l’ancien type de données :
 
 * Vues des données
 

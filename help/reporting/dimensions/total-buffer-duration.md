@@ -28,7 +28,7 @@ Le serveur principal du média additionne la durée de chaque intervalle de mém
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.bufferTime` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/setup/analytics-reporting.md) est activée. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.bufferTime`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Flux de données | `videoqoebuffertimeevar`, `post_videoqoebuffertimeevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.bufferTime` |
 

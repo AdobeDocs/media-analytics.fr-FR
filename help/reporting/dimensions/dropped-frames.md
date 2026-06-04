@@ -28,7 +28,7 @@ Le lecteur met à jour la valeur `droppedFrames` de l’objet QoE au fur et à m
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.droppedFrameCount` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/setup/analytics-reporting.md) est activée. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.droppedFrames`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
 | Flux de données | `videoqoedroppedframecountevar`, `post_videoqoedroppedframecountevar` |
 | Audience Manager | `c_contextdata.a.media.qoe.droppedFrameCount` |
 
