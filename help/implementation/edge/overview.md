@@ -3,16 +3,18 @@ title: Présentation de l’implémentation d’Edge
 description: Configurez le schéma, le jeu de données et le flux de données Adobe Experience Platform requis pour collecter des données de médias en flux continu via Edge Network.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '1179'
-ht-degree: 6%
+source-wordcount: '1298'
+ht-degree: 5%
 
 ---
 
 # Présentation de l’implémentation d’Edge
 
-Adobe Experience Platform Edge Network vous permet d’envoyer les données destinées à plusieurs produits à un seul point d’entrée, qui transmet ensuite les informations appropriées à chaque produit. Cela consolide les efforts d’implémentation sur plusieurs solutions de données et constitue la méthode recommandée pour implémenter la collecte de médias en flux continu pour Adobe Analytics et Customer Journey Analytics.
+Adobe Experience Platform Edge Network vous permet d’envoyer les données destinées à plusieurs produits à un seul point d’entrée, qui transmet ensuite les informations appropriées à chaque produit. Il s’agit de la méthode recommandée pour implémenter Streaming Media Collection, et de la seule qui prend en charge Adobe Analytics et Customer Journey Analytics à partir d’une seule instrumentation.
+
+Contrairement à l’approche Media SDK héritée, qui nécessitait une instrumentation spécifique au produit pour chaque solution Adobe, une implémentation d’Edge utilise un modèle de données XDM partagé et un flux de données unique. Les données circulent de votre SDK ou API vers Edge Network, qui les achemine ensuite vers les produits Adobe configurés dans le flux de données (Analytics, CJA, AJO ou RTCDP). Cela signifie que le changement ou l’ajout ultérieur de produits en aval ne nécessite pas de réinstrumenter vos événements multimédia.
 
 Quelle que soit la base de code que vous utilisez (Web SDK, Mobile SDK (iOS ou Android), Roku SDK ou l’API Media Edge), vous devez d’abord effectuer la configuration de la plateforme décrite sur cette page : créer un schéma, créer un jeu de données et configurer un flux de données.
 
@@ -20,17 +22,16 @@ Quelle que soit la base de code que vous utilisez (Web SDK, Mobile SDK (iOS ou A
 
 1. **Remplir les conditions préalables générales.** Voir les [conditions préalables générales](/help/getting-started/prereqs.md).
 
-1. **Confirmez la compatibilité d’une solution Adobe.** Vous devez disposer d’une implémentation Customer Journey Analytics, Adobe Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform fonctionnelle :
-   * [Guide de Customer Journey Analytics](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=fr)
-   * [Mise en œuvre d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr)
-   * [Documentation de Adobe Journey Optimizer](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=fr)
-   * [Documentation de Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=fr)
+1. **Confirmez la compatibilité d’une solution Adobe.** Vous devez disposer d’une implémentation fonctionnelle d’au moins l’un des éléments suivants :
+   * [Customer Journey Analytics ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=fr) — la destination principale de création de rapports pour les données multimédia basées sur Edge
+   * [Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr) — pris en charge avec ou à la place de CJA via le même flux de données
+   * [](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=fr) ou [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=fr) — ajoutez le service **[!UICONTROL Adobe Experience Platform]** à votre flux de données lors de la configuration de l’un de ces éléments
 
 ## Configurer le schéma dans Adobe Experience Platform
 
 Afin de normaliser la collecte de données entre les applications qui utilisent Adobe Experience Platform, Adobe a créé la norme XDM (modèle de données d’expérience) ouverte et documentée publiquement.
 
-1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr).
+1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
 
 1. Sur la page Détails du schéma , choisissez **[!UICONTROL Événement d’expérience]** comme classe de base du schéma.
 
@@ -51,7 +52,7 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
 1. Sélectionnez **[!UICONTROL Enregistrer]** pour enregistrer vos modifications.
 
-1. (Facultatif) Vous pouvez masquer certains champs qui ne sont pas utilisés par l’API Media Edge. Le masquage de ces champs facilite la lecture du schéma, mais n’est pas obligatoire. Ces champs se rapportent uniquement à ceux du groupe de champs `MediaAnalytics Interaction Details`.
+1. (Facultatif) Vous pouvez masquer certains champs de l’interface utilisateur du schéma. Ces champs sont des champs de création de rapports calculés par le serveur et renseignés par Adobe sur le serveur principal. Ils ne sont pas envoyés par votre SDK ou API et n’affectent pas la collecte de données. Leur masquage n’a aucun impact fonctionnel ; il réduit uniquement le bruit visuel lors de la navigation dans le schéma de l’interface utilisateur d’AEP. Ces champs se rapportent uniquement à ceux du groupe de champs `MediaAnalytics Interaction Details`.
 
    +++ Développez pour afficher les instructions sur les champs que vous pouvez masquer.
 
@@ -117,7 +118,7 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
    +++ Développez pour afficher les instructions sur l’ajout de métadonnées personnalisées à votre schéma.
 
-   1. Recherchez le nom du client de l’organisation en sélectionnant **[!UICONTROL Informations sur le compte]** > **[!UICONTROL Organisations affectées]** > [!UICONTROL _&#x200B;**nom de l’organisation**&#x200B;_] > **[!UICONTROL client]**.
+   1. Recherchez le nom du client de l’organisation en sélectionnant **[!UICONTROL Informations sur le compte]** > **[!UICONTROL Organisations affectées]** > [!UICONTROL _**nom de l’organisation**_] > **[!UICONTROL client]**.
 
       Les champs personnalisés sont reçus via ce chemin d’accès. (Par exemple, nom du client : _dcbl → chemin myCustomField : _dcbl.myCustomField.)
 
@@ -129,49 +130,37 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
+   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
    +++
 
-1. Continuez avec [Création d’un jeu de données dans Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
-
 ## Créer un jeu de données dans Adobe Experience Platform
-
-1. Veillez à configurer un schéma comme décrit dans la section [Configurer le schéma dans Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
 1. Dans Adobe Experience Platform, commencez à créer le jeu de données comme décrit dans le [Guide de l’interface utilisateur des jeux de données](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=fr#create).
 
    Lors de la sélection d’un schéma pour votre jeu de données, choisissez le schéma que vous avez précédemment créé.
 
-1. Continuez avec [Configurer un flux de données dans Adobe Experience Platform](#configure-a-datastream-in-adobe-experience-platform).
-
 ## Configurer un flux de données dans Adobe Experience Platform
-
-1. Assurez-vous d’avoir créé un jeu de données comme décrit dans la section [Créer un jeu de données dans Adobe Experience Platform](#create-a-dataset-in-adobe-experience-platform).
 
 1. Créez un flux de données comme décrit dans la section [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr).
 
    Lors de la création du flux de données, effectuez les sélections suivantes :
 
-   * Dans le champ **[!UICONTROL Schéma d’événement]**, sélectionnez le schéma que vous avez créé dans [Configurer le schéma dans Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform). Sélectionnez **[!UICONTROL Enregistrer]**.
+   * Dans le champ **[!UICONTROL Schéma d’événement]**, sélectionnez le schéma que vous avez créé dans [Configurer le schéma dans Adobe Experience Platform](#set-up-the-schema-in-adobe-experience-platform).
 
      >[!IMPORTANT]
      >
-     >Ne sélectionnez pas **[!UICONTROL Enregistrer et ajouter un mappage]**, car cela génère des erreurs de mappage pour le champ Date et heure.
+     >Sélectionnez **[!UICONTROL Enregistrer]** ; ne sélectionnez pas **[!UICONTROL Enregistrer et ajouter un mappage]**. Sélectionner **[!UICONTROL Enregistrer et ajouter un mappage]** entraîne des erreurs de mappage pour le champ Date et heure.
 
      ![Créer un flux de données et sélectionner un schéma](assets/datastream-create-schema.png)
 
-   * Ajoutez l’un des services suivants au flux de données, selon que vous utilisez Adobe Analytics ou Customer Journey Analytics :
+   * Ajoutez le ou les services appropriés au flux de données en fonction de votre solution Adobe. Pour plus d’informations sur l’ajout d’un service, voir « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
-      * **&#x200B;**&#x200B;(si vous utilisez Adobe Analytics)
+      * **** (si vous utilisez Adobe Analytics) — définissez une suite de rapports comme décrit dans la section [Créer une suite de rapports](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
-        Si vous utilisez Adobe Analytics, définissez une suite de rapports comme décrit dans la section [&#x200B; Création d’une suite de rapports &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
-
-      * **&#x200B;**&#x200B;(si vous utilisez Customer Journey Analytics)
-
-     Pour plus d’informations sur l’ajout d’un service à un flux de données, voir « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr#view-details).
+      * **** (si vous utilisez Customer Journey Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform)
 
      ![Ajouter le service Adobe Analytics](assets/datastream-add-service.png)
 
@@ -183,13 +172,15 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
 Une fois le schéma, le jeu de données et le flux de données en place, implémentez l’une des bases de code suivantes pour commencer à envoyer des données de médias en flux continu à Edge Network. Chaque page couvre la configuration spécifique aux médias en flux continu. Le code par événement et par variable réside dans [Événements](/help/implementation/events/overview.md) et [Variables](/help/implementation/variables/overview.md).
 
-| Base de code | In-code | Par Le Biais De Balises |
+Les implémentations **en code** écrivent des appels SDK directement dans le code source de votre application. **À l’aide de balises** les implémentations utilisent [les balises Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) ce qui vous permet de configurer et de déployer des règles de suivi sans modifier le code de votre application. Choisissez l’approche qui convient le mieux à votre workflow de déploiement.
+
+| Base de code | In-code | Utilisation des balises |
 |---|---|---|
 | Web | [SDK Web](web-sdk.md) | [Extension de balise Web SDK](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS (Balises)](ios-tags.md) |
 | Android | [Android](android.md) | [Android (Balises)](android-tags.md) |
 | Roku | [Roku](roku.md) | — |
-| API | [&#x200B; API Media Edge &#x200B;](media-edge-api.md) | — |
+| API | [ API Media Edge ](media-edge-api.md) | — |
 
 ## Étape suivante
 
@@ -200,6 +191,6 @@ Après avoir commencé à collecter des données, vous pouvez configurer les rap
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Prise en charge des métadonnées personnalisées &#x200B;](custom-metadata.md)
+>* [ Prise en charge des métadonnées personnalisées ](custom-metadata.md)
 >* [Schéma de reporting XDM](reporting-schema.md)
 >* [Présentation des événements](/help/implementation/events/overview.md)

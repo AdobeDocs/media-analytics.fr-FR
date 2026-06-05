@@ -3,7 +3,7 @@ title: Présentation de l’implémentation pour Analytics uniquement
 description: Conditions préalables et méthodes d’implémentation pour le module complémentaire Adobe Analytics for Streaming Media, utilisés pour les implémentations Analytics uniquement.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 5%
@@ -18,7 +18,7 @@ Les implémentations Analytics uniquement utilisent le module complémentaire Ad
 
 1. **Remplir les conditions préalables générales.** Voir les [conditions préalables générales](/help/getting-started/prereqs.md).
 
-1. **Confirmer une implémentation d’Adobe Analytics.** Une implémentation de médias en flux continu uniquement pour Analytics nécessite une implémentation Adobe Analytics de base. Voir [&#x200B; Implémentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).
+1. **Confirmer une implémentation d’Adobe Analytics.** Une implémentation de médias en flux continu uniquement pour Analytics nécessite une implémentation Adobe Analytics de base. Voir [ Implémentation d’Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr).
 
 1. **Obtenir l’URL du serveur de suivi multimédia.** Demandez à votre représentant Adobe Analytics l’URL du serveur de suivi multimédia (l’URL `collection-api-server`). Le domaine suit généralement le modèle `[your_namespace].hb-api.omtrdc.net`.
 
@@ -28,11 +28,11 @@ Les implémentations Analytics uniquement utilisent le module complémentaire Ad
 
 Chaque page couvre la configuration spécifique aux médias en flux continu. Le code par événement et par variable réside dans [Événements](/help/implementation/events/overview.md) et [Variables](/help/implementation/variables/overview.md).
 
-| Base de code | In-code | Par Le Biais De Balises |
+| Base de code | In-code | Utilisation des balises |
 |---|---|---|
-| Web (JavaScript) | [JavaScript &#x200B;](javascript.md) | [Extension de balises Media Analytics](javascript-tags.md) |
-| Chromecast | [&#x200B; Chromecast &#x200B;](chromecast.md) | — |
-| API | [&#x200B; API Media Collection &#x200B;](media-collection-api.md) | — |
+| Web (JavaScript) | [JavaScript ](javascript.md) | [Extension de balises Media Analytics](javascript-tags.md) |
+| Chromecast | [ Chromecast ](chromecast.md) | — |
+| API | [ API Media Collection ](media-collection-api.md) | — |
 
 ## Étape suivante
 

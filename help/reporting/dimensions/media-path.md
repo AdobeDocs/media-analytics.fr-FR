@@ -3,9 +3,9 @@ title: Chemin du média
 description: Capture l’identifiant du contenu en tant que variable de trafic pour l’analyse des chemins.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 5%
 
 ---
@@ -22,7 +22,7 @@ Le chemin d’accès au média est automatiquement dérivé de l’identifiant d
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des données contextuelles `a.media.name` en tant que variable de trafic (prop) lorsque [[!UICONTROL Media Core]](/help/reporting/setup/analytics-reporting.md) est activé. |
-| Customer Journey Analytics | N/A — utiliser [Contenu](content.md) pour l&#39;analyse des chemins |
+| Customer Journey Analytics | N/A : utilisez [Contenu](content.md) pour l’analyse des chemins. |
 | Flux de données | `videopath`, `post_videopath` |
 | Audience Manager | `c_contextdata.a.media.name` |
 
@@ -36,4 +36,4 @@ Le chemin d’accès au média est automatiquement dérivé de l’identifiant d
 
 ## Éléments de dimension
 
-Chaque élément est un identifiant de contenu signalé lors d’une visite. Utilisez les rapports Flux de page suivante et Flux de page précédente sous Contenu > Chemin du média dans Adobe Analytics pour afficher les chemins de navigation contenu à contenu.
+Chaque élément est un identifiant de contenu signalé lors d’une visite. Vous pouvez utiliser les panneaux Flux pour afficher les chemins de navigation de contenu à contenu.
