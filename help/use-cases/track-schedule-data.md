@@ -5,10 +5,19 @@ feature: Streaming Media
 role: User, Admin, Developer
 exl-id: 875c4513-ea4e-4c5f-bfc1-34ea175007ca
 TQID: https://experienceleague.adobe.com/C1GFDLJp-oTQHWlFiks5oSi2Q5Ok34QxJWfiPIJ3bC4
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: e1e0219c-f879-479f-8427-888ed2a6e9c2
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
 source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
 source-wordcount: 1424
@@ -20,7 +29,7 @@ ht-degree: 5%
 
 >[!AVAILABILITY]
 >
->La fonctionnalité décrite dans cet article se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication, consultez [Versions des fonctionnalités de ](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
+>La fonctionnalité décrite dans cet article se trouve dans la phase de test limité de la publication et peut ne pas encore être disponible dans votre environnement. Cette note sera supprimée lorsque la fonctionnalité sera disponible. Pour plus d’informations sur le processus de publication, consultez [Versions des fonctionnalités de &#x200B;](https://experienceleague.adobe.com/en/docs/analytics-platform/using/releases/releases).
 
 Vous pouvez charger les données de planning du contenu multimédia en direct précédent pour suivre plus facilement et plus précisément l’audience du contenu en direct. Vous pouvez effectuer le suivi de l’audience pour des programmes individuels et même des sujets ou des segments de programme spécifiques.
 
@@ -312,7 +321,7 @@ L’exemple suivant illustre un fichier .json planifié avec deux enregistrement
 
    * **[[!UICONTROL ID de ressource]](/help/reporting/dimensions/asset-id.md)**
 
-1. Continuez avec [ Analyser les données dans Customer Journey Analytics ](#analyze-data-in-customer-journey-analytics).
+1. Continuez avec [&#x200B; Analyser les données dans Customer Journey Analytics &#x200B;](#analyze-data-in-customer-journey-analytics).
 
 ## Analyse des données dans Customer Journey Analytics
 

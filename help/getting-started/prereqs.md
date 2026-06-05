@@ -6,11 +6,20 @@ exl-id: 85ab1dbd-f4a7-4f11-afc9-8d5000e2de70
 feature: Streaming Media, Workspace Basics
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/e9iYwDwT-zSSZ3hV20U1w7p-MtKaK4Q8-vGMCrnenpc
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: c8add8f2-4250-4fd9-9cde-9707036c567d
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: c8add8f2-4250-4fd9-9cde-9707036c567d
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
 source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
 source-wordcount: 274
@@ -36,7 +45,7 @@ Pour activer les rapports dans Analytics et afficher le contenu et les données 
 
    * **Implémentations Analytics uniquement** : le service Adobe Experience Platform Identity doit être activé pour identifier les visiteurs de manière cohérente au sein des solutions d’entreprise CX. Identity Service attribue un ID persistant unique à chaque visiteur du site et permet de partager cet ID avec toutes les solutions d’entreprise CX auxquelles vous êtes abonné.
 
-     Pour plus d’informations, consultez la documentation du service d’identités Adobe Experience Platform [](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr).
+     Pour plus d’informations, consultez la documentation du service d’identités Adobe Experience Platform [&#128279;](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=fr).
 
 1. **Afficher les conditions préalables supplémentaires pour votre méthode d’implémentation**
 
