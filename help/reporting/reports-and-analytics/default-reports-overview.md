@@ -22,7 +22,7 @@ topic_v2:
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: c2be0313-b3ae-45e0-b454-d20bf54b23f2
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
 workflow-type: tm+mt
 source-wordcount: 358
 ht-degree: 50%
@@ -37,7 +37,7 @@ Outre les mesures et dimensions disponibles lorsque vous activez chacun des modu
 
 Les rapports multimédia sont répertoriés dans l’onglet **[!UICONTROL Rapports]**. Accédez à > **[!UICONTROL Média]** > **[!UICONTROL Engagement multimédia]** et faites votre choix parmi les options suivantes :
 
-| Rapport multimédia | Description     | Informations commerciales courantes       |
+| Rapport multimédia | Description | Informations commerciales courantes |
 | --- | --- | --- |
 | [Présentation multimédia &#x200B;](media-reports-overview.md) | Affiche plusieurs mesures consolidées pour surveiller rapidement que le média fonctionne comme prévu. Un graphique affiche [[!UICONTROL démarrages de média]](/help/reporting/metrics/media-starts.md) à côté des impressions d’annonce publicitaire afin de vous permettre d’afficher et de comparer rapidement ces mesures. | <ul> <li>Totaux des mesures principales, y compris [[!UICONTROL Débuts de contenu]](/help/reporting/metrics/content-starts.md), taux d’achèvement, durée moyenne de diffusion et nombre moyen d’éléments multimédias par visite.  </li> <li>Total [[!UICONTROL démarrages de contenu]](/help/reporting/metrics/content-starts.md) et [[!UICONTROL démarrages d’annonce]](/help/reporting/metrics/ad-starts.md) pour les médias filtrés par type d’appareil ou par pays.  </li> </ul> |
 | [Détails du média &#x200B;](media-reports-detail.md) | Affiche des mesures détaillées pour tous les éléments multimédia, notamment les démarrages, les visionneuses simultanées, le taux d’achèvement, le pourcentage de lecture et les impressions publicitaires. | <ul> <li>Totaux des mesures principales, y compris [[!UICONTROL démarrages de médias]](/help/reporting/metrics/media-starts.md), [[!UICONTROL démarrages de contenu]](/help/reporting/metrics/content-starts.md) et [[!UICONTROL démarrages d’annonces]](/help/reporting/metrics/ad-starts.md), et contenu moyen par visite.  </li> <li>Total [[!UICONTROL démarrages de contenu]](/help/reporting/metrics/content-starts.md) et [[!UICONTROL démarrages d’annonce]](/help/reporting/metrics/ad-starts.md) pour les médias filtrés par type d’appareil ou par pays.  </li> </ul> |
