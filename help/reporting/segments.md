@@ -26,7 +26,7 @@ ht-degree: 76%
 
 # Segments de médias{#segments}
 
-Les segments vous permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions Web. La diffiusion de segments de streaming multimédia vous permet d’identifier le type de flux des visiteurs, par exemple les diffusions audio, en direct ou en podcast. Pour plus d’informations sur les segments Adobe Analytics, voir [À propos des segments](https://experienceleague.adobe.com/en/docs/analytics/components/segmentation/seg-overview) dans le guide des composants Adobe Analytics.
+Les segments vous permettent d’identifier des sous-ensembles de visiteurs selon des caractéristiques ou des interactions Web. La diffiusion de segments de streaming multimédia vous permet d’identifier le type de flux des visiteurs, par exemple les diffusions audio, en direct ou en podcast. Pour plus d’informations sur les segments Adobe Analytics, voir [À propos des segments](https://experienceleague.adobe.com/fr/docs/analytics/components/segmentation/seg-overview) dans le guide des composants Adobe Analytics.
 
 | Segment | Description | Composants de |
 |---|---|---|

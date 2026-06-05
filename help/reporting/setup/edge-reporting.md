@@ -50,7 +50,7 @@ Après avoir implémenté la collecte de médias en flux continu via Edge Networ
 
       >[!IMPORTANT]
       >
-      >Les libellés de contexte de ce tableau sont nécessaires au fonctionnement des panneaux de médias en flux continu. Customer Journey Analytics les utilise pour calculer automatiquement les mesures dérivées **Observateurs simultanés** et **Temps de lecture** (utilisées par les panneaux [Observateurs simultanés de médias](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) et [Temps de lecture de médias](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)), et pour renseigner les options de création de rapports dans le panneau [Audience moyenne par minute de média](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
+      >Les libellés de contexte de ce tableau sont nécessaires au fonctionnement des panneaux de médias en flux continu. Customer Journey Analytics les utilise pour calculer automatiquement les mesures dérivées **Observateurs simultanés** et **Temps de lecture** (utilisées par les panneaux [Observateurs simultanés de médias](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers) et [Temps de lecture de médias](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)), et pour renseigner les options de création de rapports dans le panneau [Audience moyenne par minute de média](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel).
 
       À ce stade, vous pouvez ajouter d’autres [dimensions](/help/reporting/dimensions/overview.md) ou [mesures](/help/reporting/metrics/overview.md) à votre vue de données. Chaque page répertorie le chemin XDM de ce composant.
 
@@ -70,7 +70,7 @@ Après avoir implémenté la collecte de médias en flux continu via Edge Networ
 
 1. (Conditionnel) Si vous avez ajouté des métadonnées personnalisées à votre schéma, définissez la persistance des champs personnalisés, comme décrit dans la section [Paramètres du composant de persistance](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-dataviews/component-settings/persistence) du guide de Customer Journey Analytics.
 
-1. Partagez le projet comme décrit dans la section [Partager des projets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=en).
+1. Partagez le projet comme décrit dans la section [Partager des projets](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-workspace/curate-share/share-projects.html?lang=fr).
 
    >[!NOTE]
    >
@@ -80,9 +80,9 @@ Après avoir implémenté la collecte de médias en flux continu via Edge Networ
 
 Analysis Workspace dans Customer Journey Analytics comprend trois panneaux de médias dédiés pour les clients avec le module complémentaire Streaming Media Collection. Ces panneaux fournissent des visualisations préconfigurées pour les besoins de création de rapports sur les médias en flux continu les plus courants.
 
-* **[Audience moyenne par minute pour les médias](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)** : compare la consommation moyenne de contenu sur plusieurs programmes, quels qu’en soient la durée ou le genre. Prend en charge le contenu spécifique (basé sur la durée) et les modes de période personnalisés, et permet de mettre à jour les classifications de durée après coup.
-* **[Observateurs simultanés de médias](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)** : analyse les observateurs simultanés au fil du temps pour identifier le pic d’accès simultanés et les points de chute. Prend en charge la granularité configurable et la répartition des séries par segments, dimensions ou périodes.
-* **[Temps de lecture de média](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)** : analyse la durée de lecture au fil du temps avec des détails sur les périodes de pic et de creux. Prend en charge la granularité et le format de sortie configurables (heures ou minutes).
+* **[Audience moyenne par minute pour les médias](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/panels/average-minute-audience-panel)** : compare la consommation moyenne de contenu sur plusieurs programmes, quels qu’en soient la durée ou le genre. Prend en charge le contenu spécifique (basé sur la durée) et les modes de période personnalisés, et permet de mettre à jour les classifications de durée après coup.
+* **[Observateurs simultanés de médias](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/panels/media-concurrent-viewers)** : analyse les observateurs simultanés au fil du temps pour identifier le pic d’accès simultanés et les points de chute. Prend en charge la granularité configurable et la répartition des séries par segments, dimensions ou périodes.
+* **[Temps de lecture de média](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-workspace/panels/media-playback-time-spent)** : analyse la durée de lecture au fil du temps avec des détails sur les périodes de pic et de creux. Prend en charge la granularité et le format de sortie configurables (heures ou minutes).
 
 >[!MORELIKETHIS]
 >
