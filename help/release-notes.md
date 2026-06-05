@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: 793
 ht-degree: 60%
 
 ---
@@ -37,12 +37,17 @@ ht-degree: 60%
 
 **Dernière mise à jour** : 4 juin 2026
 
-## 2025
+## 2026
 
 | Fonctionnalité | Description | Date |
 | --- | --- | --- |
 | **Prise en charge des données de planning** | Chargez les données planifiées pour le contenu en direct précédent afin de suivre l’audience par programme ou segment. Les types de contenu pris en charge comprennent :<ul><li>Plateformes FAST (Free Ad Supported TV)</li><li>Flux locaux</li><li>Sports en direct</li></ul>Pour plus d’informations[&#128279;](/help/use-cases/track-schedule-data.md) consultez le cas d’utilisation  Charger des données de planning pour effectuer le suivi du contenu en direct . | Début du déploiement : 29 octobre 2025<p>Disponibilité générale : octobre 2026</p> |
-| Obsolescence de champ XDM `mediaTimed` | L’objet XDM `mediaTimed` est obsolète au profit des chemins d’accès aux champs `mediaReporting`. Les clients qui ont implémenté le connecteur source Analytics avant le 9 mai 2025 doivent migrer leurs configurations. Pour plus d’informations, consultez les guides de migration suivants :<ul><li>[Migration des audiences vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrez Customer Journey Analytics pour utiliser les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migration des profils vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | Octobre 2025 |
+
+## 2025
+
+| Fonctionnalité | Description | Date |
+| --- | --- | --- |
+| **`mediaTimed`l’obsolescence des champs XDM** | L’objet XDM `mediaTimed` est obsolète au profit des chemins d’accès aux champs `mediaReporting`. Les clients qui ont implémenté le connecteur source Analytics avant le 9 mai 2025 doivent migrer leurs configurations. Pour plus d’informations, consultez les guides de migration suivants :<ul><li>[Migration des audiences vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrez Customer Journey Analytics pour utiliser les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migration des profils vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | Octobre 2025 |
 
 ## 2024
 
