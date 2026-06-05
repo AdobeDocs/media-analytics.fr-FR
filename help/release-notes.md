@@ -5,30 +5,14 @@ feature: Release Notes
 role: User, Admin, Developer
 exl-id: ef068aa6-fdf4-4a5c-b5d0-b93ad31894e8
 TQID: https://experienceleague.adobe.com/yNfosiewndKE7c-VjoVM6D3ifYlgX3eJGgYQWcBC9no
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: b069d60e-95f3-44d6-95a8-ddc862a4bc38
-  - id: b3f03848-ae12-48b2-8aab-cad18567eb32
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: f73667dc-d296-4875-8975-ac3fdc3adc42
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: ac8a38fa-dec3-4581-8f64-178fde9f64e8
-  - id: c77ba355-6681-41fe-b719-563d3f507fdb
-  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-  - id: c1579802-ddd4-4214-8a91-97b2066abe11
-  - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: b069d60e-95f3-44d6-95a8-ddc862a4bc38id: b3f03848-ae12-48b2-8aab-cad18567eb32id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: f73667dc-d296-4875-8975-ac3fdc3adc42id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: ac8a38fa-dec3-4581-8f64-178fde9f64e8id: c77ba355-6681-41fe-b719-563d3f507fdbid: e7d92df1-c5ba-4e93-85df-f83171b889be
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: aa2f3246-cb95-4b30-8899-fdf7d73550ccid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: c1579802-ddd4-4214-8a91-97b2066abe11id: e1e0219c-f879-479f-8427-888ed2a6e9c2
+source-git-commit: f1339bc993b0df14a6fe0b80168c5333e580a1bb
 workflow-type: tm+mt
-source-wordcount: 789
+source-wordcount: 793
 ht-degree: 60%
 
 ---
@@ -37,12 +21,17 @@ ht-degree: 60%
 
 **Dernière mise à jour** : 4 juin 2026
 
+## 2026
+
+| Fonctionnalité | Description | Date |
+| --- | --- | --- |
+| **Prise en charge des données de planning** | Chargez les données planifiées pour le contenu en direct précédent afin de suivre l’audience par programme ou segment. Les types de contenu pris en charge comprennent :<ul><li>Plateformes FAST (Free Ad Supported TV)</li><li>Flux locaux</li><li>Sports en direct</li></ul>Pour plus d’informations](/help/use-cases/track-schedule-data.md) consultez le cas d’utilisation [ Charger des données de planning pour effectuer le suivi du contenu en direct . | Début du déploiement : 29 octobre 2025<p>Disponibilité générale : octobre 2026</p> |
+
 ## 2025
 
 | Fonctionnalité | Description | Date |
 | --- | --- | --- |
-| **Prise en charge des données de planning** | Chargez les données planifiées pour le contenu en direct précédent afin de suivre l’audience par programme ou segment. Les types de contenu pris en charge comprennent :<ul><li>Plateformes FAST (Free Ad Supported TV)</li><li>Flux locaux</li><li>Sports en direct</li></ul>Pour plus d’informations[&#128279;](/help/use-cases/track-schedule-data.md) consultez le cas d’utilisation  Charger des données de planning pour effectuer le suivi du contenu en direct . | Début du déploiement : 29 octobre 2025<p>Disponibilité générale : octobre 2026</p> |
-| Obsolescence de champ XDM `mediaTimed` | L’objet XDM `mediaTimed` est obsolète au profit des chemins d’accès aux champs `mediaReporting`. Les clients qui ont implémenté le connecteur source Analytics avant le 9 mai 2025 doivent migrer leurs configurations. Pour plus d’informations, consultez les guides de migration suivants :<ul><li>[Migration des audiences vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrez Customer Journey Analytics pour utiliser les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migration des profils vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | Octobre 2025 |
+| **`mediaTimed`l’obsolescence des champs XDM** | L’objet XDM `mediaTimed` est obsolète au profit des chemins d’accès aux champs `mediaReporting`. Les clients qui ont implémenté le connecteur source Analytics avant le 9 mai 2025 doivent migrer leurs configurations. Pour plus d’informations, consultez les guides de migration suivants :<ul><li>[Migration des audiences vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-audiences.md)</li><li>[Migrez Customer Journey Analytics pour utiliser les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-cja-setup.md)</li><li>[Migrer la préparation des données pour les champs personnalisés vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-dataprep.md)</li><li>[Migration des profils vers les nouveaux champs de médias en flux continu](/help/implementation/edge/migrate/migrate-profiles.md)</li></ul> | Octobre 2025 |
 
 ## 2024
 
