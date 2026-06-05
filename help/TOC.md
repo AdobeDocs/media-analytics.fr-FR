@@ -5,10 +5,10 @@ user-guide-title: Guide des services des médias en streaming
 breadcrumb-title: Guide des services des médias en streaming
 user-guide-description: Implémentez des services de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 35%
+source-wordcount: '698'
+ht-degree: 33%
 
 ---
 
@@ -289,21 +289,7 @@ ht-degree: 35%
       + [Durée totale du blocage](reporting/metrics/total-stalling-duration.md)
       + [Durée de lecture unique](reporting/metrics/unique-time-played.md)
    + [Mesures calculées](reporting/calculated-metrics.md)
-   + Panneaux multimédias dans Workspace {#media-workspace-panels}
-      + [Panneau Audience moyenne par minute de média](reporting/workspace/average-minute-audience.md)
-      + [Panneau Observateurs simultanés de médias](reporting/workspace/media-concurrent-viewers-overview.md)
-      + [Panneau Durée de lecture des médias](reporting/workspace/media-playback-time-spent.md)
-   + [Rapports sur les médias dans Workspace](reporting/workspace/media-workspace-templates.md)
    + [Segments de médias](reporting/segments.md)
-   + Rapports multimédia par défaut {#media-default-reports}
-      + [Vue d’ensemble des rapports par défaut](reporting/reports-and-analytics/default-reports-overview.md)
-      + [Vue d’ensemble des médias](reporting/reports-and-analytics/media-reports-overview.md)
-      + [Détails des médias](reporting/reports-and-analytics/media-reports-detail.md)
-      + [Rapport sur les tranches horaires des médias](reporting/reports-and-analytics/media-reports-daypart.md)
-      + [Rapport sur les visionneuses simultanées de médias](reporting/reports-and-analytics/media-concurrent-viewers-reports.md)
-   + API Media {#media-api}
-      + [Obtenir les données des visionneuses simultanées](reporting/reports-and-analytics/get-concurrent-json20.md)
-      + [Obtention des données de temps de lecture de média](reporting/reports-and-analytics/get-mediaplaybacktimespent-json20.md)
 + Cas d’utilisation {#media-use-cases}
    + [Suivi des données de planning](/help/use-cases/track-schedule-data.md)
    + [Suivi du contenu téléchargé](use-cases/track-downloaded-content.md)

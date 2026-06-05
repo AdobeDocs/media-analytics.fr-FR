@@ -3,10 +3,10 @@ title: Configurer des rapports pour les implémentations Analytics uniquement
 description: Activez les modules de suite de rapports multimédia dans Adobe Analytics afin que les données de médias en flux continu puissent être collectées et rapportées.
 feature: Streaming Media
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 9%
+source-wordcount: '779'
+ht-degree: 11%
 
 ---
 
@@ -36,6 +36,9 @@ Chaque suite de rapports qui collecte des mesures multimédia doit être configu
 La mesure multimédia inclut les modules suivants :
 
 * **[!UICONTROL Media Core]** : requis pour tout suivi des médias en flux continu. Il réserve les variables de solution pour la lecture du contenu et les données de session.
+
+  +++Sélectionner pour afficher les dimensions et les mesures
+
    * **Dimensions :**
       * [[!UICONTROL Contenu]](/help/reporting/dimensions/content.md)
       * [[!UICONTROL &#x200B; Canal de contenu &#x200B;]](/help/reporting/dimensions/content-channel.md)
@@ -60,7 +63,13 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Marqueurs de progression]](/help/reporting/metrics/progress-markers.md)
       * [[!UICONTROL Durée totale de la pause]](/help/reporting/metrics/total-pause-duration.md)
       * [[!UICONTROL Temps de lecture unique]](/help/reporting/metrics/unique-time-played.md)
+
+  +++
+
 * **[!UICONTROL Publicités multimédia]** : permet le suivi des publicités dans le contenu multimédia.
+
+  +++Sélectionner pour afficher les dimensions, les classifications et les mesures
+
    * **Dimensions :**
       * [[!UICONTROL Annonce]](/help/reporting/dimensions/ad.md)
       * [[!UICONTROL Annonce publicitaire dans la capsule]](/help/reporting/dimensions/ad-in-pod-position.md)
@@ -83,7 +92,13 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL La publicité commence]](/help/reporting/metrics/ad-starts.md)
       * [[!UICONTROL Temps passé sur la publicité]](/help/reporting/metrics/ad-time-spent.md)
       * [[!UICONTROL Temps passé sur le média]](/help/reporting/metrics/media-time-spent.md)
+
+  +++
+
 * **[!UICONTROL Chapitres multimédia]** : permet le suivi des chapitres dans le contenu multimédia.
+
+  +++Sélectionner pour afficher les dimensions, les classifications et les mesures
+
    * **Dimension:**
       * [[!UICONTROL Chapitre]](/help/reporting/dimensions/chapter.md)
    * **Dimensions de classification :**
@@ -96,7 +111,13 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Fin du chapitre]](/help/reporting/metrics/chapter-completes.md)
       * [[!UICONTROL Démarrage du chapitre]](/help/reporting/metrics/chapter-starts.md)
       * [[!UICONTROL Durée du chapitre]](/help/reporting/metrics/chapter-time-spent.md)
+
+  +++
+
 * **[!UICONTROL Qualité du média]** : permet le suivi des données de qualité de lecture, y compris les événements de mise en mémoire tampon, de débit et d’erreur.
+
+  +++Sélectionner pour afficher les dimensions et les mesures
+
    * **Dimensions :**
       * [[!UICONTROL Débit moyen]](/help/reporting/dimensions/average-bitrate.md)
       * [[!UICONTROL Modifications de débit]](/help/reporting/dimensions/bitrate-changes.md)
@@ -120,7 +141,13 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL &#x200B; Flux impactés par l’erreur &#x200B;]](/help/reporting/metrics/error-impacted-streams.md)
       * [[!UICONTROL Heure de commencer]](/help/reporting/metrics/time-to-start.md)
       * [[!UICONTROL Durée totale du tampon]](/help/reporting/metrics/total-buffer-duration.md)
+
+  +++
+
 * **[!UICONTROL Métadonnées vidéo]** : permet le suivi des attributs de contenu vidéo standard tels que l’émission, la saison et le genre.
+
+  +++Sélectionner pour afficher les dimensions et les mesures
+
    * **Dimensions :**
       * [[!UICONTROL Chargements d’annonces]](/help/reporting/dimensions/ad-load-type.md)
       * [[!UICONTROL Jour]](/help/reporting/dimensions/day-part.md)
@@ -134,7 +161,13 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Afficher le type]](/help/reporting/dimensions/show-type.md)
    * **Mesure :**
       * [[!UICONTROL Autorisé]](/help/reporting/metrics/authorized.md)
+
+  +++
+
 * **[!UICONTROL Métadonnées audio]** : permet le suivi des attributs de contenu audio standard tels que l’artiste, l’album et la station.
+
+  +++Sélectionner pour afficher les dimensions
+
    * **Dimensions :**
       * [[!UICONTROL album]](/help/reporting/dimensions/album.md)
       * [[!UICONTROL Artiste]](/help/reporting/dimensions/artist.md)
@@ -142,7 +175,13 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Libellé]](/help/reporting/dimensions/label.md)
       * [[!UICONTROL Éditeur]](/help/reporting/dimensions/publisher.md)
       * [[!UICONTROL Station]](/help/reporting/dimensions/station.md)
+
+  +++
+
 * **[!UICONTROL Suivi de l’état du lecteur]** : permet de mesurer les états standard de l’interface utilisateur du lecteur, tels que le plein écran, le sous-titrage et l’image dans l’image.
+
+  +++Sélectionner pour afficher les mesures
+
    * **Mesures :**
       * [[!UICONTROL Nombre de légendes]](/help/reporting/metrics/closed-captioning-count.md)
       * [[!UICONTROL Durée totale du sous-titrage]](/help/reporting/metrics/closed-captioning-total-duration.md)
@@ -160,8 +199,17 @@ La mesure multimédia inclut les modules suivants :
       * [[!UICONTROL Flux affectés par le mode muet]](/help/reporting/metrics/mute-streams-impacted.md)
       * [[!UICONTROL Flux affectés par l’image dans l’image]](/help/reporting/metrics/picture-in-picture-streams-impacted.md)
 
+  +++
+
+## Panneaux multimédias disponibles dans Adobe Analytics
+
+Analysis Workspace comprend trois panneaux multimédias dédiés pour les clients avec le module complémentaire Adobe Analytics for Streaming Media. Ces panneaux fournissent des visualisations préconfigurées pour les besoins de création de rapports sur les médias en flux continu les plus courants.
+
+* **[Audience moyenne par minute pour les médias](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/average-minute-audience-panel)** : compare la consommation moyenne de contenu sur plusieurs programmes, quels qu’en soient la durée ou le genre. Prend en charge le contenu spécifique (basé sur la durée) et les modes de période personnalisés, et permet de mettre à jour les classifications de durée après coup.
+* **[Observateurs simultanés de médias](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/media-concurrent-viewers)** : analyse les observateurs simultanés au fil du temps pour identifier le pic d’accès simultanés et les points de chute. Prend en charge la granularité configurable et la répartition des séries par segments, dimensions ou périodes.
+* **[Temps de lecture de média](https://experienceleague.adobe.com/fr/docs/analytics/analyze/analysis-workspace/panels/media-playback-time-spent)** : analyse la durée de lecture au fil du temps avec des détails sur les périodes de pic et de creux. Prend en charge la granularité et le format de sortie configurables (heures ou minutes).
+
 >[!MORELIKETHIS]
 >
->* [Rapports multimédia dans Workspace](/help/reporting/workspace/media-workspace-templates.md)
 >* [Présentation des dimensions](/help/reporting/dimensions/overview.md)
 >* [Présentation des mesures](/help/reporting/metrics/overview.md)
