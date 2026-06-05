@@ -18,7 +18,7 @@ Après avoir implémenté la collecte de médias en flux continu via Edge Networ
 >
 >Cette page traite des rapports dans Customer Journey Analytics, la destination recommandée pour les implémentations d’Edge. Si votre flux de données envoie plutôt des données de médias en flux continu à Adobe Analytics, voir [Configurer des rapports pour les implémentations Analytics uniquement](analytics-reporting.md).
 
-* **Conditions préalables** : terminez une implémentation d’Edge et collectez des données. Voir la présentation de l’implémentation d’Edge [](/help/implementation/edge/overview.md) et la méthode d’implémentation choisie.
+* **Conditions préalables** : terminez une implémentation d’Edge et collectez des données. Voir la présentation de l’implémentation d’Edge [&#128279;](/help/implementation/edge/overview.md) et la méthode d’implémentation choisie.
 
 ## Créer une connexion dans Customer Journey Analytics
 
@@ -35,13 +35,13 @@ Après avoir implémenté la collecte de médias en flux continu via Edge Networ
       | Composant | Type | Chemin XDM | Étiquette de contexte |
       |---|---|---|---|
       | [Contenu](/help/reporting/dimensions/content.md) | Dimension | `mediaReporting.sessionDetails.name` | Média : ID de contenu |
-      | [ Nom du contenu ](/help/reporting/dimensions/content-name.md) | Dimension | `mediaReporting.sessionDetails.friendlyName` | Média : nom de la vidéo |
-      | [ Longueur du contenu ](/help/reporting/dimensions/content-length.md) | Dimension | `mediaReporting.sessionDetails.length` | Média : durée de la vidéo |
+      | [&#x200B; Nom du contenu &#x200B;](/help/reporting/dimensions/content-name.md) | Dimension | `mediaReporting.sessionDetails.friendlyName` | Média : nom de la vidéo |
+      | [&#x200B; Longueur du contenu &#x200B;](/help/reporting/dimensions/content-length.md) | Dimension | `mediaReporting.sessionDetails.length` | Média : durée de la vidéo |
       | [Afficher](/help/reporting/dimensions/show.md) | Dimension | `mediaReporting.sessionDetails.show` | Média : afficher |
-      | [ Saison ](/help/reporting/dimensions/season.md) | Dimension | `mediaReporting.sessionDetails.season` | Média : Saison |
+      | [&#x200B; Saison &#x200B;](/help/reporting/dimensions/season.md) | Dimension | `mediaReporting.sessionDetails.season` | Média : Saison |
       | [Épisode](/help/reporting/dimensions/episode.md) | Dimension | `mediaReporting.sessionDetails.episode` | Média : épisode |
       | Type d’événement | Dimension | `eventType` | Média : type d’événement |
-      | [ Temps passé sur le contenu ](/help/reporting/metrics/content-time-spent.md) | Mesure | `mediaReporting.sessionDetails.timePlayed` | Média : temps passé sur le contenu |
+      | [&#x200B; Temps passé sur le contenu &#x200B;](/help/reporting/metrics/content-time-spent.md) | Mesure | `mediaReporting.sessionDetails.timePlayed` | Média : temps passé sur le contenu |
       | [Temps passé sur le média](/help/reporting/metrics/media-time-spent.md) | Mesure | `mediaReporting.sessionDetails.totalTimePlayed` | Média : temps passé sur le média |
       | [Durée totale de la pause](/help/reporting/metrics/total-pause-duration.md) | Mesure | `mediaReporting.sessionDetails.pauseTime` | Média : durée totale de pause |
       | [Heure de commencer](/help/reporting/metrics/time-to-start.md) | Mesure | `mediaReporting.qoeDataDetails.timeToStart` | Média : heure de début |

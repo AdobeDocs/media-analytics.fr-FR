@@ -23,9 +23,9 @@ Quelle que soit la base de code que vous utilisez (Web SDK, Mobile SDK (iOS ou A
 1. **Remplir les conditions préalables générales.** Voir les [conditions préalables générales](/help/getting-started/prereqs.md).
 
 1. **Confirmez la compatibilité d’une solution Adobe.** Vous devez disposer d’une implémentation fonctionnelle d’au moins l’un des éléments suivants :
-   * [Customer Journey Analytics ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=fr) — la destination principale de création de rapports pour les données multimédia basées sur Edge
-   * [Adobe Analytics ](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr) — pris en charge avec ou à la place de CJA via le même flux de données
-   * [](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=fr) ou [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=fr) — ajoutez le service **[!UICONTROL Adobe Experience Platform]** à votre flux de données lors de la configuration de l’un de ces éléments
+   * [Customer Journey Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=fr) — la destination principale de création de rapports pour les données multimédia basées sur Edge
+   * [Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr) — pris en charge avec ou à la place de CJA via le même flux de données
+   * [&#128279;](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=fr) ou [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=fr) — ajoutez le service **[!UICONTROL Adobe Experience Platform]** à votre flux de données lors de la configuration de l’un de ces éléments
 
 ## Configurer le schéma dans Adobe Experience Platform
 
@@ -118,7 +118,7 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
    +++ Développez pour afficher les instructions sur l’ajout de métadonnées personnalisées à votre schéma.
 
-   1. Recherchez le nom du client de l’organisation en sélectionnant **[!UICONTROL Informations sur le compte]** > **[!UICONTROL Organisations affectées]** > [!UICONTROL _**nom de l’organisation**_] > **[!UICONTROL client]**.
+   1. Recherchez le nom du client de l’organisation en sélectionnant **[!UICONTROL Informations sur le compte]** > **[!UICONTROL Organisations affectées]** > [!UICONTROL _&#x200B;**nom de l’organisation**&#x200B;_] > **[!UICONTROL client]**.
 
       Les champs personnalisés sont reçus via ce chemin d’accès. (Par exemple, nom du client : _dcbl → chemin myCustomField : _dcbl.myCustomField.)
 
@@ -158,9 +158,9 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
    * Ajoutez le ou les services appropriés au flux de données en fonction de votre solution Adobe. Pour plus d’informations sur l’ajout d’un service, voir « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
 
-      * **** (si vous utilisez Adobe Analytics) — définissez une suite de rapports comme décrit dans la section [Créer une suite de rapports](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+      * **&#x200B;**&#x200B;(si vous utilisez Adobe Analytics) — définissez une suite de rapports comme décrit dans la section [Créer une suite de rapports](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
-      * **** (si vous utilisez Customer Journey Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform)
+      * **&#x200B;**&#x200B;(si vous utilisez Customer Journey Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform)
 
      ![Ajouter le service Adobe Analytics](assets/datastream-add-service.png)
 
@@ -180,7 +180,7 @@ Les implémentations **en code** écrivent des appels SDK directement dans le co
 | iOS | [iOS](ios.md) | [iOS (Balises)](ios-tags.md) |
 | Android | [Android](android.md) | [Android (Balises)](android-tags.md) |
 | Roku | [Roku](roku.md) | — |
-| API | [ API Media Edge ](media-edge-api.md) | — |
+| API | [&#x200B; API Media Edge &#x200B;](media-edge-api.md) | — |
 
 ## Étape suivante
 
@@ -191,6 +191,6 @@ Après avoir commencé à collecter des données, vous pouvez configurer les rap
 
 >[!MORELIKETHIS]
 >
->* [ Prise en charge des métadonnées personnalisées ](custom-metadata.md)
+>* [&#x200B; Prise en charge des métadonnées personnalisées &#x200B;](custom-metadata.md)
 >* [Schéma de reporting XDM](reporting-schema.md)
 >* [Présentation des événements](/help/implementation/events/overview.md)
