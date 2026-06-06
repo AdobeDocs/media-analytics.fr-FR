@@ -5,10 +5,10 @@ user-guide-title: Guide des services des médias en streaming
 breadcrumb-title: Guide des services des médias en streaming
 user-guide-description: Implémentez des services de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
 workflow-type: tm+mt
-source-wordcount: '698'
-ht-degree: 33%
+source-wordcount: '694'
+ht-degree: 32%
 
 ---
 
@@ -164,6 +164,7 @@ ht-degree: 33%
             + [Conditions d’expiration](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Contrôle de l’ordre des événements](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Événements de mise en file d’attente lorsque la réponse des sessions est lente](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
+   + [Paramètres d’opt-out et de confidentialité](implementation/opt-out-privacy.md)
 + Création de rapports {#reporting}
    + Configurer des rapports {#reporting-setup}
       + [Implémentations d’Edge](reporting/setup/edge-reporting.md)
@@ -298,6 +299,3 @@ ht-degree: 33%
       + [Chronologie : Chapitres](use-cases/scenarios/chapter-start-end.md)
       + [Chronologie : Afficher jusqu’à la fin](use-cases/scenarios/view-to-end-of-content.md)
       + [Chronologie : l’utilisateur abandonne la session](use-cases/scenarios/user-abandons-session.md)
-+ Confidentialité et sécurité {#streaming-media-privacy}
-   + [Paramètres d’opposition et de confidentialité](privacy/opt-out-privacy.md)
-   + [Sécurité](privacy/security.md)
