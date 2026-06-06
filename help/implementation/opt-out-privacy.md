@@ -65,7 +65,7 @@ Valeurs de consentement :
 
 Pour restaurer le suivi, appelez de nouveau `setConsent` avec `"y"` comme valeur `collect.val`.
 
-Voir la [commande setConsent](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/commands/setconsent) dans la documentation de Web SDK pour d’autres formats, y compris IAB TCF 2.0.
+Voir la [commande setConsent](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/commands/setconsent) dans la documentation de Web SDK pour d’autres formats, y compris IAB TCF 2.0.
 
 >[!TAB iOS]
 
