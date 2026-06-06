@@ -1,5 +1,5 @@
 ---
-title: Présentation de la désinscription et de la confidentialité
+title: Paramètres d’opt-out et de confidentialité
 description: Découvrez comment gérer lʼinscription, la désinscription et la confidentialité.
 uuid: 7e60c7bd-8dba-4c7a-9c3c-0c634b815397
 exl-id: 64f5ef2b-7850-43d8-8f32-3d008ea4f156
@@ -18,14 +18,14 @@ topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
   - id: d3cdead0-685a-4489-9250-4bb709942f66
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: c25d3cd6248f547e5a32a080eb89c5ad8f58c474
 workflow-type: tm+mt
-source-wordcount: 750
-ht-degree: 4%
+source-wordcount: 751
+ht-degree: 3%
 
 ---
 
-# Exclusion et confidentialité
+# Paramètres d’opt-out et de confidentialité
 
 Lorsqu’un utilisateur se désinscrit du suivi, la bibliothèque de médias en flux continu arrête immédiatement toute activité de collecte de données. Aucun appel de démarrage de session, aucun ping de pulsation et aucune donnée de suivi d’événement n’est envoyée aux serveurs de collecte de données Adobe pour cet utilisateur.
 
