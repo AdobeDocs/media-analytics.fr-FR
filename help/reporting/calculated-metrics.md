@@ -3,18 +3,18 @@ title: Mesures calculées
 description: Mesures calculées personnalisées pour les rapports de médias en flux continu dans Adobe Analytics et Customer Journey Analytics.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: cb3770abd06eb8debe4ff92641835f04f62471f7
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 5%
+source-wordcount: '269'
+ht-degree: 4%
 
 ---
 
-# Mesures calculées
+# Mesures calculées du streaming multimédia
 
 Les mesures calculées pour les services de médias en flux continu Adobe sont des mesures personnalisées créées à partir des mesures de médias en flux continu standard. Vous pouvez ainsi obtenir des ratios tels que le temps de publicité moyen ou le taux d’achèvement des médias sans modifier votre implémentation.
 
-Pour créer ces mesures calculées dans Analysis Workspace, consultez la présentation des mesures calculées respectives dans [Adobe Analytics](https://experienceleague.adobe.com/fr/docs/analytics/components/calculated-metrics/cm-overview) ou [Customer Journey Analytics](https://experienceleague.adobe.com/fr/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
+Pour créer ces mesures calculées dans Analysis Workspace, consultez la présentation des mesures calculées respectives dans [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics/components/calculated-metrics/cm-overview) ou [Customer Journey Analytics](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-components/cja-calcmetrics/calc-metr-overview).
 
 | Mesure calculée | Description | Formule |
 | --- | --- | --- |
