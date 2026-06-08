@@ -28,7 +28,7 @@ Le type de chargement de l’annonce est défini par le lecteur au début de la 
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.adLoad` de données contextuelles lorsque [[!UICONTROL Streaming Media]](/help/reporting/setup/analytics-reporting.md) est configuré. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.adLoad`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.adLoad`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données | `videoadload`, `post_videoadload` |
 | Audience Manager | `c_contextdata.a.media.adLoad` |
 

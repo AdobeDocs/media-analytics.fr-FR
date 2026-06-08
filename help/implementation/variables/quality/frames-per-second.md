@@ -18,7 +18,7 @@ La variable images par seconde est la fréquence d’images actuelle du flux. D�
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | Aucune (Adobe Analytics n’attribue pas de clé de données contextuelles réservée pour la fréquence d’image) |
-| **champ de collection XDM** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.qoeDataDetails.framesPerSecond`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Caractéristique** | S.O. |
 | **Obligatoire** | Non |
 | **Envoyé avec** | Événements de qualité ([changement de débit](/help/implementation/events/playback/bitrate-change.md), [début de la mémoire tampon](/help/implementation/events/playback/buffer-start.md), [erreur](/help/implementation/events/error.md)), fermeture de la session |

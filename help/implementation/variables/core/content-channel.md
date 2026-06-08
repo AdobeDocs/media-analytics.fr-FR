@@ -24,7 +24,7 @@ La variable de canal de contenu identifie la station de distribution, le réseau
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.channel` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.channel` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |

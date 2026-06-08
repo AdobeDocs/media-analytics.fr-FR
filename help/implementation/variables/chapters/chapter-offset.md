@@ -24,7 +24,7 @@ La variable de décalage de chapitre est le décalage du chapitre à l’intéri
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.chapter.offset` |
-| **champ de collection XDM** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.chapterDetails.offset`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.chapter.offset` |
 | **Obligatoire** | Non (Mobile SDK) ; Oui (Edge, API Media Collection) |
 | **Envoyé avec** | [Début du chapitre](/help/implementation/events/chapters/chapter-start.md), fermeture du chapitre |

@@ -31,7 +31,7 @@ Quelle que soit la base de code que vous utilisez, vous devez d’abord effectue
 
 Afin de normaliser la collecte de données entre les applications qui utilisent Adobe Experience Platform, Adobe a créé la norme XDM (modèle de données d’expérience) ouverte et documentée publiquement.
 
-1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=en).
+1. Dans Adobe Experience Platform, commencez à créer le schéma comme décrit dans [Création et modification de schémas dans l’interface utilisateur](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/resources/schemas.html?lang=fr).
 
 1. Sur la page Détails du schéma , choisissez **[!UICONTROL Événement d’expérience]** comme classe de base du schéma.
 
@@ -130,7 +130,7 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
       ![add-custom-metadata](assets/add-custom-fields.png)
 
-   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
+   1. [Utilisez le chemin d’accès généré](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/ui/fields/overview#type-specific-properties) pour le champ personnalisé dans la payload de votre requête.
 
       ![add-custom-metadata](assets/custom-fields-path.png)
 
@@ -156,9 +156,9 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
      ![Créer un flux de données et sélectionner un schéma](assets/datastream-create-schema.png)
 
-   * Ajoutez le ou les services appropriés au flux de données en fonction de votre solution Adobe. Pour plus d’informations sur l’ajout d’un service, voir « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=en#view-details).
+   * Ajoutez le ou les services appropriés au flux de données en fonction de votre solution Adobe. Pour plus d’informations sur l’ajout d’un service, voir « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr#view-details).
 
-      * **&#x200B;**&#x200B;(si vous utilisez Adobe Analytics) : définissez une suite de rapports comme décrit dans la section [Créer une suite de rapports](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+      * **&#x200B;**&#x200B;(si vous utilisez Adobe Analytics) : définissez une suite de rapports comme décrit dans la section [Créer une suite de rapports](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * **&#x200B;**&#x200B;(si vous utilisez Customer Journey Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform)
 
@@ -172,7 +172,7 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
 Une fois le schéma, le jeu de données et le flux de données en place, implémentez l’une des bases de code suivantes pour commencer à envoyer des données de médias en flux continu à Edge Network. Chaque page couvre la configuration spécifique aux médias en flux continu. Le code par événement et par variable réside dans [Événements](/help/implementation/events/overview.md) et [Variables](/help/implementation/variables/overview.md).
 
-Les implémentations **en code** écrivent des appels SDK directement dans le code source de votre application. **À l’aide de balises** les implémentations utilisent [les balises Adobe Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home) ce qui vous permet de configurer et de déployer des règles de suivi sans modifier le code de votre application. Choisissez l’approche qui convient le mieux à votre workflow de déploiement.
+Les implémentations **en code** écrivent des appels SDK directement dans le code source de votre application. **À l’aide de balises** les implémentations utilisent [les balises Adobe Experience Platform](https://experienceleague.adobe.com/fr/docs/experience-platform/tags/home) ce qui vous permet de configurer et de déployer des règles de suivi sans modifier le code de votre application. Choisissez l’approche qui convient le mieux à votre workflow de déploiement.
 
 | Base de code | In-code | Utilisation des balises |
 |---|---|---|

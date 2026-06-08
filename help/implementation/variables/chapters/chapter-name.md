@@ -24,7 +24,7 @@ La variable de nom du chapitre est le titre lisible d’un chapitre (par exemple
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.chapter.friendlyName` |
-| **champ de collection XDM** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.chapterDetails.friendlyName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.chapter.friendlyName` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début du chapitre](/help/implementation/events/chapters/chapter-start.md), fermeture du chapitre |
