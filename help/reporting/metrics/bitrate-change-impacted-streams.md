@@ -3,7 +3,7 @@ title: Flux impactés par le changement de débit
 description: Comptabilise les sessions au cours desquelles au moins un changement de débit s’est produit.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Flux impactés par le changement de débit
 
-Le **changement de débit a eu un impact sur les flux** la mesure comptabilise les sessions au cours desquelles au moins un changement de débit s’est produit. La mesure est une valeur booléenne au niveau de la session : plusieurs modifications de débit au sein du même nombre de sessions qu’un flux concerné. Pour le volume total de changement de débit, utilisez [Changements de débit](/help/reporting/dimensions/bitrate-changes.md).
+Le **changement de débit a eu un impact sur les flux** la mesure comptabilise les sessions au cours desquelles au moins un changement de débit s’est produit. La mesure est un booléen au niveau de la session ; plusieurs modifications de débit au sein du même nombre de sessions sont comptabilisées comme un flux affecté. Pour le volume total de changement de débit, utilisez [Changements de débit](/help/reporting/dimensions/bitrate-changes.md).
 
 ## Méthode de calcul de cette mesure
 

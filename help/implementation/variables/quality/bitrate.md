@@ -3,10 +3,10 @@ title: Débit binaire
 description: Définissez le débit de lecture actuel (en Kbits/s) sur l’objet QoE afin que le serveur principal puisse calculer les mesures de débit.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 6%
+source-wordcount: '307'
+ht-degree: 5%
 
 ---
 
@@ -81,7 +81,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Définissez des `bitrate` à l’intérieur des `xdm.mediaCollection.qoeDataDetails` lors de l’appel de `sendMediaEvent` pour des événements de qualité tels que `media.bitrateChange` :
 
@@ -156,6 +156,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Transmettez le débit en kbit/s comme premier argument pour `adb_media_init_qosinfo` et mettre à jour le dispositif de suivi avec `mediaUpdateQoS` :
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB  API Media Collection ]

@@ -3,10 +3,10 @@ title: Publicité terminée
 description: Signalez qu’une publicité individuelle a fini de fonctionner.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 9%
+source-wordcount: '173'
+ht-degree: 8%
 
 ---
 
@@ -58,7 +58,7 @@ Appelez `trackEvent` avec le type d’événement `AdComplete`.
 tracker.trackEvent(Media.Event.AdComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Appelez `sendMediaEvent` avec `eventType: "media.adComplete"` :
 
@@ -114,6 +114,15 @@ Appelez `trackEvent` avec le type d’événement `AdComplete` :
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Appelez `mediaTrackEvent` avec le type d’événement `MEDIA_AD_COMPLETE` :
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_COMPLETE)
 ```
 
 >[!TAB  API Media Collection ]

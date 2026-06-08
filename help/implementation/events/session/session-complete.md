@@ -3,10 +3,10 @@ title: Session terminée
 description: Signale que la visionneuse a atteint la fin du contenu principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 9%
+source-wordcount: '179'
+ht-degree: 8%
 
 ---
 
@@ -54,7 +54,7 @@ Appelez `trackComplete` lorsque le lecteur multimédia atteint la fin du contenu
 tracker.trackComplete()
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Appelez `sendMediaEvent` avec `eventType: "media.sessionComplete"` :
 
@@ -110,6 +110,14 @@ Appelez `trackComplete` lorsque le lecteur multimédia atteint la fin du contenu
 
 ```javascript
 ADBMobile.media.trackComplete();
+```
+
+>[!TAB Roku 2.x]
+
+Appelez `mediaTrackComplete` lorsque le lecteur multimédia atteint la fin du contenu :
+
+```brightscript
+ADBMobile().mediaTrackComplete()
 ```
 
 >[!TAB  API Media Collection ]

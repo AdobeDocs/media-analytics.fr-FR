@@ -3,7 +3,7 @@ title: Flux impactés par le plein écran
 description: Comptabilise les sessions au cours desquelles la visionneuse est entrée en plein écran au moins une fois.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-La mesure **Flux affectés par le plein écran** comptabilise les sessions au cours desquelles la visionneuse est entrée en plein écran au moins une fois. La mesure est une valeur booléenne au niveau de la session : plusieurs entrées plein écran dans le même nombre de sessions sont comptabilisées comme un flux affecté. Pour le volume d’entrée plein écran total, utilisez [Nombre de pages plein écran](full-screen-count.md).
+La mesure **Flux affectés par le plein écran** comptabilise les sessions au cours desquelles la visionneuse est entrée en plein écran au moins une fois. La mesure est un booléen au niveau de la session ; plusieurs entrées en plein écran au sein d’une même session comptent comme un flux affecté. Pour le volume d’entrée plein écran total, utilisez [Nombre de pages plein écran](full-screen-count.md).
 
 ## Méthode de calcul de cette mesure
 

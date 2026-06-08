@@ -3,10 +3,10 @@ title: Identifiant de publicité
 description: Identifiez de manière unique une publicité.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 10%
+source-wordcount: '232'
+ht-degree: 9%
 
 ---
 
@@ -82,7 +82,7 @@ val adObject = Media.createAdObject("Ford F-150",
 tracker.trackEvent(Media.Event.AdStart, adObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `name` à l’intérieur des `xdm.mediaCollection.advertisingDetails` lors de l’appel de `sendMediaEvent` pour `media.adStart` :
 
@@ -161,6 +161,17 @@ var adInfo = ADBMobile.media.createAdObject(
   30
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Transmettez l’ID d’annonce comme deuxième argument à `adb_media_init_adinfo` :
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)  ' name, id, position, length
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB  API Media Collection ]

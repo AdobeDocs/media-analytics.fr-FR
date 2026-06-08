@@ -3,29 +3,29 @@ title: Présentation de l’implémentation d’Edge
 description: Configurez le schéma, le jeu de données et le flux de données Adobe Experience Platform requis pour collecter des données de médias en flux continu via Edge Network.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1282'
 ht-degree: 5%
 
 ---
 
 # Présentation de l’implémentation d’Edge
 
-Adobe Experience Platform Edge Network vous permet d’envoyer les données destinées à plusieurs produits à un seul point d’entrée, qui transmet ensuite les informations appropriées à chaque produit. Il s’agit de la méthode recommandée pour implémenter Streaming Media Collection, et de la seule qui prend en charge Adobe Analytics et Customer Journey Analytics à partir d’une seule instrumentation.
+Adobe Experience Platform Edge Network vous permet d’envoyer les données destinées à plusieurs produits à un seul point d’entrée, qui transmet ensuite les informations appropriées à chaque produit. Il s’agit de la méthode recommandée pour mettre en œuvre la collection de médias en flux continu. Il s’agit de la seule approche qui prend en charge Adobe Analytics et Customer Journey Analytics à partir d’une seule mise en œuvre.
 
 Contrairement à l’approche Media SDK héritée, qui nécessitait une instrumentation spécifique au produit pour chaque solution Adobe, une implémentation d’Edge utilise un modèle de données XDM partagé et un flux de données unique. Les données circulent de votre SDK ou API vers Edge Network, qui les achemine ensuite vers les produits Adobe configurés dans le flux de données (Analytics, CJA, AJO ou RTCDP). Cela signifie que le changement ou l’ajout ultérieur de produits en aval ne nécessite pas de réinstrumenter vos événements multimédia.
 
-Quelle que soit la base de code que vous utilisez (Web SDK, Mobile SDK (iOS ou Android), Roku SDK ou l’API Media Edge), vous devez d’abord effectuer la configuration de la plateforme décrite sur cette page : créer un schéma, créer un jeu de données et configurer un flux de données.
+Quelle que soit la base de code que vous utilisez, vous devez d’abord effectuer la configuration de la plateforme décrite sur cette page : créer un schéma, créer un jeu de données et configurer un flux de données.
 
 ## Conditions préalables
 
 1. **Remplir les conditions préalables générales.** Voir les [conditions préalables générales](/help/getting-started/prereqs.md).
 
 1. **Confirmez la compatibilité d’une solution Adobe.** Vous devez disposer d’une implémentation fonctionnelle d’au moins l’un des éléments suivants :
-   * [Customer Journey Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=fr) — la destination principale de création de rapports pour les données multimédia basées sur Edge
-   * [Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr) — pris en charge avec ou à la place de CJA via le même flux de données
-   * [&#128279;](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=fr) ou [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=fr) — ajoutez le service **[!UICONTROL Adobe Experience Platform]** à votre flux de données lors de la configuration de l’un de ces éléments
+   * [&#128279;](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=fr) : destination de création de rapports principale pour les données multimédia basées sur Edge
+   * [Adobe Analytics &#x200B;](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=fr) : pris en charge avec ou à la place de CJA via le même flux de données
+   * [&#128279;](https://experienceleague.adobe.com/docs/journey-optimizer.html?lang=fr) ou [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/real-time-customer-data-platform.html?lang=fr) : ajoutez le service **[!UICONTROL Adobe Experience Platform]** à votre flux de données lors de la configuration de l’un de ces éléments
 
 ## Configurer le schéma dans Adobe Experience Platform
 
@@ -158,7 +158,7 @@ Afin de normaliser la collecte de données entre les applications qui utilisent 
 
    * Ajoutez le ou les services appropriés au flux de données en fonction de votre solution Adobe. Pour plus d’informations sur l’ajout d’un service, voir « Ajouter des services à un flux de données » dans [Configurer un flux de données](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=fr#view-details).
 
-      * **&#x200B;**&#x200B;(si vous utilisez Adobe Analytics) — définissez une suite de rapports comme décrit dans la section [Créer une suite de rapports](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
+      * **&#x200B;**&#x200B;(si vous utilisez Adobe Analytics) : définissez une suite de rapports comme décrit dans la section [Créer une suite de rapports](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
       * **&#x200B;**&#x200B;(si vous utilisez Customer Journey Analytics, Adobe Journey Optimizer ou Real-Time Customer Data Platform)
 
@@ -179,7 +179,7 @@ Les implémentations **en code** écrivent des appels SDK directement dans le co
 | Web | [SDK Web](web-sdk.md) | [Extension de balise Web SDK](web-sdk-tags.md) |
 | iOS | [iOS](ios.md) | [iOS (Balises)](ios-tags.md) |
 | Android | [Android](android.md) | [Android (Balises)](android-tags.md) |
-| Roku | [Roku](roku.md) | — |
+| Roku | [Roku Edge](roku.md) | — |
 | API | [&#x200B; API Media Edge &#x200B;](media-edge-api.md) | — |
 
 ## Étape suivante

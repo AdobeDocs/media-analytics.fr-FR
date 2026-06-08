@@ -1,5 +1,5 @@
 ---
-title: Prise en charge des métadonnées personnalisées
+title: Prise en charge des métadonnées personnalisées de l’API Media Collection
 description: Découvrez comment fournir des paires clé-valeur personnalisées sur les événements sessionStart, chapterStart et adStart.
 uuid: df4109dd-9fca-4c33-a7d5-8e6eec257527
 exl-id: 672fa804-4a4f-4f06-b29b-b0aad27ca2f3
@@ -18,14 +18,14 @@ topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
   - id: aa2f3246-cb95-4b30-8899-fdf7d73550cc
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 449
-ht-degree: 7%
+source-wordcount: 435
+ht-degree: 5%
 
 ---
 
-# Prise en charge des métadonnées personnalisées{#custom-metadata-support}
+# Prise en charge des métadonnées personnalisées de l’API Media Collection
 
 L’API Media Collection vous permet d’envoyer des paires clé-valeur personnalisées avec des paramètres standard dans les événements `sessionStart`, `adStart` et `chapterStart`. Les métadonnées personnalisées sont transférées vers **&#x200B;**&#x200B;avec les événements de fermeture de média correspondants.
 
@@ -80,7 +80,7 @@ Les métadonnées personnalisées sont un **objet** plat (paires clé-valeur) au
 
 ### Principales exigences en matière de dénomination
 
-* Évitez d’utiliser le préfixe `media.` dans les clés de métadonnées personnalisées : il correspond aux champs de média standard et peut les remplacer dans les rapports Analytics
+* Évitez d’utiliser le préfixe `media.` dans les clés de métadonnées personnalisées. Il mappe vers les champs de média standard et peut les remplacer dans les rapports Analytics
 * Le préfixe `a.` est réservé aux métadonnées Adobe standard et ne doit pas être utilisé
 
 ## Métadonnées personnalisées du contenu principal
@@ -179,13 +179,6 @@ curl -X POST "https://{uri}/api/v1/sessions/{sid}/events" \
 * `sessionStart` métadonnées sont conservées pendant toute la session ; les mises à jour nécessitent une nouvelle session
 * Chaque événement `adStart` et `chapterStart` peut comporter différentes métadonnées personnalisées
 
-## Documentation connexe
-
-* [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/custom-metadata.md) — Envoyez des métadonnées personnalisées via Experience Edge à Analytics et à AEP
-* [Connecteur source Adobe Analytics pour les données de suite de rapports &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics) — Importer les données Analytics dans Adobe Experience Platform
-
-<!--
-* [Session endpoints](sessions.md) — Session lifecycle management
-* [Ad endpoints](ads.md) — Track advertising impressions
-* [Chapter endpoints](chapters.md) — Segment content into chapters
--->
+>[!MORELIKETHIS]
+>* [Prise en charge des métadonnées personnalisées - Format XDM](/help/implementation/edge/custom-metadata.md)
+>* [Connecteur source Adobe Analytics pour les données de suite de rapports](https://experienceleague.adobe.com/fr/docs/experience-platform/sources/connectors/adobe-applications/analytics)

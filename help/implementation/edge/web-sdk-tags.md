@@ -3,7 +3,7 @@ title: Configurer l’extension de balise Web SDK pour les médias en flux conti
 description: Configurez la collecte de médias en flux continu dans l’extension de balises Adobe Experience Platform Web SDK.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -23,10 +23,10 @@ L’extension de balise Adobe Experience Platform Web SDK vous permet de configu
 1. Dans l’interface utilisateur de collecte de données, ouvrez votre propriété web et sélectionnez **[!UICONTROL Extensions]**.
 1. Sur l’extension Adobe Experience Platform Web SDK **installée, sélectionnez**&#x200B;[!UICONTROL &#x200B; Configurer &#x200B;]&#x200B;**.**
 1. Développez la section **[!UICONTROL Streaming Media]** et définissez les éléments suivants :
-   * **[!UICONTROL Canal]** : nom du canal indiqué pour chaque session.
+   * **[!UICONTROL Canal]** : nom du canal signalé pour chaque session.
    * **[!UICONTROL Nom du lecteur]** : nom du lecteur multimédia utilisé.
-   * **[!UICONTROL Version de l’application]** — La version de votre application de lecteur.
-   * **[!UICONTROL Intervalle de ping principal]** et **[!UICONTROL Intervalle de ping des publicités]** — la cadence de ping (en secondes) pour le contenu principal et les publicités.
+   * **[!UICONTROL Version de l’application]** : version de votre application de lecteur.
+   * **[!UICONTROL Intervalle de ping principal]** et **[!UICONTROL Intervalle de ping des annonces]** : cadence du ping (en secondes) pour le contenu principal et les annonces.
 1. Enregistrez la configuration de l’extension et publiez vos modifications.
 
 ## Suivi des événements multimédia

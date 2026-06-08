@@ -23,10 +23,10 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
   - id: d3cdead0-685a-4489-9250-4bb709942f66
-source-git-commit: b18eab3deb3d15a08adf2f7ecf61d73235bbc6e5
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 575
-ht-degree: 32%
+source-wordcount: 625
+ht-degree: 30%
 
 ---
 
@@ -44,7 +44,7 @@ Les implémentations d’Edge collectent des données une seule fois et les diff
 | [![Icône Apple iOS](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [Configuration d’iOS pour les médias en flux continu](/help/implementation/edge/ios.md) | [Exemple](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | [![Icône d’extension](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Extension de balise Android](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Configurer l’extension de balise Android pour les médias en flux continu](/help/implementation/edge/android-tags.md) | |
 | [![Icône d’extension](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Extension de balise iOS/tvOS](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Configurer l’extension de balise iOS pour les médias en flux continu](/help/implementation/edge/ios-tags.md) | |
-| [![Icône Roku](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[SDK Roku](https://github.com/adobe/aepsdk-roku) | [Configuration de Roku pour les médias en flux continu](/help/implementation/edge/roku.md) | [Exemple](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
+| [![icône Roku](assets/roku-icon.png)](https://github.com/adobe/aepsdk-roku)<br>[SDK Edge Roku](https://github.com/adobe/aepsdk-roku) | [Configuration de Roku Edge pour les médias en flux continu](/help/implementation/edge/roku.md) | [Exemple](https://github.com/adobe/aepsdk-roku/tree/main/sample/simple-videoplayer-channel) |
 | [![Icône API](assets/api.png)](https://developer.adobe.com/data-collection-apis/docs/api/media-edge)<br>[API Media Edge](https://developer.adobe.com/data-collection-apis/docs/api/media-edge) | [Configurer l’API Media Edge](/help/implementation/edge/media-edge-api.md) | [Exemple](https://developer.adobe.com/data-collection-apis/docs/getting-started/media-edge-examples) |
 
 ## Implémentations Analytics uniquement {#analytics-only-sdks}
@@ -56,4 +56,5 @@ Ces SDK et extensions envoient directement des données à Adobe Analytics. Pour
 | [![Icône &#x200B;](assets/javascript-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2)<br>[Media SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Configuration de JavaScript pour les médias en flux continu](/help/implementation/analytics-only/javascript.md) | [Exemple](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | [![Icône d’extension](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr)<br>[Extension Media](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr) | [Configuration de JavaScript à l’aide de balises pour les médias en flux continu](/help/implementation/analytics-only/javascript-tags.md) | [Exemple](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | [![Icône Chromecast](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Configurer Chromecast pour les médias en flux continu](/help/implementation/analytics-only/chromecast.md) | [Exemple](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
+| [![Icône Roku](assets/roku-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7)<br>[Roku SDK 2.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7) | [Configuration de Roku 2.x pour les médias en flux continu](/help/implementation/analytics-only/roku-2x.md) | [Exemple](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/roku/samples) |
 | [![Icône API](assets/api.png)](/help/implementation/media-collection-api/mc-api-overview.md)<br>[API Media Collection](/help/implementation/media-collection-api/mc-api-overview.md) | [Configurer l’API Media Collection](/help/implementation/analytics-only/media-collection-api.md) | |

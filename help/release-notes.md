@@ -26,9 +26,9 @@ topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
   - id: c1579802-ddd4-4214-8a91-97b2066abe11
   - id: e1e0219c-f879-479f-8427-888ed2a6e9c2
-source-git-commit: 7b5232f25f3aa26e8566783557163f316af3fe57
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 720
+source-wordcount: 722
 ht-degree: 36%
 
 ---
@@ -54,7 +54,7 @@ ht-degree: 36%
 | Fonctionnalité | Description | Date |
 | --- | --- | --- |
 | **Prise en charge de Web SDK** | Envoyez des données web de médias en flux continu à Adobe Experience Platform Edge Network à l’aide de l’extension de balise Web SDK ou Web SDK, ce qui permet d’appliquer une méthode de collecte unifiée à l’ensemble des solutions Platform telles que Customer Journey Analytics, Real-time CDP, Journey Optimizer et le transfert d’événement. Voir [Configuration de Web SDK pour les médias en flux continu](/help/implementation/edge/web-sdk.md) ou [Configuration de l’extension de balise Web SDK pour les médias en flux continu](/help/implementation/edge/web-sdk-tags.md) pour plus d’informations. | 29 mai 2024 |
-| **Prise en charge de Roku** | Envoyez des données de médias en flux continu à Adobe Experience Platform à l’aide de Roku SDK. Voir [Configuration de Roku pour les médias en flux continu](/help/implementation/edge/roku.md) pour plus d’informations. | 12 avril 2024 |
+| **Prise en charge de Roku** | Envoyez des données de médias en flux continu à Adobe Experience Platform à l’aide du SDK Roku Edge. Voir [Configuration de Roku Edge pour les médias en flux continu](/help/implementation/edge/roku.md) pour plus d’informations. | 12 avril 2024 |
 
 ## 2023
 

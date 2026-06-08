@@ -3,7 +3,7 @@ title: Configuration d’iOS pour les médias en flux continu avec les balises
 description: Configurez la collecte de médias en flux continu pour iOS à l’aide de l’extension de balise Adobe Streaming Media for Edge Network.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 1%
@@ -23,9 +23,9 @@ Vous pouvez configurer la collecte de médias en flux continu pour votre applica
 1. Dans l’interface utilisateur de collecte de données, ouvrez votre propriété mobile et sélectionnez **[!UICONTROL Extensions]**.
 1. Dans l’onglet **[!UICONTROL Catalogue]**, recherchez l’extension **Adobe Streaming Media for Edge Network** et sélectionnez **[!UICONTROL Installer]**.
 1. Définissez les éléments suivants, puis enregistrez :
-   * **[!UICONTROL Canal]** : nom du canal indiqué pour chaque session.
+   * **[!UICONTROL Canal]** : nom du canal signalé pour chaque session.
    * **[!UICONTROL Nom du lecteur]** : nom du lecteur multimédia utilisé.
-   * **[!UICONTROL Version de l’application]** — La version de votre application de lecteur.
+   * **[!UICONTROL Version de l’application]** : la version de votre application de lecteur.
 1. Publiez vos modifications, puis ajoutez les dépendances `AEPCore`, `AEPEdge`, `AEPEdgeIdentity` et `AEPEdgeMedia` à votre application et enregistrez-les avec Mobile Core.
 
 ## Suivi des événements multimédia

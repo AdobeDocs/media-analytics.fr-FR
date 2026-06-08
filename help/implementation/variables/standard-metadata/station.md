@@ -3,10 +3,10 @@ title: Station
 description: Définissez le nom ou l’ID de la station radio pour le contenu de diffusion audio.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 10%
+source-wordcount: '234'
+ht-degree: 9%
 
 ---
 
@@ -73,7 +73,7 @@ metadata[MediaConstants.AudioMetadataKeys.STATION] = "NPR"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Utilisez `createMediaSession` pour définir des `station` dans `sessionDetails` :
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.AudioMetadataKeys.STATION] = "NPR";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Utilisez `MEDIA_AudioMetadataKeySTATION` pour définir le nom de la station dans les métadonnées standard de l&#39;objet média avant d&#39;appeler `mediaTrackSessionStart` :
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Track", "audio-123", 240.0, adb.MEDIA_STREAM_TYPE_AOD, adb.MEDIA_TYPE_AUDIO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_AudioMetadataKeySTATION] = "NPR"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB  API Media Collection ]

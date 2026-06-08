@@ -3,9 +3,9 @@ title: Prise en charge des métadonnées personnalisées - Format XDM
 description: Découvrez comment envoyer des métadonnées personnalisées avec des événements de suivi multimédia à l’aide du format XDM Experience Edge.
 feature: Streaming Media
 role: User, Admin, Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -113,7 +113,7 @@ Contrairement à `xdm.mediaCollection.customMetadata` qui utilise un **tableau d
 ### Conventions de dénomination
 
 * **Format XDM :** préfixe avec espace de noms client utilisant un trait de soulignement. Vous pouvez également créer des structures dans votre groupe de champs personnalisés client, telles que `_<tenant>.<struct_name>.<field_name>`.
-* **`_data`format : les champs** sont placés sous `_data.__adobe.analytics.contextData` — aucun préfixe de trait de soulignement n’est requis sur le nom du champ (par exemple, `debugFlag`)
+* **`_data`format : les champs** sont placés sous `_data.__adobe.analytics.contextData`. Aucun préfixe de soulignement n’est requis sur le nom du champ (par exemple, `debugFlag`).
 
 ## Métadonnées personnalisées du contenu principal
 
@@ -250,7 +250,7 @@ curl -X POST "https://edge.adobedc.net/ee/va/v1/chapterStart?configId={datastrea
 
 ## Utilisation de l’objet `_data` (métadonnées Analytics uniquement)
 
-Utilisez l’objet `_data` lorsque vous avez besoin de métadonnées dans Adobe Analytics qui ne doivent **pas** être stockées dans des jeux de données AEP (par exemple, des indicateurs temporaires, des variables de débogage ou des indications de traitement spécifiques à Analytics).
+Utilisez l’objet `_data` lorsque vous avez besoin de métadonnées dans Adobe Analytics qui ne doivent **pas** être stockées dans un jeu de données AEP. Par exemple, les indicateurs temporaires, les variables de débogage ou les indications de traitement spécifiques à Analytics.
 
 &lt;InlineAlert variant="warning" slots="text" />
 
@@ -335,12 +335,6 @@ Dans cet exemple :
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; Prise en charge des métadonnées personnalisées &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md). — API MC (format JSON)
->* [Type de données Détails de la collecte de médias &#x200B;](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) — Référence du schéma XDM
->* [&#x200B; Mappage des variables de données pour Adobe Experience Platform Edge Network &#x200B;](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping) — Mappage des données contextuelles Analytics pour les champs XDM
-
-<!--
-* [Session endpoints](sessions.md) — Session lifecycle management
-* [Ad endpoints](ads.md) — Track advertising impressions
-* [Chapter endpoints](chapters.md) — Segment content into chapters
--->
+>* [&#x200B; Prise en charge des métadonnées personnalisées de l’API Media Collection &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [Type de données Détails de la collecte de médias](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Mappage des variables de données pour Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping)

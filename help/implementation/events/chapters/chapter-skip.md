@@ -3,9 +3,9 @@ title: Saut de chapitre
 description: Signale que la visionneuse a ignoré un chapitre.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '139'
+source-wordcount: '148'
 ht-degree: 10%
 
 ---
@@ -54,7 +54,7 @@ Appelez `trackEvent` avec le type d’événement `ChapterSkip`.
 tracker.trackEvent(Media.Event.ChapterSkip, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Appelez `sendMediaEvent` avec `eventType: "media.chapterSkip"` :
 
@@ -110,6 +110,15 @@ Appelez `trackEvent` avec le type d’événement `ChapterSkip` :
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterSkip);
+```
+
+>[!TAB Roku 2.x]
+
+Appelez `mediaTrackEvent` avec le type d’événement `MEDIA_CHAPTER_SKIP` :
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_SKIP)
 ```
 
 >[!TAB  API Media Collection ]

@@ -15,7 +15,7 @@ role_v2:
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
 topic_v2:
   - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 763
 ht-degree: 4%
@@ -65,7 +65,7 @@ Les champs suivants apparaissent dans les payloads `mediaReporting`, mais ne fon
 |---|---|
 | `xdm.mediaReporting.sessionDetails.timePlayed` | Durée totale en secondes du contenu principal lu, publicités exclues |
 | `xdm.mediaReporting.sessionDetails.totalTimePlayed` | Nombre total de secondes écoulées, publicités comprises |
-| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | Secondes dédupliquées : les intervalles consultés plus d&#39;une fois ne sont comptabilisés qu&#39;une seule fois |
+| `xdm.mediaReporting.sessionDetails.uniqueTimePlayed` | Secondes dédupliquées. Les intervalles consultés plus d&#39;une fois ne sont comptabilisés qu&#39;une seule fois |
 | `xdm.mediaReporting.sessionDetails.averageMinuteAudience` | `timePlayed` divisé par la longueur du contenu |
 | `xdm.mediaReporting.sessionDetails.estimatedStreams` | Flux simultanés estimés |
 | `xdm.mediaReporting.sessionDetails.adCount` | Nombre de publicités ayant démarré |

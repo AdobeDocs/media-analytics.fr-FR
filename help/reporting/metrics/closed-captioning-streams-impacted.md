@@ -3,7 +3,7 @@ title: Flux affectés par le sous-titrage
 description: Comptabilise les sessions dans lesquelles la visionneuse a activé les légendes au moins une fois.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 8%
@@ -19,7 +19,7 @@ ht-degree: 8%
 
 >[!ENDSHADEBOX]
 
-La mesure **Flux affectés par le sous-titrage** comptabilise les sessions dans lesquelles la visionneuse a activé les sous-titres au moins une fois. La mesure est une valeur booléenne au niveau de la session : plusieurs bascules de légende dans le même nombre de sessions qu’un flux affecté. Pour obtenir le volume total de sous-titrage, utilisez [Nombre de sous-titres codés](closed-captioning-count.md).
+La mesure **Flux affectés par le sous-titrage** comptabilise les sessions dans lesquelles la visionneuse a activé les sous-titres au moins une fois. La mesure est un booléen au niveau de la session ; plusieurs sous-titres sont activés au sein du même nombre de sessions que le flux concerné. Pour obtenir le volume total de sous-titrage, utilisez [Nombre de sous-titres codés](closed-captioning-count.md).
 
 ## Méthode de calcul de cette mesure
 

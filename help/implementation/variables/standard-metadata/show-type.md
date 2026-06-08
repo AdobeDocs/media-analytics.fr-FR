@@ -3,10 +3,10 @@ title: Type d’affichage
 description: Identifiez le format du contenu (épisode complet, aperçu, clip ou autre) à l’aide d’un code entier de chaîne.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 8%
+source-wordcount: '253'
+ht-degree: 7%
 
 ---
 
@@ -80,7 +80,7 @@ metadata[MediaConstants.VideoMetadataKeys.SHOW_TYPE] = "0"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Utilisez `createMediaSession` pour définir des `showType` dans `sessionDetails` :
 
@@ -151,6 +151,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.SHOW_TYPE] = "0";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Utilisez `MEDIA_VideoMetadataKeySHOW_TYPE` pour définir le type d’affichage dans les métadonnées standard de l’objet média avant d’appeler `mediaTrackSessionStart` :
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeySHOW_TYPE] = "0"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB  API Media Collection ]

@@ -3,7 +3,7 @@ title: Flux impactés par l’image perdue
 description: Comptabilise les sessions dans lesquelles au moins une image a été supprimée.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # Flux impactés par l’image perdue
 
-L’image **supprimée a eu un impact sur les flux** compte les sessions au cours desquelles au moins une image a été supprimée. La mesure est une valeur booléenne au niveau de la session : plusieurs abandons dans le même nombre de sessions qu’un flux affecté. Pour le volume de dépôt total, utilisez [Images perdues](dropped-frames.md).
+L’image **supprimée a eu un impact sur les flux** compte les sessions au cours desquelles au moins une image a été supprimée. La mesure est un booléen au niveau de la session ; plusieurs abandons dans le même nombre de sessions qu’un flux affecté. Pour le volume de dépôt total, utilisez [Images perdues](dropped-frames.md).
 
 ## Méthode de calcul de cette mesure
 

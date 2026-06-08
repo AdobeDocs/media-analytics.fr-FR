@@ -3,7 +3,7 @@ title: Chargements des annonces publicitaires
 description: Indique le type de charge publicitaire utilisé pour chaque session de streaming multimédia.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '159'
 ht-degree: 7%
@@ -34,4 +34,4 @@ Le type de chargement de l’annonce est défini par le lecteur au début de la 
 
 ## Éléments de dimension
 
-Chaque élément correspond à la chaîne de type littéral et de chargement définie au début de la session. Les valeurs ne sont pas limitées à une énumération standard : définissez une taxonomie cohérente sur l’ensemble de vos implémentations afin que les valeurs soient cumulées de manière prévisible dans les rapports.
+Chaque élément correspond à la chaîne de type littéral et de chargement définie au début de la session. Les valeurs ne sont pas limitées à une énumération standard. Définissez une taxonomie cohérente pour l’ensemble de vos implémentations afin que les valeurs soient cumulées de manière prévisible dans les rapports.

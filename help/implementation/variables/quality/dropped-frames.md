@@ -3,9 +3,9 @@ title: Images perdues
 description: Définissez le nombre d’images perdues en cours d’exécution sur l’objet QoE afin que le serveur principal puisse signaler la qualité de la perte d’images.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '303'
+source-wordcount: '323'
 ht-degree: 5%
 
 ---
@@ -83,7 +83,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `droppedFrames` à l’intérieur des `xdm.mediaCollection.qoeDataDetails` lors de l’appel de `sendMediaEvent` :
 
@@ -150,6 +150,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0      // droppedFrames (cumulative total)
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Transmettez le nombre cumulé d’images perdues comme quatrième argument (`droppedFrames`) pour `adb_media_init_qosinfo` et mettre à jour le dispositif de suivi avec `mediaUpdateQoS` :
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB  API Media Collection ]

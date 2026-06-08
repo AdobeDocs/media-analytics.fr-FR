@@ -3,9 +3,9 @@ title: Coupure publicitaire terminée
 description: Signalez que toutes les publicités d’une coupure publicitaire sont terminées.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '165'
 ht-degree: 9%
 
 ---
@@ -58,7 +58,7 @@ Appelez `trackEvent` avec le type d’événement `AdBreakComplete`.
 tracker.trackEvent(Media.Event.AdBreakComplete, null, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Appelez `sendMediaEvent` avec `eventType: "media.adBreakComplete"` :
 
@@ -114,6 +114,15 @@ Appelez `trackEvent` avec le type d’événement `AdBreakComplete` :
 
 ```javascript
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdBreakComplete);
+```
+
+>[!TAB Roku 2.x]
+
+Appelez `mediaTrackEvent` avec le type d’événement `MEDIA_AD_BREAK_COMPLETE` :
+
+```brightscript
+adb = ADBMobile()
+adb.mediaTrackEvent(adb.MEDIA_AD_BREAK_COMPLETE)
 ```
 
 >[!TAB  API Media Collection ]
