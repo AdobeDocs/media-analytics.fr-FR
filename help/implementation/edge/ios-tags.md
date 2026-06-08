@@ -15,7 +15,7 @@ ht-degree: 1%
 Vous pouvez configurer la collecte de médias en flux continu pour votre application iOS ou tvOS via une propriété mobile Balises , avec les paramètres de médias gérés dans l’interface utilisateur de collecte de données. Cette page couvre la configuration Balises. Pour configurer le SDK dans le code à la place, voir [Configurer iOS pour les médias en flux continu](ios.md).
 
 * **Conditions préalables** :
-   * Terminez la présentation de l’implémentation d’[](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
+   * Terminez la présentation de l’implémentation d’[&#128279;](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
    * Créez une propriété mobile dans l’interface utilisateur de collecte de données. Voir [Adobe Streaming Media for Edge Network](https://developer.adobe.com/client-sdks/edge/media-for-edge-network/).
 
 ## Configurez l’extension
@@ -30,7 +30,7 @@ Vous pouvez configurer la collecte de médias en flux continu pour votre applica
 
 ## Suivi des événements multimédia
 
-Une fois la propriété publiée et le dispositif de suivi créé, suivez chaque événement multimédia à l’aide de sa méthode de suivi. Voir l’onglet **** sur chaque page [événement](/help/implementation/events/overview.md) et [variable](/help/implementation/variables/overview.md) pour connaître les appels exacts.
+Une fois la propriété publiée et le dispositif de suivi créé, suivez chaque événement multimédia à l’aide de sa méthode de suivi. Voir l’onglet **&#x200B;**&#x200B;sur chaque page [événement](/help/implementation/events/overview.md) et [variable](/help/implementation/variables/overview.md) pour connaître les appels exacts.
 
 ## Étape suivante
 

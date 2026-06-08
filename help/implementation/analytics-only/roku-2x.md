@@ -61,7 +61,7 @@ La configuration JSON dispose d’une clé `mediaHeartbeat` exclusive pour les m
 | --- | --- |
 | `server` | URL du point d’entrée de suivi multimédia. Consultez la [présentation de l’implémentation pour Analytics uniquement](overview.md). |
 | `publisher` | Identifiant unique de l’éditeur de contenu. |
-| `channel` | Nom du canal de distribution du contenu. Signalé comme [ canal de contenu ](/help/implementation/variables/core/content-channel.md). |
+| `channel` | Nom du canal de distribution du contenu. Signalé comme [&#x200B; canal de contenu &#x200B;](/help/implementation/variables/core/content-channel.md). |
 | `ssl` | Indique si SSL est utilisé pour le suivi des appels. |
 | `ovp` | Nom du fournisseur de plateformes vidéo en ligne. |
 | `sdkVersion` | Version actuelle de votre application ou SDK. |
@@ -129,7 +129,7 @@ Les méthodes suivantes sur l’instance `ADBMobile()` gèrent l’identité, la
 | `visitorSyncIdentifiers(identifiers)` | Définit des ID de client supplémentaires pour le même visiteur. |
 | `setAdvertisingIdentifier(rida)` | Définit l’identifiant Roku pour Advertising (RIDA). Obtenez-le avec l’API Roku [`getRIDA()`](https://developer.roku.com/docs/references/brightscript/interfaces/ifdeviceinfo.md#getrida-as-dynamic). |
 | `getAllIdentifiers()` | Renvoie tous les identifiants stockés par le SDK, y compris les identifiants Analytics, Visiteur, Audience Manager et personnalisés. |
-| `setPrivacyStatus(status)` | Définit le statut de confidentialité. Transmettez `adb.PRIVACY_STATUS_OPT_IN` ou `adb.PRIVACY_STATUS_OPT_OUT`. Voir [ Confidentialité ](/help/implementation/opt-out-privacy.md). |
+| `setPrivacyStatus(status)` | Définit le statut de confidentialité. Transmettez `adb.PRIVACY_STATUS_OPT_IN` ou `adb.PRIVACY_STATUS_OPT_OUT`. Voir [&#x200B; Confidentialité &#x200B;](/help/implementation/opt-out-privacy.md). |
 | `getPrivacyStatus()` | Renvoie le statut de confidentialité actuel. |
 | `setDebugLogging(flag)` | Active ou désactive la journalisation du débogage. |
 | `getDebugLogging()` | Renvoie `true` si l’enregistrement de débogage est activé. |

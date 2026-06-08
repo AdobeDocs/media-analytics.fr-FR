@@ -48,6 +48,6 @@ Une fois l’implémentation terminée, vous pouvez [Configurer des rapports pou
 
 >[!MORELIKETHIS]
 >
->* [Référence de l’API Media Edge ](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/)
+>* [Référence de l’API Media Edge &#x200B;](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/)
 >* [Présentation des événements](/help/implementation/events/overview.md)
 >* [Présentation des variables](/help/implementation/variables/overview.md)

@@ -6,11 +6,23 @@ exl-id: d211fa2e-d5b0-4e9f-bdb7-eda838194f3d
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/-L2tSDNue-GheYE-krKkpnOh05s5GKZZBz5sFXsBJ3I
-product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2: id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fdid: c77ba355-6681-41fe-b719-563d3f507fdbid: df312454-73c4-43f6-a90e-18f5043f074c
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2: id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: d3cdead0-685a-4489-9250-4bb709942f66
+product_v2:
+  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2:
+  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
+  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2:
+  - id: bcc784b7-4ade-4c84-96fa-2f7631b1e5fd
+  - id: c77ba355-6681-41fe-b719-563d3f507fdb
+  - id: df312454-73c4-43f6-a90e-18f5043f074c
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2:
+  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+  - id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377
+  - id: d3cdead0-685a-4489-9250-4bb709942f66
 source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: 625
@@ -26,9 +38,9 @@ Les implémentations d’Edge collectent des données une seule fois et les diff
 
 | | Documentation | Exemple |
 |:---:|---|---|
-| [![Icône ](assets/javascript-icon.png)](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview)<br>[Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview) | [Configurer le SDK web pour les médias en flux continu](/help/implementation/edge/web-sdk.md) | [Exemple](https://github.com/adobe/alloy-samples/blob/main/media-collection/STANDALONE.md) |
+| [![Icône &#x200B;](assets/javascript-icon.png)](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview)<br>[Web SDK](https://experienceleague.adobe.com/fr/docs/experience-platform/web-sdk/install/overview) | [Configurer le SDK web pour les médias en flux continu](/help/implementation/edge/web-sdk.md) | [Exemple](https://github.com/adobe/alloy-samples/blob/main/media-collection/STANDALONE.md) |
 | [![Icône d’extension](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html)<br>[extension de balise Web SDK](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/web-sdk/overview.html) | [Configurer l’extension de balise Web SDK pour les médias en flux continu](/help/implementation/edge/web-sdk-tags.md) | [Exemple](https://github.com/adobe/alloy-samples/blob/main/media-collection/TAGS_IMPL.md) |
-| [![Icône ](assets/android.png)](https://github.com/adobe/aepsdk-media-android)<br>[Android SDK](https://github.com/adobe/aepsdk-media-android) | [Configuration d’Android pour les médias en flux continu](/help/implementation/edge/android.md) | [Exemple](https://github.com/adobe/aepsdk-media-android/tree/main/code/testapp) |
+| [![Icône &#x200B;](assets/android.png)](https://github.com/adobe/aepsdk-media-android)<br>[Android SDK](https://github.com/adobe/aepsdk-media-android) | [Configuration d’Android pour les médias en flux continu](/help/implementation/edge/android.md) | [Exemple](https://github.com/adobe/aepsdk-media-android/tree/main/code/testapp) |
 | [![Icône Apple iOS](assets/apple.png)](https://github.com/adobe/aepsdk-media-ios)<br>[iOS / tvOS SDK](https://github.com/adobe/aepsdk-media-ios) | [Configuration d’iOS pour les médias en flux continu](/help/implementation/edge/ios.md) | [Exemple](https://github.com/adobe/aepsdk-media-ios/tree/main/TestApp) |
 | [![Icône d’extension](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Extension de balise Android](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Configurer l’extension de balise Android pour les médias en flux continu](/help/implementation/edge/android-tags.md) | |
 | [![Icône d’extension](assets/plug.svg)](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/)<br>[Extension de balise iOS/tvOS](https://developer.adobe.com/client-sdks/documentation/adobe-media-analytics/) | [Configurer l’extension de balise iOS pour les médias en flux continu](/help/implementation/edge/ios-tags.md) | |
@@ -41,7 +53,7 @@ Ces SDK et extensions envoient directement des données à Adobe Analytics. Pour
 
 | | Documentation | Exemple |
 |:---:|---|---|
-| [![Icône ](assets/javascript-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2)<br>[Media SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Configuration de JavaScript pour les médias en flux continu](/help/implementation/analytics-only/javascript.md) | [Exemple](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
+| [![Icône &#x200B;](assets/javascript-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2)<br>[Media SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/js-v3.0.2) | [Configuration de JavaScript pour les médias en flux continu](/help/implementation/analytics-only/javascript.md) | [Exemple](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/js/3.x) |
 | [![Icône d’extension](assets/plug.svg)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr)<br>[Extension Media](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/media-analytics-3x/overview.html?lang=fr) | [Configuration de JavaScript à l’aide de balises pour les médias en flux continu](/help/implementation/analytics-only/javascript-tags.md) | [Exemple](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/samples/launch/js/3.x) |
 | [![Icône Chromecast](assets/chromecast-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3)<br>[Chromecast SDK 3.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/chromecast-v3.0.3) | [Configurer Chromecast pour les médias en flux continu](/help/implementation/analytics-only/chromecast.md) | [Exemple](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/chromecast/samples/BasicPlayerSample) |
 | [![Icône Roku](assets/roku-icon.png)](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7)<br>[Roku SDK 2.x](https://github.com/Adobe-Marketing-Cloud/media-sdks/releases/tag/roku-v2.2.7) | [Configuration de Roku 2.x pour les médias en flux continu](/help/implementation/analytics-only/roku-2x.md) | [Exemple](https://github.com/Adobe-Marketing-Cloud/media-sdks/tree/master/sdks/roku/samples) |

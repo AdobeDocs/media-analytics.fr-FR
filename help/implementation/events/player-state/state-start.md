@@ -145,7 +145,7 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 
 >[!TAB Roku 2.x]
 
-Le suivi de l’état du lecteur n’est pas disponible dans le SDK Roku 2.x. Pour suivre les états du lecteur, utilisez le SDK Roku Edge](/help/implementation/edge/roku.md).[
+Le suivi de l’état du lecteur n’est pas disponible dans le SDK Roku 2.x. Pour suivre les états du lecteur, utilisez le SDK Roku Edge[&#128279;](/help/implementation/edge/roku.md).
 
 >[!TAB  API Media Collection ]
 

@@ -15,7 +15,7 @@ ht-degree: 8%
 
 >[!BEGINSHADEBOX]
 
-*Cette page traite de la collecte de données pour la variable **MVPD**. Voir [](/help/reporting/dimensions/mvpd.md) pour la dimension de reporting correspondante.*
+*Cette page traite de la collecte de données pour la variable **MVPD**. Voir [&#128279;](/help/reporting/dimensions/mvpd.md) pour la dimension de reporting correspondante.*
 
 >[!ENDSHADEBOX]
 

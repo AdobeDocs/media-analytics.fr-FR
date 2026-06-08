@@ -179,7 +179,7 @@ ADBMobile.media.trackSessionStart(mediaInfo, null);
 
 >[!TAB Roku 2.x]
 
-Le suivi du contenu téléchargé n’est pas disponible dans le SDK Roku 2.x. Pour signaler la lecture de médias téléchargée, utilisez la SDK Roku Edge](/help/implementation/edge/roku.md) ou l’[API Media Collection](/help/implementation/analytics-only/media-collection-api.md).[
+Le suivi du contenu téléchargé n’est pas disponible dans le SDK Roku 2.x. Pour signaler la lecture de médias téléchargée, utilisez la SDK Roku Edge[&#128279;](/help/implementation/edge/roku.md) ou l’[API Media Collection](/help/implementation/analytics-only/media-collection-api.md).
 
 >[!TAB  API Media Collection ]
 
