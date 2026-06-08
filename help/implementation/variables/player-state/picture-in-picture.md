@@ -3,9 +3,9 @@ title: Image dans l’image
 description: Effectuez le suivi lorsque la visionneuse entre et quitte la lecture image par image afin que le serveur principal puisse signaler l’engagement PiP.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '341'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ L’image dans le lecteur d’images suit le moment où la visionneuse entre et 
 | Propriété | Valeur |
 | --- | --- |
 | **Variables de données contextuelles** | `a.media.states.pictureinpicture.set`, `a.media.states.pictureinpicture.count`, `a.media.states.pictureinpicture.time` |
-| **champ de collection XDM** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) et [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) (entrées avec `name: "pictureInPicture"`) |
+| **champ de collection XDM** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) et [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entrées avec `name: "pictureInPicture"`) |
 | **caractéristiques** | `c_contextdata.a.media.states.pictureinpicture.set`, `c_contextdata.a.media.states.pictureinpicture.count`, `c_contextdata.a.media.states.pictureinpicture.time` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de l’état](/help/implementation/events/player-state/state-start.md), [fin de l’état](/help/implementation/events/player-state/state-end.md) |
@@ -87,7 +87,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Utilisez `sendMediaEvent` pour envoyer un événement `media.statesUpdate` avec l’état ajouté à `statesStart` :
 
@@ -163,6 +163,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 // When the viewer exits picture-in-picture:
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Le suivi de l’état du lecteur n’est pas disponible dans le SDK Roku 2.x. Pour suivre les états du lecteur, utilisez le SDK Roku Edge](/help/implementation/edge/roku.md).[
 
 >[!TAB  API Media Collection ]
 

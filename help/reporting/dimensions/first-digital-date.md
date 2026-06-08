@@ -3,7 +3,7 @@ title: Première date numérique
 description: Indique la date à laquelle le contenu s’est affiché pour la première fois sur une plateforme numérique.
 feature: Dimensions
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
@@ -27,9 +27,9 @@ La première date numérique est définie par le lecteur au début de la session
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.digitalDate` à un eVar. |
-| Adobe Analytics (classification) | Classification de la dimension [Contenu (ID)](content.md) : Adobe crée automatiquement cette classification lorsque **[[!UICONTROL Métadonnées vidéo]](/help/reporting/setup/analytics-reporting.md)** est activé pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
-| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-reporting) |
+| Adobe Analytics (règle de traitement) | Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.digitalDate` à un eVar. |
+| Adobe Analytics (classification) | Classification de la dimension [Contenu (ID)](content.md). Adobe crée automatiquement cette classification lorsque **[[!UICONTROL Métadonnées vidéo]](/help/reporting/setup/analytics-reporting.md)** est activé pour la suite de rapports. Il vous incombe de renseigner et de maintenir les valeurs de classification. |
+| Customer Journey Analytics | [`xdm.mediaReporting.sessionDetails.firstDigitalDate`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-reporting) |
 | Flux de données (règle de traitement) | `evar1`-`evar250`, `post_evar1`-`post_evar250` (l’eVar à laquelle votre règle de traitement `a.media.digitalDate` mappée) |
 | Flux de données (classification) | S.O. — Les flux de données ne prennent pas en charge les classifications. |
 | Audience Manager | `c_contextdata.a.media.digitalDate` |
@@ -46,7 +46,7 @@ Cette approche fournit une relation 1:1 garantie entre chaque identifiant de con
 
 ## Approche des règles de traitement
 
-Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.digitalDate` à un eVar. Cette approche capture la première date numérique en tant que valeur par accès sans nécessiter de maintenance de la classification.
+Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.digitalDate` à un eVar. Cette approche capture la première date numérique en tant que valeur par accès sans nécessiter de maintenance de la classification.
 
 Le compromis est que vous perdez la relation 1:1 garantie entre la première date numérique et la dimension parent [Contenu (ID)](content.md). Si votre implémentation envoie des valeurs incohérentes pour le même ID de contenu à travers les événements, plusieurs premières dates numériques peuvent apparaître sous le même contenu. La mise à jour d’une valeur s’applique uniquement aux données dans le futur.
 

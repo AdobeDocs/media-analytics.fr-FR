@@ -6,25 +6,15 @@ exl-id: 98ad2783-c9e3-48de-88df-8549f26114a0
 feature: Streaming Media
 role: User, Admin, Developer
 TQID: https://experienceleague.adobe.com/cHrkCe0mQm8GlHwLVgf4cjF0VM8B1r3CRt39I2LB6kk
-product_v2:
-  - id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
-feature_v2:
-  - id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7a
-  - id: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
-subfeature_v2:
-  - id: e7d92df1-c5ba-4e93-85df-f83171b889be
-  - id: e992d880-33bc-4949-a648-aa7d410276cd
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-  - id: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+product_v2: id: e55547f1-a1ff-40c6-8978-026e40ab7fa4
+feature_v2: id: e9dbdbc5-3e52-40f0-a7bc-e18542967b7aid: fd307ce7-56f5-4ee3-af68-a7833ff6e85e
+subfeature_v2: id: e7d92df1-c5ba-4e93-85df-f83171b889beid: e992d880-33bc-4949-a648-aa7d410276cd
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87c
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: 803
-ht-degree: 2%
+source-wordcount: 807
+ht-degree: 3%
 
 ---
 
@@ -51,7 +41,7 @@ Le suivi de la lecture principale couvre le chargement du média, le démarrage,
 ## Procédure de mise en œuvre
 
 1. **Identifier le moment où l’utilisateur déclenche la lecture** (l’utilisateur clique sur lecture ou la lecture automatique se déclenche). Créez un objet média avec le nom de contenu, l’identifiant, la longueur, le type de diffusion et le type de média. Voir [Nom du contenu](/help/implementation/variables/core/content-name.md), [Identifiant du contenu](/help/implementation/variables/core/content-id.md), [Longueur du contenu](/help/implementation/variables/core/content-length.md), [Type de flux](/help/implementation/variables/core/stream-type.md) et [Type de contenu](/help/implementation/variables/core/content-type.md) pour obtenir des définitions de champ.
-1. **éventuellement joindre des métadonnées** — métadonnées standard (émission, saison, épisode, etc.) et les variables de données contextuelles personnalisées. Pour obtenir des références de clés de métadonnées standard, consultez [Programme](/help/implementation/variables/standard-metadata/show.md), [Saison](/help/implementation/variables/standard-metadata/season.md), [Épisode](/help/implementation/variables/standard-metadata/episode.md), [Genre](/help/implementation/variables/standard-metadata/genre.md) et [Réseau](/help/implementation/variables/standard-metadata/network.md).
+1. **Vous pouvez éventuellement joindre des métadonnées** : métadonnées standard (émission, saison, épisode, etc.) et les variables de données contextuelles personnalisées. Pour obtenir des références de clés de métadonnées standard, consultez [Programme](/help/implementation/variables/standard-metadata/show.md), [Saison](/help/implementation/variables/standard-metadata/season.md), [Épisode](/help/implementation/variables/standard-metadata/episode.md), [Genre](/help/implementation/variables/standard-metadata/genre.md) et [Réseau](/help/implementation/variables/standard-metadata/network.md).
 1. **Appelez [Début de session](/help/implementation/events/session/session-start.md)** pour commencer à suivre la session. Cette opération charge les données et les métadonnées et démarre la mesure de QoS du temps de démarrage. SessionStart effectue le suivi de l’*intention* de lecture, et non de la première image.
 1. **Appeler [Lire](/help/implementation/events/playback/play.md)** lorsque la première image du contenu s’affiche à l’écran.
 1. **Appel [Démarrage de la pause](/help/implementation/events/playback/pause-start.md)** lorsque le lecteur est en pause. Appelez à nouveau la fonction Lire lorsque la lecture reprend. Il n’existe pas d’événement de reprise distinct.
@@ -64,7 +54,7 @@ Le suivi de la lecture principale couvre le chargement du média, le démarrage,
 
 ## Lecture principale
 
-Les exemples suivants présentent un flux de session complet, du début à la fin de la session, en passant par la fin du contenu.
+Les exemples suivants montrent un flux de session complet, du début à la fin de la session, en passant par la fin du contenu.
 
 Pour plus d’informations sur l’implémentation par plateforme, consultez les sections [Début de session](/help/implementation/events/session/session-start.md), [Lecture](/help/implementation/events/playback/play.md), [Début de pause](/help/implementation/events/playback/pause-start.md), [Fin de session](/help/implementation/events/session/session-complete.md) et [Fin de session](/help/implementation/events/session/session-end.md).
 
@@ -82,7 +72,7 @@ Pour plus d’informations sur l’implémentation, voir [Démarrage de la pause
 
 ## Gérer les interruptions de l’application
 
-La lecture dans une application multimédia peut être interrompue de différentes manières : l’utilisateur appuie sur pause, l’application passe en arrière-plan et un appel téléphonique arrive. Quelle que soit la cause, les instructions de suivi sont les mêmes :
+La lecture dans une application multimédia peut être interrompue de différentes manières. Par exemple, lorsque l’utilisateur appuie sur pause, que l’application passe en arrière-plan ou qu’un appel téléphonique arrive. Quelle que soit la cause, les instructions de suivi sont les mêmes :
 
 1. Appelez **PauseStart** lorsque l’application est interrompue (passage en arrière-plan, pause du média, etc.).
 1. Appelez **Play** lorsque l’application revient au premier plan et/ou que le média reprend la lecture.

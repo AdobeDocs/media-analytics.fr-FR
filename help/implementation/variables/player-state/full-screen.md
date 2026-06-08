@@ -3,10 +3,10 @@ title: Plein écran
 description: Effectuez le suivi lorsque la visionneuse entre et quitte la lecture plein écran afin que le serveur principal puisse signaler l’engagement en plein écran.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 7%
+source-wordcount: '333'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ L’état du lecteur plein écran effectue le suivi lorsque la visionneuse entre
 | Propriété | Valeur |
 | --- | --- |
 | **Variables de données contextuelles** | `a.media.states.fullscreen.set`, `a.media.states.fullscreen.count`, `a.media.states.fullscreen.time` |
-| **champ de collection XDM** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) et [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details) (entrées avec `name: "fullscreen"`) |
+| **champ de collection XDM** | [`xdm.mediaCollection.statesStart[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) et [`xdm.mediaCollection.statesEnd[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details) (entrées avec `name: "fullscreen"`) |
 | **caractéristiques** | `c_contextdata.a.media.states.fullscreen.set`, `c_contextdata.a.media.states.fullscreen.count`, `c_contextdata.a.media.states.fullscreen.time` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de l’état](/help/implementation/events/player-state/state-start.md), [fin de l’état](/help/implementation/events/player-state/state-end.md) |
@@ -89,7 +89,7 @@ tracker.trackPlayerStateStart(stateObject)
 tracker.trackPlayerStateEnd(stateObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Utilisez `sendMediaEvent` pour envoyer un événement `media.statesUpdate` avec l’état ajouté à `statesStart` :
 
@@ -166,6 +166,10 @@ ADBMobile.media.trackEvent(ADBMobile.media.Event.StateStart, stateObject);
 // When the user exits full-screen:
 ADBMobile.media.trackEvent(ADBMobile.media.Event.StateEnd, stateObject);
 ```
+
+>[!TAB Roku 2.x]
+
+Le suivi de l’état du lecteur n’est pas disponible dans le SDK Roku 2.x. Pour suivre les états du lecteur, utilisez le SDK Roku Edge](/help/implementation/edge/roku.md).[
 
 >[!TAB  API Media Collection ]
 

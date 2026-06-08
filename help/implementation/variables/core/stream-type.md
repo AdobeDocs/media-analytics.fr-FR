@@ -3,10 +3,10 @@ title: Type de diffusion
 description: Définissez le type de flux pour identifier si un flux multimédia est du contenu audio ou vidéo.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '312'
-ht-degree: 7%
+source-wordcount: '323'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +26,7 @@ La définition correcte du type de flux est fondamentale pour la création de ra
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.streamType` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.streamType`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.streamType` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
@@ -87,7 +87,7 @@ var mediaInfo = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `streamType` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de `createMediaSession` :
 
@@ -171,6 +171,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Transmettez `MEDIA_TYPE_VIDEO` ou `MEDIA_TYPE_AUDIO` comme cinquième argument (`mediaType`) à `adb_media_init_mediainfo` :
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB  API Media Collection ]

@@ -3,10 +3,10 @@ title: Début de la session
 description: Signalez le début d’une session multimédia et obtenez l’identifiant de session requis pour tous les événements suivants.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 5%
+source-wordcount: '388'
+ht-degree: 4%
 
 ---
 
@@ -75,7 +75,7 @@ val mediaObject = Media.createMediaObject("video-123",
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Appelez `createMediaSession` avec les détails de session requis :
 
@@ -162,6 +162,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
 
+>[!TAB Roku 2.x]
+
+Créez un objet média avec des `mediaTrackSessionStart` d’`adb_media_init_mediainfo` et d’appel. Le deuxième argument facultatif accepte un tableau associatif de clés de métadonnées `a.media.*`, ou `invalid` :
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
+```
+
 >[!TAB  API Media Collection ]
 
 Envoyez une `sessionStart` POST au point d’entrée [sessions](/help/implementation/media-collection-api/mc-api-ref/mc-api-sessions-req.md). L’en-tête du `Location` de réponse contient l’ID de session à utiliser dans toutes les requêtes d’événement ultérieures.
@@ -184,7 +195,7 @@ Envoyez une `sessionStart` POST au point d’entrée [sessions](/help/implementa
 
 ## Reprise d’une session
 
-Lors de la reprise d’une session précédemment fermée (par exemple, après un transfert entre appareils ou après la restauration de l’état de lecture enregistré par l’application), définissez l’indicateur de reprise au début de la session. Analytics incrémente ainsi les [[!UICONTROL reprises de contenu]](/help/reporting/metrics/content-resumes.md) plutôt que les [[!UICONTROL démarrages de média]](/help/reporting/metrics/media-starts.md).
+Lors de la reprise d’une session précédemment fermée (par exemple, après un transfert entre appareils ou après la restauration par l’application de l’état de lecture enregistré), définissez l’indicateur de reprise au début de la session. Analytics incrémente ainsi les [[!UICONTROL reprises de contenu]](/help/reporting/metrics/content-resumes.md) plutôt que les [[!UICONTROL démarrages de média]](/help/reporting/metrics/media-starts.md).
 
 ## Types d’implémentation recommandés
 
@@ -242,7 +253,7 @@ mediaObject[Media.MediaObjectKey.RESUMED] = true
 tracker.trackSessionStart(mediaObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Ajouter des `"hasResume": true` à `sessionDetails` :
 
@@ -325,6 +336,18 @@ var mediaObject = ADBMobile.media.createMediaObject(
 
 mediaObject[ADBMobile.media.MediaObjectKey.MediaResumed] = true;
 ADBMobile.media.trackSessionStart(mediaObject, null);
+```
+
+>[!TAB Roku 2.x]
+
+Définissez la clé `resumed` sur l’objet média avant d’appeler `mediaTrackSessionStart` :
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("video-123", "video-id-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+mediaInfo.resumed = true
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB  API Media Collection ]

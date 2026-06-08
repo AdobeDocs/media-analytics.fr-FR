@@ -3,9 +3,9 @@ title: Annonceur
 description: Définissez la société ou la marque présentée dans chaque publicité.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '218'
 ht-degree: 10%
 
 ---
@@ -24,7 +24,7 @@ La variable de l’annonceur correspond à la société ou à la marque présent
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.advertiser` |
-| **champ de collection XDM** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.advertisingDetails.advertiser`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.ad.advertiser` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.ADVERTISER] = "Ford"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `advertiser` à l’intérieur des `xdm.mediaCollection.advertisingDetails` lors de l’appel de `sendMediaEvent` pour `media.adStart` :
 
@@ -146,6 +146,21 @@ var standardAdMetadata = {};
 standardAdMetadata[ADBMobile.media.AdMetadataKeys.ADVERTISER] = "Sample advertiser";
 adInfo[ADBMobile.media.MediaObjectKey.StandardAdMetadata] = standardAdMetadata;
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Définissez l’annonceur à l’aide de `MEDIA_AdMetadataKeyADVERTISER` dans l’objet de métadonnées publicitaire standard :
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+standardAdMetadata = {}
+standardAdMetadata[adb.MEDIA_AdMetadataKeyADVERTISER] = "Sample advertiser"
+adInfo[adb.MEDIA_STANDARD_AD_METADATA] = standardAdMetadata
+
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo)
 ```
 
 >[!TAB  API Media Collection ]

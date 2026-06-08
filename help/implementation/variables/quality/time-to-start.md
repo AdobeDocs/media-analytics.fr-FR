@@ -3,10 +3,10 @@ title: Heure de début
 description: Définissez l’heure de démarrage du lecteur, en millisecondes, de sorte que le serveur principal puisse signaler la qualité du délai de première image.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 6%
+source-wordcount: '312'
+ht-degree: 5%
 
 ---
 
@@ -28,7 +28,7 @@ La variable time to start correspond au temps écoulé, en millisecondes, entre 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.qoe.timeToStart` |
-| **champ de collection XDM** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.qoeDataDetails.timeToStart`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.qoe.timeToStart` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
@@ -89,7 +89,7 @@ val qoeObject = Media.createQoEObject(3200L,
 tracker.updateQoEObject(qoeObject)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Définissez `timeToStart` à l’intérieur du `xdm.mediaCollection.qoeDataDetails` sur `media.sessionStart` lors de l’appel de `createMediaSession` :
 
@@ -169,6 +169,17 @@ var qosInfo = ADBMobile.media.createQoSObject(
   0       // droppedFrames
 );
 ADBMobile.media.updateQoSObject(qosInfo);
+```
+
+>[!TAB Roku 2.x]
+
+Transmettez l’heure de démarrage comme deuxième argument (`startupTime`) pour `adb_media_init_qosinfo` et mettre à jour le suivi avec `mediaUpdateQoS` :
+
+```brightscript
+adb = ADBMobile()
+qosInfo = adb_media_init_qosinfo(3200.0, 0.0, 24.0, 0.0)  ' bitrate, startupTime, fps, droppedFrames
+
+adb.mediaUpdateQoS(qosInfo)
 ```
 
 >[!TAB  API Media Collection ]

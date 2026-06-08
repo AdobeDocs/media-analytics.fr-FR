@@ -3,9 +3,9 @@ title: Classement du contenu
 description: Définissez l’évaluation du contenu telle que définie par les directives parentales TV ou votre système d’évaluation régional.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '244'
 ht-degree: 8%
 
 ---
@@ -24,7 +24,7 @@ La variable d’évaluation du contenu est l’évaluation de l’audience telle
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.rating` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.rating`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.rating`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.rating` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.RATING] = "TVPG"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Utilisez `createMediaSession` pour définir des `rating` dans `sessionDetails` :
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.RATING] = "TVPG";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Utilisez `MEDIA_VideoMetadataKeyRATING` pour définir l’évaluation du contenu dans les métadonnées standard de l’objet média avant d’appeler `mediaTrackSessionStart` :
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyRATING] = "TVPG"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB  API Media Collection ]

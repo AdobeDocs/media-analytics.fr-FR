@@ -3,7 +3,7 @@ title: Flux impactés par l’erreur
 description: Comptabilise les sessions dans lesquelles au moins une erreur s’est produite.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '143'
 ht-degree: 10%
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # Flux impactés par l’erreur
 
-La mesure **Erreur impactée par les flux** comptabilise les sessions dans lesquelles au moins une erreur s’est produite (`trackError` a été appelée ou un événement [erreur](/help/implementation/events/error.md) a été déclenché). La mesure est une valeur booléenne au niveau de la session : plusieurs erreurs dans le même nombre de sessions sont comptabilisées comme un flux affecté. Pour le volume total d’erreurs, utilisez [Erreurs](/help/reporting/dimensions/errors.md).
+La mesure **Erreur impactée par les flux** comptabilise les sessions dans lesquelles au moins une erreur s’est produite (`trackError` a été appelée ou un événement [erreur](/help/implementation/events/error.md) a été déclenché). La mesure est une valeur booléenne au niveau de la session ; plusieurs erreurs dans la même session comptabilisent un flux impacté. Pour le volume total d’erreurs, utilisez [Erreurs](/help/reporting/dimensions/errors.md).
 
 ## Méthode de calcul de cette mesure
 
@@ -22,6 +22,6 @@ Le serveur principal du média définit cet indicateur la première fois qu’un
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.qoe.error` de données contextuelles lorsque la [[!UICONTROL Qualité du média]](/help/reporting/setup/analytics-reporting.md) est activée. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.hasErrorImpactedStreams`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.hasErrorImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.qoe.error` |

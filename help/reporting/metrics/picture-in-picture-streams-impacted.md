@@ -3,7 +3,7 @@ title: Flux impactés par l’image dans l’image
 description: Comptabilise les sessions au cours desquelles la visionneuse a effectué au moins une saisie image par image.
 feature: Metrics
 role: User, Admin
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 7%
@@ -19,7 +19,7 @@ ht-degree: 7%
 
 >[!ENDSHADEBOX]
 
-La mesure **Flux affectés par image dans image** comptabilise les sessions au cours desquelles la visionneuse a effectué au moins une lecture d’image dans image. La mesure est un booléen au niveau de la session : plusieurs entrées image par image dans le même nombre de sessions qu’un flux affecté. Pour le volume total d&#39;entrée image dans image, utilisez [Image dans le nombre d&#39;images](picture-in-picture-count.md).
+La mesure **Flux affectés par image dans image** comptabilise les sessions au cours desquelles la visionneuse a effectué au moins une lecture d’image dans image. La mesure est une valeur booléenne au niveau de la session ; plusieurs entrées image par image dans le même flux de session sont comptabilisées comme un flux affecté. Pour le volume total d&#39;entrée image dans image, utilisez [Image dans le nombre d&#39;images](picture-in-picture-count.md).
 
 ## Méthode de calcul de cette mesure
 
@@ -28,6 +28,6 @@ Le serveur principal du média définit cet indicateur la première fois qu’un
 | Système de reporting | Source |
 | --- | --- |
 | Adobe Analytics | Collecté automatiquement à partir des `a.media.states.pictureinpicture.set` de données contextuelles lorsque le [[!UICONTROL suivi de l’état du lecteur]](/help/reporting/setup/analytics-reporting.md) est activé. |
-| Customer Journey Analytics | [`xdm.mediaReporting.states[]`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-reporting-details) l’entrée où `name = "pictureInPicture"`, champ `isSet` |
-| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Customer Journey Analytics | [`xdm.mediaReporting.states[]`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-reporting-details) l’entrée où `name = "pictureInPicture"`, champ `isSet` |
+| Flux de données | `event_list`, `post_event_list` (voir Recherche de [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.states.pictureinpicture.set` |

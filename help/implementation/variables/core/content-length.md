@@ -3,10 +3,10 @@ title: Durée du contenu
 description: Définissez la longueur du contenu en secondes au début de la session. Il génère des marqueurs de progression et une audience moyenne par minute.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 8%
+source-wordcount: '280'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,7 @@ La variable de longueur du contenu correspond à la durée totale du contenu, en
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.length` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.length` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
@@ -84,7 +84,7 @@ var mediaInfo = Media.createMediaObject("My Video",
 tracker.trackSessionStart(mediaInfo, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `length` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de `createMediaSession` :
 
@@ -167,6 +167,17 @@ var mediaInfo = ADBMobile.media.createMediaObject(
   ADBMobile.media.MediaType.Video
 );
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Transmettez la longueur du contenu en secondes comme troisième argument à `adb_media_init_mediainfo` :
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB  API Media Collection ]

@@ -3,10 +3,10 @@ title: Indicateur de média téléchargé
 description: Marquer une session comme étant une lecture hors ligne téléchargée afin qu’elle soit signalée séparément des sessions en flux continu.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 6%
+source-wordcount: '304'
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ L’indicateur média téléchargé indique qu’une session est une lecture de 
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.downloaded` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.isDownloaded`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.downloaded` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
@@ -85,7 +85,7 @@ config[MediaConstants.TrackerConfig.DOWNLOADED_CONTENT] = true
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Définissez `isDownloaded` à `true` dans `xdm.mediaCollection.sessionDetails` lors de l’appel de `createMediaSession` :
 
@@ -176,6 +176,10 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
 mediaInfo[ADBMobile.media.MediaObjectKey.MediaDownloaded] = true;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
 ```
+
+>[!TAB Roku 2.x]
+
+Le suivi du contenu téléchargé n’est pas disponible dans le SDK Roku 2.x. Pour signaler la lecture de médias téléchargée, utilisez la SDK Roku Edge](/help/implementation/edge/roku.md) ou l’[API Media Collection](/help/implementation/analytics-only/media-collection-api.md).[
 
 >[!TAB  API Media Collection ]
 

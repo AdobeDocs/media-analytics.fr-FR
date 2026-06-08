@@ -3,7 +3,7 @@ title: Bloquer les flux impactés
 description: Comptabilise les sessions au cours desquelles au moins un blocage s’est produit lors de la lecture.
 feature: Metrics
 role: User, Admin
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 8%
@@ -13,7 +13,7 @@ ht-degree: 8%
 
 # Bloquer les flux impactés
 
-La mesure **Blocage des flux impactés** comptabilise les sessions dans lesquelles au moins un blocage s’est produit pendant la lecture. La mesure est un booléen au niveau de la session : plusieurs blocages au sein du même nombre de sessions sont comptabilisés comme un flux impacté. Pour le volume total de décrochage, utilisez [Événements de décrochage](stall-events.md).
+La mesure **Blocage des flux impactés** comptabilise les sessions dans lesquelles au moins un blocage s’est produit pendant la lecture. La mesure est un booléen au niveau de la session ; plusieurs blocages au sein d’une même session comptent comme un flux impacté. Pour le volume total de décrochage, utilisez [Événements de décrochage](stall-events.md).
 
 ## Méthode de calcul de cette mesure
 
@@ -21,7 +21,7 @@ Le serveur principal du média définit cet indicateur lorsqu’aucun mouvement 
 
 | Système de reporting | Source |
 | --- | --- |
-| Adobe Analytics | Créez une [règle de traitement](https://experienceleague.adobe.com/fr/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.qoe.stall` à un événement personnalisé. |
-| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.hasStallImpactedStreams`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
-| Flux de données | `event_list`, `post_event_list` (événement personnalisé auquel votre règle de traitement `a.media.qoe.stall` mappe ; voir recherche [`event.tsv`](https://experienceleague.adobe.com/fr/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
+| Adobe Analytics | Créez une [règle de traitement](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/processing-rules/pr-overview) qui mappe le `a.media.qoe.stall` à un événement personnalisé. |
+| Customer Journey Analytics | [`xdm.mediaReporting.qoeDataDetails.hasStallImpactedStreams`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/qoe-data-details-reporting) |
+| Flux de données | `event_list`, `post_event_list` (événement personnalisé auquel votre règle de traitement `a.media.qoe.stall` mappe ; voir recherche [`event.tsv`](https://experienceleague.adobe.com/en/docs/analytics/export/analytics-data-feed/data-feed-contents/datafeeds-contents#lookup-files)) |
 | Audience Manager | `c_contextdata.a.media.qoe.stall` |

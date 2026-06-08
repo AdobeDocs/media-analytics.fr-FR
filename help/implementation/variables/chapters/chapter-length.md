@@ -3,10 +3,10 @@ title: Longueur du chapitre
 description: Définissez la longueur de chaque chapitre, en secondes.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 8%
+source-wordcount: '223'
+ht-degree: 7%
 
 ---
 
@@ -24,7 +24,7 @@ La variable de longueur du chapitre correspond à la durée du chapitre, exprim�
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.chapter.length` |
-| **champ de collection XDM** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/chapter-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.chapterDetails.length`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/chapter-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.chapter.length` |
 | **Obligatoire** | Non (Mobile SDK) ; Oui (Edge, API Media Collection) |
 | **Envoyé avec** | [Début du chapitre](/help/implementation/events/chapters/chapter-start.md), fermeture du chapitre |
@@ -81,7 +81,7 @@ val chapterObject = Media.createChapterObject("Pilot Episode - Opening",
 tracker.trackEvent(Media.Event.ChapterStart, chapterObject, null)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `length` à l’intérieur des `xdm.mediaCollection.chapterDetails` lors de l’appel de `sendMediaEvent` pour `media.chapterStart` :
 
@@ -158,6 +158,17 @@ var chapterInfo = ADBMobile.media.createChapterObject(
   0                           // startTime
 );
 ADBMobile.media.trackEvent(ADBMobile.media.Event.ChapterStart, chapterInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Transmettez la longueur du chapitre en secondes comme troisième argument (`length`) à `adb_media_init_chapterinfo` :
+
+```brightscript
+adb = ADBMobile()
+chapterInfo = adb_media_init_chapterinfo("Pilot Episode - Opening", 1, 240.0, 0.0)  ' name, position, length, startTime
+
+adb.mediaTrackEvent(adb.MEDIA_CHAPTER_START, chapterInfo)
 ```
 
 >[!TAB  API Media Collection ]

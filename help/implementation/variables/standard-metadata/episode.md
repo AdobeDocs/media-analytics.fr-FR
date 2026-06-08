@@ -3,10 +3,10 @@ title: Épisode
 description: Définissez le numéro d’épisode pour le contenu épisodique afin que les épisodes individuels puissent être signalés séparément.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 10%
+source-wordcount: '238'
+ht-degree: 9%
 
 ---
 
@@ -24,7 +24,7 @@ La variable d’épisode correspond au nombre d’épisodes au cours de la saiso
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.episode` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.episode`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.episode` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.EPISODE] = "13"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Utilisez `createMediaSession` pour définir des `episode` dans `sessionDetails` :
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.EPISODE] = "13";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Utilisez `MEDIA_VideoMetadataKeyEPISODE` pour définir le numéro d’épisode dans les métadonnées standard de l’objet média avant d’appeler `mediaTrackSessionStart` :
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyEPISODE] = "13"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB  API Media Collection ]

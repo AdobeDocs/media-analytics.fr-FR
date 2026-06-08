@@ -3,9 +3,9 @@ title: Nom du lecteur de contenu
 description: Définissez le nom du lecteur pour identifier le lecteur qui a rendu le contenu.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '285'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ La variable de nom du lecteur de contenu identifie le lecteur qui a rendu le con
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.playerName` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.playerName` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `playerName` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de `createMediaSession` :
 
@@ -157,6 +157,16 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 var metadata = { "a.media.playerName": "Chromecast Player" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+Définissez `playerName` dans la section `mediaHeartbeat` du `ADBMobileConfig.json`. Le nom du lecteur est une valeur de configuration et non une valeur par session :
+
+```json
+"mediaHeartbeat": {
+  "playerName": "Roku Player"
+}
 ```
 
 >[!TAB  API Media Collection ]

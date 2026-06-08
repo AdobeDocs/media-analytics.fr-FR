@@ -3,10 +3,10 @@ title: Nom du lecteur publicitaire
 description: Définissez le nom du lecteur qui effectue le rendu des publicités. Le lecteur d’annonces publicitaires peut différer du lecteur de contenu principal.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '257'
-ht-degree: 7%
+source-wordcount: '277'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ La variable de nom du lecteur d’annonces identifie le lecteur qui a rendu chaq
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.ad.playerName` |
-| **champ de collection XDM** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/advertising-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.advertisingDetails.playerName`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/advertising-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.ad.playerName` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de la publicité](/help/implementation/events/ads/ad-start.md), fin de la publicité |
@@ -75,7 +75,7 @@ metadata[MediaConstants.AdMetadataKeys.AD_PLAYER] = "Freewheel"
 tracker.trackEvent(Media.Event.AdStart, adObject, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `playerName` à l’intérieur des `xdm.mediaCollection.advertisingDetails` lors de l’appel de `sendMediaEvent` pour `media.adStart` :
 
@@ -145,6 +145,18 @@ Transmettez le nom du lecteur de publicités dans l’objet de métadonnées con
 var adInfo = ADBMobile.media.createAdObject("Ford F-150", "ad-2125", 1, 30);
 var metadata = { "a.media.ad.playerName": "Chromecast Player" };
 ADBMobile.media.trackEvent(ADBMobile.media.Event.AdStart, adInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+Transmettez le nom du lecteur de publicités dans l’objet de données contextuelles lors du suivi de l’événement de début de la publicité :
+
+```brightscript
+adb = ADBMobile()
+adInfo = adb_media_init_adinfo("Ford F-150", "ad-2125", 1, 30.0)
+
+contextData = { "a.media.ad.playerName": "Roku Player" }
+adb.mediaTrackEvent(adb.MEDIA_AD_START, adInfo, contextData)
 ```
 
 >[!TAB  API Media Collection ]

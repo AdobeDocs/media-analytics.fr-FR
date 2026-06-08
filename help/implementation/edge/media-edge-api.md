@@ -3,16 +3,16 @@ title: Configurer l’API Media Edge pour les médias en flux continu
 description: Envoyez directement des données de médias en flux continu à Edge Network à l’aide de l’API Media Edge.
 feature: Streaming Media
 role: Developer
-source-git-commit: d223e36dcf7a906a3184f3602addbbb58c20ce13
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '211'
 ht-degree: 0%
 
 ---
 
 # Configurer l’API Media Edge pour les médias en flux continu
 
-Si vous ne pouvez pas utiliser Web SDK, Mobile SDK ou Roku SDK (par exemple, sur un runtime personnalisé ou non pris en charge), vous pouvez envoyer directement des données de médias en flux continu à Edge Network à l’aide de l’API Media Edge. L’API utilise des appels HTTP RESTful et est entièrement personnalisable.
+Si vous ne pouvez pas utiliser les SDK Web SDK, Mobile SDK ou Roku Edge (par exemple, sur un runtime personnalisé ou non pris en charge), vous pouvez envoyer directement des données de médias en flux continu à Edge Network à l’aide de l’API Media Edge. L’API utilise des appels HTTP RESTful et est entièrement personnalisable.
 
 * **Conditions préalables** : terminez la [présentation de l’implémentation d’Edge](overview.md) (schéma, jeu de données, flux de données avec [!UICONTROL Media Analytics] activé).
 
@@ -48,6 +48,6 @@ Une fois l’implémentation terminée, vous pouvez [Configurer des rapports pou
 
 >[!MORELIKETHIS]
 >
->* [Référence de l’API Media Edge &#x200B;](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/)
+>* [Référence de l’API Media Edge ](https://developer.adobe.com/data-collection-apis/docs/endpoints/media/)
 >* [Présentation des événements](/help/implementation/events/overview.md)
 >* [Présentation des variables](/help/implementation/variables/overview.md)

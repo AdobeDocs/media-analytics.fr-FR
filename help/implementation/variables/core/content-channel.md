@@ -3,10 +3,10 @@ title: Canal de contenu
 description: Définissez le canal pour identifier la station de distribution, le réseau ou la propriété où le contenu est lu.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 7%
+source-wordcount: '270'
+ht-degree: 6%
 
 ---
 
@@ -24,7 +24,7 @@ La variable de canal de contenu identifie la station de distribution, le réseau
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.channel` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.channel`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.channel` |
 | **Obligatoire** | Oui |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
@@ -82,7 +82,7 @@ config[MediaConstants.TrackerConfig.CHANNEL] = "Sports"
 val tracker = Media.createTracker(config)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 `channel` à l’intérieur des `xdm.mediaCollection.sessionDetails` lors de l’appel de `createMediaSession` :
 
@@ -157,6 +157,16 @@ var mediaInfo = ADBMobile.media.createMediaObject("My Video", "video-123", 128,
   ADBMobile.media.StreamType.VOD, ADBMobile.media.MediaType.Video);
 var metadata = { "a.media.channel": "Sports" };
 ADBMobile.media.trackSessionStart(mediaInfo, metadata);
+```
+
+>[!TAB Roku 2.x]
+
+Définissez `channel` dans la section `mediaHeartbeat` du `ADBMobileConfig.json`. Le canal est une valeur de configuration et non une valeur par session :
+
+```json
+"mediaHeartbeat": {
+  "channel": "Sports"
+}
 ```
 
 >[!TAB  API Media Collection ]

@@ -3,10 +3,10 @@ title: MVPD
 description: Définissez le distributeur de programmation vidéo multicanal lorsque l’utilisateur s’authentifie via Adobe Pass.
 feature: Streaming Media
 role: Developer
-source-git-commit: 031ecfceee8b2f200fd217c8b53232ff100a7002
+source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 9%
+source-wordcount: '249'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 9%
 
 >[!BEGINSHADEBOX]
 
-*Cette page traite de la collecte de données pour la variable **MVPD**. Voir [&#128279;](/help/reporting/dimensions/mvpd.md) pour la dimension de reporting correspondante.*
+*Cette page traite de la collecte de données pour la variable **MVPD**. Voir [](/help/reporting/dimensions/mvpd.md) pour la dimension de reporting correspondante.*
 
 >[!ENDSHADEBOX]
 
@@ -24,7 +24,7 @@ La variable MVPD (Multichannel Video Programming Distributor) est le fournisseur
 | Propriété | Valeur |
 | --- | --- |
 | **Variable de données contextuelles** | `a.media.pass.mvpd` |
-| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/session-details-collection) |
+| **champ de collection XDM** | [`xdm.mediaCollection.sessionDetails.mvpd`](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/session-details-collection) |
 | **Caractéristique** | `c_contextdata.a.media.pass.mvpd` |
 | **Obligatoire** | Non |
 | **Envoyé avec** | [Début de session](/help/implementation/events/session/session-start.md), fermeture de session |
@@ -73,7 +73,7 @@ metadata[MediaConstants.VideoMetadataKeys.MVPD] = "Comcast"
 tracker.trackSessionStart(mediaInfo, metadata)
 ```
 
->[!TAB Roku]
+>[!TAB Roku Edge]
 
 Utilisez `createMediaSession` pour définir des `mvpd` dans `sessionDetails` :
 
@@ -144,6 +144,21 @@ var standardMetadata = {};
 standardMetadata[ADBMobile.media.VideoMetadataKeys.MVPD] = "Comcast";
 mediaInfo[ADBMobile.media.MediaObjectKey.StandardMediaMetadata] = standardMetadata;
 ADBMobile.media.trackSessionStart(mediaInfo, null);
+```
+
+>[!TAB Roku 2.x]
+
+Utilisez `MEDIA_VideoMetadataKeyMVPD` pour définir le MVPD dans les métadonnées standard de l’objet média avant d’appeler `mediaTrackSessionStart` :
+
+```brightscript
+adb = ADBMobile()
+mediaInfo = adb_media_init_mediainfo("My Video", "video-123", 128.0, adb.MEDIA_STREAM_TYPE_VOD, adb.MEDIA_TYPE_VIDEO)
+
+standardMetadata = {}
+standardMetadata[adb.MEDIA_VideoMetadataKeyMVPD] = "Comcast"
+mediaInfo[adb.MEDIA_STANDARD_MEDIA_METADATA] = standardMetadata
+
+adb.mediaTrackSessionStart(mediaInfo, invalid)
 ```
 
 >[!TAB  API Media Collection ]
