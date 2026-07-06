@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # Prise en charge des métadonnées personnalisées - Format XDM
 
-L’API Experience Edge vous permet d’envoyer des métadonnées personnalisées de média avec des champs XDM standard dans des événements d’API `sessionStart`, `adStart` et `chapterStart`. Les métadonnées personnalisées de média envoyées via le format XDM peuvent être transférées vers **** et **Adobe Experience Platform**.
+L’API Experience Edge vous permet d’envoyer des métadonnées personnalisées de média avec des champs XDM standard dans des événements d’API `sessionStart`, `adStart` et `chapterStart`. Les métadonnées personnalisées de média envoyées via le format XDM peuvent être transférées vers **&#x200B;**&#x200B;et **Adobe Experience Platform**.
 
 Pour les implémentations de l’API Media Collection, voir [Prise en charge des métadonnées personnalisées](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md).
 
@@ -335,6 +335,6 @@ Dans cet exemple :
 
 >[!MORELIKETHIS]
 >
->* [ Prise en charge des métadonnées personnalisées de l’API Media Collection ](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
+>* [&#x200B; Prise en charge des métadonnées personnalisées de l’API Media Collection &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
 >* [Type de données Détails de la collecte de médias](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
 >* [Mappage des variables de données pour Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)
