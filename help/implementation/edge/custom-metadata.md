@@ -316,7 +316,7 @@ Dans cet exemple :
 
 * Après traitement, les métadonnées personnalisées sont transférées vers Adobe Analytics en tant que variables de données contextuelles. Le préfixe `_tenant` est automatiquement supprimé. Les règles de traitement ne référencent donc que le chemin du champ après `_tenant` (par exemple, `_mycompany.contentCategory` devient `contentCategory`)
 * Les données envoyées via `_data` sont également transférées vers Adobe Analytics et disponibles via des règles de traitement
-* Utilisez des règles de traitement pour mapper des variables de données contextuelles à des eVars, des props ou d’autres variables Analytics. Pour plus d’informations, consultez [Mappage de variables de données pour Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping).
+* Utilisez des règles de traitement pour mapper des variables de données contextuelles à des eVars, des props ou d’autres variables Analytics. Pour plus d’informations, consultez [Mappage de variables de données pour Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping).
 
 **Adobe Experience Platform:**
 
@@ -336,5 +336,5 @@ Dans cet exemple :
 >[!MORELIKETHIS]
 >
 >* [&#x200B; Prise en charge des métadonnées personnalisées de l’API Media Collection &#x200B;](/help/implementation/media-collection-api/mc-api-impl/mc-api-custom-meta.md)
->* [Type de données Détails de la collecte de médias](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/data-types/media-collection-details)
->* [Mappage des variables de données pour Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/data-var-mapping)
+>* [Type de données Détails de la collecte de médias](https://experienceleague.adobe.com/fr/docs/experience-platform/xdm/data-types/media-collection-details)
+>* [Mappage des variables de données pour Adobe Experience Platform Edge Network](https://experienceleague.adobe.com/fr/docs/analytics/implementation/aep-edge/data-var-mapping)
