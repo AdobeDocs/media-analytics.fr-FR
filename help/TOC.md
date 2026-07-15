@@ -5,10 +5,10 @@ user-guide-title: Guide des services des médias en streaming
 breadcrumb-title: Guide des services des médias en streaming
 user-guide-description: Implémentez des services de médias en streaming. Inclut le SDK Media et l’API Media Collection.
 sub-product: media analytics
-source-git-commit: e392a66367cbdd8ada2432a5d3762e805dae676c
+source-git-commit: caf61bd76e2911ae5be31c4b1d8265b1df002acf
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 31%
+source-wordcount: '692'
+ht-degree: 32%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 31%
 # Guide des services des médias en streaming {#using}
 
 + [guide d’Adobe streaming media services](media-overview.md)
-+ [Notes de mise à jour des services de streaming multimédia](release-notes.md)
++ [Notes de mise à jour des services de médias en streaming](release-notes.md)
 + Commencer {#getting-started}
    + [Conditions préalables](getting-started/prereqs.md)
    + [Appareils pris en charge](getting-started/supported-devices.md)
@@ -165,7 +165,6 @@ ht-degree: 31%
             + [Conditions d’expiration](implementation/media-collection-api/mc-api-impl/mc-api-timeout.md)
             + [Contrôle de l’ordre des événements](implementation/media-collection-api/mc-api-impl/mc-api-ctrl-order.md)
             + [Événements de mise en file d’attente lorsque la réponse des sessions est lente](implementation/media-collection-api/mc-api-impl/mc-api-queuing.md)
-   + [Paramètres d’opt-out et de confidentialité](implementation/opt-out-privacy.md)
 + Création de rapports {#reporting}
    + Configurer des rapports {#reporting-setup}
       + [Implémentations d’Edge](reporting/setup/edge-reporting.md)
@@ -300,3 +299,8 @@ ht-degree: 31%
       + [Chronologie : Chapitres](use-cases/scenarios/chapter-start-end.md)
       + [Chronologie : Afficher jusqu’à la fin](use-cases/scenarios/view-to-end-of-content.md)
       + [Chronologie : l’utilisateur abandonne la session](use-cases/scenarios/user-abandons-session.md)
+
+<!--
+Removed from before the Reporting section:
+  + [Opt-out and privacy settings](implementation/opt-out-privacy.md)
+-->
